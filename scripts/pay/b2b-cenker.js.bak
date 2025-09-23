@@ -1,0 +1,139 @@
+const express = require('express');
+const path = require('path');
+const MySQLDataProvider = require('./mysql-data');
+
+const router = express.Router();
+const dataProvider = new MySQLDataProvider();
+
+// B2B Cenker dashboard endpoint
+router.get('/', async (req, res) => {
+    try {
+        const result = await dataProvider.getB2BData();
+
+        if (!result.success) {
+            console.error('B2B data fetch failed:', result.error);
+        }
+
+        const data = result.data || [];
+
+        // Calculate B2B specific metrics for Cenker
+        const metrics = calculateB2BMetrics(data);
+
+        res.json({
+            success: result.success,
+            data: data,
+            metrics: metrics,
+            employee: {
+                name: 'Cenker',
+                role: 'B2B Sales Manager',
+                commissionRate: '10% of YoY course fee growth',
+                channel: 'B2B'
+            },
+            error: result.error || null
+        });
+
+    } catch (error) {
+        console.error('B2B dashboard route error:', error);
+        res.status(500).json({
+            success: false,
+            error: 'Internal server error',
+            data: [],
+            metrics: getEmptyB2BMetrics(),
+            employee: {
+                name: 'Cenker',
+                role: 'B2B Sales Manager',
+                commissionRate: '10% of YoY course fee growth',
+                channel: 'B2B'
+            }
+        });
+    }
+});
+
+// B2B specific metrics calculation
+function calculateB2BMetrics(data) {
+    if (!data || data.length === 0) {
+        return getEmptyB2BMetrics();
+    }
+
+    const currentMonth = new Date().toISOString().slice(0, 7); // YYYY-MM format
+    const currentMonthData = data.find(d => d.month_year === currentMonth);
+
+    // Calculate last 12 months totals
+    const last12Months = data.slice(-12);
+
+    const totalRevenue = last12Months.reduce((sum, month) => sum + (parseFloat(month.total_amount) || 0), 0);
+    const totalCommissions = last12Months.reduce((sum, month) => sum + (parseFloat(month.commission_amount) || 0), 0);
+    const totalYoYGrowth = last12Months.reduce((sum, month) => sum + (parseFloat(month.yoy_course_growth) || 0), 0);
+
+    // Calculate average commission rate
+    const positiveGrowthMonths = last12Months.filter(month => parseFloat(month.yoy_course_growth) > 0);
+    const avgCommissionRate = positiveGrowthMonths.length > 0 ?
+        (totalCommissions / positiveGrowthMonths.reduce((sum, month) => sum + parseFloat(month.yoy_course_growth), 0)) * 100 : 0;
+
+    // Find best and worst performing months
+    const bestMonth = data.reduce((max, month) =>
+        (parseFloat(month.commission_amount) || 0) > (parseFloat(max.commission_amount) || 0) ? month : max,
+        data[0] || {}
+    );
+
+    const worstMonth = data.reduce((min, month) =>
+        (parseFloat(month.commission_amount) || 0) < (parseFloat(min.commission_amount) || 0) ? month : min,
+        data[0] || {}
+    );
+
+    return {
+        currentMonth: currentMonth,
+        currentMonthRevenue: parseFloat(currentMonthData?.total_amount) || 0,
+        currentMonthCommission: parseFloat(currentMonthData?.commission_amount) || 0,
+        currentMonthYoYGrowth: parseFloat(currentMonthData?.yoy_course_growth) || 0,
+        currentMonthGrowthPercent: parseFloat(currentMonthData?.yoy_course_growth_percent) || 0,
+
+        last12MonthsRevenue: totalRevenue,
+        last12MonthsCommissions: totalCommissions,
+        last12MonthsYoYGrowth: totalYoYGrowth,
+
+        avgCommissionRate: avgCommissionRate,
+        bestMonth: {
+            month: bestMonth.month_year,
+            commission: parseFloat(bestMonth.commission_amount) || 0,
+            growth: parseFloat(bestMonth.yoy_course_growth) || 0
+        },
+        worstMonth: {
+            month: worstMonth.month_year,
+            commission: parseFloat(worstMonth.commission_amount) || 0,
+            growth: parseFloat(worstMonth.yoy_course_growth) || 0
+        },
+
+        dataPoints: data.length,
+        lastUpdated: new Date().toISOString(),
+        commissionExplanation: 'Commission = 10% of (Current Year Course Fees - Previous Year Course Fees) when positive'
+    };
+}
+
+function getEmptyB2BMetrics() {
+    return {
+        currentMonth: new Date().toISOString().slice(0, 7),
+        currentMonthRevenue: 0,
+        currentMonthCommission: 0,
+        currentMonthYoYGrowth: 0,
+        currentMonthGrowthPercent: 0,
+        last12MonthsRevenue: 0,
+        last12MonthsCommissions: 0,
+        last12MonthsYoYGrowth: 0,
+        avgCommissionRate: 0,
+        bestMonth: { month: '', commission: 0, growth: 0 },
+        worstMonth: { month: '', commission: 0, growth: 0 },
+        dataPoints: 0,
+        lastUpdated: new Date().toISOString(),
+        commissionExplanation: 'Commission = 10% of (Current Year Course Fees - Previous Year Course Fees) when positive'
+    };
+}
+
+// Cleanup function for graceful shutdown
+process.on('SIGINT', async () => {
+    console.log('B2B Dashboard: Closing database connections...');
+    await dataProvider.disconnect();
+    process.exit(0);
+});
+
+module.exports = router;

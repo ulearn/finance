@@ -1,0 +1,24 @@
+{
+  "name": "fins",
+  "version": "1.0.0",
+  "description": "Financial management system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^3.15.0",
+    "dotenv": "^16.5.0",
+    "axios": "^1.9.0",
+    "xlsx": "^0.18.5",
+    "multer": "^2.0.2",
+    "csv-parser": "^3.2.0",
+    "fast-csv": "^5.0.2",
+    "dayjs": "^1.11.13"
+  }
+}
