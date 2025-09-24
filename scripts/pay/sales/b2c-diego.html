@@ -96,6 +96,10 @@
             font-weight: 600;
             background: #f7fafc;
         }
+        .ytd-row {
+            background: #edf2f7 !important;
+            font-weight: 600;
+        }
         .quarter-separator {
             border-right: 2px solid #cbd5e0 !important;
         }
@@ -136,6 +140,14 @@
             font-size: 2em;
             font-weight: 700;
         }
+        .growth-positive {
+            color: #48bb78;
+            font-weight: 600;
+        }
+        .growth-negative {
+            color: #f56565;
+            font-weight: 600;
+        }
         .loading {
             text-align: center;
             padding: 50px;
@@ -169,7 +181,7 @@
 
             const fetchData = async () => {
                 try {
-                    const response = await fetch('/fins/scripts/pay/dashboard/b2c');
+                    const response = await fetch('/fins/scripts/pay/sales/dashboard/b2c');
                     const result = await response.json();
                     
                     if (result.success) {
@@ -254,23 +266,29 @@
                     <div className="metric-cards">
                         <div className="metric-card">
                             <h3>YTD Revenue</h3>
-                            <div className="value">{formatCurrency(data.yearTotal)}</div>
+                            <div className="value">{formatCurrency(data.ytdTotal)}</div>
+                            <div className={data.yoyPercent >= 0 ? 'growth-positive' : 'growth-negative'}>
+                                {formatPercent(data.yoyPercent)} YoY
+                            </div>
                         </div>
                         <div className="metric-card">
                             <h3>YTD Commissions</h3>
-                            <div className="value">{formatCurrency(data.commissions.total)}</div>
+                            <div className="value">{formatCurrency(data.commissions.ytd)}</div>
                         </div>
                         <div className="metric-card">
-                            <h3>YoY Growth</h3>
-                            <div className="value">{formatPercent(data.yoyPercent)}</div>
+                            <h3>Full Year Target</h3>
+                            <div className="value">{formatCurrency(data.yearTotal)}</div>
+                            <div style={{fontSize: '0.8em', marginTop: '5px', color: '#718096'}}>
+                                2024 Total: {formatCurrency(data.lastYearYtd / (data.yoyPercent > -100 ? (100 + data.yoyPercent) / 100 : 1) * 12/8)}
+                            </div>
                         </div>
                     </div>
 
-                    <div className="section-header">B2C Revenue & Commissions {currentYear}</div>
+                    <div className="section-header">B2C Revenue & Commissions</div>
                     <table className="data-table">
                         <thead>
                             <tr>
-                                <th>Metric</th>
+                                <th>Year</th>
                                 {months.map((month, idx) => (
                                     <th key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
                                         {month}
@@ -281,13 +299,60 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Revenue</td>
+                                <td>2024</td>
+                                {months.map((month, idx) => (
+                                    <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
+                                        {formatCurrency(data.lastYearMonthly[month].b2c)}
+                                    </td>
+                                ))}
+                                <td className="total-column">-</td>
+                            </tr>
+                            <tr className="ytd-row">
+                                <td>2024 YTD</td>
+                                {months.map((month, idx) => {
+                                    const ytdValue = idx < 8 ? data.lastYearMonthly[month].b2c : null;
+                                    return (
+                                        <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
+                                            {ytdValue !== null ? formatCurrency(ytdValue) : '-'}
+                                        </td>
+                                    );
+                                })}
+                                <td className="total-column">{formatCurrency(data.lastYearYtd)}</td>
+                            </tr>
+                            <tr>
+                                <td>2025</td>
                                 {months.map((month, idx) => (
                                     <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
                                         {formatCurrency(data.monthlyData[month].b2c)}
                                     </td>
                                 ))}
                                 <td className="total-column">{formatCurrency(data.yearTotal)}</td>
+                            </tr>
+                            <tr className="ytd-row">
+                                <td>2025 YTD</td>
+                                {months.map((month, idx) => {
+                                    const ytdValue = idx < 8 ? data.monthlyData[month].b2c : null;
+                                    return (
+                                        <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
+                                            {ytdValue !== null ? formatCurrency(ytdValue) : '-'}
+                                        </td>
+                                    );
+                                })}
+                                <td className="total-column">{formatCurrency(data.ytdTotal)}</td>
+                            </tr>
+                            <tr>
+                                <td>YoY %</td>
+                                {months.map((month, idx) => {
+                                    const yoyValue = data.yoyPercentMonthly[month].b2c;
+                                    return (
+                                        <td key={month} className={`${(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''} ${yoyValue >= 0 ? 'growth-positive' : 'growth-negative'}`}>
+                                            {formatPercent(yoyValue)}
+                                        </td>
+                                    );
+                                })}
+                                <td className={`total-column ${data.yoyPercent >= 0 ? 'growth-positive' : 'growth-negative'}`}>
+                                    {formatPercent(data.yoyPercent)}
+                                </td>
                             </tr>
                             <tr>
                                 <td>Commission (1%)</td>

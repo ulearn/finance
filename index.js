@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Import dashboard router
-const dashboardRouter = require('./scripts/pay/dashboard');
+const dashboardRouter = require('./scripts/pay/sales/dashboard');
 
 // Basic route to test
 app.get('/', (req, res) => {
@@ -21,32 +21,32 @@ app.get('/fins', (req, res) => {
     time: new Date(),
     node_version: process.version,
     dashboards: {
-      management: '/fins/scripts/pay/dashboard.html',
-      b2c_diego: '/fins/scripts/pay/b2c-diego.html',
-      b2b_cenker: '/fins/scripts/pay/b2b-cenker.html'
+      management: '/fins/scripts/pay/sales/dashboard.html',
+      b2c_diego: '/fins/scripts/pay/sales/b2c-diego.html',
+      b2b_cenker: '/fins/scripts/pay/sales/b2b-cenker.html'
     },
     api: {
-      management: '/fins/scripts/pay/dashboard',
-      b2c: '/fins/scripts/pay/dashboard/b2c',
-      b2b: '/fins/scripts/pay/dashboard/b2b'
+      management: '/fins/scripts/pay/sales/dashboard',
+      b2c: '/fins/scripts/pay/sales/dashboard/b2c',
+      b2b: '/fins/scripts/pay/sales/dashboard/b2b'
     }
   });
 });
 
 // Dashboard API routes
-app.use('/fins/scripts/pay/dashboard', dashboardRouter);
+app.use('/fins/scripts/pay/sales/dashboard', dashboardRouter);
 
 // Serve dashboard HTML files
-app.get('/fins/scripts/pay/dashboard.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'scripts/pay/dashboard.html'));
+app.get('/fins/scripts/pay/sales/dashboard.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'scripts/pay/sales/dashboard.html'));
 });
 
-app.get('/fins/scripts/pay/b2c-diego.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'scripts/pay/b2c-diego.html'));
+app.get('/fins/scripts/pay/sales/b2c-diego.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'scripts/pay/sales/b2c-diego.html'));
 });
 
-app.get('/fins/scripts/pay/b2b-cenker.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'scripts/pay/b2b-cenker.html'));
+app.get('/fins/scripts/pay/sales/b2b-cenker.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'scripts/pay/sales/b2b-cenker.html'));
 });
 
 // Error handling
