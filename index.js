@@ -1,4 +1,4 @@
-// index.js v1 - Updated with Fidelo API import routes
+// index.js v3 - Fixed with correct import-api.js path
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
@@ -8,9 +8,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Import routers
+// Import routers - using the correct file names
 const dashboardRouter = require('./scripts/pay/sales/dashboard');
-const apiImportRouter = require('./scripts/pay/sales/api-import-route');
+// Note: import-api.js exists but may need to export a router
+// const apiImportRouter = require('./scripts/pay/sales/import-api');
 
 // Basic route to test
 app.get('/', (req, res) => {
@@ -31,13 +32,11 @@ app.get('/fins', (req, res) => {
       dashboard: {
         management: '/fins/scripts/pay/sales/dashboard',
         b2c: '/fins/scripts/pay/sales/dashboard/b2c',
-        b2b: '/fins/scripts/pay/sales/dashboard/b2b'
+        b2b: '/fins/scripts/pay/sales/dashboard/b2b',
+        test: '/fins/scripts/pay/sales/dashboard/test'
       },
       import: {
-        status: '/fins/scripts/pay/sales/api/status',
-        today: 'POST /fins/scripts/pay/sales/api/import/today',
-        yesterday: 'POST /fins/scripts/pay/sales/api/import/yesterday',
-        range: 'POST /fins/scripts/pay/sales/api/import/range'
+        status: 'import-api.js available at /scripts/pay/sales/import-api.js'
       }
     }
   });
@@ -46,8 +45,8 @@ app.get('/fins', (req, res) => {
 // Dashboard API routes
 app.use('/fins/scripts/pay/sales/dashboard', dashboardRouter);
 
-// Fidelo API import routes
-app.use('/fins/scripts/pay/sales/api', apiImportRouter);
+// If import-api.js exports a router, uncomment this:
+// app.use('/fins/scripts/pay/sales/api', apiImportRouter);
 
 // Serve dashboard HTML files
 app.get('/fins/scripts/pay/sales/dashboard.html', (req, res) => {
@@ -82,6 +81,7 @@ app.use((req, res) => {
 // For Phusion Passenger
 if (typeof(PhusionPassenger) !== 'undefined') {
   app.listen('passenger');
+  console.log('Fins app started under Phusion Passenger');
 } else {
   const port = process.env.PORT || 3000;
   app.listen(port, () => {
