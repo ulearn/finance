@@ -26,14 +26,20 @@ Search commands like "grep" can be run without asking me (non-editing & non-dest
 
 GIT
 Repo: https://github.com/ulearn/fins
-- We are only operating on the claude branch
-- Never do anything destructive with git without asking permission
+- We are only operating on the master claude
+- Never create or push commits or do anything destructive with git repo without asking permission
+- It is read only for you
 
 =========================================================================================================
 
 PROJECT SPECIFIC CONTEXT
 1) Payroll - Sales Commissions 
-we are working in /home/hub/public_html/fins/payroll/sales/ tyring to buid out an API pull into management report dashboard /home/hub/public_html/fins/payroll/sales/dashboard.js / .html and individual REACT dashboards for the employees (/home/hub/public_html/fins/payroll/sales/b2c-diego.js/.html and /home/hub/public_html/fins/payroll/sales/b2b-cenker.js/.html
+we are working in /home/hub/public_html/fins/payroll/sales/pay building into management & employee reports dashboard 
+
+Manager Dash: /home/hub/public_html/fins/payroll/sales/dashboard.js/.html
+REACT employee dashboards: 
+/home/hub/public_html/fins/payroll/sales/b2c-diego.js/.html
+/home/hub/public_html/fins/payroll/sales/b2b-cenker.js/.html
 
 23.09.2025 - 
 1) The Fidelo API is not working
@@ -68,5 +74,3 @@ Required functions:
   - January 2025: B2C €41,820.48 (43 bookings), B2B €91,665.19 (148 bookings)
   - No more divergence between dashboards - all use same data source
   - Clean architecture with central MySQL logic
-
-  The upload script (upload-xl.js) and all three dashboards now work together seamlessly with the MySQL database!
