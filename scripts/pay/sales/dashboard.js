@@ -1,4 +1,4 @@
-// dashboard.js v7 - Excludes TransferMate Escrow payments and handles December 2024 commission
+// dashboard.js v7 - Fixed YTD-based YoY calculations and future month handling
 const express = require('express');
 const mysql = require('mysql2/promise');
 const path = require('path');
@@ -21,9 +21,6 @@ const BASE_SALARIES = {
     b2b: 3550   // Cenker
 };
 
-// December 2024 commission for B2C (carried into January 2025)
-const DECEMBER_2024_B2C_COMMISSION = 179.73;  // €17,973.02 @ 1%
-
 // Central data fetching and calculation function
 async function getMonthlyData() {
     let connection;
@@ -37,7 +34,6 @@ async function getMonthlyData() {
             SELECT MAX(STR_TO_DATE(date, '%d/%m/%Y')) as max_date 
             FROM sales_data 
             WHERE date IS NOT NULL AND date != ''
-            AND (method IS NULL OR method != 'TransferMate Escrow')
         `);
         
         const latestDate = maxDateResult[0].max_date;
@@ -46,7 +42,7 @@ async function getMonthlyData() {
         
         console.log(`Latest data through: ${latestDate}, YTD through month ${currentMonth}`);
         
-        // Main query for all monthly data - EXCLUDING TransferMate Escrow
+        // Main query for all monthly data
         const query = `
             SELECT 
                 YEAR(STR_TO_DATE(date, '%d/%m/%Y')) as year,
@@ -79,13 +75,12 @@ async function getMonthlyData() {
             AND date != ''
             AND amount IS NOT NULL
             AND amount != ''
-            AND (method IS NULL OR method != 'TransferMate Escrow')
             GROUP BY year, month, channel
             ORDER BY year, month, channel
         `;
         
         const [rows] = await connection.execute(query);
-        console.log(`Query returned ${rows.length} rows (excluding TransferMate Escrow)`);
+        console.log(`Query returned ${rows.length} rows`);
         
         // Process data with YTD calculations
         const processedData = processDataForDashboards(rows, currentMonth, currentDay);
@@ -240,8 +235,7 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
                 months: {}, 
                 quarters: { Q1: 0, Q2: 0, Q3: 0, Q4: 0 },
                 ytd: 0, 
-                total: 0,
-                december2024: DECEMBER_2024_B2C_COMMISSION  // Add December 2024 commission
+                total: 0 
             },
             b2b: { 
                 months: {}, 
@@ -290,23 +284,40 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
             b2b_course: currentYearData.b2b.course_fees
         };
         
-        // Calculate YoY growth (absolute)
-        result.yoyGrowth.months[monthNames[idx]] = {
-            b2c: currentYearData.b2c.amount - lastYearData.b2c.amount,
-            b2b: currentYearData.b2b.amount - lastYearData.b2b.amount,
-            total: currentYearData.total.amount - lastYearData.total.amount,
-            b2b_course: currentYearData.b2b.course_fees - lastYearData.b2b.course_fees
-        };
-        
-        // Calculate YoY growth (percentage)
-        result.yoyPercent.months[monthNames[idx]] = {
-            b2c: lastYearData.b2c.amount > 0 ? 
-                ((currentYearData.b2c.amount - lastYearData.b2c.amount) / lastYearData.b2c.amount * 100) : 0,
-            b2b: lastYearData.b2b.amount > 0 ? 
-                ((currentYearData.b2b.amount - lastYearData.b2b.amount) / lastYearData.b2b.amount * 100) : 0,
-            total: lastYearData.total.amount > 0 ? 
-                ((currentYearData.total.amount - lastYearData.total.amount) / lastYearData.total.amount * 100) : 0
-        };
+        // Calculate YoY growth only for months within YTD period
+        if (idx + 1 <= ytdMonth) {
+            // Calculate YoY growth (absolute) - YTD-based
+            result.yoyGrowth.months[monthNames[idx]] = {
+                b2c: currentYearData.b2c.amount - lastYearData.b2c.amount,
+                b2b: currentYearData.b2b.amount - lastYearData.b2b.amount,
+                total: currentYearData.total.amount - lastYearData.total.amount,
+                b2b_course: currentYearData.b2b.course_fees - lastYearData.b2b.course_fees
+            };
+            
+            // Calculate YoY growth (percentage) - YTD-based
+            result.yoyPercent.months[monthNames[idx]] = {
+                b2c: lastYearData.b2c.amount > 0 ? 
+                    ((currentYearData.b2c.amount - lastYearData.b2c.amount) / lastYearData.b2c.amount * 100) : 0,
+                b2b: lastYearData.b2b.amount > 0 ? 
+                    ((currentYearData.b2b.amount - lastYearData.b2b.amount) / lastYearData.b2b.amount * 100) : 0,
+                total: lastYearData.total.amount > 0 ? 
+                    ((currentYearData.total.amount - lastYearData.total.amount) / lastYearData.total.amount * 100) : 0
+            };
+        } else {
+            // Future months - no YoY calculations, show as null/empty
+            result.yoyGrowth.months[monthNames[idx]] = {
+                b2c: null,
+                b2b: null,
+                total: null,
+                b2b_course: null
+            };
+            
+            result.yoyPercent.months[monthNames[idx]] = {
+                b2c: null,
+                b2b: null,
+                total: null
+            };
+        }
         
         // Calculate commissions
         // Diego (B2C): 1% of total B2C revenue
@@ -404,8 +415,7 @@ function getEmptyDataStructure() {
                 months: emptyMonths, 
                 quarters: { Q1: 0, Q2: 0, Q3: 0, Q4: 0 },
                 ytd: 0, 
-                total: 0,
-                december2024: DECEMBER_2024_B2C_COMMISSION
+                total: 0 
             },
             b2b: { 
                 months: emptyMonths, 
@@ -492,8 +502,7 @@ router.get('/b2c', async (req, res) => {
             yoyGrowth: result.data.yoyGrowth.ytd.b2c,
             yoyPercent: result.data.yoyPercent.ytd.b2c,
             yoyMonthly: result.data.yoyGrowth.months,
-            yoyPercentMonthly: result.data.yoyPercent.months,
-            december2024Commission: DECEMBER_2024_B2C_COMMISSION  // Include December 2024 commission
+            yoyPercentMonthly: result.data.yoyPercent.months
         };
         
         res.json(b2cData);
@@ -557,30 +566,20 @@ router.get('/test', async (req, res) => {
     try {
         connection = await mysql.createConnection(dbConfig);
         
-        // Test query to check TransferMate Escrow exclusion
-        const [transferMateTest] = await connection.execute(`
+        const [ytdTest] = await connection.execute(`
             SELECT 
-                method,
+                YEAR(STR_TO_DATE(date, '%d/%m/%Y')) as year,
                 COUNT(*) as count,
                 SUM(CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2))) as total
             FROM sales_data
-            WHERE method = 'TransferMate Escrow'
-            GROUP BY method
-        `);
-        
-        const [totalWithoutTransferMate] = await connection.execute(`
-            SELECT 
-                COUNT(*) as count,
-                SUM(CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2))) as total
-            FROM sales_data
-            WHERE (method IS NULL OR method != 'TransferMate Escrow')
+            WHERE MONTH(STR_TO_DATE(date, '%d/%m/%Y')) <= MONTH(NOW())
+            GROUP BY year
         `);
         
         res.json({
             success: true,
-            message: 'TransferMate Escrow exclusion test',
-            transferMateEscrow: transferMateTest,
-            totalExcludingTransferMate: totalWithoutTransferMate
+            message: 'YTD test data',
+            ytdComparison: ytdTest
         });
     } catch (error) {
         res.status(500).json({
