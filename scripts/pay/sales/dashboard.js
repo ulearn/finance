@@ -1,4 +1,4 @@
-// dashboard.js v6 - Updated with quarters, base salary rows, and new ordering
+// dashboard.js v7 - Excludes TransferMate Escrow payments and handles December 2024 commission
 const express = require('express');
 const mysql = require('mysql2/promise');
 const path = require('path');
@@ -21,6 +21,9 @@ const BASE_SALARIES = {
     b2b: 3550   // Cenker
 };
 
+// December 2024 commission for B2C (carried into January 2025)
+const DECEMBER_2024_B2C_COMMISSION = 179.73;  // €17,973.02 @ 1%
+
 // Central data fetching and calculation function
 async function getMonthlyData() {
     let connection;
@@ -34,6 +37,7 @@ async function getMonthlyData() {
             SELECT MAX(STR_TO_DATE(date, '%d/%m/%Y')) as max_date 
             FROM sales_data 
             WHERE date IS NOT NULL AND date != ''
+            AND (method IS NULL OR method != 'TransferMate Escrow')
         `);
         
         const latestDate = maxDateResult[0].max_date;
@@ -42,7 +46,7 @@ async function getMonthlyData() {
         
         console.log(`Latest data through: ${latestDate}, YTD through month ${currentMonth}`);
         
-        // Main query for all monthly data
+        // Main query for all monthly data - EXCLUDING TransferMate Escrow
         const query = `
             SELECT 
                 YEAR(STR_TO_DATE(date, '%d/%m/%Y')) as year,
@@ -75,12 +79,13 @@ async function getMonthlyData() {
             AND date != ''
             AND amount IS NOT NULL
             AND amount != ''
+            AND (method IS NULL OR method != 'TransferMate Escrow')
             GROUP BY year, month, channel
             ORDER BY year, month, channel
         `;
         
         const [rows] = await connection.execute(query);
-        console.log(`Query returned ${rows.length} rows`);
+        console.log(`Query returned ${rows.length} rows (excluding TransferMate Escrow)`);
         
         // Process data with YTD calculations
         const processedData = processDataForDashboards(rows, currentMonth, currentDay);
@@ -235,7 +240,8 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
                 months: {}, 
                 quarters: { Q1: 0, Q2: 0, Q3: 0, Q4: 0 },
                 ytd: 0, 
-                total: 0 
+                total: 0,
+                december2024: DECEMBER_2024_B2C_COMMISSION  // Add December 2024 commission
             },
             b2b: { 
                 months: {}, 
@@ -398,7 +404,8 @@ function getEmptyDataStructure() {
                 months: emptyMonths, 
                 quarters: { Q1: 0, Q2: 0, Q3: 0, Q4: 0 },
                 ytd: 0, 
-                total: 0 
+                total: 0,
+                december2024: DECEMBER_2024_B2C_COMMISSION
             },
             b2b: { 
                 months: emptyMonths, 
@@ -485,7 +492,8 @@ router.get('/b2c', async (req, res) => {
             yoyGrowth: result.data.yoyGrowth.ytd.b2c,
             yoyPercent: result.data.yoyPercent.ytd.b2c,
             yoyMonthly: result.data.yoyGrowth.months,
-            yoyPercentMonthly: result.data.yoyPercent.months
+            yoyPercentMonthly: result.data.yoyPercent.months,
+            december2024Commission: DECEMBER_2024_B2C_COMMISSION  // Include December 2024 commission
         };
         
         res.json(b2cData);
@@ -549,20 +557,30 @@ router.get('/test', async (req, res) => {
     try {
         connection = await mysql.createConnection(dbConfig);
         
-        const [ytdTest] = await connection.execute(`
+        // Test query to check TransferMate Escrow exclusion
+        const [transferMateTest] = await connection.execute(`
             SELECT 
-                YEAR(STR_TO_DATE(date, '%d/%m/%Y')) as year,
+                method,
                 COUNT(*) as count,
                 SUM(CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2))) as total
             FROM sales_data
-            WHERE MONTH(STR_TO_DATE(date, '%d/%m/%Y')) <= MONTH(NOW())
-            GROUP BY year
+            WHERE method = 'TransferMate Escrow'
+            GROUP BY method
+        `);
+        
+        const [totalWithoutTransferMate] = await connection.execute(`
+            SELECT 
+                COUNT(*) as count,
+                SUM(CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2))) as total
+            FROM sales_data
+            WHERE (method IS NULL OR method != 'TransferMate Escrow')
         `);
         
         res.json({
             success: true,
-            message: 'YTD test data',
-            ytdComparison: ytdTest
+            message: 'TransferMate Escrow exclusion test',
+            transferMateEscrow: transferMateTest,
+            totalExcludingTransferMate: totalWithoutTransferMate
         });
     } catch (error) {
         res.status(500).json({
