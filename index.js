@@ -1,3 +1,4 @@
+// index.js v1 - Updated with Fidelo API import routes
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
@@ -7,8 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Import dashboard router
+// Import routers
 const dashboardRouter = require('./scripts/pay/sales/dashboard');
+const apiImportRouter = require('./scripts/pay/sales/api-import-route');
 
 // Basic route to test
 app.get('/', (req, res) => {
@@ -26,15 +28,26 @@ app.get('/fins', (req, res) => {
       b2b_cenker: '/fins/scripts/pay/sales/b2b-cenker.html'
     },
     api: {
-      management: '/fins/scripts/pay/sales/dashboard',
-      b2c: '/fins/scripts/pay/sales/dashboard/b2c',
-      b2b: '/fins/scripts/pay/sales/dashboard/b2b'
+      dashboard: {
+        management: '/fins/scripts/pay/sales/dashboard',
+        b2c: '/fins/scripts/pay/sales/dashboard/b2c',
+        b2b: '/fins/scripts/pay/sales/dashboard/b2b'
+      },
+      import: {
+        status: '/fins/scripts/pay/sales/api/status',
+        today: 'POST /fins/scripts/pay/sales/api/import/today',
+        yesterday: 'POST /fins/scripts/pay/sales/api/import/yesterday',
+        range: 'POST /fins/scripts/pay/sales/api/import/range'
+      }
     }
   });
 });
 
 // Dashboard API routes
 app.use('/fins/scripts/pay/sales/dashboard', dashboardRouter);
+
+// Fidelo API import routes
+app.use('/fins/scripts/pay/sales/api', apiImportRouter);
 
 // Serve dashboard HTML files
 app.get('/fins/scripts/pay/sales/dashboard.html', (req, res) => {
