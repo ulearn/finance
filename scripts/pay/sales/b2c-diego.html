@@ -90,7 +90,7 @@
             background: #f7fafc;
             color: #2d3748;
             padding: 10px 6px;
-            text-align: right;
+            text-align: center;  /* Changed from right to center */
             font-weight: 600;
             border: 1px solid #e2e8f0;
         }
@@ -101,7 +101,7 @@
         }
         .data-table td {
             padding: 8px 6px;
-            text-align: right;
+            text-align: left;  /* Changed from right to left */
             border: 1px solid #e2e8f0;
             background: white;
         }
@@ -174,6 +174,7 @@
             background: #edf2f7 !important;
             font-weight: 700;
             border-left: 2px solid #cbd5e0 !important;
+            text-align: right !important;  /* Total column always right aligned */
         }
         .growth-positive {
             color: #22c55e;
@@ -226,6 +227,16 @@
             color: #00b894;
             font-size: 1.8em;
             font-weight: 700;
+        }
+        .december-note {
+            background: #fef3c7;
+            border: 1px solid #fbbf24;
+            color: #92400e;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.9em;
+            text-align: center;
         }
     </style>
 </head>
@@ -307,7 +318,15 @@
             const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
             const currentMonthIdx = new Date().getMonth();
             const lastMonthIdx = currentMonthIdx === 0 ? 11 : currentMonthIdx - 1;
-            const lastMonthCommission = data.commissions.months[months[lastMonthIdx]] || 0;
+            
+            // Special handling for January - use December 2024 commission
+            let lastMonthCommission;
+            if (currentMonthIdx === 0) {
+                // January - use December 2024 commission
+                lastMonthCommission = data.december2024Commission || 179.73;
+            } else {
+                lastMonthCommission = data.commissions.months[months[lastMonthIdx]] || 0;
+            }
 
             // Calculate quarterly totals from monthly data
             const calculateQuarters = (monthlyData) => {
@@ -344,6 +363,12 @@
                             <span>{formatCurrency(data.employee.baseSalary + lastMonthCommission)}</span>
                         </div>
                     </div>
+
+                    {currentMonthIdx === 0 && (
+                        <div className="december-note">
+                            Note: January payroll includes December 2024 commission of €179.73 (€17,973.02 @ 1%)
+                        </div>
+                    )}
 
                     <div className="metric-cards">
                         <div className="metric-card">
@@ -392,12 +417,17 @@
                                 <tr className="quarter-row">
                                     <td>Q</td>
                                     {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
+                                        if (idx % 3 === 1) {
+                                            // Middle cell of quarter - show the value centered
+                                            const q = lastYearQuarters[`Q${Math.floor(idx / 3) + 1}`];
                                             return (
-                                                <td key={month} className="quarter-separator">
-                                                    {formatCurrency(lastYearQuarters[`Q${Math.floor(idx / 3) + 1}`])}
+                                                <td key={month} style={{ textAlign: 'center', fontWeight: '600' }}>
+                                                    {formatCurrency(q)}
                                                 </td>
                                             );
+                                        } else if (idx % 3 === 2) {
+                                            // Last cell of quarter - just the separator
+                                            return <td key={month} className="quarter-separator"></td>;
                                         }
                                         return <td key={month}></td>;
                                     })}
@@ -415,12 +445,15 @@
                                 <tr className="quarter-row">
                                     <td>Q</td>
                                     {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
+                                        if (idx % 3 === 1) {
+                                            const q = currentYearQuarters[`Q${Math.floor(idx / 3) + 1}`];
                                             return (
-                                                <td key={month} className="quarter-separator">
-                                                    {formatCurrency(currentYearQuarters[`Q${Math.floor(idx / 3) + 1}`])}
+                                                <td key={month} style={{ textAlign: 'center', fontWeight: '600' }}>
+                                                    {formatCurrency(q)}
                                                 </td>
                                             );
+                                        } else if (idx % 3 === 2) {
+                                            return <td key={month} className="quarter-separator"></td>;
                                         }
                                         return <td key={month}></td>;
                                     })}
@@ -429,14 +462,16 @@
                                 <tr className="q-diff-row">
                                     <td>Q DIFF</td>
                                     {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
-                                            const qNum = `Q${Math.floor(idx / 3) + 1}`;
-                                            const diff = currentYearQuarters[qNum] - lastYearQuarters[qNum];
+                                        if (idx % 3 === 1) {
+                                            const qNum = Math.floor(idx / 3) + 1;
+                                            const diff = currentYearQuarters[`Q${qNum}`] - lastYearQuarters[`Q${qNum}`];
                                             return (
-                                                <td key={month} className={`quarter-separator ${diff >= 0 ? 'growth-positive' : 'growth-negative'}`}>
+                                                <td key={month} className={diff >= 0 ? 'growth-positive' : 'growth-negative'} style={{ textAlign: 'center', fontWeight: '700' }}>
                                                     {formatCurrency(diff)}
                                                 </td>
                                             );
+                                        } else if (idx % 3 === 2) {
+                                            return <td key={month} className="quarter-separator"></td>;
                                         }
                                         return <td key={month}></td>;
                                     })}
@@ -521,15 +556,22 @@
                                 <tr className="total-row">
                                     <td>TOTAL (Paid)</td>
                                     {months.map((month, idx) => {
-                                        const commissionMonth = idx === 0 ? 11 : idx - 1;
-                                        const commission = data.commissions.months[months[commissionMonth]] || 0;
+                                        let commission;
+                                        if (idx === 0) {
+                                            // January gets December 2024 commission
+                                            commission = data.december2024Commission || 179.73;
+                                        } else {
+                                            // Other months get previous month's commission
+                                            const commissionMonth = idx - 1;
+                                            commission = data.commissions.months[months[commissionMonth]] || 0;
+                                        }
                                         return (
                                             <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
                                                 {formatCurrency(data.baseSalary.monthly + commission)}
                                             </td>
                                         );
                                     })}
-                                    <td className="total-column">{formatCurrency(data.baseSalary.annual + data.commissions.total)}</td>
+                                    <td className="total-column">{formatCurrency(data.baseSalary.annual + data.commissions.total + (data.december2024Commission || 179.73))}</td>
                                 </tr>
                             </tbody>
                         </table>

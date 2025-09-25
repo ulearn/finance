@@ -99,7 +99,7 @@
             background: #f7fafc;
             color: #2d3748;
             padding: 10px 6px;
-            text-align: right;
+            text-align: center;  /* Changed from right to center */
             font-weight: 600;
             border: 1px solid #e2e8f0;
         }
@@ -110,7 +110,7 @@
         }
         .data-table td {
             padding: 8px 6px;
-            text-align: right;
+            text-align: left;  /* Changed from right to left */
             border: 1px solid #e2e8f0;
             background: white;
         }
@@ -183,6 +183,7 @@
             background: #edf2f7 !important;
             font-weight: 700;
             border-left: 2px solid #cbd5e0 !important;
+            text-align: right !important;  /* Total column always right aligned */
         }
         .growth-positive {
             color: #22c55e;
@@ -408,12 +409,17 @@
                                 <tr className="quarter-row">
                                     <td>Q</td>
                                     {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
+                                        if (idx % 3 === 1) {
+                                            // Middle cell of quarter - show the value centered
+                                            const q = lastYearQuarters[`Q${Math.floor(idx / 3) + 1}`];
                                             return (
-                                                <td key={month} className="quarter-separator">
-                                                    {formatCurrency(lastYearQuarters[`Q${Math.floor(idx / 3) + 1}`])}
+                                                <td key={month} style={{ textAlign: 'center', fontWeight: '600' }}>
+                                                    {formatCurrency(q)}
                                                 </td>
                                             );
+                                        } else if (idx % 3 === 2) {
+                                            // Last cell of quarter - just the separator
+                                            return <td key={month} className="quarter-separator"></td>;
                                         }
                                         return <td key={month}></td>;
                                     })}
@@ -431,12 +437,15 @@
                                 <tr className="quarter-row">
                                     <td>Q</td>
                                     {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
+                                        if (idx % 3 === 1) {
+                                            const q = currentYearQuarters[`Q${Math.floor(idx / 3) + 1}`];
                                             return (
-                                                <td key={month} className="quarter-separator">
-                                                    {formatCurrency(currentYearQuarters[`Q${Math.floor(idx / 3) + 1}`])}
+                                                <td key={month} style={{ textAlign: 'center', fontWeight: '600' }}>
+                                                    {formatCurrency(q)}
                                                 </td>
                                             );
+                                        } else if (idx % 3 === 2) {
+                                            return <td key={month} className="quarter-separator"></td>;
                                         }
                                         return <td key={month}></td>;
                                     })}
@@ -445,14 +454,16 @@
                                 <tr className="q-diff-row">
                                     <td>Q DIFF</td>
                                     {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
-                                            const qNum = `Q${Math.floor(idx / 3) + 1}`;
-                                            const diff = currentYearQuarters[qNum] - lastYearQuarters[qNum];
+                                        if (idx % 3 === 1) {
+                                            const qNum = Math.floor(idx / 3) + 1;
+                                            const diff = currentYearQuarters[`Q${qNum}`] - lastYearQuarters[`Q${qNum}`];
                                             return (
-                                                <td key={month} className={`quarter-separator ${diff >= 0 ? 'growth-positive' : 'growth-negative'}`}>
+                                                <td key={month} className={diff >= 0 ? 'growth-positive' : 'growth-negative'} style={{ textAlign: 'center', fontWeight: '700' }}>
                                                     {formatCurrency(diff)}
                                                 </td>
                                             );
+                                        } else if (idx % 3 === 2) {
+                                            return <td key={month} className="quarter-separator"></td>;
                                         }
                                         return <td key={month}></td>;
                                     })}
@@ -467,6 +478,23 @@
                                     ))}
                                     <td className="total-column">{formatCurrency(Object.values(data.lastYearMonthly).reduce((sum, m) => sum + (m.b2b_course || 0), 0))}</td>
                                 </tr>
+                                <tr className="quarter-row">
+                                    <td>Q</td>
+                                    {months.map((month, idx) => {
+                                        if (idx % 3 === 1) {
+                                            const q = lastYearCourseQuarters[`Q${Math.floor(idx / 3) + 1}`];
+                                            return (
+                                                <td key={month} style={{ textAlign: 'center', fontWeight: '600' }}>
+                                                    {formatCurrency(q)}
+                                                </td>
+                                            );
+                                        } else if (idx % 3 === 2) {
+                                            return <td key={month} className="quarter-separator"></td>;
+                                        }
+                                        return <td key={month}></td>;
+                                    })}
+                                    <td className="total-column"></td>
+                                </tr>
                                 <tr className="ytd-row">
                                     <td>2025 Course Fees</td>
                                     {months.map((month, idx) => (
@@ -475,6 +503,23 @@
                                         </td>
                                     ))}
                                     <td className="total-column">{formatCurrency(Object.values(data.monthlyData).reduce((sum, m) => sum + (m.b2b_course || 0), 0))}</td>
+                                </tr>
+                                <tr className="quarter-row">
+                                    <td>Q</td>
+                                    {months.map((month, idx) => {
+                                        if (idx % 3 === 1) {
+                                            const q = currentYearCourseQuarters[`Q${Math.floor(idx / 3) + 1}`];
+                                            return (
+                                                <td key={month} style={{ textAlign: 'center', fontWeight: '600' }}>
+                                                    {formatCurrency(q)}
+                                                </td>
+                                            );
+                                        } else if (idx % 3 === 2) {
+                                            return <td key={month} className="quarter-separator"></td>;
+                                        }
+                                        return <td key={month}></td>;
+                                    })}
+                                    <td className="total-column"></td>
                                 </tr>
                                 <tr className="yoy-row">
                                     <td>YoY € (Course)</td>
