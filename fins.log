@@ -333,3 +333,22 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
+[2025-09-26T23:50:53.440Z] Attempting to connect to MySQL...
+[2025-09-26T23:50:53.444Z] MySQL connected successfully
+[2025-09-26T23:50:53.446Z] Date format check: {
+  "date": "02/01/2024",
+  "refund_date": null,
+  "date_format": "d/m/Y"
+}
+[2025-09-26T23:50:53.451Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-26T23:50:53.469Z] Revenue query returned 40 rows
+[2025-09-26T23:50:53.469Z] Refunds query returned 7 rows
+[2025-09-26T23:50:53.469Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
