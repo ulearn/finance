@@ -1,5 +1,18 @@
 // index.js v3 - Fixed with correct import-api.js path
 require('dotenv').config();
+
+// Set up logging with auto-rotation (only if logger exists)
+let logger = null;
+try {
+  logger = require('./logger');
+  logger.setupLogger();
+} catch (error) {
+  console.warn('⚠️ Logger not found, using console logging');
+  logger = {
+    getLogStats: () => ({ message: 'Console logging active' })
+  };
+}
+
 const express = require('express');
 const path = require('path');
 const app = express();
