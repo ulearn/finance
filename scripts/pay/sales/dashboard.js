@@ -58,14 +58,12 @@ async function getMonthlyData() {
             FROM sales_data 
             WHERE date IS NOT NULL 
             AND date != ''
-            AND (method IS NULL OR method != 'TransferMate Escrow')
         ` : `
             SELECT MAX(STR_TO_DATE(date, '%d/%m/%Y')) as max_date 
             FROM sales_data 
             WHERE date IS NOT NULL 
             AND date != ''
             AND STR_TO_DATE(date, '%d/%m/%Y') IS NOT NULL
-            AND (method IS NULL OR method != 'TransferMate Escrow')
         `;
         
         const [maxDateResult] = await connection.execute(maxDateQuery);
@@ -108,7 +106,7 @@ async function getMonthlyData() {
             AND date != ''
             AND amount IS NOT NULL
             AND amount != ''
-            AND (method IS NULL OR method != 'TransferMate Escrow')
+            AND (visa_status != 'Pending' OR visa_status IS NULL)
             GROUP BY year, month, channel
             ORDER BY year, month, channel
         ` : `
@@ -143,36 +141,24 @@ async function getMonthlyData() {
             AND STR_TO_DATE(date, '%d/%m/%Y') IS NOT NULL
             AND amount IS NOT NULL
             AND amount != ''
-            AND (method IS NULL OR method != 'TransferMate Escrow')
+            AND (visa_status != 'Pending' OR visa_status IS NULL)
             GROUP BY year, month, channel
             ORDER BY year, month, channel
         `;
         
         // Query for refunds in 2025 - handle both date formats
         const refundsQuery = `
-            SELECT 
+            SELECT
+                MONTH(refund_date) as month,
                 CASE
-                    WHEN refund_date LIKE '____-__-__' THEN MONTH(refund_date)
-                    WHEN refund_date LIKE '__/__/____' THEN MONTH(STR_TO_DATE(refund_date, '%d/%m/%Y'))
-                    ELSE NULL
-                END as month,
-                CASE 
                     WHEN agent IS NOT NULL AND agent != '' THEN 'B2B'
                     ELSE 'B2C'
                 END as channel,
+                SUM(CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2))) as refunded_amount,
                 SUM(
-                    CAST(
-                        REPLACE(REPLACE(amount, '€', ''), ',', '') 
-                        AS DECIMAL(10,2)
-                    )
-                ) as refunded_amount,
-                SUM(
-                    CASE 
+                    CASE
                         WHEN course IS NOT NULL AND course != '' THEN
-                            CAST(
-                                REPLACE(REPLACE(course, '€', ''), ',', '') 
-                                AS DECIMAL(10,2)
-                            )
+                            CAST(REPLACE(SUBSTRING(course, 2), ',', '') AS DECIMAL(10,2))
                         ELSE 0
                     END
                 ) as refunded_course_fees,
@@ -180,11 +166,10 @@ async function getMonthlyData() {
             FROM sales_data
             WHERE refunded = 'Yes'
             AND refund_date IS NOT NULL
-            AND refund_date != ''
-            AND (
-                (refund_date LIKE '2025-__-__')
-                OR (refund_date LIKE '__/__/2025' AND STR_TO_DATE(refund_date, '%d/%m/%Y') IS NOT NULL)
-            )
+            AND refund_date > '0000-00-00'
+            AND YEAR(refund_date) = 2025
+            AND (visa_status != 'Pending' OR visa_status IS NULL)
+            AND (method != 'TransferMate' AND method != 'TransferMate Escrow')
             GROUP BY month, channel
             HAVING month IS NOT NULL
             ORDER BY month, channel
@@ -193,8 +178,9 @@ async function getMonthlyData() {
         const [revenueRows] = await connection.execute(revenueQuery);
         const [refundRows] = await connection.execute(refundsQuery);
         
-        console.log(`Revenue query returned ${revenueRows.length} rows (excluding TransferMate Escrow)`);
+        console.log(`Revenue query returned ${revenueRows.length} rows`);
         console.log(`Refunds query returned ${refundRows.length} rows`);
+        console.log('Refunds by month:', refundRows.map(r => `Month ${r.month}: ${r.channel} = €${r.refunded_amount}`));
         
         // Process data with refunds
         const processedData = processDataForDashboards(revenueRows, refundRows, currentMonth, currentDay);
@@ -812,34 +798,30 @@ router.get('/test', async (req, res) => {
         
         // Test date formats
         const [dateFormats] = await connection.execute(`
-            SELECT 
+            SELECT
                 date,
                 refund_date,
-                CASE 
+                CASE
                     WHEN date LIKE '____-__-__' THEN 'YYYY-MM-DD'
                     WHEN date LIKE '__/__/____' THEN 'd/m/Y'
                     ELSE 'OTHER'
                 END as date_format,
-                CASE 
-                    WHEN refund_date LIKE '____-__-__' THEN 'YYYY-MM-DD'
-                    WHEN refund_date LIKE '__/__/____' THEN 'd/m/Y'
-                    ELSE 'OTHER'
-                END as refund_date_format
+                'DATE' as refund_date_format
             FROM sales_data
             WHERE (date IS NOT NULL AND date != '')
-               OR (refund_date IS NOT NULL AND refund_date != '')
+               OR (refund_date IS NOT NULL AND refund_date > '0000-00-00')
             LIMIT 10
         `);
         
         // Test for refunds
         const [refundTest] = await connection.execute(`
-            SELECT 
+            SELECT
                 COUNT(*) as total_refunds,
                 SUM(CAST(REPLACE(REPLACE(amount, '€', ''), ',', '') AS DECIMAL(10,2))) as total_refunded
             FROM sales_data
             WHERE refunded = 'Yes'
             AND refund_date IS NOT NULL
-            AND refund_date != ''
+            AND refund_date > '0000-00-00'
         `);
         
         res.json({
