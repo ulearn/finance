@@ -169,7 +169,6 @@ async function getMonthlyData() {
             AND refund_date > '0000-00-00'
             AND YEAR(refund_date) = 2025
             AND (visa_status != 'Pending' OR visa_status IS NULL)
-            AND (method != 'TransferMate' AND method != 'TransferMate Escrow')
             GROUP BY month, channel
             HAVING month IS NOT NULL
             ORDER BY month, channel
