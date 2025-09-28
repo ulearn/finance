@@ -1,5 +1,6 @@
-[2025-09-26T23:34:47.278Z] LOG ROTATED: Previous 5190 lines moved to gads_history.log
-[2025-09-26T23:34:47.279Z] Refunds by month: [
+[2025-09-28T21:38:24.537Z] LOG ROTATED: Previous 5332 lines moved to gads_history.log
+[2025-09-28T21:38:24.538Z] Refunds query returned 7 rows
+[2025-09-28T21:38:24.538Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -8,17 +9,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:35:47.218Z] Attempting to connect to MySQL...
-[2025-09-26T23:35:47.222Z] MySQL connected successfully
-[2025-09-26T23:35:47.224Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:35:47.232Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:35:47.254Z] Revenue query returned 40 rows
-[2025-09-26T23:35:47.255Z] Refunds query returned 7 rows
-[2025-09-26T23:35:47.255Z] Refunds by month: [
+[2025-09-28T21:39:22.864Z] Attempting to connect to MySQL...
+[2025-09-28T21:39:22.868Z] Attempting to connect to MySQL...
+[2025-09-28T21:39:22.874Z] MySQL connected successfully
+[2025-09-28T21:39:22.875Z] Using date_tmp field in proper date format
+[2025-09-28T21:39:22.878Z] MySQL connected successfully
+[2025-09-28T21:39:22.878Z] Using date_tmp field in proper date format
+[2025-09-28T21:39:22.882Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:39:22.883Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:39:22.903Z] Revenue query returned 40 rows
+[2025-09-28T21:39:22.903Z] Refunds query returned 7 rows
+[2025-09-28T21:39:22.903Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -27,17 +28,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:36:47.222Z] Attempting to connect to MySQL...
-[2025-09-26T23:36:47.230Z] MySQL connected successfully
-[2025-09-26T23:36:47.232Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:36:47.239Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:36:47.257Z] Revenue query returned 40 rows
-[2025-09-26T23:36:47.257Z] Refunds query returned 7 rows
-[2025-09-26T23:36:47.257Z] Refunds by month: [
+[2025-09-28T21:39:22.907Z] Revenue query returned 40 rows
+[2025-09-28T21:39:22.908Z] Refunds query returned 7 rows
+[2025-09-28T21:39:22.908Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -46,17 +39,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:37:19.273Z] Attempting to connect to MySQL...
-[2025-09-26T23:37:19.278Z] MySQL connected successfully
-[2025-09-26T23:37:19.280Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:37:19.285Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:37:19.311Z] Revenue query returned 40 rows
-[2025-09-26T23:37:19.311Z] Refunds query returned 7 rows
-[2025-09-26T23:37:19.311Z] Refunds by month: [
+[2025-09-28T21:40:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T21:40:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T21:40:22.793Z] MySQL connected successfully
+[2025-09-28T21:40:22.793Z] Using date_tmp field in proper date format
+[2025-09-28T21:40:22.795Z] MySQL connected successfully
+[2025-09-28T21:40:22.796Z] Using date_tmp field in proper date format
+[2025-09-28T21:40:22.801Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:40:22.802Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:40:22.827Z] Revenue query returned 40 rows
+[2025-09-28T21:40:22.827Z] Refunds query returned 7 rows
+[2025-09-28T21:40:22.828Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -65,17 +58,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:38:19.335Z] Attempting to connect to MySQL...
-[2025-09-26T23:38:19.338Z] MySQL connected successfully
-[2025-09-26T23:38:19.340Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:38:19.346Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:38:19.372Z] Revenue query returned 40 rows
-[2025-09-26T23:38:19.372Z] Refunds query returned 7 rows
-[2025-09-26T23:38:19.372Z] Refunds by month: [
+[2025-09-28T21:40:22.832Z] Revenue query returned 40 rows
+[2025-09-28T21:40:22.833Z] Refunds query returned 7 rows
+[2025-09-28T21:40:22.833Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -84,17 +69,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:38:26.710Z] Attempting to connect to MySQL...
-[2025-09-26T23:38:26.715Z] MySQL connected successfully
-[2025-09-26T23:38:26.717Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:38:26.724Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:38:26.751Z] Revenue query returned 40 rows
-[2025-09-26T23:38:26.751Z] Refunds query returned 7 rows
-[2025-09-26T23:38:26.751Z] Refunds by month: [
+[2025-09-28T21:41:22.780Z] Attempting to connect to MySQL...
+[2025-09-28T21:41:22.782Z] Attempting to connect to MySQL...
+[2025-09-28T21:41:22.791Z] MySQL connected successfully
+[2025-09-28T21:41:22.792Z] Using date_tmp field in proper date format
+[2025-09-28T21:41:22.792Z] MySQL connected successfully
+[2025-09-28T21:41:22.792Z] Using date_tmp field in proper date format
+[2025-09-28T21:41:22.797Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:41:22.798Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:41:22.815Z] Revenue query returned 40 rows
+[2025-09-28T21:41:22.815Z] Refunds query returned 7 rows
+[2025-09-28T21:41:22.815Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -103,19 +88,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:39:28.053Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
-[2025-09-26T23:39:28.331Z] Fins app started under Phusion Passenger
-[2025-09-26T23:39:28.367Z] Attempting to connect to MySQL...
-[2025-09-26T23:39:28.408Z] MySQL connected successfully
-[2025-09-26T23:39:28.418Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:39:28.426Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:39:28.447Z] Revenue query returned 40 rows
-[2025-09-26T23:39:28.447Z] Refunds query returned 7 rows
-[2025-09-26T23:39:28.448Z] Refunds by month: [
+[2025-09-28T21:41:22.824Z] Revenue query returned 40 rows
+[2025-09-28T21:41:22.824Z] Refunds query returned 7 rows
+[2025-09-28T21:41:22.824Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -124,17 +99,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:39:53.387Z] Attempting to connect to MySQL...
-[2025-09-26T23:39:53.394Z] MySQL connected successfully
-[2025-09-26T23:39:53.397Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:39:53.403Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:39:53.425Z] Revenue query returned 40 rows
-[2025-09-26T23:39:53.425Z] Refunds query returned 7 rows
-[2025-09-26T23:39:53.426Z] Refunds by month: [
+[2025-09-28T21:42:22.777Z] Attempting to connect to MySQL...
+[2025-09-28T21:42:22.781Z] Attempting to connect to MySQL...
+[2025-09-28T21:42:22.784Z] MySQL connected successfully
+[2025-09-28T21:42:22.785Z] Using date_tmp field in proper date format
+[2025-09-28T21:42:22.788Z] MySQL connected successfully
+[2025-09-28T21:42:22.788Z] Using date_tmp field in proper date format
+[2025-09-28T21:42:22.792Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:42:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:42:22.812Z] Revenue query returned 40 rows
+[2025-09-28T21:42:22.813Z] Refunds query returned 7 rows
+[2025-09-28T21:42:22.813Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -143,17 +118,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:40:53.440Z] Attempting to connect to MySQL...
-[2025-09-26T23:40:53.445Z] MySQL connected successfully
-[2025-09-26T23:40:53.447Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:40:53.452Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:40:53.469Z] Revenue query returned 40 rows
-[2025-09-26T23:40:53.470Z] Refunds query returned 7 rows
-[2025-09-26T23:40:53.470Z] Refunds by month: [
+[2025-09-28T21:42:22.817Z] Revenue query returned 40 rows
+[2025-09-28T21:42:22.817Z] Refunds query returned 7 rows
+[2025-09-28T21:42:22.818Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -162,17 +129,19 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:41:53.440Z] Attempting to connect to MySQL...
-[2025-09-26T23:41:53.445Z] MySQL connected successfully
-[2025-09-26T23:41:53.447Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:41:53.452Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:41:53.471Z] Revenue query returned 40 rows
-[2025-09-26T23:41:53.471Z] Refunds query returned 7 rows
-[2025-09-26T23:41:53.471Z] Refunds by month: [
+[2025-09-28T21:43:24.253Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T21:43:24.649Z] Fins app started under Phusion Passenger
+[2025-09-28T21:43:24.698Z] Attempting to connect to MySQL...
+[2025-09-28T21:43:24.729Z] Attempting to connect to MySQL...
+[2025-09-28T21:43:24.756Z] MySQL connected successfully
+[2025-09-28T21:43:24.757Z] Using date_tmp field in proper date format
+[2025-09-28T21:43:24.765Z] MySQL connected successfully
+[2025-09-28T21:43:24.765Z] Using date_tmp field in proper date format
+[2025-09-28T21:43:24.772Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:43:24.778Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:43:24.800Z] Revenue query returned 40 rows
+[2025-09-28T21:43:24.800Z] Refunds query returned 7 rows
+[2025-09-28T21:43:24.801Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -181,17 +150,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:42:53.448Z] Attempting to connect to MySQL...
-[2025-09-26T23:42:53.453Z] MySQL connected successfully
-[2025-09-26T23:42:53.455Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:42:53.460Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:42:53.482Z] Revenue query returned 40 rows
-[2025-09-26T23:42:53.483Z] Refunds query returned 7 rows
-[2025-09-26T23:42:53.483Z] Refunds by month: [
+[2025-09-28T21:43:24.820Z] Revenue query returned 40 rows
+[2025-09-28T21:43:24.820Z] Refunds query returned 7 rows
+[2025-09-28T21:43:24.820Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -200,17 +161,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:43:53.443Z] Attempting to connect to MySQL...
-[2025-09-26T23:43:53.449Z] MySQL connected successfully
-[2025-09-26T23:43:53.450Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:43:53.458Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:43:53.485Z] Revenue query returned 40 rows
-[2025-09-26T23:43:53.485Z] Refunds query returned 7 rows
-[2025-09-26T23:43:53.485Z] Refunds by month: [
+[2025-09-28T21:44:22.780Z] Attempting to connect to MySQL...
+[2025-09-28T21:44:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T21:44:22.791Z] MySQL connected successfully
+[2025-09-28T21:44:22.792Z] Using date_tmp field in proper date format
+[2025-09-28T21:44:22.796Z] MySQL connected successfully
+[2025-09-28T21:44:22.796Z] Using date_tmp field in proper date format
+[2025-09-28T21:44:22.798Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:44:22.808Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:44:22.825Z] Revenue query returned 40 rows
+[2025-09-28T21:44:22.825Z] Refunds query returned 7 rows
+[2025-09-28T21:44:22.826Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -219,17 +180,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:44:53.433Z] Attempting to connect to MySQL...
-[2025-09-26T23:44:53.438Z] MySQL connected successfully
-[2025-09-26T23:44:53.440Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:44:53.447Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:44:53.465Z] Revenue query returned 40 rows
-[2025-09-26T23:44:53.466Z] Refunds query returned 7 rows
-[2025-09-26T23:44:53.467Z] Refunds by month: [
+[2025-09-28T21:44:22.834Z] Revenue query returned 40 rows
+[2025-09-28T21:44:22.834Z] Refunds query returned 7 rows
+[2025-09-28T21:44:22.834Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -238,17 +191,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:45:53.451Z] Attempting to connect to MySQL...
-[2025-09-26T23:45:53.455Z] MySQL connected successfully
-[2025-09-26T23:45:53.457Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:45:53.462Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:45:53.482Z] Revenue query returned 40 rows
-[2025-09-26T23:45:53.483Z] Refunds query returned 7 rows
-[2025-09-26T23:45:53.483Z] Refunds by month: [
+[2025-09-28T21:45:22.798Z] Attempting to connect to MySQL...
+[2025-09-28T21:45:22.805Z] Attempting to connect to MySQL...
+[2025-09-28T21:45:22.812Z] MySQL connected successfully
+[2025-09-28T21:45:22.813Z] Using date_tmp field in proper date format
+[2025-09-28T21:45:22.820Z] MySQL connected successfully
+[2025-09-28T21:45:22.821Z] Using date_tmp field in proper date format
+[2025-09-28T21:45:22.824Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:45:22.858Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:45:22.914Z] Revenue query returned 40 rows
+[2025-09-28T21:45:22.914Z] Refunds query returned 7 rows
+[2025-09-28T21:45:22.914Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -257,17 +210,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:46:53.442Z] Attempting to connect to MySQL...
-[2025-09-26T23:46:53.448Z] MySQL connected successfully
-[2025-09-26T23:46:53.449Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:46:53.454Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:46:53.473Z] Revenue query returned 40 rows
-[2025-09-26T23:46:53.473Z] Refunds query returned 7 rows
-[2025-09-26T23:46:53.473Z] Refunds by month: [
+[2025-09-28T21:45:22.932Z] Revenue query returned 40 rows
+[2025-09-28T21:45:22.933Z] Refunds query returned 7 rows
+[2025-09-28T21:45:22.933Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -276,17 +221,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:47:53.442Z] Attempting to connect to MySQL...
-[2025-09-26T23:47:53.448Z] MySQL connected successfully
-[2025-09-26T23:47:53.451Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:47:53.457Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:47:53.479Z] Revenue query returned 40 rows
-[2025-09-26T23:47:53.479Z] Refunds query returned 7 rows
-[2025-09-26T23:47:53.480Z] Refunds by month: [
+[2025-09-28T21:46:22.795Z] Attempting to connect to MySQL...
+[2025-09-28T21:46:22.800Z] Attempting to connect to MySQL...
+[2025-09-28T21:46:22.818Z] MySQL connected successfully
+[2025-09-28T21:46:22.818Z] Using date_tmp field in proper date format
+[2025-09-28T21:46:22.824Z] MySQL connected successfully
+[2025-09-28T21:46:22.827Z] Using date_tmp field in proper date format
+[2025-09-28T21:46:22.828Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:46:22.837Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:46:22.868Z] Revenue query returned 40 rows
+[2025-09-28T21:46:22.868Z] Refunds query returned 7 rows
+[2025-09-28T21:46:22.868Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -295,17 +240,9 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:48:53.435Z] Attempting to connect to MySQL...
-[2025-09-26T23:48:53.438Z] MySQL connected successfully
-[2025-09-26T23:48:53.439Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:48:53.445Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:48:53.464Z] Revenue query returned 40 rows
-[2025-09-26T23:48:53.464Z] Refunds query returned 7 rows
-[2025-09-26T23:48:53.465Z] Refunds by month: [
+[2025-09-28T21:46:22.876Z] Revenue query returned 40 rows
+[2025-09-28T21:46:22.876Z] Refunds query returned 7 rows
+[2025-09-28T21:46:22.877Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -314,17 +251,17 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:49:53.447Z] Attempting to connect to MySQL...
-[2025-09-26T23:49:53.450Z] MySQL connected successfully
-[2025-09-26T23:49:53.451Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:49:53.456Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:49:53.474Z] Revenue query returned 40 rows
-[2025-09-26T23:49:53.474Z] Refunds query returned 7 rows
-[2025-09-26T23:49:53.474Z] Refunds by month: [
+[2025-09-28T21:47:22.794Z] Attempting to connect to MySQL...
+[2025-09-28T21:47:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T21:47:22.803Z] MySQL connected successfully
+[2025-09-28T21:47:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T21:47:22.804Z] MySQL connected successfully
+[2025-09-28T21:47:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T21:47:22.807Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:47:22.811Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:47:22.823Z] Revenue query returned 40 rows
+[2025-09-28T21:47:22.823Z] Refunds query returned 7 rows
+[2025-09-28T21:47:22.824Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",
@@ -333,17 +270,2783 @@
   "Month 9: B2B = €3235.00",
   "Month 9: B2C = €3850.00"
 ]
-[2025-09-26T23:50:53.440Z] Attempting to connect to MySQL...
-[2025-09-26T23:50:53.444Z] MySQL connected successfully
-[2025-09-26T23:50:53.446Z] Date format check: {
-  "date": "02/01/2024",
-  "refund_date": null,
-  "date_format": "d/m/Y"
-}
-[2025-09-26T23:50:53.451Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
-[2025-09-26T23:50:53.469Z] Revenue query returned 40 rows
-[2025-09-26T23:50:53.469Z] Refunds query returned 7 rows
-[2025-09-26T23:50:53.469Z] Refunds by month: [
+[2025-09-28T21:47:22.838Z] Revenue query returned 40 rows
+[2025-09-28T21:47:22.839Z] Refunds query returned 7 rows
+[2025-09-28T21:47:22.839Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:48:22.796Z] Attempting to connect to MySQL...
+[2025-09-28T21:48:22.798Z] Attempting to connect to MySQL...
+[2025-09-28T21:48:22.805Z] MySQL connected successfully
+[2025-09-28T21:48:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T21:48:22.808Z] MySQL connected successfully
+[2025-09-28T21:48:22.809Z] Using date_tmp field in proper date format
+[2025-09-28T21:48:22.809Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:48:22.815Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:48:22.830Z] Revenue query returned 40 rows
+[2025-09-28T21:48:22.830Z] Refunds query returned 7 rows
+[2025-09-28T21:48:22.830Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:48:22.836Z] Revenue query returned 40 rows
+[2025-09-28T21:48:22.836Z] Refunds query returned 7 rows
+[2025-09-28T21:48:22.836Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:49:22.812Z] Attempting to connect to MySQL...
+[2025-09-28T21:49:22.815Z] Attempting to connect to MySQL...
+[2025-09-28T21:49:22.818Z] MySQL connected successfully
+[2025-09-28T21:49:22.819Z] Using date_tmp field in proper date format
+[2025-09-28T21:49:22.822Z] MySQL connected successfully
+[2025-09-28T21:49:22.822Z] Using date_tmp field in proper date format
+[2025-09-28T21:49:22.825Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:49:22.826Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:49:22.842Z] Revenue query returned 40 rows
+[2025-09-28T21:49:22.842Z] Refunds query returned 7 rows
+[2025-09-28T21:49:22.843Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:49:22.852Z] Revenue query returned 40 rows
+[2025-09-28T21:49:22.852Z] Refunds query returned 7 rows
+[2025-09-28T21:49:22.853Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:50:22.782Z] Attempting to connect to MySQL...
+[2025-09-28T21:50:22.785Z] Attempting to connect to MySQL...
+[2025-09-28T21:50:22.806Z] MySQL connected successfully
+[2025-09-28T21:50:22.806Z] Using date_tmp field in proper date format
+[2025-09-28T21:50:22.814Z] MySQL connected successfully
+[2025-09-28T21:50:22.814Z] Using date_tmp field in proper date format
+[2025-09-28T21:50:22.817Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:50:22.826Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:50:22.846Z] Revenue query returned 40 rows
+[2025-09-28T21:50:22.846Z] Refunds query returned 7 rows
+[2025-09-28T21:50:22.847Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:50:22.861Z] Revenue query returned 40 rows
+[2025-09-28T21:50:22.861Z] Refunds query returned 7 rows
+[2025-09-28T21:50:22.861Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:51:22.760Z] Attempting to connect to MySQL...
+[2025-09-28T21:51:22.763Z] Attempting to connect to MySQL...
+[2025-09-28T21:51:22.768Z] MySQL connected successfully
+[2025-09-28T21:51:22.768Z] Using date_tmp field in proper date format
+[2025-09-28T21:51:22.771Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:51:22.772Z] MySQL connected successfully
+[2025-09-28T21:51:22.773Z] Using date_tmp field in proper date format
+[2025-09-28T21:51:22.777Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:51:22.797Z] Revenue query returned 40 rows
+[2025-09-28T21:51:22.797Z] Refunds query returned 7 rows
+[2025-09-28T21:51:22.797Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:51:22.813Z] Revenue query returned 40 rows
+[2025-09-28T21:51:22.813Z] Refunds query returned 7 rows
+[2025-09-28T21:51:22.813Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:52:22.786Z] Attempting to connect to MySQL...
+[2025-09-28T21:52:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T21:52:22.795Z] MySQL connected successfully
+[2025-09-28T21:52:22.795Z] Using date_tmp field in proper date format
+[2025-09-28T21:52:22.798Z] MySQL connected successfully
+[2025-09-28T21:52:22.798Z] Using date_tmp field in proper date format
+[2025-09-28T21:52:22.800Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:52:22.803Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:52:22.828Z] Revenue query returned 40 rows
+[2025-09-28T21:52:22.828Z] Refunds query returned 7 rows
+[2025-09-28T21:52:22.828Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:52:22.833Z] Revenue query returned 40 rows
+[2025-09-28T21:52:22.834Z] Refunds query returned 7 rows
+[2025-09-28T21:52:22.834Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:53:22.787Z] Attempting to connect to MySQL...
+[2025-09-28T21:53:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T21:53:22.794Z] MySQL connected successfully
+[2025-09-28T21:53:22.794Z] Using date_tmp field in proper date format
+[2025-09-28T21:53:22.798Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:53:22.799Z] MySQL connected successfully
+[2025-09-28T21:53:22.799Z] Using date_tmp field in proper date format
+[2025-09-28T21:53:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:53:22.815Z] Revenue query returned 40 rows
+[2025-09-28T21:53:22.815Z] Refunds query returned 7 rows
+[2025-09-28T21:53:22.816Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:53:22.825Z] Revenue query returned 40 rows
+[2025-09-28T21:53:22.825Z] Refunds query returned 7 rows
+[2025-09-28T21:53:22.826Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:54:22.823Z] Attempting to connect to MySQL...
+[2025-09-28T21:54:22.829Z] Attempting to connect to MySQL...
+[2025-09-28T21:54:22.831Z] MySQL connected successfully
+[2025-09-28T21:54:22.831Z] Using date_tmp field in proper date format
+[2025-09-28T21:54:22.835Z] MySQL connected successfully
+[2025-09-28T21:54:22.835Z] Using date_tmp field in proper date format
+[2025-09-28T21:54:22.836Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:54:22.841Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:54:22.853Z] Revenue query returned 40 rows
+[2025-09-28T21:54:22.854Z] Refunds query returned 7 rows
+[2025-09-28T21:54:22.854Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:54:22.863Z] Revenue query returned 40 rows
+[2025-09-28T21:54:22.863Z] Refunds query returned 7 rows
+[2025-09-28T21:54:22.864Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:55:22.807Z] Attempting to connect to MySQL...
+[2025-09-28T21:55:22.808Z] Attempting to connect to MySQL...
+[2025-09-28T21:55:22.813Z] MySQL connected successfully
+[2025-09-28T21:55:22.814Z] Using date_tmp field in proper date format
+[2025-09-28T21:55:22.817Z] MySQL connected successfully
+[2025-09-28T21:55:22.817Z] Using date_tmp field in proper date format
+[2025-09-28T21:55:22.818Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:55:22.821Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:55:22.834Z] Revenue query returned 40 rows
+[2025-09-28T21:55:22.835Z] Refunds query returned 7 rows
+[2025-09-28T21:55:22.835Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:55:22.840Z] Revenue query returned 40 rows
+[2025-09-28T21:55:22.841Z] Refunds query returned 7 rows
+[2025-09-28T21:55:22.841Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:56:24.047Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T21:56:24.329Z] Fins app started under Phusion Passenger
+[2025-09-28T21:56:24.362Z] Attempting to connect to MySQL...
+[2025-09-28T21:56:24.388Z] Attempting to connect to MySQL...
+[2025-09-28T21:56:24.411Z] MySQL connected successfully
+[2025-09-28T21:56:24.411Z] Using date_tmp field in proper date format
+[2025-09-28T21:56:24.417Z] MySQL connected successfully
+[2025-09-28T21:56:24.418Z] Using date_tmp field in proper date format
+[2025-09-28T21:56:24.424Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:56:24.426Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:56:24.449Z] Revenue query returned 40 rows
+[2025-09-28T21:56:24.449Z] Refunds query returned 7 rows
+[2025-09-28T21:56:24.449Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:56:24.469Z] Revenue query returned 40 rows
+[2025-09-28T21:56:24.469Z] Refunds query returned 7 rows
+[2025-09-28T21:56:24.470Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:57:22.742Z] Attempting to connect to MySQL...
+[2025-09-28T21:57:22.747Z] MySQL connected successfully
+[2025-09-28T21:57:22.748Z] Using date_tmp field in proper date format
+[2025-09-28T21:57:22.754Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:57:22.772Z] Attempting to connect to MySQL...
+[2025-09-28T21:57:22.782Z] MySQL connected successfully
+[2025-09-28T21:57:22.782Z] Using date_tmp field in proper date format
+[2025-09-28T21:57:22.785Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:57:22.789Z] Revenue query returned 40 rows
+[2025-09-28T21:57:22.789Z] Refunds query returned 7 rows
+[2025-09-28T21:57:22.789Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:57:22.807Z] Revenue query returned 40 rows
+[2025-09-28T21:57:22.807Z] Refunds query returned 7 rows
+[2025-09-28T21:57:22.807Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:58:22.724Z] Attempting to connect to MySQL...
+[2025-09-28T21:58:22.728Z] Attempting to connect to MySQL...
+[2025-09-28T21:58:22.732Z] MySQL connected successfully
+[2025-09-28T21:58:22.733Z] Using date_tmp field in proper date format
+[2025-09-28T21:58:22.734Z] MySQL connected successfully
+[2025-09-28T21:58:22.734Z] Using date_tmp field in proper date format
+[2025-09-28T21:58:22.737Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:58:22.740Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:58:22.758Z] Revenue query returned 40 rows
+[2025-09-28T21:58:22.759Z] Refunds query returned 7 rows
+[2025-09-28T21:58:22.759Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:58:22.763Z] Revenue query returned 40 rows
+[2025-09-28T21:58:22.763Z] Refunds query returned 7 rows
+[2025-09-28T21:58:22.763Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:59:22.736Z] Attempting to connect to MySQL...
+[2025-09-28T21:59:22.739Z] Attempting to connect to MySQL...
+[2025-09-28T21:59:22.745Z] MySQL connected successfully
+[2025-09-28T21:59:22.746Z] Using date_tmp field in proper date format
+[2025-09-28T21:59:22.748Z] MySQL connected successfully
+[2025-09-28T21:59:22.749Z] Using date_tmp field in proper date format
+[2025-09-28T21:59:22.750Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:59:22.753Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T21:59:22.769Z] Revenue query returned 40 rows
+[2025-09-28T21:59:22.769Z] Refunds query returned 7 rows
+[2025-09-28T21:59:22.769Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T21:59:22.774Z] Revenue query returned 40 rows
+[2025-09-28T21:59:22.774Z] Refunds query returned 7 rows
+[2025-09-28T21:59:22.774Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:00:22.802Z] Attempting to connect to MySQL...
+[2025-09-28T22:00:22.815Z] Attempting to connect to MySQL...
+[2025-09-28T22:00:22.853Z] MySQL connected successfully
+[2025-09-28T22:00:22.853Z] Using date_tmp field in proper date format
+[2025-09-28T22:00:22.865Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:00:22.869Z] MySQL connected successfully
+[2025-09-28T22:00:22.882Z] Using date_tmp field in proper date format
+[2025-09-28T22:00:22.935Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:00:23.050Z] Revenue query returned 40 rows
+[2025-09-28T22:00:23.051Z] Refunds query returned 7 rows
+[2025-09-28T22:00:23.052Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:00:23.070Z] Revenue query returned 40 rows
+[2025-09-28T22:00:23.071Z] Refunds query returned 7 rows
+[2025-09-28T22:00:23.072Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:01:24.078Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T22:01:24.346Z] Fins app started under Phusion Passenger
+[2025-09-28T22:01:24.383Z] Attempting to connect to MySQL...
+[2025-09-28T22:01:24.406Z] Attempting to connect to MySQL...
+[2025-09-28T22:01:24.440Z] MySQL connected successfully
+[2025-09-28T22:01:24.441Z] Using date_tmp field in proper date format
+[2025-09-28T22:01:24.450Z] MySQL connected successfully
+[2025-09-28T22:01:24.450Z] Using date_tmp field in proper date format
+[2025-09-28T22:01:24.458Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:01:24.464Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:01:24.482Z] Revenue query returned 40 rows
+[2025-09-28T22:01:24.483Z] Refunds query returned 7 rows
+[2025-09-28T22:01:24.483Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:01:24.509Z] Revenue query returned 40 rows
+[2025-09-28T22:01:24.509Z] Refunds query returned 7 rows
+[2025-09-28T22:01:24.509Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:02:22.817Z] Attempting to connect to MySQL...
+[2025-09-28T22:02:22.821Z] Attempting to connect to MySQL...
+[2025-09-28T22:02:22.827Z] MySQL connected successfully
+[2025-09-28T22:02:22.827Z] Using date_tmp field in proper date format
+[2025-09-28T22:02:22.831Z] MySQL connected successfully
+[2025-09-28T22:02:22.832Z] Using date_tmp field in proper date format
+[2025-09-28T22:02:22.833Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:02:22.837Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:02:22.852Z] Revenue query returned 40 rows
+[2025-09-28T22:02:22.853Z] Refunds query returned 7 rows
+[2025-09-28T22:02:22.853Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:02:22.865Z] Revenue query returned 40 rows
+[2025-09-28T22:02:22.865Z] Refunds query returned 7 rows
+[2025-09-28T22:02:22.866Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:03:22.786Z] Attempting to connect to MySQL...
+[2025-09-28T22:03:22.791Z] Attempting to connect to MySQL...
+[2025-09-28T22:03:22.795Z] MySQL connected successfully
+[2025-09-28T22:03:22.795Z] Using date_tmp field in proper date format
+[2025-09-28T22:03:22.799Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:03:22.800Z] MySQL connected successfully
+[2025-09-28T22:03:22.801Z] Using date_tmp field in proper date format
+[2025-09-28T22:03:22.806Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:03:22.817Z] Revenue query returned 40 rows
+[2025-09-28T22:03:22.817Z] Refunds query returned 7 rows
+[2025-09-28T22:03:22.817Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:03:22.831Z] Revenue query returned 40 rows
+[2025-09-28T22:03:22.832Z] Refunds query returned 7 rows
+[2025-09-28T22:03:22.832Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:04:22.798Z] Attempting to connect to MySQL...
+[2025-09-28T22:04:22.804Z] MySQL connected successfully
+[2025-09-28T22:04:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:04:22.808Z] Attempting to connect to MySQL...
+[2025-09-28T22:04:22.812Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:04:22.816Z] MySQL connected successfully
+[2025-09-28T22:04:22.817Z] Using date_tmp field in proper date format
+[2025-09-28T22:04:22.820Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:04:22.841Z] Revenue query returned 40 rows
+[2025-09-28T22:04:22.841Z] Refunds query returned 7 rows
+[2025-09-28T22:04:22.842Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:04:22.846Z] Revenue query returned 40 rows
+[2025-09-28T22:04:22.846Z] Refunds query returned 7 rows
+[2025-09-28T22:04:22.847Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:05:22.789Z] Attempting to connect to MySQL...
+[2025-09-28T22:05:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:05:22.801Z] MySQL connected successfully
+[2025-09-28T22:05:22.802Z] Using date_tmp field in proper date format
+[2025-09-28T22:05:22.804Z] MySQL connected successfully
+[2025-09-28T22:05:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T22:05:22.807Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:05:22.811Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:05:22.826Z] Revenue query returned 40 rows
+[2025-09-28T22:05:22.826Z] Refunds query returned 7 rows
+[2025-09-28T22:05:22.826Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:05:22.839Z] Revenue query returned 40 rows
+[2025-09-28T22:05:22.839Z] Refunds query returned 7 rows
+[2025-09-28T22:05:22.839Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:06:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T22:06:22.803Z] Attempting to connect to MySQL...
+[2025-09-28T22:06:22.809Z] MySQL connected successfully
+[2025-09-28T22:06:22.810Z] Using date_tmp field in proper date format
+[2025-09-28T22:06:22.818Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:06:22.820Z] MySQL connected successfully
+[2025-09-28T22:06:22.821Z] Using date_tmp field in proper date format
+[2025-09-28T22:06:22.858Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:06:22.868Z] Revenue query returned 40 rows
+[2025-09-28T22:06:22.868Z] Refunds query returned 7 rows
+[2025-09-28T22:06:22.869Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:06:22.885Z] Revenue query returned 40 rows
+[2025-09-28T22:06:22.885Z] Refunds query returned 7 rows
+[2025-09-28T22:06:22.886Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:07:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T22:07:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:07:22.799Z] MySQL connected successfully
+[2025-09-28T22:07:22.800Z] Using date_tmp field in proper date format
+[2025-09-28T22:07:22.803Z] MySQL connected successfully
+[2025-09-28T22:07:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:07:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:07:22.810Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:07:22.830Z] Revenue query returned 40 rows
+[2025-09-28T22:07:22.830Z] Refunds query returned 7 rows
+[2025-09-28T22:07:22.830Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:07:22.835Z] Revenue query returned 40 rows
+[2025-09-28T22:07:22.836Z] Refunds query returned 7 rows
+[2025-09-28T22:07:22.836Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:08:22.765Z] Attempting to connect to MySQL...
+[2025-09-28T22:08:22.768Z] Attempting to connect to MySQL...
+[2025-09-28T22:08:22.774Z] MySQL connected successfully
+[2025-09-28T22:08:22.774Z] Using date_tmp field in proper date format
+[2025-09-28T22:08:22.775Z] MySQL connected successfully
+[2025-09-28T22:08:22.775Z] Using date_tmp field in proper date format
+[2025-09-28T22:08:22.780Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:08:22.782Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:08:22.807Z] Revenue query returned 40 rows
+[2025-09-28T22:08:22.808Z] Refunds query returned 7 rows
+[2025-09-28T22:08:22.809Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:08:22.817Z] Revenue query returned 40 rows
+[2025-09-28T22:08:22.817Z] Refunds query returned 7 rows
+[2025-09-28T22:08:22.817Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:09:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T22:09:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:09:22.800Z] MySQL connected successfully
+[2025-09-28T22:09:22.800Z] Using date_tmp field in proper date format
+[2025-09-28T22:09:22.804Z] MySQL connected successfully
+[2025-09-28T22:09:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:09:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:09:22.808Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:09:22.826Z] Revenue query returned 40 rows
+[2025-09-28T22:09:22.826Z] Refunds query returned 7 rows
+[2025-09-28T22:09:22.826Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:09:22.833Z] Revenue query returned 40 rows
+[2025-09-28T22:09:22.833Z] Refunds query returned 7 rows
+[2025-09-28T22:09:22.833Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:10:22.796Z] Attempting to connect to MySQL...
+[2025-09-28T22:10:22.801Z] Attempting to connect to MySQL...
+[2025-09-28T22:10:22.806Z] MySQL connected successfully
+[2025-09-28T22:10:22.807Z] Using date_tmp field in proper date format
+[2025-09-28T22:10:22.821Z] MySQL connected successfully
+[2025-09-28T22:10:22.821Z] Using date_tmp field in proper date format
+[2025-09-28T22:10:22.823Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:10:22.854Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:10:22.901Z] Revenue query returned 40 rows
+[2025-09-28T22:10:22.901Z] Refunds query returned 7 rows
+[2025-09-28T22:10:22.902Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:10:22.917Z] Revenue query returned 40 rows
+[2025-09-28T22:10:22.918Z] Refunds query returned 7 rows
+[2025-09-28T22:10:22.918Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:11:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:11:22.794Z] Attempting to connect to MySQL...
+[2025-09-28T22:11:22.802Z] MySQL connected successfully
+[2025-09-28T22:11:22.802Z] Using date_tmp field in proper date format
+[2025-09-28T22:11:22.806Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:11:22.806Z] MySQL connected successfully
+[2025-09-28T22:11:22.806Z] Using date_tmp field in proper date format
+[2025-09-28T22:11:22.809Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:11:22.827Z] Revenue query returned 40 rows
+[2025-09-28T22:11:22.828Z] Refunds query returned 7 rows
+[2025-09-28T22:11:22.828Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:11:22.832Z] Revenue query returned 40 rows
+[2025-09-28T22:11:22.832Z] Refunds query returned 7 rows
+[2025-09-28T22:11:22.832Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:12:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:12:22.794Z] Attempting to connect to MySQL...
+[2025-09-28T22:12:22.799Z] MySQL connected successfully
+[2025-09-28T22:12:22.799Z] Using date_tmp field in proper date format
+[2025-09-28T22:12:22.802Z] MySQL connected successfully
+[2025-09-28T22:12:22.802Z] Using date_tmp field in proper date format
+[2025-09-28T22:12:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:12:22.806Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:12:22.826Z] Revenue query returned 40 rows
+[2025-09-28T22:12:22.827Z] Refunds query returned 7 rows
+[2025-09-28T22:12:22.827Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:12:22.832Z] Revenue query returned 40 rows
+[2025-09-28T22:12:22.832Z] Refunds query returned 7 rows
+[2025-09-28T22:12:22.832Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:13:22.782Z] Attempting to connect to MySQL...
+[2025-09-28T22:13:22.786Z] Attempting to connect to MySQL...
+[2025-09-28T22:13:22.790Z] MySQL connected successfully
+[2025-09-28T22:13:22.790Z] Using date_tmp field in proper date format
+[2025-09-28T22:13:22.796Z] MySQL connected successfully
+[2025-09-28T22:13:22.797Z] Using date_tmp field in proper date format
+[2025-09-28T22:13:22.798Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:13:22.802Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:13:22.816Z] Revenue query returned 40 rows
+[2025-09-28T22:13:22.817Z] Refunds query returned 7 rows
+[2025-09-28T22:13:22.817Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:13:22.819Z] Revenue query returned 40 rows
+[2025-09-28T22:13:22.820Z] Refunds query returned 7 rows
+[2025-09-28T22:13:22.820Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:14:22.776Z] Attempting to connect to MySQL...
+[2025-09-28T22:14:22.778Z] Attempting to connect to MySQL...
+[2025-09-28T22:14:22.784Z] MySQL connected successfully
+[2025-09-28T22:14:22.785Z] Using date_tmp field in proper date format
+[2025-09-28T22:14:22.791Z] MySQL connected successfully
+[2025-09-28T22:14:22.791Z] Using date_tmp field in proper date format
+[2025-09-28T22:14:22.793Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:14:22.800Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:14:22.815Z] Revenue query returned 40 rows
+[2025-09-28T22:14:22.815Z] Refunds query returned 7 rows
+[2025-09-28T22:14:22.815Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:14:22.821Z] Revenue query returned 40 rows
+[2025-09-28T22:14:22.821Z] Refunds query returned 7 rows
+[2025-09-28T22:14:22.822Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:15:22.776Z] Attempting to connect to MySQL...
+[2025-09-28T22:15:22.779Z] Attempting to connect to MySQL...
+[2025-09-28T22:15:22.786Z] MySQL connected successfully
+[2025-09-28T22:15:22.786Z] Using date_tmp field in proper date format
+[2025-09-28T22:15:22.792Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:15:22.795Z] MySQL connected successfully
+[2025-09-28T22:15:22.796Z] Using date_tmp field in proper date format
+[2025-09-28T22:15:22.818Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:15:22.856Z] Revenue query returned 40 rows
+[2025-09-28T22:15:22.857Z] Refunds query returned 7 rows
+[2025-09-28T22:15:22.857Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:15:22.881Z] Revenue query returned 40 rows
+[2025-09-28T22:15:22.882Z] Refunds query returned 7 rows
+[2025-09-28T22:15:22.882Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:16:22.773Z] Attempting to connect to MySQL...
+[2025-09-28T22:16:22.795Z] Attempting to connect to MySQL...
+[2025-09-28T22:16:22.802Z] MySQL connected successfully
+[2025-09-28T22:16:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T22:16:22.804Z] MySQL connected successfully
+[2025-09-28T22:16:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:16:22.815Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:16:22.816Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:16:22.846Z] Revenue query returned 40 rows
+[2025-09-28T22:16:22.846Z] Refunds query returned 7 rows
+[2025-09-28T22:16:22.846Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:16:22.864Z] Revenue query returned 40 rows
+[2025-09-28T22:16:22.864Z] Refunds query returned 7 rows
+[2025-09-28T22:16:22.865Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:17:22.776Z] Attempting to connect to MySQL...
+[2025-09-28T22:17:22.779Z] Attempting to connect to MySQL...
+[2025-09-28T22:17:22.782Z] MySQL connected successfully
+[2025-09-28T22:17:22.783Z] Using date_tmp field in proper date format
+[2025-09-28T22:17:22.787Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:17:22.788Z] MySQL connected successfully
+[2025-09-28T22:17:22.788Z] Using date_tmp field in proper date format
+[2025-09-28T22:17:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:17:22.810Z] Revenue query returned 40 rows
+[2025-09-28T22:17:22.810Z] Refunds query returned 7 rows
+[2025-09-28T22:17:22.810Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:17:22.813Z] Revenue query returned 40 rows
+[2025-09-28T22:17:22.813Z] Refunds query returned 7 rows
+[2025-09-28T22:17:22.813Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:18:22.769Z] Attempting to connect to MySQL...
+[2025-09-28T22:18:22.772Z] Attempting to connect to MySQL...
+[2025-09-28T22:18:22.779Z] MySQL connected successfully
+[2025-09-28T22:18:22.780Z] Using date_tmp field in proper date format
+[2025-09-28T22:18:22.785Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:18:22.785Z] MySQL connected successfully
+[2025-09-28T22:18:22.786Z] Using date_tmp field in proper date format
+[2025-09-28T22:18:22.790Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:18:22.810Z] Revenue query returned 40 rows
+[2025-09-28T22:18:22.810Z] Refunds query returned 7 rows
+[2025-09-28T22:18:22.810Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:18:22.815Z] Revenue query returned 40 rows
+[2025-09-28T22:18:22.816Z] Refunds query returned 7 rows
+[2025-09-28T22:18:22.816Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:19:22.780Z] Attempting to connect to MySQL...
+[2025-09-28T22:19:22.783Z] Attempting to connect to MySQL...
+[2025-09-28T22:19:22.787Z] MySQL connected successfully
+[2025-09-28T22:19:22.787Z] Using date_tmp field in proper date format
+[2025-09-28T22:19:22.791Z] MySQL connected successfully
+[2025-09-28T22:19:22.791Z] Using date_tmp field in proper date format
+[2025-09-28T22:19:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:19:22.795Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:19:22.813Z] Revenue query returned 40 rows
+[2025-09-28T22:19:22.814Z] Refunds query returned 7 rows
+[2025-09-28T22:19:22.814Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:19:22.818Z] Revenue query returned 40 rows
+[2025-09-28T22:19:22.818Z] Refunds query returned 7 rows
+[2025-09-28T22:19:22.818Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:20:22.781Z] Attempting to connect to MySQL...
+[2025-09-28T22:20:22.783Z] Attempting to connect to MySQL...
+[2025-09-28T22:20:22.789Z] MySQL connected successfully
+[2025-09-28T22:20:22.789Z] Using date_tmp field in proper date format
+[2025-09-28T22:20:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:20:22.796Z] MySQL connected successfully
+[2025-09-28T22:20:22.796Z] Using date_tmp field in proper date format
+[2025-09-28T22:20:22.804Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:20:22.828Z] Revenue query returned 40 rows
+[2025-09-28T22:20:22.828Z] Refunds query returned 7 rows
+[2025-09-28T22:20:22.828Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:20:22.831Z] Revenue query returned 40 rows
+[2025-09-28T22:20:22.831Z] Refunds query returned 7 rows
+[2025-09-28T22:20:22.832Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:21:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T22:21:22.793Z] Attempting to connect to MySQL...
+[2025-09-28T22:21:22.798Z] MySQL connected successfully
+[2025-09-28T22:21:22.799Z] Using date_tmp field in proper date format
+[2025-09-28T22:21:22.809Z] MySQL connected successfully
+[2025-09-28T22:21:22.809Z] Using date_tmp field in proper date format
+[2025-09-28T22:21:22.810Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:21:22.814Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:21:22.846Z] Revenue query returned 40 rows
+[2025-09-28T22:21:22.846Z] Refunds query returned 7 rows
+[2025-09-28T22:21:22.847Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:21:22.850Z] Revenue query returned 40 rows
+[2025-09-28T22:21:22.850Z] Refunds query returned 7 rows
+[2025-09-28T22:21:22.851Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:22:22.781Z] Attempting to connect to MySQL...
+[2025-09-28T22:22:22.783Z] Attempting to connect to MySQL...
+[2025-09-28T22:22:22.789Z] MySQL connected successfully
+[2025-09-28T22:22:22.789Z] Using date_tmp field in proper date format
+[2025-09-28T22:22:22.792Z] MySQL connected successfully
+[2025-09-28T22:22:22.793Z] Using date_tmp field in proper date format
+[2025-09-28T22:22:22.793Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:22:22.796Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:22:22.813Z] Revenue query returned 40 rows
+[2025-09-28T22:22:22.813Z] Refunds query returned 7 rows
+[2025-09-28T22:22:22.813Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:22:22.820Z] Revenue query returned 40 rows
+[2025-09-28T22:22:22.820Z] Refunds query returned 7 rows
+[2025-09-28T22:22:22.821Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:23:22.781Z] Attempting to connect to MySQL...
+[2025-09-28T22:23:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T22:23:22.793Z] MySQL connected successfully
+[2025-09-28T22:23:22.793Z] Using date_tmp field in proper date format
+[2025-09-28T22:23:22.797Z] MySQL connected successfully
+[2025-09-28T22:23:22.797Z] Using date_tmp field in proper date format
+[2025-09-28T22:23:22.804Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:23:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:23:22.830Z] Revenue query returned 40 rows
+[2025-09-28T22:23:22.831Z] Refunds query returned 7 rows
+[2025-09-28T22:23:22.831Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:23:22.834Z] Revenue query returned 40 rows
+[2025-09-28T22:23:22.834Z] Refunds query returned 7 rows
+[2025-09-28T22:23:22.834Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:24:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T22:24:22.791Z] MySQL connected successfully
+[2025-09-28T22:24:22.791Z] Using date_tmp field in proper date format
+[2025-09-28T22:24:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:24:22.795Z] Attempting to connect to MySQL...
+[2025-09-28T22:24:22.804Z] MySQL connected successfully
+[2025-09-28T22:24:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:24:22.807Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:24:22.819Z] Revenue query returned 40 rows
+[2025-09-28T22:24:22.819Z] Refunds query returned 7 rows
+[2025-09-28T22:24:22.819Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:24:22.826Z] Revenue query returned 40 rows
+[2025-09-28T22:24:22.826Z] Refunds query returned 7 rows
+[2025-09-28T22:24:22.827Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:25:22.776Z] Attempting to connect to MySQL...
+[2025-09-28T22:25:22.778Z] Attempting to connect to MySQL...
+[2025-09-28T22:25:22.784Z] MySQL connected successfully
+[2025-09-28T22:25:22.784Z] Using date_tmp field in proper date format
+[2025-09-28T22:25:22.788Z] MySQL connected successfully
+[2025-09-28T22:25:22.788Z] Using date_tmp field in proper date format
+[2025-09-28T22:25:22.789Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:25:22.792Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:25:22.816Z] Revenue query returned 40 rows
+[2025-09-28T22:25:22.816Z] Refunds query returned 7 rows
+[2025-09-28T22:25:22.817Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:25:22.824Z] Revenue query returned 40 rows
+[2025-09-28T22:25:22.825Z] Refunds query returned 7 rows
+[2025-09-28T22:25:22.825Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:26:22.778Z] Attempting to connect to MySQL...
+[2025-09-28T22:26:22.781Z] Attempting to connect to MySQL...
+[2025-09-28T22:26:22.788Z] MySQL connected successfully
+[2025-09-28T22:26:22.788Z] Using date_tmp field in proper date format
+[2025-09-28T22:26:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:26:22.794Z] MySQL connected successfully
+[2025-09-28T22:26:22.795Z] Using date_tmp field in proper date format
+[2025-09-28T22:26:22.799Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:26:22.816Z] Revenue query returned 40 rows
+[2025-09-28T22:26:22.816Z] Refunds query returned 7 rows
+[2025-09-28T22:26:22.817Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:26:22.820Z] Revenue query returned 40 rows
+[2025-09-28T22:26:22.820Z] Refunds query returned 7 rows
+[2025-09-28T22:26:22.821Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:27:22.780Z] Attempting to connect to MySQL...
+[2025-09-28T22:27:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T22:27:22.787Z] MySQL connected successfully
+[2025-09-28T22:27:22.787Z] Using date_tmp field in proper date format
+[2025-09-28T22:27:22.790Z] MySQL connected successfully
+[2025-09-28T22:27:22.790Z] Using date_tmp field in proper date format
+[2025-09-28T22:27:22.792Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:27:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:27:22.820Z] Revenue query returned 40 rows
+[2025-09-28T22:27:22.820Z] Refunds query returned 7 rows
+[2025-09-28T22:27:22.820Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:27:22.822Z] Revenue query returned 40 rows
+[2025-09-28T22:27:22.822Z] Refunds query returned 7 rows
+[2025-09-28T22:27:22.823Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:28:22.774Z] Attempting to connect to MySQL...
+[2025-09-28T22:28:22.777Z] Attempting to connect to MySQL...
+[2025-09-28T22:28:22.781Z] MySQL connected successfully
+[2025-09-28T22:28:22.782Z] Using date_tmp field in proper date format
+[2025-09-28T22:28:22.787Z] MySQL connected successfully
+[2025-09-28T22:28:22.788Z] Using date_tmp field in proper date format
+[2025-09-28T22:28:22.789Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:28:22.793Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:28:22.808Z] Revenue query returned 40 rows
+[2025-09-28T22:28:22.808Z] Refunds query returned 7 rows
+[2025-09-28T22:28:22.808Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:28:22.820Z] Revenue query returned 40 rows
+[2025-09-28T22:28:22.821Z] Refunds query returned 7 rows
+[2025-09-28T22:28:22.821Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:29:22.831Z] Attempting to connect to MySQL...
+[2025-09-28T22:29:22.834Z] Attempting to connect to MySQL...
+[2025-09-28T22:29:22.839Z] MySQL connected successfully
+[2025-09-28T22:29:22.839Z] Using date_tmp field in proper date format
+[2025-09-28T22:29:22.841Z] MySQL connected successfully
+[2025-09-28T22:29:22.841Z] Using date_tmp field in proper date format
+[2025-09-28T22:29:22.844Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:29:22.845Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:29:22.873Z] Revenue query returned 40 rows
+[2025-09-28T22:29:22.874Z] Refunds query returned 7 rows
+[2025-09-28T22:29:22.874Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:29:22.876Z] Revenue query returned 40 rows
+[2025-09-28T22:29:22.877Z] Refunds query returned 7 rows
+[2025-09-28T22:29:22.877Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:30:22.789Z] Attempting to connect to MySQL...
+[2025-09-28T22:30:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T22:30:22.796Z] MySQL connected successfully
+[2025-09-28T22:30:22.796Z] Using date_tmp field in proper date format
+[2025-09-28T22:30:22.800Z] MySQL connected successfully
+[2025-09-28T22:30:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T22:30:22.803Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:30:22.810Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:30:22.824Z] Revenue query returned 40 rows
+[2025-09-28T22:30:22.824Z] Refunds query returned 7 rows
+[2025-09-28T22:30:22.825Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:30:22.832Z] Revenue query returned 40 rows
+[2025-09-28T22:30:22.832Z] Refunds query returned 7 rows
+[2025-09-28T22:30:22.832Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:31:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T22:31:22.794Z] Attempting to connect to MySQL...
+[2025-09-28T22:31:22.811Z] MySQL connected successfully
+[2025-09-28T22:31:22.812Z] Using date_tmp field in proper date format
+[2025-09-28T22:31:22.813Z] MySQL connected successfully
+[2025-09-28T22:31:22.814Z] Using date_tmp field in proper date format
+[2025-09-28T22:31:22.817Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:31:22.819Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:31:22.843Z] Revenue query returned 40 rows
+[2025-09-28T22:31:22.844Z] Refunds query returned 7 rows
+[2025-09-28T22:31:22.844Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:31:22.848Z] Revenue query returned 40 rows
+[2025-09-28T22:31:22.848Z] Refunds query returned 7 rows
+[2025-09-28T22:31:22.850Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:32:22.779Z] Attempting to connect to MySQL...
+[2025-09-28T22:32:22.782Z] Attempting to connect to MySQL...
+[2025-09-28T22:32:22.786Z] MySQL connected successfully
+[2025-09-28T22:32:22.786Z] Using date_tmp field in proper date format
+[2025-09-28T22:32:22.790Z] MySQL connected successfully
+[2025-09-28T22:32:22.790Z] Using date_tmp field in proper date format
+[2025-09-28T22:32:22.791Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:32:22.796Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:32:22.811Z] Revenue query returned 40 rows
+[2025-09-28T22:32:22.811Z] Refunds query returned 7 rows
+[2025-09-28T22:32:22.811Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:32:22.818Z] Revenue query returned 40 rows
+[2025-09-28T22:32:22.819Z] Refunds query returned 7 rows
+[2025-09-28T22:32:22.819Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:33:22.795Z] Attempting to connect to MySQL...
+[2025-09-28T22:33:22.798Z] Attempting to connect to MySQL...
+[2025-09-28T22:33:22.804Z] MySQL connected successfully
+[2025-09-28T22:33:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T22:33:22.808Z] MySQL connected successfully
+[2025-09-28T22:33:22.809Z] Using date_tmp field in proper date format
+[2025-09-28T22:33:22.811Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:33:22.814Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:33:22.833Z] Revenue query returned 40 rows
+[2025-09-28T22:33:22.834Z] Refunds query returned 7 rows
+[2025-09-28T22:33:22.834Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:33:22.837Z] Revenue query returned 40 rows
+[2025-09-28T22:33:22.837Z] Refunds query returned 7 rows
+[2025-09-28T22:33:22.838Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:34:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T22:34:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:34:22.799Z] MySQL connected successfully
+[2025-09-28T22:34:22.799Z] Using date_tmp field in proper date format
+[2025-09-28T22:34:22.810Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:34:22.812Z] MySQL connected successfully
+[2025-09-28T22:34:22.813Z] Using date_tmp field in proper date format
+[2025-09-28T22:34:22.827Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:34:22.847Z] Revenue query returned 40 rows
+[2025-09-28T22:34:22.848Z] Refunds query returned 7 rows
+[2025-09-28T22:34:22.848Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:34:22.857Z] Revenue query returned 40 rows
+[2025-09-28T22:34:22.858Z] Refunds query returned 7 rows
+[2025-09-28T22:34:22.858Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:35:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T22:35:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:35:22.797Z] MySQL connected successfully
+[2025-09-28T22:35:22.798Z] Using date_tmp field in proper date format
+[2025-09-28T22:35:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:35:22.806Z] MySQL connected successfully
+[2025-09-28T22:35:22.806Z] Using date_tmp field in proper date format
+[2025-09-28T22:35:22.813Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:35:22.838Z] Revenue query returned 40 rows
+[2025-09-28T22:35:22.839Z] Refunds query returned 7 rows
+[2025-09-28T22:35:22.839Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:35:22.843Z] Revenue query returned 40 rows
+[2025-09-28T22:35:22.843Z] Refunds query returned 7 rows
+[2025-09-28T22:35:22.844Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:36:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T22:36:22.800Z] Attempting to connect to MySQL...
+[2025-09-28T22:36:22.805Z] MySQL connected successfully
+[2025-09-28T22:36:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T22:36:22.807Z] MySQL connected successfully
+[2025-09-28T22:36:22.807Z] Using date_tmp field in proper date format
+[2025-09-28T22:36:22.812Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:36:22.814Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:36:22.834Z] Revenue query returned 40 rows
+[2025-09-28T22:36:22.834Z] Refunds query returned 7 rows
+[2025-09-28T22:36:22.834Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:36:22.838Z] Revenue query returned 40 rows
+[2025-09-28T22:36:22.838Z] Refunds query returned 7 rows
+[2025-09-28T22:36:22.838Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:37:22.789Z] Attempting to connect to MySQL...
+[2025-09-28T22:37:22.791Z] Attempting to connect to MySQL...
+[2025-09-28T22:37:22.797Z] MySQL connected successfully
+[2025-09-28T22:37:22.797Z] Using date_tmp field in proper date format
+[2025-09-28T22:37:22.800Z] MySQL connected successfully
+[2025-09-28T22:37:22.800Z] Using date_tmp field in proper date format
+[2025-09-28T22:37:22.801Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:37:22.808Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:37:22.828Z] Revenue query returned 40 rows
+[2025-09-28T22:37:22.829Z] Refunds query returned 7 rows
+[2025-09-28T22:37:22.829Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:37:22.833Z] Revenue query returned 40 rows
+[2025-09-28T22:37:22.834Z] Refunds query returned 7 rows
+[2025-09-28T22:37:22.834Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:38:22.782Z] Attempting to connect to MySQL...
+[2025-09-28T22:38:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T22:38:22.791Z] MySQL connected successfully
+[2025-09-28T22:38:22.791Z] Using date_tmp field in proper date format
+[2025-09-28T22:38:22.792Z] MySQL connected successfully
+[2025-09-28T22:38:22.792Z] Using date_tmp field in proper date format
+[2025-09-28T22:38:22.799Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:38:22.800Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:38:22.814Z] Revenue query returned 40 rows
+[2025-09-28T22:38:22.814Z] Refunds query returned 7 rows
+[2025-09-28T22:38:22.815Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:38:22.822Z] Revenue query returned 40 rows
+[2025-09-28T22:38:22.822Z] Refunds query returned 7 rows
+[2025-09-28T22:38:22.822Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:39:22.777Z] Attempting to connect to MySQL...
+[2025-09-28T22:39:22.781Z] Attempting to connect to MySQL...
+[2025-09-28T22:39:22.786Z] MySQL connected successfully
+[2025-09-28T22:39:22.787Z] Using date_tmp field in proper date format
+[2025-09-28T22:39:22.791Z] MySQL connected successfully
+[2025-09-28T22:39:22.791Z] Using date_tmp field in proper date format
+[2025-09-28T22:39:22.792Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:39:22.799Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:39:22.815Z] Revenue query returned 40 rows
+[2025-09-28T22:39:22.815Z] Refunds query returned 7 rows
+[2025-09-28T22:39:22.815Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:39:22.818Z] Revenue query returned 40 rows
+[2025-09-28T22:39:22.818Z] Refunds query returned 7 rows
+[2025-09-28T22:39:22.818Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:40:22.783Z] Attempting to connect to MySQL...
+[2025-09-28T22:40:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T22:40:22.797Z] MySQL connected successfully
+[2025-09-28T22:40:22.797Z] Using date_tmp field in proper date format
+[2025-09-28T22:40:22.803Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:40:22.821Z] MySQL connected successfully
+[2025-09-28T22:40:22.821Z] Using date_tmp field in proper date format
+[2025-09-28T22:40:22.827Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:40:22.845Z] Revenue query returned 40 rows
+[2025-09-28T22:40:22.845Z] Refunds query returned 7 rows
+[2025-09-28T22:40:22.845Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:40:22.857Z] Revenue query returned 40 rows
+[2025-09-28T22:40:22.857Z] Refunds query returned 7 rows
+[2025-09-28T22:40:22.857Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:41:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T22:41:22.800Z] Attempting to connect to MySQL...
+[2025-09-28T22:41:22.807Z] MySQL connected successfully
+[2025-09-28T22:41:22.808Z] Using date_tmp field in proper date format
+[2025-09-28T22:41:22.814Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:41:22.816Z] MySQL connected successfully
+[2025-09-28T22:41:22.816Z] Using date_tmp field in proper date format
+[2025-09-28T22:41:22.827Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:41:22.852Z] Revenue query returned 40 rows
+[2025-09-28T22:41:22.852Z] Refunds query returned 7 rows
+[2025-09-28T22:41:22.852Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:41:22.855Z] Revenue query returned 40 rows
+[2025-09-28T22:41:22.856Z] Refunds query returned 7 rows
+[2025-09-28T22:41:22.859Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:42:22.808Z] Attempting to connect to MySQL...
+[2025-09-28T22:42:22.812Z] Attempting to connect to MySQL...
+[2025-09-28T22:42:22.815Z] MySQL connected successfully
+[2025-09-28T22:42:22.816Z] Using date_tmp field in proper date format
+[2025-09-28T22:42:22.819Z] MySQL connected successfully
+[2025-09-28T22:42:22.819Z] Using date_tmp field in proper date format
+[2025-09-28T22:42:22.820Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:42:22.825Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:42:22.840Z] Revenue query returned 40 rows
+[2025-09-28T22:42:22.840Z] Refunds query returned 7 rows
+[2025-09-28T22:42:22.840Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:42:22.845Z] Revenue query returned 40 rows
+[2025-09-28T22:42:22.845Z] Refunds query returned 7 rows
+[2025-09-28T22:42:22.845Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:43:22.795Z] Attempting to connect to MySQL...
+[2025-09-28T22:43:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T22:43:22.802Z] MySQL connected successfully
+[2025-09-28T22:43:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T22:43:22.804Z] MySQL connected successfully
+[2025-09-28T22:43:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:43:22.812Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:43:22.813Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:43:22.831Z] Revenue query returned 40 rows
+[2025-09-28T22:43:22.832Z] Refunds query returned 7 rows
+[2025-09-28T22:43:22.832Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:43:22.839Z] Revenue query returned 40 rows
+[2025-09-28T22:43:22.839Z] Refunds query returned 7 rows
+[2025-09-28T22:43:22.842Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:44:22.773Z] Attempting to connect to MySQL...
+[2025-09-28T22:44:22.777Z] Attempting to connect to MySQL...
+[2025-09-28T22:44:22.781Z] MySQL connected successfully
+[2025-09-28T22:44:22.781Z] Using date_tmp field in proper date format
+[2025-09-28T22:44:22.784Z] MySQL connected successfully
+[2025-09-28T22:44:22.785Z] Using date_tmp field in proper date format
+[2025-09-28T22:44:22.785Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:44:22.790Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:44:22.811Z] Revenue query returned 40 rows
+[2025-09-28T22:44:22.812Z] Refunds query returned 7 rows
+[2025-09-28T22:44:22.812Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:44:22.814Z] Revenue query returned 40 rows
+[2025-09-28T22:44:22.815Z] Refunds query returned 7 rows
+[2025-09-28T22:44:22.815Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:45:22.776Z] Attempting to connect to MySQL...
+[2025-09-28T22:45:22.777Z] Attempting to connect to MySQL...
+[2025-09-28T22:45:22.781Z] MySQL connected successfully
+[2025-09-28T22:45:22.781Z] Using date_tmp field in proper date format
+[2025-09-28T22:45:22.785Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:45:22.787Z] MySQL connected successfully
+[2025-09-28T22:45:22.787Z] Using date_tmp field in proper date format
+[2025-09-28T22:45:22.791Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:45:22.811Z] Revenue query returned 40 rows
+[2025-09-28T22:45:22.811Z] Refunds query returned 7 rows
+[2025-09-28T22:45:22.811Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:45:22.815Z] Revenue query returned 40 rows
+[2025-09-28T22:45:22.815Z] Refunds query returned 7 rows
+[2025-09-28T22:45:22.816Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:46:22.776Z] Attempting to connect to MySQL...
+[2025-09-28T22:46:22.779Z] Attempting to connect to MySQL...
+[2025-09-28T22:46:22.784Z] MySQL connected successfully
+[2025-09-28T22:46:22.784Z] Using date_tmp field in proper date format
+[2025-09-28T22:46:22.790Z] MySQL connected successfully
+[2025-09-28T22:46:22.790Z] Using date_tmp field in proper date format
+[2025-09-28T22:46:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:46:22.798Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:46:22.810Z] Revenue query returned 40 rows
+[2025-09-28T22:46:22.810Z] Refunds query returned 7 rows
+[2025-09-28T22:46:22.810Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:46:22.818Z] Revenue query returned 40 rows
+[2025-09-28T22:46:22.818Z] Refunds query returned 7 rows
+[2025-09-28T22:46:22.818Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:47:22.883Z] Attempting to connect to MySQL...
+[2025-09-28T22:47:22.887Z] Attempting to connect to MySQL...
+[2025-09-28T22:47:22.896Z] MySQL connected successfully
+[2025-09-28T22:47:22.896Z] Using date_tmp field in proper date format
+[2025-09-28T22:47:22.902Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:47:22.906Z] MySQL connected successfully
+[2025-09-28T22:47:22.906Z] Using date_tmp field in proper date format
+[2025-09-28T22:47:22.914Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:47:22.931Z] Revenue query returned 40 rows
+[2025-09-28T22:47:22.932Z] Refunds query returned 7 rows
+[2025-09-28T22:47:22.932Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:47:22.937Z] Revenue query returned 40 rows
+[2025-09-28T22:47:22.937Z] Refunds query returned 7 rows
+[2025-09-28T22:47:22.937Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:48:22.787Z] Attempting to connect to MySQL...
+[2025-09-28T22:48:22.790Z] Attempting to connect to MySQL...
+[2025-09-28T22:48:22.799Z] MySQL connected successfully
+[2025-09-28T22:48:22.799Z] Using date_tmp field in proper date format
+[2025-09-28T22:48:22.803Z] MySQL connected successfully
+[2025-09-28T22:48:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T22:48:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:48:22.807Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:48:22.824Z] Revenue query returned 40 rows
+[2025-09-28T22:48:22.824Z] Refunds query returned 7 rows
+[2025-09-28T22:48:22.824Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:48:22.827Z] Revenue query returned 40 rows
+[2025-09-28T22:48:22.827Z] Refunds query returned 7 rows
+[2025-09-28T22:48:22.827Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:49:22.795Z] Attempting to connect to MySQL...
+[2025-09-28T22:49:22.798Z] Attempting to connect to MySQL...
+[2025-09-28T22:49:22.803Z] MySQL connected successfully
+[2025-09-28T22:49:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:49:22.808Z] MySQL connected successfully
+[2025-09-28T22:49:22.808Z] Using date_tmp field in proper date format
+[2025-09-28T22:49:22.809Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:49:22.814Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:49:22.831Z] Revenue query returned 40 rows
+[2025-09-28T22:49:22.832Z] Refunds query returned 7 rows
+[2025-09-28T22:49:22.832Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:49:22.836Z] Revenue query returned 40 rows
+[2025-09-28T22:49:22.836Z] Refunds query returned 7 rows
+[2025-09-28T22:49:22.836Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:50:22.787Z] Attempting to connect to MySQL...
+[2025-09-28T22:50:22.791Z] Attempting to connect to MySQL...
+[2025-09-28T22:50:22.800Z] MySQL connected successfully
+[2025-09-28T22:50:22.800Z] Using date_tmp field in proper date format
+[2025-09-28T22:50:22.804Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:50:22.805Z] MySQL connected successfully
+[2025-09-28T22:50:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T22:50:22.812Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:50:22.829Z] Revenue query returned 40 rows
+[2025-09-28T22:50:22.829Z] Refunds query returned 7 rows
+[2025-09-28T22:50:22.830Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:50:22.837Z] Revenue query returned 40 rows
+[2025-09-28T22:50:22.837Z] Refunds query returned 7 rows
+[2025-09-28T22:50:22.838Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:51:22.786Z] Attempting to connect to MySQL...
+[2025-09-28T22:51:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T22:51:22.797Z] MySQL connected successfully
+[2025-09-28T22:51:22.798Z] Using date_tmp field in proper date format
+[2025-09-28T22:51:22.801Z] MySQL connected successfully
+[2025-09-28T22:51:22.801Z] Using date_tmp field in proper date format
+[2025-09-28T22:51:22.804Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:51:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:51:22.820Z] Revenue query returned 40 rows
+[2025-09-28T22:51:22.821Z] Refunds query returned 7 rows
+[2025-09-28T22:51:22.821Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:51:22.828Z] Revenue query returned 40 rows
+[2025-09-28T22:51:22.828Z] Refunds query returned 7 rows
+[2025-09-28T22:51:22.829Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:52:22.794Z] Attempting to connect to MySQL...
+[2025-09-28T22:52:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T22:52:22.800Z] MySQL connected successfully
+[2025-09-28T22:52:22.800Z] Using date_tmp field in proper date format
+[2025-09-28T22:52:22.803Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:52:22.804Z] MySQL connected successfully
+[2025-09-28T22:52:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:52:22.811Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:52:22.819Z] Revenue query returned 40 rows
+[2025-09-28T22:52:22.819Z] Refunds query returned 7 rows
+[2025-09-28T22:52:22.819Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:52:22.828Z] Revenue query returned 40 rows
+[2025-09-28T22:52:22.828Z] Refunds query returned 7 rows
+[2025-09-28T22:52:22.828Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:53:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T22:53:22.800Z] Attempting to connect to MySQL...
+[2025-09-28T22:53:22.805Z] MySQL connected successfully
+[2025-09-28T22:53:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T22:53:22.806Z] MySQL connected successfully
+[2025-09-28T22:53:22.806Z] Using date_tmp field in proper date format
+[2025-09-28T22:53:22.811Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:53:22.813Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:53:22.831Z] Revenue query returned 40 rows
+[2025-09-28T22:53:22.831Z] Refunds query returned 7 rows
+[2025-09-28T22:53:22.831Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:53:22.839Z] Revenue query returned 40 rows
+[2025-09-28T22:53:22.840Z] Refunds query returned 7 rows
+[2025-09-28T22:53:22.840Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:54:22.813Z] Attempting to connect to MySQL...
+[2025-09-28T22:54:22.815Z] Attempting to connect to MySQL...
+[2025-09-28T22:54:22.822Z] MySQL connected successfully
+[2025-09-28T22:54:22.823Z] Using date_tmp field in proper date format
+[2025-09-28T22:54:22.824Z] MySQL connected successfully
+[2025-09-28T22:54:22.824Z] Using date_tmp field in proper date format
+[2025-09-28T22:54:22.829Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:54:22.830Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:54:22.864Z] Revenue query returned 40 rows
+[2025-09-28T22:54:22.865Z] Refunds query returned 7 rows
+[2025-09-28T22:54:22.865Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:54:22.871Z] Revenue query returned 40 rows
+[2025-09-28T22:54:22.871Z] Refunds query returned 7 rows
+[2025-09-28T22:54:22.871Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:55:22.835Z] Attempting to connect to MySQL...
+[2025-09-28T22:55:22.840Z] Attempting to connect to MySQL...
+[2025-09-28T22:55:22.847Z] MySQL connected successfully
+[2025-09-28T22:55:22.848Z] Using date_tmp field in proper date format
+[2025-09-28T22:55:22.852Z] MySQL connected successfully
+[2025-09-28T22:55:22.852Z] Using date_tmp field in proper date format
+[2025-09-28T22:55:22.859Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:55:22.868Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:55:22.889Z] Revenue query returned 40 rows
+[2025-09-28T22:55:22.890Z] Refunds query returned 7 rows
+[2025-09-28T22:55:22.890Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:55:22.896Z] Revenue query returned 40 rows
+[2025-09-28T22:55:22.896Z] Refunds query returned 7 rows
+[2025-09-28T22:55:22.896Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:56:22.799Z] Attempting to connect to MySQL...
+[2025-09-28T22:56:22.802Z] Attempting to connect to MySQL...
+[2025-09-28T22:56:22.806Z] MySQL connected successfully
+[2025-09-28T22:56:22.806Z] Using date_tmp field in proper date format
+[2025-09-28T22:56:22.810Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:56:22.811Z] MySQL connected successfully
+[2025-09-28T22:56:22.811Z] Using date_tmp field in proper date format
+[2025-09-28T22:56:22.821Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:56:22.836Z] Revenue query returned 40 rows
+[2025-09-28T22:56:22.836Z] Refunds query returned 7 rows
+[2025-09-28T22:56:22.836Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:56:22.839Z] Revenue query returned 40 rows
+[2025-09-28T22:56:22.839Z] Refunds query returned 7 rows
+[2025-09-28T22:56:22.840Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:57:22.780Z] Attempting to connect to MySQL...
+[2025-09-28T22:57:22.782Z] Attempting to connect to MySQL...
+[2025-09-28T22:57:22.800Z] MySQL connected successfully
+[2025-09-28T22:57:22.801Z] Using date_tmp field in proper date format
+[2025-09-28T22:57:22.802Z] MySQL connected successfully
+[2025-09-28T22:57:22.802Z] Using date_tmp field in proper date format
+[2025-09-28T22:57:22.811Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:57:22.812Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:57:22.842Z] Revenue query returned 40 rows
+[2025-09-28T22:57:22.842Z] Refunds query returned 7 rows
+[2025-09-28T22:57:22.843Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:57:22.846Z] Revenue query returned 40 rows
+[2025-09-28T22:57:22.847Z] Refunds query returned 7 rows
+[2025-09-28T22:57:22.847Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:58:22.786Z] Attempting to connect to MySQL...
+[2025-09-28T22:58:22.791Z] MySQL connected successfully
+[2025-09-28T22:58:22.791Z] Using date_tmp field in proper date format
+[2025-09-28T22:58:22.794Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:58:22.801Z] Attempting to connect to MySQL...
+[2025-09-28T22:58:22.804Z] MySQL connected successfully
+[2025-09-28T22:58:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T22:58:22.808Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:58:22.814Z] Revenue query returned 40 rows
+[2025-09-28T22:58:22.814Z] Refunds query returned 7 rows
+[2025-09-28T22:58:22.814Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:58:22.823Z] Revenue query returned 40 rows
+[2025-09-28T22:58:22.824Z] Refunds query returned 7 rows
+[2025-09-28T22:58:22.824Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:59:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T22:59:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T22:59:22.794Z] MySQL connected successfully
+[2025-09-28T22:59:22.795Z] Using date_tmp field in proper date format
+[2025-09-28T22:59:22.797Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:59:22.803Z] MySQL connected successfully
+[2025-09-28T22:59:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T22:59:22.809Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T22:59:22.819Z] Revenue query returned 40 rows
+[2025-09-28T22:59:22.820Z] Refunds query returned 7 rows
+[2025-09-28T22:59:22.820Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T22:59:22.833Z] Revenue query returned 40 rows
+[2025-09-28T22:59:22.833Z] Refunds query returned 7 rows
+[2025-09-28T22:59:22.833Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:00:22.772Z] Attempting to connect to MySQL...
+[2025-09-28T23:00:22.776Z] Attempting to connect to MySQL...
+[2025-09-28T23:00:22.782Z] MySQL connected successfully
+[2025-09-28T23:00:22.783Z] Using date_tmp field in proper date format
+[2025-09-28T23:00:22.792Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:00:22.805Z] MySQL connected successfully
+[2025-09-28T23:00:22.806Z] Using date_tmp field in proper date format
+[2025-09-28T23:00:22.812Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:00:22.860Z] Revenue query returned 40 rows
+[2025-09-28T23:00:22.861Z] Refunds query returned 7 rows
+[2025-09-28T23:00:22.861Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:00:22.868Z] Revenue query returned 40 rows
+[2025-09-28T23:00:22.869Z] Refunds query returned 7 rows
+[2025-09-28T23:00:22.869Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:01:22.799Z] Attempting to connect to MySQL...
+[2025-09-28T23:01:22.806Z] MySQL connected successfully
+[2025-09-28T23:01:22.807Z] Using date_tmp field in proper date format
+[2025-09-28T23:01:22.813Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:01:22.816Z] Attempting to connect to MySQL...
+[2025-09-28T23:01:22.832Z] MySQL connected successfully
+[2025-09-28T23:01:22.833Z] Using date_tmp field in proper date format
+[2025-09-28T23:01:22.837Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:01:22.843Z] Revenue query returned 40 rows
+[2025-09-28T23:01:22.843Z] Refunds query returned 7 rows
+[2025-09-28T23:01:22.844Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:01:22.861Z] Revenue query returned 40 rows
+[2025-09-28T23:01:22.861Z] Refunds query returned 7 rows
+[2025-09-28T23:01:22.861Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:02:24.187Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T23:02:24.519Z] Fins app started under Phusion Passenger
+[2025-09-28T23:02:24.562Z] Attempting to connect to MySQL...
+[2025-09-28T23:02:24.584Z] Attempting to connect to MySQL...
+[2025-09-28T23:02:24.607Z] MySQL connected successfully
+[2025-09-28T23:02:24.608Z] Using date_tmp field in proper date format
+[2025-09-28T23:02:24.618Z] MySQL connected successfully
+[2025-09-28T23:02:24.619Z] Using date_tmp field in proper date format
+[2025-09-28T23:02:24.626Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:02:24.631Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:02:24.660Z] Revenue query returned 40 rows
+[2025-09-28T23:02:24.661Z] Refunds query returned 7 rows
+[2025-09-28T23:02:24.661Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:02:24.686Z] Revenue query returned 40 rows
+[2025-09-28T23:02:24.687Z] Refunds query returned 7 rows
+[2025-09-28T23:02:24.688Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:03:22.775Z] Attempting to connect to MySQL...
+[2025-09-28T23:03:22.779Z] Attempting to connect to MySQL...
+[2025-09-28T23:03:22.788Z] MySQL connected successfully
+[2025-09-28T23:03:22.789Z] Using date_tmp field in proper date format
+[2025-09-28T23:03:22.794Z] MySQL connected successfully
+[2025-09-28T23:03:22.795Z] Using date_tmp field in proper date format
+[2025-09-28T23:03:22.798Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:03:22.799Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:03:22.816Z] Revenue query returned 40 rows
+[2025-09-28T23:03:22.817Z] Refunds query returned 7 rows
+[2025-09-28T23:03:22.817Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:03:22.821Z] Revenue query returned 40 rows
+[2025-09-28T23:03:22.822Z] Refunds query returned 7 rows
+[2025-09-28T23:03:22.822Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:04:22.780Z] Attempting to connect to MySQL...
+[2025-09-28T23:04:22.785Z] Attempting to connect to MySQL...
+[2025-09-28T23:04:22.795Z] MySQL connected successfully
+[2025-09-28T23:04:22.796Z] Using date_tmp field in proper date format
+[2025-09-28T23:04:22.802Z] MySQL connected successfully
+[2025-09-28T23:04:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T23:04:22.804Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:04:22.814Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:04:22.833Z] Revenue query returned 40 rows
+[2025-09-28T23:04:22.834Z] Refunds query returned 7 rows
+[2025-09-28T23:04:22.834Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:04:22.840Z] Revenue query returned 40 rows
+[2025-09-28T23:04:22.840Z] Refunds query returned 7 rows
+[2025-09-28T23:04:22.840Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:05:24.438Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T23:05:24.825Z] Fins app started under Phusion Passenger
+[2025-09-28T23:05:24.882Z] Attempting to connect to MySQL...
+[2025-09-28T23:05:24.917Z] Attempting to connect to MySQL...
+[2025-09-28T23:05:24.954Z] MySQL connected successfully
+[2025-09-28T23:05:24.955Z] Using date_tmp field in proper date format
+[2025-09-28T23:05:24.968Z] MySQL connected successfully
+[2025-09-28T23:05:24.969Z] Using date_tmp field in proper date format
+[2025-09-28T23:05:24.982Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:05:24.994Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:05:25.046Z] Revenue query returned 40 rows
+[2025-09-28T23:05:25.047Z] Refunds query returned 7 rows
+[2025-09-28T23:05:25.047Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:05:25.075Z] Revenue query returned 40 rows
+[2025-09-28T23:05:25.076Z] Refunds query returned 7 rows
+[2025-09-28T23:05:25.076Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:06:22.780Z] Attempting to connect to MySQL...
+[2025-09-28T23:06:22.785Z] Attempting to connect to MySQL...
+[2025-09-28T23:06:22.792Z] MySQL connected successfully
+[2025-09-28T23:06:22.792Z] Using date_tmp field in proper date format
+[2025-09-28T23:06:22.801Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:06:22.802Z] MySQL connected successfully
+[2025-09-28T23:06:22.803Z] Using date_tmp field in proper date format
+[2025-09-28T23:06:22.814Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:06:22.824Z] Revenue query returned 40 rows
+[2025-09-28T23:06:22.825Z] Refunds query returned 7 rows
+[2025-09-28T23:06:22.825Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:06:22.843Z] Revenue query returned 40 rows
+[2025-09-28T23:06:22.843Z] Refunds query returned 7 rows
+[2025-09-28T23:06:22.844Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:07:22.802Z] Attempting to connect to MySQL...
+[2025-09-28T23:07:22.809Z] Attempting to connect to MySQL...
+[2025-09-28T23:07:22.815Z] MySQL connected successfully
+[2025-09-28T23:07:22.816Z] Using date_tmp field in proper date format
+[2025-09-28T23:07:22.818Z] MySQL connected successfully
+[2025-09-28T23:07:22.818Z] Using date_tmp field in proper date format
+[2025-09-28T23:07:22.824Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:07:22.825Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:07:22.851Z] Revenue query returned 40 rows
+[2025-09-28T23:07:22.852Z] Refunds query returned 7 rows
+[2025-09-28T23:07:22.852Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:07:22.857Z] Revenue query returned 40 rows
+[2025-09-28T23:07:22.858Z] Refunds query returned 7 rows
+[2025-09-28T23:07:22.859Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:08:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T23:08:22.789Z] Attempting to connect to MySQL...
+[2025-09-28T23:08:22.797Z] MySQL connected successfully
+[2025-09-28T23:08:22.797Z] Using date_tmp field in proper date format
+[2025-09-28T23:08:22.804Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:08:22.809Z] MySQL connected successfully
+[2025-09-28T23:08:22.809Z] Using date_tmp field in proper date format
+[2025-09-28T23:08:22.812Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:08:22.834Z] Revenue query returned 40 rows
+[2025-09-28T23:08:22.834Z] Refunds query returned 7 rows
+[2025-09-28T23:08:22.834Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:08:22.837Z] Revenue query returned 40 rows
+[2025-09-28T23:08:22.837Z] Refunds query returned 7 rows
+[2025-09-28T23:08:22.838Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:09:22.772Z] Attempting to connect to MySQL...
+[2025-09-28T23:09:22.778Z] Attempting to connect to MySQL...
+[2025-09-28T23:09:22.783Z] MySQL connected successfully
+[2025-09-28T23:09:22.783Z] Using date_tmp field in proper date format
+[2025-09-28T23:09:22.790Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:09:22.792Z] MySQL connected successfully
+[2025-09-28T23:09:22.792Z] Using date_tmp field in proper date format
+[2025-09-28T23:09:22.795Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:09:22.816Z] Revenue query returned 40 rows
+[2025-09-28T23:09:22.817Z] Refunds query returned 7 rows
+[2025-09-28T23:09:22.817Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:09:22.823Z] Revenue query returned 40 rows
+[2025-09-28T23:09:22.825Z] Refunds query returned 7 rows
+[2025-09-28T23:09:22.825Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:10:22.795Z] Attempting to connect to MySQL...
+[2025-09-28T23:10:22.799Z] Attempting to connect to MySQL...
+[2025-09-28T23:10:22.809Z] MySQL connected successfully
+[2025-09-28T23:10:22.809Z] Using date_tmp field in proper date format
+[2025-09-28T23:10:22.820Z] MySQL connected successfully
+[2025-09-28T23:10:22.821Z] Using date_tmp field in proper date format
+[2025-09-28T23:10:22.822Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:10:22.849Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:10:22.878Z] Revenue query returned 40 rows
+[2025-09-28T23:10:22.879Z] Refunds query returned 7 rows
+[2025-09-28T23:10:22.879Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:10:22.890Z] Revenue query returned 40 rows
+[2025-09-28T23:10:22.890Z] Refunds query returned 7 rows
+[2025-09-28T23:10:22.891Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:11:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T23:11:22.797Z] Attempting to connect to MySQL...
+[2025-09-28T23:11:22.804Z] MySQL connected successfully
+[2025-09-28T23:11:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T23:11:22.809Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:11:22.809Z] MySQL connected successfully
+[2025-09-28T23:11:22.810Z] Using date_tmp field in proper date format
+[2025-09-28T23:11:22.815Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:11:22.840Z] Revenue query returned 40 rows
+[2025-09-28T23:11:22.840Z] Refunds query returned 7 rows
+[2025-09-28T23:11:22.841Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:11:22.846Z] Revenue query returned 40 rows
+[2025-09-28T23:11:22.846Z] Refunds query returned 7 rows
+[2025-09-28T23:11:22.846Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:12:22.812Z] Attempting to connect to MySQL...
+[2025-09-28T23:12:22.814Z] Attempting to connect to MySQL...
+[2025-09-28T23:12:22.820Z] MySQL connected successfully
+[2025-09-28T23:12:22.820Z] Using date_tmp field in proper date format
+[2025-09-28T23:12:22.823Z] MySQL connected successfully
+[2025-09-28T23:12:22.823Z] Using date_tmp field in proper date format
+[2025-09-28T23:12:22.827Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:12:22.828Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:12:22.850Z] Revenue query returned 40 rows
+[2025-09-28T23:12:22.851Z] Refunds query returned 7 rows
+[2025-09-28T23:12:22.852Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:12:22.866Z] Revenue query returned 40 rows
+[2025-09-28T23:12:22.866Z] Refunds query returned 7 rows
+[2025-09-28T23:12:22.867Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:13:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T23:13:22.786Z] Attempting to connect to MySQL...
+[2025-09-28T23:13:22.794Z] MySQL connected successfully
+[2025-09-28T23:13:22.794Z] Using date_tmp field in proper date format
+[2025-09-28T23:13:22.795Z] MySQL connected successfully
+[2025-09-28T23:13:22.798Z] Using date_tmp field in proper date format
+[2025-09-28T23:13:22.803Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:13:22.806Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:13:22.826Z] Revenue query returned 40 rows
+[2025-09-28T23:13:22.827Z] Refunds query returned 7 rows
+[2025-09-28T23:13:22.827Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:13:22.840Z] Revenue query returned 40 rows
+[2025-09-28T23:13:22.840Z] Refunds query returned 7 rows
+[2025-09-28T23:13:22.840Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:14:24.395Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T23:14:24.983Z] Fins app started under Phusion Passenger
+[2025-09-28T23:14:25.060Z] Attempting to connect to MySQL...
+[2025-09-28T23:14:25.097Z] Attempting to connect to MySQL...
+[2025-09-28T23:14:25.142Z] MySQL connected successfully
+[2025-09-28T23:14:25.143Z] Using date_tmp field in proper date format
+[2025-09-28T23:14:25.156Z] MySQL connected successfully
+[2025-09-28T23:14:25.157Z] Using date_tmp field in proper date format
+[2025-09-28T23:14:25.166Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:14:25.181Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:14:25.220Z] Revenue query returned 40 rows
+[2025-09-28T23:14:25.221Z] Refunds query returned 7 rows
+[2025-09-28T23:14:25.222Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:14:25.252Z] Revenue query returned 40 rows
+[2025-09-28T23:14:25.253Z] Refunds query returned 7 rows
+[2025-09-28T23:14:25.254Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:15:22.779Z] Attempting to connect to MySQL...
+[2025-09-28T23:15:22.784Z] Attempting to connect to MySQL...
+[2025-09-28T23:15:22.793Z] MySQL connected successfully
+[2025-09-28T23:15:22.793Z] Using date_tmp field in proper date format
+[2025-09-28T23:15:22.797Z] MySQL connected successfully
+[2025-09-28T23:15:22.797Z] Using date_tmp field in proper date format
+[2025-09-28T23:15:22.801Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:15:22.803Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:15:22.828Z] Revenue query returned 40 rows
+[2025-09-28T23:15:22.828Z] Refunds query returned 7 rows
+[2025-09-28T23:15:22.828Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:15:22.833Z] Revenue query returned 40 rows
+[2025-09-28T23:15:22.833Z] Refunds query returned 7 rows
+[2025-09-28T23:15:22.833Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:16:24.314Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T23:16:24.664Z] Fins app started under Phusion Passenger
+[2025-09-28T23:16:24.711Z] Attempting to connect to MySQL...
+[2025-09-28T23:16:24.738Z] Attempting to connect to MySQL...
+[2025-09-28T23:16:24.764Z] MySQL connected successfully
+[2025-09-28T23:16:24.764Z] Using date_tmp field in proper date format
+[2025-09-28T23:16:24.777Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:16:24.782Z] MySQL connected successfully
+[2025-09-28T23:16:24.782Z] Using date_tmp field in proper date format
+[2025-09-28T23:16:24.787Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:16:24.803Z] Revenue query returned 40 rows
+[2025-09-28T23:16:24.803Z] Refunds query returned 7 rows
+[2025-09-28T23:16:24.804Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:16:24.838Z] Revenue query returned 40 rows
+[2025-09-28T23:16:24.839Z] Refunds query returned 7 rows
+[2025-09-28T23:16:24.839Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:17:22.788Z] Attempting to connect to MySQL...
+[2025-09-28T23:17:22.792Z] Attempting to connect to MySQL...
+[2025-09-28T23:17:22.798Z] MySQL connected successfully
+[2025-09-28T23:17:22.799Z] Using date_tmp field in proper date format
+[2025-09-28T23:17:22.804Z] MySQL connected successfully
+[2025-09-28T23:17:22.804Z] Using date_tmp field in proper date format
+[2025-09-28T23:17:22.805Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:17:22.809Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:17:22.827Z] Revenue query returned 40 rows
+[2025-09-28T23:17:22.828Z] Refunds query returned 7 rows
+[2025-09-28T23:17:22.828Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:17:22.837Z] Revenue query returned 40 rows
+[2025-09-28T23:17:22.837Z] Refunds query returned 7 rows
+[2025-09-28T23:17:22.837Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:18:22.793Z] Attempting to connect to MySQL...
+[2025-09-28T23:18:22.799Z] Attempting to connect to MySQL...
+[2025-09-28T23:18:22.804Z] MySQL connected successfully
+[2025-09-28T23:18:22.805Z] Using date_tmp field in proper date format
+[2025-09-28T23:18:22.809Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:18:22.815Z] MySQL connected successfully
+[2025-09-28T23:18:22.815Z] Using date_tmp field in proper date format
+[2025-09-28T23:18:22.819Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:18:22.827Z] Revenue query returned 40 rows
+[2025-09-28T23:18:22.827Z] Refunds query returned 7 rows
+[2025-09-28T23:18:22.828Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:18:22.838Z] Revenue query returned 40 rows
+[2025-09-28T23:18:22.838Z] Refunds query returned 7 rows
+[2025-09-28T23:18:22.839Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:19:24.182Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-09-28T23:19:24.533Z] Fins app started under Phusion Passenger
+[2025-09-28T23:19:24.570Z] Attempting to connect to MySQL...
+[2025-09-28T23:19:24.591Z] Attempting to connect to MySQL...
+[2025-09-28T23:19:24.618Z] MySQL connected successfully
+[2025-09-28T23:19:24.619Z] Using date_tmp field in proper date format
+[2025-09-28T23:19:24.627Z] MySQL connected successfully
+[2025-09-28T23:19:24.627Z] Using date_tmp field in proper date format
+[2025-09-28T23:19:24.636Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:19:24.638Z] Latest data through: Sat Aug 30 2025 00:00:00 GMT+0200 (Central European Summer Time), YTD through month 8
+[2025-09-28T23:19:24.680Z] Revenue query returned 40 rows
+[2025-09-28T23:19:24.681Z] Refunds query returned 7 rows
+[2025-09-28T23:19:24.681Z] Refunds by month: [
+  "Month 2: B2B = €2240.00",
+  "Month 5: B2B = €5280.00",
+  "Month 5: B2C = €2639.00",
+  "Month 6: B2B = €2290.00",
+  "Month 7: B2C = €17155.00",
+  "Month 9: B2B = €3235.00",
+  "Month 9: B2C = €3850.00"
+]
+[2025-09-28T23:19:24.706Z] Revenue query returned 40 rows
+[2025-09-28T23:19:24.707Z] Refunds query returned 7 rows
+[2025-09-28T23:19:24.707Z] Refunds by month: [
   "Month 2: B2B = €2240.00",
   "Month 5: B2B = €5280.00",
   "Month 5: B2C = €2639.00",

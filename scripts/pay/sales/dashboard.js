@@ -1,4 +1,4 @@
-// dashboard.js v11 - Handle both YYYY-MM-DD and d/m/Y date formats
+// dashboard.js v12 - Updated to use date_tmp field in proper date format
 const express = require('express');
 const mysql = require('mysql2/promise');
 const path = require('path');
@@ -32,38 +32,14 @@ async function getMonthlyData() {
         connection = await mysql.createConnection(dbConfig);
         console.log('MySQL connected successfully');
         
-        // First, check what date format we're dealing with
-        const [dateFormatCheck] = await connection.execute(`
-            SELECT 
-                date,
-                refund_date,
-                CASE 
-                    WHEN date LIKE '____-__-__' THEN 'YYYY-MM-DD'
-                    WHEN date LIKE '__/__/____' THEN 'd/m/Y'
-                    ELSE 'UNKNOWN'
-                END as date_format
-            FROM sales_data
-            WHERE date IS NOT NULL AND date != ''
-            LIMIT 1
-        `);
-        
-        console.log('Date format check:', dateFormatCheck[0]);
-        
-        // Determine which date parsing to use based on the format
-        const isYYYYMMDD = dateFormatCheck[0]?.date_format === 'YYYY-MM-DD';
+        // Using date_tmp field which is already in proper date format
+        console.log('Using date_tmp field in proper date format');
         
         // Get the latest date in the database to determine YTD cutoff
-        const maxDateQuery = isYYYYMMDD ? `
-            SELECT MAX(CAST(date AS DATE)) as max_date 
-            FROM sales_data 
-            WHERE date IS NOT NULL 
-            AND date != ''
-        ` : `
-            SELECT MAX(STR_TO_DATE(date, '%d/%m/%Y')) as max_date 
-            FROM sales_data 
-            WHERE date IS NOT NULL 
-            AND date != ''
-            AND STR_TO_DATE(date, '%d/%m/%Y') IS NOT NULL
+        const maxDateQuery = `
+            SELECT MAX(date_tmp) as max_date
+            FROM sales_data
+            WHERE date_tmp IS NOT NULL
         `;
         
         const [maxDateResult] = await connection.execute(maxDateQuery);
@@ -75,26 +51,26 @@ async function getMonthlyData() {
         console.log(`Latest data through: ${latestDate}, YTD through month ${currentMonth}`);
         
         // Main query for all monthly revenue data - EXCLUDING TransferMate Escrow
-        const revenueQuery = isYYYYMMDD ? `
-            SELECT 
-                YEAR(date) as year,
-                MONTH(date) as month,
-                DATE_FORMAT(date, '%Y-%m') as month_year,
-                CASE 
+        const revenueQuery = `
+            SELECT
+                YEAR(date_tmp) as year,
+                MONTH(date_tmp) as month,
+                DATE_FORMAT(date_tmp, '%Y-%m') as month_year,
+                CASE
                     WHEN agent IS NOT NULL AND agent != '' THEN 'B2B'
                     ELSE 'B2C'
                 END as channel,
                 SUM(
                     CAST(
-                        REPLACE(REPLACE(amount, '€', ''), ',', '') 
+                        REPLACE(SUBSTRING(amount, 2), ',', '')
                         AS DECIMAL(10,2)
                     )
                 ) as total_amount,
                 SUM(
-                    CASE 
+                    CASE
                         WHEN course IS NOT NULL AND course != '' THEN
                             CAST(
-                                REPLACE(REPLACE(course, '€', ''), ',', '') 
+                                REPLACE(SUBSTRING(course, 2), ',', '')
                                 AS DECIMAL(10,2)
                             )
                         ELSE 0
@@ -102,43 +78,7 @@ async function getMonthlyData() {
                 ) as total_course_fees,
                 COUNT(*) as record_count
             FROM sales_data
-            WHERE date IS NOT NULL
-            AND date != ''
-            AND amount IS NOT NULL
-            AND amount != ''
-            AND (visa_status != 'Pending' OR visa_status IS NULL)
-            GROUP BY year, month, channel
-            ORDER BY year, month, channel
-        ` : `
-            SELECT 
-                YEAR(STR_TO_DATE(date, '%d/%m/%Y')) as year,
-                MONTH(STR_TO_DATE(date, '%d/%m/%Y')) as month,
-                DATE_FORMAT(STR_TO_DATE(date, '%d/%m/%Y'), '%Y-%m') as month_year,
-                CASE 
-                    WHEN agent IS NOT NULL AND agent != '' THEN 'B2B'
-                    ELSE 'B2C'
-                END as channel,
-                SUM(
-                    CAST(
-                        REPLACE(SUBSTRING(amount, 2), ',', '') 
-                        AS DECIMAL(10,2)
-                    )
-                ) as total_amount,
-                SUM(
-                    CASE 
-                        WHEN course IS NOT NULL AND course != '' THEN
-                            CAST(
-                                REPLACE(SUBSTRING(course, 2), ',', '') 
-                                AS DECIMAL(10,2)
-                            )
-                        ELSE 0
-                    END
-                ) as total_course_fees,
-                COUNT(*) as record_count
-            FROM sales_data
-            WHERE date IS NOT NULL
-            AND date != ''
-            AND STR_TO_DATE(date, '%d/%m/%Y') IS NOT NULL
+            WHERE date_tmp IS NOT NULL
             AND amount IS NOT NULL
             AND amount != ''
             AND (visa_status != 'Pending' OR visa_status IS NULL)
@@ -146,7 +86,7 @@ async function getMonthlyData() {
             ORDER BY year, month, channel
         `;
         
-        // Query for refunds in 2025 - handle both date formats
+        // Query for refunds in 2025
         const refundsQuery = `
             SELECT
                 MONTH(refund_date) as month,
@@ -795,20 +735,20 @@ router.get('/test', async (req, res) => {
     try {
         connection = await mysql.createConnection(dbConfig);
         
-        // Test date formats
+        // Test database connection and data
         const [dateFormats] = await connection.execute(`
             SELECT
-                date,
+                date_tmp,
+                amount,
+                course,
+                agent,
                 refund_date,
-                CASE
-                    WHEN date LIKE '____-__-__' THEN 'YYYY-MM-DD'
-                    WHEN date LIKE '__/__/____' THEN 'd/m/Y'
-                    ELSE 'OTHER'
-                END as date_format,
+                'DATE' as date_format,
                 'DATE' as refund_date_format
             FROM sales_data
-            WHERE (date IS NOT NULL AND date != '')
-               OR (refund_date IS NOT NULL AND refund_date > '0000-00-00')
+            WHERE date_tmp IS NOT NULL
+            AND amount IS NOT NULL
+            AND amount != ''
             LIMIT 10
         `);
         
