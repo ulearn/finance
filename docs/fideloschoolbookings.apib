@@ -1,0 +1,333 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# Fidelo School - Bookings
+
+API to get a list of bookings of booking details.
+
+**User attributes:**
+
+- bookingId `(Number)` : unique booking identifier
+- contactId `(Number)` : unique contact identifier
+
+## List bookings [/api/1.0/ts/bookings{?filter[contact_id]}{?profile_pictures}]
+
+### List bookings [GET]
+
++ Parameters
+    + filter[contact_id]: `1` (number, optional) - Contact id
+    + profile_pictures: 1 (number, optional)
+    
++ Request
+
+    + Headers
+    
+            Authentication: Bearer JWT
+
++ Response 200 (application/json)
+    + Body
+            
+            {
+                "hits": 1,
+                "entries": {
+                    "1": {
+                        "id": 1,
+                        "all_start": "2023-06-04T00:00:00.000Z",
+                        "all_end": "2023-07-01T00:00:00.000Z",
+                        "inbox_visible": "...",
+                        "booking_number": "...",
+                        "group": "",
+                        "group_number": null,
+                        "has_student_app": false,
+                        "agency_name": null,
+                        "agency_full_name": null,
+                        "agency_number": null,
+                        "sponsored": false,
+                        "sponsor_name": null,
+                        "sponsor_id_number": "",
+                        "sponsoring_fg_from": null,
+                        "sponsoring_fg_until": null,
+                        "sponsoring_fg_has_upload": null,
+                        "customer_number": "...",
+                        "document_number": null,
+                        "customer_name": "Hans, Test",
+                        "customer_lastname": "Hans",
+                        "customer_firstname": "Test",
+                        "email": "...",
+                        "customer_birthday_original": "1990-01-01T00:00:00.000Z",
+                        "customer_age": "1990-01-01T00:00:00.000Z",
+                        "customer_city": "Stadt",
+                        "customer_zip": "PLZ",
+                        "customer_address": "Adresse",
+                        "customer_address_addon": "Adresszusatz",
+                        "customer_address_state": "Bundesland",
+                        "customer_comment": "",
+                        "customer_status": 0,
+                        "customer_tel": "0221987456",
+                        "customer_mobile": "01711252426",
+                        "document_numbers_invoices": "",
+                        "billingaddress_company": "Fidelo Software GmbH",
+                        "emergency_name": "",
+                        "emergency_phone": "",
+                        "emergency_mail": "",
+                        "visum_name": "",
+                        "visa_required": false,
+                        "visum_service_id_original": "",
+                        "visum_tracking_number_original": "",
+                        "visum_passport_number_original": "",
+                        "visum_date_of_issue_original": "",
+                        "visum_due_date_original": "",
+                        "visum_date_from_original": "",
+                        "visum_date_until_original": "",
+                        "course_fulllist": "G20 (80)",
+                        "course_units": "80",
+                        "course_from": "2023-06-05T00:00:00.000Z",
+                        "course_until": "2023-06-30T00:00:00.000Z",
+                        "first_course_start": "2023-06-05T00:00:00.000Z",
+                        "course_last_end_date": "2023-06-30T00:00:00.000Z",
+                        "first_course_name": "G20",
+                        "course_weeks": 4,
+                        "course_weeks_relative": 4,
+                        "current_level_intern_short": null,
+                        "last_teacher_name": null,
+                        "course_comment": "",
+                        "placementtest_level_internal": null,
+                        "placementtest_comment": null,
+                        "accommodation_from": "2023-06-04T00:00:00.000Z",
+                        "accommodation_until": "2023-07-01T00:00:00.000Z",
+                        "acc_comment": "",
+                        "acc_comment2": "",
+                        "transfer_from": "2023-06-04T00:00:00.000Z",
+                        "transfer_until": "2023-07-01T00:00:00.000Z",
+                        "transfer_airline": "",
+                        "transfer_airline_departure": "",
+                        "transfer_flightnumber": "",
+                        "transfer_flightnumber_departure": "",
+                        "transfer_comment": null,
+                        "arrival_comment": "",
+                        "departure_comment": "",
+                        "transfer_departure_info_en": "...",
+                        "transfer_arrival_info_en": "...",
+                        "transfer_mode": 0,
+                        "insurance_name_en": null,
+                        "insurance_from": null,
+                        "insurance_end": null,
+                        "activities_startdate": null,
+                        "activities_enddate": null,
+                        "activities_weeks": null,
+                        "acc_allergies": "",
+                        "accommodation_name": null,
+                        "accommodation_room": null,
+                        "accommodation_bed": null,
+                        "accommodation_room_bed": null,
+                        "accommodation_details": null,
+                        "accommodation_street": null,
+                        "accommodation_address_addon": null,
+                        "accommodation_share_with": null,
+                        "accommodation_zip": null,
+                        "accommodation_city": null,
+                        "accommodation_tel": null,
+                        "accommodation_tel2": null,
+                        "accommodation_mobile": null,
+                        "accommodation_email": null,
+                        "accommodation_description_en": null,
+                        "payment_reminder": "",
+                        "amount": 0,
+                        "amount_initial": 0,
+                        "open_payment_prior_to_arrival": 0,
+                        "open_payment_at_school": 0,
+                        "payments": 0,
+                        "payments_local": 0,
+                        "amount_open": 0,
+                        "amount_refund": 0,
+                        "paymentterms_info": "0\n",
+                        "paymentterms_next_date": null,
+                        "paymentterms_next_amount": null,
+                        "pdf_netto": null,
+                        "pdf_brutto": null,
+                        "pdf_loa": null,
+                        "last_message_date": null,
+                        "last_message_user": null,
+                        "status": "ready",
+                        "follow_up": null,
+                        "confirmed_date": "2023-03-20T18:24:01.000Z",
+                        "confirmed": true,
+                        "checkin": null,
+                        "checkout": null,
+                        "promotion": "",
+                        "social_security_number": "",
+                        "creator_id": "7",
+                        "created_original": "2023-03-20T18:23:41.000Z",
+                        "booking_created_original": "2023-03-20T18:23:41.000Z",
+                        "editor_id": "7",
+                        "changed_original": "2023-03-20T18:24:01.000Z",
+                        "flex_170": null,
+                        "flex_185": null,
+                        "flex_186": null,
+                        "flex_93_en": null,
+                        "flex_177_en": null,
+                        "flex_143_en": null,
+                        "flex_148": null,
+                        "flex_180": null,
+                        "profile_picture": "data:image/png;base64,..."
+                    }
+                }
+            }
+
+## Get booking details [/api/1.1/ts/booking/{bookingId}{?include_inactive_services}]
+
+### Get booking details [GET]
+
++ Request
+
+    + Headers
+    
+            Authentication: Bearer JWT
+
++ Parameters
+    + bookingId (required, Number, `1`) ... Numeric `id` of the booking
+    + include_inactive_services (required, Number, `1`) ... 1 if inactive services should be returned
+
++ Response 200 (application/json)
+
+    + Body
+                  
+            {
+                "data": {
+                    "student": {
+                        "firstname": "Test",
+                        "surname": "Api",
+                        "email": "..."
+                    },
+                    "booking": {
+                        "courses": [
+                            {
+                                "active": "1",
+                                "created": "2024-11-07 16:04:46",
+                                "from": "2023-04-03",
+                                "until": "2023-04-28",
+                                "weeks": "2",
+                                "name": "Group classes (20 lessons/week)",
+                                "category": "Group courses",
+                                "note": "",
+                                "flexible_allocation": "0",
+                                "custom_fields": [],
+                                "additional_services": [],
+                                "assignments": [
+                                    {
+                                        "week": "2023-04-03",
+                                        "class": "G20",
+                                        "days": [
+                                            "1",
+                                            "2",
+                                            "4"
+                                        ],
+                                        "start": "09:00:00",
+                                        "end": "13:00:00",
+                                        "teacher": "Ernandez, Mia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "accommodations": [
+                            {
+                                "active": "0",
+                                "created": "2024-11-07 16:04:46",
+                                "from": "2023-04-02",
+                                "until": "2023-04-29",
+                                "weeks": "2",
+                                "category": "Hotel",
+                                "roomtype": "Single room",
+                                "board": "Breakfast",
+                                "from_time": "16:00:00",
+                                "until_time": "10:00:00",
+                                "note": "",
+                                "additional_services": [],
+                                "assignments": [
+                                    {
+                                        "from": "2023-04-02 00:00:00",
+                                        "until": "2023-04-29 00:00:00",
+                                        "provider": "Hotel Seaview",
+                                        "room": "Room 5"
+                                    }
+                                ]
+                            }
+                        ],
+                        "transfers": [
+                            {
+                                "date": "2023-04-02",
+                                "time": null,
+                                "type": "1"
+                            },
+                            {
+                                "date": "2023-04-29",
+                                "time": null,
+                                "type": "2"
+                            }
+                        ],
+                        "holidays": {
+                            "125": {
+                                "from": "2024-11-11",
+                                "until": "2024-11-17",
+                                "weeks": "1",
+                                "type": "student",
+                                "splitting": {
+                                    "133": {
+                                        "type": "course",
+                                        "original_id": "4004",
+                                        "split_id": "4007",
+                                        "original_from": "2024-11-04",
+                                        "original_until": "2024-11-15"
+                                    },
+                                    "134": {
+                                        "type": "accommodation",
+                                        "original_id": "2625",
+                                        "split_id": "2627",
+                                        "original_from": "2024-11-03",
+                                        "original_until": "2024-11-30"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "invoices": [
+                        {
+                            "filename": "....pdf",
+                            "number": "...",
+                            "type": "brutto",
+                            "released_for_student": true,
+                            "base64": "data:application/pdf;base64,..."
+                            "credit_note_number": "CDX34308334",
+                            "created": "2024-01-01",
+                            "updated": "2024-03-22",
+                            "is_last_document": true,
+                            "date": "2024-01-01",
+                            "updated_by": "Doe, John",
+                            "created_by": "Doe, John",
+                            "items": [
+                                {
+                                    "description": "Group classes (20 lessons/week)",
+                                    "service_from": "2025-01-01",
+                                    "service_until": "2025-12-31",
+                                    "amount": 100.42,
+                                    "tax": 19,
+                                    "active": true
+                                }
+                            ]
+                        }
+                    ],
+                    "school": {
+                        "name": "...",
+                        "address": "...",
+                        "zip": "...",
+                        "city": "...",
+                        "country_id": "DE",
+                        "phone": "+49 ...",
+                        "email": "..."
+                    }
+                }
+            }
+            
++ Response 404
+
+        Booking not found
