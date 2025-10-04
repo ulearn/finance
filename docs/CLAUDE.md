@@ -41,6 +41,28 @@ REACT employee dashboards:
 /home/hub/public_html/fins/payroll/sales/b2c-diego.js/.html
 /home/hub/public_html/fins/payroll/sales/b2b-cenker.js/.html
 
+==============================================================================================================
+TIMELINE NOTES (Reverse Cronology)
+03.10.2025
+I should also state that we have several payments of "method" "TransferMate Escrow". These are manually recorded in the system and reflect 
+payments into an Escrow Account (ie: not settled to our account). I believe I have accounted for any Escrows taht were refunded (sent back to sender) at this point so we can 
+include these TransferMate Escorw payment methods as either 
+1) They have settled to our bank account (if that is the case they should really be updated to "TransferMate" to indicate release from Escrow but they are not done) 
+2) They remain in Escrow and therefore their visa status is still Pending
+
+I am not particularly happy about having this noise but lets crack on anyway - in future the "TransferMate Escrow" method will either be 
+a) Removed completey (we will track escrows externally)
+b) Only used when the funds are actually still in escrow (unlike now where they are describing 2 states (some are in escrow and most are in bank) 
+
+01.10.2025
+1) Fidelo API Files Update: 
+  So the structure is:
+  - bookings-api.js = API utility functions (helper library) /home/hub/public_html/fins/scripts/fidelo/bookings-api.js
+  - fidelo-sync.js = Full bookings sync to database (production) /home/hub/public_html/fins/scripts/fidelo/fidelo-sync.js
+  - payments-api.js = Payments sync to database (production) /home/hub/public_html/fins/scripts/fidelo/payments-api.js
+  - Payment Detail (still broken): /home/hub/public_html/fins/scripts/fidelo/import-pay-detail-api.js
+
+
 23.09.2025 - 
 1) The Fidelo API is not working
 2) We created a MySql database to house the invocming revenue data 
