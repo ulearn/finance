@@ -431,4 +431,65 @@ router.post('/refresh', async (req, res) => {
     }
 });
 
+/**
+ * POST /api/teachers/reset-week
+ * Reset week to allow Fidelo to overwrite on next refresh
+ */
+router.post('/reset-week', async (req, res) => {
+    let connection;
+    try {
+        const { teacher_name, week } = req.body;
+
+        if (!teacher_name || !week) {
+            return res.status(400).json({
+                success: false,
+                error: 'teacher_name and week are required'
+            });
+        }
+
+        connection = await getConnection();
+
+        // Reverse name back to "Surname, First Name" format for database lookup
+        const reverseNameBack = (name) => {
+            if (!name || !name.includes(' ')) return name;
+            const parts = name.split(' ');
+            if (parts.length === 2) {
+                return `${parts[1]}, ${parts[0]}`;
+            }
+            const lastName = parts[parts.length - 1];
+            const firstNames = parts.slice(0, -1).join(' ');
+            return `${lastName}, ${firstNames}`;
+        };
+
+        const dbName = reverseNameBack(teacher_name);
+
+        // Clear manager edits so Fidelo can overwrite
+        const query = `
+            UPDATE teacher_payments
+            SET
+                hours_included_this_month = NULL,
+                weekly_pay = NULL,
+                manager_checked = 0,
+                updated_at = NOW()
+            WHERE firstname = ? AND select_value = ?
+        `;
+
+        await connection.execute(query, [dbName, week]);
+
+        res.json({
+            success: true,
+            message: 'Week reset successfully'
+        });
+
+    } catch (error) {
+        console.error('Error resetting week:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    } finally {
+        if (connection) await connection.end();
+    }
+});
+
 module.exports = router;
