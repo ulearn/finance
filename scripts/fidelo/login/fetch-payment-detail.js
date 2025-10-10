@@ -1,57 +1,132 @@
 // Fidelo Payment Detail API - Fetch and Import
-// Version 3.0 - Using centralized login utility
-require('dotenv').config({ path: require('path').join(__dirname, '../../../.env') });
+// Version 2.0 - Programmatic login + fetch + database import
+require('dotenv').config({ path: require('path').join(__dirname, '../../.env') });
 const axios = require('axios');
 const mysql = require('mysql2/promise');
 const fs = require('fs').promises;
 const path = require('path');
-const FideloAuth = require('./login');
 
 class FideloPaymentDetailImporter {
     constructor() {
-        this.auth = new FideloAuth();
+        this.baseURL = 'https://ulearn.fidelo.com';
+        this.loginEndpoint = '/api/1.0/login';
         this.paymentDetailKey = 'e012597a49e0b3d0306f48e499505673';
+        this.timeout = 60000; // 60 second timeout for large data requests
+        
+        // Login credentials from environment
+        this.username = process.env.FIDELO_USERNAME || 'paul@ulearn.ie';
+        this.password = process.env.FIDELO_PASSWORD;
+        
+        this.sessionToken = null;
+        this.cookies = null;
+    }
+    
+    // Step 1: Programmatic login
+    async login() {
+        console.log('\n=== Step 1: Logging into Fidelo ===');
+        
+        const loginUrl = `${this.baseURL}${this.loginEndpoint}`;
+        const loginData = new URLSearchParams({
+            username: this.username,
+            password: this.password,
+            submit: 'Login'
+        });
+        
+        try {
+            const response = await axios.post(loginUrl, loginData.toString(), {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                },
+                maxRedirects: 0,
+                validateStatus: (status) => status === 302 || status === 200,
+                timeout: this.timeout
+            });
+            
+            // Extract cookies and session token
+            const setCookieHeader = response.headers['set-cookie'];
+            if (setCookieHeader) {
+                this.cookies = setCookieHeader.map(cookie => cookie.split(';')[0]).join('; ');
+                
+                // Extract session token from cookies or response
+                const sessionMatch = this.cookies.match(/PHPSESSID=([^;]+)/);
+                if (sessionMatch) {
+                    this.sessionToken = sessionMatch[1];
+                }
+                
+                console.log('✓ Login successful');
+                console.log('  Session established:', this.sessionToken ? 'Yes' : 'No');
+                return true;
+            }
+            
+            console.log('✗ Login failed - no session cookie');
+            return false;
+            
+        } catch (error) {
+            console.log('✗ Login error:', error.message);
+            return false;
+        }
     }
     
     // Step 2: Fetch Payment Detail data
     async fetchPaymentDetail(dateFrom, dateTo) {
         console.log('\n=== Step 2: Fetching Payment Detail Data ===');
         console.log(`Date range: ${dateFrom} to ${dateTo}`);
-
-        if (!this.auth.isLoggedIn()) {
+        
+        if (!this.cookies) {
             console.log('✗ Not logged in - please login first');
             return null;
         }
-
+        
+        // Build the API URL with date filters
+        const apiUrl = `${this.baseURL}/api/1.0/gui2/${this.paymentDetailKey}/search`;
+        
         // Format dates for Fidelo (DD/MM/YYYY)
         const fromParts = dateFrom.split('-');
         const toParts = dateTo.split('-');
         const fideloFromDate = `${fromParts[2]}/${fromParts[1]}/${fromParts[0]}`;
         const fideloToDate = `${toParts[2]}/${toParts[1]}/${toParts[0]}`;
-
-        const filters = {
+        
+        const params = new URLSearchParams({
             'filter[search_time_from_1]': fideloFromDate,
             'filter[search_time_until_1]': fideloToDate,
             'filter[timefilter_basedon]': 'kip.payment_date',
             'limit': '1000',  // Get up to 1000 records
             'offset': '0'
-        };
-
+        });
+        
+        const fullUrl = `${apiUrl}?${params}`;
+        console.log('API URL:', fullUrl);
+        
         try {
-            const response = await this.auth.fetchGUI2Data(this.paymentDetailKey, filters);
-
-            console.log('✓ Data received successfully');
-
-            // Check the response structure
-            if (response && response.data && response.data.body) {
-                const recordCount = response.data.body.length;
-                console.log(`  Records found: ${recordCount}`);
-                return response;
+            const response = await axios.get(fullUrl, {
+                headers: {
+                    'Cookie': this.cookies,
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                    'Accept': 'application/json, text/plain, */*',
+                    'Referer': 'https://ulearn.fidelo.com/'
+                },
+                timeout: this.timeout,
+                validateStatus: (status) => true
+            });
+            
+            if (response.status === 200) {
+                console.log('✓ Data received successfully');
+                
+                // Check the response structure
+                if (response.data && response.data.data && response.data.data.body) {
+                    const recordCount = response.data.data.body.length;
+                    console.log(`  Records found: ${recordCount}`);
+                    return response.data;
+                } else {
+                    console.log('  Warning: Unexpected data structure');
+                    return response.data;
+                }
             } else {
-                console.log('  Warning: Unexpected data structure');
-                return response;
+                console.log(`✗ Error: HTTP ${response.status}`);
+                return null;
             }
-
+            
         } catch (error) {
             console.log('✗ Fetch error:', error.message);
             return null;
@@ -270,7 +345,7 @@ class FideloPaymentDetailImporter {
         
         try {
             // Step 1: Login
-            const loginSuccess = await this.auth.login();
+            const loginSuccess = await this.login();
             if (!loginSuccess) {
                 throw new Error('Login failed - check credentials');
             }

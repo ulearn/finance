@@ -1,7 +1,8 @@
-// dashboard.js v13 - Updated to use date field in proper date format
+// dashboard.js v14 - Added partner commissions from JSON file
 const express = require('express');
 const mysql = require('mysql2/promise');
 const path = require('path');
+const fs = require('fs');
 require('dotenv').config({ path: path.join(__dirname, '../../../.env') });
 
 const router = express.Router();
@@ -24,10 +25,33 @@ const BASE_SALARIES = {
 // December 2024 commission for B2C (carried into January 2025)
 const DECEMBER_2024_B2C_COMMISSION = 179.73;  // €17,973.02 @ 1%
 
+// Load partner commissions from JSON file
+function loadPartnerCommissions() {
+    try {
+        // Absolute path to avoid any confusion
+        const commissionsPath = '/home/hub/public_html/fins/scripts/fidelo/data/cmsns-2025.json';
+        console.log('Loading commissions from:', commissionsPath);
+        const commissionsData = JSON.parse(fs.readFileSync(commissionsPath, 'utf8'));
+        console.log('Partner commissions loaded:', commissionsData.monthly);
+        return commissionsData.monthly;
+    } catch (error) {
+        console.error('Error loading partner commissions from', commissionsPath, ':', error.message);
+        // Return zeros if file not found
+        return {
+            "01": 0, "02": 0, "03": 0, "04": 0, "05": 0, "06": 0,
+            "07": 0, "08": 0, "09": 0, "10": 0, "11": 0, "12": 0
+        };
+    }
+}
+
 // Central data fetching and calculation function
 async function getMonthlyData() {
     let connection;
     try {
+        // Load partner commissions
+        const partnerCommissions = loadPartnerCommissions();
+        console.log('Partner commissions loaded');
+
         console.log('Attempting to connect to MySQL...');
         connection = await mysql.createConnection(dbConfig);
         console.log('MySQL connected successfully');
@@ -50,7 +74,7 @@ async function getMonthlyData() {
         
         console.log(`Latest data through: ${latestDate}, YTD through month ${currentMonth}`);
 
-        // Main query for revenue (excluding refunds)
+        // Main query for revenue (excluding refunds and TransferMate Escrow)
         const revenueQuery = `
             SELECT
                 YEAR(date) as year,
@@ -82,11 +106,12 @@ async function getMonthlyData() {
             AND amount IS NOT NULL
             AND amount != ''
             AND (type != 'Refund' OR type IS NULL)
+            AND (method != 'TransferMate Escrow' OR method IS NULL)
             GROUP BY year, month, channel
             ORDER BY year, month, channel
         `;
 
-        // Query for refunds (all years)
+        // Query for refunds (all years) - EXCLUDING TransferMate Escrow
         const refundsQuery = `
             SELECT
                 YEAR(date) as year,
@@ -107,24 +132,60 @@ async function getMonthlyData() {
             FROM payment_detail
             WHERE type = 'Refund'
             AND date IS NOT NULL
+            AND (method != 'TransferMate Escrow' OR method IS NULL)
             GROUP BY year, month, channel
             HAVING month IS NOT NULL
             ORDER BY year, month, channel
         `;
 
+        // Query for TransferMate Escrow incoming funds (positive amounts only)
+        const escrowIncomingQuery = `
+            SELECT
+                YEAR(date) as year,
+                MONTH(date) as month,
+                SUM(CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2))) as escrow_amount,
+                COUNT(*) as escrow_count
+            FROM payment_detail
+            WHERE method = 'TransferMate Escrow'
+            AND date IS NOT NULL
+            AND CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2)) > 0
+            GROUP BY year, month
+            ORDER BY year, month
+        `;
+
+        // Query for TransferMate Escrow refunds (outgoing) - all negative amounts
+        const escrowRefundsQuery = `
+            SELECT
+                YEAR(date) as year,
+                MONTH(date) as month,
+                SUM(CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2))) as escrow_refund_amount,
+                COUNT(*) as escrow_refund_count
+            FROM payment_detail
+            WHERE method = 'TransferMate Escrow'
+            AND date IS NOT NULL
+            AND CAST(REPLACE(SUBSTRING(amount, 2), ',', '') AS DECIMAL(10,2)) < 0
+            GROUP BY year, month
+            ORDER BY year, month
+        `;
+
         const [revenueRows] = await connection.execute(revenueQuery);
         const [refundRows] = await connection.execute(refundsQuery);
+        const [escrowIncomingRows] = await connection.execute(escrowIncomingQuery);
+        const [escrowRefundRows] = await connection.execute(escrowRefundsQuery);
 
         console.log(`Revenue query returned ${revenueRows.length} rows`);
         console.log(`Refunds query returned ${refundRows.length} rows`);
+        console.log(`Escrow incoming returned ${escrowIncomingRows.length} rows`);
+        console.log(`Escrow refunds returned ${escrowRefundRows.length} rows`);
         console.log('Refunds by month:', refundRows.map(r => `${r.year}-${r.month}: ${r.channel} = €${r.refunded_amount}`));
 
-        // Process data with refunds
-        const processedData = processDataForDashboards(revenueRows, refundRows, currentMonth, currentDay);
-        
+        // Process data with refunds, escrow, and partner commissions
+        const processedData = processDataForDashboards(revenueRows, refundRows, escrowIncomingRows, escrowRefundRows, partnerCommissions, currentMonth, currentDay);
+
         return {
             success: true,
             data: processedData,
+            partnerCommissions: partnerCommissions,
             metadata: {
                 lastDataDate: latestDate,
                 ytdMonth: currentMonth,
@@ -144,7 +205,7 @@ async function getMonthlyData() {
     }
 }
 
-function processDataForDashboards(revenueRows, refundRows, ytdMonth, ytdDay) {
+function processDataForDashboards(revenueRows, refundRows, escrowIncomingRows, escrowRefundRows, partnerCommissions, ytdMonth, ytdDay) {
     // Initialize data structure
     const dataByYear = {};
 
@@ -154,6 +215,7 @@ function processDataForDashboards(revenueRows, refundRows, ytdMonth, ytdDay) {
             year: year,
             months: {},
             refunds: {},
+            escrow: {},  // Escrow tracking
             quarters: {
                 Q1: { b2c: { amount: 0, course_fees: 0 }, b2b: { amount: 0, course_fees: 0 }, total: { amount: 0, course_fees: 0 } },
                 Q2: { b2c: { amount: 0, course_fees: 0 }, b2b: { amount: 0, course_fees: 0 }, total: { amount: 0, course_fees: 0 } },
@@ -169,6 +231,10 @@ function processDataForDashboards(revenueRows, refundRows, ytdMonth, ytdDay) {
                 b2c: { amount: 0, course_fees: 0, count: 0 },
                 b2b: { amount: 0, course_fees: 0, count: 0 },
                 total: { amount: 0, course_fees: 0, count: 0 }
+            },
+            ytdEscrow: {  // YTD escrow totals
+                incoming: { amount: 0, count: 0 },
+                refunded: { amount: 0, count: 0 }
             }
         };
 
@@ -184,6 +250,10 @@ function processDataForDashboards(revenueRows, refundRows, ytdMonth, ytdDay) {
                 b2c: { amount: 0, course_fees: 0, count: 0 },
                 b2b: { amount: 0, course_fees: 0, count: 0 },
                 total: { amount: 0, course_fees: 0, count: 0 }
+            };
+            dataByYear[year].escrow[monthKey] = {
+                incoming: { amount: 0, count: 0 },
+                refunded: { amount: 0, count: 0 }
             };
         }
     });
@@ -268,31 +338,79 @@ function processDataForDashboards(revenueRows, refundRows, ytdMonth, ytdDay) {
         }
     });
 
-    // Calculate metrics with refunds
-    const result = calculateMetrics(dataByYear, 2024, 2025, ytdMonth);
+    // Populate escrow incoming data
+    escrowIncomingRows.forEach(row => {
+        const year = parseInt(row.year);
+        const month = String(row.month).padStart(2, '0');
+        const monthNum = parseInt(row.month);
+        const amount = parseFloat(row.escrow_amount) || 0;
+        const count = parseInt(row.escrow_count) || 0;
+
+        if (dataByYear[year] && dataByYear[year].escrow[month]) {
+            dataByYear[year].escrow[month].incoming = {
+                amount: amount,
+                count: count
+            };
+
+            // Add to YTD escrow if within YTD period
+            if (monthNum <= ytdMonth) {
+                dataByYear[year].ytdEscrow.incoming.amount += amount;
+                dataByYear[year].ytdEscrow.incoming.count += count;
+            }
+        }
+    });
+
+    // Populate escrow refunds data
+    escrowRefundRows.forEach(row => {
+        const year = parseInt(row.year);
+        const month = String(row.month).padStart(2, '0');
+        const monthNum = parseInt(row.month);
+        const amount = parseFloat(row.escrow_refund_amount) || 0;
+        const count = parseInt(row.escrow_refund_count) || 0;
+
+        if (dataByYear[year] && dataByYear[year].escrow[month]) {
+            dataByYear[year].escrow[month].refunded = {
+                amount: amount,
+                count: count
+            };
+
+            // Add to YTD escrow refunds if within YTD period
+            if (monthNum <= ytdMonth) {
+                dataByYear[year].ytdEscrow.refunded.amount += amount;
+                dataByYear[year].ytdEscrow.refunded.count += count;
+            }
+        }
+    });
+
+    // Calculate metrics with refunds, escrow, and partner commissions
+    const result = calculateMetrics(dataByYear, 2024, 2025, ytdMonth, partnerCommissions);
 
     return result;
 }
 
-function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
+function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth, partnerCommissions) {
     const months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
     const monthNames = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
     
     const result = {
-        lastYear: { 
-            year: lastYear, 
+        lastYear: {
+            year: lastYear,
             months: {},
+            escrow: {},  // Escrow data for last year
             quarters: dataByYear[lastYear].quarters,
             ytd: dataByYear[lastYear].ytd,
+            ytdEscrow: dataByYear[lastYear].ytdEscrow,
             total: { b2c: 0, b2b: 0, total: 0, b2c_course: 0, b2b_course: 0 }
         },
         currentYear: {
             year: currentYear,
             months: {},
             refunds: {},
+            escrow: {},  // Escrow data for current year
             quarters: dataByYear[currentYear].quarters,
             ytd: dataByYear[currentYear].ytd,
             ytdRefunds: dataByYear[currentYear].ytdRefunds,
+            ytdEscrow: dataByYear[currentYear].ytdEscrow,
             ytdNet: {
                 b2c: {
                     amount: dataByYear[currentYear].ytd.b2c.amount + dataByYear[currentYear].ytdRefunds.b2c.amount,
@@ -399,6 +517,8 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
         const lastYearData = dataByYear[lastYear].months[month];
         const currentYearData = dataByYear[currentYear].months[month];
         const refundsData = dataByYear[currentYear].refunds[month];
+        const lastYearEscrowData = dataByYear[lastYear].escrow[month];
+        const currentYearEscrowData = dataByYear[currentYear].escrow[month];
         const quarter = `Q${Math.ceil((idx + 1) / 3)}`;
 
         // Store monthly data
@@ -410,12 +530,18 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
             b2b_course: lastYearData.b2b.course_fees
         };
 
+        // Calculate net B2B course fees (with refunds and partner commissions) for this month
+        const monthKey = String(idx + 1).padStart(2, '0');
+        const partnerCommission = partnerCommissions[monthKey] || 0;
+
         result.currentYear.months[monthNames[idx]] = {
             b2c: currentYearData.b2c.amount,
             b2b: currentYearData.b2b.amount,
             total: currentYearData.total.amount,
             b2c_course: currentYearData.b2c.course_fees,
-            b2b_course: currentYearData.b2b.course_fees
+            b2b_course: currentYearData.b2b.course_fees,
+            b2b_course_net: (currentYearData.b2b.course_fees || 0) + (refundsData.b2b.course_fees || 0) - partnerCommission,
+            b2b_course_yoy_net: null  // Will be calculated after we have last year data
         };
 
         result.currentYear.refunds[monthNames[idx]] = {
@@ -424,6 +550,17 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
             total: refundsData.total.amount,
             b2c_course: refundsData.b2c.course_fees,
             b2b_course: refundsData.b2b.course_fees
+        };
+
+        // Store monthly escrow data
+        result.lastYear.escrow[monthNames[idx]] = {
+            incoming: lastYearEscrowData.incoming.amount,
+            refunded: lastYearEscrowData.refunded.amount
+        };
+
+        result.currentYear.escrow[monthNames[idx]] = {
+            incoming: currentYearEscrowData.incoming.amount,
+            refunded: currentYearEscrowData.refunded.amount
         };
         
         // Calculate YoY growth (absolute)
@@ -462,8 +599,14 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
         }
 
         // Cenker (B2B): 10% of YoY NET course fee growth (only if positive)
-        const netB2bCourseFees = currentYearData.b2b.course_fees + refundsData.b2b.course_fees;
+        // Net = Current year course fees + refunds (negative) - partner commissions
+        // Use the net course fees already calculated above
+        const netB2bCourseFees = result.currentYear.months[monthNames[idx]].b2b_course_net;
         const b2bCourseGrowthNet = netB2bCourseFees - lastYearData.b2b.course_fees;
+
+        // Store the YoY net course fee growth in the monthly data
+        result.currentYear.months[monthNames[idx]].b2b_course_yoy_net = b2bCourseGrowthNet;
+
         const b2bCommissionNet = b2bCourseGrowthNet > 0 ? b2bCourseGrowthNet * 0.10 : 0;
 
         const b2bCourseGrowthGross = currentYearData.b2b.course_fees - lastYearData.b2b.course_fees;
@@ -500,13 +643,13 @@ function calculateMetrics(dataByYear, lastYear, currentYear, ytdMonth) {
         b2b: result.currentYear.total.b2b - result.lastYear.total.b2b,
         total: result.currentYear.total.total - result.lastYear.total.total
     };
-    
+
     result.yoyPercent.total = {
-        b2c: result.lastYear.total.b2c > 0 ? 
+        b2c: result.lastYear.total.b2c > 0 ?
             ((result.currentYear.total.b2c - result.lastYear.total.b2c) / result.lastYear.total.b2c * 100) : 0,
-        b2b: result.lastYear.total.b2b > 0 ? 
+        b2b: result.lastYear.total.b2b > 0 ?
             ((result.currentYear.total.b2b - result.lastYear.total.b2b) / result.lastYear.total.b2b * 100) : 0,
-        total: result.lastYear.total.total > 0 ? 
+        total: result.lastYear.total.total > 0 ?
             ((result.currentYear.total.total - result.lastYear.total.total) / result.lastYear.total.total * 100) : 0
     };
     
@@ -689,7 +832,7 @@ router.get('/b2b', async (req, res) => {
         const lastMonth = currentMonth === 0 ? 11 : currentMonth - 1;
         const monthNames = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
         
-        // Extract B2B specific data with refunds
+        // Extract B2B specific data with refunds and partner commissions
         const b2bData = {
             success: result.success,
             employee: {
@@ -701,6 +844,9 @@ router.get('/b2b', async (req, res) => {
             currentMonthGrossPay: BASE_SALARIES.b2b + (result.data.commissions.b2b.monthsNet[monthNames[lastMonth]] || 0),
             monthlyData: result.data.currentYear.months,
             monthlyRefunds: result.data.currentYear.refunds,
+            refunds: result.data.currentYear.refunds,
+            ytdRefunds: result.data.currentYear.ytdRefunds,
+            partnerCommissions: result.partnerCommissions || {},
             lastYearMonthly: result.data.lastYear.months,
             quarters: {
                 lastYear: result.data.lastYear.quarters,
@@ -711,15 +857,13 @@ router.get('/b2b', async (req, res) => {
             baseSalary: result.data.baseSalary.b2b,
             yearTotal: result.data.currentYear.total.b2b,
             ytdTotal: result.data.currentYear.ytd.b2b.amount,
-            ytdRefunds: result.data.currentYear.ytdRefunds.b2b.amount,
-            ytdNet: result.data.currentYear.ytdNet.b2b.amount,
             lastYearYtd: result.data.lastYear.ytd.b2b.amount,
             yoyGrowth: result.data.yoyGrowth.ytdNet.b2b,
             yoyPercent: result.data.yoyPercent.ytdNet.b2b,
             yoyMonthly: result.data.yoyGrowth.months,
             yoyPercentMonthly: result.data.yoyPercent.months
         };
-        
+
         res.json(b2bData);
     } catch (error) {
         console.error('B2B Dashboard error:', error);

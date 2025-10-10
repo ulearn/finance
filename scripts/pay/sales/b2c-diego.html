@@ -154,6 +154,24 @@
         .commission-row td {
             background: #cffafe !important;
         }
+        .refunds-row {
+            background: #fee2e2 !important;
+            color: #991b1b;
+            font-weight: 600;
+        }
+        .refunds-row td {
+            background: #fee2e2 !important;
+            color: #991b1b;
+        }
+        .net-total-row {
+            background: #10b981 !important;
+            color: white;
+            font-weight: 700;
+        }
+        .net-total-row td {
+            background: #10b981 !important;
+            color: white;
+        }
         .total-row {
             background: #10b981 !important;
             color: white;
@@ -248,11 +266,14 @@
 
             const fetchData = async () => {
                 try {
-                    const response = await fetch('/fins/scripts/pay/sales/dashboard/b2c');
+                    const response = await fetch('/fins/scripts/pay/sales/dashboard/data');
                     const result = await response.json();
-                    
+
                     if (result.success) {
-                        setData(result);
+                        setData({
+                            ...result.data,
+                            partnerCommissions: result.partnerCommissions
+                        });
                     } else {
                         setError(result.error || 'Failed to load data');
                     }
@@ -309,64 +330,51 @@
             const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
             const currentMonthIdx = new Date().getMonth();
             const lastMonthIdx = currentMonthIdx === 0 ? 11 : currentMonthIdx - 1;
-            const lastMonthCommission = data.commissions.months[months[lastMonthIdx]] || 0;
-
-            // Calculate quarterly totals from monthly data
-            const calculateQuarters = (monthlyData) => {
-                const quarters = {};
-                quarters.Q1 = ['JAN', 'FEB', 'MAR'].reduce((sum, m) => sum + (monthlyData[m]?.b2c || 0), 0);
-                quarters.Q2 = ['APR', 'MAY', 'JUN'].reduce((sum, m) => sum + (monthlyData[m]?.b2c || 0), 0);
-                quarters.Q3 = ['JUL', 'AUG', 'SEP'].reduce((sum, m) => sum + (monthlyData[m]?.b2c || 0), 0);
-                quarters.Q4 = ['OCT', 'NOV', 'DEC'].reduce((sum, m) => sum + (monthlyData[m]?.b2c || 0), 0);
-                return quarters;
-            };
-
-            const lastYearQuarters = calculateQuarters(data.lastYearMonthly);
-            const currentYearQuarters = calculateQuarters(data.monthlyData);
+            const lastMonthCommission = data.commissions.b2c.monthsNet?.[months[lastMonthIdx]] ?? 0;
 
             return (
                 <div className="dashboard">
                     <div className="header">
                         <h1>B2C Dashboard - Diego</h1>
-                        <p>Commission Rate: {data.employee.commissionRate} of Total Revenue</p>
+                        <p>Commission Rate: 1% of Net Revenue</p>
                     </div>
 
                     <div className="payroll-summary">
                         <h2>{getCurrentMonthName()} Payroll</h2>
                         <div className="payroll-item">
                             <span>Base Salary</span>
-                            <span>{formatCurrency(data.employee.baseSalary)}</span>
+                            <span>{formatCurrency(data.baseSalary.b2c.monthly)}</span>
                         </div>
                         <div className="payroll-item">
-                            <span>{getLastMonthName()} Commission (1% of revenue)</span>
+                            <span>{getLastMonthName()} Commission (1% of net revenue)</span>
                             <span>{formatCurrency(lastMonthCommission)}</span>
                         </div>
                         <div className="payroll-item">
                             <span>Gross Pay</span>
-                            <span>{formatCurrency(data.employee.baseSalary + lastMonthCommission)}</span>
+                            <span>{formatCurrency(data.baseSalary.b2c.monthly + lastMonthCommission)}</span>
                         </div>
                     </div>
 
                     <div className="metric-cards">
                         <div className="metric-card">
                             <h3>YTD Revenue</h3>
-                            <div className="value">{formatCurrency(data.ytdTotal)}</div>
+                            <div className="value">{formatCurrency(data.currentYear.ytd.b2c.amount)}</div>
                         </div>
                         <div className="metric-card">
                             <h3>YTD Commissions</h3>
-                            <div className="value">{formatCurrency(data.commissions.ytd)}</div>
+                            <div className="value">{formatCurrency(data.commissions.b2c.ytdNet || data.commissions.b2c.ytd)}</div>
                         </div>
                         <div className="metric-card">
                             <h3>YoY Growth</h3>
-                            <div className="value">{formatPercent(data.yoyPercent)}</div>
+                            <div className="value">{formatPercent(data.yoyPercent.ytdNet?.b2c || data.yoyPercent.ytd.b2c)}</div>
                         </div>
                         <div className="metric-card">
                             <h3>YTD Total Pay</h3>
-                            <div className="value">{formatCurrency(data.baseSalary.ytd + data.commissions.ytd)}</div>
+                            <div className="value">{formatCurrency(data.baseSalary.b2c.ytd + (data.commissions.b2c.ytdNet || data.commissions.b2c.ytd))}</div>
                         </div>
                     </div>
 
-                    <div className="section-header">B2C Revenue & Commissions</div>
+                    <div className="section-header">B2C Revenue - Diego</div>
                     
                     <div className="table-section revenue-section">
                         <table className="data-table">
@@ -386,109 +394,138 @@
                                     <td>2024</td>
                                     {months.map((month, idx) => (
                                         <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
-                                            {formatCurrency(data.lastYearMonthly[month].b2c)}
+                                            {formatCurrency(data.lastYear.months[month].b2c)}
                                         </td>
                                     ))}
-                                    <td className="total-column">{formatCurrency(Object.values(data.lastYearMonthly).reduce((sum, m) => sum + m.b2c, 0))}</td>
-                                </tr>
-                                <tr className="quarter-row">
-                                    <td>Q</td>
-                                    {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
-                                            return (
-                                                <td key={month} className="quarter-separator">
-                                                    {formatCurrency(lastYearQuarters[`Q${Math.floor(idx / 3) + 1}`])}
-                                                </td>
-                                            );
-                                        }
-                                        return <td key={month}></td>;
-                                    })}
-                                    <td className="total-column"></td>
-                                </tr>
-                                <tr>
-                                    <td>2025</td>
-                                    {months.map((month, idx) => (
-                                        <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
-                                            {formatCurrency(data.monthlyData[month].b2c)}
-                                        </td>
-                                    ))}
-                                    <td className="total-column">{formatCurrency(data.yearTotal)}</td>
-                                </tr>
-                                <tr className="quarter-row">
-                                    <td>Q</td>
-                                    {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
-                                            return (
-                                                <td key={month} className="quarter-separator">
-                                                    {formatCurrency(currentYearQuarters[`Q${Math.floor(idx / 3) + 1}`])}
-                                                </td>
-                                            );
-                                        }
-                                        return <td key={month}></td>;
-                                    })}
-                                    <td className="total-column"></td>
-                                </tr>
-                                <tr className="q-diff-row">
-                                    <td>Q DIFF</td>
-                                    {months.map((month, idx) => {
-                                        if (idx % 3 === 2) {
-                                            const qNum = `Q${Math.floor(idx / 3) + 1}`;
-                                            const diff = currentYearQuarters[qNum] - lastYearQuarters[qNum];
-                                            return (
-                                                <td key={month} className={`quarter-separator ${diff >= 0 ? 'growth-positive' : 'growth-negative'}`}>
-                                                    {formatCurrency(diff)}
-                                                </td>
-                                            );
-                                        }
-                                        return <td key={month}></td>;
-                                    })}
-                                    <td className="total-column"></td>
+                                    <td className="total-column">{formatCurrency(data.lastYear.total.b2c)}</td>
                                 </tr>
                                 <tr className="ytd-row">
                                     <td>2024 YTD</td>
                                     {months.map((month, idx) => (
                                         <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
-                                            {idx < new Date().getMonth() + 1 ? formatCurrency(data.lastYearMonthly[month].b2c) : '-'}
+                                            {idx < data.ytdMonthCount ? formatCurrency(data.lastYear.months[month].b2c) : '-'}
                                         </td>
                                     ))}
-                                    <td className="total-column">{formatCurrency(data.lastYearYtd)}</td>
+                                    <td className="total-column">{formatCurrency(data.lastYear.ytd.b2c.amount)}</td>
+                                </tr>
+                                <tr className="quarter-row">
+                                    <td>Q 2024</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.lastYear.quarters.Q1.b2c.amount)}</td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.lastYear.quarters.Q2.b2c.amount)}</td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.lastYear.quarters.Q3.b2c.amount)}</td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.lastYear.quarters.Q4.b2c.amount)}</td>
+                                    <td className="total-column">-</td>
                                 </tr>
                                 <tr className="ytd-row">
                                     <td>2025 YTD</td>
                                     {months.map((month, idx) => (
                                         <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
-                                            {idx < new Date().getMonth() + 1 ? formatCurrency(data.monthlyData[month].b2c) : '-'}
+                                            {idx < data.ytdMonthCount ? formatCurrency(data.currentYear.months[month].b2c) : '-'}
                                         </td>
                                     ))}
-                                    <td className="total-column">{formatCurrency(data.ytdTotal)}</td>
+                                    <td className="total-column">{formatCurrency(data.currentYear.ytd.b2c.amount)}</td>
                                 </tr>
+                                <tr className="quarter-row">
+                                    <td>Q 2025</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.currentYear.quarters.Q1.b2c.amount)}</td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.currentYear.quarters.Q2.b2c.amount)}</td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.currentYear.quarters.Q3.b2c.amount)}</td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td>{formatCurrency(data.currentYear.quarters.Q4.b2c.amount)}</td>
+                                    <td className="total-column">-</td>
+                                </tr>
+                                {data.currentYear.refunds && (
+                                    <>
+                                        <tr className="refunds-row">
+                                            <td>Refunds</td>
+                                            {months.map((month, idx) => (
+                                                <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
+                                                    {idx < data.ytdMonthCount && data.currentYear.refunds[month].b2c != 0 ?
+                                                        formatCurrency(Math.abs(data.currentYear.refunds[month].b2c), true) : '-'}
+                                                </td>
+                                            ))}
+                                            <td className="total-column">{formatCurrency(Math.abs(data.currentYear.ytdRefunds?.b2c?.amount || 0), true)}</td>
+                                        </tr>
+                                        <tr className="net-total-row">
+                                            <td>Net Total</td>
+                                            {months.map((month, idx) => (
+                                                <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
+                                                    {idx < data.ytdMonthCount ?
+                                                        formatCurrency(data.currentYear.months[month].b2c + (data.currentYear.refunds[month].b2c || 0)) : '-'}
+                                                </td>
+                                            ))}
+                                            <td className="total-column">{formatCurrency(data.currentYear.ytdNet?.b2c?.amount || data.currentYear.ytd.b2c.amount)}</td>
+                                        </tr>
+                                    </>
+                                )}
                                 <tr className="yoy-row">
-                                    <td>YoY €</td>
+                                    <td>YoY € (Net)</td>
                                     {months.map((month, idx) => {
-                                        const yoyValue = data.yoyMonthly[month].b2c;
+                                        const netCurrent = data.currentYear.months[month].b2c + (data.currentYear.refunds?.[month]?.b2c || 0);
+                                        const yoyGrowth = netCurrent - data.lastYear.months[month].b2c;
                                         return (
-                                            <td key={month} className={`${(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''} ${yoyValue !== null && yoyValue >= 0 ? 'growth-positive' : yoyValue !== null ? 'growth-negative' : ''}`}>
-                                                {formatCurrency(yoyValue)}
+                                            <td key={month} className={`${(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}
+                                                ${idx < data.ytdMonthCount ? (yoyGrowth >= 0 ? 'growth-positive' : 'growth-negative') : ''}`}>
+                                                {idx < data.ytdMonthCount ? formatCurrency(yoyGrowth) : '-'}
                                             </td>
                                         );
                                     })}
-                                    <td className={`total-column ${data.yoyGrowth >= 0 ? 'growth-positive' : 'growth-negative'}`}>
-                                        {formatCurrency(data.yoyGrowth)}
+                                    <td className={`total-column ${data.yoyGrowth.ytdNet?.b2c >= 0 ? 'growth-positive' : 'growth-negative'}`}>
+                                        {formatCurrency(data.yoyGrowth.ytdNet?.b2c || data.yoyGrowth.ytd.b2c)}
                                     </td>
                                 </tr>
                                 <tr className="yoy-row">
-                                    <td>YoY %</td>
+                                    <td>YoY % (Net)</td>
                                     {months.map((month, idx) => {
-                                        const yoyPercent = data.yoyPercentMonthly[month].b2c;
+                                        const netCurrent = data.currentYear.months[month].b2c + (data.currentYear.refunds?.[month]?.b2c || 0);
+                                        const lastYear = data.lastYear.months[month].b2c;
+                                        const percent = lastYear > 0 ? ((netCurrent - lastYear) / lastYear * 100) : 0;
                                         return (
-                                            <td key={month} className={`${(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''} ${yoyPercent !== null && yoyPercent >= 0 ? 'growth-positive' : yoyPercent !== null ? 'growth-negative' : ''}`}>
-                                                {formatPercent(yoyPercent)}
+                                            <td key={month} className={`${(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}
+                                                ${idx < data.ytdMonthCount ? (percent >= 0 ? 'growth-positive' : 'growth-negative') : ''}`}>
+                                                {idx < data.ytdMonthCount ? formatPercent(percent) : '-'}
                                             </td>
                                         );
                                     })}
-                                    <td className={`total-column ${data.yoyPercent >= 0 ? 'growth-positive' : 'growth-negative'}`}>
-                                        {formatPercent(data.yoyPercent)}
+                                    <td className={`total-column ${data.yoyPercent.ytdNet?.b2c >= 0 ? 'growth-positive' : 'growth-negative'}`}>
+                                        {formatPercent(data.yoyPercent.ytdNet?.b2c || data.yoyPercent.ytd.b2c)}
                                     </td>
+                                </tr>
+                                <tr className="q-diff-row">
+                                    <td>Q Diff</td>
+                                    <td>-</td>
+                                    <td className={`${data.ytdMonthCount >= 3 ? (data.yoyGrowth.quarters.Q1.b2c >= 0 ? 'growth-positive' : 'growth-negative') : ''}`}>
+                                        {data.ytdMonthCount >= 3 ? formatCurrency(data.yoyGrowth.quarters.Q1.b2c) : '-'}
+                                    </td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td className={`${data.ytdMonthCount >= 6 ? (data.yoyGrowth.quarters.Q2.b2c >= 0 ? 'growth-positive' : 'growth-negative') : ''}`}>
+                                        {data.ytdMonthCount >= 6 ? formatCurrency(data.yoyGrowth.quarters.Q2.b2c) : '-'}
+                                    </td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td className={`${data.ytdMonthCount >= 9 ? (data.yoyGrowth.quarters.Q3.b2c >= 0 ? 'growth-positive' : 'growth-negative') : ''}`}>
+                                        {data.ytdMonthCount >= 9 ? formatCurrency(data.yoyGrowth.quarters.Q3.b2c) : '-'}
+                                    </td>
+                                    <td className="quarter-separator">-</td>
+                                    <td>-</td>
+                                    <td className={`${data.ytdMonthCount >= 12 ? (data.yoyGrowth.quarters.Q4.b2c >= 0 ? 'growth-positive' : 'growth-negative') : ''}`}>
+                                        {data.ytdMonthCount >= 12 ? formatCurrency(data.yoyGrowth.quarters.Q4.b2c) : '-'}
+                                    </td>
+                                    <td className="total-column">-</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -512,32 +549,48 @@
                                     <td>Base</td>
                                     {months.map((month, idx) => (
                                         <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
-                                            {formatCurrency(data.baseSalary.monthly)}
+                                            {idx < data.ytdMonthCount ? formatCurrency(data.baseSalary.b2c.monthly) : '-'}
                                         </td>
                                     ))}
-                                    <td className="total-column">{formatCurrency(data.baseSalary.annual)}</td>
+                                    <td className="total-column">{formatCurrency(data.baseSalary.b2c.ytd)}</td>
                                 </tr>
                                 <tr className="commission-row">
-                                    <td>Commission (1%)</td>
-                                    {months.map((month, idx) => (
-                                        <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
-                                            {formatCurrency(data.commissions.months[month])}
-                                        </td>
-                                    ))}
-                                    <td className="total-column">{formatCurrency(data.commissions.total)}</td>
+                                    <td>Comm (Prev Month)</td>
+                                    {months.map((month, idx) => {
+                                        const prevMonth = idx === 0 ? 179 : (data.commissions.b2c.monthsNet?.[months[idx - 1]] ?? data.commissions.b2c.months[months[idx - 1]] ?? 0);
+                                        return (
+                                            <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
+                                                {idx < data.ytdMonthCount ? formatCurrency(prevMonth) : '-'}
+                                            </td>
+                                        );
+                                    })}
+                                    <td className="total-column">{(() => {
+                                        // Calculate total commissions PAID = Dec 2024 (€179) + JAN through (ytdMonth-1)
+                                        const commissionsPaid = months.slice(0, data.ytdMonthCount).reduce((sum, month, idx) => {
+                                            const prevMonth = idx === 0 ? 179 : (data.commissions.b2c.monthsNet?.[months[idx - 1]] ?? data.commissions.b2c.months[months[idx - 1]] ?? 0);
+                                            return sum + prevMonth;
+                                        }, 0);
+                                        return formatCurrency(commissionsPaid);
+                                    })()}</td>
                                 </tr>
                                 <tr className="total-row">
                                     <td>TOTAL (Paid)</td>
                                     {months.map((month, idx) => {
-                                        const commissionMonth = idx === 0 ? 11 : idx - 1;
-                                        const commission = data.commissions.months[months[commissionMonth]] || 0;
+                                        const prevMonth = idx === 0 ? 179 : (data.commissions.b2c.monthsNet?.[months[idx - 1]] ?? data.commissions.b2c.months[months[idx - 1]] ?? 0);
                                         return (
                                             <td key={month} className={(idx + 1) % 3 === 0 && idx !== 11 ? 'quarter-separator' : ''}>
-                                                {formatCurrency(data.baseSalary.monthly + commission)}
+                                                {idx < data.ytdMonthCount ? formatCurrency(data.baseSalary.b2c.monthly + prevMonth) : '-'}
                                             </td>
                                         );
                                     })}
-                                    <td className="total-column">{formatCurrency(data.baseSalary.annual + data.commissions.total)}</td>
+                                    <td className="total-column">{(() => {
+                                        // Calculate total commissions PAID (not earned) = Dec 2024 (€179) + JAN through (ytdMonth-1)
+                                        const commissionsPaid = months.slice(0, data.ytdMonthCount).reduce((sum, month, idx) => {
+                                            const prevMonth = idx === 0 ? 179 : (data.commissions.b2c.monthsNet?.[months[idx - 1]] ?? data.commissions.b2c.months[months[idx - 1]] ?? 0);
+                                            return sum + prevMonth;
+                                        }, 0);
+                                        return formatCurrency(data.baseSalary.b2c.ytd + commissionsPaid);
+                                    })()}</td>
                                 </tr>
                             </tbody>
                         </table>
