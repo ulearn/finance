@@ -636,6 +636,33 @@
                 await fetchSummary();
             };
 
+            const resetWeek = async (teacherName, week) => {
+                if (!confirm(`Reset this week to allow Fidelo to overwrite on next refresh?\n\nThis will clear any manual edits you've made.`)) {
+                    return;
+                }
+
+                try {
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/reset-week', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            teacher_name: teacherName,
+                            week: week
+                        })
+                    });
+
+                    const result = await response.json();
+                    if (result.success) {
+                        await fetchData();
+                        alert('Week reset! Next Fidelo refresh will update this week.');
+                    } else {
+                        alert('Error resetting week: ' + result.error);
+                    }
+                } catch (err) {
+                    alert('Error resetting week: ' + err.message);
+                }
+            };
+
             const syncLeaveData = async () => {
                 if (!summary) return;
 
