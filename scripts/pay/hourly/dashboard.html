@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Hourly Payroll Dashboard</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .logo-container {
+            margin-left: 20px;
+        }
+
+        .logo-container img {
+            height: 50px;
+            width: auto;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        button:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+        }
+
+        .view-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .summary-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            background: #eaf4fb;
+        }
+
+        .summary-controls button:not(:first-child) {
+            background: #5dade2;
+        }
+
+        .summary-controls button:not(:first-child):hover {
+            background: #3498db;
+        }
+
+        .detail-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid #9b59b6;
+            border-radius: 8px;
+            background: #f4ecf7;
+        }
+
+        button.weekly-detail-btn {
+            background: #9b59b6;
+        }
+
+        button.weekly-detail-btn:hover {
+            background: #8e44ad;
+        }
+
+        button.refresh-fidelo-btn {
+            background: #af7ac5;
+        }
+
+        button.refresh-fidelo-btn:hover {
+            background: #9b59b6;
+        }
+
+        select.period-select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #9b59b6;
+            background: white;
+        }
+
+        .summary-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .summary-table th,
+        .summary-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .summary-table th {
+            background: #34495e;
+            color: white;
+            font-weight: 600;
+        }
+
+        .summary-table th.leave-header {
+            background: #16a085;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+        }
+
+        .summary-table th.leave-subheader {
+            background: #1abc9c;
+            font-size: 13px;
+        }
+
+        .summary-table td.leave-cell {
+            background: #e8f8f5;
+            border-left: 1px solid #d5f4e6;
+        }
+
+        .summary-table td.leave-cell:first-of-type {
+            border-left: 2px solid #1abc9c;
+        }
+
+        .summary-table tr.no-email td.leave-cell {
+            background: #e8f8f5;
+        }
+
+        .summary-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .summary-table tr.no-email {
+            border: 3px solid #e74c3c;
+        }
+
+        .summary-table tr.no-email td {
+            border-bottom: none;
+        }
+
+        .summary-table tr.no-email td:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .summary-table tr.no-email td:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .detail-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .teacher-row {
+            border-bottom: 2px solid #ecf0f1;
+            padding: 15px 0;
+        }
+
+        .teacher-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .week-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background: #f8f9fa;
+        }
+
+        .week-card.needs-manual {
+            border-color: #e74c3c;
+            background: #fadbd8;
+        }
+
+        .week-card.auto-populate {
+            border-color: #27ae60;
+            background: #d5f4e6;
+        }
+
+        .week-card.manager-checked {
+            border-color: #8e44ad;
+            background: #e8daef;
+        }
+
+        .week-title {
+            font-weight: 600;
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+
+        .week-hours {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .week-meta {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            margin-top: 5px;
+            font-size: 11px;
+        }
+
+        .week-meta-item {
+            text-align: center;
+        }
+
+        .week-meta-label {
+            color: #7f8c8d;
+            display: block;
+        }
+
+        .week-meta-value {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .week-reason {
+            font-size: 11px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .editable-field {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+
+        .save-btn {
+            margin-top: 5px;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+
+        .reset-btn {
+            background: #e67e22;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+
+        .reset-btn:hover {
+            background: #d35400;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .legend-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+        }
+
+        .legend-box.auto {
+            background: #d5f4e6;
+            border-color: #27ae60;
+        }
+
+        .legend-box.manual {
+            background: #fadbd8;
+            border-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function TeacherPayrollDashboard() {
+            const [data, setData] = useState(null);
+            const [summary, setSummary] = useState(null);
+            const [periods, setPeriods] = useState(null);
+            const [currentPeriod, setCurrentPeriod] = useState(null);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
+            const [editingWeek, setEditingWeek] = useState({});
+            const [editingEmail, setEditingEmail] = useState(null);
+            const [view, setView] = useState('detail'); // 'detail' or 'summary'
+            const [selectedPeriod, setSelectedPeriod] = useState(null);
+
+            // Set selectedPeriod to current period when periods are loaded
+            useEffect(() => {
+                if (periods && currentPeriod && !selectedPeriod) {
+                    setSelectedPeriod(currentPeriod);
+                }
+            }, [periods, currentPeriod]);
+
+            useEffect(() => {
+                fetchPeriods();
+                fetchData();
+                fetchSummary();
+            }, []);
+
+            const fetchPeriods = async () => {
+                try {
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/periods');
+                    const result = await response.json();
+                    if (result.success) {
+                        setPeriods(result.data.periods);
+                        setCurrentPeriod(result.data.current);
+                    }
+                } catch (err) {
+                    console.error('Error fetching periods:', err);
+                }
+            };
+
+            // Format week display (e.g., "WK 35 (25-31/08/2025)")
+            const formatWeekDisplay = (weekString) => {
+                // weekString format: "Week 35, 25/08/2025 – 31/08/2025"
+                const match = weekString.match(/Week (\d+), (\d{2})\/(\d{2})\/(\d{4})\s*–\s*(\d{2})\/(\d{2})\/(\d{4})/);
+                if (!match) return weekString;
+
+                const [_, weekNum, dayFrom, monthFrom, yearFrom, dayTo, monthTo, yearTo] = match;
+
+                // Check if it straddles months
+                if (monthFrom === monthTo) {
+                    return `WK ${weekNum} (${dayFrom}-${dayTo}/${monthFrom}/${yearFrom})`;
+                } else {
+                    return `WK ${weekNum} (${dayFrom}/${monthFrom}-${dayTo}/${monthTo}/${yearFrom})`;
+                }
+            };
+
+            const fetchData = async () => {
+                try {
+                    setLoading(true);
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/data');
+                    const result = await response.json();
+                    if (result.success) {
+                        setData(result.data);
+                    } else {
+                        setError(result.error);
+                    }
+                } catch (err) {
+                    setError(err.message);
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            const fetchSummary = async () => {
+                try {
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/summary');
+                    const result = await response.json();
+                    if (result.success) {
+                        setSummary(result.data);
+                    }
+                } catch (err) {
+                    console.error('Error fetching summary:', err);
+                }
+            };
+
+            const refreshDataForPeriod = async (period) => {
+                if (!confirm(`Refresh data from Fidelo for ${period.month} (${period.from} to ${period.to})?\n\nThis will fetch fresh data from Fidelo API and update the database.`)) {
+                    return;
+                }
+
+                // Use Fidelo query dates (full weeks) instead of payroll cutoff dates
+                const dateFrom = period.fideloFrom || period.from;
+                const dateTo = period.fideloTo || period.to;
+
+                try {
+                    alert('Fetching data from Fidelo... This may take 30-60 seconds. Click OK and wait.');
+
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/refresh', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ dateFrom, dateTo })
+                    });
+                    const result = await response.json();
+                    if (result.success) {
+                        // Wait a moment for the background process to complete, then reload data from MySQL
+                        setTimeout(async () => {
+                            await fetchData();
+                            await fetchSummary();
+                            alert('Data refreshed successfully from Fidelo and reloaded from database.');
+                        }, 10000); // Wait 10 seconds for import to complete
+                    } else {
+                        alert('Error: ' + result.error);
+                    }
+                } catch (err) {
+                    alert('Error refreshing data: ' + err.message);
+                }
+            };
+
+            const refreshData = async () => {
+                const dateFrom = prompt('Enter start date (YYYY-MM-DD):');
+                const dateTo = prompt('Enter end date (YYYY-MM-DD):');
+
+                if (dateFrom && dateTo) {
+                    try {
+                        const response = await fetch('/fins/scripts/pay/hourly/dashboard/refresh', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ dateFrom, dateTo })
+                        });
+                        const result = await response.json();
+                        if (result.success) {
+                            alert('Data refresh initiated. Please wait a moment and reload the page.');
+                        } else {
+                            alert('Error: ' + result.error);
+                        }
+                    } catch (err) {
+                        alert('Error refreshing data: ' + err.message);
+                    }
+                }
+            };
+
+            const updateWeekHours = async (teacher, week, hours, pay, leave, sick) => {
+                try {
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/update-hours', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            teacher_name: teacher,
+                            week: week,
+                            hours_included: hours,
+                            weekly_pay: pay,
+                            leave_hours: leave,
+                            sick_days: sick
+                        })
+                    });
+                    const result = await response.json();
+                    if (result.success) {
+                        fetchData();
+                        fetchSummary();
+                        setEditingWeek({});
+                    } else {
+                        alert('Error: ' + result.error);
+                    }
+                } catch (err) {
+                    alert('Error updating hours: ' + err.message);
+                }
+            };
+
+            const updateTeacherEmail = async (teacherName, email) => {
+                try {
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/update-email', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            teacher_name: teacherName,
+                            email: email
+                        })
+                    });
+                    const result = await response.json();
+                    if (result.success) {
+                        await fetchSummary();
+                    } else {
+                        alert('Error updating email: ' + result.error);
+                    }
+                } catch (err) {
+                    alert('Error updating email: ' + err.message);
+                }
+            };
+
+            const autoPopulateEmails = async () => {
+                if (!summary) return;
+
+                const teachersWithoutEmail = summary.filter(t => !t.email);
+
+                if (teachersWithoutEmail.length === 0) {
+                    alert('All teachers already have email addresses!');
+                    return;
+                }
+
+                if (!confirm(`This will search Zoho People for ${teachersWithoutEmail.length} teachers.\n\nNote: This may take a few minutes due to API rate limits.\n\nContinue?`)) {
+                    return;
+                }
+
+                let foundCount = 0;
+                let notFoundCount = 0;
+
+                for (const teacher of teachersWithoutEmail) {
+                    // Parse first and last name from "First Last" format
+                    const nameParts = teacher.teacher_name.split(' ');
+                    if (nameParts.length < 2) {
+                        notFoundCount++;
+                        continue;
+                    }
+
+                    const firstName = nameParts[0];
+                    const lastName = nameParts[nameParts.length - 1];
+
+                    try {
+                        const response = await fetch(`/fins/payroll/zoho/search-by-name?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}`);
+                        const result = await response.json();
+
+                        if (result.success && result.employee && result.employee.EMPLOYEEMAILALIAS) {
+                            // Found employee, update email
+                            await updateTeacherEmail(teacher.teacher_name, result.employee.EMPLOYEEMAILALIAS);
+                            foundCount++;
+                        } else {
+                            notFoundCount++;
+                        }
+
+                        // Add 500ms delay between requests to avoid rate limiting
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                    } catch (err) {
+                        console.error(`Error searching for ${teacher.teacher_name}:`, err);
+                        notFoundCount++;
+                    }
+                }
+
+                alert(`Email auto-population complete:\n\n✓ Found: ${foundCount}\n✗ Not found: ${notFoundCount}\n\nYou can manually add missing emails by clicking on the email column.`);
+                await fetchSummary();
+            };
+
+            const syncLeaveData = async () => {
+                if (!summary) return;
+
+                const teachersWithEmail = summary.filter(t => t.email);
+
+                if (teachersWithEmail.length === 0) {
+                    alert('No teachers have email addresses. Please populate emails first.');
+                    return;
+                }
+
+                if (!confirm(`This will sync leave data from Zoho People for ${teachersWithEmail.length} teachers.\n\nNote: This may take a few minutes.\n\nContinue?`)) {
+                    return;
+                }
+
+                try {
+                    alert('Syncing leave data from Zoho... This may take a few minutes. Click OK and wait.');
+
+                    const response = await fetch('/fins/payroll/zoho/leave/sync-all', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        await fetchSummary();
+                        alert(`Leave data sync complete:\n\n✓ Success: ${result.successCount}\n✗ Failed: ${result.failCount}\n\nTotal processed: ${result.totalProcessed}`);
+                    } else {
+                        alert('Error syncing leave data: ' + result.error);
+                    }
+                } catch (err) {
+                    alert('Error syncing leave data: ' + err.message);
+                }
+            };
+
+            if (loading) {
+                return <div className="loading">Loading teacher payroll data...</div>;
+            }
+
+            if (error) {
+                return (
+                    <div className="container">
+                        <div className="alert alert-error">
+                            Error loading data: {error}
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div className="container">
+                    <div className="header">
+                        <div className="header-content">
+                            <h1>Teacher Hourly Payroll Dashboard</h1>
+                            <p>Monthly payroll cutoff: Last Thursday (includes up to Wednesday)</p>
+                            {currentPeriod && (
+                                <p><strong>Current Period:</strong> {currentPeriod.month} ({currentPeriod.from} to {currentPeriod.to}) - {currentPeriod.weeks} weeks</p>
+                            )}
+                            <div className="controls">
+                            <div className="view-controls">
+                                {view === 'summary' ? (
+                                    <>
+                                        <div className="summary-controls">
+                                            <button onClick={() => setView('summary')}>Payroll Summary</button>
+                                            <button onClick={autoPopulateEmails}>Get Zoho Emails</button>
+                                            <button onClick={syncLeaveData}>Sync Leave Data</button>
+                                        </div>
+                                        <button className="weekly-detail-btn" onClick={() => setView('detail')}>Weekly Detail</button>
+                                    </>
+                                ) : (
+                                    <>
+                                        <button onClick={() => setView('summary')}>Payroll Summary</button>
+                                        <div className="detail-controls">
+                                            <button className="weekly-detail-btn" onClick={() => setView('detail')}>Weekly Detail</button>
+                                            {periods && (
+                                                <>
+                                                    <select
+                                                        className="period-select"
+                                                        value={selectedPeriod ? selectedPeriod.period : (currentPeriod ? currentPeriod.period : '')}
+                                                        onChange={(e) => {
+                                                            const period = periods.find(p => p.period === parseInt(e.target.value));
+                                                            setSelectedPeriod(period || null);
+                                                            setCurrentPeriod(period || null);
+                                                        }}>
+                                                        <option value="">Select Period...</option>
+                                                        {periods.map(p => (
+                                                            <option key={p.period} value={p.period}>
+                                                                {p.month} ({p.from} to {p.to})
+                                                            </option>
+                                                        ))}
+                                                    </select>
+                                                    {selectedPeriod && (
+                                                        <button className="refresh-fidelo-btn" onClick={() => refreshDataForPeriod(selectedPeriod)}>
+                                                            Refresh Fidelo Data
+                                                        </button>
+                                                    )}
+                                                </>
+                                            )}
+                                        </div>
+                                    </>
+                                )}
+                            </div>
+                        </div>
+                        </div>
+                        <div className="logo-container">
+                            <img src="logo.png" alt="ULearn Logo" />
+                        </div>
+                    </div>
+
+                    {view === 'summary' && summary && (
+                        <div className="summary-section">
+                            <h2>Final Payroll Summary</h2>
+                            <table className="summary-table">
+                                <thead>
+                                    <tr>
+                                        <th rowSpan="2">Teacher</th>
+                                        <th rowSpan="2">Email</th>
+                                        <th rowSpan="2">Total Hours</th>
+                                        <th rowSpan="2">Average Rate</th>
+                                        <th colSpan="4" className="leave-header">LEAVE</th>
+                                        <th rowSpan="2">Total Pay</th>
+                                    </tr>
+                                    <tr>
+                                        <th className="leave-subheader">Accrued</th>
+                                        <th className="leave-subheader">Taken</th>
+                                        <th className="leave-subheader">Balance</th>
+                                        <th className="leave-subheader">Sick Days</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {summary.map((teacher, idx) => {
+                                        const leaveAccrued = (parseFloat(teacher.total_hours) * 0.08).toFixed(2);
+                                        const hasNoEmail = !teacher.email || teacher.email.trim() === '';
+
+                                        return (
+                                        <tr key={idx} className={hasNoEmail ? 'no-email' : ''}>
+                                            <td>{teacher.teacher_name}</td>
+                                            <td onClick={() => setEditingEmail(idx)} style={{cursor: 'pointer'}}>
+                                                {editingEmail === idx ? (
+                                                    <input
+                                                        type="email"
+                                                        defaultValue={teacher.email || ''}
+                                                        placeholder="email@example.com"
+                                                        style={{width: '100%', padding: '4px'}}
+                                                        onBlur={(e) => {
+                                                            updateTeacherEmail(teacher.teacher_name, e.target.value);
+                                                            setEditingEmail(null);
+                                                        }}
+                                                        onKeyDown={(e) => {
+                                                            if (e.key === 'Enter') {
+                                                                updateTeacherEmail(teacher.teacher_name, e.target.value);
+                                                                setEditingEmail(null);
+                                                            }
+                                                        }}
+                                                        autoFocus
+                                                    />
+                                                ) : (
+                                                    <span style={{textDecoration: teacher.email ? 'none' : 'underline dotted'}}>
+                                                        {teacher.email || 'Click to add email'}
+                                                    </span>
+                                                )}
+                                            </td>
+                                            <td>{parseFloat(teacher.total_hours).toFixed(2)}</td>
+                                            <td>€{parseFloat(teacher.average_rate).toFixed(2)}</td>
+                                            <td className="leave-cell">{leaveAccrued}h</td>
+                                            <td className="leave-cell">{parseFloat(teacher.leave_taken || 0).toFixed(2)}h</td>
+                                            <td className="leave-cell">{parseFloat(teacher.leave_balance || 0).toFixed(2)}h</td>
+                                            <td className="leave-cell">{parseInt(teacher.sick_days || 0)}</td>
+                                            <td><strong>€{parseFloat(teacher.total_pay).toFixed(2)}</strong></td>
+                                        </tr>
+                                        );
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
+                    )}
+
+                    {view === 'detail' && data && (
+                        <div className="detail-section">
+                            <h2>Weekly Hours Detail</h2>
+                            <div className="legend">
+                                <div className="legend-item">
+                                    <div className="legend-box auto"></div>
+                                    <span>Auto-populated (full week or safe cutoff)</span>
+                                </div>
+                                <div className="legend-item">
+                                    <div className="legend-box manual"></div>
+                                    <span>Needs manual input (mixed days)</span>
+                                </div>
+                            </div>
+                            {(() => {
+                                // Filter weeks based on selected period
+                                const isWeekInPeriod = (weekString) => {
+                                    if (!selectedPeriod) return true; // Show all if no period selected
+
+                                    // Parse week date range from "Week 35, 25/08/2025 – 31/08/2025"
+                                    const match = weekString.match(/Week \d+, (\d{2})\/(\d{2})\/(\d{4})\s*–\s*(\d{2})\/(\d{2})\/(\d{4})/);
+                                    if (!match) return true;
+
+                                    const weekStart = `${match[3]}-${match[2]}-${match[1]}`; // YYYY-MM-DD
+                                    const weekEnd = `${match[6]}-${match[5]}-${match[4]}`;
+
+                                    // Check if week overlaps with period
+                                    return weekStart <= selectedPeriod.to && weekEnd >= selectedPeriod.from;
+                                };
+
+                                const filteredWeeks = data.weeks.filter(isWeekInPeriod);
+
+                                // Filter teachers to only show those with hours in this period
+                                const teachersWithHoursInPeriod = data.teachers.filter(teacher => {
+                                    // Check if teacher has any hours in the filtered weeks
+                                    let hasHours = false;
+                                    filteredWeeks.forEach(week => {
+                                        const weekData = teacher.weeks[week];
+                                        if (weekData && weekData.total_hours > 0) {
+                                            hasHours = true;
+                                        }
+                                    });
+                                    return hasHours;
+                                });
+
+                                return (
+                                    <>
+                                        <p><strong>Weeks in Period:</strong> {filteredWeeks.map(w => formatWeekDisplay(w)).join(' | ')}</p>
+
+                                        {teachersWithHoursInPeriod.map((teacher, idx) => {
+                                            // Calculate totals for filtered weeks only
+                                            let periodTotalHours = 0;
+                                            let periodTotalPay = 0;
+                                            let rateSum = 0;
+                                            let rateCount = 0;
+
+                                            filteredWeeks.forEach(week => {
+                                                const weekData = teacher.weeks[week];
+                                                if (weekData) {
+                                                    const hoursToInclude = weekData.hours_included_this_month !== null
+                                                        ? parseFloat(weekData.hours_included_this_month)
+                                                        : (weekData.can_auto_populate ? weekData.total_hours : 0);
+
+                                                    periodTotalHours += hoursToInclude;
+
+                                                    if (weekData.weekly_pay !== null) {
+                                                        periodTotalPay += parseFloat(weekData.weekly_pay);
+                                                    } else if (weekData.can_auto_populate) {
+                                                        periodTotalPay += weekData.total_salary;
+                                                    }
+
+                                                    if (weekData.rate > 0) {
+                                                        rateSum += weekData.rate;
+                                                        rateCount++;
+                                                    }
+                                                }
+                                            });
+
+                                            const periodAvgRate = rateCount > 0 ? rateSum / rateCount : 0;
+                                            const leaveAccrued = (periodTotalHours * 0.08).toFixed(2); // 8% of hours worked
+
+                                            return (
+                                            <div key={idx} className="teacher-row">
+                                                <div className="teacher-name">
+                                                    {teacher.teacher_name} - Total: {periodTotalHours.toFixed(2)}h @ €{periodAvgRate.toFixed(2)}/h = €{periodTotalPay.toFixed(2)} | Leave Accrued: {leaveAccrued}h
+                                                </div>
+                                                <div className="weeks-grid">
+                                                    {filteredWeeks.map(week => {
+                                            const weekData = teacher.weeks[week] || {
+                                                total_hours: 0,
+                                                total_salary: 0,
+                                                rate: 0,
+                                                can_auto_populate: false,
+                                                auto_populate_reason: 'No hours recorded',
+                                                hours_included_this_month: null,
+                                                weekly_pay: null,
+                                                leave_hours: 0,
+                                                sick_days: 0,
+                                                classes: []
+                                            };
+
+                                            const isEditing = editingWeek[`${teacher.teacher_name}-${week}`];
+                                            // Display hours: use hours_included_this_month if set by manager, otherwise show total_hours
+                                            const displayHours = weekData.hours_included_this_month !== null
+                                                ? weekData.hours_included_this_month
+                                                : weekData.total_hours.toFixed(2);
+
+                                            // Determine if week should be shown as auto-populate
+                                            // Fully zero weeks (zero hours, zero leave, zero sick) are auto-populated
+                                            const isFullyZero = weekData.total_hours === 0 &&
+                                                (weekData.leave_hours === 0 || weekData.leave_hours === null) &&
+                                                (weekData.sick_days === 0 || weekData.sick_days === null);
+                                            const shouldAutoPopulate = weekData.can_auto_populate || isFullyZero;
+
+                                            // Determine reason text
+                                            let reasonText = weekData.auto_populate_reason;
+                                            if (isFullyZero && !weekData.can_auto_populate) {
+                                                reasonText = 'Zero - No Check Required';
+                                            }
+
+                                            // Determine status class
+                                            let weekClass = shouldAutoPopulate ? 'auto-populate' : 'needs-manual';
+                                            if (weekData.manager_checked) {
+                                                weekClass = 'manager-checked';
+                                            }
+
+                                            return (
+                                                <div
+                                                    key={week}
+                                                    className={`week-card ${weekClass}`}
+                                                >
+                                                    <div className="week-title">
+                                                        {formatWeekDisplay(week)}
+                                                        {weekData.manager_checked && <span> ✓ Manager Checked</span>}
+                                                    </div>
+                                                    <div className="week-hours">{displayHours}h</div>
+                                                    <div className="week-meta">
+                                                        <div className="week-meta-item">
+                                                            <span className="week-meta-label">Hours</span>
+                                                            <span className="week-meta-value">{displayHours}h</span>
+                                                        </div>
+                                                        <div className="week-meta-item">
+                                                            <span className="week-meta-label">Leave</span>
+                                                            <span className="week-meta-value">{weekData.leave_hours || 0}h</span>
+                                                        </div>
+                                                        <div className="week-meta-item">
+                                                            <span className="week-meta-label">Sick</span>
+                                                            <span className="week-meta-value">{weekData.sick_days || 0}d</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className="week-reason">{reasonText}</div>
+
+                                                    {!shouldAutoPopulate && !isEditing && (
+                                                        <button
+                                                            className="save-btn"
+                                                            onClick={() => setEditingWeek({[`${teacher.teacher_name}-${week}`]: true})}
+                                                        >
+                                                            Edit Hours
+                                                        </button>
+                                                    )}
+
+                                                    {isEditing && (
+                                                        <div>
+                                                            <input
+                                                                type="number"
+                                                                step="0.5"
+                                                                className="editable-field"
+                                                                placeholder="Hours"
+                                                                id={`hours-${idx}-${week}`}
+                                                                defaultValue={displayHours === '0.00' ? '' : displayHours}
+                                                            />
+                                                            <input
+                                                                type="number"
+                                                                step="0.5"
+                                                                className="editable-field"
+                                                                placeholder="Leave Hours"
+                                                                id={`leave-${idx}-${week}`}
+                                                                defaultValue={weekData.leave_hours && weekData.leave_hours > 0 ? weekData.leave_hours : ''}
+                                                            />
+                                                            <input
+                                                                type="number"
+                                                                className="editable-field"
+                                                                placeholder="Sick Days"
+                                                                id={`sick-${idx}-${week}`}
+                                                                defaultValue={weekData.sick_days && weekData.sick_days > 0 ? weekData.sick_days : ''}
+                                                            />
+                                                            <div className="button-row">
+                                                                <button
+                                                                    className="save-btn"
+                                                                    onClick={() => {
+                                                                        const hours = document.getElementById(`hours-${idx}-${week}`).value;
+                                                                        const leave = document.getElementById(`leave-${idx}-${week}`).value;
+                                                                        const sick = document.getElementById(`sick-${idx}-${week}`).value;
+                                                                        updateWeekHours(teacher.teacher_name, week, hours, null, leave, sick);
+                                                                    }}
+                                                                >
+                                                                    Save
+                                                                </button>
+                                                                <button
+                                                                    className="reset-btn"
+                                                                    onClick={() => resetWeek(teacher.teacher_name, week)}
+                                                                >
+                                                                    Reset
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    )}
+                                                    {(weekData.manager_checked || weekData.hours_included_this_month !== null) && !isEditing && (
+                                                        <button
+                                                            className="reset-btn"
+                                                            onClick={() => resetWeek(teacher.teacher_name, week)}
+                                                        >
+                                                            Reset to Fidelo
+                                                        </button>
+                                                    )}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            );
+                                        })}
+                                    </>
+                                );
+                            })()}
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        ReactDOM.render(<TeacherPayrollDashboard />, document.getElementById('root'));
+    </script>
+</body>
+</html>

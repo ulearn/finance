@@ -33,13 +33,26 @@ Repo: https://github.com/ulearn/fins
 =========================================================================================================
 
 PROJECT SPECIFIC CONTEXT
-1) Payroll - Sales Commissions 
-we are working in /home/hub/public_html/fins/payroll/sales/pay building into management & employee reports dashboard 
+1) Payroll - Sales Commissions
+we are working in /home/hub/public_html/fins/payroll/sales/pay building into management & employee reports dashboard
 
 Manager Dash: /home/hub/public_html/fins/payroll/sales/dashboard.js/.html
-REACT employee dashboards: 
+REACT employee dashboards:
 /home/hub/public_html/fins/payroll/sales/b2c-diego.js/.html
 /home/hub/public_html/fins/payroll/sales/b2b-cenker.js/.html
+
+2) Payroll - Teacher Hourly Payments (Oct 2025)
+Location: /home/hub/public_html/fins/scripts/pay/hourly/
+Overview doc: /home/hub/public_html/fins/docs/teacher-pay-overview.md
+
+Key components:
+- Data Import: /home/hub/public_html/fins/scripts/fidelo/login/pay-teach.js
+- Session Login: /home/hub/public_html/fins/scripts/fidelo/login/session-login.js
+- Database Table: teacher_payments (hub_payroll)
+- Dashboard: /home/hub/public_html/fins/scripts/pay/hourly/dashboard.html/js
+
+Purpose: Pull teacher weekly hours from Fidelo API, handle monthly payroll cutoff weeks,
+allow DOS to manually adjust hours for split weeks, and generate final payroll summary.
 
 ==============================================================================================================
 TIMELINE NOTES (Reverse Cronology)

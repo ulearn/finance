@@ -23,6 +23,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Import routers - using the correct file names
 const dashboardRouter = require('./scripts/pay/sales/dashboard');
+const teacherDashboardRouter = require('./scripts/pay/hourly/dashboard');
+const zohoCallbackRouter = require('./scripts/zoho/oauth-callback');
 // Note: import-api.js exists but may need to export a router
 // const apiImportRouter = require('./scripts/pay/sales/import-api');
 
@@ -57,6 +59,92 @@ app.get('/fins', (req, res) => {
 
 // Dashboard API routes
 app.use('/fins/scripts/pay/sales/dashboard', dashboardRouter);
+app.use('/fins/scripts/pay/hourly/dashboard', teacherDashboardRouter);
+
+// Zoho OAuth and API routes
+const ZohoPeopleAPI = require('./scripts/zoho/people-api');
+const ZohoLeaveSync = require('./scripts/zoho/leave-sync');
+
+app.use('/fins/payroll/zoho/callback', zohoCallbackRouter);
+
+// Get Zoho authorization URL
+app.get('/fins/payroll/zoho/auth-url', (req, res) => {
+  const zohoAPI = new ZohoPeopleAPI();
+  res.json({
+    success: true,
+    authUrl: zohoAPI.getAuthorizationUrl()
+  });
+});
+
+// Search employee by email
+app.get('/fins/payroll/zoho/search-employee', async (req, res) => {
+  try {
+    const { email } = req.query;
+    if (!email) {
+      return res.status(400).json({ success: false, error: 'Email required' });
+    }
+
+    const zohoAPI = new ZohoPeopleAPI();
+    const employee = await zohoAPI.searchEmployeeByEmail(email);
+
+    res.json({
+      success: true,
+      employee: employee
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Search employee by name
+app.get('/fins/payroll/zoho/search-by-name', async (req, res) => {
+  try {
+    const { firstName, lastName } = req.query;
+    if (!firstName || !lastName) {
+      return res.status(400).json({ success: false, error: 'firstName and lastName required' });
+    }
+
+    const zohoAPI = new ZohoPeopleAPI();
+    const employee = await zohoAPI.searchEmployeeByName(firstName, lastName);
+
+    res.json({
+      success: !!employee,
+      employee: employee,
+      message: employee ? 'Employee found' : 'Employee not found'
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get leave data for a single teacher by email
+app.get('/fins/payroll/zoho/leave/get', async (req, res) => {
+  try {
+    const { email } = req.query;
+    if (!email) {
+      return res.status(400).json({ success: false, error: 'Email required' });
+    }
+
+    const leaveSync = new ZohoLeaveSync();
+    const result = await leaveSync.updateTeacherLeaveData(email);
+
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Sync leave data for all teachers
+app.post('/fins/payroll/zoho/leave/sync-all', async (req, res) => {
+  try {
+    const leaveSync = new ZohoLeaveSync();
+    const result = await leaveSync.syncAllTeachersLeave();
+
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
 
 // If import-api.js exports a router, uncomment this:
 // app.use('/fins/scripts/pay/sales/api', apiImportRouter);
@@ -72,6 +160,11 @@ app.get('/fins/scripts/pay/sales/b2c-diego.html', (req, res) => {
 
 app.get('/fins/scripts/pay/sales/b2b-cenker.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'scripts/pay/sales/b2b-cenker.html'));
+});
+
+// Teacher Payroll Dashboard HTML
+app.get('/fins/scripts/pay/hourly/dashboard.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'scripts/pay/hourly/dashboard.html'));
 });
 
 // Error handling
