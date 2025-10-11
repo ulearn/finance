@@ -266,31 +266,47 @@
                 if (!selectedPeriod) return;
 
                 setLoading(true);
+                console.log('[OUTPUT] Fetching payroll data for:', selectedPeriod);
+
                 try {
                     // Fetch teacher payroll data
                     const teacherResponse = await fetch(
                         `/fins/scripts/pay/output/teachers?dateFrom=${selectedPeriod.from}&dateTo=${selectedPeriod.to}`
                     );
                     const teacherResult = await teacherResponse.json();
+                    console.log('[OUTPUT] Teacher data received:', teacherResult);
 
                     // Fetch sales staff data
                     const salesResponse = await fetch(
                         `/fins/scripts/pay/output/sales?month=${selectedPeriod.month}&dateFrom=${selectedPeriod.from}&dateTo=${selectedPeriod.to}`
                     );
                     const salesResult = await salesResponse.json();
+                    console.log('[OUTPUT] Sales data received:', salesResult);
 
                     // Fetch authorization status
                     const authResponse = await fetch(
                         `/fins/scripts/pay/output/auth-status?dateFrom=${selectedPeriod.from}&dateTo=${selectedPeriod.to}`
                     );
                     const authResult = await authResponse.json();
+                    console.log('[OUTPUT] Auth status received:', authResult);
 
-                    if (teacherResult.success) setTeacherData(teacherResult.data);
-                    if (salesResult.success) setSalesData(salesResult.data);
-                    if (authResult.success) setAuthStatus(authResult.status);
+                    if (teacherResult.success) {
+                        console.log('[OUTPUT] Setting teacher data:', teacherResult.data);
+                        setTeacherData(teacherResult.data);
+                    }
+                    if (salesResult.success) {
+                        console.log('[OUTPUT] Setting sales data:', salesResult.data);
+                        setSalesData(salesResult.data);
+                    }
+                    if (authResult.success) {
+                        console.log('[OUTPUT] Setting auth status:', authResult.status);
+                        setAuthStatus(authResult.status);
+                    }
 
                     setLoading(false);
+                    console.log('[OUTPUT] Loading complete');
                 } catch (err) {
+                    console.error('[OUTPUT] Error fetching payroll data:', err);
                     setError('Failed to load payroll data: ' + err.message);
                     setLoading(false);
                 }
@@ -377,7 +393,7 @@
             }
 
             const isAuthorized = authStatus?.authorized === true;
-            const totalTeachers = teacherData?.totalPay || 0;
+            const totalTeachers = teacherData?.grandTotal || 0;
             const totalSales = (salesData?.b2c?.totalPaid || 0) + (salesData?.b2b?.totalPaid || 0);
             const grandTotal = totalTeachers + totalSales;
 
@@ -462,35 +478,68 @@
                                 <table className="data-table">
                                     <thead>
                                         <tr>
-                                            <th>Teacher</th>
+                                            <th>Employee</th>
+                                            <th>Email</th>
+                                            <th>PPS</th>
                                             <th>Hours</th>
                                             <th>Rate</th>
-                                            <th>Leave (Zoho)</th>
-                                            <th>Leave €</th>
+                                            <th colSpan="4" style={{background: '#e8f5e9', color: '#2e7d32'}}>LEAVE</th>
+                                            <th>Other</th>
+                                            <th>Impact Bonus</th>
                                             <th>Total Pay</th>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th style={{background: '#e8f5e9', color: '#2e7d32'}}>Leave</th>
+                                            <th style={{background: '#e8f5e9', color: '#2e7d32'}}>Leave €</th>
+                                            <th style={{background: '#e8f5e9', color: '#2e7d32'}}>Sick Days</th>
+                                            <th style={{background: '#e8f5e9', color: '#2e7d32'}}>Sick €</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {teacherData.teachers.map((teacher, idx) => {
                                             const leaveEuro = teacher.average_rate * teacher.leave_taken;
+                                            const sickLeaveEuro = teacher.average_rate * teacher.sick_leave_hours * 0.70;
+                                            const finalTotalPay = teacher.total_pay + teacher.other + teacher.impact_bonus + leaveEuro + sickLeaveEuro;
                                             return (
                                                 <tr key={idx}>
                                                     <td>{teacher.teacher_name}</td>
+                                                    <td style={{fontSize: '13px'}}>{teacher.email || 'N/A'}</td>
+                                                    <td style={{fontSize: '13px', color: teacher.pps_number === 'N/A' ? '#e74c3c' : 'inherit'}}>
+                                                        {teacher.pps_number || 'N/A'}
+                                                    </td>
                                                     <td>{teacher.total_hours.toFixed(2)}h</td>
                                                     <td>{formatCurrency(teacher.average_rate)}</td>
                                                     <td>{teacher.leave_taken.toFixed(2)}h</td>
                                                     <td>{formatCurrency(leaveEuro)}</td>
-                                                    <td><strong>{formatCurrency(teacher.total_pay)}</strong></td>
+                                                    <td>{teacher.sick_days_taken.toFixed(1)} days</td>
+                                                    <td>{formatCurrency(sickLeaveEuro)}</td>
+                                                    <td>{formatCurrency(teacher.other)}</td>
+                                                    <td>{formatCurrency(teacher.impact_bonus)}</td>
+                                                    <td><strong>{formatCurrency(finalTotalPay)}</strong></td>
                                                 </tr>
                                             );
                                         })}
                                         <tr className="total-row">
                                             <td>TOTAL</td>
+                                            <td>-</td>
+                                            <td>-</td>
                                             <td>{teacherData.totalHours.toFixed(2)}h</td>
                                             <td>-</td>
                                             <td>{teacherData.totalLeave.toFixed(2)}h</td>
                                             <td>{formatCurrency(teacherData.totalLeaveEuro)}</td>
-                                            <td><strong>{formatCurrency(teacherData.totalPay)}</strong></td>
+                                            <td>-</td>
+                                            <td>{formatCurrency(teacherData.totalSickLeaveEuro)}</td>
+                                            <td>{formatCurrency(teacherData.totalOther)}</td>
+                                            <td>{formatCurrency(teacherData.totalImpactBonus)}</td>
+                                            <td><strong>{formatCurrency(teacherData.grandTotal)}</strong></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -501,51 +550,41 @@
                         {salesData && (
                             <div className="payroll-section">
                                 <div className="section-title">2. Sales Staff Payroll</div>
-
-                                <h3 style={{margin: '15px 0 10px', color: '#4a5568'}}>B2C - Diego</h3>
                                 <table className="data-table">
                                     <thead>
                                         <tr>
-                                            <th>Component</th>
-                                            <th>Amount</th>
+                                            <th>Employee</th>
+                                            <th>Email</th>
+                                            <th>PPS</th>
+                                            <th>Base</th>
+                                            <th>Commission</th>
+                                            <th>Total Pay</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Base Salary</td>
+                                            <td>{salesData.b2c.name}</td>
+                                            <td style={{fontSize: '13px'}}>-</td>
+                                            <td style={{fontSize: '13px'}}>-</td>
                                             <td>{formatCurrency(salesData.b2c.baseSalary)}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Commission (Previous Month)</td>
                                             <td>{formatCurrency(salesData.b2c.commission)}</td>
-                                        </tr>
-                                        <tr className="total-row">
-                                            <td>TOTAL</td>
                                             <td><strong>{formatCurrency(salesData.b2c.totalPaid)}</strong></td>
                                         </tr>
-                                    </tbody>
-                                </table>
-
-                                <h3 style={{margin: '20px 0 10px', color: '#4a5568'}}>B2B - Cenker</h3>
-                                <table className="data-table">
-                                    <thead>
                                         <tr>
-                                            <th>Component</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Base Salary</td>
+                                            <td>{salesData.b2b.name}</td>
+                                            <td style={{fontSize: '13px'}}>-</td>
+                                            <td style={{fontSize: '13px'}}>-</td>
                                             <td>{formatCurrency(salesData.b2b.baseSalary)}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Commission (Previous Month)</td>
                                             <td>{formatCurrency(salesData.b2b.commission)}</td>
+                                            <td><strong>{formatCurrency(salesData.b2b.totalPaid)}</strong></td>
                                         </tr>
                                         <tr className="total-row">
                                             <td>TOTAL</td>
-                                            <td><strong>{formatCurrency(salesData.b2b.totalPaid)}</strong></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>{formatCurrency(salesData.b2c.baseSalary + salesData.b2b.baseSalary)}</td>
+                                            <td>{formatCurrency(salesData.b2c.commission + salesData.b2b.commission)}</td>
+                                            <td><strong>{formatCurrency(salesData.b2c.totalPaid + salesData.b2b.totalPaid)}</strong></td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -58,6 +58,7 @@ router.get('/data', async (req, res) => {
                 t.days,
                 t.firstname as teacher_name,
                 t.email,
+                t.pps_number,
                 t.classname as class_name,
                 t.course_list as courses,
                 t.count_bookings as student_count,
@@ -120,6 +121,7 @@ router.get('/data', async (req, res) => {
                 teacherData[teacher] = {
                     teacher_name: teacher,
                     email: row.email,
+                    pps_number: row.pps_number || 'N/A',
                     weeks: {},
                     total_hours: 0,
                     average_rate: 0,
@@ -316,7 +318,7 @@ router.get('/summary', async (req, res) => {
                 SUM(COALESCE(weekly_pay,
                     CASE WHEN can_auto_populate = 1 THEN CAST(REPLACE(REPLACE(amount, '€', ''), ',', '.') AS DECIMAL(10,2)) ELSE 0 END)) as total_pay,
                 SUM(COALESCE(leave_hours, 0)) as leave_hours_fidelo,
-                SUM(COALESCE(sick_days, 0)) as sick_days,
+                MAX(COALESCE(sick_days, 0)) as sick_days,
                 MAX(COALESCE(leave_taken, 0)) as leave_taken,
                 MAX(COALESCE(leave_balance, 0)) as leave_balance
             FROM teacher_payments
@@ -404,6 +406,59 @@ router.post('/update-email', async (req, res) => {
 
     } catch (error) {
         console.error('Error updating email:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    } finally {
+        if (connection) await connection.end();
+    }
+});
+
+/**
+ * POST /api/teachers/update-pps
+ * Update teacher PPS number
+ */
+router.post('/update-pps', async (req, res) => {
+    let connection;
+    try {
+        const { teacher_name, pps_number } = req.body;
+
+        if (!teacher_name) {
+            return res.status(400).json({
+                success: false,
+                error: 'teacher_name is required'
+            });
+        }
+
+        connection = await getConnection();
+
+        // Reverse name back to "Surname, First Name" format
+        const reverseNameBack = (name) => {
+            if (!name || !name.includes(' ')) return name;
+            const parts = name.split(' ');
+            if (parts.length === 2) {
+                return `${parts[1]}, ${parts[0]}`;
+            }
+            const lastName = parts[parts.length - 1];
+            const firstNames = parts.slice(0, -1).join(' ');
+            return `${lastName}, ${firstNames}`;
+        };
+
+        const dbName = reverseNameBack(teacher_name);
+
+        await connection.execute(
+            `UPDATE teacher_payments SET pps_number = ?, updated_at = NOW() WHERE firstname = ?`,
+            [pps_number || null, dbName]
+        );
+
+        res.json({
+            success: true,
+            message: 'PPS number updated successfully'
+        });
+
+    } catch (error) {
+        console.error('Error updating PPS:', error);
         res.status(500).json({
             success: false,
             error: error.message
@@ -550,6 +605,97 @@ router.get('/leave-for-period', async (req, res) => {
 });
 
 /**
+ * GET /api/teachers/pps-for-teachers
+ * Get PPS numbers for all teachers from Zoho
+ * Returns: { "email@example.com": "1234567A", ... }
+ */
+router.get('/pps-for-teachers', async (req, res) => {
+    let connection;
+    try {
+        connection = await getConnection();
+
+        // Get all teachers with email addresses
+        const [teachers] = await connection.execute(`
+            SELECT DISTINCT email, firstname
+            FROM teacher_payments
+            WHERE email IS NOT NULL AND email != ''
+            ORDER BY firstname
+        `);
+
+        const ZohoPeopleAPI = require('../../zoho/people-api');
+        const zohoAPI = new ZohoPeopleAPI();
+
+        // Load tokens
+        const loaded = await zohoAPI.loadTokens();
+        if (!loaded) {
+            return res.status(500).json({
+                success: false,
+                error: 'Zoho authentication required'
+            });
+        }
+
+        // Fetch all employees from Zoho at once
+        const axios = require('axios');
+        const response = await axios.get(`${zohoAPI.baseUrl}/forms/P_EmployeeView/records`, {
+            headers: {
+                'Authorization': `Zoho-oauthtoken ${zohoAPI.accessToken}`
+            }
+        });
+
+        let zohoEmployees = [];
+        if (response.data && Array.isArray(response.data)) {
+            zohoEmployees = response.data;
+        } else if (response.data && response.data.response && response.data.response.result) {
+            zohoEmployees = Array.isArray(response.data.response.result)
+                ? response.data.response.result
+                : [response.data.response.result];
+        }
+
+        // Create email to PPS lookup map
+        const ppsData = {};
+        zohoEmployees.forEach(emp => {
+            const email = emp.EMPLOYEEMAILALIAS || emp['Email ID'];
+            const pps = emp.PPS || emp.pps;
+            if (email && pps) {
+                ppsData[email] = pps;
+            }
+        });
+
+        console.log(`[PPS API] Found PPS for ${Object.keys(ppsData).length} employees`);
+
+        // Update database with PPS numbers
+        for (const teacher of teachers) {
+            const pps = ppsData[teacher.email];
+            if (pps) {
+                await connection.execute(`
+                    UPDATE teacher_payments
+                    SET pps_number = ?
+                    WHERE email = ?
+                `, [pps, teacher.email]);
+                console.log(`[PPS API] Updated ${teacher.email} with PPS: ${pps}`);
+            }
+        }
+
+        await connection.end();
+
+        res.json({
+            success: true,
+            data: ppsData,
+            count: Object.keys(ppsData).length
+        });
+
+    } catch (error) {
+        console.error('Error fetching PPS numbers:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    } finally {
+        if (connection) await connection.end();
+    }
+});
+
+/**
  * GET /api/teachers/leave-by-weeks
  * Get leave/sick days broken down by week for all teachers with emails
  * Returns: { "email@example.com": { "Week 14, 31/03/2025 – 06/04/2025": { leave: 7.5, sick: 0 }, ... }, ... }
@@ -557,16 +703,16 @@ router.get('/leave-for-period', async (req, res) => {
 router.get('/leave-by-weeks', async (req, res) => {
     let connection;
     try {
-        const { weeks } = req.query; // Comma-separated list of week strings
+        const { weeks } = req.query; // Triple-pipe separated list of week strings
 
         if (!weeks) {
             return res.status(400).json({
                 success: false,
-                error: 'weeks query parameter is required (comma-separated week strings)'
+                error: 'weeks query parameter is required (triple-pipe separated week strings)'
             });
         }
 
-        const weekList = weeks.split(',');
+        const weekList = weeks.split('|||');
 
         connection = await getConnection();
 

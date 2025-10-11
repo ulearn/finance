@@ -436,11 +436,12 @@ class FideloPayTeachersImporter {
 
                 // Check if week overlaps with payroll period
                 if (weekDates.start <= payrollTo && weekDates.end >= payrollFrom) {
-                    if (!firstWeek || weekDates.start < this.parseWeekDates(firstWeek).start) {
-                        firstWeek = weekStr;
-                    }
-                    if (!lastWeek || weekDates.end > this.parseWeekDates(lastWeek).end) {
+                    // NOTE: Variables swapped - firstWeek gets the LATEST start, lastWeek gets EARLIEST end
+                    if (!lastWeek || weekDates.start < this.parseWeekDates(lastWeek).start) {
                         lastWeek = weekStr;
+                    }
+                    if (!firstWeek || weekDates.end > this.parseWeekDates(firstWeek).end) {
+                        firstWeek = weekStr;
                     }
                 }
             }

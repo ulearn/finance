@@ -416,6 +416,11 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
+        // Format currency with thousand separators
+        const formatCurrency = (amount) => {
+            return '€' + parseFloat(amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        };
+
         function TeacherPayrollDashboard() {
             const [data, setData] = useState(null);
             const [summary, setSummary] = useState(null);
@@ -526,7 +531,7 @@
 
                 setLoadingLeave(true);
                 try {
-                    const weeksParam = encodeURIComponent(weeks.join(','));
+                    const weeksParam = encodeURIComponent(weeks.join('|||'));
                     const response = await fetch(`/fins/scripts/pay/hourly/dashboard/leave-by-weeks?weeks=${weeksParam}`);
                     const result = await response.json();
                     if (result.success) {
@@ -878,7 +883,7 @@
                                         <th className="leave-subheader">Accrued</th>
                                         <th className="leave-subheader">Taken</th>
                                         <th className="leave-subheader">Balance</th>
-                                        <th className="leave-subheader">Sick Hours</th>
+                                        <th className="leave-subheader">Sick Days</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -915,12 +920,12 @@
                                                 )}
                                             </td>
                                             <td>{parseFloat(teacher.total_hours).toFixed(2)}</td>
-                                            <td>€{parseFloat(teacher.average_rate).toFixed(2)}</td>
+                                            <td>{formatCurrency(teacher.average_rate)}</td>
                                             <td className="leave-cell">{leaveAccrued}h</td>
                                             <td className="leave-cell">{parseFloat(teacher.leave_taken || 0).toFixed(2)}h</td>
                                             <td className="leave-cell">{parseFloat(teacher.leave_balance || 0).toFixed(2)}h</td>
-                                            <td className="leave-cell">{parseFloat(teacher.sick_days || 0).toFixed(2)}h</td>
-                                            <td><strong>€{parseFloat(teacher.total_pay).toFixed(2)}</strong></td>
+                                            <td className="leave-cell">{parseFloat(teacher.sick_days || 0).toFixed(2)} days</td>
+                                            <td><strong>{formatCurrency(teacher.total_pay)}</strong></td>
                                         </tr>
                                         );
                                     })}
@@ -1012,7 +1017,7 @@
                                             return (
                                             <div key={idx} className="teacher-row">
                                                 <div className="teacher-name">
-                                                    {teacher.teacher_name} - Total: {periodTotalHours.toFixed(2)}h @ €{periodAvgRate.toFixed(2)}/h = €{periodTotalPay.toFixed(2)} | Leave Accrued: {leaveAccrued}h
+                                                    {teacher.teacher_name} - Total: {periodTotalHours.toFixed(2)}h @ {formatCurrency(periodAvgRate)}/h = {formatCurrency(periodTotalPay)} | Leave Accrued: {leaveAccrued}h
                                                 </div>
                                                 <div className="weeks-grid">
                                                     {filteredWeeks.map(week => {

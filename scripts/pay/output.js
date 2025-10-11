@@ -17,33 +17,43 @@ async function getConnection() {
 
 /**
  * Get available payroll periods (monthly)
+ * Returns authorized periods from payroll_authorizations table
  */
 router.get('/periods', async (req, res) => {
     let connection;
     try {
         connection = await getConnection();
 
-        // Get distinct payroll periods from teacher_payments
+        // Get authorized payroll periods
         const [periods] = await connection.execute(`
-            SELECT DISTINCT
-                DATE_FORMAT(STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y'), '%Y-%m') as month_key,
-                MIN(STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y')) as period_start,
-                MAX(STR_TO_DATE(SUBSTRING_INDEX(select_value, ' – ', -1), '%d/%m/%Y')) as period_end
-            FROM teacher_payments
-            WHERE select_value IS NOT NULL
-            GROUP BY month_key
-            ORDER BY month_key DESC
+            SELECT
+                month_name as month,
+                date_from as from_date,
+                date_to as to_date,
+                authorized,
+                authorized_at
+            FROM payroll_authorizations
+            WHERE authorized = TRUE
+            ORDER BY date_from ASC
             LIMIT 12
         `);
 
         const formattedPeriods = periods.map(p => {
-            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                              'July', 'August', 'September', 'October', 'November', 'December'];
-            const [year, month] = p.month_key.split('-');
+            // Format dates properly without timezone conversion issues
+            const formatDate = (date) => {
+                const d = new Date(date);
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            };
+
             return {
-                month: `${monthNames[parseInt(month) - 1]} ${year}`,
-                from: p.period_start.toISOString().split('T')[0],
-                to: p.period_end.toISOString().split('T')[0]
+                month: p.month,
+                from: formatDate(p.from_date),
+                to: formatDate(p.to_date),
+                authorized: p.authorized === 1,
+                authorizedAt: p.authorized_at
             };
         });
 
@@ -95,18 +105,36 @@ router.get('/teachers', async (req, res) => {
                 ORDER BY employee_name
             `, [authId]);
 
-            const teacherPayrollData = snapshots.map(snap => ({
-                teacher_name: snap.employee_name,
-                total_hours: parseFloat(snap.hours),
-                average_rate: parseFloat(snap.rate),
-                leave_taken: parseFloat(snap.leave_hours),
-                total_pay: parseFloat(snap.total_pay)
-            }));
+            const teacherPayrollData = snapshots.map(snap => {
+                // Parse additional_data JSON (or use as-is if already parsed by MySQL driver)
+                const additionalData = snap.additional_data ?
+                    (typeof snap.additional_data === 'string' ? JSON.parse(snap.additional_data) : snap.additional_data)
+                    : {};
 
+                return {
+                    teacher_name: snap.employee_name,
+                    email: snap.employee_email,
+                    pps_number: additionalData.pps_number || 'N/A',
+                    total_hours: parseFloat(snap.hours) || 0,
+                    average_rate: parseFloat(snap.rate) || 0,
+                    leave_taken: parseFloat(snap.leave_hours) || 0,
+                    total_pay: parseFloat(snap.total_pay) || 0,
+                    sick_days_taken: parseFloat(additionalData.sick_days_taken) || 0,
+                    sick_leave_hours: parseFloat(additionalData.sick_leave_hours) || 0,
+                    other: parseFloat(additionalData.other) || 0,
+                    impact_bonus: parseFloat(additionalData.impact_bonus) || 0
+                };
+            });
+
+            // Calculate totals including all components
             const totalHours = teacherPayrollData.reduce((sum, t) => sum + t.total_hours, 0);
             const totalLeave = teacherPayrollData.reduce((sum, t) => sum + t.leave_taken, 0);
             const totalLeaveEuro = teacherPayrollData.reduce((sum, t) => sum + (t.average_rate * t.leave_taken), 0);
-            const totalPay = teacherPayrollData.reduce((sum, t) => sum + t.total_pay, 0);
+            const totalSickLeaveEuro = teacherPayrollData.reduce((sum, t) => sum + (t.average_rate * t.sick_leave_hours * 0.70), 0);
+            const totalOther = teacherPayrollData.reduce((sum, t) => sum + t.other, 0);
+            const totalImpactBonus = teacherPayrollData.reduce((sum, t) => sum + t.impact_bonus, 0);
+            const totalBasePay = teacherPayrollData.reduce((sum, t) => sum + t.total_pay, 0);
+            const grandTotal = totalBasePay + totalLeaveEuro + totalSickLeaveEuro + totalOther + totalImpactBonus;
 
             return res.json({
                 success: true,
@@ -115,7 +143,11 @@ router.get('/teachers', async (req, res) => {
                     totalHours: totalHours,
                     totalLeave: totalLeave,
                     totalLeaveEuro: totalLeaveEuro,
-                    totalPay: totalPay
+                    totalSickLeaveEuro: totalSickLeaveEuro,
+                    totalOther: totalOther,
+                    totalImpactBonus: totalImpactBonus,
+                    totalBasePay: totalBasePay,
+                    grandTotal: grandTotal
                 },
                 source: 'snapshot'
             });
@@ -241,9 +273,12 @@ router.get('/teachers', async (req, res) => {
         });
     } catch (error) {
         console.error('Error fetching teacher payroll:', error);
+        console.error('Error stack:', error.stack);
+        console.error('Error message:', error.message);
+        console.error('Error toString:', error.toString());
         res.status(500).json({
             success: false,
-            error: error.message
+            error: error.message || error.toString() || 'Unknown error'
         });
     } finally {
         if (connection) await connection.end();
@@ -291,8 +326,12 @@ router.get('/sales', async (req, res) => {
                     LIMIT 1
                 `, [authId]);
 
-                const b2cData = b2cSnap.length > 0 ? JSON.parse(b2cSnap[0].additional_data) : null;
-                const b2bData = b2bSnap.length > 0 ? JSON.parse(b2bSnap[0].additional_data) : null;
+                const b2cData = b2cSnap.length > 0 ?
+                    (typeof b2cSnap[0].additional_data === 'string' ? JSON.parse(b2cSnap[0].additional_data) : b2cSnap[0].additional_data)
+                    : null;
+                const b2bData = b2bSnap.length > 0 ?
+                    (typeof b2bSnap[0].additional_data === 'string' ? JSON.parse(b2bSnap[0].additional_data) : b2bSnap[0].additional_data)
+                    : null;
 
                 return res.json({
                     success: true,
@@ -386,9 +425,12 @@ router.get('/sales', async (req, res) => {
         });
     } catch (error) {
         console.error('Error fetching sales payroll:', error);
+        console.error('Error stack:', error.stack);
+        console.error('Error message:', error.message);
+        console.error('Error toString:', error.toString());
         res.status(500).json({
             success: false,
-            error: error.message
+            error: error.message || error.toString() || 'Unknown error'
         });
     } finally {
         if (connection) await connection.end();
@@ -533,19 +575,33 @@ router.post('/authorize', async (req, res) => {
             // Insert teacher payroll snapshots
             for (const teacher of teacherData.teachers) {
                 const leaveEuro = teacher.average_rate * teacher.leave_taken;
+                const sickLeaveEuro = teacher.average_rate * (teacher.sick_leave_hours || 0) * 0.70;
+
+                // Store additional fields in JSON
+                const additionalData = JSON.stringify({
+                    sick_days_taken: teacher.sick_days_taken || 0,
+                    sick_leave_hours: teacher.sick_leave_hours || 0,
+                    sick_leave_euro: sickLeaveEuro,
+                    other: teacher.other || 0,
+                    impact_bonus: teacher.impact_bonus || 0,
+                    pps_number: teacher.pps_number || null
+                });
+
                 await connection.execute(`
                     INSERT INTO payroll_snapshots
                     (authorization_id, section, employee_name, employee_email, hours, rate,
                      leave_hours, leave_euro, total_pay, additional_data)
-                    VALUES (?, 'teachers', ?, NULL, ?, ?, ?, ?, ?, NULL)
+                    VALUES (?, 'teachers', ?, ?, ?, ?, ?, ?, ?, ?)
                 `, [
                     authId,
                     teacher.teacher_name,
+                    teacher.email || null,
                     teacher.total_hours,
                     teacher.average_rate,
                     teacher.leave_taken,
                     leaveEuro,
-                    teacher.total_pay
+                    teacher.total_pay,
+                    additionalData
                 ]);
             }
 
