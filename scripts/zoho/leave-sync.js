@@ -179,15 +179,15 @@ class ZohoLeaveSync {
                             // Categorize by leave type
                             if (leaveType === 'Hourly Leave') {
                                 totalHourlyLeaveTaken += daysTaken;
-                                console.log(`[ZOHO LEAVE] Added ${daysTaken}h to Hourly Leave (total now: ${totalHourlyLeaveTaken}h)`);
+                                console.log(`[ZOHO LEAVE] ✓ Added ${daysTaken}h to Hourly Leave (${leaveStartISO} to ${leaveEndISO}) - Total: ${totalHourlyLeaveTaken}h`);
                             } else if (leaveType === this.sickLeaveTypeName) {
                                 totalSickLeaveTaken += daysTaken;
-                                console.log(`[ZOHO LEAVE] Added ${daysTaken}h to Sick Leave (total now: ${totalSickLeaveTaken}h)`);
+                                console.log(`[ZOHO LEAVE] ✓ Added ${daysTaken} DAYS to Sick Leave (${leaveStartISO} to ${leaveEndISO}) - Total: ${totalSickLeaveTaken} days`);
                             } else {
-                                console.log(`[ZOHO LEAVE] Unknown leave type: "${leaveType}" - not counted`);
+                                console.log(`[ZOHO LEAVE] ⚠ Unknown leave type: "${leaveType}" (Expected: "Hourly Leave" or "${this.sickLeaveTypeName}") - not counted`);
                             }
                         } else {
-                            console.log(`[ZOHO LEAVE] Leave outside period: ${leaveStartISO} to ${leaveEndISO} (period: ${dateFrom} to ${dateTo})`);
+                            console.log(`[ZOHO LEAVE] ✗ Leave outside period: ${leaveStartISO} to ${leaveEndISO} (period: ${dateFrom} to ${dateTo})`);
                         }
                     }
                 }
@@ -218,9 +218,14 @@ class ZohoLeaveSync {
                 console.log(`Could not fetch balance API for employee ${employeeId}:`, balanceError.response?.data?.errors?.message || balanceError.message);
             }
 
+            console.log(`[ZOHO LEAVE SUMMARY] Period ${dateFrom} to ${dateTo}:`);
+            console.log(`  - Hourly Leave: ${totalHourlyLeaveTaken}h`);
+            console.log(`  - Sick Leave: ${totalSickLeaveTaken} days`);
+            console.log(`  - Leave Balance: ${leaveBalance}h`);
+
             return {
                 leaveTaken: totalHourlyLeaveTaken,
-                sickLeaveTaken: totalSickLeaveTaken,
+                sickLeaveTaken: totalSickLeaveTaken, // This is in DAYS
                 leaveBalance: leaveBalance
             };
         } catch (error) {

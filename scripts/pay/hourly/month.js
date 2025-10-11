@@ -1,18 +1,27 @@
 // Monthly Payroll Component
 // Separate component for Monthly Payroll view to keep dashboard.html manageable
 
+// Format currency with thousand separators
+const formatCurrency = (amount) => {
+    return '€' + parseFloat(amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
+
 window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataRefresh }) {
     const [leaveData, setLeaveData] = React.useState(null);
+    const [ppsData, setPpsData] = React.useState(null);
     const [loadingLeave, setLoadingLeave] = React.useState(false);
+    const [loadingPPS, setLoadingPPS] = React.useState(false);
     const [updatingBalances, setUpdatingBalances] = React.useState(false);
     const [authorizingPayroll, setAuthorizingPayroll] = React.useState(false);
     const [editingCell, setEditingCell] = React.useState(null); // {teacherName, field}
     const [editValue, setEditValue] = React.useState('');
+    const [editingPPS, setEditingPPS] = React.useState(null); // teacherName being edited
 
-    // Fetch leave data when period changes
+    // Fetch leave and PPS data when period changes
     React.useEffect(() => {
         if (selectedMonthlyPeriod) {
             fetchLeaveDataForPeriod();
+            fetchPPSData();
         }
     }, [selectedMonthlyPeriod]);
 
@@ -40,6 +49,34 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
             setLeaveData({});
         } finally {
             setLoadingLeave(false);
+        }
+    };
+
+    const fetchPPSData = async () => {
+        setLoadingPPS(true);
+        try {
+            console.log('[MONTH.JS] Fetching PPS data from Zoho...');
+            const response = await fetch('/fins/scripts/pay/hourly/dashboard/pps-for-teachers');
+            const result = await response.json();
+
+            if (result.success) {
+                console.log('[MONTH.JS] PPS data received:', result.data);
+                console.log('[MONTH.JS] PPS count:', result.count);
+                setPpsData(result.data);
+
+                // Refresh the main data to get updated PPS from database
+                if (onDataRefresh) {
+                    await onDataRefresh();
+                }
+            } else {
+                console.error('Error fetching PPS data:', result.error);
+                setPpsData({});
+            }
+        } catch (error) {
+            console.error('Error fetching PPS data:', error);
+            setPpsData({});
+        } finally {
+            setLoadingPPS(false);
         }
     };
 
@@ -130,10 +167,34 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
         }
     };
 
+    const updateTeacherPPS = async (teacherName, ppsNumber) => {
+        try {
+            const response = await fetch('/fins/scripts/pay/hourly/dashboard/update-pps', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    teacher_name: teacherName,
+                    pps_number: ppsNumber
+                })
+            });
+            const result = await response.json();
+            if (result.success) {
+                // Refresh data to show updated PPS
+                if (onDataRefresh) {
+                    await onDataRefresh();
+                }
+            } else {
+                alert('Error updating PPS: ' + result.error);
+            }
+        } catch (err) {
+            alert('Error updating PPS: ' + err.message);
+        }
+    };
+
     const authorizePayroll = async () => {
         if (!selectedMonthlyPeriod) return;
 
-        if (!confirm(`Authorize payroll for ${selectedMonthlyPeriod.month}?\n\nThis will:\n1. Save a snapshot of all payroll data\n2. Mark the period as AUTHORIZED\n3. Make it available in the Payroll Output dashboard\n\nContinue?`)) {
+        if (!confirm(`Authorize payroll for ${selectedMonthlyPeriod.month}?\n\nThis will:\n1. Save a snapshot of all teacher payroll data\n2. Mark the period as AUTHORIZED\n3. Make it available for final processing\n\nContinue?`)) {
             return;
         }
 
@@ -167,12 +228,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
             const result = await response.json();
 
             if (result.success) {
-                alert(`Payroll authorized successfully!\n\nSnapshot saved with ID: ${result.authorizationId}\n\nView at: /fins/scripts/pay/output.html`);
-
-                // Open output dashboard in new window
-                if (confirm('Open Payroll Output dashboard to view?')) {
-                    window.open('/fins/scripts/pay/output.html', '_blank');
-                }
+                alert(`Payroll authorized successfully!\n\nSnapshot saved with ID: ${result.authorizationId}\n\nThis payroll period has been marked as authorized and is now available for final processing.`);
             } else {
                 alert('Error authorizing payroll: ' + result.error);
             }
@@ -263,6 +319,8 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
 
         return {
             teacher_name: teacher.teacher_name,
+            email: teacher.email,
+            pps_number: teacher.pps_number || 'N/A',  // Will be populated from Zoho
             total_hours: periodTotalHours,
             average_rate: rateCount > 0 ? rateSum / rateCount : 0,
             total_pay: periodTotalPay,
@@ -279,7 +337,8 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
         <div className="summary-section">
             <h2>
                 Monthly Payroll - {selectedMonthlyPeriod.month}
-                {loadingLeave && <span style={{marginLeft: '10px', fontSize: '14px', color: '#7f8c8d'}}>Fetching leave data from Zoho...</span>}
+                {loadingLeave && <span style={{marginLeft: '10px', fontSize: '14px', color: '#7f8c8d'}}>Fetching leave data...</span>}
+                {loadingPPS && <span style={{marginLeft: '10px', fontSize: '14px', color: '#7f8c8d'}}>Fetching PPS...</span>}
             </h2>
             <div style={{marginBottom: '15px', display: 'flex', gap: '15px', alignItems: 'center'}}>
                 <button
@@ -336,6 +395,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                 <thead>
                     <tr>
                         <th rowSpan="2">Teacher</th>
+                        <th rowSpan="2">PPS</th>
                         <th rowSpan="2">Hours</th>
                         <th rowSpan="2">Rate</th>
                         <th colSpan="4" className="leave-header">LEAVE</th>
@@ -360,8 +420,43 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                         return (
                             <tr key={idx}>
                                 <td>{teacher.teacher_name}</td>
+                                <td
+                                    onClick={() => setEditingPPS(idx)}
+                                    style={{
+                                        fontSize: '13px',
+                                        color: teacher.pps_number === 'N/A' ? '#e74c3c' : 'inherit',
+                                        cursor: 'pointer',
+                                        backgroundColor: editingPPS === idx ? '#fff3cd' : 'transparent'
+                                    }}
+                                >
+                                    {editingPPS === idx ? (
+                                        <input
+                                            type="text"
+                                            defaultValue={teacher.pps_number === 'N/A' ? '' : teacher.pps_number}
+                                            placeholder="PPS Number"
+                                            style={{width: '100%', padding: '4px', fontSize: '13px', border: '1px solid #3498db'}}
+                                            onBlur={(e) => {
+                                                updateTeacherPPS(teacher.teacher_name, e.target.value);
+                                                setEditingPPS(null);
+                                            }}
+                                            onKeyDown={(e) => {
+                                                if (e.key === 'Enter') {
+                                                    updateTeacherPPS(teacher.teacher_name, e.target.value);
+                                                    setEditingPPS(null);
+                                                } else if (e.key === 'Escape') {
+                                                    setEditingPPS(null);
+                                                }
+                                            }}
+                                            autoFocus
+                                        />
+                                    ) : (
+                                        <span style={{textDecoration: teacher.pps_number === 'N/A' ? 'underline dotted' : 'none'}}>
+                                            {teacher.pps_number === 'N/A' ? 'Click to add PPS' : teacher.pps_number}
+                                        </span>
+                                    )}
+                                </td>
                                 <td>{teacher.total_hours.toFixed(2)}h</td>
-                                <td>€{teacher.average_rate.toFixed(2)}</td>
+                                <td>{formatCurrency(teacher.average_rate)}</td>
                                 <td className="leave-cell">
                                     {loadingLeave ? (
                                         <span style={{color: '#7f8c8d'}}>Loading...</span>
@@ -369,7 +464,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                         `${teacher.leave_taken.toFixed(2)}h`
                                     )}
                                 </td>
-                                <td className="leave-cell">€{leaveEuro.toFixed(2)}</td>
+                                <td className="leave-cell">{formatCurrency(leaveEuro)}</td>
                                 <td className="leave-cell">
                                     {loadingLeave ? (
                                         <span style={{color: '#7f8c8d'}}>Loading...</span>
@@ -377,7 +472,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                         `${teacher.sick_days_taken.toFixed(2)} days`
                                     )}
                                 </td>
-                                <td className="leave-cell">€{sickLeaveEuro.toFixed(2)}</td>
+                                <td className="leave-cell">{formatCurrency(sickLeaveEuro)}</td>
                                 <td
                                     onClick={() => handleCellClick(teacher.teacher_name, 'other', teacher.other)}
                                     style={{cursor: 'pointer', backgroundColor: editingCell?.teacherName === teacher.teacher_name && editingCell?.field === 'other' ? '#fff3cd' : 'transparent'}}
@@ -394,7 +489,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                             style={{width: '100%', border: '1px solid #3498db', padding: '4px', fontSize: '14px'}}
                                         />
                                     ) : (
-                                        `€${teacher.other.toFixed(2)}`
+                                        formatCurrency(teacher.other)
                                     )}
                                 </td>
                                 <td
@@ -418,10 +513,10 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                             style={{width: '100%', border: '1px solid #3498db', padding: '4px', fontSize: '14px', fontWeight: '600'}}
                                         />
                                     ) : (
-                                        `€${teacher.impact_bonus.toFixed(2)}`
+                                        formatCurrency(teacher.impact_bonus)
                                     )}
                                 </td>
-                                <td><strong>€{finalTotalPay.toFixed(2)}</strong></td>
+                                <td><strong>{formatCurrency(finalTotalPay)}</strong></td>
                             </tr>
                         );
                     })}

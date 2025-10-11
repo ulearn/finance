@@ -318,6 +318,55 @@ class ZohoPeopleAPI {
     }
 
     /**
+     * Get employee details including PPS number
+     * @param {string} employeeId - Zoho People employee ID
+     * @returns {Promise<Object|null>} - Employee details including PPS
+     */
+    async getEmployeeDetails(employeeId) {
+        try {
+            if (!this.accessToken) {
+                await this.loadTokens();
+            }
+
+            const response = await axios.get(`${this.baseUrl}/forms/employee/records/${employeeId}`, {
+                headers: {
+                    'Authorization': `Zoho-oauthtoken ${this.accessToken}`
+                }
+            });
+
+            if (response.data && response.data.response && response.data.response.result) {
+                const result = Array.isArray(response.data.response.result)
+                    ? response.data.response.result[0]
+                    : response.data.response.result;
+
+                // Extract PPS number - field is called "PPS" in Zoho
+                const ppsNumber = result.PPS || result.pps || null;
+
+                return {
+                    employeeId: result.EmployeeID || result.employeeID,
+                    firstName: result.FirstName || result['First Name'],
+                    lastName: result.LastName || result['Last Name'],
+                    email: result.EMPLOYEEMAILALIAS || result['Email ID'],
+                    ppsNumber: ppsNumber,
+                    rawData: result // Include raw data for debugging
+                };
+            }
+
+            return null;
+        } catch (error) {
+            if (error.response?.status === 401) {
+                const refreshed = await this.refreshAccessToken();
+                if (refreshed) {
+                    return await this.getEmployeeDetails(employeeId);
+                }
+            }
+
+            console.error('Error fetching employee details:', error.response?.data || error.message);
+            return null;
+        }
+    }
+
+    /**
      * Update employee leave balance
      * @param {string} employeeId - Zoho People employee ID
      * @param {string} leaveTypeId - Leave type ID
