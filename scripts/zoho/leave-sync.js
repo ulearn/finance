@@ -69,7 +69,123 @@ class ZohoLeaveSync {
     }
 
     /**
-     * Get leave records for employee
+     * Get leave records for employee within a specific date range
+     * @param {string} employeeId - Zoho employee ID
+     * @param {string} dateFrom - Start date (YYYY-MM-DD) - optional
+     * @param {string} dateTo - End date (YYYY-MM-DD) - optional
+     * @returns {Promise<Object>} - Leave data (taken hours and balance)
+     */
+    async getEmployeeLeaveDataForPeriod(employeeId, dateFrom = null, dateTo = null) {
+        try {
+            await this.zohoAPI.loadTokens();
+
+            // Get all leave records for this employee
+            const response = await axios.get(`${this.zohoAPI.baseUrl.replace('/api', '/people/api')}/forms/leave/getRecords`, {
+                params: {
+                    sEmpID: employeeId
+                },
+                headers: {
+                    'Authorization': `Zoho-oauthtoken ${this.zohoAPI.accessToken}`
+                }
+            });
+
+            const leaveRecords = response.data.response.result || [];
+
+            // Calculate total "Hourly Leave" taken in the specified period
+            let totalHourlyLeaveTaken = 0;
+
+            for (const record of leaveRecords) {
+                const recordId = Object.keys(record)[0];
+                const leaveData = record[recordId][0];
+
+                // Extract employee ID from the Employee_ID field (format: "Name EmployeeID")
+                const employeeIdFromRecord = leaveData.Employee_ID ?
+                    leaveData.Employee_ID.split(' ').pop() : null;
+
+                // Only count records for THIS specific employee AND "Hourly Leave" type AND Approved status
+                if (employeeIdFromRecord === employeeId.toString() &&
+                    leaveData.Leavetype === 'Hourly Leave' &&
+                    leaveData.ApprovalStatus === 'Approved') {
+
+                    const fromDate = leaveData.From; // Format: "01-Aug-2025"
+                    const toDate = leaveData.To;
+
+                    // Check if leave falls within the date range
+                    if (fromDate) {
+                        // Convert "01-Aug-2025" to "2025-08-01" for comparison
+                        const parseZohoDate = (dateStr) => {
+                            const parts = dateStr.split('-');
+                            const months = {
+                                'Jan': '01', 'Feb': '02', 'Mar': '03', 'Apr': '04',
+                                'May': '05', 'Jun': '06', 'Jul': '07', 'Aug': '08',
+                                'Sep': '09', 'Oct': '10', 'Nov': '11', 'Dec': '12'
+                            };
+                            return `${parts[2]}-${months[parts[1]]}-${parts[0]}`;
+                        };
+
+                        const leaveStartISO = parseZohoDate(fromDate);
+                        const leaveEndISO = toDate ? parseZohoDate(toDate) : leaveStartISO;
+
+                        // Check if leave overlaps with requested period
+                        let includeLeave = true;
+                        if (dateFrom && dateTo) {
+                            // Leave overlaps if: leaveStart <= dateTo AND leaveEnd >= dateFrom
+                            includeLeave = leaveStartISO <= dateTo && leaveEndISO >= dateFrom;
+                        }
+
+                        if (includeLeave) {
+                            const daysTaken = parseFloat(leaveData.Daystaken || 0);
+                            totalHourlyLeaveTaken += daysTaken;
+                        }
+                    }
+                }
+            }
+
+            // Get leave balance from Zoho API (current balance, not period-specific)
+            let leaveBalance = 0;
+
+            try {
+                const balanceResponse = await axios.get(`${this.zohoAPI.baseUrl.replace('/api', '/people/api')}/leave/getLeaveTypeDetails`, {
+                    params: {
+                        userId: employeeId
+                    },
+                    headers: {
+                        'Authorization': `Zoho-oauthtoken ${this.zohoAPI.accessToken}`
+                    }
+                });
+
+                // Parse balance from response
+                if (balanceResponse.data && balanceResponse.data.response) {
+                    const leaveTypes = balanceResponse.data.response.result || [];
+                    const hourlyLeaveType = leaveTypes.find(lt => lt.Name === 'Hourly Leave');
+                    if (hourlyLeaveType) {
+                        leaveBalance = parseFloat(hourlyLeaveType.BalanceCount || 0);
+                    }
+                }
+            } catch (balanceError) {
+                console.log(`Could not fetch balance API for employee ${employeeId}:`, balanceError.response?.data?.errors?.message || balanceError.message);
+            }
+
+            return {
+                leaveTaken: totalHourlyLeaveTaken,
+                leaveBalance: leaveBalance
+            };
+        } catch (error) {
+            // Try token refresh once
+            if (error.response?.status === 401) {
+                await this.zohoAPI.refreshAccessToken();
+                return await this.getEmployeeLeaveDataForPeriod(employeeId, dateFrom, dateTo);
+            }
+            console.error('Error getting leave data for period:', error.response?.data || error.message);
+            return {
+                leaveTaken: 0,
+                leaveBalance: 0
+            };
+        }
+    }
+
+    /**
+     * Get leave records for employee (year-to-date)
      * @param {string} employeeId - Zoho employee ID
      * @returns {Promise<Object>} - Leave data (taken hours and balance)
      */
