@@ -57,6 +57,7 @@ router.get('/data', async (req, res) => {
                 select_value as week,
                 days,
                 firstname as teacher_name,
+                email,
                 classname as class_name,
                 course_list as courses,
                 count_bookings as student_count,
@@ -100,6 +101,7 @@ router.get('/data', async (req, res) => {
             if (!teacherData[teacher]) {
                 teacherData[teacher] = {
                     teacher_name: teacher,
+                    email: row.email,
                     weeks: {},
                     total_hours: 0,
                     average_rate: 0,
@@ -435,6 +437,91 @@ router.post('/refresh', async (req, res) => {
  * POST /api/teachers/reset-week
  * Reset week to allow Fidelo to overwrite on next refresh
  */
+/**
+ * GET /api/teachers/leave-for-period
+ * Get leave taken for all teachers in a specific period
+ */
+router.get('/leave-for-period', async (req, res) => {
+    let connection;
+    try {
+        const { dateFrom, dateTo } = req.query;
+
+        if (!dateFrom || !dateTo) {
+            return res.status(400).json({
+                success: false,
+                error: 'dateFrom and dateTo query parameters are required (format: YYYY-MM-DD)'
+            });
+        }
+
+        connection = await getConnection();
+
+        // Get all teachers with email addresses
+        const [teachers] = await connection.execute(`
+            SELECT DISTINCT email, firstname
+            FROM teacher_payments
+            WHERE email IS NOT NULL AND email != ''
+            ORDER BY firstname
+        `);
+
+        const ZohoLeaveSync = require('../../zoho/leave-sync');
+        const leaveSync = new ZohoLeaveSync();
+
+        const leaveData = {};
+
+        // For each teacher, get their leave taken in the period
+        for (const teacher of teachers) {
+            try {
+                console.log(`\n[LEAVE API] Processing ${teacher.email} for period ${dateFrom} to ${dateTo}`);
+
+                // Get employee from Zoho
+                const employee = await leaveSync.getEmployeeByEmail(teacher.email);
+
+                if (employee) {
+                    console.log(`[LEAVE API] Found employee: ${employee.firstName} ${employee.lastName} (ID: ${employee.employeeId})`);
+
+                    // Get leave data for this specific period
+                    const periodLeave = await leaveSync.getEmployeeLeaveDataForPeriod(
+                        employee.employeeId,
+                        dateFrom,
+                        dateTo
+                    );
+
+                    console.log(`[LEAVE API] Leave taken: ${periodLeave.leaveTaken}h`);
+
+                    // Store by EMAIL (reliable identifier)
+                    leaveData[teacher.email] = periodLeave.leaveTaken;
+
+                    console.log(`[LEAVE API] Stored as: ${teacher.email} = ${periodLeave.leaveTaken}h`);
+                } else {
+                    console.log(`[LEAVE API] Employee not found in Zoho: ${teacher.email}`);
+                }
+
+                // Rate limiting
+                await new Promise(resolve => setTimeout(resolve, 200));
+            } catch (error) {
+                console.error(`[LEAVE API] Error fetching leave for ${teacher.email}:`, error.message);
+            }
+        }
+
+        await connection.end();
+
+        res.json({
+            success: true,
+            data: leaveData,
+            period: { from: dateFrom, to: dateTo }
+        });
+
+    } catch (error) {
+        console.error('Error fetching leave for period:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    } finally {
+        if (connection) await connection.end();
+    }
+});
+
 router.post('/reset-week', async (req, res) => {
     let connection;
     try {

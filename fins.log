@@ -4210,3 +4210,522 @@
 [2025-10-10T21:51:48.023Z] Fins app started under Phusion Passenger
 [2025-10-10T22:01:26.738Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
 [2025-10-10T22:01:27.299Z] Fins app started under Phusion Passenger
+[2025-10-10T22:02:43.077Z] [REFRESH REQUEST] Received refresh request for 2025-09-22 to 2025-11-03
+[2025-10-10T22:02:43.078Z] [REFRESH] Spawning process: node /home/hub/public_html/fins/scripts/fidelo/login/pay-teach.js 2025-09-22 2025-11-03
+[2025-10-10T22:02:43.083Z] [REFRESH] Background process spawned with PID: 1020393
+[2025-10-10T22:57:52.505Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-10T22:57:53.060Z] Fins app started under Phusion Passenger
+[2025-10-11T07:53:37.197Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T07:53:37.736Z] Fins app started under Phusion Passenger
+[2025-10-11T07:54:00.396Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T07:54:00.900Z] Fins app started under Phusion Passenger
+[2025-10-11T07:56:58.367Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T07:56:58.788Z] Fins app started under Phusion Passenger
+[2025-10-11T07:59:46.680Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T07:59:47.114Z] Fins app started under Phusion Passenger
+[2025-10-11T08:31:53.064Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T08:31:53.554Z] Fins app started under Phusion Passenger
+[2025-10-11T08:32:59.850Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T08:33:00.278Z] Fins app started under Phusion Passenger
+[2025-10-11T08:38:03.951Z] 
+=== Starting leave sync for 17 teachers ===
+
+[2025-10-11T08:38:03.958Z] 
+=== Processing davebooth@hotmail.com ===
+[2025-10-11T08:38:04.092Z] ✓ Found: Dave Booth (ID: CND196)
+[2025-10-11T08:38:04.284Z]   Leave taken: 0h
+[2025-10-11T08:38:04.284Z]   Leave balance: 7.92h
+[2025-10-11T08:38:04.295Z] ✓ Database updated
+[2025-10-11T08:38:04.806Z] 
+=== Processing caolhiggins@gmail.com ===
+[2025-10-11T08:38:04.885Z] ✓ Found: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:38:05.113Z]   Leave taken: 30h
+[2025-10-11T08:38:05.113Z]   Leave balance: 58.72h
+[2025-10-11T08:38:05.124Z] ✓ Database updated
+[2025-10-11T08:38:05.628Z] 
+=== Processing davebooth@hotmail.com ===
+[2025-10-11T08:38:05.671Z] ✓ Found: Dave Booth (ID: CND196)
+[2025-10-11T08:38:05.945Z]   Leave taken: 0h
+[2025-10-11T08:38:05.946Z]   Leave balance: 7.92h
+[2025-10-11T08:38:05.953Z] ✓ Database updated
+[2025-10-11T08:38:06.466Z] 
+=== Processing markotownsend@gmail.com ===
+[2025-10-11T08:38:06.510Z] ✓ Found: Mark Townsend (ID: CND193)
+[2025-10-11T08:38:06.698Z]   Leave taken: 0h
+[2025-10-11T08:38:06.699Z]   Leave balance: 10.12h
+[2025-10-11T08:38:06.706Z] ✓ Database updated
+[2025-10-11T08:38:07.211Z] 
+=== Processing maryhelendavisbl@gmail.com ===
+[2025-10-11T08:38:07.264Z] ✓ Found: Mary Helen Davis (ID: CND163)
+[2025-10-11T08:38:07.439Z]   Leave taken: 0h
+[2025-10-11T08:38:07.439Z]   Leave balance: 0h
+[2025-10-11T08:38:07.450Z] ✓ Database updated
+[2025-10-11T08:38:07.953Z] 
+=== Processing caolhiggins@gmail.com ===
+[2025-10-11T08:38:08.016Z] ✓ Found: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:38:08.295Z]   Leave taken: 30h
+[2025-10-11T08:38:08.296Z]   Leave balance: 58.72h
+[2025-10-11T08:38:08.307Z] ✓ Database updated
+[2025-10-11T08:38:08.816Z] 
+=== Processing davebooth@hotmail.com ===
+[2025-10-11T08:38:08.860Z] ✓ Found: Dave Booth (ID: CND196)
+[2025-10-11T08:38:09.126Z]   Leave taken: 0h
+[2025-10-11T08:38:09.127Z]   Leave balance: 7.92h
+[2025-10-11T08:38:09.138Z] ✓ Database updated
+[2025-10-11T08:38:09.642Z] 
+=== Processing fergalhenchy@outlook.com ===
+[2025-10-11T08:38:09.687Z] ✓ Found: Fergal Henchy (ID: CND167)
+[2025-10-11T08:38:09.875Z]   Leave taken: 0h
+[2025-10-11T08:38:09.875Z]   Leave balance: 15.16h
+[2025-10-11T08:38:09.884Z] ✓ Database updated
+[2025-10-11T08:38:10.387Z] 
+=== Processing sthorgan90@gmail.com ===
+[2025-10-11T08:38:10.440Z] ✓ Found: Stephen Horgan (ID: CND200)
+[2025-10-11T08:38:10.621Z]   Leave taken: 0h
+[2025-10-11T08:38:10.621Z]   Leave balance: 26.64h
+[2025-10-11T08:38:10.627Z] ✓ Database updated
+[2025-10-11T08:38:11.132Z] 
+=== Processing Davidkane1978@gmail.com ===
+[2025-10-11T08:38:11.246Z] ✓ Found: David Kane (ID: CND206)
+[2025-10-11T08:38:11.421Z]   Leave taken: 0h
+[2025-10-11T08:38:11.421Z]   Leave balance: 14.88h
+[2025-10-11T08:38:11.432Z] ✓ Database updated
+[2025-10-11T08:38:11.935Z] 
+=== Processing kellyshan2022@gmail.com ===
+[2025-10-11T08:38:11.994Z] ✓ Found: Shan Kelly (ID: CND207)
+[2025-10-11T08:38:12.282Z]   Leave taken: 0h
+[2025-10-11T08:38:12.282Z]   Leave balance: 0h
+[2025-10-11T08:38:12.290Z] ✓ Database updated
+[2025-10-11T08:38:12.794Z] 
+=== Processing pneenan3@gmail.com ===
+[2025-10-11T08:38:12.840Z] ✓ Found: Paul Neenan (ID: CND203)
+[2025-10-11T08:38:13.112Z]   Leave taken: 12h
+[2025-10-11T08:38:13.113Z]   Leave balance: 5.48h
+[2025-10-11T08:38:13.120Z] ✓ Database updated
+[2025-10-11T08:38:13.625Z] 
+=== Processing caolhiggins@gmail.com ===
+[2025-10-11T08:38:13.669Z] ✓ Found: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:38:13.859Z]   Leave taken: 30h
+[2025-10-11T08:38:13.860Z]   Leave balance: 58.72h
+[2025-10-11T08:38:13.866Z] ✓ Database updated
+[2025-10-11T08:38:14.370Z] 
+=== Processing davebooth@hotmail.com ===
+[2025-10-11T08:38:14.419Z] ✓ Found: Dave Booth (ID: CND196)
+[2025-10-11T08:38:14.587Z]   Leave taken: 0h
+[2025-10-11T08:38:14.587Z]   Leave balance: 7.92h
+[2025-10-11T08:38:14.599Z] ✓ Database updated
+[2025-10-11T08:38:15.103Z] 
+=== Processing gavinprunty@gmail.com ===
+[2025-10-11T08:38:15.302Z] ✓ Found: Gavin Prunty (ID: CND204)
+[2025-10-11T08:38:15.742Z]   Leave taken: 0h
+[2025-10-11T08:38:15.742Z]   Leave balance: 0h
+[2025-10-11T08:38:15.748Z] ✓ Database updated
+[2025-10-11T08:38:16.253Z] 
+=== Processing davebooth@hotmail.com ===
+[2025-10-11T08:38:16.300Z] ✓ Found: Dave Booth (ID: CND196)
+[2025-10-11T08:38:16.549Z]   Leave taken: 0h
+[2025-10-11T08:38:16.549Z]   Leave balance: 7.92h
+[2025-10-11T08:38:16.558Z] ✓ Database updated
+[2025-10-11T08:38:17.062Z] 
+=== Processing markotownsend@gmail.com ===
+[2025-10-11T08:38:17.108Z] ✓ Found: Mark Townsend (ID: CND193)
+[2025-10-11T08:38:17.287Z]   Leave taken: 0h
+[2025-10-11T08:38:17.287Z]   Leave balance: 10.12h
+[2025-10-11T08:38:17.293Z] ✓ Database updated
+[2025-10-11T08:38:17.794Z] 
+=== Sync Complete ===
+[2025-10-11T08:38:17.794Z] ✓ Success: 17
+[2025-10-11T08:38:17.794Z] ✗ Failed: 0
+[2025-10-11T08:39:11.102Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T08:39:12.076Z] Fins app started under Phusion Passenger
+[2025-10-11T08:39:12.266Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:12.449Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:39:12.720Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:12.720Z] [LEAVE API] Stored as: Dave Booth = 0h
+[2025-10-11T08:39:12.923Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:12.981Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:39:13.272Z] [LEAVE API] Leave taken: 30h
+[2025-10-11T08:39:13.273Z] [LEAVE API] Stored as: David Clarke = 30h
+[2025-10-11T08:39:13.473Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:13.519Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:39:13.735Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:13.735Z] [LEAVE API] Stored as: David Clarke = 0h
+[2025-10-11T08:39:13.940Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:14.015Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:39:14.219Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:14.220Z] [LEAVE API] Stored as: David Clarke = 0h
+[2025-10-11T08:39:14.421Z] 
+[LEAVE API] Processing maryhelendavisbl@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:14.484Z] [LEAVE API] Found employee: Mary Helen Davis (ID: CND163)
+[2025-10-11T08:39:14.738Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:14.740Z] [LEAVE API] Stored as: Mary Helen Davis = 0h
+[2025-10-11T08:39:14.941Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:14.997Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:39:15.586Z] [LEAVE API] Leave taken: 30h
+[2025-10-11T08:39:15.586Z] [LEAVE API] Stored as: ULearn DOS = 30h
+[2025-10-11T08:39:15.788Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:15.833Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:39:16.025Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:16.026Z] [LEAVE API] Stored as: ULearn DOS = 0h
+[2025-10-11T08:39:16.226Z] 
+[LEAVE API] Processing fergalhenchy@outlook.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:16.288Z] [LEAVE API] Found employee: Fergal Henchy (ID: CND167)
+[2025-10-11T08:39:16.464Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:16.464Z] [LEAVE API] Stored as: Fergal Henchy = 0h
+[2025-10-11T08:39:16.664Z] 
+[LEAVE API] Processing sthorgan90@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:16.728Z] [LEAVE API] Found employee: Stephen Horgan (ID: CND200)
+[2025-10-11T08:39:16.962Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:16.963Z] [LEAVE API] Stored as: Stephen Horgan = 0h
+[2025-10-11T08:39:17.163Z] 
+[LEAVE API] Processing Davidkane1978@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:17.207Z] [LEAVE API] Found employee: David Kane (ID: CND206)
+[2025-10-11T08:39:17.499Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:17.499Z] [LEAVE API] Stored as: David Kane = 0h
+[2025-10-11T08:39:17.700Z] 
+[LEAVE API] Processing kellyshan2022@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:17.779Z] [LEAVE API] Found employee: Shan Kelly (ID: CND207)
+[2025-10-11T08:39:17.976Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:17.976Z] [LEAVE API] Stored as: Shan Kelly = 0h
+[2025-10-11T08:39:18.177Z] 
+[LEAVE API] Processing pneenan3@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:18.249Z] [LEAVE API] Found employee: Paul Neenan (ID: CND203)
+[2025-10-11T08:39:18.415Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:18.416Z] [LEAVE API] Stored as: Paul Neenan = 0h
+[2025-10-11T08:39:18.616Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:18.680Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:39:18.917Z] [LEAVE API] Leave taken: 30h
+[2025-10-11T08:39:18.917Z] [LEAVE API] Stored as: Caol O'h-Uigin = 30h
+[2025-10-11T08:39:19.118Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:19.162Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:39:19.418Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:19.419Z] [LEAVE API] Stored as: Caol O'h-Uigin = 0h
+[2025-10-11T08:39:19.624Z] 
+[LEAVE API] Processing gavinprunty@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:19.667Z] [LEAVE API] Found employee: Gavin Prunty (ID: CND204)
+[2025-10-11T08:39:19.870Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:19.870Z] [LEAVE API] Stored as: Gavin Prunty = 0h
+[2025-10-11T08:39:20.071Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:20.165Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:39:20.332Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:20.333Z] [LEAVE API] Stored as: Mark Townsend = 0h
+[2025-10-11T08:39:20.533Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:39:20.591Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:39:20.812Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:39:20.813Z] [LEAVE API] Stored as: Mark Townsend = 0h
+[2025-10-11T08:43:24.040Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T08:43:24.627Z] Fins app started under Phusion Passenger
+[2025-10-11T08:44:47.273Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T08:44:47.732Z] Fins app started under Phusion Passenger
+[2025-10-11T08:44:55.771Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:55.928Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:44:56.156Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:56.157Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:44:56.358Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:56.429Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:44:56.660Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:56.661Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h
+[2025-10-11T08:44:56.862Z] 
+[LEAVE API] Processing maryhelendavisbl@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:56.909Z] [LEAVE API] Found employee: Mary Helen Davis (ID: CND163)
+[2025-10-11T08:44:57.186Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:57.187Z] [LEAVE API] Stored as: maryhelendavisbl@gmail.com = 0h
+[2025-10-11T08:44:57.388Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:57.434Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:44:57.623Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:57.623Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 0h
+[2025-10-11T08:44:57.824Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:57.880Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:44:58.074Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:58.074Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:44:58.275Z] 
+[LEAVE API] Processing fergalhenchy@outlook.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:58.331Z] [LEAVE API] Found employee: Fergal Henchy (ID: CND167)
+[2025-10-11T08:44:58.556Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:58.557Z] [LEAVE API] Stored as: fergalhenchy@outlook.com = 0h
+[2025-10-11T08:44:58.757Z] 
+[LEAVE API] Processing sthorgan90@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:58.801Z] [LEAVE API] Found employee: Stephen Horgan (ID: CND200)
+[2025-10-11T08:44:59.078Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:59.078Z] [LEAVE API] Stored as: sthorgan90@gmail.com = 0h
+[2025-10-11T08:44:59.279Z] 
+[LEAVE API] Processing Davidkane1978@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:59.323Z] [LEAVE API] Found employee: David Kane (ID: CND206)
+[2025-10-11T08:44:59.379Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:44:59.450Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:44:59.496Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:59.497Z] [LEAVE API] Stored as: Davidkane1978@gmail.com = 0h
+[2025-10-11T08:44:59.612Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:59.613Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:44:59.698Z] 
+[LEAVE API] Processing kellyshan2022@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:44:59.765Z] [LEAVE API] Found employee: Shan Kelly (ID: CND207)
+[2025-10-11T08:44:59.813Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:44:59.873Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:44:59.993Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:44:59.993Z] [LEAVE API] Stored as: kellyshan2022@gmail.com = 0h
+[2025-10-11T08:45:00.194Z] 
+[LEAVE API] Processing pneenan3@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:45:00.289Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:00.289Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h
+[2025-10-11T08:45:00.353Z] [LEAVE API] Found employee: Paul Neenan (ID: CND203)
+[2025-10-11T08:45:00.489Z] 
+[LEAVE API] Processing maryhelendavisbl@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:00.675Z] [LEAVE API] Found employee: Mary Helen Davis (ID: CND163)
+[2025-10-11T08:45:00.978Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:00.979Z] [LEAVE API] Stored as: pneenan3@gmail.com = 0h
+[2025-10-11T08:45:01.148Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:01.148Z] [LEAVE API] Stored as: maryhelendavisbl@gmail.com = 0h
+[2025-10-11T08:45:01.179Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:45:01.231Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:45:01.349Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:01.394Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:45:01.533Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:01.534Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 0h
+[2025-10-11T08:45:01.596Z] [LEAVE API] Leave taken: 30h
+[2025-10-11T08:45:01.596Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 30h
+[2025-10-11T08:45:01.735Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:45:01.798Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:01.841Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:45:01.908Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:45:02.106Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:02.107Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:45:02.273Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:02.274Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:45:02.308Z] 
+[LEAVE API] Processing gavinprunty@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:45:02.354Z] [LEAVE API] Found employee: Gavin Prunty (ID: CND204)
+[2025-10-11T08:45:02.481Z] 
+[LEAVE API] Processing fergalhenchy@outlook.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:02.858Z] [LEAVE API] Found employee: Fergal Henchy (ID: CND167)
+[2025-10-11T08:45:02.943Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:02.968Z] [LEAVE API] Stored as: gavinprunty@gmail.com = 0h
+[2025-10-11T08:45:03.186Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:45:03.317Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:45:03.360Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:03.361Z] [LEAVE API] Stored as: fergalhenchy@outlook.com = 0h
+[2025-10-11T08:45:03.578Z] 
+[LEAVE API] Processing sthorgan90@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:03.615Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:03.616Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:45:03.654Z] [LEAVE API] Found employee: Stephen Horgan (ID: CND200)
+[2025-10-11T08:45:03.917Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:45:03.983Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:03.984Z] [LEAVE API] Stored as: sthorgan90@gmail.com = 0h
+[2025-10-11T08:45:04.060Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:45:04.194Z] 
+[LEAVE API] Processing Davidkane1978@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:04.266Z] [LEAVE API] Found employee: David Kane (ID: CND206)
+[2025-10-11T08:45:04.389Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:04.390Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h
+[2025-10-11T08:45:04.681Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:04.682Z] [LEAVE API] Stored as: Davidkane1978@gmail.com = 0h
+[2025-10-11T08:45:04.895Z] 
+[LEAVE API] Processing kellyshan2022@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:04.968Z] [LEAVE API] Found employee: Shan Kelly (ID: CND207)
+[2025-10-11T08:45:05.204Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:05.213Z] [LEAVE API] Stored as: kellyshan2022@gmail.com = 0h
+[2025-10-11T08:45:05.423Z] 
+[LEAVE API] Processing pneenan3@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:05.508Z] [LEAVE API] Found employee: Paul Neenan (ID: CND203)
+[2025-10-11T08:45:05.786Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:05.800Z] [LEAVE API] Stored as: pneenan3@gmail.com = 0h
+[2025-10-11T08:45:06.005Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:06.076Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:45:06.405Z] [LEAVE API] Leave taken: 30h
+[2025-10-11T08:45:06.406Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 30h
+[2025-10-11T08:45:06.614Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:06.662Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:45:06.890Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:06.890Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:45:07.101Z] 
+[LEAVE API] Processing gavinprunty@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:07.191Z] [LEAVE API] Found employee: Gavin Prunty (ID: CND204)
+[2025-10-11T08:45:07.418Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:07.418Z] [LEAVE API] Stored as: gavinprunty@gmail.com = 0h
+[2025-10-11T08:45:07.632Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:07.695Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:45:07.958Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:07.958Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:45:08.161Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:45:08.236Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:45:08.564Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:45:08.570Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h
+[2025-10-11T08:49:11.142Z] Logger initialized - logging to gads.log with auto-rotation at 5000 lines
+[2025-10-11T08:49:11.540Z] Fins app started under Phusion Passenger
+[2025-10-11T08:49:13.737Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:13.881Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:14.089Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:14.089Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:14.290Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:14.354Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:49:14.577Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:14.577Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h
+[2025-10-11T08:49:14.778Z] 
+[LEAVE API] Processing maryhelendavisbl@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:14.823Z] [LEAVE API] Found employee: Mary Helen Davis (ID: CND163)
+[2025-10-11T08:49:15.232Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:15.232Z] [LEAVE API] Stored as: maryhelendavisbl@gmail.com = 0h
+[2025-10-11T08:49:15.433Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:15.482Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:49:15.674Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:15.675Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 0h
+[2025-10-11T08:49:15.875Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:15.929Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:16.127Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:16.128Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:16.328Z] 
+[LEAVE API] Processing fergalhenchy@outlook.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:16.395Z] [LEAVE API] Found employee: Fergal Henchy (ID: CND167)
+[2025-10-11T08:49:16.658Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:16.659Z] [LEAVE API] Stored as: fergalhenchy@outlook.com = 0h
+[2025-10-11T08:49:16.860Z] 
+[LEAVE API] Processing sthorgan90@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:16.903Z] [LEAVE API] Found employee: Stephen Horgan (ID: CND200)
+[2025-10-11T08:49:17.293Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:17.293Z] [LEAVE API] Stored as: sthorgan90@gmail.com = 0h
+[2025-10-11T08:49:17.494Z] 
+[LEAVE API] Processing Davidkane1978@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:17.538Z] [LEAVE API] Found employee: David Kane (ID: CND206)
+[2025-10-11T08:49:17.723Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:17.723Z] [LEAVE API] Stored as: Davidkane1978@gmail.com = 0h
+[2025-10-11T08:49:17.924Z] 
+[LEAVE API] Processing kellyshan2022@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:17.988Z] [LEAVE API] Found employee: Shan Kelly (ID: CND207)
+[2025-10-11T08:49:18.181Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:18.181Z] [LEAVE API] Stored as: kellyshan2022@gmail.com = 0h
+[2025-10-11T08:49:18.382Z] 
+[LEAVE API] Processing pneenan3@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:18.457Z] [LEAVE API] Found employee: Paul Neenan (ID: CND203)
+[2025-10-11T08:49:18.682Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:18.682Z] [LEAVE API] Stored as: pneenan3@gmail.com = 0h
+[2025-10-11T08:49:18.882Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:18.926Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:49:19.194Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:19.194Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 0h
+[2025-10-11T08:49:19.395Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:19.441Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:19.635Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:19.640Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:19.840Z] 
+[LEAVE API] Processing gavinprunty@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:19.909Z] [LEAVE API] Found employee: Gavin Prunty (ID: CND204)
+[2025-10-11T08:49:20.115Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:20.116Z] [LEAVE API] Stored as: gavinprunty@gmail.com = 0h
+[2025-10-11T08:49:20.316Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:20.381Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:20.636Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:20.637Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:20.838Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-09-25 to 2025-10-29
+[2025-10-11T08:49:20.881Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:49:21.130Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:21.130Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h
+[2025-10-11T08:49:29.571Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:29.639Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:29.854Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:29.855Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:30.055Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:30.382Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:49:30.560Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:30.560Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h
+[2025-10-11T08:49:30.761Z] 
+[LEAVE API] Processing maryhelendavisbl@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:30.848Z] [LEAVE API] Found employee: Mary Helen Davis (ID: CND163)
+[2025-10-11T08:49:31.086Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:31.086Z] [LEAVE API] Stored as: maryhelendavisbl@gmail.com = 0h
+[2025-10-11T08:49:31.287Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:31.332Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:49:31.607Z] [LEAVE API] Leave taken: 30h
+[2025-10-11T08:49:31.608Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 30h
+[2025-10-11T08:49:31.808Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:31.852Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:32.146Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:32.146Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:32.347Z] 
+[LEAVE API] Processing fergalhenchy@outlook.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:32.390Z] [LEAVE API] Found employee: Fergal Henchy (ID: CND167)
+[2025-10-11T08:49:32.575Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:32.575Z] [LEAVE API] Stored as: fergalhenchy@outlook.com = 0h
+[2025-10-11T08:49:32.776Z] 
+[LEAVE API] Processing sthorgan90@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:32.848Z] [LEAVE API] Found employee: Stephen Horgan (ID: CND200)
+[2025-10-11T08:49:33.016Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:33.017Z] [LEAVE API] Stored as: sthorgan90@gmail.com = 0h
+[2025-10-11T08:49:33.217Z] 
+[LEAVE API] Processing Davidkane1978@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:33.277Z] [LEAVE API] Found employee: David Kane (ID: CND206)
+[2025-10-11T08:49:33.505Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:33.506Z] [LEAVE API] Stored as: Davidkane1978@gmail.com = 0h
+[2025-10-11T08:49:33.706Z] 
+[LEAVE API] Processing kellyshan2022@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:33.750Z] [LEAVE API] Found employee: Shan Kelly (ID: CND207)
+[2025-10-11T08:49:34.002Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:34.002Z] [LEAVE API] Stored as: kellyshan2022@gmail.com = 0h
+[2025-10-11T08:49:34.203Z] 
+[LEAVE API] Processing pneenan3@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:34.246Z] [LEAVE API] Found employee: Paul Neenan (ID: CND203)
+[2025-10-11T08:49:34.430Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:34.431Z] [LEAVE API] Stored as: pneenan3@gmail.com = 0h
+[2025-10-11T08:49:34.634Z] 
+[LEAVE API] Processing caolhiggins@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:34.691Z] [LEAVE API] Found employee: Caol O&#39;h-Uigin (ID: 16)
+[2025-10-11T08:49:34.872Z] [LEAVE API] Leave taken: 30h
+[2025-10-11T08:49:34.872Z] [LEAVE API] Stored as: caolhiggins@gmail.com = 30h
+[2025-10-11T08:49:35.073Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:35.127Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:35.377Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:35.377Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:35.578Z] 
+[LEAVE API] Processing gavinprunty@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:35.622Z] [LEAVE API] Found employee: Gavin Prunty (ID: CND204)
+[2025-10-11T08:49:35.877Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:35.878Z] [LEAVE API] Stored as: gavinprunty@gmail.com = 0h
+[2025-10-11T08:49:36.078Z] 
+[LEAVE API] Processing davebooth@hotmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:36.123Z] [LEAVE API] Found employee: Dave Booth (ID: CND196)
+[2025-10-11T08:49:36.326Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:36.326Z] [LEAVE API] Stored as: davebooth@hotmail.com = 0h
+[2025-10-11T08:49:36.527Z] 
+[LEAVE API] Processing markotownsend@gmail.com for period 2025-03-27 to 2025-04-30
+[2025-10-11T08:49:36.571Z] [LEAVE API] Found employee: Mark Townsend (ID: CND193)
+[2025-10-11T08:49:36.824Z] [LEAVE API] Leave taken: 0h
+[2025-10-11T08:49:36.825Z] [LEAVE API] Stored as: markotownsend@gmail.com = 0h

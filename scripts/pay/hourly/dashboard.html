@@ -7,6 +7,7 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="month.js"></script>
     <style>
         * {
             margin: 0;
@@ -121,6 +122,24 @@
 
         button.weekly-detail-btn:hover {
             background: #8e44ad;
+        }
+
+        button.monthly-payroll-btn {
+            background: #16a085;
+        }
+
+        button.monthly-payroll-btn:hover {
+            background: #138d75;
+        }
+
+        .monthly-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid #16a085;
+            border-radius: 8px;
+            background: #d5f4e6;
         }
 
         button.refresh-fidelo-btn {
@@ -406,13 +425,17 @@
             const [error, setError] = useState(null);
             const [editingWeek, setEditingWeek] = useState({});
             const [editingEmail, setEditingEmail] = useState(null);
-            const [view, setView] = useState('detail'); // 'detail' or 'summary'
+            const [view, setView] = useState('detail'); // 'detail', 'summary', or 'monthly'
             const [selectedPeriod, setSelectedPeriod] = useState(null);
+            const [selectedMonthlyPeriod, setSelectedMonthlyPeriod] = useState(null);
 
             // Set selectedPeriod to current period when periods are loaded
             useEffect(() => {
                 if (periods && currentPeriod && !selectedPeriod) {
                     setSelectedPeriod(currentPeriod);
+                }
+                if (periods && currentPeriod && !selectedMonthlyPeriod) {
+                    setSelectedMonthlyPeriod(currentPeriod);
                 }
             }, [periods, currentPeriod]);
 
@@ -723,46 +746,71 @@
                             )}
                             <div className="controls">
                             <div className="view-controls">
+                                {/* Always show all three view buttons */}
                                 {view === 'summary' ? (
-                                    <>
-                                        <div className="summary-controls">
-                                            <button onClick={() => setView('summary')}>Payroll Summary</button>
-                                            <button onClick={autoPopulateEmails}>Get Zoho Emails</button>
-                                            <button onClick={syncLeaveData}>Sync Leave Data</button>
-                                        </div>
-                                        <button className="weekly-detail-btn" onClick={() => setView('detail')}>Weekly Detail</button>
-                                    </>
-                                ) : (
-                                    <>
+                                    <div className="summary-controls">
                                         <button onClick={() => setView('summary')}>Payroll Summary</button>
-                                        <div className="detail-controls">
-                                            <button className="weekly-detail-btn" onClick={() => setView('detail')}>Weekly Detail</button>
-                                            {periods && (
-                                                <>
-                                                    <select
-                                                        className="period-select"
-                                                        value={selectedPeriod ? selectedPeriod.period : (currentPeriod ? currentPeriod.period : '')}
-                                                        onChange={(e) => {
-                                                            const period = periods.find(p => p.period === parseInt(e.target.value));
-                                                            setSelectedPeriod(period || null);
-                                                            setCurrentPeriod(period || null);
-                                                        }}>
-                                                        <option value="">Select Period...</option>
-                                                        {periods.map(p => (
-                                                            <option key={p.period} value={p.period}>
-                                                                {p.month} ({p.from} to {p.to})
-                                                            </option>
-                                                        ))}
-                                                    </select>
-                                                    {selectedPeriod && (
-                                                        <button className="refresh-fidelo-btn" onClick={() => refreshDataForPeriod(selectedPeriod)}>
-                                                            Refresh Fidelo Data
-                                                        </button>
-                                                    )}
-                                                </>
-                                            )}
-                                        </div>
-                                    </>
+                                        <button onClick={autoPopulateEmails}>Get Zoho Emails</button>
+                                        <button onClick={syncLeaveData}>Sync Leave Data</button>
+                                    </div>
+                                ) : (
+                                    <button onClick={() => setView('summary')}>Payroll Summary</button>
+                                )}
+
+                                {view === 'detail' ? (
+                                    <div className="detail-controls">
+                                        <button className="weekly-detail-btn" onClick={() => setView('detail')}>Weekly Detail</button>
+                                        {periods && (
+                                            <>
+                                                <select
+                                                    className="period-select"
+                                                    value={selectedPeriod ? selectedPeriod.period : (currentPeriod ? currentPeriod.period : '')}
+                                                    onChange={(e) => {
+                                                        const period = periods.find(p => p.period === parseInt(e.target.value));
+                                                        setSelectedPeriod(period || null);
+                                                        setCurrentPeriod(period || null);
+                                                    }}>
+                                                    <option value="">Select Period...</option>
+                                                    {periods.map(p => (
+                                                        <option key={p.period} value={p.period}>
+                                                            {p.month} ({p.from} to {p.to})
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                                {selectedPeriod && (
+                                                    <button className="refresh-fidelo-btn" onClick={() => refreshDataForPeriod(selectedPeriod)}>
+                                                        Refresh Fidelo Data
+                                                    </button>
+                                                )}
+                                            </>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <button className="weekly-detail-btn" onClick={() => setView('detail')}>Weekly Detail</button>
+                                )}
+
+                                {view === 'monthly' ? (
+                                    <div className="monthly-controls">
+                                        <button className="monthly-payroll-btn" onClick={() => setView('monthly')}>Monthly Payroll</button>
+                                        {periods && (
+                                            <select
+                                                className="period-select"
+                                                value={selectedMonthlyPeriod ? selectedMonthlyPeriod.period : (currentPeriod ? currentPeriod.period : '')}
+                                                onChange={(e) => {
+                                                    const period = periods.find(p => p.period === parseInt(e.target.value));
+                                                    setSelectedMonthlyPeriod(period || null);
+                                                }}>
+                                                <option value="">Select Month...</option>
+                                                {periods.map(p => (
+                                                    <option key={p.period} value={p.period}>
+                                                        {p.month} ({p.from} to {p.to})
+                                                    </option>
+                                                ))}
+                                            </select>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <button className="monthly-payroll-btn" onClick={() => setView('monthly')}>Monthly Payroll</button>
                                 )}
                             </div>
                         </div>
@@ -1066,6 +1114,9 @@
                             })()}
                         </div>
                     )}
+
+                    {/* Monthly Payroll Section */}
+                    {view === 'monthly' && <MonthlyPayrollComponent data={data} selectedMonthlyPeriod={selectedMonthlyPeriod} />}
                 </div>
             );
         }
