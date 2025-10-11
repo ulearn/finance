@@ -6,9 +6,14 @@ const ZohoPeopleAPI = require('./people-api');
 const axios = require('axios');
 
 class ZohoLeaveSync {
-    constructor() {
+    constructor(options = {}) {
         this.zohoAPI = new ZohoPeopleAPI();
         this.hourlyLeaveTypeId = '20211000000126019'; // Hourly Leave type ID
+        this.sickLeaveTypeName = 'Sick Leave'; // Sick Leave type name (from Zoho)
+        this.employeeCache = null; // Cache for all employees
+        this.cacheTimestamp = null; // When cache was created
+        this.cacheTTL = 5 * 60 * 1000; // Cache for 5 minutes
+        this.forceRefresh = options.forceRefresh || false; // Bypass cache if true
     }
 
     /**
@@ -25,13 +30,20 @@ class ZohoLeaveSync {
     }
 
     /**
-     * Get employee ID from Zoho by email
-     * @param {string} email - Employee email
-     * @returns {Promise<Object|null>} - Employee data with ID
+     * Get all employees from Zoho (with caching)
+     * @returns {Promise<Array>} - Array of all employees
      */
-    async getEmployeeByEmail(email) {
+    async getAllEmployees() {
+        // Return cached data if still valid (unless forceRefresh is set)
+        if (!this.forceRefresh && this.employeeCache && this.cacheTimestamp &&
+            (Date.now() - this.cacheTimestamp < this.cacheTTL)) {
+            console.log('[ZOHO CACHE] Using cached employee list');
+            return this.employeeCache;
+        }
+
         try {
             await this.zohoAPI.loadTokens();
+            console.log(this.forceRefresh ? '[ZOHO API] FORCE REFRESH - Fetching all employees...' : '[ZOHO API] Fetching all employees...');
 
             // Get all employees
             const response = await axios.get(`${this.zohoAPI.baseUrl}/forms/P_EmployeeView/records`, {
@@ -41,29 +53,51 @@ class ZohoLeaveSync {
             });
 
             if (response.data && Array.isArray(response.data)) {
-                const employee = response.data.find(emp =>
-                    emp['Email ID']?.toLowerCase() === email.toLowerCase()
-                );
-
-                if (employee) {
-                    return {
-                        employeeId: employee.EmployeeID || employee.recordId,
-                        fullRecordId: employee.recordId,
-                        firstName: employee['First Name'],
-                        lastName: employee['Last Name'],
-                        email: employee['Email ID']
-                    };
-                }
+                // Cache the results
+                this.employeeCache = response.data;
+                this.cacheTimestamp = Date.now();
+                console.log(`[ZOHO CACHE] Cached ${response.data.length} employees`);
+                return response.data;
             }
 
-            return null;
+            return [];
         } catch (error) {
             // Try token refresh once
             if (error.response?.status === 401) {
                 await this.zohoAPI.refreshAccessToken();
-                return await this.getEmployeeByEmail(email);
+                return await this.getAllEmployees();
             }
-            console.error('Error getting employee:', error.response?.data || error.message);
+            console.error('Error getting all employees:', error.response?.data || error.message);
+            return [];
+        }
+    }
+
+    /**
+     * Get employee ID from Zoho by email (uses cache)
+     * @param {string} email - Employee email
+     * @returns {Promise<Object|null>} - Employee data with ID
+     */
+    async getEmployeeByEmail(email) {
+        try {
+            const allEmployees = await this.getAllEmployees();
+
+            const employee = allEmployees.find(emp =>
+                emp['Email ID']?.toLowerCase() === email.toLowerCase()
+            );
+
+            if (employee) {
+                return {
+                    employeeId: employee.EmployeeID || employee.recordId,
+                    fullRecordId: employee.recordId,
+                    firstName: employee['First Name'],
+                    lastName: employee['Last Name'],
+                    email: employee['Email ID']
+                };
+            }
+
+            return null;
+        } catch (error) {
+            console.error('Error getting employee:', error.message);
             return null;
         }
     }
@@ -91,8 +125,20 @@ class ZohoLeaveSync {
 
             const leaveRecords = response.data.response.result || [];
 
-            // Calculate total "Hourly Leave" taken in the specified period
+            // Calculate total "Hourly Leave" and "Sick Leave Hours" taken in the specified period
             let totalHourlyLeaveTaken = 0;
+            let totalSickLeaveTaken = 0;
+
+            // Helper function to parse Zoho dates
+            const parseZohoDate = (dateStr) => {
+                const parts = dateStr.split('-');
+                const months = {
+                    'Jan': '01', 'Feb': '02', 'Mar': '03', 'Apr': '04',
+                    'May': '05', 'Jun': '06', 'Jul': '07', 'Aug': '08',
+                    'Sep': '09', 'Oct': '10', 'Nov': '11', 'Dec': '12'
+                };
+                return `${parts[2]}-${months[parts[1]]}-${parts[0]}`;
+            };
 
             for (const record of leaveRecords) {
                 const recordId = Object.keys(record)[0];
@@ -102,27 +148,21 @@ class ZohoLeaveSync {
                 const employeeIdFromRecord = leaveData.Employee_ID ?
                     leaveData.Employee_ID.split(' ').pop() : null;
 
-                // Only count records for THIS specific employee AND "Hourly Leave" type AND Approved status
+                // Log ALL leave types for this employee for debugging
+                if (employeeIdFromRecord === employeeId.toString()) {
+                    console.log(`[ZOHO LEAVE] Employee ${employeeId}: LeaveType="${leaveData.Leavetype}", Status="${leaveData.ApprovalStatus}", Days=${leaveData.Daystaken}, From=${leaveData.From}, To=${leaveData.To}`);
+                }
+
+                // Only count records for THIS specific employee AND Approved status
                 if (employeeIdFromRecord === employeeId.toString() &&
-                    leaveData.Leavetype === 'Hourly Leave' &&
                     leaveData.ApprovalStatus === 'Approved') {
 
                     const fromDate = leaveData.From; // Format: "01-Aug-2025"
                     const toDate = leaveData.To;
+                    const leaveType = leaveData.Leavetype;
 
                     // Check if leave falls within the date range
                     if (fromDate) {
-                        // Convert "01-Aug-2025" to "2025-08-01" for comparison
-                        const parseZohoDate = (dateStr) => {
-                            const parts = dateStr.split('-');
-                            const months = {
-                                'Jan': '01', 'Feb': '02', 'Mar': '03', 'Apr': '04',
-                                'May': '05', 'Jun': '06', 'Jul': '07', 'Aug': '08',
-                                'Sep': '09', 'Oct': '10', 'Nov': '11', 'Dec': '12'
-                            };
-                            return `${parts[2]}-${months[parts[1]]}-${parts[0]}`;
-                        };
-
                         const leaveStartISO = parseZohoDate(fromDate);
                         const leaveEndISO = toDate ? parseZohoDate(toDate) : leaveStartISO;
 
@@ -135,7 +175,19 @@ class ZohoLeaveSync {
 
                         if (includeLeave) {
                             const daysTaken = parseFloat(leaveData.Daystaken || 0);
-                            totalHourlyLeaveTaken += daysTaken;
+
+                            // Categorize by leave type
+                            if (leaveType === 'Hourly Leave') {
+                                totalHourlyLeaveTaken += daysTaken;
+                                console.log(`[ZOHO LEAVE] Added ${daysTaken}h to Hourly Leave (total now: ${totalHourlyLeaveTaken}h)`);
+                            } else if (leaveType === this.sickLeaveTypeName) {
+                                totalSickLeaveTaken += daysTaken;
+                                console.log(`[ZOHO LEAVE] Added ${daysTaken}h to Sick Leave (total now: ${totalSickLeaveTaken}h)`);
+                            } else {
+                                console.log(`[ZOHO LEAVE] Unknown leave type: "${leaveType}" - not counted`);
+                            }
+                        } else {
+                            console.log(`[ZOHO LEAVE] Leave outside period: ${leaveStartISO} to ${leaveEndISO} (period: ${dateFrom} to ${dateTo})`);
                         }
                     }
                 }
@@ -168,6 +220,7 @@ class ZohoLeaveSync {
 
             return {
                 leaveTaken: totalHourlyLeaveTaken,
+                sickLeaveTaken: totalSickLeaveTaken,
                 leaveBalance: leaveBalance
             };
         } catch (error) {
@@ -179,6 +232,7 @@ class ZohoLeaveSync {
             console.error('Error getting leave data for period:', error.response?.data || error.message);
             return {
                 leaveTaken: 0,
+                sickLeaveTaken: 0,
                 leaveBalance: 0
             };
         }
@@ -205,8 +259,10 @@ class ZohoLeaveSync {
 
             const leaveRecords = response.data.response.result || [];
 
-            // Calculate total "Hourly Leave" taken in 2025
+            // Calculate total "Hourly Leave" (in hours) and "Sick Leave" (in days) taken in 2025
+            // NOTE: Hourly Leave is stored as hours in Zoho, Sick Leave is stored as days
             let totalHourlyLeaveTaken = 0;
+            let totalSickDaysTaken = 0; // This is in DAYS, not hours
             const currentYear = new Date().getFullYear().toString();
 
             for (const record of leaveRecords) {
@@ -217,15 +273,23 @@ class ZohoLeaveSync {
                 const employeeIdFromRecord = leaveData.Employee_ID ?
                     leaveData.Employee_ID.split(' ').pop() : null;
 
-                // Only count records for THIS specific employee AND "Hourly Leave" type AND Approved status
+                // Only count records for THIS specific employee AND Approved status
                 if (employeeIdFromRecord === employeeId.toString() &&
-                    leaveData.Leavetype === 'Hourly Leave' &&
                     leaveData.ApprovalStatus === 'Approved') {
                     const fromDate = leaveData.From;
+                    const leaveType = leaveData.Leavetype;
+
                     // Check if this year
                     if (fromDate && fromDate.includes(currentYear)) {
-                        const daysTaken = parseFloat(leaveData.Daystaken || 0);
-                        totalHourlyLeaveTaken += daysTaken;
+                        const amountTaken = parseFloat(leaveData.Daystaken || 0);
+
+                        if (leaveType === 'Hourly Leave') {
+                            // Hourly Leave: stored as hours in Zoho
+                            totalHourlyLeaveTaken += amountTaken;
+                        } else if (leaveType === this.sickLeaveTypeName) {
+                            // Sick Leave: stored as DAYS in Zoho (e.g., 1.0, 0.5, 0.25)
+                            totalSickDaysTaken += amountTaken;
+                        }
                     }
                 }
             }
@@ -265,6 +329,7 @@ class ZohoLeaveSync {
 
             return {
                 leaveTaken: finalLeaveTaken,
+                sickDaysTaken: totalSickDaysTaken, // DAYS, not hours
                 leaveBalance: leaveBalance
             };
         } catch (error) {
@@ -276,6 +341,7 @@ class ZohoLeaveSync {
             console.error('Error getting leave data:', error.response?.data || error.message);
             return {
                 leaveTaken: 0,
+                sickDaysTaken: 0,
                 leaveBalance: 0
             };
         }
@@ -309,16 +375,18 @@ class ZohoLeaveSync {
             // Get leave data
             const leaveData = await this.getEmployeeLeaveData(employee.employeeId);
             console.log(`  Leave taken: ${leaveData.leaveTaken}h`);
+            console.log(`  Sick days taken: ${leaveData.sickDaysTaken} days`);
             console.log(`  Leave balance: ${leaveData.leaveBalance}h`);
 
-            // Update database
+            // Update database - store sick leave as DAYS
             await connection.execute(`
                 UPDATE teacher_payments
                 SET leave_taken = ?,
+                    sick_days = ?,
                     leave_balance = ?,
                     updated_at = NOW()
                 WHERE email = ?
-            `, [leaveData.leaveTaken, leaveData.leaveBalance, email]);
+            `, [leaveData.leaveTaken, leaveData.sickDaysTaken, leaveData.leaveBalance, email]);
 
             console.log(`✓ Database updated`);
 
@@ -329,6 +397,7 @@ class ZohoLeaveSync {
                 email: email,
                 employeeName: `${employee.firstName} ${employee.lastName}`,
                 leaveTaken: leaveData.leaveTaken,
+                sickDaysTaken: leaveData.sickDaysTaken,
                 leaveBalance: leaveData.leaveBalance
             };
         } catch (error) {
@@ -337,6 +406,192 @@ class ZohoLeaveSync {
             return {
                 success: false,
                 email: email,
+                error: error.message
+            };
+        }
+    }
+
+    /**
+     * Calculate and update leave balance for a payroll period
+     * Formula: new_balance = start_balance + leave_accrued - leave_taken
+     * @param {string} email - Teacher email
+     * @param {string} dateFrom - Period start date (YYYY-MM-DD)
+     * @param {string} dateTo - Period end date (YYYY-MM-DD)
+     * @param {string} updateDate - Date to record the balance update (usually last Wednesday of month)
+     * @returns {Promise<Object>} - Update result
+     */
+    async calculateAndUpdateLeaveBalance(email, dateFrom, dateTo, updateDate) {
+        try {
+            console.log(`\n=== Calculating leave balance for ${email} ===`);
+            console.log(`Period: ${dateFrom} to ${dateTo}`);
+            console.log(`Update date: ${updateDate}`);
+
+            // Get employee from Zoho
+            const employee = await this.getEmployeeByEmail(email);
+
+            if (!employee) {
+                return {
+                    success: false,
+                    email: email,
+                    error: 'Employee not found in Zoho'
+                };
+            }
+
+            console.log(`✓ Found: ${employee.firstName} ${employee.lastName} (ID: ${employee.employeeId})`);
+
+            // Get current balance from Zoho (this is the START balance)
+            const currentBalanceData = await this.getEmployeeLeaveData(employee.employeeId);
+            const startBalance = currentBalanceData.leaveBalance;
+            console.log(`Start Balance: ${startBalance}h`);
+
+            // Get leave taken during this period
+            const periodLeave = await this.getEmployeeLeaveDataForPeriod(
+                employee.employeeId,
+                dateFrom,
+                dateTo
+            );
+            const leaveTaken = periodLeave.leaveTaken;
+            console.log(`Leave Taken (period): ${leaveTaken}h`);
+
+            // Calculate leave accrued (8% of hours worked)
+            const connection = await this.getConnection();
+            const [rows] = await connection.execute(`
+                SELECT SUM(
+                    COALESCE(hours_included_this_month,
+                        CASE WHEN can_auto_populate = 1
+                            THEN CAST(hours AS DECIMAL(10,2))
+                            ELSE 0
+                        END)
+                ) as total_hours
+                FROM teacher_payments
+                WHERE email = ?
+                AND select_value IN (
+                    SELECT DISTINCT select_value
+                    FROM teacher_payments
+                    WHERE STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y') >= ?
+                    AND STR_TO_DATE(SUBSTRING_INDEX(select_value, ' – ', -1), '%d/%m/%Y') <= ?
+                )
+            `, [email, dateFrom, dateTo]);
+
+            const hoursWorked = parseFloat(rows[0]?.total_hours || 0);
+            const leaveAccrued = hoursWorked * 0.08;
+            console.log(`Hours Worked (period): ${hoursWorked.toFixed(2)}h`);
+            console.log(`Leave Accrued (8%): ${leaveAccrued.toFixed(2)}h`);
+
+            await connection.end();
+
+            // Calculate new balance
+            const newBalance = startBalance + leaveAccrued - leaveTaken;
+            console.log(`\nCalculation: ${startBalance} + ${leaveAccrued.toFixed(2)} - ${leaveTaken} = ${newBalance.toFixed(2)}h`);
+
+            // Update balance in Zoho
+            console.log(`\nUpdating balance in Zoho...`);
+            const updateSuccess = await this.zohoAPI.updateEmployeeLeaveBalance(
+                employee.employeeId,
+                this.hourlyLeaveTypeId,
+                newBalance
+            );
+
+            if (updateSuccess) {
+                console.log(`✓ Balance updated successfully in Zoho`);
+
+                return {
+                    success: true,
+                    email: email,
+                    employeeName: `${employee.firstName} ${employee.lastName}`,
+                    startBalance: startBalance,
+                    hoursWorked: hoursWorked,
+                    leaveAccrued: leaveAccrued,
+                    leaveTaken: leaveTaken,
+                    newBalance: newBalance,
+                    updateDate: updateDate
+                };
+            } else {
+                console.log(`✗ Failed to update balance in Zoho`);
+                return {
+                    success: false,
+                    email: email,
+                    error: 'Failed to update balance in Zoho'
+                };
+            }
+
+        } catch (error) {
+            console.error(`Error calculating/updating balance for ${email}:`, error.message);
+            return {
+                success: false,
+                email: email,
+                error: error.message
+            };
+        }
+    }
+
+    /**
+     * Calculate and update leave balances for all teachers in a payroll period
+     * @param {string} dateFrom - Period start date (YYYY-MM-DD)
+     * @param {string} dateTo - Period end date (YYYY-MM-DD)
+     * @param {string} updateDate - Date to record the balance update (last Wednesday of month)
+     * @returns {Promise<Object>} - Update results
+     */
+    async updateAllLeaveBalancesForPeriod(dateFrom, dateTo, updateDate) {
+        const connection = await this.getConnection();
+
+        try {
+            // Get all teachers with email addresses
+            const [teachers] = await connection.execute(`
+                SELECT DISTINCT email, firstname
+                FROM teacher_payments
+                WHERE email IS NOT NULL AND email != ''
+                ORDER BY firstname
+            `);
+
+            console.log(`\n=== Updating leave balances for ${teachers.length} teachers ===`);
+            console.log(`Period: ${dateFrom} to ${dateTo}`);
+            console.log(`Update date: ${updateDate}\n`);
+
+            const results = [];
+            let successCount = 0;
+            let failCount = 0;
+
+            for (const teacher of teachers) {
+                const result = await this.calculateAndUpdateLeaveBalance(
+                    teacher.email,
+                    dateFrom,
+                    dateTo,
+                    updateDate
+                );
+
+                results.push(result);
+
+                if (result.success) {
+                    successCount++;
+                } else {
+                    failCount++;
+                }
+
+                // Rate limiting: wait 500ms between requests
+                await new Promise(resolve => setTimeout(resolve, 500));
+            }
+
+            await connection.end();
+
+            console.log(`\n=== Balance Update Complete ===`);
+            console.log(`✓ Success: ${successCount}`);
+            console.log(`✗ Failed: ${failCount}`);
+
+            return {
+                success: true,
+                period: { from: dateFrom, to: dateTo, updateDate: updateDate },
+                totalProcessed: teachers.length,
+                successCount: successCount,
+                failCount: failCount,
+                results: results
+            };
+
+        } catch (error) {
+            await connection.end();
+            console.error('Error updating leave balances:', error.message);
+            return {
+                success: false,
                 error: error.message
             };
         }

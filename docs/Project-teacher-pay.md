@@ -104,3 +104,6 @@ Sick Pay
 NOTE: In Ireland staff have 5 Sick Days entitlement where they are paid at 70% of their standard normal pay. IF their rate has changed it is averaged over the
  previous 13 weeks. Staff must be in employment for a minimum of 13 weeks to be entitled to sick pay. There is no accrual calculation per se and the days do 
 not carry from year to year 
+
+
+ReAuthorize URL Zoho API Application: https://hub.ulearnschool.com/fins/payroll/zoho/auth-url

@@ -53,30 +53,48 @@ router.get('/data', async (req, res) => {
 
         const query = `
             SELECT
-                fidelo_id,
-                select_value as week,
-                days,
-                firstname as teacher_name,
-                email,
-                classname as class_name,
-                course_list as courses,
-                count_bookings as student_count,
-                lessons,
-                hours,
-                single_amount as rate_per_lesson,
-                amount as salary_amount,
-                costcategory_id as cost_category,
-                can_auto_populate,
-                auto_populate_reason,
-                hours_included_this_month,
-                weekly_pay,
-                leave_hours,
-                sick_days,
-                manager_checked,
-                import_date
-            FROM teacher_payments
-            WHERE firstname NOT IN ('DOS, ULearn', 'ADoS, ULearn')
-            ORDER BY select_value ASC, firstname ASC
+                t.fidelo_id,
+                t.select_value as week,
+                t.days,
+                t.firstname as teacher_name,
+                t.email,
+                t.classname as class_name,
+                t.course_list as courses,
+                t.count_bookings as student_count,
+                t.lessons,
+                t.hours,
+                t.single_amount as rate_per_lesson,
+                t.amount as salary_amount,
+                t.costcategory_id as cost_category,
+                t.can_auto_populate,
+                t.auto_populate_reason,
+                t.hours_included_this_month,
+                t.weekly_pay,
+                t.leave_hours,
+                t.sick_days,
+                t.other,
+                t.impact_bonus,
+                t.manager_checked,
+                t.import_date
+            FROM teacher_payments t
+            INNER JOIN (
+                SELECT
+                    firstname,
+                    select_value,
+                    classname,
+                    days,
+                    MAX(import_date) as latest_import
+                FROM teacher_payments
+                WHERE firstname NOT IN ('DOS, ULearn', 'ADoS, ULearn')
+                GROUP BY firstname, select_value, classname, days
+            ) latest
+            ON t.firstname = latest.firstname
+            AND t.select_value = latest.select_value
+            AND t.classname = latest.classname
+            AND t.days = latest.days
+            AND t.import_date = latest.latest_import
+            WHERE t.firstname NOT IN ('DOS, ULearn', 'ADoS, ULearn')
+            ORDER BY t.select_value ASC, t.firstname ASC
         `;
 
         const [rows] = await connection.execute(query);
@@ -128,6 +146,8 @@ router.get('/data', async (req, res) => {
                     weekly_pay: row.weekly_pay || null,
                     leave_hours: row.leave_hours || 0,
                     sick_days: row.sick_days || 0,
+                    other: row.other || 0,
+                    impact_bonus: row.impact_bonus || 0,
                     manager_checked: row.manager_checked || 0,
                     classes: []
                 };
@@ -205,12 +225,12 @@ router.get('/data', async (req, res) => {
 
 /**
  * POST /api/teachers/update-hours
- * Update hours_included_this_month, weekly_pay, leave_hours, and sick_days for a specific teacher/week
+ * Update hours_included_this_month, weekly_pay, leave_hours, sick_days, other, and impact_bonus for a specific teacher/week
  */
 router.post('/update-hours', async (req, res) => {
     let connection;
     try {
-        const { teacher_name, week, hours_included, weekly_pay, leave_hours, sick_days } = req.body;
+        const { teacher_name, week, hours_included, weekly_pay, leave_hours, sick_days, other, impact_bonus } = req.body;
 
         if (!teacher_name || !week) {
             return res.status(400).json({
@@ -243,6 +263,8 @@ router.post('/update-hours', async (req, res) => {
                 weekly_pay = ?,
                 leave_hours = ?,
                 sick_days = ?,
+                other = ?,
+                impact_bonus = ?,
                 manager_checked = 1,
                 updated_at = NOW()
             WHERE firstname = ? AND select_value = ?
@@ -253,6 +275,8 @@ router.post('/update-hours', async (req, res) => {
             weekly_pay,
             leave_hours || 0,
             sick_days || 0,
+            other || 0,
+            impact_bonus || 0,
             dbName,
             week
         ]);
@@ -444,7 +468,7 @@ router.post('/refresh', async (req, res) => {
 router.get('/leave-for-period', async (req, res) => {
     let connection;
     try {
-        const { dateFrom, dateTo } = req.query;
+        const { dateFrom, dateTo, forceRefresh } = req.query;
 
         if (!dateFrom || !dateTo) {
             return res.status(400).json({
@@ -464,7 +488,7 @@ router.get('/leave-for-period', async (req, res) => {
         `);
 
         const ZohoLeaveSync = require('../../zoho/leave-sync');
-        const leaveSync = new ZohoLeaveSync();
+        const leaveSync = new ZohoLeaveSync({ forceRefresh: forceRefresh === 'true' });
 
         const leaveData = {};
 
@@ -486,12 +510,15 @@ router.get('/leave-for-period', async (req, res) => {
                         dateTo
                     );
 
-                    console.log(`[LEAVE API] Leave taken: ${periodLeave.leaveTaken}h`);
+                    console.log(`[LEAVE API] Leave taken: ${periodLeave.leaveTaken}h, Sick leave: ${periodLeave.sickLeaveTaken}h`);
 
-                    // Store by EMAIL (reliable identifier)
-                    leaveData[teacher.email] = periodLeave.leaveTaken;
+                    // Store by EMAIL (reliable identifier) - now includes both leave and sick leave
+                    leaveData[teacher.email] = {
+                        leave: periodLeave.leaveTaken,
+                        sick: periodLeave.sickLeaveTaken
+                    };
 
-                    console.log(`[LEAVE API] Stored as: ${teacher.email} = ${periodLeave.leaveTaken}h`);
+                    console.log(`[LEAVE API] Stored as: ${teacher.email} = ${periodLeave.leaveTaken}h leave, ${periodLeave.sickLeaveTaken}h sick`);
                 } else {
                     console.log(`[LEAVE API] Employee not found in Zoho: ${teacher.email}`);
                 }
@@ -519,6 +546,149 @@ router.get('/leave-for-period', async (req, res) => {
         });
     } finally {
         if (connection) await connection.end();
+    }
+});
+
+/**
+ * GET /api/teachers/leave-by-weeks
+ * Get leave/sick days broken down by week for all teachers with emails
+ * Returns: { "email@example.com": { "Week 14, 31/03/2025 – 06/04/2025": { leave: 7.5, sick: 0 }, ... }, ... }
+ */
+router.get('/leave-by-weeks', async (req, res) => {
+    let connection;
+    try {
+        const { weeks } = req.query; // Comma-separated list of week strings
+
+        if (!weeks) {
+            return res.status(400).json({
+                success: false,
+                error: 'weeks query parameter is required (comma-separated week strings)'
+            });
+        }
+
+        const weekList = weeks.split(',');
+
+        connection = await getConnection();
+
+        // Get all teachers with email addresses
+        const [teachers] = await connection.execute(`
+            SELECT DISTINCT email, firstname
+            FROM teacher_payments
+            WHERE email IS NOT NULL AND email != ''
+            ORDER BY firstname
+        `);
+
+        const ZohoLeaveSync = require('../../zoho/leave-sync');
+        const leaveSync = new ZohoLeaveSync();
+
+        const leaveByEmailAndWeek = {};
+
+        // For each teacher
+        for (const teacher of teachers) {
+            try {
+                console.log(`\n[LEAVE BY WEEKS] Processing ${teacher.email}`);
+
+                // Get employee from Zoho
+                const employee = await leaveSync.getEmployeeByEmail(teacher.email);
+
+                if (!employee) {
+                    console.log(`[LEAVE BY WEEKS] Employee not found in Zoho: ${teacher.email}`);
+                    continue;
+                }
+
+                leaveByEmailAndWeek[teacher.email] = {};
+
+                // For each week, get leave data for that week's date range
+                for (const week of weekList) {
+                    // Parse week string: "Week 14, 31/03/2025 – 06/04/2025"
+                    const match = week.match(/Week \d+, (\d{2})\/(\d{2})\/(\d{4})\s*–\s*(\d{2})\/(\d{2})\/(\d{4})/);
+
+                    if (!match) {
+                        console.log(`[LEAVE BY WEEKS] Could not parse week: ${week}`);
+                        continue;
+                    }
+
+                    const weekStart = `${match[3]}-${match[2]}-${match[1]}`; // YYYY-MM-DD
+                    const weekEnd = `${match[6]}-${match[5]}-${match[4]}`;
+
+                    // Get leave for this specific week
+                    const periodLeave = await leaveSync.getEmployeeLeaveDataForPeriod(
+                        employee.employeeId,
+                        weekStart,
+                        weekEnd
+                    );
+
+                    leaveByEmailAndWeek[teacher.email][week] = {
+                        leave: periodLeave.leaveTaken,
+                        sick: periodLeave.sickLeaveTaken
+                    };
+
+                    console.log(`[LEAVE BY WEEKS] ${week}: ${periodLeave.leaveTaken}h leave, ${periodLeave.sickLeaveTaken}h sick`);
+                }
+
+                // Rate limiting
+                await new Promise(resolve => setTimeout(resolve, 200));
+            } catch (error) {
+                console.error(`[LEAVE BY WEEKS] Error fetching leave for ${teacher.email}:`, error.message);
+            }
+        }
+
+        await connection.end();
+
+        res.json({
+            success: true,
+            data: leaveByEmailAndWeek
+        });
+
+    } catch (error) {
+        console.error('Error fetching leave by weeks:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    } finally {
+        if (connection) await connection.end();
+    }
+});
+
+/**
+ * POST /api/teachers/update-leave-balances
+ * Calculate and update leave balances in Zoho for a payroll period
+ * Formula: new_balance = start_balance + leave_accrued - leave_taken
+ */
+router.post('/update-leave-balances', async (req, res) => {
+    try {
+        const { dateFrom, dateTo, updateDate } = req.body;
+
+        if (!dateFrom || !dateTo) {
+            return res.status(400).json({
+                success: false,
+                error: 'dateFrom and dateTo are required (format: YYYY-MM-DD)'
+            });
+        }
+
+        // Default updateDate to dateTo (last day of period, which should be the last Wednesday)
+        const finalUpdateDate = updateDate || dateTo;
+
+        console.log(`[BALANCE UPDATE] Starting balance update for period ${dateFrom} to ${dateTo}`);
+
+        const ZohoLeaveSync = require('../../zoho/leave-sync');
+        const leaveSync = new ZohoLeaveSync();
+
+        const result = await leaveSync.updateAllLeaveBalancesForPeriod(
+            dateFrom,
+            dateTo,
+            finalUpdateDate
+        );
+
+        res.json(result);
+
+    } catch (error) {
+        console.error('Error updating leave balances:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
     }
 });
 

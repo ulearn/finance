@@ -63,7 +63,7 @@ class ZohoPeopleAPI {
      * Generate authorization URL for OAuth flow
      */
     getAuthorizationUrl() {
-        const scope = 'ZohoPeople.forms.READ,ZohoPeople.leave.READ';
+        const scope = 'ZohoPeople.forms.READ,ZohoPeople.leave.READ,ZohoPeople.leave.UPDATE';
         const params = new URLSearchParams({
             client_id: this.clientId,
             scope: scope,

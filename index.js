@@ -24,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 // Import routers - using the correct file names
 const dashboardRouter = require('./scripts/pay/sales/dashboard');
 const teacherDashboardRouter = require('./scripts/pay/hourly/dashboard');
+const payrollOutputRouter = require('./scripts/pay/output');
 const zohoCallbackRouter = require('./scripts/zoho/oauth-callback');
 // Note: import-api.js exists but may need to export a router
 // const apiImportRouter = require('./scripts/pay/sales/import-api');
@@ -60,6 +61,7 @@ app.get('/fins', (req, res) => {
 // Dashboard API routes
 app.use('/fins/scripts/pay/sales/dashboard', dashboardRouter);
 app.use('/fins/scripts/pay/hourly/dashboard', teacherDashboardRouter);
+app.use('/fins/scripts/pay/output', payrollOutputRouter);
 
 // Zoho OAuth and API routes
 const ZohoPeopleAPI = require('./scripts/zoho/people-api');
@@ -165,6 +167,11 @@ app.get('/fins/scripts/pay/sales/b2b-cenker.html', (req, res) => {
 // Teacher Payroll Dashboard HTML
 app.get('/fins/scripts/pay/hourly/dashboard.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'scripts/pay/hourly/dashboard.html'));
+});
+
+// Payroll Output Dashboard HTML
+app.get('/fins/scripts/pay/output.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'scripts/pay/output.html'));
 });
 
 // Error handling
