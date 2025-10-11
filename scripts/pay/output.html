@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Payroll Output - Authorization Dashboard</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /* Status Banner */
+        .status-banner {
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: white;
+            transition: background 0.3s ease;
+        }
+        .status-banner.in-progress {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+        }
+        .status-banner.authorized {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+        }
+
+        /* Main Content */
+        .content {
+            padding: 30px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .header h1 {
+            color: #2d3748;
+            font-size: 2em;
+        }
+        .period-selector {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .period-selector select {
+            padding: 8px 15px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+        }
+
+        /* Action Buttons */
+        .action-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .action-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .action-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .authorize-btn {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+        }
+        .authorize-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+        }
+        .retract-btn {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+        }
+        .retract-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+        }
+
+        /* Payroll Sections */
+        .payroll-section {
+            border: 2px solid #cbd5e0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background: #f8f9fa;
+        }
+        .section-title {
+            font-size: 1.4em;
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .data-table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        .data-table th:nth-child(n+2) {
+            text-align: right;
+        }
+        .data-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .data-table td:nth-child(n+2) {
+            text-align: right;
+        }
+        .data-table tbody tr:hover {
+            background: #f7fafc;
+        }
+        .data-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .total-row {
+            font-weight: 700;
+            background: #edf2f7 !important;
+            font-size: 1.1em;
+        }
+
+        /* Loading & Error States */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #718096;
+            font-size: 1.2em;
+        }
+        .error {
+            background: #feb2b2;
+            color: #742a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        /* Authorization Info */
+        .auth-info {
+            background: #e0e7ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #4c51bf;
+        }
+        .auth-info strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Summary Cards */
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .summary-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .summary-card h3 {
+            font-size: 0.85em;
+            color: #718096;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .summary-card .value {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function FinalPayrollOutput() {
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
+            const [periods, setPeriods] = useState([]);
+            const [selectedPeriod, setSelectedPeriod] = useState(null);
+            const [teacherData, setTeacherData] = useState(null);
+            const [salesData, setSalesData] = useState(null);
+            const [authStatus, setAuthStatus] = useState(null);
+
+            useEffect(() => {
+                fetchPeriods();
+            }, []);
+
+            useEffect(() => {
+                if (selectedPeriod) {
+                    fetchPayrollData();
+                }
+            }, [selectedPeriod]);
+
+            const fetchPeriods = async () => {
+                try {
+                    const response = await fetch('/fins/scripts/pay/output/periods');
+                    const result = await response.json();
+                    if (result.success) {
+                        setPeriods(result.periods);
+                        if (result.periods.length > 0) {
+                            setSelectedPeriod(result.periods[0]);
+                        }
+                    }
+                    setLoading(false);
+                } catch (err) {
+                    setError('Failed to load payroll periods');
+                    setLoading(false);
+                }
+            };
+
+            const fetchPayrollData = async () => {
+                if (!selectedPeriod) return;
+
+                setLoading(true);
+                try {
+                    // Fetch teacher payroll data
+                    const teacherResponse = await fetch(
+                        `/fins/scripts/pay/output/teachers?dateFrom=${selectedPeriod.from}&dateTo=${selectedPeriod.to}`
+                    );
+                    const teacherResult = await teacherResponse.json();
+
+                    // Fetch sales staff data
+                    const salesResponse = await fetch(
+                        `/fins/scripts/pay/output/sales?month=${selectedPeriod.month}&dateFrom=${selectedPeriod.from}&dateTo=${selectedPeriod.to}`
+                    );
+                    const salesResult = await salesResponse.json();
+
+                    // Fetch authorization status
+                    const authResponse = await fetch(
+                        `/fins/scripts/pay/output/auth-status?dateFrom=${selectedPeriod.from}&dateTo=${selectedPeriod.to}`
+                    );
+                    const authResult = await authResponse.json();
+
+                    if (teacherResult.success) setTeacherData(teacherResult.data);
+                    if (salesResult.success) setSalesData(salesResult.data);
+                    if (authResult.success) setAuthStatus(authResult.status);
+
+                    setLoading(false);
+                } catch (err) {
+                    setError('Failed to load payroll data: ' + err.message);
+                    setLoading(false);
+                }
+            };
+
+            const handleAuthorize = async () => {
+                if (!confirm(`Authorize payroll for ${selectedPeriod.month}?\n\nThis will mark the payroll as approved for payment.`)) {
+                    return;
+                }
+
+                try {
+                    const response = await fetch('/fins/scripts/pay/output/authorize', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            dateFrom: selectedPeriod.from,
+                            dateTo: selectedPeriod.to,
+                            month: selectedPeriod.month,
+                            teacherData: teacherData,
+                            salesData: salesData
+                        })
+                    });
+
+                    const result = await response.json();
+                    if (result.success) {
+                        alert('Payroll authorized successfully!');
+                        fetchPayrollData(); // Refresh to get new auth status
+                    } else {
+                        alert('Error authorizing payroll: ' + result.error);
+                    }
+                } catch (err) {
+                    alert('Error authorizing payroll: ' + err.message);
+                }
+            };
+
+            const handleRetract = async () => {
+                if (!confirm(`Retract authorization for ${selectedPeriod.month}?\n\nThis will mark the payroll as NOT approved for payment.`)) {
+                    return;
+                }
+
+                try {
+                    const response = await fetch('/fins/scripts/pay/output/retract', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            dateFrom: selectedPeriod.from,
+                            dateTo: selectedPeriod.to
+                        })
+                    });
+
+                    const result = await response.json();
+                    if (result.success) {
+                        alert('Authorization retracted successfully!');
+                        fetchPayrollData();
+                    } else {
+                        alert('Error retracting authorization: ' + result.error);
+                    }
+                } catch (err) {
+                    alert('Error retracting authorization: ' + err.message);
+                }
+            };
+
+            const formatCurrency = (value) => {
+                return '€' + parseFloat(value).toLocaleString('en-IE', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
+            };
+
+            if (loading && !selectedPeriod) {
+                return (
+                    <div className="dashboard">
+                        <div className="loading">Loading payroll data...</div>
+                    </div>
+                );
+            }
+
+            if (error) {
+                return (
+                    <div className="dashboard">
+                        <div className="error">Error: {error}</div>
+                    </div>
+                );
+            }
+
+            const isAuthorized = authStatus?.authorized === true;
+            const totalTeachers = teacherData?.totalPay || 0;
+            const totalSales = (salesData?.b2c?.totalPaid || 0) + (salesData?.b2b?.totalPaid || 0);
+            const grandTotal = totalTeachers + totalSales;
+
+            return (
+                <div className="dashboard">
+                    <div className={`status-banner ${isAuthorized ? 'authorized' : 'in-progress'}`}>
+                        {isAuthorized ? '✓ AUTHORIZED - APPROVED FOR PAYMENT' : '⚠ IN PROGRESS - NOT AUTHORIZED - DO NOT PAY'}
+                    </div>
+
+                    <div className="content">
+                        <div className="header">
+                            <h1>Final Payroll Output</h1>
+                            <div className="period-selector">
+                                <label>Period:</label>
+                                <select
+                                    value={selectedPeriod ? selectedPeriod.month : ''}
+                                    onChange={(e) => {
+                                        const period = periods.find(p => p.month === e.target.value);
+                                        setSelectedPeriod(period);
+                                    }}
+                                >
+                                    {periods.map(period => (
+                                        <option key={period.month} value={period.month}>
+                                            {period.month} ({period.from} to {period.to})
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                        </div>
+
+                        {authStatus && isAuthorized && (
+                            <div className="auth-info">
+                                <strong>Authorization Details:</strong>
+                                Authorized by {authStatus.authorizedBy} on {new Date(authStatus.authorizedAt).toLocaleString('en-IE')}
+                            </div>
+                        )}
+
+                        <div className="action-bar">
+                            <button
+                                className="action-btn authorize-btn"
+                                onClick={handleAuthorize}
+                                disabled={isAuthorized}
+                            >
+                                {isAuthorized ? 'Already Authorized' : 'Authorize Payroll'}
+                            </button>
+                            <button
+                                className="action-btn retract-btn"
+                                onClick={handleRetract}
+                                disabled={!isAuthorized}
+                            >
+                                Retract Authorization
+                            </button>
+                        </div>
+
+                        <div className="summary-cards">
+                            <div className="summary-card">
+                                <h3>Teacher Payroll</h3>
+                                <div className="value">{formatCurrency(totalTeachers)}</div>
+                            </div>
+                            <div className="summary-card">
+                                <h3>Sales Staff</h3>
+                                <div className="value">{formatCurrency(totalSales)}</div>
+                            </div>
+                            <div className="summary-card">
+                                <h3>Other Salaries</h3>
+                                <div className="value">€0.00</div>
+                            </div>
+                            <div className="summary-card">
+                                <h3>Other Hourly</h3>
+                                <div className="value">€0.00</div>
+                            </div>
+                            <div className="summary-card" style={{borderLeft: '4px solid #27ae60'}}>
+                                <h3>Grand Total</h3>
+                                <div className="value">{formatCurrency(grandTotal)}</div>
+                            </div>
+                        </div>
+
+                        {/* Teacher Payroll Section */}
+                        {teacherData && (
+                            <div className="payroll-section">
+                                <div className="section-title">1. Teacher Payroll</div>
+                                <table className="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Teacher</th>
+                                            <th>Hours</th>
+                                            <th>Rate</th>
+                                            <th>Leave (Zoho)</th>
+                                            <th>Leave €</th>
+                                            <th>Total Pay</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {teacherData.teachers.map((teacher, idx) => {
+                                            const leaveEuro = teacher.average_rate * teacher.leave_taken;
+                                            return (
+                                                <tr key={idx}>
+                                                    <td>{teacher.teacher_name}</td>
+                                                    <td>{teacher.total_hours.toFixed(2)}h</td>
+                                                    <td>{formatCurrency(teacher.average_rate)}</td>
+                                                    <td>{teacher.leave_taken.toFixed(2)}h</td>
+                                                    <td>{formatCurrency(leaveEuro)}</td>
+                                                    <td><strong>{formatCurrency(teacher.total_pay)}</strong></td>
+                                                </tr>
+                                            );
+                                        })}
+                                        <tr className="total-row">
+                                            <td>TOTAL</td>
+                                            <td>{teacherData.totalHours.toFixed(2)}h</td>
+                                            <td>-</td>
+                                            <td>{teacherData.totalLeave.toFixed(2)}h</td>
+                                            <td>{formatCurrency(teacherData.totalLeaveEuro)}</td>
+                                            <td><strong>{formatCurrency(teacherData.totalPay)}</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+
+                        {/* Sales Staff Section */}
+                        {salesData && (
+                            <div className="payroll-section">
+                                <div className="section-title">2. Sales Staff Payroll</div>
+
+                                <h3 style={{margin: '15px 0 10px', color: '#4a5568'}}>B2C - Diego</h3>
+                                <table className="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Component</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Base Salary</td>
+                                            <td>{formatCurrency(salesData.b2c.baseSalary)}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Commission (Previous Month)</td>
+                                            <td>{formatCurrency(salesData.b2c.commission)}</td>
+                                        </tr>
+                                        <tr className="total-row">
+                                            <td>TOTAL</td>
+                                            <td><strong>{formatCurrency(salesData.b2c.totalPaid)}</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h3 style={{margin: '20px 0 10px', color: '#4a5568'}}>B2B - Cenker</h3>
+                                <table className="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Component</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Base Salary</td>
+                                            <td>{formatCurrency(salesData.b2b.baseSalary)}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Commission (Previous Month)</td>
+                                            <td>{formatCurrency(salesData.b2b.commission)}</td>
+                                        </tr>
+                                        <tr className="total-row">
+                                            <td>TOTAL</td>
+                                            <td><strong>{formatCurrency(salesData.b2b.totalPaid)}</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+
+                        {/* Placeholder sections for future implementation */}
+                        <div className="payroll-section" style={{opacity: 0.5}}>
+                            <div className="section-title">3. Other Salaries (Coming Soon)</div>
+                            <p style={{color: '#718096', fontStyle: 'italic'}}>
+                                Section for salaried employees (4 people) - Manual entry or database integration required
+                            </p>
+                        </div>
+
+                        <div className="payroll-section" style={{opacity: 0.5}}>
+                            <div className="section-title">4. Other Hourly Employees (Coming Soon)</div>
+                            <p style={{color: '#718096', fontStyle: 'italic'}}>
+                                Section for non-teacher hourly employees - Time tracking system required
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<FinalPayrollOutput />, document.getElementById('root'));
+    </script>
+</body>
+</html>

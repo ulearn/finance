@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Hourly Payroll Dashboard</title>
+    <title>Teacher Payroll Dashboard</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -428,6 +428,8 @@
             const [view, setView] = useState('detail'); // 'detail', 'summary', or 'monthly'
             const [selectedPeriod, setSelectedPeriod] = useState(null);
             const [selectedMonthlyPeriod, setSelectedMonthlyPeriod] = useState(null);
+            const [leaveByWeek, setLeaveByWeek] = useState(null); // Leave data from Zoho by email/week
+            const [loadingLeave, setLoadingLeave] = useState(false);
 
             // Set selectedPeriod to current period when periods are loaded
             useEffect(() => {
@@ -444,6 +446,22 @@
                 fetchData();
                 fetchSummary();
             }, []);
+
+            // Fetch leave data when view changes to detail or when period/data changes
+            useEffect(() => {
+                if (view === 'detail' && data && data.weeks && selectedPeriod) {
+                    // Filter weeks for the selected period
+                    const isWeekInPeriod = (weekString) => {
+                        const match = weekString.match(/Week \d+, (\d{2})\/(\d{2})\/(\d{4})\s*–\s*(\d{2})\/(\d{2})\/(\d{4})/);
+                        if (!match) return false;
+                        const weekStart = `${match[3]}-${match[2]}-${match[1]}`;
+                        const weekEnd = `${match[6]}-${match[5]}-${match[4]}`;
+                        return weekStart <= selectedPeriod.to && weekEnd >= selectedPeriod.from;
+                    };
+                    const filteredWeeks = data.weeks.filter(isWeekInPeriod);
+                    fetchLeaveByWeeks(filteredWeeks);
+                }
+            }, [view, data, selectedPeriod]);
 
             const fetchPeriods = async () => {
                 try {
@@ -500,6 +518,29 @@
                     }
                 } catch (err) {
                     console.error('Error fetching summary:', err);
+                }
+            };
+
+            const fetchLeaveByWeeks = async (weeks) => {
+                if (!weeks || weeks.length === 0) return;
+
+                setLoadingLeave(true);
+                try {
+                    const weeksParam = encodeURIComponent(weeks.join(','));
+                    const response = await fetch(`/fins/scripts/pay/hourly/dashboard/leave-by-weeks?weeks=${weeksParam}`);
+                    const result = await response.json();
+                    if (result.success) {
+                        setLeaveByWeek(result.data);
+                        console.log('[WEEKLY DETAIL] Leave data loaded:', result.data);
+                    } else {
+                        console.error('Error fetching leave by weeks:', result.error);
+                        setLeaveByWeek({});
+                    }
+                } catch (err) {
+                    console.error('Error fetching leave by weeks:', err);
+                    setLeaveByWeek({});
+                } finally {
+                    setLoadingLeave(false);
                 }
             };
 
@@ -751,7 +792,7 @@
                                     <div className="summary-controls">
                                         <button onClick={() => setView('summary')}>Payroll Summary</button>
                                         <button onClick={autoPopulateEmails}>Get Zoho Emails</button>
-                                        <button onClick={syncLeaveData}>Sync Leave Data</button>
+                                        <button onClick={syncLeaveData}>Get Zoho Leave</button>
                                     </div>
                                 ) : (
                                     <button onClick={() => setView('summary')}>Payroll Summary</button>
@@ -822,7 +863,7 @@
 
                     {view === 'summary' && summary && (
                         <div className="summary-section">
-                            <h2>Final Payroll Summary</h2>
+                            <h2>YTD Payroll Summary</h2>
                             <table className="summary-table">
                                 <thead>
                                     <tr>
@@ -837,7 +878,7 @@
                                         <th className="leave-subheader">Accrued</th>
                                         <th className="leave-subheader">Taken</th>
                                         <th className="leave-subheader">Balance</th>
-                                        <th className="leave-subheader">Sick Days</th>
+                                        <th className="leave-subheader">Sick Hours</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -878,7 +919,7 @@
                                             <td className="leave-cell">{leaveAccrued}h</td>
                                             <td className="leave-cell">{parseFloat(teacher.leave_taken || 0).toFixed(2)}h</td>
                                             <td className="leave-cell">{parseFloat(teacher.leave_balance || 0).toFixed(2)}h</td>
-                                            <td className="leave-cell">{parseInt(teacher.sick_days || 0)}</td>
+                                            <td className="leave-cell">{parseFloat(teacher.sick_days || 0).toFixed(2)}h</td>
                                             <td><strong>€{parseFloat(teacher.total_pay).toFixed(2)}</strong></td>
                                         </tr>
                                         );
@@ -1030,11 +1071,25 @@
                                                         </div>
                                                         <div className="week-meta-item">
                                                             <span className="week-meta-label">Leave</span>
-                                                            <span className="week-meta-value">{weekData.leave_hours || 0}h</span>
+                                                            <span className="week-meta-value">
+                                                                {loadingLeave ? '...' :
+                                                                    (leaveByWeek && teacher.email && leaveByWeek[teacher.email] && leaveByWeek[teacher.email][week]
+                                                                        ? `${leaveByWeek[teacher.email][week].leave.toFixed(1)}h`
+                                                                        : '0h'
+                                                                    )
+                                                                }
+                                                            </span>
                                                         </div>
                                                         <div className="week-meta-item">
                                                             <span className="week-meta-label">Sick</span>
-                                                            <span className="week-meta-value">{weekData.sick_days || 0}d</span>
+                                                            <span className="week-meta-value">
+                                                                {loadingLeave ? '...' :
+                                                                    (leaveByWeek && teacher.email && leaveByWeek[teacher.email] && leaveByWeek[teacher.email][week]
+                                                                        ? `${leaveByWeek[teacher.email][week].sick.toFixed(1)}d`
+                                                                        : '0d'
+                                                                    )
+                                                                }
+                                                            </span>
                                                         </div>
                                                     </div>
                                                     <div className="week-reason">{reasonText}</div>
@@ -1058,29 +1113,15 @@
                                                                 id={`hours-${idx}-${week}`}
                                                                 defaultValue={displayHours === '0.00' ? '' : displayHours}
                                                             />
-                                                            <input
-                                                                type="number"
-                                                                step="0.5"
-                                                                className="editable-field"
-                                                                placeholder="Leave Hours"
-                                                                id={`leave-${idx}-${week}`}
-                                                                defaultValue={weekData.leave_hours && weekData.leave_hours > 0 ? weekData.leave_hours : ''}
-                                                            />
-                                                            <input
-                                                                type="number"
-                                                                className="editable-field"
-                                                                placeholder="Sick Days"
-                                                                id={`sick-${idx}-${week}`}
-                                                                defaultValue={weekData.sick_days && weekData.sick_days > 0 ? weekData.sick_days : ''}
-                                                            />
+                                                            <div style={{fontSize: '11px', color: '#7f8c8d', marginTop: '5px', fontStyle: 'italic'}}>
+                                                                Leave & Sick Days pulled from Zoho (read-only)
+                                                            </div>
                                                             <div className="button-row">
                                                                 <button
                                                                     className="save-btn"
                                                                     onClick={() => {
                                                                         const hours = document.getElementById(`hours-${idx}-${week}`).value;
-                                                                        const leave = document.getElementById(`leave-${idx}-${week}`).value;
-                                                                        const sick = document.getElementById(`sick-${idx}-${week}`).value;
-                                                                        updateWeekHours(teacher.teacher_name, week, hours, null, leave, sick);
+                                                                        updateWeekHours(teacher.teacher_name, week, hours, null, 0, 0);
                                                                     }}
                                                                 >
                                                                     Save
