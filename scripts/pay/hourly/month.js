@@ -9,19 +9,20 @@ const formatCurrency = (amount) => {
 window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataRefresh }) {
     const [leaveData, setLeaveData] = React.useState(null);
     const [ppsData, setPpsData] = React.useState(null);
+    const [monthlyAdjustments, setMonthlyAdjustments] = React.useState(null);
     const [loadingLeave, setLoadingLeave] = React.useState(false);
     const [loadingPPS, setLoadingPPS] = React.useState(false);
     const [updatingBalances, setUpdatingBalances] = React.useState(false);
     const [authorizingPayroll, setAuthorizingPayroll] = React.useState(false);
     const [editingCell, setEditingCell] = React.useState(null); // {teacherName, field}
-    const [editValue, setEditValue] = React.useState('');
     const [editingPPS, setEditingPPS] = React.useState(null); // teacherName being edited
 
-    // Fetch leave and PPS data when period changes
+    // Fetch leave, PPS, and monthly adjustments when period changes
     React.useEffect(() => {
         if (selectedMonthlyPeriod) {
             fetchLeaveDataForPeriod();
             fetchPPSData();
+            fetchMonthlyAdjustments();
         }
     }, [selectedMonthlyPeriod]);
 
@@ -113,62 +114,64 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
         }
     };
 
-    const saveMonthlyAdjustment = async (teacherName, field, value, weeks) => {
+    const fetchMonthlyAdjustments = async () => {
+        if (!selectedMonthlyPeriod) return;
+
         try {
-            // Calculate value per week (divide equally across all weeks)
-            const valuePerWeek = parseFloat(value) / weeks.length;
+            const [month, year] = selectedMonthlyPeriod.month.split(' ');
+            const response = await fetch(`/fins/scripts/pay/hourly/dashboard/monthly-adjustments?month=${encodeURIComponent(month)}&year=${year}`);
+            const result = await response.json();
 
-            // Update each week for this teacher
-            for (const week of weeks) {
-                const response = await fetch('/fins/scripts/pay/hourly/dashboard/update-hours', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        teacher_name: teacherName,
-                        week: week,
-                        [field]: valuePerWeek
-                    })
-                });
-
-                const result = await response.json();
-                if (!result.success) {
-                    console.error(`Failed to update ${week}:`, result.error);
-                }
-            }
-
-            // Refresh data
-            if (onDataRefresh) {
-                await onDataRefresh();
+            if (result.success) {
+                console.log('[MONTH.JS] Monthly adjustments received:', result.data);
+                setMonthlyAdjustments(result.data);
+            } else {
+                console.error('Error fetching monthly adjustments:', result.error);
+                setMonthlyAdjustments({});
             }
         } catch (error) {
-            console.error('Error saving adjustment:', error);
+            console.error('Error fetching monthly adjustments:', error);
+            setMonthlyAdjustments({});
+        }
+    };
+
+    const saveMonthlyAdjustment = async (teacherName, field, value) => {
+        try {
+            console.log(`[MONTH.JS] Saving monthly ${field} for ${teacherName}: ${value}`);
+
+            const [month, year] = selectedMonthlyPeriod.month.split(' ');
+
+            const response = await fetch('/fins/scripts/pay/hourly/dashboard/update-monthly-adjustment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    teacher_name: teacherName,
+                    month: month,
+                    year: parseInt(year),
+                    field: field,
+                    value: parseFloat(value)
+                })
+            });
+
+            const result = await response.json();
+            if (!result.success) {
+                console.error('Failed to update monthly adjustment:', result.error);
+                alert('Error: ' + result.error);
+            } else {
+                console.log(`[MONTH.JS] Monthly adjustment saved successfully`);
+
+                // Refresh monthly adjustments
+                await fetchMonthlyAdjustments();
+            }
+        } catch (error) {
+            console.error('Error saving monthly adjustment:', error);
             alert('Error saving: ' + error.message);
-        }
-    };
-
-    const handleCellClick = (teacherName, field, currentValue) => {
-        setEditingCell({ teacherName, field });
-        setEditValue(currentValue.toString());
-    };
-
-    const handleCellBlur = async (teacherName, field, weeks) => {
-        if (editingCell && editingCell.teacherName === teacherName && editingCell.field === field) {
-            const newValue = parseFloat(editValue) || 0;
-            await saveMonthlyAdjustment(teacherName, field, newValue, weeks);
-            setEditingCell(null);
-        }
-    };
-
-    const handleKeyDown = async (e, teacherName, field, weeks) => {
-        if (e.key === 'Enter') {
-            e.target.blur();
-        } else if (e.key === 'Escape') {
-            setEditingCell(null);
         }
     };
 
     const updateTeacherPPS = async (teacherName, ppsNumber) => {
         try {
+            console.log('[MONTH.JS] Updating PPS for:', teacherName, 'with value:', ppsNumber);
             const response = await fetch('/fins/scripts/pay/hourly/dashboard/update-pps', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -178,15 +181,17 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                 })
             });
             const result = await response.json();
+            console.log('[MONTH.JS] PPS update result:', result);
             if (result.success) {
-                // Refresh data to show updated PPS
+                // Refresh data in background (don't await to avoid jarring page refresh)
                 if (onDataRefresh) {
-                    await onDataRefresh();
+                    onDataRefresh();
                 }
             } else {
                 alert('Error updating PPS: ' + result.error);
             }
         } catch (err) {
+            console.error('[MONTH.JS] Error updating PPS:', err);
             alert('Error updating PPS: ' + err.message);
         }
     };
@@ -305,17 +310,23 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
         console.log(`[MONTH.JS] Leave found for ${teacher.email}: ${leaveFromZoho}h leave, ${sickDaysFromZoho} sick days`);
         console.log(`[MONTH.JS] Sick leave calculation: ${sickDaysFromZoho} days × ${avgHoursPerDay.toFixed(2)} avg h/day = ${sickLeaveHours.toFixed(2)} hours`);
 
-        // Sum up 'other' and 'impact_bonus' from all weeks in the period
-        let periodOther = 0;
-        let periodImpactBonus = 0;
-
-        filteredWeeks.forEach(week => {
-            const weekData = teacher.weeks[week];
-            if (weekData) {
-                periodOther += parseFloat(weekData.other) || 0;
-                periodImpactBonus += parseFloat(weekData.impact_bonus) || 0;
+        // Get monthly adjustments from the new table (NOT from weekly data)
+        // Reverse name back to "Surname, First Name" format for lookup
+        const reverseNameBack = (name) => {
+            if (!name || !name.includes(' ')) return name;
+            const parts = name.split(' ');
+            if (parts.length === 2) {
+                return `${parts[1]}, ${parts[0]}`;
             }
-        });
+            const lastName = parts[parts.length - 1];
+            const firstNames = parts.slice(0, -1).join(' ');
+            return `${lastName}, ${firstNames}`;
+        };
+        const dbName = reverseNameBack(teacher.teacher_name);
+
+        const adjustments = monthlyAdjustments && monthlyAdjustments[dbName]
+            ? monthlyAdjustments[dbName]
+            : { other: 0, impact_bonus: 0 };
 
         return {
             teacher_name: teacher.teacher_name,
@@ -328,8 +339,8 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
             sick_days_taken: sickDaysFromZoho,  // Store days for display
             sick_leave_hours: sickLeaveHours,    // Store calculated hours for payment
             avg_hours_per_day: avgHoursPerDay,   // Store for reference
-            other: periodOther,
-            impact_bonus: periodImpactBonus
+            other: adjustments.other,
+            impact_bonus: adjustments.impact_bonus
         };
     }).filter(t => t.total_hours > 0);
 
@@ -398,7 +409,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                         <th rowSpan="2">PPS</th>
                         <th rowSpan="2">Hours</th>
                         <th rowSpan="2">Rate</th>
-                        <th colSpan="4" className="leave-header">LEAVE</th>
+                        <th colSpan="5" className="leave-header">LEAVE</th>
                         <th rowSpan="2">Other</th>
                         <th rowSpan="2" style={{backgroundColor: '#ffd700', fontWeight: '600', color: '#000'}}>
                             <div style={{lineHeight: '1.2'}}>Impact<br/>Bonus</div>
@@ -406,6 +417,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                         <th rowSpan="2">Total Pay</th>
                     </tr>
                     <tr>
+                        <th className="leave-subheader">Accrued (8%)</th>
                         <th className="leave-subheader">Leave (Zoho)</th>
                         <th className="leave-subheader">Leave €</th>
                         <th className="leave-subheader">Sick Days</th>
@@ -421,7 +433,10 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                             <tr key={idx}>
                                 <td>{teacher.teacher_name}</td>
                                 <td
-                                    onClick={() => setEditingPPS(idx)}
+                                    onClick={() => {
+                                        console.log('[MONTH.JS] PPS cell clicked for:', teacher.teacher_name, 'Current PPS:', teacher.pps_number, 'Setting editingPPS to:', idx);
+                                        setEditingPPS(idx);
+                                    }}
                                     style={{
                                         fontSize: '13px',
                                         color: teacher.pps_number === 'N/A' ? '#e74c3c' : 'inherit',
@@ -458,6 +473,9 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                 <td>{teacher.total_hours.toFixed(2)}h</td>
                                 <td>{formatCurrency(teacher.average_rate)}</td>
                                 <td className="leave-cell">
+                                    {(teacher.total_hours * 0.08).toFixed(2)}h
+                                </td>
+                                <td className="leave-cell">
                                     {loadingLeave ? (
                                         <span style={{color: '#7f8c8d'}}>Loading...</span>
                                     ) : (
@@ -474,17 +492,34 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                 </td>
                                 <td className="leave-cell">{formatCurrency(sickLeaveEuro)}</td>
                                 <td
-                                    onClick={() => handleCellClick(teacher.teacher_name, 'other', teacher.other)}
+                                    onClick={() => {
+                                        console.log('[MONTH.JS] Other cell clicked for:', teacher.teacher_name, 'Current value:', teacher.other);
+                                        setEditingCell({ teacherName: teacher.teacher_name, field: 'other' });
+                                        console.log('[MONTH.JS] editingCell set to:', { teacherName: teacher.teacher_name, field: 'other' });
+                                    }}
                                     style={{cursor: 'pointer', backgroundColor: editingCell?.teacherName === teacher.teacher_name && editingCell?.field === 'other' ? '#fff3cd' : 'transparent'}}
                                 >
                                     {editingCell?.teacherName === teacher.teacher_name && editingCell?.field === 'other' ? (
                                         <input
                                             type="number"
                                             step="0.01"
-                                            value={editValue}
-                                            onChange={(e) => setEditValue(e.target.value)}
-                                            onBlur={() => handleCellBlur(teacher.teacher_name, 'other', filteredWeeks)}
-                                            onKeyDown={(e) => handleKeyDown(e, teacher.teacher_name, 'other', filteredWeeks)}
+                                            defaultValue={teacher.other}
+                                            placeholder="0.00"
+                                            onBlur={(e) => {
+                                                console.log('[MONTH.JS] Other input blur, value:', e.target.value);
+                                                const newValue = parseFloat(e.target.value) || 0;
+                                                saveMonthlyAdjustment(teacher.teacher_name, 'other', newValue);
+                                                setEditingCell(null);
+                                            }}
+                                            onKeyDown={(e) => {
+                                                if (e.key === 'Enter') {
+                                                    console.log('[MONTH.JS] Other input Enter pressed');
+                                                    e.target.blur();
+                                                } else if (e.key === 'Escape') {
+                                                    console.log('[MONTH.JS] Other input Escape pressed');
+                                                    setEditingCell(null);
+                                                }
+                                            }}
                                             autoFocus
                                             style={{width: '100%', border: '1px solid #3498db', padding: '4px', fontSize: '14px'}}
                                         />
@@ -493,7 +528,11 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                     )}
                                 </td>
                                 <td
-                                    onClick={() => handleCellClick(teacher.teacher_name, 'impact_bonus', teacher.impact_bonus)}
+                                    onClick={() => {
+                                        console.log('[MONTH.JS] Impact Bonus cell clicked for:', teacher.teacher_name, 'Current value:', teacher.impact_bonus);
+                                        setEditingCell({ teacherName: teacher.teacher_name, field: 'impact_bonus' });
+                                        console.log('[MONTH.JS] editingCell set to:', { teacherName: teacher.teacher_name, field: 'impact_bonus' });
+                                    }}
                                     style={{
                                         backgroundColor: editingCell?.teacherName === teacher.teacher_name && editingCell?.field === 'impact_bonus' ? '#fff3cd' : '#ffd700',
                                         fontWeight: '600',
@@ -505,10 +544,23 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                                         <input
                                             type="number"
                                             step="0.01"
-                                            value={editValue}
-                                            onChange={(e) => setEditValue(e.target.value)}
-                                            onBlur={() => handleCellBlur(teacher.teacher_name, 'impact_bonus', filteredWeeks)}
-                                            onKeyDown={(e) => handleKeyDown(e, teacher.teacher_name, 'impact_bonus', filteredWeeks)}
+                                            defaultValue={teacher.impact_bonus}
+                                            placeholder="0.00"
+                                            onBlur={(e) => {
+                                                console.log('[MONTH.JS] Impact Bonus input blur, value:', e.target.value);
+                                                const newValue = parseFloat(e.target.value) || 0;
+                                                saveMonthlyAdjustment(teacher.teacher_name, 'impact_bonus', newValue);
+                                                setEditingCell(null);
+                                            }}
+                                            onKeyDown={(e) => {
+                                                if (e.key === 'Enter') {
+                                                    console.log('[MONTH.JS] Impact Bonus input Enter pressed');
+                                                    e.target.blur();
+                                                } else if (e.key === 'Escape') {
+                                                    console.log('[MONTH.JS] Impact Bonus input Escape pressed');
+                                                    setEditingCell(null);
+                                                }
+                                            }}
                                             autoFocus
                                             style={{width: '100%', border: '1px solid #3498db', padding: '4px', fontSize: '14px', fontWeight: '600'}}
                                         />

@@ -12,7 +12,7 @@ class ZohoLeaveSync {
         this.sickLeaveTypeName = 'Sick Leave'; // Sick Leave type name (from Zoho)
         this.employeeCache = null; // Cache for all employees
         this.cacheTimestamp = null; // When cache was created
-        this.cacheTTL = 5 * 60 * 1000; // Cache for 5 minutes
+        this.cacheTTL = 60 * 60 * 1000; // Cache for 60 minutes
         this.forceRefresh = options.forceRefresh || false; // Bypass cache if true
     }
 
@@ -67,7 +67,15 @@ class ZohoLeaveSync {
                 await this.zohoAPI.refreshAccessToken();
                 return await this.getAllEmployees();
             }
-            console.error('Error getting all employees:', error.response?.data || error.message);
+            console.error('ERROR: Error getting all employees:', error.response?.data || error.message);
+
+            // If we have cached data and hit API limit, return the cache instead of empty array
+            if (this.employeeCache && error.response?.data?.response?.errors?.code === 7073) {
+                console.log('[ZOHO CACHE] API limit exceeded - using stale cache');
+                return this.employeeCache;
+            }
+
+            // If no cache available, return empty array
             return [];
         }
     }
@@ -444,10 +452,13 @@ class ZohoLeaveSync {
 
             console.log(`✓ Found: ${employee.firstName} ${employee.lastName} (ID: ${employee.employeeId})`);
 
-            // Get current balance from Zoho (this is the START balance)
-            const currentBalanceData = await this.getEmployeeLeaveData(employee.employeeId);
-            const startBalance = currentBalanceData.leaveBalance;
-            console.log(`Start Balance: ${startBalance}h`);
+            // Get balance as of the START of the period (not current balance)
+            const startBalance = await this.zohoAPI.getLeaveBalanceAsOfDate(
+                employee.fullRecordId,
+                this.hourlyLeaveTypeId,
+                dateFrom
+            );
+            console.log(`Start Balance (as of ${dateFrom}): ${startBalance}h`);
 
             // Get leave taken during this period
             const periodLeave = await this.getEmployeeLeaveDataForPeriod(
@@ -491,10 +502,21 @@ class ZohoLeaveSync {
 
             // Update balance in Zoho
             console.log(`\nUpdating balance in Zoho...`);
+
+            // Format date as dd-MMM-yyyy for Zoho API
+            const dateObj = new Date(updateDate);
+            const formattedDate = dateObj.toLocaleDateString('en-GB', {
+                day: '2-digit',
+                month: 'short',
+                year: 'numeric'
+            });
+
             const updateSuccess = await this.zohoAPI.updateEmployeeLeaveBalance(
-                employee.employeeId,
+                employee.fullRecordId || employee.employeeId,
                 this.hourlyLeaveTypeId,
-                newBalance
+                newBalance,
+                formattedDate,
+                `Payroll period ${dateFrom} to ${dateTo}`
             );
 
             if (updateSuccess) {
@@ -541,15 +563,21 @@ class ZohoLeaveSync {
         const connection = await this.getConnection();
 
         try {
-            // Get all teachers with email addresses
+            // Get only teachers who worked during this specific payroll period
             const [teachers] = await connection.execute(`
                 SELECT DISTINCT email, firstname
                 FROM teacher_payments
                 WHERE email IS NOT NULL AND email != ''
+                AND select_value IN (
+                    SELECT DISTINCT select_value
+                    FROM teacher_payments
+                    WHERE STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y') >= ?
+                    AND STR_TO_DATE(SUBSTRING_INDEX(select_value, ' – ', -1), '%d/%m/%Y') <= ?
+                )
                 ORDER BY firstname
-            `);
+            `, [dateFrom, dateTo]);
 
-            console.log(`\n=== Updating leave balances for ${teachers.length} teachers ===`);
+            console.log(`\n=== Updating leave balances for ${teachers.length} teachers who worked in this period ===`);
             console.log(`Period: ${dateFrom} to ${dateTo}`);
             console.log(`Update date: ${updateDate}\n`);
 

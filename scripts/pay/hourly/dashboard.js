@@ -6,6 +6,22 @@ const router = express.Router();
 const mysql = require('mysql2/promise');
 const payrollPeriods = require('./payroll-periods');
 
+// Create a singleton instance of ZohoLeaveSync for caching across requests
+let zohoLeaveSyncInstance = null;
+function getZohoLeaveSync(forceRefresh = false) {
+    if (!zohoLeaveSyncInstance) {
+        const ZohoLeaveSync = require('../../zoho/leave-sync');
+        zohoLeaveSyncInstance = new ZohoLeaveSync({ forceRefresh });
+    }
+    // Update forceRefresh flag if requested
+    if (forceRefresh) {
+        zohoLeaveSyncInstance.forceRefresh = true;
+    } else {
+        zohoLeaveSyncInstance.forceRefresh = false;
+    }
+    return zohoLeaveSyncInstance;
+}
+
 /**
  * Get database connection
  */
@@ -542,8 +558,13 @@ router.get('/leave-for-period', async (req, res) => {
             ORDER BY firstname
         `);
 
-        const ZohoLeaveSync = require('../../zoho/leave-sync');
-        const leaveSync = new ZohoLeaveSync({ forceRefresh: forceRefresh === 'true' });
+        const leaveSync = getZohoLeaveSync(forceRefresh === 'true');
+
+        console.log(`[LEAVE API] Cache status: ${leaveSync.employeeCache ? 'CACHED' : 'NOT CACHED'}`);
+        if (leaveSync.cacheTimestamp) {
+            const cacheAge = Math.round((Date.now() - leaveSync.cacheTimestamp) / 1000);
+            console.log(`[LEAVE API] Cache age: ${cacheAge} seconds (TTL: ${leaveSync.cacheTTL / 1000} seconds)`);
+        }
 
         const leaveData = {};
 
@@ -724,8 +745,7 @@ router.get('/leave-by-weeks', async (req, res) => {
             ORDER BY firstname
         `);
 
-        const ZohoLeaveSync = require('../../zoho/leave-sync');
-        const leaveSync = new ZohoLeaveSync();
+        const leaveSync = getZohoLeaveSync();
 
         const leaveByEmailAndWeek = {};
 
@@ -818,8 +838,7 @@ router.post('/update-leave-balances', async (req, res) => {
 
         console.log(`[BALANCE UPDATE] Starting balance update for period ${dateFrom} to ${dateTo}`);
 
-        const ZohoLeaveSync = require('../../zoho/leave-sync');
-        const leaveSync = new ZohoLeaveSync();
+        const leaveSync = getZohoLeaveSync();
 
         const result = await leaveSync.updateAllLeaveBalancesForPeriod(
             dateFrom,
@@ -886,6 +905,153 @@ router.post('/reset-week', async (req, res) => {
 
     } catch (error) {
         console.error('Error resetting week:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    } finally {
+        if (connection) await connection.end();
+    }
+});
+
+/**
+ * POST /api/teachers/update-monthly-adjustment
+ * Update monthly one-time payments (other & impact_bonus)
+ * These are NOT weekly values, but monthly totals
+ */
+router.post('/update-monthly-adjustment', async (req, res) => {
+    let connection;
+    try {
+        const { teacher_name, month, year, field, value } = req.body;
+
+        if (!teacher_name || !month || !year || !field || value === undefined) {
+            return res.status(400).json({
+                success: false,
+                error: 'teacher_name, month, year, field, and value are required'
+            });
+        }
+
+        if (field !== 'other' && field !== 'impact_bonus') {
+            return res.status(400).json({
+                success: false,
+                error: 'field must be either "other" or "impact_bonus"'
+            });
+        }
+
+        connection = await getConnection();
+
+        // Reverse name back to "Surname, First Name" format for database lookup
+        const reverseNameBack = (name) => {
+            if (!name || !name.includes(' ')) return name;
+            const parts = name.split(' ');
+            if (parts.length === 2) {
+                return `${parts[1]}, ${parts[0]}`;
+            }
+            const lastName = parts[parts.length - 1];
+            const firstNames = parts.slice(0, -1).join(' ');
+            return `${lastName}, ${firstNames}`;
+        };
+
+        const dbName = reverseNameBack(teacher_name);
+
+        // Create table if it doesn't exist
+        await connection.execute(`
+            CREATE TABLE IF NOT EXISTS teacher_monthly_adjustments (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                teacher_name VARCHAR(255) NOT NULL,
+                month VARCHAR(20) NOT NULL,
+                year INT NOT NULL,
+                other DECIMAL(10,2) DEFAULT 0,
+                impact_bonus DECIMAL(10,2) DEFAULT 0,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                UNIQUE KEY teacher_period (teacher_name, month, year)
+            )
+        `);
+
+        // Insert or update the adjustment
+        const query = `
+            INSERT INTO teacher_monthly_adjustments
+            (teacher_name, month, year, ${field})
+            VALUES (?, ?, ?, ?)
+            ON DUPLICATE KEY UPDATE
+            ${field} = VALUES(${field}),
+            updated_at = NOW()
+        `;
+
+        await connection.execute(query, [dbName, month, year, value]);
+
+        res.json({
+            success: true,
+            message: 'Monthly adjustment updated successfully'
+        });
+
+    } catch (error) {
+        console.error('Error updating monthly adjustment:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    } finally {
+        if (connection) await connection.end();
+    }
+});
+
+/**
+ * GET /api/teachers/monthly-adjustments
+ * Get monthly adjustments for a specific period
+ */
+router.get('/monthly-adjustments', async (req, res) => {
+    let connection;
+    try {
+        const { month, year } = req.query;
+
+        if (!month || !year) {
+            return res.status(400).json({
+                success: false,
+                error: 'month and year query parameters are required'
+            });
+        }
+
+        connection = await getConnection();
+
+        // Create table if it doesn't exist
+        await connection.execute(`
+            CREATE TABLE IF NOT EXISTS teacher_monthly_adjustments (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                teacher_name VARCHAR(255) NOT NULL,
+                month VARCHAR(20) NOT NULL,
+                year INT NOT NULL,
+                other DECIMAL(10,2) DEFAULT 0,
+                impact_bonus DECIMAL(10,2) DEFAULT 0,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                UNIQUE KEY teacher_period (teacher_name, month, year)
+            )
+        `);
+
+        const [rows] = await connection.execute(`
+            SELECT teacher_name, other, impact_bonus
+            FROM teacher_monthly_adjustments
+            WHERE month = ? AND year = ?
+        `, [month, year]);
+
+        // Convert to object keyed by teacher_name for easy lookup
+        const adjustments = {};
+        rows.forEach(row => {
+            adjustments[row.teacher_name] = {
+                other: parseFloat(row.other) || 0,
+                impact_bonus: parseFloat(row.impact_bonus) || 0
+            };
+        });
+
+        res.json({
+            success: true,
+            data: adjustments
+        });
+
+    } catch (error) {
+        console.error('Error fetching monthly adjustments:', error);
         res.status(500).json({
             success: false,
             error: error.message

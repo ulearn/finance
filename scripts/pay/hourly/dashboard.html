@@ -514,6 +514,19 @@
                 }
             };
 
+            // Silent refresh - updates data without showing loading spinner
+            const silentRefreshData = async () => {
+                try {
+                    const response = await fetch('/fins/scripts/pay/hourly/dashboard/data');
+                    const result = await response.json();
+                    if (result.success) {
+                        setData(result.data);
+                    }
+                } catch (err) {
+                    console.error('Silent refresh error:', err);
+                }
+            };
+
             const fetchSummary = async () => {
                 try {
                     const response = await fetch('/fins/scripts/pay/hourly/dashboard/summary');
@@ -1162,7 +1175,7 @@
                     )}
 
                     {/* Monthly Payroll Section */}
-                    {view === 'monthly' && <MonthlyPayrollComponent data={data} selectedMonthlyPeriod={selectedMonthlyPeriod} />}
+                    {view === 'monthly' && <MonthlyPayrollComponent data={data} selectedMonthlyPeriod={selectedMonthlyPeriod} onDataRefresh={silentRefreshData} />}
                 </div>
             );
         }
