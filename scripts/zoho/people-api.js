@@ -63,7 +63,7 @@ class ZohoPeopleAPI {
      * Generate authorization URL for OAuth flow
      */
     getAuthorizationUrl() {
-        const scope = 'ZohoPeople.forms.READ,ZohoPeople.leave.READ,ZohoPeople.leave.UPDATE';
+        const scope = 'ZohoPeople.forms.READ,ZohoPeople.leave.READ,ZohoPeople.leave.UPDATE,ZohoPeople.leave.CREATE';
         const params = new URLSearchParams({
             client_id: this.clientId,
             scope: scope,
@@ -367,44 +367,165 @@ class ZohoPeopleAPI {
     }
 
     /**
-     * Update employee leave balance
-     * @param {string} employeeId - Zoho People employee ID
+     * Update employee leave balance using Customize Balance API
+     * @param {string} employeeId - Zoho People employee ID (erecno)
      * @param {string} leaveTypeId - Leave type ID
      * @param {number} balance - New balance
+     * @param {string} date - Date of balance update (optional, defaults to today)
+     * @param {string} reason - Reason for balance update (optional)
      * @returns {Promise<boolean>} - Success status
      */
-    async updateEmployeeLeaveBalance(employeeId, leaveTypeId, balance) {
+    async updateEmployeeLeaveBalance(employeeId, leaveTypeId, balance, date = null, reason = 'Payroll period update') {
         try {
             if (!this.accessToken) {
                 await this.loadTokens();
             }
 
+            // Format date as dd-MMM-yyyy (e.g., "29-Jan-2025")
+            // If date is provided as string, use it; otherwise format today's date
+            let updateDate;
+            if (date) {
+                // If date is already formatted correctly (dd-MMM-yyyy), use as-is
+                // Otherwise parse and reformat
+                if (date.match(/^\d{2}-[A-Z][a-z]{2}-\d{4}$/)) {
+                    updateDate = date;
+                } else {
+                    // Parse date string and format properly
+                    const dateObj = new Date(date);
+                    const day = String(dateObj.getDate()).padStart(2, '0');
+                    const month = dateObj.toLocaleDateString('en-GB', { month: 'short' });
+                    const year = dateObj.getFullYear();
+                    updateDate = `${day}-${month}-${year}`;
+                }
+            } else {
+                const now = new Date();
+                const day = String(now.getDate()).padStart(2, '0');
+                const month = now.toLocaleDateString('en-GB', { month: 'short' });
+                const year = now.getFullYear();
+                updateDate = `${day}-${month}-${year}`;
+            }
+
+            // Build request body according to API spec
+            const balanceData = {
+                [leaveTypeId]: {
+                    date: updateDate,
+                    newBalance: balance,
+                    reason: reason
+                }
+            };
+
+            // Construct the correct URL: https://people.zoho.eu/people/api/v2/leavetracker/settings/customize-balance/{recordId}
+            const domain = this.baseUrl.replace('/api', ''); // https://people.zoho.eu
+            const customizeBalanceUrl = `${domain}/people/api/v2/leavetracker/settings/customize-balance/${employeeId}`;
+
+            console.log('[ZOHO API] Updating leave balance:', {
+                employeeId,
+                leaveTypeId,
+                balance,
+                date: updateDate,
+                url: customizeBalanceUrl
+            });
+
             const response = await axios.post(
-                `${this.baseUrl}/leave/updateLeaveBalance`,
+                customizeBalanceUrl,
                 {
-                    empId: employeeId,
-                    leaveTypeId: leaveTypeId,
-                    balance: balance
+                    balanceData: JSON.stringify(balanceData)
                 },
                 {
                     headers: {
                         'Authorization': `Zoho-oauthtoken ${this.accessToken}`,
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/x-www-form-urlencoded'
                     }
                 }
             );
 
-            return response.data.response?.status === 'success';
+            console.log('[ZOHO API] Response:', response.data);
+            // Success is indicated by message "Balance customized successfully"
+            return response.data.message === "Balance customized successfully" || response.data.response?.status === 0;
         } catch (error) {
             if (error.response?.status === 401) {
                 const refreshed = await this.refreshAccessToken();
                 if (refreshed) {
-                    return await this.updateEmployeeLeaveBalance(employeeId, leaveTypeId, balance);
+                    return await this.updateEmployeeLeaveBalance(employeeId, leaveTypeId, balance, date, reason);
                 }
             }
 
-            console.error('Error updating leave balance:', error.response?.data || error.message);
+            console.error('ERROR: Error updating leave balance:', error.response?.data || error.message);
             return false;
+        }
+    }
+
+    /**
+     * Get employee leave balance as of a specific date using Booked and Balance Report API
+     * @param {string} employeeRecordId - Zoho People employee record ID (erecno)
+     * @param {string} leaveTypeId - Leave type ID
+     * @param {string} asOfDate - Date to get balance for (YYYY-MM-DD format)
+     * @returns {Promise<number>} - Leave balance as of that date (in hours)
+     */
+    async getLeaveBalanceAsOfDate(employeeRecordId, leaveTypeId, asOfDate) {
+        try {
+            if (!this.accessToken) {
+                await this.loadTokens();
+            }
+
+            // Convert YYYY-MM-DD to dd-MMM-yyyy format for Zoho API
+            const dateObj = new Date(asOfDate);
+            const day = String(dateObj.getDate()).padStart(2, '0');
+            const month = dateObj.toLocaleDateString('en-GB', { month: 'short' });
+            const year = dateObj.getFullYear();
+            const formattedDate = `${day}-${month}-${year}`;
+
+            // Use start of year as 'from' date
+            const yearStart = `01-Jan-${year}`;
+
+            const domain = this.baseUrl.replace('/api', ''); // https://people.zoho.eu
+            const url = `${domain}/people/api/v2/leavetracker/reports/bookedAndBalance`;
+
+            console.log('[ZOHO API] Getting balance as of date:', {
+                employeeRecordId,
+                leaveTypeId,
+                asOfDate: formattedDate,
+                from: yearStart,
+                url
+            });
+
+            const response = await axios.get(url, {
+                params: {
+                    employee: JSON.stringify([employeeRecordId]),
+                    leavetype: JSON.stringify([leaveTypeId]),
+                    from: yearStart,
+                    to: formattedDate,
+                    unit: 'Hour'
+                },
+                headers: {
+                    'Authorization': `Zoho-oauthtoken ${this.accessToken}`
+                }
+            });
+
+            console.log('[ZOHO API] Balance report response:', JSON.stringify(response.data, null, 2));
+
+            // Parse the response to extract balance
+            if (response.data && response.data.report && response.data.report[employeeRecordId]) {
+                const employeeData = response.data.report[employeeRecordId];
+                if (employeeData[leaveTypeId] && typeof employeeData[leaveTypeId].balance !== 'undefined') {
+                    const balance = parseFloat(employeeData[leaveTypeId].balance);
+                    console.log(`[ZOHO API] Balance as of ${formattedDate}: ${balance}h`);
+                    return balance;
+                }
+            }
+
+            console.log('[ZOHO API] No balance found, returning 0');
+            return 0;
+        } catch (error) {
+            if (error.response?.status === 401) {
+                const refreshed = await this.refreshAccessToken();
+                if (refreshed) {
+                    return await this.getLeaveBalanceAsOfDate(employeeRecordId, leaveTypeId, asOfDate);
+                }
+            }
+
+            console.error('ERROR: Error getting balance as of date:', error.response?.data || error.message);
+            return 0;
         }
     }
 }
