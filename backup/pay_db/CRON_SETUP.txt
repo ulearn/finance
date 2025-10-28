@@ -1,0 +1,33 @@
+CRONTAB SETUP FOR AUTOMATIC BACKUPS
+====================================
+
+To set up automated backups on the last Friday of each month:
+
+1. Edit your crontab:
+   crontab -e
+
+2. Add ONE of these lines:
+
+   Option A - Run daily at 2 AM (wrapper checks if it's last Friday):
+   0 2 * * * /home/hub/public_html/fins/backup/pay_db/run-if-last-friday.sh
+
+   Option B - Run only on Fridays at 2 AM (more efficient):
+   0 2 * * 5 /home/hub/public_html/fins/backup/pay_db/run-if-last-friday.sh
+
+   Option C - Manual runs only (no cron job):
+   # Don't add anything to crontab, just run manually when needed
+
+3. Save and exit
+
+RECOMMENDED: Option B (Fridays at 2 AM)
+
+The script automatically:
+- Only runs if today is the last Friday of the month
+- Keeps 14 most recent backups
+- Logs all activity to backup.log
+- Compresses backups with gzip (~260KB per backup)
+
+MANUAL BACKUP:
+To run a backup immediately:
+cd /home/hub/public_html/fins/backup/pay_db
+./backup-payroll.sh
