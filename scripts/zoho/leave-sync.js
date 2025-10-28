@@ -175,22 +175,49 @@ class ZohoLeaveSync {
                         const leaveEndISO = toDate ? parseZohoDate(toDate) : leaveStartISO;
 
                         // Check if leave overlaps with requested period
-                        let includeLeave = true;
+                        let hasOverlap = true;
                         if (dateFrom && dateTo) {
                             // Leave overlaps if: leaveStart <= dateTo AND leaveEnd >= dateFrom
-                            includeLeave = leaveStartISO <= dateTo && leaveEndISO >= dateFrom;
+                            hasOverlap = leaveStartISO <= dateTo && leaveEndISO >= dateFrom;
                         }
 
-                        if (includeLeave) {
+                        if (hasOverlap) {
                             const daysTaken = parseFloat(leaveData.Daystaken || 0);
+
+                            // Calculate how many days of this leave fall within the payroll period
+                            const periodStart = new Date(dateFrom);
+                            const periodEnd = new Date(dateTo);
+                            const leaveStart = new Date(leaveStartISO);
+                            const leaveEnd = new Date(leaveEndISO);
+
+                            // Find the overlap boundaries
+                            const overlapStart = leaveStart > periodStart ? leaveStart : periodStart;
+                            const overlapEnd = leaveEnd < periodEnd ? leaveEnd : periodEnd;
+
+                            // Calculate days in overlap (inclusive)
+                            const daysInOverlap = Math.floor((overlapEnd - overlapStart) / (1000 * 60 * 60 * 24)) + 1;
+
+                            // Calculate total days in leave period (inclusive)
+                            const totalDaysInLeave = Math.floor((leaveEnd - leaveStart) / (1000 * 60 * 60 * 24)) + 1;
+
+                            // Prorate the hours: only count the portion that falls within this period
+                            const proratedAmount = (daysInOverlap / totalDaysInLeave) * daysTaken;
 
                             // Categorize by leave type
                             if (leaveType === 'Hourly Leave') {
-                                totalHourlyLeaveTaken += daysTaken;
-                                console.log(`[ZOHO LEAVE] ✓ Added ${daysTaken}h to Hourly Leave (${leaveStartISO} to ${leaveEndISO}) - Total: ${totalHourlyLeaveTaken}h`);
+                                totalHourlyLeaveTaken += proratedAmount;
+                                if (proratedAmount < daysTaken) {
+                                    console.log(`[ZOHO LEAVE] ✓ Added ${proratedAmount.toFixed(2)}h to Hourly Leave (${leaveStartISO} to ${leaveEndISO}, prorated ${daysInOverlap}/${totalDaysInLeave} days) - Total: ${totalHourlyLeaveTaken}h`);
+                                } else {
+                                    console.log(`[ZOHO LEAVE] ✓ Added ${proratedAmount.toFixed(2)}h to Hourly Leave (${leaveStartISO} to ${leaveEndISO}) - Total: ${totalHourlyLeaveTaken}h`);
+                                }
                             } else if (leaveType === this.sickLeaveTypeName) {
-                                totalSickLeaveTaken += daysTaken;
-                                console.log(`[ZOHO LEAVE] ✓ Added ${daysTaken} DAYS to Sick Leave (${leaveStartISO} to ${leaveEndISO}) - Total: ${totalSickLeaveTaken} days`);
+                                totalSickLeaveTaken += proratedAmount;
+                                if (proratedAmount < daysTaken) {
+                                    console.log(`[ZOHO LEAVE] ✓ Added ${proratedAmount.toFixed(2)} DAYS to Sick Leave (${leaveStartISO} to ${leaveEndISO}, prorated ${daysInOverlap}/${totalDaysInLeave} days) - Total: ${totalSickLeaveTaken} days`);
+                                } else {
+                                    console.log(`[ZOHO LEAVE] ✓ Added ${proratedAmount.toFixed(2)} DAYS to Sick Leave (${leaveStartISO} to ${leaveEndISO}) - Total: ${totalSickLeaveTaken} days`);
+                                }
                             } else {
                                 console.log(`[ZOHO LEAVE] ⚠ Unknown leave type: "${leaveType}" (Expected: "Hourly Leave" or "${this.sickLeaveTypeName}") - not counted`);
                             }

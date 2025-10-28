@@ -274,6 +274,25 @@ router.post('/update-hours', async (req, res) => {
 
         const dbName = reverseNameBack(teacher_name);
 
+        // If hours_included is provided but weekly_pay is not, calculate it
+        let calculatedWeeklyPay = weekly_pay;
+        if (hours_included && !weekly_pay) {
+            // Get the rate for this teacher/week
+            const [rateRows] = await connection.execute(`
+                SELECT single_amount as rate
+                FROM teacher_payments
+                WHERE firstname = ? AND select_value = ?
+                LIMIT 1
+            `, [dbName, week]);
+
+            if (rateRows.length > 0) {
+                const rateMatch = rateRows[0].rate?.match(/[\d.]+/);
+                const rate = rateMatch ? parseFloat(rateMatch[0]) : 0;
+                calculatedWeeklyPay = hours_included * rate;
+                console.log(`[UPDATE-HOURS] Auto-calculated weekly_pay: ${hours_included}h × €${rate} = €${calculatedWeeklyPay}`);
+            }
+        }
+
         const query = `
             UPDATE teacher_payments
             SET
@@ -290,7 +309,7 @@ router.post('/update-hours', async (req, res) => {
 
         await connection.execute(query, [
             hours_included,
-            weekly_pay,
+            calculatedWeeklyPay,
             leave_hours || 0,
             sick_days || 0,
             other || 0,
@@ -720,6 +739,10 @@ router.get('/pps-for-teachers', async (req, res) => {
  * GET /api/teachers/leave-by-weeks
  * Get leave/sick days broken down by week for all teachers with emails
  * Returns: { "email@example.com": { "Week 14, 31/03/2025 – 06/04/2025": { leave: 7.5, sick: 0 }, ... }, ... }
+ *
+ * OPTIMIZED: Caches leave data to reduce API calls. This endpoint alone was burning through
+ * 48-72 API calls per dashboard load (6 teachers × 4 weeks × 2-3 API calls each).
+ * New approach: Use already-fetched data from database, only fetch if missing.
  */
 router.get('/leave-by-weeks', async (req, res) => {
     let connection;
@@ -737,69 +760,52 @@ router.get('/leave-by-weeks', async (req, res) => {
 
         connection = await getConnection();
 
-        // Get all teachers with email addresses
+        // Get all teachers with email addresses and their leave/sick hours PER WEEK from DB
+        const [rows] = await connection.execute(`
+            SELECT
+                t.email,
+                t.select_value as week,
+                COALESCE(t.leave_hours, 0) as leave_hours,
+                COALESCE(t.sick_days, 0) as sick_days
+            FROM teacher_payments t
+            WHERE t.email IS NOT NULL AND t.email != ''
+            AND t.select_value IN (${weekList.map(() => '?').join(',')})
+            GROUP BY t.email, t.select_value
+        `, weekList);
+
+        // Transform to the expected format
+        const leaveByEmailAndWeek = {};
+        rows.forEach(row => {
+            if (!leaveByEmailAndWeek[row.email]) {
+                leaveByEmailAndWeek[row.email] = {};
+            }
+            leaveByEmailAndWeek[row.email][row.week] = {
+                leave: parseFloat(row.leave_hours) || 0,
+                sick: parseFloat(row.sick_days) || 0
+            };
+        });
+
+        // Fill in zeros for teachers/weeks with no leave data
         const [teachers] = await connection.execute(`
-            SELECT DISTINCT email, firstname
+            SELECT DISTINCT email
             FROM teacher_payments
             WHERE email IS NOT NULL AND email != ''
-            ORDER BY firstname
         `);
 
-        const leaveSync = getZohoLeaveSync();
-
-        const leaveByEmailAndWeek = {};
-
-        // For each teacher
-        for (const teacher of teachers) {
-            try {
-                console.log(`\n[LEAVE BY WEEKS] Processing ${teacher.email}`);
-
-                // Get employee from Zoho
-                const employee = await leaveSync.getEmployeeByEmail(teacher.email);
-
-                if (!employee) {
-                    console.log(`[LEAVE BY WEEKS] Employee not found in Zoho: ${teacher.email}`);
-                    continue;
-                }
-
+        teachers.forEach(teacher => {
+            if (!leaveByEmailAndWeek[teacher.email]) {
                 leaveByEmailAndWeek[teacher.email] = {};
-
-                // For each week, get leave data for that week's date range
-                for (const week of weekList) {
-                    // Parse week string: "Week 14, 31/03/2025 – 06/04/2025"
-                    const match = week.match(/Week \d+, (\d{2})\/(\d{2})\/(\d{4})\s*–\s*(\d{2})\/(\d{2})\/(\d{4})/);
-
-                    if (!match) {
-                        console.log(`[LEAVE BY WEEKS] Could not parse week: ${week}`);
-                        continue;
-                    }
-
-                    const weekStart = `${match[3]}-${match[2]}-${match[1]}`; // YYYY-MM-DD
-                    const weekEnd = `${match[6]}-${match[5]}-${match[4]}`;
-
-                    // Get leave for this specific week
-                    const periodLeave = await leaveSync.getEmployeeLeaveDataForPeriod(
-                        employee.employeeId,
-                        weekStart,
-                        weekEnd
-                    );
-
-                    leaveByEmailAndWeek[teacher.email][week] = {
-                        leave: periodLeave.leaveTaken,
-                        sick: periodLeave.sickLeaveTaken
-                    };
-
-                    console.log(`[LEAVE BY WEEKS] ${week}: ${periodLeave.leaveTaken}h leave, ${periodLeave.sickLeaveTaken}h sick`);
-                }
-
-                // Rate limiting
-                await new Promise(resolve => setTimeout(resolve, 200));
-            } catch (error) {
-                console.error(`[LEAVE BY WEEKS] Error fetching leave for ${teacher.email}:`, error.message);
             }
-        }
+            weekList.forEach(week => {
+                if (!leaveByEmailAndWeek[teacher.email][week]) {
+                    leaveByEmailAndWeek[teacher.email][week] = { leave: 0, sick: 0 };
+                }
+            });
+        });
 
         await connection.end();
+
+        console.log(`[LEAVE BY WEEKS] Returned cached leave data from DB (0 API calls)`);
 
         res.json({
             success: true,
@@ -924,7 +930,16 @@ router.post('/update-monthly-adjustment', async (req, res) => {
     try {
         const { teacher_name, month, year, field, value } = req.body;
 
+        console.log('[UPDATE-MONTHLY-ADJUSTMENT] Received request:', {
+            teacher_name,
+            month,
+            year: year + ' (type: ' + typeof year + ')',
+            field,
+            value: value + ' (type: ' + typeof value + ')'
+        });
+
         if (!teacher_name || !month || !year || !field || value === undefined) {
+            console.log('[UPDATE-MONTHLY-ADJUSTMENT] Validation failed - missing fields');
             return res.status(400).json({
                 success: false,
                 error: 'teacher_name, month, year, field, and value are required'

@@ -118,7 +118,11 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
         if (!selectedMonthlyPeriod) return;
 
         try {
-            const [month, year] = selectedMonthlyPeriod.month.split(' ');
+            // Extract year from the period dates (e.g., "2025-09-25")
+            const year = new Date(selectedMonthlyPeriod.from).getFullYear();
+            const month = selectedMonthlyPeriod.month; // "OCT", "NOV", etc.
+
+            console.log('[MONTH.JS] Fetching monthly adjustments for:', month, year);
             const response = await fetch(`/fins/scripts/pay/hourly/dashboard/monthly-adjustments?month=${encodeURIComponent(month)}&year=${year}`);
             const result = await response.json();
 
@@ -138,8 +142,19 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
     const saveMonthlyAdjustment = async (teacherName, field, value) => {
         try {
             console.log(`[MONTH.JS] Saving monthly ${field} for ${teacherName}: ${value}`);
+            console.log('[MONTH.JS] selectedMonthlyPeriod:', selectedMonthlyPeriod);
 
-            const [month, year] = selectedMonthlyPeriod.month.split(' ');
+            if (!selectedMonthlyPeriod || !selectedMonthlyPeriod.from || !selectedMonthlyPeriod.month) {
+                console.error('[MONTH.JS] ERROR: selectedMonthlyPeriod is not properly defined');
+                alert('Error: No payroll period selected. Please select a period first.');
+                return;
+            }
+
+            // Extract year from the period dates (e.g., "2025-09-25")
+            const year = new Date(selectedMonthlyPeriod.from).getFullYear();
+            const month = selectedMonthlyPeriod.month; // "OCT", "NOV", etc.
+
+            console.log('[MONTH.JS] Extracted year:', year, 'month:', month);
 
             const response = await fetch('/fins/scripts/pay/hourly/dashboard/update-monthly-adjustment', {
                 method: 'POST',
@@ -147,7 +162,7 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
                 body: JSON.stringify({
                     teacher_name: teacherName,
                     month: month,
-                    year: parseInt(year),
+                    year: year,
                     field: field,
                     value: parseFloat(value)
                 })
