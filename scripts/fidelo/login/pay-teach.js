@@ -6,6 +6,7 @@ const fs = require('fs').promises;
 const sessionLogin = require('./session-login');
 const axios = require('axios');
 const https = require('https');
+const { generateCompositeKey } = require('./generate-composite-key');
 
 class FideloPayTeachersImporter {
     constructor() {
@@ -489,25 +490,34 @@ class FideloPayTeachersImporter {
                     isLastWeek
                 );
 
+                // Generate composite key for reliable deduplication
+                const compositeKey = generateCompositeKey(
+                    rowData.firstname,
+                    rowData.select_value,
+                    rowData.classname,
+                    rowData.days
+                );
+
                 // Build insert/update data
                 const recordData = {
                     fidelo_id: payment.id,
+                    composite_key: compositeKey,
                     fidelo_style: payment.style || null,
                     can_auto_populate: autoPopInfo.canAutoPopulate,
                     auto_populate_reason: autoPopInfo.reason,
                     ...rowData
                 };
 
-                // Check if record exists (unique by fidelo_id + week)
+                // Check if record exists (unique by composite_key)
                 const [existing] = await connection.execute(
-                    `SELECT id FROM ${this.tableName} WHERE fidelo_id = ? AND select_value = ?`,
-                    [recordData.fidelo_id, recordData.select_value]
+                    `SELECT id FROM ${this.tableName} WHERE composite_key = ?`,
+                    [compositeKey]
                 );
 
                 if (existing.length > 0) {
                     // Update existing - but preserve manual edits (hours_included_this_month, weekly_pay, leave_hours, sick_days, manager_checked)
                     const fieldsToUpdate = Object.keys(recordData)
-                        .filter(key => key !== 'fidelo_id' &&
+                        .filter(key => key !== 'composite_key' &&
                                        key !== 'hours_included_this_month' &&
                                        key !== 'weekly_pay' &&
                                        key !== 'leave_hours' &&
@@ -517,11 +527,10 @@ class FideloPayTeachersImporter {
                     if (fieldsToUpdate.length > 0) {
                         const updateFields = fieldsToUpdate.map(key => `\`${key}\` = ?`).join(', ');
                         const values = fieldsToUpdate.map(key => recordData[key]);
-                        values.push(recordData.fidelo_id);
-                        values.push(recordData.select_value);
+                        values.push(compositeKey);
 
                         await connection.execute(
-                            `UPDATE ${this.tableName} SET ${updateFields} WHERE fidelo_id = ? AND select_value = ?`,
+                            `UPDATE ${this.tableName} SET ${updateFields} WHERE composite_key = ?`,
                             values
                         );
                     }

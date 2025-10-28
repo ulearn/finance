@@ -70,6 +70,7 @@ router.get('/data', async (req, res) => {
         const query = `
             SELECT
                 t.fidelo_id,
+                t.composite_key,
                 t.select_value as week,
                 t.days,
                 t.firstname as teacher_name,
@@ -94,23 +95,8 @@ router.get('/data', async (req, res) => {
                 t.manager_checked,
                 t.import_date
             FROM teacher_payments t
-            INNER JOIN (
-                SELECT
-                    firstname,
-                    select_value,
-                    classname,
-                    days,
-                    MAX(import_date) as latest_import
-                FROM teacher_payments
-                WHERE firstname NOT IN ('DOS, ULearn', 'ADoS, ULearn')
-                GROUP BY firstname, select_value, classname, days
-            ) latest
-            ON t.firstname = latest.firstname
-            AND t.select_value = latest.select_value
-            AND t.classname = latest.classname
-            AND t.days = latest.days
-            AND t.import_date = latest.latest_import
             WHERE t.firstname NOT IN ('DOS, ULearn', 'ADoS, ULearn')
+            AND t.composite_key IS NOT NULL
             ORDER BY t.select_value ASC, t.firstname ASC
         `;
 
