@@ -107,3 +107,83 @@ not carry from year to year
 
 
 ReAuthorize URL Zoho API Application: https://hub.ulearnschool.com/fins/payroll/zoho/auth-url
+
+=================================================================================
+DEVELOPMENT LOG (Reverse Chronology)
+
+## 14.10.2025 - Critical API Optimization & Weekly Pay Calculation Fix
+
+### Issue 1: API Limit Exhausted (5,000 calls/day)
+**Problem:** Dashboard was consuming entire daily Zoho API quota (5,000 calls on Essential HR plan) within hours of use.
+
+**Root Cause Identified:**
+- The `/api/teachers/leave-by-weeks` endpoint was making 48-72 Zoho API calls per dashboard load:
+  - 6 teachers × 4 weeks × 2-3 API calls per iteration = 48-72 calls
+  - Each call to `getEmployeeLeaveDataForPeriod()` made 2 API requests:
+    1. `/forms/leave/getRecords` - fetch leave records
+    2. `/leave/getLeaveTypeDetails` - fetch leave balance
+- Loading dashboard 70-100 times during development/testing = 5,000+ API calls
+
+**Solution Implemented:**
+- Optimized `/leave-by-weeks` endpoint (dashboard.js:738-824) to read leave/sick data directly from `teacher_payments` MySQL table instead of calling Zoho API
+- Leave data is populated when user explicitly clicks sync buttons:
+  - "Get Zoho Leave" in Payroll Summary (YTD totals)
+  - "Force Refresh Leave" in Monthly Payroll (period-specific)
+- Dashboard now caches this data and displays it without additional API calls
+
+**API Call Reduction:**
+- Before: ~5,000 calls/day (100 dashboard loads × 50 calls each)
+- After: ~20-50 calls/day (only deliberate button clicks)
+- Dashboard page loads/refreshes: 0 API calls
+- View switching (Weekly Detail ↔ Payroll Summary ↔ Monthly Payroll): 0 API calls
+- Period switching: 0 API calls
+
+**Files Modified:**
+- `/home/hub/public_html/fins/scripts/pay/hourly/dashboard.js` (lines 738-824)
+
+### Issue 2: Weekly Pay Not Updating When Editing Hours
+**Problem:** In Weekly Detail screen, when editing hours for first/last weeks (e.g., Dave Booth), the hours would update but Total Pay displayed in teacher header remained stuck at old value (€851).
+
+**Root Cause:**
+- When `hours_included_this_month` was updated via the update-hours endpoint, but `weekly_pay` was not provided, the system wasn't calculating pay
+- Display logic checked: if `weekly_pay !== null`, use that fixed value; otherwise only calculate if `can_auto_populate = true`
+- For first/last weeks with `can_auto_populate = 0`, this meant pay never recalculated when hours changed
+
+**Solution Implemented:**
+- Added auto-calculation in update-hours endpoint (dashboard.js:277-294)
+- When hours are provided but pay is not:
+  1. Query rate for that teacher/week from database
+  2. Calculate `weekly_pay = hours_included × rate`
+  3. Store calculated value
+- Logs calculation for debugging: `[UPDATE-HOURS] Auto-calculated weekly_pay: 20h × €23 = €460`
+
+**Testing:**
+- User confirmed: "Yep! That's corrected now"
+- Editing 1h, 20h, or any value now correctly updates Total Pay in header
+
+**Files Modified:**
+- `/home/hub/public_html/fins/scripts/pay/hourly/dashboard.js` (lines 277-294)
+
+### Outstanding Item for Tomorrow:
+**Monthly Payroll Total Pay Calculation Verification**
+- Need to verify Monthly screen Total Pay correctly tallies all components:
+  - Hours × Rate (base pay from Fidelo)
+  - Leave hours paid (in Euros) = `average_rate × leave_taken`
+  - Sick days paid (in Euros) = `average_rate × sick_leave_hours × 0.70` (70% of standard rate)
+  - Other adjustments (manually entered one-time payments)
+  - Impact Bonus (manually entered performance bonuses)
+- Cannot test today due to API quota exhaustion
+- Test tomorrow after 24-hour reset
+
+**Current Implementation (month.js:431):**
+```javascript
+const leaveEuro = teacher.average_rate * teacher.leave_taken;
+const sickLeaveEuro = teacher.average_rate * teacher.sick_leave_hours * 0.70; // 70% of standard rate
+const finalTotalPay = teacher.total_pay + teacher.other + teacher.impact_bonus + leaveEuro + sickLeaveEuro;
+```
+
+**What to Verify:**
+1. Leave Euro column displays correctly (rate × hours taken)
+2. Sick Euro column displays correctly (rate × sick hours × 0.70)
+3. Total Pay = Base Pay + Leave Euro + Sick Euro + Other + Impact Bonus
+4. Sick leave hours calculation is accurate (sick_days × avg_hours_per_day from period)
