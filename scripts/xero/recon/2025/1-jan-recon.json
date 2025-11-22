@@ -1,0 +1,687 @@
+{
+  "analysisDate": "2025-11-22",
+  "month": "jan",
+  "year": "2025",
+  "totalTransactions": 24,
+  "protocol": "AI Decision-Making Protocol (Manual.md dated 2025-11-22)",
+  "knowledgeBaseSources": [
+    "/home/hub/public_html/fins/Docs/Xero/Manual.md",
+    "/home/hub/public_html/fins/Docs/Xero/learning-data/discovery.md",
+    "/home/hub/public_html/fins/Docs/Xero/chart-of-accounts.json",
+    "/home/hub/public_html/fins/Docs/Xero/learning-data/2024-reconciled.json",
+    "/home/hub/public_html/fins/Docs/Xero/learning-data/2023-reconciled.json",
+    "/home/hub/public_html/fins/Docs/Xero/learning-data/2022-reconciled.json"
+  ],
+  "summary": {
+    "highConfidence": 19,
+    "manualConfirmationRequired": 5,
+    "totalReceive": 8,
+    "totalSpend": 16,
+    "amountReceived": "55849.51",
+    "amountSpent": "1150.42",
+    "corrections": "Applied user feedback: Caffe Nero → B115, Blue Consultoria (3x) → ULearn-Student + CREATE"
+  },
+  "decisions": [
+    {
+      "transaction": {
+        "index": 0,
+        "dataId": "3318dd9fbc574d37b7a90475b5d3f986",
+        "date": "9 Jan 2025",
+        "description": "P0801GB  7.99@1.20650",
+        "amount": "9.64",
+        "type": "SPEND",
+        "reference": "553",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Audible - CARD",
+          "account": "B121 - Text Books & Academic Materials",
+          "description": "P0811GB  7.99@1.15269"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Audible - CARD",
+      "accountCode": "B121",
+      "accountName": "Text Books & Academic Materials",
+      "category": "EXPENSE",
+      "description": "P0801GB  7.99@1.20650",
+      "confidence": 98,
+      "reasoning": "Exact match with validated training example in discovery.md. 16+ historical instances in 2024 with identical pattern. ForEx pattern matches exactly (£7.99 constant, EUR varies with rate)."
+    },
+    {
+      "transaction": {
+        "index": 1,
+        "dataId": "27dc5ed496e34eccb4da49e810415881",
+        "date": "9 Jan 2025",
+        "description": "STRIPE-HPBA4XLYGYK SP",
+        "amount": "484.01",
+        "type": "RECEIVE",
+        "reference": "931",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "ULearn-Student",
+          "account": "100 - General Course Sales",
+          "description": "STRIPE-GMRR0JM7ZRH SP 931"
+        }
+      },
+      "action": "CREATE",
+      "contact": "ULearn-Student",
+      "accountCode": "100",
+      "accountName": "General Course Sales",
+      "category": "REVENUE",
+      "description": "STRIPE-HPBA4XLYGYK SP",
+      "confidence": 99,
+      "reasoning": "Clear validated pattern from discovery.md. Manual.md explicitly states this is default for student revenue. Multiple historical instances confirm pattern. Stripe is payment processor for course sales."
+    },
+    {
+      "transaction": {
+        "index": 2,
+        "dataId": "bc782f6cb71a45b88d84e76e23614a68",
+        "date": "15 Jan 2025",
+        "description": "C1401MX810.00@0.04762",
+        "amount": "38.58",
+        "type": "SPEND",
+        "reference": "239",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Starbucks",
+          "account": "B102 - Office Running Expenses",
+          "description": "Coffee / Office Rent"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Bank Charges",
+      "accountCode": "B127",
+      "accountName": "Bank Fees",
+      "category": "EXPENSE",
+      "description": "C1401MX810.00@0.04762",
+      "confidence": 75,
+      "reasoning": "No historical precedent for currency purchase transactions. 'C' prefix likely = Currency purchase. Amount represents cost of buying 810 MXN. Following transaction shows actual payment in Mexico. Bank Fees (B127) appropriate for ForEx conversion costs."
+    },
+    {
+      "transaction": {
+        "index": 3,
+        "dataId": "f06add229c674553bc36011990fb086f",
+        "date": "15 Jan 2025",
+        "description": "NECLSCHGMXN 000000.77",
+        "amount": "0.77",
+        "type": "SPEND",
+        "reference": "406",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Bank Charges",
+          "account": "B127 - Bank Fees",
+          "description": null
+        }
+      },
+      "action": "CREATE",
+      "contact": "Bank Charges",
+      "accountCode": "B127",
+      "accountName": "Bank Fees",
+      "category": "EXPENSE",
+      "description": "NECLSCHGMXN 000000.77",
+      "confidence": 92,
+      "reasoning": "Clear pattern match with 'CHRG' keyword from discovery.md. 'NECLSCHGMXN' decodes as Non-Euro Currency Settlement Charge Mexico. Small amount typical of bank fees. Historical pattern shows similar charges always use B127."
+    },
+    {
+      "transaction": {
+        "index": 4,
+        "dataId": "50822364683d4dd78862b2a49bf066b8",
+        "date": "15 Jan 2025",
+        "description": "P1401MX  1020@0.04762",
+        "amount": "48.58",
+        "type": "SPEND",
+        "reference": "553",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Unknown",
+          "account": "B100 - Rent",
+          "description": "Short-term office space"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Travel Expenses",
+      "accountCode": "B112b",
+      "accountName": "Travel - International",
+      "category": "EXPENSE",
+      "description": "P1401MX  1020@0.04762",
+      "confidence": 70,
+      "reasoning": "No historical precedent for Mexico payments. Context suggests international travel (currency purchase + payments in Mexico). Reference 553 suggests card payment. B112b (Travel - International) most appropriate without merchant details."
+    },
+    {
+      "transaction": {
+        "index": 5,
+        "dataId": "6204cc317d6e46d9b2f03ea33448e0b7",
+        "date": "15 Jan 2025",
+        "description": "NECLSCHGMXN 000000.29",
+        "amount": "0.29",
+        "type": "SPEND",
+        "reference": "406",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Bank Charges",
+          "account": "B127 - Bank Fees",
+          "description": null
+        }
+      },
+      "action": "CREATE",
+      "contact": "Bank Charges",
+      "accountCode": "B127",
+      "accountName": "Bank Fees",
+      "category": "EXPENSE",
+      "description": "NECLSCHGMXN 000000.29",
+      "confidence": 92,
+      "reasoning": "Identical pattern to Transaction #3. Clear bank charge for ForEx transaction. Established pattern from discovery.md and historical data."
+    },
+    {
+      "transaction": {
+        "index": 6,
+        "dataId": "2746eecc3b854899a310f2066520ae19",
+        "date": "15 Jan 2025",
+        "description": "C1401MX308.00@0.04762",
+        "amount": "14.67",
+        "type": "SPEND",
+        "reference": "239",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Starbucks",
+          "account": "B102 - Office Running Expenses",
+          "description": "Coffee / Office Rent"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Bank Charges",
+      "accountCode": "B127",
+      "accountName": "Bank Fees",
+      "category": "EXPENSE",
+      "description": "C1401MX308.00@0.04762",
+      "confidence": 75,
+      "reasoning": "Same pattern as Transaction #2 (currency purchase). Represents cost of ForEx conversion. Pattern suggests multiple currency purchases for Mexico travel/payments."
+    },
+    {
+      "transaction": {
+        "index": 7,
+        "dataId": "4aaae54a04294a4383e2375fdac71388",
+        "date": "16 Jan 2025",
+        "description": "POSC15JAN 519 - CANAS",
+        "amount": "11.90",
+        "type": "SPEND",
+        "reference": "221",
+        "xeroSuggestion": null
+      },
+      "action": "CREATE",
+      "contact": "Travel Expenses",
+      "accountCode": "B112b",
+      "accountName": "Travel - International",
+      "category": "EXPENSE",
+      "description": "POSC15JAN 519 - CANAS",
+      "confidence": 80,
+      "reasoning": "Spain location indicates international travel. 'CANAS' appears to be café/restaurant. Subsistence during business travel. Manual.md specifies staff meals during travel go to Travel account. Date aligns with Mexico travel period."
+    },
+    {
+      "transaction": {
+        "index": 8,
+        "dataId": "7ee884e9fc7943bca372e7ea4489a3ca",
+        "date": "16 Jan 2025",
+        "description": "POSC15JAN LICENCIA TA",
+        "amount": "50.00",
+        "type": "SPEND",
+        "reference": "221",
+        "xeroSuggestion": null
+      },
+      "action": "CREATE",
+      "contact": "Travel Expenses",
+      "accountCode": "B112b",
+      "accountName": "Travel - International",
+      "category": "EXPENSE",
+      "description": "POSC15JAN LICENCIA TA",
+      "confidence": 82,
+      "reasoning": "Spain location = international travel. 'LICENCIA TA' = Taxi license/fare. Manual.md states staff taxis = Travel account. Timing consistent with Spain travel. €50 reasonable for taxi fare."
+    },
+    {
+      "transaction": {
+        "index": 9,
+        "dataId": "da8acbd69c1548cb97f5c3b77ee02b40",
+        "date": "17 Jan 2025",
+        "description": "POSC16JAN AEROP. ADOL",
+        "amount": "51.65",
+        "type": "SPEND",
+        "reference": "221",
+        "xeroSuggestion": null
+      },
+      "action": "CREATE",
+      "contact": "Travel Expenses",
+      "accountCode": "B112b",
+      "accountName": "Travel - International",
+      "category": "EXPENSE",
+      "description": "Subsist - Sandwich & Coffee (Madrid Airport)",
+      "confidence": 95,
+      "reasoning": "Exact pattern match in Manual.md. Validated training example in discovery.md. Madrid Airport Adolfo Suárez clearly identified. Airport subsistence is standard travel expense. High confidence due to documented pattern."
+    },
+    {
+      "transaction": {
+        "index": 10,
+        "dataId": "fd6298b0ea1142c8b0cbbe70595c6af5",
+        "date": "21 Jan 2025",
+        "description": "Kay Kavanagh",
+        "amount": "420.00",
+        "type": "SPEND",
+        "reference": "240",
+        "xeroSuggestion": null
+      },
+      "action": "CREATE",
+      "contact": "Kathleen Kavanagh",
+      "accountCode": "A100",
+      "accountName": "Accomm - Host Pay",
+      "category": "COST_OF_SALES",
+      "description": "Kay Kavanagh",
+      "confidence": 96,
+      "reasoning": "Manual.md specifically documents Kay = Kathleen variation. Historical precedent: Kathleen Kavanagh received €440 host payment in 2024. €420 amount consistent with host payment pattern. A100 appropriate for accommodation hosts."
+    },
+    {
+      "transaction": {
+        "index": 11,
+        "dataId": "d2932fb9584444ba82454e593d0da8b5",
+        "date": "21 Jan 2025",
+        "description": "Flogas        SEPA DD",
+        "amount": "158.45",
+        "type": "SPEND",
+        "reference": "340",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Flogas SEPAFlogas SEPA - DD - DD",
+          "account": "B105 - Utils - Power, Light, Heat",
+          "description": "Gas/ElecFlogas        SEPA DD"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Flogas SEPA - DD",
+      "accountCode": "B105",
+      "accountName": "Utils - Power, Light, Heat (Apartments)",
+      "category": "EXPENSE",
+      "description": "Flogas        SEPA DD",
+      "confidence": 98,
+      "reasoning": "Strong historical pattern (20+ instances in 2024). Consistent contact and account code. Clear utility provider (Flogas). B105 specifically for apartment utilities. SEPA DD indicates recurring payment setup."
+    },
+    {
+      "transaction": {
+        "index": 12,
+        "dataId": "6262893d11f447d3ac6189069f3b3b67",
+        "date": "21 Jan 2025",
+        "description": "Flogas        SEPA DD",
+        "amount": "96.25",
+        "type": "SPEND",
+        "reference": "340",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Flogas SEPAFlogas SEPA - DD - DD",
+          "account": "B105 - Utils - Power, Light, Heat",
+          "description": "Gas/ElecFlogas        SEPA DD"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Flogas SEPA - DD",
+      "accountCode": "B105",
+      "accountName": "Utils - Power, Light, Heat (Apartments)",
+      "category": "EXPENSE",
+      "description": "Flogas        SEPA DD",
+      "confidence": 98,
+      "reasoning": "Identical pattern to Transaction #11. Different property/meter. Same day, different amounts indicate multiple properties."
+    },
+    {
+      "transaction": {
+        "index": 13,
+        "dataId": "ee5e0145ce614b46bf09ddbec81ee383",
+        "date": "21 Jan 2025",
+        "description": "POS20JAN Upwork -7726",
+        "amount": "17.02",
+        "type": "SPEND",
+        "reference": "545",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Upwork - CARD",
+          "account": "B118 - Consulting & Accounting (Professional Services)",
+          "description": "Upwork -7705 service"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Upwork - CARD",
+      "accountCode": "B111",
+      "accountName": "SEO & Online Software Tools",
+      "category": "EXPENSE",
+      "description": "POS20JAN Upwork -7726",
+      "confidence": 96,
+      "reasoning": "Strong historical pattern (10+ instances). Consistent contact: 'Upwork - CARD'. B111 appropriate for digital services/freelance work. Pattern matches: 'POS[DATE] Upwork -[ID]'. Reference 545 consistent with card payments."
+    },
+    {
+      "transaction": {
+        "index": 14,
+        "dataId": "6a7d6420c7a14c5083166659442b52d6",
+        "date": "21 Jan 2025",
+        "description": "STRIPE-IVLDF170YXI SP",
+        "amount": "246.00",
+        "type": "RECEIVE",
+        "reference": "931",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "ULearn-Student",
+          "account": "100 - General Course Sales",
+          "description": "STRIPE-GMRR0JM7ZRH SP 931"
+        }
+      },
+      "action": "CREATE",
+      "contact": "ULearn-Student",
+      "accountCode": "100",
+      "accountName": "General Course Sales",
+      "category": "REVENUE",
+      "description": "STRIPE-IVLDF170YXI SP",
+      "confidence": 99,
+      "reasoning": "Identical pattern to Transaction #1. Stripe = Student course payment. Manual.md: Default for student revenue. Simple, established pattern."
+    },
+    {
+      "transaction": {
+        "index": 15,
+        "dataId": "197bc9a91d6441cba0db5e6bc5f1dd79",
+        "date": "21 Jan 2025",
+        "description": "1191948897PEL - 29 IP",
+        "amount": "30.00",
+        "type": "RECEIVE",
+        "reference": "931",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "ULearn-Student",
+          "account": "100 - General Course Sales",
+          "description": null
+        }
+      },
+      "action": "CREATE",
+      "contact": "ULearn-Student",
+      "accountCode": "100",
+      "accountName": "General Course Sales",
+      "category": "REVENUE",
+      "description": "1191948897PEL - 29 IP",
+      "confidence": 85,
+      "reasoning": "Credit transaction = Revenue. Reference 931 pattern matches other student payments. No specific invoice mentioned. Manual.md default rule applies. €30 reasonable for course-related payment (admin fee, deposit)."
+    },
+    {
+      "transaction": {
+        "index": 16,
+        "dataId": "9df261fd84d14f439ffb958f3ca44961",
+        "date": "21 Jan 2025",
+        "description": "Flogas        SEPA DD",
+        "amount": "142.31",
+        "type": "SPEND",
+        "reference": "340",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Flogas SEPAFlogas SEPA - DD - DD",
+          "account": "B105 - Utils - Power, Light, Heat",
+          "description": "Gas/ElecFlogas        SEPA DD"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Flogas SEPA - DD",
+      "accountCode": "B105",
+      "accountName": "Utils - Power, Light, Heat (Apartments)",
+      "category": "EXPENSE",
+      "description": "Flogas        SEPA DD",
+      "confidence": 98,
+      "reasoning": "Third Flogas payment on same day. Multiple properties served. Identical pattern to Transactions #11 and #12."
+    },
+    {
+      "transaction": {
+        "index": 17,
+        "dataId": "44719e965131497bab784e435cf65934",
+        "date": "21 Jan 2025",
+        "description": "Arachas",
+        "amount": "30.00",
+        "type": "SPEND",
+        "reference": "240",
+        "xeroSuggestion": null
+      },
+      "action": "CREATE",
+      "contact": "Arachas",
+      "accountCode": "B106",
+      "accountName": "Insurance",
+      "category": "EXPENSE",
+      "description": "Arachas",
+      "confidence": 70,
+      "reasoning": "Clear insurance company identification. No historical precedent in 2024. Account code B106 inferred (need verification). Small amount (€30) typical for monthly insurance. First occurrence of this vendor."
+    },
+    {
+      "transaction": {
+        "index": 18,
+        "dataId": "740886c2c672407cb8d960e34fcd98f6",
+        "date": "21 Jan 2025",
+        "description": "Flogas        SEPA DD",
+        "amount": "98.27",
+        "type": "SPEND",
+        "reference": "340",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Flogas SEPAFlogas SEPA - DD - DD",
+          "account": "B105 - Utils - Power, Light, Heat",
+          "description": "Gas/ElecFlogas        SEPA DD"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Flogas SEPA - DD",
+      "accountCode": "B105",
+      "accountName": "Utils - Power, Light, Heat (Apartments)",
+      "category": "EXPENSE",
+      "description": "Flogas        SEPA DD",
+      "confidence": 98,
+      "reasoning": "Fourth Flogas payment on same day. Multiple apartment properties. Identical established pattern."
+    },
+    {
+      "transaction": {
+        "index": 19,
+        "dataId": "53e9ffe67cdc4960887b74d63d91228e",
+        "date": "21 Jan 2025",
+        "description": "POSC19JAN CAFFE NERO",
+        "amount": "11.00",
+        "type": "SPEND",
+        "reference": "221",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "Caffe Nero",
+          "account": "B115 - Staff Meals & Drinks",
+          "description": "POSC13NOV CAFFE NERO"
+        }
+      },
+      "action": "CREATE",
+      "contact": "Caffe Nero",
+      "accountCode": "B115",
+      "accountName": "Staff Meals & Drinks",
+      "category": "EXPENSE",
+      "description": "POSC19JAN CAFFE NERO",
+      "confidence": 95,
+      "reasoning": "CORRECTED: No ForEx in description = Ireland location. Historical 2024 data shows Caffe Nero → B115. User confirmed: Ireland coffee = Staff Meals/Drinks (not travel)."
+    },
+    {
+      "transaction": {
+        "index": 20,
+        "dataId": "39c432fe4f674e4f9a46b9f152b941bb",
+        "date": "22 Jan 2025",
+        "description": "BLUE CONSULTORIA E GP",
+        "amount": "1667.50",
+        "type": "RECEIVE",
+        "reference": "931",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "ULearn-Student",
+          "account": "100 - General Course Sales",
+          "description": "BLUE CONSULTORIA E GP"
+        }
+      },
+      "action": "CREATE",
+      "contact": "ULearn-Student",
+      "accountCode": "100",
+      "accountName": "General Course Sales",
+      "category": "REVENUE",
+      "description": "BLUE CONSULTORIA E GP",
+      "confidence": 95,
+      "reasoning": "CORRECTED: User confirmed Blue Consultoria only sends individual students (not group bookings). Three payments = three separate students. Follow standard pattern: ULearn-Student + Account 100."
+    },
+    {
+      "transaction": {
+        "index": 21,
+        "dataId": "2937eb9fc7aa48f59d6142a6060fb18c",
+        "date": "22 Jan 2025",
+        "description": "BLUE CONSULTORIA E GP",
+        "amount": "1667.50",
+        "type": "RECEIVE",
+        "reference": "931",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "ULearn-Student",
+          "account": "100 - General Course Sales",
+          "description": "BLUE CONSULTORIA E GP"
+        }
+      },
+      "action": "CREATE",
+      "contact": "ULearn-Student",
+      "accountCode": "100",
+      "accountName": "General Course Sales",
+      "category": "REVENUE",
+      "description": "BLUE CONSULTORIA E GP",
+      "confidence": 95,
+      "reasoning": "CORRECTED: Second individual student from Blue Consultoria. Same pattern as #20."
+    },
+    {
+      "transaction": {
+        "index": 22,
+        "dataId": "8355423e1e9040a7a5bbdc934688cb85",
+        "date": "22 Jan 2025",
+        "description": "BLUE CONSULTORIA E GP",
+        "amount": "1330.00",
+        "type": "RECEIVE",
+        "reference": "931",
+        "xeroSuggestion": {
+          "hasSuggestion": true,
+          "contact": "ULearn-Student",
+          "account": "100 - General Course Sales",
+          "description": "BLUE CONSULTORIA E GP"
+        }
+      },
+      "action": "CREATE",
+      "contact": "ULearn-Student",
+      "accountCode": "100",
+      "accountName": "General Course Sales",
+      "category": "REVENUE",
+      "description": "BLUE CONSULTORIA E GP",
+      "confidence": 95,
+      "reasoning": "CORRECTED: Third individual student from Blue Consultoria. Same pattern as #20 and #21. Different amount (€1,330) likely due to different course duration or type."
+    },
+    {
+      "transaction": {
+        "index": 23,
+        "dataId": "d7a4957eb2a140af834c742c8dd9d730",
+        "date": "30 Jan 2025",
+        "description": "Linked Financeborr SP",
+        "amount": "50225.00",
+        "type": "RECEIVE",
+        "reference": "931",
+        "xeroSuggestion": null
+      },
+      "action": "EXCLUDE_OR_TRANSFER",
+      "contact": "Linked Finance",
+      "accountCode": "REQUIRES_MANUAL_SETUP",
+      "accountName": "Loan - Linked Finance (to be created)",
+      "category": "LIABILITY",
+      "description": "Linked Financeborr SP - Loan Receipt",
+      "confidence": 95,
+      "reasoning": "Prep file specifically mentions this €50,225 loan. Manual.md states loan transactions require 'separate account setup'. This is NOT revenue - it's a liability. Should not use Account 100 (General Course Sales). Requires creation of Loan/Liability account."
+    }
+  ],
+  "manualConfirmationRequired": [
+    {
+      "index": 2,
+      "description": "C1401MX810.00@0.04762",
+      "amount": "38.58",
+      "reason": "No historical precedent for currency purchase pattern",
+      "action": "Verify B127 is correct for ForEx conversion costs"
+    },
+    {
+      "index": 4,
+      "description": "P1401MX  1020@0.04762",
+      "amount": "48.58",
+      "reason": "No merchant info, assumed travel",
+      "action": "Confirm January 2025 Mexico travel occurred"
+    },
+    {
+      "index": 6,
+      "description": "C1401MX308.00@0.04762",
+      "amount": "14.67",
+      "reason": "Same as transaction #2",
+      "action": "Verify with transaction #2"
+    },
+    {
+      "index": 17,
+      "description": "Arachas",
+      "amount": "30.00",
+      "reason": "CORRECTED TO B106 - Account code was wrong initially",
+      "action": "User noted this should be in historical files - it was already correct"
+    },
+    {
+      "index": 23,
+      "description": "Linked Financeborr SP",
+      "amount": "50225.00",
+      "reason": "Loan receipt requiring special handling",
+      "action": "Consult accountant, create Loan/Liability account, DO NOT reconcile as revenue"
+    }
+  ],
+  "patternsDiscovered": {
+    "new": [
+      "Mexico Currency Purchases (C prefix)",
+      "Mexico Payments (P prefix)",
+      "Blue Consultoria - Group booking 3-payment structure",
+      "Arachas Insurance",
+      "Linked Finance Loan"
+    ],
+    "confirmed": [
+      "Audible £7.99 monthly subscription (B121)",
+      "Stripe student payments (ULearn-Student + 100)",
+      "Bank charges NECLSCHGMXN pattern (B127)",
+      "Flogas utilities multiple properties (B105)",
+      "Kay = Kathleen name variation (A100)",
+      "Madrid Airport AEROP. ADOL (B112b)",
+      "Upwork freelance services (B111)"
+    ]
+  },
+  "recommendedActions": {
+    "immediate": [
+      "Check Xero for Blue Consultoria Sales Invoice - CRITICAL",
+      "Create Loan/Liability account for Linked Finance - Consult accountant",
+      "Verify Arachas insurance account code",
+      "Confirm January 2025 Mexico travel dates",
+      "Verify Caffe Nero context (travel vs office)"
+    ],
+    "discoveryUpdates": [
+      "Add NECLSCHGMXN bank charge pattern to discovery.md",
+      "Add Kay = Kathleen variation to discovery.md",
+      "Add Upwork POS pattern to discovery.md",
+      "Add multiple Flogas same-day pattern to discovery.md"
+    ],
+    "processImprovements": [
+      "Prep file review confirmed valuable (caught Linked Finance loan)",
+      "Name variations documentation proven useful",
+      "Need clearer workflow for group payment invoice checking",
+      "Document C vs P prefix patterns for ForEx"
+    ]
+  },
+  "accountCodesVerified": {
+    "confirmed": [
+      "100 - General Course Sales",
+      "A100 - Accomm - Host Pay",
+      "B105 - Utils - Power, Light, Heat (Apartments)",
+      "B111 - SEO & Online Software Tools",
+      "B112a - Travel - National",
+      "B112b - Travel - International",
+      "B121 - Text Books & Academic Materials",
+      "B127 - Bank Fees"
+    ],
+    "needsVerification": [
+      "B106 - Insurance (assumed, not verified in chart-of-accounts.json)"
+    ]
+  }
+}

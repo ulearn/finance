@@ -1,4 +1,22 @@
 node_modules/
 /home/hub/public_html/fins/fins.log
-/home/hub/public_html/fins/fins_history.log*.log
+/home/hub/public_html/fins/fins_history.logfins.log
 fins.log
+
+# Environment files with secrets
+.env
+.env.*
+
+# API tokens and credentials
+scripts/xero/tokens.json
+scripts/fidelo/login/session.json
+scripts/zoho/tokens.json
+scripts/google/tokens.json
+
+# Backup databases (may contain sensitive data)
+backup/pay_db/*.sql
+backup/pay_db/*.sql.gz
+
+# Logs with sensitive data
+*.log
+fins_history.log

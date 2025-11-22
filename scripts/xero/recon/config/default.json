@@ -1,0 +1,29 @@
+{
+  "xero": {
+    "loginUrl": "https://login.xero.com/identity/user/login",
+    "reconcileUrl": "https://go.xero.com/Bank/BankAccounts.aspx",
+    "orgName": "ULearn Limited"
+  },
+  "automation": {
+    "phase": "observer",
+    "headless": true,
+    "slowMo": 100,
+    "timeout": 30000,
+    "manual2FA": false
+  },
+  "safety": {
+    "maxAutoReconcile": 0,
+    "requireApproval": true,
+    "dryRun": true
+  },
+  "matching": {
+    "minConfidence": 0.9,
+    "maxAmount": 100,
+    "allowedAccountCodes": []
+  },
+  "logging": {
+    "level": "info",
+    "screenshotsOnError": true,
+    "auditTrail": true
+  }
+}

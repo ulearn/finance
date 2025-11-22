@@ -1,0 +1,5937 @@
+[
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "f955b1fc-9908-4fef-8063-2e57e956e1ad",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 781.25,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "101",
+    "accountName": "",
+    "description": "WAACC Rent         SP",
+    "lineAmount": 781.25,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "101",
+        "description": "WAACC Rent         SP",
+        "amount": 781.25,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T18:55:19.403Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "d32c8e5f-6b5b-4e1c-84ab-fec33eaa2651",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 160.98,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE-SO8HOPP1PTR",
+    "lineAmount": 160.98,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE-SO8HOPP1PTR",
+        "amount": 160.98,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T18:55:27.733Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "2faeec76-1166-49c1-9601-f926a5fb080c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "545",
+    "total": 237.64,
+    "contactName": "CARD - Google",
+    "contactID": "b376e613-6258-446a-a323-397e51b66e68",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Google Apps Bus",
+    "lineAmount": 237.64,
+    "taxType": "INPUT",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Google Apps Bus",
+        "amount": 237.64,
+        "taxType": "INPUT"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T18:55:32.257Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "680c1d01-0a30-4c24-9b73-89eddec44d2d",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.61,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 0.61,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "",
+        "amount": 0.61,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:25:37.060Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "e638fee0-7b2a-4a37-a188-3f244248495e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1.13,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000001.14",
+    "lineAmount": 1.13,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000001.14",
+        "amount": 1.13,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:25:39.013Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "9ec05391-c159-4aea-b0b4-a7b7623b66e8",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 273.76,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 273.76,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 273.76,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:25:43.590Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "ab56f867-7052-418f-a35f-f9354ae26884",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.28,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGMXN 000000.91",
+    "lineAmount": 0.28,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGMXN 000000.91",
+        "amount": 0.28,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:25:47.577Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "d64aab24-7c3e-451f-a4b3-1552d95cefa1",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 272.99,
+    "contactName": "FBD INSURANCE SEPA DD",
+    "contactID": "7f96f665-a4ab-47a2-9cad-378c0c9712df",
+    "accountCode": "B120",
+    "accountName": "",
+    "description": "FBD INSURANCE SEPA DD",
+    "lineAmount": 272.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B120",
+        "description": "FBD INSURANCE SEPA DD",
+        "amount": 272.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:25:49.303Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "d9273752-fdfa-42f0-a3f4-436998d0e8a7",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 89,
+    "contactName": "Westwood",
+    "contactID": "ee7e4231-7103-4bdf-a903-b5b6ac3104ba",
+    "accountCode": "BIK",
+    "accountName": "",
+    "description": "WESTWOOD DUN  SEPA DD",
+    "lineAmount": 89,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "BIK",
+        "description": "WESTWOOD DUN  SEPA DD",
+        "amount": 89,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:25:55.323Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "6aab9ff4-c363-4033-9ca8-e6bccff5aa3e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 89,
+    "contactName": "Westwood",
+    "contactID": "ee7e4231-7103-4bdf-a903-b5b6ac3104ba",
+    "accountCode": "BIK",
+    "accountName": "",
+    "description": "WESTWOOD DUN  SEPA DD",
+    "lineAmount": 89,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "BIK",
+        "description": "WESTWOOD DUN  SEPA DD",
+        "amount": 89,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:25:55.893Z"
+  },
+  {
+    "date": "2025-01-03T00:00:00.000Z",
+    "bankTransactionID": "82502157-6889-4099-9a97-2e78d384c0a3",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 239.69,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE F6D0E5",
+    "lineAmount": 239.69,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE F6D0E5",
+        "amount": 239.69,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:26:06.590Z"
+  },
+  {
+    "date": "2025-01-03T00:00:00.000Z",
+    "bankTransactionID": "1bcdbf2d-249e-4d21-8acc-cc41058174d1",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 36.9,
+    "contactName": "Zoho",
+    "contactID": "b87cb3b3-1cf5-486f-b176-e774615bf51d",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS03MAR ZOHO-RECRUIT",
+    "lineAmount": 36.9,
+    "taxType": "TAX004",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS03MAR ZOHO-RECRUIT",
+        "amount": 36.9,
+        "taxType": "TAX004"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:26:11.127Z"
+  },
+  {
+    "date": "2025-01-03T00:00:00.000Z",
+    "bankTransactionID": "c56bab1d-f0a0-4d0e-84d6-fce79e27f7fc",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1.57,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000001.50",
+    "lineAmount": 1.57,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000001.50",
+        "amount": 1.57,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:26:13.657Z"
+  },
+  {
+    "date": "2025-01-06T00:00:00.000Z",
+    "bankTransactionID": "59586d6b-c8ae-400d-ba8e-1b89a1f8fc9e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 239.7,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE F6D0E5",
+    "lineAmount": 239.7,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE F6D0E5",
+        "amount": 239.7,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:28:07.060Z"
+  },
+  {
+    "date": "2025-01-06T00:00:00.000Z",
+    "bankTransactionID": "20a5b480-4179-4083-8ead-fe87642a929c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 822.1,
+    "contactName": "GRENKE LIMITED",
+    "contactID": "ff4e04fb-3b95-40e3-a2b8-37f1516cfde3",
+    "accountCode": "A107.A",
+    "accountName": "",
+    "description": "Grenke Limite SEPA DD",
+    "lineAmount": 822.1,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A107.A",
+        "description": "Grenke Limite SEPA DD",
+        "amount": 822.1,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-07T19:28:21.787Z"
+  },
+  {
+    "date": "2025-01-03T00:00:00.000Z",
+    "bankTransactionID": "53be6160-2cad-4c13-9d04-9204843e302e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 6416.66,
+    "contactName": "GARDEN VALE PROPERTIES",
+    "contactID": "dfecc5d6-0f4e-4cf7-ad16-ffb21bcfc1ee",
+    "accountCode": "B100",
+    "accountName": "",
+    "description": "13 Harcourt ",
+    "lineAmount": 6416.66,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B100",
+        "description": "13 Harcourt ",
+        "amount": 6416.66,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-01-24T14:19:49.470Z"
+  },
+  {
+    "date": "2025-01-21T00:00:00.000Z",
+    "bankTransactionID": "263a7b7e-dcf5-4006-9c94-6b32593bc958",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 5268.2,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "course fees",
+    "lineAmount": 5268.2,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "course fees",
+        "amount": 5268.2,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-12T16:57:43.283Z"
+  },
+  {
+    "date": "2025-01-10T00:00:00.000Z",
+    "bankTransactionID": "09cca19e-4401-4c2b-99a0-f8caba27e981",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T14:53:47.437Z"
+  },
+  {
+    "date": "2025-01-14T00:00:00.000Z",
+    "bankTransactionID": "73f0fbad-8a99-4d2e-8c8c-135c9df8972e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T14:53:49.370Z"
+  },
+  {
+    "date": "2025-01-14T00:00:00.000Z",
+    "bankTransactionID": "08db416f-7f6e-4e19-894a-3475d211c19b",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 2244.6,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STUDENT ID 29364",
+    "lineAmount": 2244.6,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STUDENT ID 29364",
+        "amount": 2244.6,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T14:54:02.723Z"
+  },
+  {
+    "date": "2025-01-20T00:00:00.000Z",
+    "bankTransactionID": "9b61e987-8e8c-4ac8-8134-70844bbfeb2d",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T14:54:14.257Z"
+  },
+  {
+    "date": "2025-01-27T00:00:00.000Z",
+    "bankTransactionID": "06eed0d3-9aaf-48af-8a33-f0b991280f46",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 60,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS30MAY YAUNDRY",
+    "lineAmount": 60,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS30MAY YAUNDRY",
+        "amount": 60,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T15:01:39.720Z"
+  },
+  {
+    "date": "2025-02-13T00:00:00.000Z",
+    "bankTransactionID": "2df8751b-e391-438a-95be-69efa9850687",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.48,
+    "contactName": "BOI",
+    "contactID": "b5c53e29-4644-4525-90d3-85d49214ee3d",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.44",
+    "lineAmount": 0.48,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.44",
+        "amount": 0.48,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:40:53.613Z"
+  },
+  {
+    "date": "2025-02-13T00:00:00.000Z",
+    "bankTransactionID": "0c718105-65d3-433c-81fc-0d0d725a43f0",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 3550,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "ULEARNP20241037TMU ",
+    "lineAmount": 3550,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "ULEARNP20241037TMU ",
+        "amount": 3550,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:41:15.017Z"
+  },
+  {
+    "date": "2025-02-13T00:00:00.000Z",
+    "bankTransactionID": "96e3f18d-2e2f-43dd-a614-50b9a7ead48e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 2.9,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000001.50",
+    "lineAmount": 2.9,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000001.50",
+        "amount": 2.9,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:41:18.960Z"
+  },
+  {
+    "date": "2025-02-14T00:00:00.000Z",
+    "bankTransactionID": "9c99be27-513f-4adf-9ab7-35a9978f572e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 246,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE F6D0E5",
+    "lineAmount": 246,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE F6D0E5",
+        "amount": 246,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:41:24.443Z"
+  },
+  {
+    "date": "2025-02-14T00:00:00.000Z",
+    "bankTransactionID": "4b7e1493-e3dc-4c93-af92-b790326b916c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 300,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "P20241075",
+    "lineAmount": 300,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "P20241075",
+        "amount": 300,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:41:35.060Z"
+  },
+  {
+    "date": "2025-02-16T00:00:00.000Z",
+    "bankTransactionID": "b26dd6b0-3713-480b-904e-47d8683f5252",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 25.95,
+    "contactName": "Woodies",
+    "contactID": "0b4a61a6-f501-4039-b6a1-9ec304eab40c",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "Apartment kitchen ",
+    "lineAmount": 25.95,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "Apartment kitchen ",
+        "amount": 25.95,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:42:40.963Z"
+  },
+  {
+    "date": "2025-02-17T00:00:00.000Z",
+    "bankTransactionID": "5357e327-039b-4b2d-a4db-8ecbb8198027",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.88,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.86",
+    "lineAmount": 0.88,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.86",
+        "amount": 0.88,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:42:49.033Z"
+  },
+  {
+    "date": "2025-02-17T00:00:00.000Z",
+    "bankTransactionID": "0125a4c0-ea36-4152-8baa-b5f555d2cebb",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.22,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGGBP 000000.21",
+    "lineAmount": 0.22,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGGBP 000000.21",
+        "amount": 0.22,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:42:54.280Z"
+  },
+  {
+    "date": "2025-02-18T00:00:00.000Z",
+    "bankTransactionID": "e2548301-a2e9-4fae-83ca-8654bb826e5e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 2235,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "student id:29757 i SP",
+    "lineAmount": 2235,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "student id:29757 i SP",
+        "amount": 2235,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:43:30.600Z"
+  },
+  {
+    "date": "2025-02-18T00:00:00.000Z",
+    "bankTransactionID": "d6a09869-afd0-4967-ad57-dd44c33ae788",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 30.75,
+    "contactName": "MessageBird",
+    "contactID": "06d571df-485d-48af-bcea-812681c76acf",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS01DEC MESSAGEBIRD.",
+    "lineAmount": 30.75,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS01DEC MESSAGEBIRD.",
+        "amount": 30.75,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:43:32.693Z"
+  },
+  {
+    "date": "2025-02-18T00:00:00.000Z",
+    "bankTransactionID": "536bf657-359d-431f-a980-bf1504018406",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 16.58,
+    "contactName": "GODADDY",
+    "contactID": "a249c57e-6f55-4e88-b0d2-5a93919dd895",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 16.58,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 16.58,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:43:48.853Z"
+  },
+  {
+    "date": "2025-02-18T00:00:00.000Z",
+    "bankTransactionID": "1012004e-5e9d-46f2-8f42-6723a2a9d831",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 51.97,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS30MAY YAUNDRY",
+    "lineAmount": 51.97,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS30MAY YAUNDRY",
+        "amount": 51.97,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:44:19.167Z"
+  },
+  {
+    "date": "2025-02-19T00:00:00.000Z",
+    "bankTransactionID": "e9a44887-6864-449d-a594-9352795ad0e7",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 239.69,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE F6D0E5",
+    "lineAmount": 239.69,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE F6D0E5",
+        "amount": 239.69,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:44:23.707Z"
+  },
+  {
+    "date": "2025-02-19T00:00:00.000Z",
+    "bankTransactionID": "367a01c0-990f-4d0c-b21f-233a9e366e1a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 1840,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "P20241075",
+    "lineAmount": 1840,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "P20241075",
+        "amount": 1840,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:44:27.997Z"
+  },
+  {
+    "date": "2025-02-13T00:00:00.000Z",
+    "bankTransactionID": "2b9ea27b-2725-4fea-94ee-f8d84e43d29b",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 22.14,
+    "contactName": "CLAUDE AI",
+    "contactID": "f05d0f8f-77b4-4877-ad06-acd525f1fcc4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "AO Software Subscription",
+    "lineAmount": 22.14,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "AO Software Subscription",
+        "amount": 22.14,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:44:55.690Z"
+  },
+  {
+    "date": "2025-02-13T00:00:00.000Z",
+    "bankTransactionID": "60a7870a-d758-401b-b8da-3a9f905c7ec5",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 3862.5,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "P20241075",
+    "lineAmount": 3862.5,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "P20241075",
+        "amount": 3862.5,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:04.133Z"
+  },
+  {
+    "date": "2025-02-12T00:00:00.000Z",
+    "bankTransactionID": "adeae8e8-6f7d-4a79-a411-8d48be7ef988",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 29.7,
+    "contactName": "Zoho",
+    "contactID": "b87cb3b3-1cf5-486f-b176-e774615bf51d",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS12MAR ZOHO-PEOPLE",
+    "lineAmount": 29.7,
+    "taxType": "TAX004",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS12MAR ZOHO-PEOPLE",
+        "amount": 29.7,
+        "taxType": "TAX004"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:06.270Z"
+  },
+  {
+    "date": "2025-02-12T00:00:00.000Z",
+    "bankTransactionID": "90215326-6e78-4b7d-a421-1c110fb07426",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 6416.66,
+    "contactName": "GARDEN VALE PROPERTIES",
+    "contactID": "dfecc5d6-0f4e-4cf7-ad16-ffb21bcfc1ee",
+    "accountCode": "B100",
+    "accountName": "",
+    "description": "13 Harcourt ",
+    "lineAmount": 6416.66,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B100",
+        "description": "13 Harcourt ",
+        "amount": 6416.66,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:09.430Z"
+  },
+  {
+    "date": "2025-02-12T00:00:00.000Z",
+    "bankTransactionID": "a8e8adc9-2015-413d-8fe2-0af1a5c53342",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 13.99,
+    "contactName": "YouTube",
+    "contactID": "c37ebf8d-406d-49c9-988a-dca3c0301ffd",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Teacher Download Account",
+    "lineAmount": 13.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Teacher Download Account",
+        "amount": 13.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:12.453Z"
+  },
+  {
+    "date": "2025-02-12T00:00:00.000Z",
+    "bankTransactionID": "8ab19f3b-cd8b-48e0-9112-2ccf837a4afb",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.02,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.02",
+    "lineAmount": 0.02,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.02",
+        "amount": 0.02,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:14.633Z"
+  },
+  {
+    "date": "2025-02-12T00:00:00.000Z",
+    "bankTransactionID": "7e90c668-c134-4b7b-9fd9-fca882573c84",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 735.24,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE LWDNZIDCTS7",
+    "lineAmount": 735.24,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE LWDNZIDCTS7",
+        "amount": 735.24,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:26.210Z"
+  },
+  {
+    "date": "2025-02-12T00:00:00.000Z",
+    "bankTransactionID": "395930b9-83a1-4fdb-aaaa-7be290fc9882",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.97,
+    "contactName": "Unknown",
+    "contactID": "c793748c-8b23-40b6-9ce7-94cf73188dd0",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "Looks like Authorisation",
+    "lineAmount": 0.97,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "Looks like Authorisation",
+        "amount": 0.97,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:27.753Z"
+  },
+  {
+    "date": "2025-02-12T00:00:00.000Z",
+    "bankTransactionID": "cd7e548f-a07f-48a6-983c-4f2a03a9fc08",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 11.99,
+    "contactName": "Spotify",
+    "contactID": "6e21a444-49bf-4015-aa18-e5260a134723",
+    "accountCode": "B102",
+    "accountName": "",
+    "description": "Rec Room Music ",
+    "lineAmount": 11.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B102",
+        "description": "Rec Room Music ",
+        "amount": 11.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:32.827Z"
+  },
+  {
+    "date": "2025-02-11T00:00:00.000Z",
+    "bankTransactionID": "494a2c0b-a63f-4d71-b628-c6440cf0d5b8",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 18.62,
+    "contactName": "Upwork - CARD",
+    "contactID": "312bc631-97cd-471b-b8f3-bea17fc2a376",
+    "accountCode": "B118",
+    "accountName": "",
+    "description": "POS04AUG Upwork -6072",
+    "lineAmount": 18.62,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B118",
+        "description": "POS04AUG Upwork -6072",
+        "amount": 18.62,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:44.840Z"
+  },
+  {
+    "date": "2025-02-11T00:00:00.000Z",
+    "bankTransactionID": "fdde3be4-29c1-4ef3-8220-af45fd55f585",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 102.58,
+    "contactName": "LUCIDCHART",
+    "contactID": "7dc20e67-9106-42cd-9b68-d70e36fad8b8",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Charting Software",
+    "lineAmount": 102.58,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Charting Software",
+        "amount": 102.58,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:45:47.053Z"
+  },
+  {
+    "date": "2025-02-10T00:00:00.000Z",
+    "bankTransactionID": "71d9c2ca-b4ef-48a0-b890-e4a3c67bbd8a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 600,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 600,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 600,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:04.623Z"
+  },
+  {
+    "date": "2025-02-10T00:00:00.000Z",
+    "bankTransactionID": "4aa4b71d-d93e-424b-b618-b74ed71b6ab7",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 27,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS30MAY YAUNDRY",
+    "lineAmount": 27,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS30MAY YAUNDRY",
+        "amount": 27,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:06.410Z"
+  },
+  {
+    "date": "2025-02-10T00:00:00.000Z",
+    "bankTransactionID": "ccfa4a37-7955-484e-b385-3b06162aa42f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.19,
+    "contactName": "BOI",
+    "contactID": "b5c53e29-4644-4525-90d3-85d49214ee3d",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGGBP 000000.19",
+    "lineAmount": 0.19,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGGBP 000000.19",
+        "amount": 0.19,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:08.350Z"
+  },
+  {
+    "date": "2025-02-10T00:00:00.000Z",
+    "bankTransactionID": "6fc85d26-2e03-42ec-a902-1a11c59ace74",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:16.530Z"
+  },
+  {
+    "date": "2025-02-10T00:00:00.000Z",
+    "bankTransactionID": "fe20f456-5427-4618-842a-a08197e23600",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 9.61,
+    "contactName": "Audible - CARD",
+    "contactID": "ebcaa8d0-eb64-4ea0-9795-57ab71095683",
+    "accountCode": "B121",
+    "accountName": "",
+    "description": "P0811GB  7.99@1.15269",
+    "lineAmount": 9.61,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B121",
+        "description": "P0811GB  7.99@1.15269",
+        "amount": 9.61,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:18.277Z"
+  },
+  {
+    "date": "2025-02-07T00:00:00.000Z",
+    "bankTransactionID": "4d5108a4-e2f6-470d-bba7-c2d6dc46692c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 900,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 900,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 900,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:26.067Z"
+  },
+  {
+    "date": "2025-02-07T00:00:00.000Z",
+    "bankTransactionID": "5967482e-dcea-425c-9ee0-e95ec612d452",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 300,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "ULEARND2025009TMUL",
+    "lineAmount": 300,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "ULEARND2025009TMUL",
+        "amount": 300,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:40.277Z"
+  },
+  {
+    "date": "2025-02-06T00:00:00.000Z",
+    "bankTransactionID": "d6c7a642-3f5b-4804-8fda-b65c093ffa00",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 1265,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 1265,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 1265,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:46:52.040Z"
+  },
+  {
+    "date": "2025-02-05T00:00:00.000Z",
+    "bankTransactionID": "2062ecbc-1660-46c8-830d-603e7485690e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 18.45,
+    "contactName": "CookieBot",
+    "contactID": "536c601e-accf-4e70-b153-2ff8423a7fd4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Cookie Banner",
+    "lineAmount": 18.45,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Cookie Banner",
+        "amount": 18.45,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:05.810Z"
+  },
+  {
+    "date": "2025-02-05T00:00:00.000Z",
+    "bankTransactionID": "0a04967d-5347-4235-8f9d-48de6c85e8ad",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 15,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS30MAY YAUNDRY",
+    "lineAmount": 15,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS30MAY YAUNDRY",
+        "amount": 15,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:07.100Z"
+  },
+  {
+    "date": "2025-02-05T00:00:00.000Z",
+    "bankTransactionID": "60186bf6-cadb-4564-bbbd-bf7da367991f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 51.97,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS30MAY YAUNDRY",
+    "lineAmount": 51.97,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS30MAY YAUNDRY",
+        "amount": 51.97,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:09.337Z"
+  },
+  {
+    "date": "2025-02-05T00:00:00.000Z",
+    "bankTransactionID": "34fcc02a-9a53-47d4-9eeb-b7c5a90eecc3",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 500,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 500,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 500,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:13.027Z"
+  },
+  {
+    "date": "2025-02-05T00:00:00.000Z",
+    "bankTransactionID": "a0225c65-9d90-4f3d-8de0-b883ba4d1ac9",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 360,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "Invoice P2024474   SP",
+    "lineAmount": 360,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "Invoice P2024474   SP",
+        "amount": 360,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:17.457Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "b3f773af-b9ad-4520-b303-24c0737bce76",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 89,
+    "contactName": "Westwood",
+    "contactID": "ee7e4231-7103-4bdf-a903-b5b6ac3104ba",
+    "accountCode": "BIK",
+    "accountName": "",
+    "description": "WESTWOOD DUN  SEPA DD",
+    "lineAmount": 89,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "BIK",
+        "description": "WESTWOOD DUN  SEPA DD",
+        "amount": 89,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:25.837Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "cb2add99-fd4f-4fb2-9174-e52993ba9c06",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 237.64,
+    "contactName": "CARD - Google",
+    "contactID": "b376e613-6258-446a-a323-397e51b66e68",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Google Workspace",
+    "lineAmount": 237.64,
+    "taxType": "INPUT",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Google Workspace",
+        "amount": 237.64,
+        "taxType": "INPUT"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:36.387Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "87df99e9-5392-429b-83c7-cb3575bccc54",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 3.69,
+    "contactName": "CARD - Google",
+    "contactID": "b376e613-6258-446a-a323-397e51b66e68",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 3.69,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 3.69,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:37.180Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "4d4a8bb1-fc85-4bbd-bfef-3d3bf88ab821",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 14.41,
+    "contactName": "Upwork - CARD",
+    "contactID": "312bc631-97cd-471b-b8f3-bea17fc2a376",
+    "accountCode": "B118",
+    "accountName": "",
+    "description": "POS04AUG Upwork -6072",
+    "lineAmount": 14.41,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B118",
+        "description": "POS04AUG Upwork -6072",
+        "amount": 14.41,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:40.997Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "8bc83ff5-4829-4eea-b4bd-42d89cf134e8",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 1330,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 1330,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 1330,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:51.620Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "5f3a6526-ec28-4d3e-bc6b-b68825addef6",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1.13,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000001.14",
+    "lineAmount": 1.13,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000001.14",
+        "amount": 1.13,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:52.730Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "66c360f3-315d-4d9e-9ba7-97af384de42a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 89,
+    "contactName": "Westwood",
+    "contactID": "ee7e4231-7103-4bdf-a903-b5b6ac3104ba",
+    "accountCode": "BIK",
+    "accountName": "",
+    "description": "WESTWOOD DUN  SEPA DD",
+    "lineAmount": 89,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "BIK",
+        "description": "WESTWOOD DUN  SEPA DD",
+        "amount": 89,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:47:59.177Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "12fcff60-bc4d-4f3c-964e-88f8df9cad23",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.6,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "GOVT DUTY ATM/POS0536",
+    "lineAmount": 0.6,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "GOVT DUTY ATM/POS0536",
+        "amount": 0.6,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:48:15.097Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "fa8875c8-415d-4a21-a698-a8352e66656a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 3350,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "101",
+    "accountName": "",
+    "description": "FEB RENT ",
+    "lineAmount": 3350,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "101",
+        "description": "FEB RENT ",
+        "amount": 3350,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:48:34.377Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "e19ea24a-c69f-496a-8e08-a70b50dfd8f8",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 410,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "P20241075",
+    "lineAmount": 410,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "P20241075",
+        "amount": 410,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:48:36.397Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "38f9cc41-f5a0-49d0-9d21-fac3841bae2a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 251.13,
+    "contactName": "AirBnB",
+    "contactID": "86ebb99c-cd10-44eb-9784-137467fc4017",
+    "accountCode": "A103",
+    "accountName": "",
+    "description": "Temp Stay Required",
+    "lineAmount": 251.13,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A103",
+        "description": "Temp Stay Required",
+        "amount": 251.13,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:49:03.813Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "77dd0c76-2a22-4941-9f2f-60f96e21aa0e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 14.96,
+    "contactName": "GODADDY",
+    "contactID": "a249c57e-6f55-4e88-b0d2-5a93919dd895",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 14.96,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 14.96,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:49:14.167Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "31bcca06-fa36-4971-bb00-41f0643c153f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1135.15,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1135.15,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1135.15,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:49:16.490Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "2eedf48c-650e-4927-b52f-ddfa71d82d66",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1.57,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000001.50",
+    "lineAmount": 1.57,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000001.50",
+        "amount": 1.57,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-02-20T17:49:21.830Z"
+  },
+  {
+    "date": "2025-02-28T00:00:00.000Z",
+    "bankTransactionID": "9c6897b2-bf2e-4683-850d-9c87b7d16f55",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 6416.66,
+    "contactName": "GARDEN VALE PROPERTIES",
+    "contactID": "dfecc5d6-0f4e-4cf7-ad16-ffb21bcfc1ee",
+    "accountCode": "B100",
+    "accountName": "",
+    "description": "13 Harcourt ",
+    "lineAmount": 6416.66,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B100",
+        "description": "13 Harcourt ",
+        "amount": 6416.66,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-03-12T17:37:49.317Z"
+  },
+  {
+    "date": "2025-01-20T00:00:00.000Z",
+    "bankTransactionID": "388199ba-d808-4532-8c29-93ee0e078965",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 385,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 385,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 385,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-03-26T13:34:42.310Z"
+  },
+  {
+    "date": "2025-04-16T00:00:00.000Z",
+    "bankTransactionID": "bdcc3e51-f24d-4c6d-900c-aa9815efc4d3",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 18.45,
+    "contactName": "MessageBird",
+    "contactID": "06d571df-485d-48af-bcea-812681c76acf",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS01DEC MESSAGEBIRD.",
+    "lineAmount": 18.45,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS01DEC MESSAGEBIRD.",
+        "amount": 18.45,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:29.203Z"
+  },
+  {
+    "date": "2025-04-15T00:00:00.000Z",
+    "bankTransactionID": "adf5bc77-63f0-4d24-8a69-b51e943b8d22",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 75.53,
+    "contactName": "Upwork - CARD",
+    "contactID": "312bc631-97cd-471b-b8f3-bea17fc2a376",
+    "accountCode": "B118",
+    "accountName": "",
+    "description": "POS04AUG Upwork -6072",
+    "lineAmount": 75.53,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B118",
+        "description": "POS04AUG Upwork -6072",
+        "amount": 75.53,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:32.063Z"
+  },
+  {
+    "date": "2025-04-15T00:00:00.000Z",
+    "bankTransactionID": "6aa820ca-9b57-4860-8194-94278c883756",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 57.75,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS30MAY YAUNDRY",
+    "lineAmount": 57.75,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS30MAY YAUNDRY",
+        "amount": 57.75,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:46.360Z"
+  },
+  {
+    "date": "2025-04-15T00:00:00.000Z",
+    "bankTransactionID": "58eaee32-25b7-43e3-82f4-daa56b342a33",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 3.52,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "EFT DD CHARGES",
+    "lineAmount": 3.52,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "EFT DD CHARGES",
+        "amount": 3.52,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:48.147Z"
+  },
+  {
+    "date": "2025-04-15T00:00:00.000Z",
+    "bankTransactionID": "ea7d268c-36b2-4110-b86f-e3222e5f7320",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 5.04,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "EFT DD CHARGES",
+    "lineAmount": 5.04,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "EFT DD CHARGES",
+        "amount": 5.04,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:50.893Z"
+  },
+  {
+    "date": "2025-04-15T00:00:00.000Z",
+    "bankTransactionID": "fc05bf06-bc03-4b0a-b04e-0700dda48cf9",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 8.88,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "EFT DD CHARGES",
+    "lineAmount": 8.88,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "EFT DD CHARGES",
+        "amount": 8.88,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:52.190Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "73e488c5-fe36-4f6d-87df-f415132f5282",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 66,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS30MAY YAUNDRY",
+    "lineAmount": 66,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS30MAY YAUNDRY",
+        "amount": 66,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:54.323Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "a7b1f902-1278-4d0e-ba10-ad617992d6de",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.44,
+    "contactName": "BOI",
+    "contactID": "b5c53e29-4644-4525-90d3-85d49214ee3d",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.44",
+    "lineAmount": 0.44,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.44",
+        "amount": 0.44,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:36:56.437Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "9b6caab0-6b82-4804-b098-4c6e4f0b7539",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 22.14,
+    "contactName": "CLAUDE AI",
+    "contactID": "f05d0f8f-77b4-4877-ad06-acd525f1fcc4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "AO Software Subscription",
+    "lineAmount": 22.14,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "AO Software Subscription",
+        "amount": 22.14,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:02.843Z"
+  },
+  {
+    "date": "2025-04-12T00:00:00.000Z",
+    "bankTransactionID": "3922c872-ff6f-47eb-88fe-e356232a1b0a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 71,
+    "contactName": "Dunnes",
+    "contactID": "5342dd01-d669-4911-9f3c-15d7271ffda4",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "Accommodation",
+    "lineAmount": 71,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "Accommodation",
+        "amount": 71,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:05.223Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "b6aebca0-87e5-414a-9618-fd0c80b10b2e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1.73,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000001.14",
+    "lineAmount": 1.73,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000001.14",
+        "amount": 1.73,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:22.023Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "ba3ebfdc-737e-43a8-935f-13fe736f14d6",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 11.99,
+    "contactName": "Spotify",
+    "contactID": "6e21a444-49bf-4015-aa18-e5260a134723",
+    "accountCode": "B102",
+    "accountName": "",
+    "description": "Rec Room Music ",
+    "lineAmount": 11.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B102",
+        "description": "Rec Room Music ",
+        "amount": 11.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:29.050Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "a7f42850-b3bd-42ca-8d1d-325a78216b87",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:32.077Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "9a94c548-229d-4b4c-8d54-18d6acb8704f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 2.66,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000001.96",
+    "lineAmount": 2.66,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000001.96",
+        "amount": 2.66,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:36.510Z"
+  },
+  {
+    "date": "2025-04-14T00:00:00.000Z",
+    "bankTransactionID": "9a9f4b42-2f8b-4e4c-b44b-16caa5fe00de",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 29.7,
+    "contactName": "Zoho",
+    "contactID": "b87cb3b3-1cf5-486f-b176-e774615bf51d",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS11APR ZOHO-PEOPLE",
+    "lineAmount": 29.7,
+    "taxType": "TAX004",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS11APR ZOHO-PEOPLE",
+        "amount": 29.7,
+        "taxType": "TAX004"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:48.433Z"
+  },
+  {
+    "date": "2025-04-11T00:00:00.000Z",
+    "bankTransactionID": "ace230f2-cfb2-420c-a78b-85ef873b1160",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 20,
+    "contactName": "EIR",
+    "contactID": "9aae58ca-f21d-4c2c-9caf-0ce994733542",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS06OCT Vesta EIR To",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS06OCT Vesta EIR To",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:37:52.667Z"
+  },
+  {
+    "date": "2025-04-10T00:00:00.000Z",
+    "bankTransactionID": "166566b0-1b2d-4b3a-965a-413fcdaa69ab",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 57.75,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS09APR YAUNDRY",
+    "lineAmount": 57.75,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS09APR YAUNDRY",
+        "amount": 57.75,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:38:19.343Z"
+  },
+  {
+    "date": "2025-04-09T00:00:00.000Z",
+    "bankTransactionID": "519342db-f853-4e92-9281-2661b22db188",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 9.44,
+    "contactName": "Audible - CARD",
+    "contactID": "ebcaa8d0-eb64-4ea0-9795-57ab71095683",
+    "accountCode": "B121",
+    "accountName": "",
+    "description": "P0804GB  7.99@1.14142",
+    "lineAmount": 9.44,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B121",
+        "description": "P0804GB  7.99@1.14142",
+        "amount": 9.44,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:38:41.317Z"
+  },
+  {
+    "date": "2025-04-09T00:00:00.000Z",
+    "bankTransactionID": "915f2232-4ec4-4a2a-84d7-4679d38fea12",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.19,
+    "contactName": "BOI",
+    "contactID": "b5c53e29-4644-4525-90d3-85d49214ee3d",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGGBP 000000.19",
+    "lineAmount": 0.19,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGGBP 000000.19",
+        "amount": 0.19,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:38:49.970Z"
+  },
+  {
+    "date": "2025-04-09T00:00:00.000Z",
+    "bankTransactionID": "40467fae-3171-40c1-b9cf-9ada0a919212",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1247.95,
+    "contactName": "Bord Gais Energy - DD",
+    "contactID": "dccb7ca3-c369-4dca-a479-1a7a26d85520",
+    "accountCode": "B105A",
+    "accountName": "",
+    "description": "BORD GAIS EIR SEPA DD",
+    "lineAmount": 1247.95,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B105A",
+        "description": "BORD GAIS EIR SEPA DD",
+        "amount": 1247.95,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-04-17T15:38:55.257Z"
+  },
+  {
+    "date": "2025-01-17T00:00:00.000Z",
+    "bankTransactionID": "c8daee87-1077-4b37-bee0-aa7bf3651262",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 17.97,
+    "contactName": "GODADDY",
+    "contactID": "a249c57e-6f55-4e88-b0d2-5a93919dd895",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P1601US 18.43@0.97504",
+    "lineAmount": 17.97,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P1601US 18.43@0.97504",
+        "amount": 17.97,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T10:43:30.543Z"
+  },
+  {
+    "date": "2025-01-17T00:00:00.000Z",
+    "bankTransactionID": "46d598cf-2217-4dd2-82e0-d96506794bf7",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 44.83,
+    "contactName": "Xero (NZ) Ltd",
+    "contactID": "f41d73bc-cad1-4115-b866-a462dfa765c5",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P1701US 46.00@0.97456",
+    "lineAmount": 44.83,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P1701US 46.00@0.97456",
+        "amount": 44.83,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T10:45:09.053Z"
+  },
+  {
+    "date": "2025-01-23T00:00:00.000Z",
+    "bankTransactionID": "bef46d9b-f77c-4bf6-9b87-f06232b9de46",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 23.09,
+    "contactName": "Airtable",
+    "contactID": "aaca6601-02bb-4437-843a-499d44565ea0",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P2301US 24.00@0.96208",
+    "lineAmount": 23.09,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P2301US 24.00@0.96208",
+        "amount": 23.09,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T10:51:07.150Z"
+  },
+  {
+    "date": "2025-02-24T00:00:00.000Z",
+    "bankTransactionID": "8b2c5dcc-decc-48a5-8fca-136bfa6d1e27",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 22.98,
+    "contactName": "Airtable",
+    "contactID": "aaca6601-02bb-4437-843a-499d44565ea0",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P2302US 24.00@0.95750",
+    "lineAmount": 22.98,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P2302US 24.00@0.95750",
+        "amount": 22.98,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T10:51:07.410Z"
+  },
+  {
+    "date": "2025-01-13T00:00:00.000Z",
+    "bankTransactionID": "aa7f27eb-1f26-4450-a53a-e3c8e49d0cdf",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 145.88,
+    "contactName": "MiniExtensions",
+    "contactID": "a7fb48eb-0697-4dbd-8416-ef9135581aac",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P1201US149.00@0.97906",
+    "lineAmount": 145.88,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P1201US149.00@0.97906",
+        "amount": 145.88,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T10:53:48.440Z"
+  },
+  {
+    "date": "2025-02-13T00:00:00.000Z",
+    "bankTransactionID": "fae314bd-b2c2-4430-8d2d-593b47be2951",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 144.79,
+    "contactName": "MiniExtensions",
+    "contactID": "a7fb48eb-0697-4dbd-8416-ef9135581aac",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P1202US149.00@0.97174",
+    "lineAmount": 144.79,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P1202US149.00@0.97174",
+        "amount": 144.79,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T10:53:48.747Z"
+  },
+  {
+    "date": "2025-03-13T00:00:00.000Z",
+    "bankTransactionID": "d80eef07-3bc2-480a-8825-adb73d581e05",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 137.61,
+    "contactName": "MiniExtensions",
+    "contactID": "a7fb48eb-0697-4dbd-8416-ef9135581aac",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P1203US149.00@0.92355",
+    "lineAmount": 137.61,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P1203US149.00@0.92355",
+        "amount": 137.61,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T10:53:48.957Z"
+  },
+  {
+    "date": "2025-01-02T00:00:00.000Z",
+    "bankTransactionID": "194d46c0-244c-42a9-8f55-ef7cd49fbc33",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 56.56,
+    "contactName": "zapier",
+    "contactID": "59775a05-c752-473c-8f2d-b47a7c4d6f2a",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0101US 58.50@0.96683",
+    "lineAmount": 56.56,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0101US 58.50@0.96683",
+        "amount": 56.56,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T11:01:37.733Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "b997b04f-b134-4e25-b359-6f57c63772a9",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 56.53,
+    "contactName": "zapier",
+    "contactID": "59775a05-c752-473c-8f2d-b47a7c4d6f2a",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0102US 58.50@0.96632",
+    "lineAmount": 56.53,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0102US 58.50@0.96632",
+        "amount": 56.53,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T11:01:38.043Z"
+  },
+  {
+    "date": "2025-03-03T00:00:00.000Z",
+    "bankTransactionID": "e7168314-3998-4bfb-8df6-fcb36418cf71",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 56.47,
+    "contactName": "zapier",
+    "contactID": "59775a05-c752-473c-8f2d-b47a7c4d6f2a",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0103US 58.50@0.96529",
+    "lineAmount": 56.47,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0103US 58.50@0.96529",
+        "amount": 56.47,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T11:01:38.283Z"
+  },
+  {
+    "date": "2025-01-03T00:00:00.000Z",
+    "bankTransactionID": "2c28af63-e591-4594-90aa-1a53085e50a9",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 78.31,
+    "contactName": "Wistia Software company",
+    "contactID": "539ed1dd-c86b-4da2-816f-e09a007470d4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0201US 81.00@0.96679",
+    "lineAmount": 78.31,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0201US 81.00@0.96679",
+        "amount": 78.31,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T14:26:10.550Z"
+  },
+  {
+    "date": "2025-02-04T00:00:00.000Z",
+    "bankTransactionID": "c674bff7-00f1-4ce2-b4e6-37cefc89c886",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 78.27,
+    "contactName": "Wistia Software company",
+    "contactID": "539ed1dd-c86b-4da2-816f-e09a007470d4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0202US 81.00@0.96629",
+    "lineAmount": 78.27,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0202US 81.00@0.96629",
+        "amount": 78.27,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T14:26:10.827Z"
+  },
+  {
+    "date": "2025-03-03T00:00:00.000Z",
+    "bankTransactionID": "e7f86d3c-9b3e-4f20-9d20-5aa14592e7f4",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 78.19,
+    "contactName": "Wistia Software company",
+    "contactID": "539ed1dd-c86b-4da2-816f-e09a007470d4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0203US 81.00@0.96530",
+    "lineAmount": 78.19,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0203US 81.00@0.96530",
+        "amount": 78.19,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T14:26:11.170Z"
+  },
+  {
+    "date": "2025-04-03T00:00:00.000Z",
+    "bankTransactionID": "d89a686f-a7bc-40d8-ad7d-f47230112fc5",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 75.17,
+    "contactName": "Wistia Software company",
+    "contactID": "539ed1dd-c86b-4da2-816f-e09a007470d4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0204US 81.00@0.92802",
+    "lineAmount": 75.17,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0204US 81.00@0.92802",
+        "amount": 75.17,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T14:26:11.457Z"
+  },
+  {
+    "date": "2025-05-06T00:00:00.000Z",
+    "bankTransactionID": "2d1ade96-ca0b-40b7-b38b-ac1d47b0e9d3",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 71.9,
+    "contactName": "Wistia Software company",
+    "contactID": "539ed1dd-c86b-4da2-816f-e09a007470d4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0205US 81.00@0.88765",
+    "lineAmount": 71.9,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0205US 81.00@0.88765",
+        "amount": 71.9,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T14:26:11.743Z"
+  },
+  {
+    "date": "2025-06-03T00:00:00.000Z",
+    "bankTransactionID": "51329cae-d81a-46a0-ae6a-7805614f7f66",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 71.61,
+    "contactName": "Wistia Software company",
+    "contactID": "539ed1dd-c86b-4da2-816f-e09a007470d4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0206US 81.00@0.88407",
+    "lineAmount": 71.61,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0206US 81.00@0.88407",
+        "amount": 71.61,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T14:27:04.143Z"
+  },
+  {
+    "date": "2025-07-03T00:00:00.000Z",
+    "bankTransactionID": "4a6ff5be-a17a-48ab-8441-d6de38efedfa",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "553",
+    "total": 68.88,
+    "contactName": "Wistia Software company",
+    "contactID": "539ed1dd-c86b-4da2-816f-e09a007470d4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "P0207US 81.00@0.85037",
+    "lineAmount": 68.88,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "P0207US 81.00@0.85037",
+        "amount": 68.88,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T14:27:04.540Z"
+  },
+  {
+    "date": "2025-01-20T00:00:00.000Z",
+    "bankTransactionID": "f132fc28-5872-4e7e-a497-0a90729442e5",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "545",
+    "total": 20,
+    "contactName": "ACS Telecom - pleasehelp.io",
+    "contactID": "233f4068-674e-4694-95a4-abcbf86148b6",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS19JAN ACS*21536148",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS19JAN ACS*21536148",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T15:34:39.767Z"
+  },
+  {
+    "date": "2025-02-17T00:00:00.000Z",
+    "bankTransactionID": "69f0a932-d8df-4786-8213-b4d1b673cb26",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "545",
+    "total": 20,
+    "contactName": "ACS Telecom - pleasehelp.io",
+    "contactID": "233f4068-674e-4694-95a4-abcbf86148b6",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS16FEB ACS*22446433",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS16FEB ACS*22446433",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T15:34:40.030Z"
+  },
+  {
+    "date": "2025-03-18T00:00:00.000Z",
+    "bankTransactionID": "6bc0040c-ef0d-49bb-838b-77cad22d999a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "545",
+    "total": 20,
+    "contactName": "ACS Telecom - pleasehelp.io",
+    "contactID": "233f4068-674e-4694-95a4-abcbf86148b6",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS17MAR ACS*23521765",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS17MAR ACS*23521765",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T15:34:40.257Z"
+  },
+  {
+    "date": "2025-04-16T00:00:00.000Z",
+    "bankTransactionID": "e00dcaa2-8daf-48a0-9516-9a315c6326b8",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "545",
+    "total": 20,
+    "contactName": "ACS Telecom - pleasehelp.io",
+    "contactID": "233f4068-674e-4694-95a4-abcbf86148b6",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS15APR ACS*24455563",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS15APR ACS*24455563",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T15:34:40.533Z"
+  },
+  {
+    "date": "2025-06-13T00:00:00.000Z",
+    "bankTransactionID": "19e8c455-02ca-44ce-bdfe-e271ff3edd76",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "545",
+    "total": 20,
+    "contactName": "ACS Telecom - pleasehelp.io",
+    "contactID": "233f4068-674e-4694-95a4-abcbf86148b6",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS12JUN ACS*26374257",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS12JUN ACS*26374257",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T15:34:40.817Z"
+  },
+  {
+    "date": "2025-07-09T00:00:00.000Z",
+    "bankTransactionID": "58c60035-2a15-4a1c-8623-934666f5a549",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "545",
+    "total": 20,
+    "contactName": "ACS Telecom - pleasehelp.io",
+    "contactID": "233f4068-674e-4694-95a4-abcbf86148b6",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS08JUL ACS*27295516",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS08JUL ACS*27295516",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-15T15:34:41.000Z"
+  },
+  {
+    "date": "2025-05-28T00:00:00.000Z",
+    "bankTransactionID": "eaceb284-d09c-4d2e-bcab-3dce0e1ddeec",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 30621.05,
+    "contactName": "PAYROLL",
+    "contactID": "93c2fe4a-4d31-42b6-a0e2-381b952e19bc",
+    "accountCode": "B107",
+    "accountName": "",
+    "description": "4 Week Salary SEPA",
+    "lineAmount": 30621.05,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B107",
+        "description": "4 Week Salary SEPA",
+        "amount": 30621.05,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-16T20:05:16.560Z"
+  },
+  {
+    "date": "2025-06-27T00:00:00.000Z",
+    "bankTransactionID": "4466dcee-a992-4caf-890e-374ac70cdded",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 28638.65,
+    "contactName": "PAYROLL",
+    "contactID": "93c2fe4a-4d31-42b6-a0e2-381b952e19bc",
+    "accountCode": "B107",
+    "accountName": "",
+    "description": "Monthly Salary SEPA",
+    "lineAmount": 28638.65,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B107",
+        "description": "Monthly Salary SEPA",
+        "amount": 28638.65,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-16T20:05:31.530Z"
+  },
+  {
+    "date": "2025-03-28T00:00:00.000Z",
+    "bankTransactionID": "24fa23f4-cb9e-48db-a318-4d385fd875d2",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 28385.56,
+    "contactName": "PAYROLL",
+    "contactID": "93c2fe4a-4d31-42b6-a0e2-381b952e19bc",
+    "accountCode": "B107",
+    "accountName": "",
+    "description": "Monthly Salary SEPA",
+    "lineAmount": 28385.56,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B107",
+        "description": "Monthly Salary SEPA",
+        "amount": 28385.56,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-16T20:05:37.330Z"
+  },
+  {
+    "date": "2025-04-28T00:00:00.000Z",
+    "bankTransactionID": "6880ae21-d410-4202-8084-24f8cc6aa0e5",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 31171.53,
+    "contactName": "PAYROLL",
+    "contactID": "93c2fe4a-4d31-42b6-a0e2-381b952e19bc",
+    "accountCode": "B107",
+    "accountName": "",
+    "description": "Monthly Salary SEPA",
+    "lineAmount": 31171.53,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B107",
+        "description": "Monthly Salary SEPA",
+        "amount": 31171.53,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-16T20:05:38.373Z"
+  },
+  {
+    "date": "2025-02-28T00:00:00.000Z",
+    "bankTransactionID": "a6cc6d85-c07d-4661-9884-f6a0c70696a1",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 32700.7,
+    "contactName": "PAYROLL",
+    "contactID": "93c2fe4a-4d31-42b6-a0e2-381b952e19bc",
+    "accountCode": "B107",
+    "accountName": "",
+    "description": "Monthly Salary SEPA",
+    "lineAmount": 32700.7,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B107",
+        "description": "Monthly Salary SEPA",
+        "amount": 32700.7,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-16T20:05:43.650Z"
+  },
+  {
+    "date": "2025-01-31T00:00:00.000Z",
+    "bankTransactionID": "2e650331-ae46-46db-9eaf-ea563fd5f33b",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 29735.84,
+    "contactName": "PAYROLL",
+    "contactID": "93c2fe4a-4d31-42b6-a0e2-381b952e19bc",
+    "accountCode": "B107",
+    "accountName": "",
+    "description": "Monthly Salary SEPA",
+    "lineAmount": 29735.84,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B107",
+        "description": "Monthly Salary SEPA",
+        "amount": 29735.84,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-16T20:05:47.243Z"
+  },
+  {
+    "date": "2025-07-20T00:00:00.000Z",
+    "bankTransactionID": "ef95f81d-427a-429a-8a54-6b522757a74a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 24.99,
+    "contactName": "Woodies",
+    "contactID": "0b4a61a6-f501-4039-b6a1-9ec304eab40c",
+    "accountCode": "B102",
+    "accountName": "",
+    "description": "Weed killer",
+    "lineAmount": 24.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B102",
+        "description": "Weed killer",
+        "amount": 24.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:22:28.847Z"
+  },
+  {
+    "date": "2025-07-24T00:00:00.000Z",
+    "bankTransactionID": "c2d8e0bb-d827-48d4-8b8b-8344f3c4164f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.76,
+    "contactName": "BOI",
+    "contactID": "b5c53e29-4644-4525-90d3-85d49214ee3d",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.44",
+    "lineAmount": 0.76,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.44",
+        "amount": 0.76,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:35:27.107Z"
+  },
+  {
+    "date": "2025-07-24T00:00:00.000Z",
+    "bankTransactionID": "a1511945-d5a5-4e91-bbdf-d87c6ed39ea3",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.11,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.31",
+    "lineAmount": 0.11,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.31",
+        "amount": 0.11,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:35:34.880Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "75efbc85-84d0-48b7-9bb5-1ffb1708b896",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 36.16,
+    "contactName": "ADOBE",
+    "contactID": "eb1207a5-8d8d-4ed6-913e-753264365902",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "JUL  ADOBE SYSTEM",
+    "lineAmount": 36.16,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "JUL  ADOBE SYSTEM",
+        "amount": 36.16,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:35:41.933Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "1fb12d28-dde2-4888-948a-dbc27bbba21b",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 6.99,
+    "contactName": "Amazon Prime",
+    "contactID": "69d72592-ee4a-468b-a037-c622171ea98a",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 6.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 6.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:35:47.440Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "b5a82634-f4ae-4d31-b4f9-48f328cd12ba",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.41,
+    "contactName": "BOI",
+    "contactID": "b5c53e29-4644-4525-90d3-85d49214ee3d",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.44",
+    "lineAmount": 0.41,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.44",
+        "amount": 0.41,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:35:48.913Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "5e9755dd-3e70-408f-93a2-3276769c3251",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 2305.66,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 2305.66,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 2305.66,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:36:09.543Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "8c976e47-df71-40a0-9174-79db943c1231",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 31.73,
+    "contactName": "GODADDY",
+    "contactID": "a249c57e-6f55-4e88-b0d2-5a93919dd895",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 31.73,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 31.73,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:36:09.777Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "16aa0ffb-a130-451e-b8d6-8c8c01757341",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 484,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 484,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 484,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:36:29.553Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "d291c1cb-c44e-400f-a664-7937bf261585",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 9.34,
+    "contactName": "Flickr",
+    "contactID": "ee457030-fd33-4710-86f7-b5be42a6e5c6",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS23JUL FLICKR PRO M",
+    "lineAmount": 9.34,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS23JUL FLICKR PRO M",
+        "amount": 9.34,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:36:30.497Z"
+  },
+  {
+    "date": "2025-07-23T00:00:00.000Z",
+    "bankTransactionID": "760554a0-0c3a-48d4-932a-bf30a9137836",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 15,
+    "contactName": "MessageBird",
+    "contactID": "06d571df-485d-48af-bcea-812681c76acf",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 15,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 15,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:36:45.073Z"
+  },
+  {
+    "date": "2025-07-22T00:00:00.000Z",
+    "bankTransactionID": "d523003b-ef94-4c00-986b-3c10611a741d",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 36.89,
+    "contactName": "ADOBE",
+    "contactID": "eb1207a5-8d8d-4ed6-913e-753264365902",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS21JUL Adobe",
+    "lineAmount": 36.89,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS21JUL Adobe",
+        "amount": 36.89,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:36:47.290Z"
+  },
+  {
+    "date": "2025-07-22T00:00:00.000Z",
+    "bankTransactionID": "4824364c-4a25-47aa-a96e-00a64273662c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.11,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.31",
+    "lineAmount": 0.11,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.31",
+        "amount": 0.11,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:36:51.537Z"
+  },
+  {
+    "date": "2025-07-22T00:00:00.000Z",
+    "bankTransactionID": "20ce4cb7-7c6f-49aa-9e6f-947b9ddb1b86",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 243,
+    "contactName": "Trinity College",
+    "contactID": "b0a7662a-c903-43d7-8094-5084f5e0e0db",
+    "accountCode": "A109B",
+    "accountName": "",
+    "description": "Book of Kells Experience (Brufol)",
+    "lineAmount": 243,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A109B",
+        "description": "Book of Kells Experience (Brufol)",
+        "amount": 243,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:37:25.253Z"
+  },
+  {
+    "date": "2025-07-22T00:00:00.000Z",
+    "bankTransactionID": "1d5be43b-2ed7-4592-a00c-64a1b0c4abbd",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 71.99,
+    "contactName": "Upwork - CARD",
+    "contactID": "312bc631-97cd-471b-b8f3-bea17fc2a376",
+    "accountCode": "B118",
+    "accountName": "",
+    "description": "POS04AUG Upwork -6072",
+    "lineAmount": 71.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B118",
+        "description": "POS04AUG Upwork -6072",
+        "amount": 71.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:37:33.637Z"
+  },
+  {
+    "date": "2025-07-22T00:00:00.000Z",
+    "bankTransactionID": "0e891ec4-bed7-423a-9aee-fad6756d1c51",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 245.08,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE-I6V6ORRNBLN",
+    "lineAmount": 245.08,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE-I6V6ORRNBLN",
+        "amount": 245.08,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:37:53.323Z"
+  },
+  {
+    "date": "2025-07-22T00:00:00.000Z",
+    "bankTransactionID": "7f3934b3-faed-4b96-ab8f-08e0f59d2759",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:37:56.887Z"
+  },
+  {
+    "date": "2025-07-21T00:00:00.000Z",
+    "bankTransactionID": "d2d8c034-6160-43a5-8f82-addfe9f5c222",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 41.17,
+    "contactName": "GODADDY",
+    "contactID": "a249c57e-6f55-4e88-b0d2-5a93919dd895",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 41.17,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 41.17,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:38:04.093Z"
+  },
+  {
+    "date": "2025-07-21T00:00:00.000Z",
+    "bankTransactionID": "1199db46-8042-4dd4-9f09-29a743489b47",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.11,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.31",
+    "lineAmount": 0.11,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.31",
+        "amount": 0.11,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:38:05.903Z"
+  },
+  {
+    "date": "2025-07-21T00:00:00.000Z",
+    "bankTransactionID": "cd908d1b-52ec-47cf-8728-2f5b8999ea43",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS20JUL GOCAR CARSHA",
+    "total": 49.65,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 49.65,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 49.65,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:38:21.680Z"
+  },
+  {
+    "date": "2025-07-21T00:00:00.000Z",
+    "bankTransactionID": "3b05142d-619f-410c-8f19-f85e09440230",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 14.2,
+    "contactName": "Freenow* 9a34v1-2",
+    "contactID": "c8762a62-3e75-46ff-9b2c-04a4e0b4013d",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Accomm Transfer",
+    "lineAmount": 14.2,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Accomm Transfer",
+        "amount": 14.2,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:39:13.183Z"
+  },
+  {
+    "date": "2025-07-22T00:00:00.000Z",
+    "bankTransactionID": "9e62f613-899d-437b-94c4-cf6884e1dfbb",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 13,
+    "contactName": "Freenow* 9a34v1-2",
+    "contactID": "c8762a62-3e75-46ff-9b2c-04a4e0b4013d",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Accomm Transfer",
+    "lineAmount": 13,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Accomm Transfer",
+        "amount": 13,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:39:25.447Z"
+  },
+  {
+    "date": "2025-07-21T00:00:00.000Z",
+    "bankTransactionID": "0bed4da3-aa87-4da9-980c-de9dee8c93ef",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 1415,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 1415,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 1415,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:39:50.990Z"
+  },
+  {
+    "date": "2025-07-21T00:00:00.000Z",
+    "bankTransactionID": "a0fd0396-2648-4e05-b20a-d9ac2fe7e15c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 245.08,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "STRIPE-0IPJUXPNXMX",
+    "lineAmount": 245.08,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "STRIPE-0IPJUXPNXMX",
+        "amount": 245.08,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:39:57.717Z"
+  },
+  {
+    "date": "2025-07-18T00:00:00.000Z",
+    "bankTransactionID": "1893dc71-152c-4fae-a45e-4a2d77befa6d",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 1030,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 1030,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 1030,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:12.753Z"
+  },
+  {
+    "date": "2025-07-18T00:00:00.000Z",
+    "bankTransactionID": "f180f450-0b80-4544-b6fc-1cbbe98f99c5",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS17JUL GOCAR CARSHA",
+    "total": 24.65,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 24.65,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 24.65,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:15.090Z"
+  },
+  {
+    "date": "2025-07-18T00:00:00.000Z",
+    "bankTransactionID": "b6e609e1-d030-4f88-a272-0e6ea4b1d9b4",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS17JUL GOCAR CARSHA",
+    "total": 6.67,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 6.67,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 6.67,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:16.587Z"
+  },
+  {
+    "date": "2025-07-18T00:00:00.000Z",
+    "bankTransactionID": "df45e044-f1b8-4cbb-be0f-9a2afde89460",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 340,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "P20241075",
+    "lineAmount": 340,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "P20241075",
+        "amount": 340,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:21.223Z"
+  },
+  {
+    "date": "2025-07-15T00:00:00.000Z",
+    "bankTransactionID": "c12a78a6-dff6-4854-9335-74476a045e26",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:39.007Z"
+  },
+  {
+    "date": "2025-07-15T00:00:00.000Z",
+    "bankTransactionID": "b3814e58-e262-490b-a5b7-bd6dcdd4eac5",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS14JUL GOCAR CARSHA",
+    "total": 4,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 4,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 4,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:40.943Z"
+  },
+  {
+    "date": "2025-07-15T00:00:00.000Z",
+    "bankTransactionID": "c9520d6f-8250-4fce-8bfa-9cf67cade543",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 238,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "P20241075",
+    "lineAmount": 238,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "P20241075",
+        "amount": 238,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:44.077Z"
+  },
+  {
+    "date": "2025-07-15T00:00:00.000Z",
+    "bankTransactionID": "a983a9ab-6cd0-4a1e-8f07-a67542de0c6c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.11,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.31",
+    "lineAmount": 0.11,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.31",
+        "amount": 0.11,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:40:47.520Z"
+  },
+  {
+    "date": "2025-07-15T00:00:00.000Z",
+    "bankTransactionID": "e0ae4c22-ed3b-4db2-851f-93411ecc8042",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS14JUL GOCAR CARSHA",
+    "total": 16.64,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 16.64,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 16.64,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:41:08.713Z"
+  },
+  {
+    "date": "2025-07-15T00:00:00.000Z",
+    "bankTransactionID": "b58d5757-904e-4a1e-95dd-fca6299a3568",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 73.34,
+    "contactName": "Upwork - CARD",
+    "contactID": "312bc631-97cd-471b-b8f3-bea17fc2a376",
+    "accountCode": "B118",
+    "accountName": "",
+    "description": "POS04AUG Upwork -6072",
+    "lineAmount": 73.34,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B118",
+        "description": "POS04AUG Upwork -6072",
+        "amount": 73.34,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:41:13.073Z"
+  },
+  {
+    "date": "2025-07-16T00:00:00.000Z",
+    "bankTransactionID": "2083901b-0366-4e78-915c-55f2c0836173",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 22.29,
+    "contactName": "Facebook - CARD",
+    "contactID": "35396059-b88b-4d9b-b322-600b1a6607ab",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 22.29,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "",
+        "amount": 22.29,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:41:42.887Z"
+  },
+  {
+    "date": "2025-07-16T00:00:00.000Z",
+    "bankTransactionID": "e4354605-ac1a-4f97-9a68-b64115725e18",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 1510,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "ULEARN29658",
+    "lineAmount": 1510,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "ULEARN29658",
+        "amount": 1510,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:41:50.860Z"
+  },
+  {
+    "date": "2025-07-16T00:00:00.000Z",
+    "bankTransactionID": "dec42db6-698c-451e-b463-1d1d7eae334f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS15JUL GOCAR CARSHA",
+    "total": 20.65,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 20.65,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 20.65,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:41:58.153Z"
+  },
+  {
+    "date": "2025-07-16T00:00:00.000Z",
+    "bankTransactionID": "13e6e816-812c-46aa-b4cf-5361039e5a67",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 15,
+    "contactName": "MessageBird",
+    "contactID": "06d571df-485d-48af-bcea-812681c76acf",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 15,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 15,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:03.527Z"
+  },
+  {
+    "date": "2025-07-16T00:00:00.000Z",
+    "bankTransactionID": "bf48544e-b26a-40b6-8126-65dbf9d4319c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS15JUL GOCAR CARSHA",
+    "total": 17.6,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 17.6,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 17.6,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:05.840Z"
+  },
+  {
+    "date": "2025-07-16T00:00:00.000Z",
+    "bankTransactionID": "81a1a796-c929-4680-a0f2-92c4782f2249",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 486.8,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "RE ABROAD.INC. 025 GP",
+    "lineAmount": 486.8,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "RE ABROAD.INC. 025 GP",
+        "amount": 486.8,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:09.633Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "a0cd357e-86c9-4d64-b3cb-9d8b5a039093",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.8,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.80",
+    "lineAmount": 0.8,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.80",
+        "amount": 0.8,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:11.193Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "58bdcfac-44eb-4259-a09c-f4ecc94d826a",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS16JUL GOCAR CARSHA",
+    "total": 5.33,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 5.33,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 5.33,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:18.603Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "694747bf-e18e-47b5-8e44-b6b1b37dc99e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.11,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.31",
+    "lineAmount": 0.11,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.31",
+        "amount": 0.11,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:20.060Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "065cec68-8b1b-45fa-ac26-908cfa672454",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 11.43,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGGBP 000011.43",
+    "lineAmount": 11.43,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGGBP 000011.43",
+        "amount": 11.43,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:23.923Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "e7cf589e-1553-4590-bfcb-fe695174875c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 2800,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 2800,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 2800,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:37.153Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "477fcef6-159e-4ddc-8027-02789138d134",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 1650,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 1650,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 1650,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:40.087Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "5c02305a-7f3c-4237-ba32-7ef962d0d5f0",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "POS16JUL GOCAR CARSHA",
+    "total": 24.65,
+    "contactName": "GoCar",
+    "contactID": "5f010bce-574e-4170-908c-6e59af211715",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Transport (Van/CityCar)",
+    "lineAmount": 24.65,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Transport (Van/CityCar)",
+        "amount": 24.65,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:42.803Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "370ebacd-0cb4-4ba8-a58c-e0277eeb5876",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 186.19,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 186.19,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 186.19,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:42:50.073Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "9679d051-c35a-4f33-94a2-082d7175b388",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 815.8,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 815.8,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 815.8,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:43:04.560Z"
+  },
+  {
+    "date": "2025-07-17T00:00:00.000Z",
+    "bankTransactionID": "03477a69-e26d-4f88-ab28-16878d3ad70e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 77,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS09APR YAUNDRY",
+    "lineAmount": 77,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS09APR YAUNDRY",
+        "amount": 77,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-07-25T09:43:07.043Z"
+  },
+  {
+    "date": "2025-08-05T00:00:00.000Z",
+    "bankTransactionID": "6f032594-a6aa-4dd7-9bb5-2b29f35d871d",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 317.02,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 317.02,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 317.02,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:22:57.730Z"
+  },
+  {
+    "date": "2025-08-05T00:00:00.000Z",
+    "bankTransactionID": "0822dafb-db35-43a0-9de8-5e8b3e24b278",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 71.53,
+    "contactName": "Upwork - CARD",
+    "contactID": "312bc631-97cd-471b-b8f3-bea17fc2a376",
+    "accountCode": "B118",
+    "accountName": "",
+    "description": "POS04AUG Upwork -6072",
+    "lineAmount": 71.53,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B118",
+        "description": "POS04AUG Upwork -6072",
+        "amount": 71.53,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:22:57.740Z"
+  },
+  {
+    "date": "2025-08-06T00:00:00.000Z",
+    "bankTransactionID": "85661b3e-3924-4d2c-be68-2e5b23dddc45",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 290,
+    "contactName": "Dublin Bus",
+    "contactID": "0b1549d3-4f88-4fef-a2f3-07ec52740578",
+    "accountCode": "B112A",
+    "accountName": "",
+    "description": "POS19SEP BUS ATHA CLI",
+    "lineAmount": 290,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B112A",
+        "description": "POS19SEP BUS ATHA CLI",
+        "amount": 290,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:23:05.443Z"
+  },
+  {
+    "date": "2025-08-06T00:00:00.000Z",
+    "bankTransactionID": "39c91cce-afa4-434a-b830-c50933b72122",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 105.52,
+    "contactName": "CLAUDE AI",
+    "contactID": "f05d0f8f-77b4-4877-ad06-acd525f1fcc4",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "AO Software Subscription",
+    "lineAmount": 105.52,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "AO Software Subscription",
+        "amount": 105.52,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:23:11.507Z"
+  },
+  {
+    "date": "2025-08-06T00:00:00.000Z",
+    "bankTransactionID": "64069044-e1f2-473c-a4ec-d6d086b8ecde",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 245.08,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 245.08,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 245.08,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:23:15.290Z"
+  },
+  {
+    "date": "2025-08-11T00:00:00.000Z",
+    "bankTransactionID": "56edff55-bd83-40ce-b9e0-dd0c5ac10e48",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 30,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "POS09APR YAUNDRY",
+    "lineAmount": 30,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "POS09APR YAUNDRY",
+        "amount": 30,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:24:09.983Z"
+  },
+  {
+    "date": "2025-08-11T00:00:00.000Z",
+    "bankTransactionID": "f6b75af2-d940-46af-ba6f-d6499e0cf4bd",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.84,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGUSD 000000.80",
+    "lineAmount": 0.84,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGUSD 000000.80",
+        "amount": 0.84,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:24:17.300Z"
+  },
+  {
+    "date": "2025-09-18T00:00:00.000Z",
+    "bankTransactionID": "ca241f0d-4849-440d-9abe-412511aea88f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 16000,
+    "contactName": "LizPat Properties",
+    "contactID": "86c29ce8-4929-469e-89b0-dd93b3fc23a7",
+    "accountCode": "500",
+    "accountName": "",
+    "description": "Deposit - 13 Harcourt",
+    "lineAmount": 16000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "500",
+        "description": "Deposit - 13 Harcourt",
+        "amount": 16000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:27:36.890Z"
+  },
+  {
+    "date": "2025-09-18T00:00:00.000Z",
+    "bankTransactionID": "cc8f2438-f7c4-4af8-818d-f4946fc1191c",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 28.07,
+    "contactName": "GODADDY",
+    "contactID": "a249c57e-6f55-4e88-b0d2-5a93919dd895",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 28.07,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 28.07,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:27:41.390Z"
+  },
+  {
+    "date": "2025-09-22T00:00:00.000Z",
+    "bankTransactionID": "7d1196d5-5cb6-4abc-b678-ee54ff900860",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 15,
+    "contactName": "Bird",
+    "contactID": "116d996e-b5e5-45fc-891e-99bd336a31f8",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Chat Module",
+    "lineAmount": 15,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Chat Module",
+        "amount": 15,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:28:18.683Z"
+  },
+  {
+    "date": "2025-09-26T00:00:00.000Z",
+    "bankTransactionID": "a4ff6912-4035-4374-b7c6-c3bf822d0180",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 0.14,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "NEPOSCHGMXN 000000.91",
+    "lineAmount": 0.14,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "NEPOSCHGMXN 000000.91",
+        "amount": 0.14,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:30:48.023Z"
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "bankTransactionID": "59c07cbc-ca70-4b94-98d2-fe3726d04b47",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 10,
+    "contactName": "Bank Charges",
+    "contactID": "e861fb35-b61d-4412-8eca-c1a848f148f8",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "BOI BOL CHARGE",
+    "lineAmount": 10,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "BOI BOL CHARGE",
+        "amount": 10,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:30:56.023Z"
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "bankTransactionID": "d72dc376-bb8b-4fa9-a32c-8a7751352891",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 10,
+    "contactName": "Ulgebraz Technologies Pvt.Ltd",
+    "contactID": "24684c9c-202f-4a0b-b171-72ecb860b9be",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS26SEP ULGEBRAZ",
+    "lineAmount": 10,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS26SEP ULGEBRAZ",
+        "amount": 10,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:31:01.207Z"
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "bankTransactionID": "32a81ae2-5d23-453f-9270-a79747f6ea0f",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1.99,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 1.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 1.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:31:12.173Z"
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "bankTransactionID": "1bfd693e-a15a-421c-82e2-1d28497e22de",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 14.76,
+    "contactName": "Zoho",
+    "contactID": "b87cb3b3-1cf5-486f-b176-e774615bf51d",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS26SEP ZOHO-SIGN",
+    "lineAmount": 14.76,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS26SEP ZOHO-SIGN",
+        "amount": 14.76,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:31:19.320Z"
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "bankTransactionID": "69a66d52-d973-4dae-930b-5ab00911fe99",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 599.75,
+    "contactName": "Hubspot",
+    "contactID": "81d794fa-e065-433e-abfd-b1d7ce902d1b",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS18OCT HubSpot Irel",
+    "lineAmount": 599.75,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS18OCT HubSpot Irel",
+        "amount": 599.75,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:31:30.037Z"
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "bankTransactionID": "f381f9a9-53d2-4ba4-bb10-e755b8d64e32",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 17.5,
+    "contactName": "Muhammet Saritemur",
+    "contactID": "478bb715-9f7b-47bb-afff-e8d2a885e28c",
+    "accountCode": "B127",
+    "accountName": "",
+    "description": "Bank Fee",
+    "lineAmount": 17.5,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B127",
+        "description": "Bank Fee",
+        "amount": 17.5,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-10-13T11:33:01.733Z"
+  },
+  {
+    "date": "2025-10-30T00:00:00.000Z",
+    "bankTransactionID": "df631bf9-1b38-4ae1-8c4b-664965a01b81",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 128,
+    "contactName": "Virgin Media",
+    "contactID": "0f94c260-b72d-4ce6-9b2e-18b22234eda9",
+    "accountCode": "B104A",
+    "accountName": "",
+    "description": "POS26SEP VIRGIN MEDIA",
+    "lineAmount": 128,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104A",
+        "description": "POS26SEP VIRGIN MEDIA",
+        "amount": 128,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:46:04.443Z"
+  },
+  {
+    "date": "2025-10-30T00:00:00.000Z",
+    "bankTransactionID": "dc09e51c-4a96-4918-bac5-170eca3bb1eb",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 20,
+    "contactName": "EIR",
+    "contactID": "9aae58ca-f21d-4c2c-9caf-0ce994733542",
+    "accountCode": "B104",
+    "accountName": "",
+    "description": "POS30APR VESTA  *EIR",
+    "lineAmount": 20,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B104",
+        "description": "POS30APR VESTA  *EIR",
+        "amount": 20,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:46:07.387Z"
+  },
+  {
+    "date": "2025-10-30T00:00:00.000Z",
+    "bankTransactionID": "f9a91b1c-4d89-416f-a248-d96601fbf7f7",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 3350,
+    "contactName": "Blackhall Green - Apartment",
+    "contactID": "02234cbf-ea64-4134-bf8d-c00dc6cee599",
+    "accountCode": "B100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 3350,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B100",
+        "description": "",
+        "amount": 3350,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:46:27.433Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "26a04113-13c6-44d0-8fea-640b203e45e1",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE-TRANSFER",
+    "reference": "",
+    "total": 2900,
+    "contactName": "",
+    "contactID": "",
+    "accountCode": "ACC1",
+    "accountName": "",
+    "description": "Bank Transfer from Revolut EUR Main.",
+    "lineAmount": 2900,
+    "taxType": "",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "ACC1",
+        "description": "Bank Transfer from Revolut EUR Main.",
+        "amount": 2900
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:46:48.140Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "b4b95592-7f94-4f7b-9600-ae93f08eb50b",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 15,
+    "contactName": "Bird",
+    "contactID": "116d996e-b5e5-45fc-891e-99bd336a31f8",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Chat Module",
+    "lineAmount": 15,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Chat Module",
+        "amount": 15,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:46:59.377Z"
+  },
+  {
+    "date": "2025-11-02T00:00:00.000Z",
+    "bankTransactionID": "0d3ba091-e019-4acf-b6d6-c898308b8967",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 12.25,
+    "contactName": "Glendalough Visitor Centre",
+    "contactID": "c4800da0-7f8d-4ef5-9544-07ae58c92ae2",
+    "accountCode": "A109",
+    "accountName": "",
+    "description": "Coffee",
+    "lineAmount": 12.25,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A109",
+        "description": "Coffee",
+        "amount": 12.25,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:47:18.147Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "05840149-7dc5-43cc-9d39-7acf29a1dafe",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 99,
+    "contactName": "Westwood",
+    "contactID": "ee7e4231-7103-4bdf-a903-b5b6ac3104ba",
+    "accountCode": "BIK",
+    "accountName": "",
+    "description": "WESTWOOD DUN  SEPA DD",
+    "lineAmount": 99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "BIK",
+        "description": "WESTWOOD DUN  SEPA DD",
+        "amount": 99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:47:24.860Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "a76241ae-c5e2-47a3-9b3a-463bc122601e",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 77,
+    "contactName": "Yaundry",
+    "contactID": "07aad2e7-6985-418c-8fe4-66429e6425f8",
+    "accountCode": "A101",
+    "accountName": "",
+    "description": "Laundry Collect&Drop Service",
+    "lineAmount": 77,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A101",
+        "description": "Laundry Collect&Drop Service",
+        "amount": 77,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:47:27.253Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "a0bfc693-2b14-42e6-bf61-3ca63c792f5b",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 23.59,
+    "contactName": "GODADDY",
+    "contactID": "a249c57e-6f55-4e88-b0d2-5a93919dd895",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 23.59,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 23.59,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:47:33.027Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "7540da94-8797-4d80-88c9-bd943050ba36",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 99,
+    "contactName": "Westwood",
+    "contactID": "ee7e4231-7103-4bdf-a903-b5b6ac3104ba",
+    "accountCode": "BIK",
+    "accountName": "",
+    "description": "WESTWOOD DUN  SEPA DD",
+    "lineAmount": 99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "BIK",
+        "description": "WESTWOOD DUN  SEPA DD",
+        "amount": 99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:47:53.583Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "c6eb9397-097b-405f-aca9-9801afbe6a59",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 36.9,
+    "contactName": "Zoho",
+    "contactID": "b87cb3b3-1cf5-486f-b176-e774615bf51d",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "POS03NOV ZOHO-RECRUIT",
+    "lineAmount": 36.9,
+    "taxType": "TAX004",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "POS03NOV ZOHO-RECRUIT",
+        "amount": 36.9,
+        "taxType": "TAX004"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:47:57.873Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "76e9092e-3d9d-4650-b6b8-5d34a6271e61",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 369.73,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 369.73,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 369.73,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:48:04.443Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "9dd37dce-2491-40c9-b026-b330088c4999",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 258.3,
+    "contactName": "Indeed Recruitment",
+    "contactID": "0c426dbf-783e-4c83-abd0-030ccec92b8a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "HR recruit ad",
+    "lineAmount": 258.3,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "HR recruit ad",
+        "amount": 258.3,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:48:21.660Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "bankTransactionID": "8cc4a714-e391-4589-91b6-aba38785f39b",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 298.89,
+    "contactName": "CARD - Google",
+    "contactID": "b376e613-6258-446a-a323-397e51b66e68",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Google Apps Bus",
+    "lineAmount": 298.89,
+    "taxType": "TAX004",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Google Apps Bus",
+        "amount": 298.89,
+        "taxType": "TAX004"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:48:30.540Z"
+  },
+  {
+    "date": "2025-10-31T00:00:00.000Z",
+    "bankTransactionID": "a4514bb9-18a9-459a-8a43-66a74b9c1942",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1000,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B110",
+    "accountName": "",
+    "description": "POS25SEP GOOGLE *ADS1",
+    "lineAmount": 1000,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B110",
+        "description": "POS25SEP GOOGLE *ADS1",
+        "amount": 1000,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:48:35.227Z"
+  },
+  {
+    "date": "2025-10-30T00:00:00.000Z",
+    "bankTransactionID": "11e989f8-1a59-4ef1-a9ac-bb44e68296ac",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 779,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 779,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 779,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:49:08.237Z"
+  },
+  {
+    "date": "2025-10-29T00:00:00.000Z",
+    "bankTransactionID": "7f0320c1-63ef-42c1-b33b-c3c04d6f8003",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 1.99,
+    "contactName": "Google",
+    "contactID": "7b097e7d-2b5a-47c3-be45-7507b98faf6a",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 1.99,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "",
+        "amount": 1.99,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:49:43.570Z"
+  },
+  {
+    "date": "2025-10-29T00:00:00.000Z",
+    "bankTransactionID": "c29514d0-ff3c-431b-9477-69e70abfede6",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 15.6,
+    "contactName": "EFLOW",
+    "contactID": "fe3cc687-237b-4815-9f84-b8eaa66d15f2",
+    "accountCode": "A104",
+    "accountName": "",
+    "description": "Airport ",
+    "lineAmount": 15.6,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "A104",
+        "description": "Airport ",
+        "amount": 15.6,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:49:59.330Z"
+  },
+  {
+    "date": "2025-10-29T00:00:00.000Z",
+    "bankTransactionID": "49606ff0-7653-4e11-a233-ed90bde8c2be",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "SPEND",
+    "reference": "",
+    "total": 23,
+    "contactName": "WeTransfer",
+    "contactID": "984cf547-124e-446e-9563-69562a124d89",
+    "accountCode": "B106",
+    "accountName": "",
+    "description": "Online Storage",
+    "lineAmount": 23,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "B106",
+        "description": "Online Storage",
+        "amount": 23,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:50:23.017Z"
+  },
+  {
+    "date": "2025-10-29T00:00:00.000Z",
+    "bankTransactionID": "9ced4976-ba65-46a1-9db1-f7a2d31752e6",
+    "bankAccount": "ULearn Limited Current account",
+    "bankAccountCode": "ACC1",
+    "type": "RECEIVE",
+    "reference": "",
+    "total": 923,
+    "contactName": "ULearn-Student",
+    "contactID": "d667d7eb-a1ab-41ff-afab-1695e8e364ed",
+    "accountCode": "100",
+    "accountName": "",
+    "description": "",
+    "lineAmount": 923,
+    "taxType": "NONE",
+    "lineItemCount": 1,
+    "allLineItems": [
+      {
+        "accountCode": "100",
+        "description": "",
+        "amount": 923,
+        "taxType": "NONE"
+      }
+    ],
+    "status": "AUTHORISED",
+    "currencyCode": "EUR",
+    "updatedDateUTC": "2025-11-04T09:50:43.310Z"
+  }
+]

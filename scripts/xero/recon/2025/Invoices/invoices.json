@@ -1,0 +1,113 @@
+{
+  "generated": "2025-11-22T17:23:19.742Z",
+  "totalInvoices": 4,
+  "totalAmountDue": 24663.4,
+  "invoices": [
+    {
+      "invoiceNumber": "INV-0396",
+      "invoiceID": "157131a0-dac7-4e04-93d8-18971675310c",
+      "contact": "IES Marius Torres",
+      "contactPerson": "Laura Moreno Sorolla",
+      "contactEmail": "lauramoreno@mariustorres.com",
+      "reference": "IES-Marius-Torres-26",
+      "issueDate": "2025-11-19T00:00:00.000Z",
+      "dueDate": "2026-01-16T00:00:00.000Z",
+      "totalDue": 17618,
+      "amountPaid": 0,
+      "amountDue": 17618,
+      "status": "AUTHORISED",
+      "studentCount": 26,
+      "groupType": "Junior Group - General English",
+      "arrivalDate": "2026-02-13",
+      "attachments": [
+        {
+          "fileName": "Laura Moreno Sorolla - 26Stdts_19.11.2025.pdf",
+          "mimeType": "application/pdf",
+          "contentLength": 123845
+        }
+      ],
+      "paymentSchedule": {
+        "total": 17618,
+        "currency": "EUR",
+        "terms": "10% / 45% / 45%",
+        "payments": [
+          {
+            "name": "Deposit Payment",
+            "percentage": 10,
+            "amount": 1761.80,
+            "dueDate": "Upon receipt",
+            "status": "UNPAID"
+          },
+          {
+            "name": "Payment 2",
+            "percentage": 45,
+            "amount": 7928.10,
+            "dueDate": "2025-12-19",
+            "status": "UNPAID"
+          },
+          {
+            "name": "Final - 4Wks Pre-Arrival",
+            "percentage": 45,
+            "amount": 7928.10,
+            "dueDate": "2026-01-16",
+            "status": "UNPAID"
+          }
+        ]
+      },
+      "notes": "Quote created by Cenker Ozan Akman. Full payment required 4 weeks prior to arrival (16 Jan 2026).",
+      "pdfPath": "/home/hub/public_html/fins/scripts/xero/recon/2025/Invoices/Laura Moreno Sorolla - 26Stdts_19.11.2025.pdf"
+    },
+    {
+      "invoiceNumber": "INV-0392",
+      "invoiceID": "907a19af-b805-4dbf-a653-017f5b82b62d",
+      "contact": "Moacir Junior",
+      "reference": "Moacir-Brazil",
+      "issueDate": "2025-04-28T00:00:00.000Z",
+      "dueDate": "2025-04-28T00:00:00.000Z",
+      "totalDue": 1840,
+      "amountPaid": 1590,
+      "amountDue": 250,
+      "status": "AUTHORISED",
+      "attachments": [
+        {
+          "fileName": "Moacir Junior Group_28.04.2025.pdf",
+          "mimeType": "application/pdf",
+          "contentLength": 199471
+        }
+      ],
+      "paymentSchedule": null,
+      "notes": "",
+      "pdfPath": "/home/hub/public_html/fins/scripts/xero/recon/2025/Invoices/Moacir Junior Group_28.04.2025.pdf"
+    },
+    {
+      "invoiceNumber": "INV-0384",
+      "invoiceID": "a327f0ae-8d23-42e7-88cb-63c8e2a16fbb",
+      "contact": "Azur Education",
+      "reference": "MADRID",
+      "issueDate": "2025-02-20T00:00:00.000Z",
+      "dueDate": "2025-02-20T00:00:00.000Z",
+      "totalDue": 6714,
+      "amountPaid": 5918.6,
+      "amountDue": 795.4,
+      "status": "AUTHORISED",
+      "attachments": [],
+      "paymentSchedule": null,
+      "notes": ""
+    },
+    {
+      "invoiceNumber": "INV-0367",
+      "invoiceID": "52815991-c073-4354-8238-88f8e4b3785c",
+      "contact": "Temple Inns Limited",
+      "reference": "UL202224-TI",
+      "issueDate": "2024-01-01T00:00:00.000Z",
+      "dueDate": "2024-01-01T00:00:00.000Z",
+      "totalDue": 6000,
+      "amountPaid": 0,
+      "amountDue": 6000,
+      "status": "AUTHORISED",
+      "attachments": [],
+      "paymentSchedule": null,
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,5007 @@
+{
+  "url": "https://developers.google.com/google-ads/api/fields/v22/asset_group_asset",
+  "title": "asset_group_asset  |  Google Ads API  |  Google for DevelopersGoogleGoogle",
+  "headings": [
+    {
+      "level": "h1",
+      "text": "asset_group_asset\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences."
+    },
+    {
+      "level": "h2",
+      "text": "AI-generated Key Takeaways"
+    },
+    {
+      "level": "h4",
+      "text": "Fields/Segments/Metrics"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.asset"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.asset_group"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.field_type"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.policy_summary.approval_status"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.policy_summary.policy_topic_entries"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.policy_summary.review_status"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.primary_status"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.primary_status_details"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.primary_status_reasons"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.resource_name"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.source"
+    },
+    {
+      "level": "h2",
+      "text": "asset_group_asset.status"
+    },
+    {
+      "level": "h2",
+      "text": "segments.ad_network_type"
+    },
+    {
+      "level": "h2",
+      "text": "segments.conversion_action"
+    },
+    {
+      "level": "h2",
+      "text": "segments.conversion_action_category"
+    },
+    {
+      "level": "h2",
+      "text": "segments.conversion_action_name"
+    },
+    {
+      "level": "h2",
+      "text": "segments.date"
+    },
+    {
+      "level": "h2",
+      "text": "segments.day_of_week"
+    },
+    {
+      "level": "h2",
+      "text": "segments.device"
+    },
+    {
+      "level": "h2",
+      "text": "segments.month"
+    },
+    {
+      "level": "h2",
+      "text": "segments.quarter"
+    },
+    {
+      "level": "h2",
+      "text": "segments.week"
+    },
+    {
+      "level": "h2",
+      "text": "segments.year"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.all_conversions"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.all_conversions_from_interactions_rate"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.all_conversions_from_interactions_value_per_interaction"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.all_conversions_value"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.all_conversions_value_per_cost"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.average_cost"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.average_cpc"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.clicks"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.conversions"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.conversions_from_interactions_rate"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.conversions_from_interactions_value_per_interaction"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.conversions_value"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.conversions_value_per_cost"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.cost_micros"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.cost_per_all_conversions"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.cost_per_conversion"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.cross_device_conversions"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.cross_device_conversions_value"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.ctr"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.engagement_rate"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.engagements"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.impressions"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.interaction_rate"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.interactions"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.value_per_all_conversions"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.value_per_conversion"
+    },
+    {
+      "level": "h2",
+      "text": "metrics.view_through_conversions"
+    }
+  ],
+  "codeBlocks": [
+    "AssetGroupAsset",
+    "asset_group_asset",
+    "asset_group_asset",
+    "asset_group_asset",
+    "asset_group_asset",
+    "asset_group_asset",
+    "asset_group_asset",
+    "asset_group_asset",
+    "RESOURCE_NAME",
+    "RESOURCE_NAME",
+    "ENUM\n              AD_IMAGEBOOK_ON_GOOGLEBUSINESS_LOGOBUSINESS_MESSAGEBUSINESS_NAMECALLCALLOUTCALL_TO_ACTION_SELECTIONDEMAND_GEN_CAROUSEL_CARDDESCRIPTIONHEADLINEHOTEL_CALLOUTHOTEL_PROPERTYLANDING_PAGE_PREVIEWLANDSCAPE_LOGOLEAD_FORMLOGOLONG_HEADLINEMANDATORY_AD_TEXTMARKETING_IMAGEMEDIA_BUNDLEMOBILE_APPPORTRAIT_MARKETING_IMAGEPRICEPROMOTIONRELATED_YOUTUBE_VIDEOSSITELINKSQUARE_MARKETING_IMAGESTRUCTURED_SNIPPETTALL_PORTRAIT_MARKETING_IMAGEUNKNOWNUNSPECIFIEDVIDEOYOUTUBE_VIDEO",
+    "google.ads.googleads.v22.enums.AssetFieldTypeEnum.AssetFieldType",
+    "ENUM\n              APPROVEDAPPROVED_LIMITEDAREA_OF_INTEREST_ONLYDISAPPROVEDUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.PolicyApprovalStatusEnum.PolicyApprovalStatus",
+    "google.ads.googleads.v22.common.PolicyTopicEntry",
+    "ENUM\n              ELIGIBLE_MAY_SERVEREVIEWEDREVIEW_IN_PROGRESSUNDER_APPEALUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.PolicyReviewStatusEnum.PolicyReviewStatus",
+    "ENUM\n              ELIGIBLELIMITEDNOT_ELIGIBLEPAUSEDPENDINGREMOVEDUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusEnum.AssetLinkPrimaryStatus",
+    "google.ads.googleads.v22.common.AssetLinkPrimaryStatusDetails",
+    "ENUM\n              ASSET_APPROVED_LABELEDASSET_DISAPPROVEDASSET_LINK_PAUSEDASSET_LINK_REMOVEDASSET_UNDER_REVIEWUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusReasonEnum.AssetLinkPrimaryStatusReason",
+    "customers/{customer_id}/assetGroupAssets/{asset_group_id}~{asset_id}~{field_type}",
+    "RESOURCE_NAME",
+    "ENUM\n              ADVERTISERAUTOMATICALLY_CREATEDUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.AssetSourceEnum.AssetSource",
+    "ENUM\n              ENABLEDPAUSEDREMOVEDUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.AssetLinkStatusEnum.AssetLinkStatus",
+    "ENUM\n              CONTENTDISCOVERGMAILGOOGLE_OWNED_CHANNELSGOOGLE_TVMAPSMIXEDSEARCHSEARCH_PARTNERSUNKNOWNUNSPECIFIEDYOUTUBE",
+    "google.ads.googleads.v22.enums.AdNetworkTypeEnum.AdNetworkType",
+    "RESOURCE_NAME",
+    "ENUM\n              ADD_TO_CARTBEGIN_CHECKOUTBOOK_APPOINTMENTCONTACTCONVERTED_LEADDEFAULTDOWNLOADENGAGEMENTGET_DIRECTIONSIMPORTED_LEADOUTBOUND_CLICKPAGE_VIEWPHONE_CALL_LEADPURCHASEQUALIFIED_LEADREQUEST_QUOTESIGNUPSTORE_SALESTORE_VISITSUBMIT_LEAD_FORMSUBSCRIBE_PAIDUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.ConversionActionCategoryEnum.ConversionActionCategory",
+    "ENUM\n              FRIDAYMONDAYSATURDAYSUNDAYTHURSDAYTUESDAYUNKNOWNUNSPECIFIEDWEDNESDAY",
+    "google.ads.googleads.v22.enums.DayOfWeekEnum.DayOfWeek",
+    "ENUM\n              CONNECTED_TVDESKTOPMOBILEOTHERTABLETUNKNOWNUNSPECIFIED",
+    "google.ads.googleads.v22.enums.DeviceEnum.Device"
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Attributed resources"
+      ],
+      "rows": [
+        [
+          "asset"
+        ],
+        [
+          "asset_group"
+        ],
+        [
+          "campaign"
+        ],
+        [
+          "customer"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "info_outline\n           Resource fields"
+      ],
+      "rows": [
+        [
+          "asset"
+        ],
+        [
+          "asset_group"
+        ],
+        [
+          "field_type"
+        ],
+        [
+          "policy_summary.approval_status"
+        ],
+        [
+          "policy_summary.policy_topic_entries"
+        ],
+        [
+          "policy_summary.review_status"
+        ],
+        [
+          "primary_status"
+        ],
+        [
+          "primary_status_details"
+        ],
+        [
+          "primary_status_reasons"
+        ],
+        [
+          "resource_name"
+        ],
+        [
+          "source"
+        ],
+        [
+          "status"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "layers\n           Segments"
+      ],
+      "rows": [
+        [
+          "ad_network_type"
+        ],
+        [
+          "conversion_action"
+        ],
+        [
+          "conversion_action_category"
+        ],
+        [
+          "conversion_action_name"
+        ],
+        [
+          "date"
+        ],
+        [
+          "day_of_week"
+        ],
+        [
+          "device"
+        ],
+        [
+          "month"
+        ],
+        [
+          "quarter"
+        ],
+        [
+          "week"
+        ],
+        [
+          "year"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "show_chart\n           Metrics"
+      ],
+      "rows": [
+        [
+          "all_conversions"
+        ],
+        [
+          "all_conversions_from_interactions_rate"
+        ],
+        [
+          "all_conversions_from_interactions_value_per_interaction"
+        ],
+        [
+          "all_conversions_value"
+        ],
+        [
+          "all_conversions_value_per_cost"
+        ],
+        [
+          "average_cost"
+        ],
+        [
+          "average_cpc"
+        ],
+        [
+          "clicks"
+        ],
+        [
+          "conversions"
+        ],
+        [
+          "conversions_from_interactions_rate"
+        ],
+        [
+          "conversions_from_interactions_value_per_interaction"
+        ],
+        [
+          "conversions_value"
+        ],
+        [
+          "conversions_value_per_cost"
+        ],
+        [
+          "cost_micros"
+        ],
+        [
+          "cost_per_all_conversions"
+        ],
+        [
+          "cost_per_conversion"
+        ],
+        [
+          "cross_device_conversions"
+        ],
+        [
+          "cross_device_conversions_value"
+        ],
+        [
+          "ctr"
+        ],
+        [
+          "engagement_rate"
+        ],
+        [
+          "engagements"
+        ],
+        [
+          "impressions"
+        ],
+        [
+          "interaction_rate"
+        ],
+        [
+          "interactions"
+        ],
+        [
+          "value_per_all_conversions"
+        ],
+        [
+          "value_per_conversion"
+        ],
+        [
+          "view_through_conversions"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.asset",
+        "asset_group_asset.asset_group",
+        "asset_group_asset.field_type",
+        "asset_group_asset.policy_summary.approval_status",
+        "asset_group_asset.policy_summary.policy_topic_entries",
+        "asset_group_asset.policy_summary.review_status",
+        "asset_group_asset.primary_status",
+        "asset_group_asset.primary_status_details",
+        "asset_group_asset.primary_status_reasons",
+        "asset_group_asset.resource_name",
+        "asset_group_asset.source",
+        "asset_group_asset.status",
+        "segments.ad_network_type",
+        "segments.conversion_action",
+        "segments.conversion_action_category",
+        "segments.conversion_action_name",
+        "segments.date",
+        "segments.day_of_week",
+        "segments.device",
+        "segments.month",
+        "segments.quarter",
+        "segments.week",
+        "segments.year",
+        "metrics.all_conversions",
+        "metrics.all_conversions_from_interactions_rate",
+        "metrics.all_conversions_from_interactions_value_per_interaction",
+        "metrics.all_conversions_value",
+        "metrics.all_conversions_value_per_cost",
+        "metrics.average_cost",
+        "metrics.average_cpc",
+        "metrics.clicks",
+        "metrics.conversions",
+        "metrics.conversions_from_interactions_rate",
+        "metrics.conversions_from_interactions_value_per_interaction",
+        "metrics.conversions_value",
+        "metrics.conversions_value_per_cost",
+        "metrics.cost_micros",
+        "metrics.cost_per_all_conversions",
+        "metrics.cost_per_conversion",
+        "metrics.cross_device_conversions",
+        "metrics.cross_device_conversions_value",
+        "metrics.ctr",
+        "metrics.engagement_rate",
+        "metrics.engagements",
+        "metrics.impressions",
+        "metrics.interaction_rate",
+        "metrics.interactions",
+        "metrics.value_per_all_conversions",
+        "metrics.value_per_conversion",
+        "metrics.view_through_conversions"
+      ],
+      "rows": [
+        [
+          "asset_group_asset.asset\n          \n          Field descriptionImmutable. The asset which this asset group asset is linking.\n          CategoryATTRIBUTE\n          Data TypeRESOURCE_NAME\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableFalse\n          RepeatedFalse",
+          "Field description",
+          "Immutable. The asset which this asset group asset is linking.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "RESOURCE_NAME",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "False",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Immutable. The asset which this asset group asset is linking."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.asset_group\n          \n          Field descriptionImmutable. The asset group which this asset group asset is linking.\n          CategoryATTRIBUTE\n          Data TypeRESOURCE_NAME\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableFalse\n          RepeatedFalse",
+          "Field description",
+          "Immutable. The asset group which this asset group asset is linking.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "RESOURCE_NAME",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "False",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Immutable. The asset group which this asset group asset is linking."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.field_type\n          \n          Field descriptionThe description of the placement of the asset within the asset group. For example: HEADLINE, YOUTUBE_VIDEO etc\n          CategoryATTRIBUTE\n          Data Type\n            ENUM\n              AD_IMAGEBOOK_ON_GOOGLEBUSINESS_LOGOBUSINESS_MESSAGEBUSINESS_NAMECALLCALLOUTCALL_TO_ACTION_SELECTIONDEMAND_GEN_CAROUSEL_CARDDESCRIPTIONHEADLINEHOTEL_CALLOUTHOTEL_PROPERTYLANDING_PAGE_PREVIEWLANDSCAPE_LOGOLEAD_FORMLOGOLONG_HEADLINEMANDATORY_AD_TEXTMARKETING_IMAGEMEDIA_BUNDLEMOBILE_APPPORTRAIT_MARKETING_IMAGEPRICEPROMOTIONRELATED_YOUTUBE_VIDEOSSITELINKSQUARE_MARKETING_IMAGESTRUCTURED_SNIPPETTALL_PORTRAIT_MARKETING_IMAGEUNKNOWNUNSPECIFIEDVIDEOYOUTUBE_VIDEO\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.AssetFieldTypeEnum.AssetFieldType\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The description of the placement of the asset within the asset group. For example: HEADLINE, YOUTUBE_VIDEO etc",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "ENUM\n              AD_IMAGEBOOK_ON_GOOGLEBUSINESS_LOGOBUSINESS_MESSAGEBUSINESS_NAMECALLCALLOUTCALL_TO_ACTION_SELECTIONDEMAND_GEN_CAROUSEL_CARDDESCRIPTIONHEADLINEHOTEL_CALLOUTHOTEL_PROPERTYLANDING_PAGE_PREVIEWLANDSCAPE_LOGOLEAD_FORMLOGOLONG_HEADLINEMANDATORY_AD_TEXTMARKETING_IMAGEMEDIA_BUNDLEMOBILE_APPPORTRAIT_MARKETING_IMAGEPRICEPROMOTIONRELATED_YOUTUBE_VIDEOSSITELINKSQUARE_MARKETING_IMAGESTRUCTURED_SNIPPETTALL_PORTRAIT_MARKETING_IMAGEUNKNOWNUNSPECIFIEDVIDEOYOUTUBE_VIDEO",
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetFieldTypeEnum.AssetFieldType",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The description of the placement of the asset within the asset group. For example: HEADLINE, YOUTUBE_VIDEO etc"
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              AD_IMAGEBOOK_ON_GOOGLEBUSINESS_LOGOBUSINESS_MESSAGEBUSINESS_NAMECALLCALLOUTCALL_TO_ACTION_SELECTIONDEMAND_GEN_CAROUSEL_CARDDESCRIPTIONHEADLINEHOTEL_CALLOUTHOTEL_PROPERTYLANDING_PAGE_PREVIEWLANDSCAPE_LOGOLEAD_FORMLOGOLONG_HEADLINEMANDATORY_AD_TEXTMARKETING_IMAGEMEDIA_BUNDLEMOBILE_APPPORTRAIT_MARKETING_IMAGEPRICEPROMOTIONRELATED_YOUTUBE_VIDEOSSITELINKSQUARE_MARKETING_IMAGESTRUCTURED_SNIPPETTALL_PORTRAIT_MARKETING_IMAGEUNKNOWNUNSPECIFIEDVIDEOYOUTUBE_VIDEO"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetFieldTypeEnum.AssetFieldType"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.policy_summary.approval_status\n          \n          Field descriptionThe overall approval status, which is calculated based on the status of its individual policy topic entries.\n          CategoryATTRIBUTE\n          Data Type\n            ENUM\n              APPROVEDAPPROVED_LIMITEDAREA_OF_INTEREST_ONLYDISAPPROVEDUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.PolicyApprovalStatusEnum.PolicyApprovalStatus\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The overall approval status, which is calculated based on the status of its individual policy topic entries.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "ENUM\n              APPROVEDAPPROVED_LIMITEDAREA_OF_INTEREST_ONLYDISAPPROVEDUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.PolicyApprovalStatusEnum.PolicyApprovalStatus",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The overall approval status, which is calculated based on the status of its individual policy topic entries."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              APPROVEDAPPROVED_LIMITEDAREA_OF_INTEREST_ONLYDISAPPROVEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.PolicyApprovalStatusEnum.PolicyApprovalStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.policy_summary.policy_topic_entries\n          \n          Field descriptionThe list of policy findings.\n          CategoryATTRIBUTE\n          Data TypeMESSAGE\n          Type URLgoogle.ads.googleads.v22.common.PolicyTopicEntry\n          FilterableFalse\n          SelectableTrue\n          SortableFalse\n          RepeatedTrue",
+          "Field description",
+          "The list of policy findings.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "MESSAGE",
+          "Type URL",
+          "google.ads.googleads.v22.common.PolicyTopicEntry",
+          "Filterable",
+          "False",
+          "Selectable",
+          "True",
+          "Sortable",
+          "False",
+          "Repeated",
+          "True"
+        ],
+        [
+          "Field description",
+          "The list of policy findings."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "MESSAGE"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.common.PolicyTopicEntry"
+        ],
+        [
+          "Filterable",
+          "False"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "True"
+        ],
+        [
+          "asset_group_asset.policy_summary.review_status\n          \n          Field descriptionWhere in the review process the resource is.\n          CategoryATTRIBUTE\n          Data Type\n            ENUM\n              ELIGIBLE_MAY_SERVEREVIEWEDREVIEW_IN_PROGRESSUNDER_APPEALUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.PolicyReviewStatusEnum.PolicyReviewStatus\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Where in the review process the resource is.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "ENUM\n              ELIGIBLE_MAY_SERVEREVIEWEDREVIEW_IN_PROGRESSUNDER_APPEALUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.PolicyReviewStatusEnum.PolicyReviewStatus",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Where in the review process the resource is."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ELIGIBLE_MAY_SERVEREVIEWEDREVIEW_IN_PROGRESSUNDER_APPEALUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.PolicyReviewStatusEnum.PolicyReviewStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.primary_status\n          \n          Field descriptionOutput only. Provides the PrimaryStatus of this asset link. Primary status is meant essentially to differentiate between the plain \"status\" field, which has advertiser set values of enabled, paused, or removed. The primary status takes into account other signals (for assets its mainly policy and quality approvals) to come up with a more comprehensive status to indicate its serving state.\n          CategoryATTRIBUTE\n          Data Type\n            ENUM\n              ELIGIBLELIMITEDNOT_ELIGIBLEPAUSEDPENDINGREMOVEDUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.AssetLinkPrimaryStatusEnum.AssetLinkPrimaryStatus\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Output only. Provides the PrimaryStatus of this asset link. Primary status is meant essentially to differentiate between the plain \"status\" field, which has advertiser set values of enabled, paused, or removed. The primary status takes into account other signals (for assets its mainly policy and quality approvals) to come up with a more comprehensive status to indicate its serving state.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "ENUM\n              ELIGIBLELIMITEDNOT_ELIGIBLEPAUSEDPENDINGREMOVEDUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusEnum.AssetLinkPrimaryStatus",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Output only. Provides the PrimaryStatus of this asset link. Primary status is meant essentially to differentiate between the plain \"status\" field, which has advertiser set values of enabled, paused, or removed. The primary status takes into account other signals (for assets its mainly policy and quality approvals) to come up with a more comprehensive status to indicate its serving state."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ELIGIBLELIMITEDNOT_ELIGIBLEPAUSEDPENDINGREMOVEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusEnum.AssetLinkPrimaryStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.primary_status_details\n          \n          Field descriptionOutput only. Provides the details of the primary status and its associated reasons.\n          CategoryATTRIBUTE\n          Data TypeMESSAGE\n          Type URLgoogle.ads.googleads.v22.common.AssetLinkPrimaryStatusDetails\n          FilterableFalse\n          SelectableTrue\n          SortableFalse\n          RepeatedTrue",
+          "Field description",
+          "Output only. Provides the details of the primary status and its associated reasons.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "MESSAGE",
+          "Type URL",
+          "google.ads.googleads.v22.common.AssetLinkPrimaryStatusDetails",
+          "Filterable",
+          "False",
+          "Selectable",
+          "True",
+          "Sortable",
+          "False",
+          "Repeated",
+          "True"
+        ],
+        [
+          "Field description",
+          "Output only. Provides the details of the primary status and its associated reasons."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "MESSAGE"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.common.AssetLinkPrimaryStatusDetails"
+        ],
+        [
+          "Filterable",
+          "False"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "True"
+        ],
+        [
+          "asset_group_asset.primary_status_reasons\n          \n          Field descriptionOutput only. Provides a list of reasons for why an asset is not serving or not serving at full capacity.\n          CategoryATTRIBUTE\n          Data Type\n            ENUM\n              ASSET_APPROVED_LABELEDASSET_DISAPPROVEDASSET_LINK_PAUSEDASSET_LINK_REMOVEDASSET_UNDER_REVIEWUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.AssetLinkPrimaryStatusReasonEnum.AssetLinkPrimaryStatusReason\n          FilterableTrue\n          SelectableTrue\n          SortableFalse\n          RepeatedTrue",
+          "Field description",
+          "Output only. Provides a list of reasons for why an asset is not serving or not serving at full capacity.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "ENUM\n              ASSET_APPROVED_LABELEDASSET_DISAPPROVEDASSET_LINK_PAUSEDASSET_LINK_REMOVEDASSET_UNDER_REVIEWUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusReasonEnum.AssetLinkPrimaryStatusReason",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "False",
+          "Repeated",
+          "True"
+        ],
+        [
+          "Field description",
+          "Output only. Provides a list of reasons for why an asset is not serving or not serving at full capacity."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ASSET_APPROVED_LABELEDASSET_DISAPPROVEDASSET_LINK_PAUSEDASSET_LINK_REMOVEDASSET_UNDER_REVIEWUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusReasonEnum.AssetLinkPrimaryStatusReason"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "True"
+        ],
+        [
+          "asset_group_asset.resource_name\n          \n          Field descriptionImmutable. The resource name of the asset group asset. Asset group asset resource name have the form: customers/{customer_id}/assetGroupAssets/{asset_group_id}~{asset_id}~{field_type}\n          CategoryATTRIBUTE\n          Data TypeRESOURCE_NAME\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableFalse\n          RepeatedFalse",
+          "Field description",
+          "Immutable. The resource name of the asset group asset. Asset group asset resource name have the form: customers/{customer_id}/assetGroupAssets/{asset_group_id}~{asset_id}~{field_type}",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "RESOURCE_NAME",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "False",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Immutable. The resource name of the asset group asset. Asset group asset resource name have the form: customers/{customer_id}/assetGroupAssets/{asset_group_id}~{asset_id}~{field_type}"
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.source\n          \n          Field descriptionOutput only. Source of the asset group asset.\n          CategoryATTRIBUTE\n          Data Type\n            ENUM\n              ADVERTISERAUTOMATICALLY_CREATEDUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.AssetSourceEnum.AssetSource\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Output only. Source of the asset group asset.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "ENUM\n              ADVERTISERAUTOMATICALLY_CREATEDUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetSourceEnum.AssetSource",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Output only. Source of the asset group asset."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ADVERTISERAUTOMATICALLY_CREATEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetSourceEnum.AssetSource"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "asset_group_asset.status\n          \n          Field descriptionThe status of the link between an asset and asset group.\n          CategoryATTRIBUTE\n          Data Type\n            ENUM\n              ENABLEDPAUSEDREMOVEDUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.AssetLinkStatusEnum.AssetLinkStatus\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The status of the link between an asset and asset group.",
+          "Category",
+          "ATTRIBUTE",
+          "Data Type",
+          "ENUM\n              ENABLEDPAUSEDREMOVEDUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkStatusEnum.AssetLinkStatus",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The status of the link between an asset and asset group."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ENABLEDPAUSEDREMOVEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkStatusEnum.AssetLinkStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.ad_network_type\n          \n          Field descriptionAd network type.\n          CategorySEGMENT\n          Data Type\n            ENUM\n              CONTENTDISCOVERGMAILGOOGLE_OWNED_CHANNELSGOOGLE_TVMAPSMIXEDSEARCHSEARCH_PARTNERSUNKNOWNUNSPECIFIEDYOUTUBE\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.AdNetworkTypeEnum.AdNetworkType\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Ad network type.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "ENUM\n              CONTENTDISCOVERGMAILGOOGLE_OWNED_CHANNELSGOOGLE_TVMAPSMIXEDSEARCHSEARCH_PARTNERSUNKNOWNUNSPECIFIEDYOUTUBE",
+          "Type URL",
+          "google.ads.googleads.v22.enums.AdNetworkTypeEnum.AdNetworkType",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Ad network type."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              CONTENTDISCOVERGMAILGOOGLE_OWNED_CHANNELSGOOGLE_TVMAPSMIXEDSEARCHSEARCH_PARTNERSUNKNOWNUNSPECIFIEDYOUTUBE"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AdNetworkTypeEnum.AdNetworkType"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.conversion_action\n          \n          Field descriptionResource name of the conversion action.\n          CategorySEGMENT\n          Data TypeRESOURCE_NAME\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Resource name of the conversion action.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "RESOURCE_NAME",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Resource name of the conversion action."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.conversion_action_category\n          \n          Field descriptionConversion action category.\n          CategorySEGMENT\n          Data Type\n            ENUM\n              ADD_TO_CARTBEGIN_CHECKOUTBOOK_APPOINTMENTCONTACTCONVERTED_LEADDEFAULTDOWNLOADENGAGEMENTGET_DIRECTIONSIMPORTED_LEADOUTBOUND_CLICKPAGE_VIEWPHONE_CALL_LEADPURCHASEQUALIFIED_LEADREQUEST_QUOTESIGNUPSTORE_SALESTORE_VISITSUBMIT_LEAD_FORMSUBSCRIBE_PAIDUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.ConversionActionCategoryEnum.ConversionActionCategory\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Conversion action category.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "ENUM\n              ADD_TO_CARTBEGIN_CHECKOUTBOOK_APPOINTMENTCONTACTCONVERTED_LEADDEFAULTDOWNLOADENGAGEMENTGET_DIRECTIONSIMPORTED_LEADOUTBOUND_CLICKPAGE_VIEWPHONE_CALL_LEADPURCHASEQUALIFIED_LEADREQUEST_QUOTESIGNUPSTORE_SALESTORE_VISITSUBMIT_LEAD_FORMSUBSCRIBE_PAIDUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.ConversionActionCategoryEnum.ConversionActionCategory",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Conversion action category."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ADD_TO_CARTBEGIN_CHECKOUTBOOK_APPOINTMENTCONTACTCONVERTED_LEADDEFAULTDOWNLOADENGAGEMENTGET_DIRECTIONSIMPORTED_LEADOUTBOUND_CLICKPAGE_VIEWPHONE_CALL_LEADPURCHASEQUALIFIED_LEADREQUEST_QUOTESIGNUPSTORE_SALESTORE_VISITSUBMIT_LEAD_FORMSUBSCRIBE_PAIDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.ConversionActionCategoryEnum.ConversionActionCategory"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.conversion_action_name\n          \n          Field descriptionConversion action name.\n          CategorySEGMENT\n          Data TypeSTRING\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Conversion action name.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "STRING",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Conversion action name."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "STRING"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.date\n          \n          Field descriptionDate to which metrics apply. yyyy-MM-dd format, for example, 2018-04-17.\n          CategorySEGMENT\n          Data TypeDATE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Date to which metrics apply. yyyy-MM-dd format, for example, 2018-04-17.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "DATE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Date to which metrics apply. yyyy-MM-dd format, for example, 2018-04-17."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.day_of_week\n          \n          Field descriptionDay of the week, for example, MONDAY.\n          CategorySEGMENT\n          Data Type\n            ENUM\n              FRIDAYMONDAYSATURDAYSUNDAYTHURSDAYTUESDAYUNKNOWNUNSPECIFIEDWEDNESDAY\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.DayOfWeekEnum.DayOfWeek\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Day of the week, for example, MONDAY.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "ENUM\n              FRIDAYMONDAYSATURDAYSUNDAYTHURSDAYTUESDAYUNKNOWNUNSPECIFIEDWEDNESDAY",
+          "Type URL",
+          "google.ads.googleads.v22.enums.DayOfWeekEnum.DayOfWeek",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Day of the week, for example, MONDAY."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              FRIDAYMONDAYSATURDAYSUNDAYTHURSDAYTUESDAYUNKNOWNUNSPECIFIEDWEDNESDAY"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.DayOfWeekEnum.DayOfWeek"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.device\n          \n          Field descriptionDevice to which metrics apply.\n          CategorySEGMENT\n          Data Type\n            ENUM\n              CONNECTED_TVDESKTOPMOBILEOTHERTABLETUNKNOWNUNSPECIFIED\n            \n            \n          Type URLgoogle.ads.googleads.v22.enums.DeviceEnum.Device\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Device to which metrics apply.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "ENUM\n              CONNECTED_TVDESKTOPMOBILEOTHERTABLETUNKNOWNUNSPECIFIED",
+          "Type URL",
+          "google.ads.googleads.v22.enums.DeviceEnum.Device",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Device to which metrics apply."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              CONNECTED_TVDESKTOPMOBILEOTHERTABLETUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.DeviceEnum.Device"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.month\n          \n          Field descriptionMonth as represented by the date of the first day of a month. Formatted as yyyy-MM-dd.\n          CategorySEGMENT\n          Data TypeDATE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Month as represented by the date of the first day of a month. Formatted as yyyy-MM-dd.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "DATE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Month as represented by the date of the first day of a month. Formatted as yyyy-MM-dd."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.quarter\n          \n          Field descriptionQuarter as represented by the date of the first day of a quarter. Uses the calendar year for quarters, for example, the second quarter of 2018 starts on 2018-04-01. Formatted as yyyy-MM-dd.\n          CategorySEGMENT\n          Data TypeDATE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Quarter as represented by the date of the first day of a quarter. Uses the calendar year for quarters, for example, the second quarter of 2018 starts on 2018-04-01. Formatted as yyyy-MM-dd.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "DATE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Quarter as represented by the date of the first day of a quarter. Uses the calendar year for quarters, for example, the second quarter of 2018 starts on 2018-04-01. Formatted as yyyy-MM-dd."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.week\n          \n          Field descriptionWeek as defined as Monday through Sunday, and represented by the date of Monday. Formatted as yyyy-MM-dd.\n          CategorySEGMENT\n          Data TypeDATE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Week as defined as Monday through Sunday, and represented by the date of Monday. Formatted as yyyy-MM-dd.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "DATE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Week as defined as Monday through Sunday, and represented by the date of Monday. Formatted as yyyy-MM-dd."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "segments.year\n          \n          Field descriptionYear, formatted as yyyy.\n          CategorySEGMENT\n          Data TypeINT32\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Year, formatted as yyyy.",
+          "Category",
+          "SEGMENT",
+          "Data Type",
+          "INT32",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Year, formatted as yyyy."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "INT32"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.all_conversions\n          \n          Field descriptionThe total number of conversions. This includes all conversions regardless of the value of include_in_conversions_metric.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The total number of conversions. This includes all conversions regardless of the value of include_in_conversions_metric.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The total number of conversions. This includes all conversions regardless of the value of include_in_conversions_metric."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.all_conversions_from_interactions_rate\n          \n          Field descriptionAll conversions from interactions (as oppose to view through conversions) divided by the number of ad interactions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "All conversions from interactions (as oppose to view through conversions) divided by the number of ad interactions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "All conversions from interactions (as oppose to view through conversions) divided by the number of ad interactions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.all_conversions_from_interactions_value_per_interaction\n          \n          Field descriptionThe value of all conversions from interactions divided by the total number of interactions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of all conversions from interactions divided by the total number of interactions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of all conversions from interactions divided by the total number of interactions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.all_conversions_value\n          \n          Field descriptionThe value of all conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of all conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of all conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.all_conversions_value_per_cost\n          \n          Field descriptionThe value of all conversions divided by the total cost of ad interactions (such as clicks for text ads or views for video ads).\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of all conversions divided by the total cost of ad interactions (such as clicks for text ads or views for video ads).",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of all conversions divided by the total cost of ad interactions (such as clicks for text ads or views for video ads)."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.average_cost\n          \n          Field descriptionThe average amount you pay per interaction. This amount is the total cost of your ads divided by the total number of interactions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The average amount you pay per interaction. This amount is the total cost of your ads divided by the total number of interactions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The average amount you pay per interaction. This amount is the total cost of your ads divided by the total number of interactions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.average_cpc\n          \n          Field descriptionThe total cost of all clicks divided by the total number of clicks received.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The total cost of all clicks divided by the total number of clicks received.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The total cost of all clicks divided by the total number of clicks received."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.clicks\n          \n          Field descriptionThe number of clicks.\n          CategoryMETRIC\n          Data TypeINT64\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The number of clicks.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "INT64",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The number of clicks."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.conversions\n          \n          Field descriptionThe number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.conversions_from_interactions_rate\n          \n          Field descriptionConversions from interactions divided by the number of ad interactions (such as clicks for text ads or views for video ads). This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Conversions from interactions divided by the number of ad interactions (such as clicks for text ads or views for video ads). This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Conversions from interactions divided by the number of ad interactions (such as clicks for text ads or views for video ads). This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.conversions_from_interactions_value_per_interaction\n          \n          Field descriptionThe value of conversions from interactions divided by the number of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of conversions from interactions divided by the number of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of conversions from interactions divided by the number of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.conversions_value\n          \n          Field descriptionThe value of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.conversions_value_per_cost\n          \n          Field descriptionThe value of conversions divided by the cost of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of conversions divided by the cost of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of conversions divided by the cost of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.cost_micros\n          \n          Field descriptionThe sum of your cost-per-click (CPC) and cost-per-thousand impressions (CPM) costs during this period.\n          CategoryMETRIC\n          Data TypeINT64\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The sum of your cost-per-click (CPC) and cost-per-thousand impressions (CPM) costs during this period.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "INT64",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The sum of your cost-per-click (CPC) and cost-per-thousand impressions (CPM) costs during this period."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.cost_per_all_conversions\n          \n          Field descriptionThe cost of ad interactions divided by all conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The cost of ad interactions divided by all conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The cost of ad interactions divided by all conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.cost_per_conversion\n          \n          Field descriptionThe cost of ad interactions divided by conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The cost of ad interactions divided by conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The cost of ad interactions divided by conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.cross_device_conversions\n          \n          Field descriptionConversions from when a customer clicks on a Google Ads ad on one device, then converts on a different device or browser. Cross-device conversions are already included in all_conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Conversions from when a customer clicks on a Google Ads ad on one device, then converts on a different device or browser. Cross-device conversions are already included in all_conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Conversions from when a customer clicks on a Google Ads ad on one device, then converts on a different device or browser. Cross-device conversions are already included in all_conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.cross_device_conversions_value\n          \n          Field descriptionThe sum of the value of cross-device conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The sum of the value of cross-device conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The sum of the value of cross-device conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.ctr\n          \n          Field descriptionThe number of clicks your ad receives (Clicks) divided by the number of times your ad is shown (Impressions).\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The number of clicks your ad receives (Clicks) divided by the number of times your ad is shown (Impressions).",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The number of clicks your ad receives (Clicks) divided by the number of times your ad is shown (Impressions)."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.engagement_rate\n          \n          Field descriptionHow often people engage with your ad after it's shown to them. This is the number of ad expansions divided by the number of times your ad is shown.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "How often people engage with your ad after it's shown to them. This is the number of ad expansions divided by the number of times your ad is shown.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "How often people engage with your ad after it's shown to them. This is the number of ad expansions divided by the number of times your ad is shown."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.engagements\n          \n          Field descriptionThe number of engagements. An engagement occurs when a viewer expands your Lightbox ad. Also, in the future, other ad types may support engagement metrics.\n          CategoryMETRIC\n          Data TypeINT64\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The number of engagements. An engagement occurs when a viewer expands your Lightbox ad. Also, in the future, other ad types may support engagement metrics.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "INT64",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The number of engagements. An engagement occurs when a viewer expands your Lightbox ad. Also, in the future, other ad types may support engagement metrics."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.impressions\n          \n          Field descriptionCount of how often your ad has appeared on a search results page or website on the Google Network.\n          CategoryMETRIC\n          Data TypeINT64\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "Count of how often your ad has appeared on a search results page or website on the Google Network.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "INT64",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "Count of how often your ad has appeared on a search results page or website on the Google Network."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.interaction_rate\n          \n          Field descriptionHow often people interact with your ad after it is shown to them. This is the number of interactions divided by the number of times your ad is shown.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "How often people interact with your ad after it is shown to them. This is the number of interactions divided by the number of times your ad is shown.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "How often people interact with your ad after it is shown to them. This is the number of interactions divided by the number of times your ad is shown."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.interactions\n          \n          Field descriptionThe number of interactions. An interaction is the main user action associated with an ad format-clicks for text and shopping ads, views for video ads, and so on.\n          CategoryMETRIC\n          Data TypeINT64\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The number of interactions. An interaction is the main user action associated with an ad format-clicks for text and shopping ads, views for video ads, and so on.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "INT64",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The number of interactions. An interaction is the main user action associated with an ad format-clicks for text and shopping ads, views for video ads, and so on."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.value_per_all_conversions\n          \n          Field descriptionThe value of all conversions divided by the number of all conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of all conversions divided by the number of all conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of all conversions divided by the number of all conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.value_per_conversion\n          \n          Field descriptionThe value of conversions divided by the number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.\n          CategoryMETRIC\n          Data TypeDOUBLE\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The value of conversions divided by the number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "DOUBLE",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The value of conversions divided by the number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ],
+        [
+          "metrics.view_through_conversions\n          \n          Field descriptionThe total number of view-through conversions. These happen when a customer sees an image or rich media ad, then later completes a conversion on your site without interacting with (for example, clicking on) another ad.\n          CategoryMETRIC\n          Data TypeINT64\n          Type URLN/A\n          FilterableTrue\n          SelectableTrue\n          SortableTrue\n          RepeatedFalse",
+          "Field description",
+          "The total number of view-through conversions. These happen when a customer sees an image or rich media ad, then later completes a conversion on your site without interacting with (for example, clicking on) another ad.",
+          "Category",
+          "METRIC",
+          "Data Type",
+          "INT64",
+          "Type URL",
+          "N/A",
+          "Filterable",
+          "True",
+          "Selectable",
+          "True",
+          "Sortable",
+          "True",
+          "Repeated",
+          "False"
+        ],
+        [
+          "Field description",
+          "The total number of view-through conversions. These happen when a customer sees an image or rich media ad, then later completes a conversion on your site without interacting with (for example, clicking on) another ad."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.asset"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Immutable. The asset which this asset group asset is linking."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.asset_group"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Immutable. The asset group which this asset group asset is linking."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.field_type"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The description of the placement of the asset within the asset group. For example: HEADLINE, YOUTUBE_VIDEO etc"
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              AD_IMAGEBOOK_ON_GOOGLEBUSINESS_LOGOBUSINESS_MESSAGEBUSINESS_NAMECALLCALLOUTCALL_TO_ACTION_SELECTIONDEMAND_GEN_CAROUSEL_CARDDESCRIPTIONHEADLINEHOTEL_CALLOUTHOTEL_PROPERTYLANDING_PAGE_PREVIEWLANDSCAPE_LOGOLEAD_FORMLOGOLONG_HEADLINEMANDATORY_AD_TEXTMARKETING_IMAGEMEDIA_BUNDLEMOBILE_APPPORTRAIT_MARKETING_IMAGEPRICEPROMOTIONRELATED_YOUTUBE_VIDEOSSITELINKSQUARE_MARKETING_IMAGESTRUCTURED_SNIPPETTALL_PORTRAIT_MARKETING_IMAGEUNKNOWNUNSPECIFIEDVIDEOYOUTUBE_VIDEO"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetFieldTypeEnum.AssetFieldType"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.policy_summary.approval_status"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The overall approval status, which is calculated based on the status of its individual policy topic entries."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              APPROVEDAPPROVED_LIMITEDAREA_OF_INTEREST_ONLYDISAPPROVEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.PolicyApprovalStatusEnum.PolicyApprovalStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.policy_summary.policy_topic_entries"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The list of policy findings."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "MESSAGE"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.common.PolicyTopicEntry"
+        ],
+        [
+          "Filterable",
+          "False"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "True"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.policy_summary.review_status"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Where in the review process the resource is."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ELIGIBLE_MAY_SERVEREVIEWEDREVIEW_IN_PROGRESSUNDER_APPEALUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.PolicyReviewStatusEnum.PolicyReviewStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.primary_status"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Output only. Provides the PrimaryStatus of this asset link. Primary status is meant essentially to differentiate between the plain \"status\" field, which has advertiser set values of enabled, paused, or removed. The primary status takes into account other signals (for assets its mainly policy and quality approvals) to come up with a more comprehensive status to indicate its serving state."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ELIGIBLELIMITEDNOT_ELIGIBLEPAUSEDPENDINGREMOVEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusEnum.AssetLinkPrimaryStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.primary_status_details"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Output only. Provides the details of the primary status and its associated reasons."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "MESSAGE"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.common.AssetLinkPrimaryStatusDetails"
+        ],
+        [
+          "Filterable",
+          "False"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "True"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.primary_status_reasons"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Output only. Provides a list of reasons for why an asset is not serving or not serving at full capacity."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ASSET_APPROVED_LABELEDASSET_DISAPPROVEDASSET_LINK_PAUSEDASSET_LINK_REMOVEDASSET_UNDER_REVIEWUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkPrimaryStatusReasonEnum.AssetLinkPrimaryStatusReason"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "True"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.resource_name"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Immutable. The resource name of the asset group asset. Asset group asset resource name have the form: customers/{customer_id}/assetGroupAssets/{asset_group_id}~{asset_id}~{field_type}"
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "False"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.source"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Output only. Source of the asset group asset."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ADVERTISERAUTOMATICALLY_CREATEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetSourceEnum.AssetSource"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "asset_group_asset.status"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The status of the link between an asset and asset group."
+        ],
+        [
+          "Category",
+          "ATTRIBUTE"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ENABLEDPAUSEDREMOVEDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AssetLinkStatusEnum.AssetLinkStatus"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.ad_network_type"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Ad network type."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              CONTENTDISCOVERGMAILGOOGLE_OWNED_CHANNELSGOOGLE_TVMAPSMIXEDSEARCHSEARCH_PARTNERSUNKNOWNUNSPECIFIEDYOUTUBE"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.AdNetworkTypeEnum.AdNetworkType"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.conversion_action"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Resource name of the conversion action."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "RESOURCE_NAME"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.conversion_action_category"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Conversion action category."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              ADD_TO_CARTBEGIN_CHECKOUTBOOK_APPOINTMENTCONTACTCONVERTED_LEADDEFAULTDOWNLOADENGAGEMENTGET_DIRECTIONSIMPORTED_LEADOUTBOUND_CLICKPAGE_VIEWPHONE_CALL_LEADPURCHASEQUALIFIED_LEADREQUEST_QUOTESIGNUPSTORE_SALESTORE_VISITSUBMIT_LEAD_FORMSUBSCRIBE_PAIDUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.ConversionActionCategoryEnum.ConversionActionCategory"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.conversion_action_name"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Conversion action name."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "STRING"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.date"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Date to which metrics apply. yyyy-MM-dd format, for example, 2018-04-17."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.day_of_week"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Day of the week, for example, MONDAY."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              FRIDAYMONDAYSATURDAYSUNDAYTHURSDAYTUESDAYUNKNOWNUNSPECIFIEDWEDNESDAY"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.DayOfWeekEnum.DayOfWeek"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.device"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Device to which metrics apply."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "ENUM\n              CONNECTED_TVDESKTOPMOBILEOTHERTABLETUNKNOWNUNSPECIFIED"
+        ],
+        [
+          "Type URL",
+          "google.ads.googleads.v22.enums.DeviceEnum.Device"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.month"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Month as represented by the date of the first day of a month. Formatted as yyyy-MM-dd."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.quarter"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Quarter as represented by the date of the first day of a quarter. Uses the calendar year for quarters, for example, the second quarter of 2018 starts on 2018-04-01. Formatted as yyyy-MM-dd."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.week"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Week as defined as Monday through Sunday, and represented by the date of Monday. Formatted as yyyy-MM-dd."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "DATE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "segments.year"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Year, formatted as yyyy."
+        ],
+        [
+          "Category",
+          "SEGMENT"
+        ],
+        [
+          "Data Type",
+          "INT32"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.all_conversions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The total number of conversions. This includes all conversions regardless of the value of include_in_conversions_metric."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.all_conversions_from_interactions_rate"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "All conversions from interactions (as oppose to view through conversions) divided by the number of ad interactions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.all_conversions_from_interactions_value_per_interaction"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of all conversions from interactions divided by the total number of interactions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.all_conversions_value"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of all conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.all_conversions_value_per_cost"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of all conversions divided by the total cost of ad interactions (such as clicks for text ads or views for video ads)."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.average_cost"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The average amount you pay per interaction. This amount is the total cost of your ads divided by the total number of interactions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.average_cpc"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The total cost of all clicks divided by the total number of clicks received."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.clicks"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The number of clicks."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.conversions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.conversions_from_interactions_rate"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Conversions from interactions divided by the number of ad interactions (such as clicks for text ads or views for video ads). This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.conversions_from_interactions_value_per_interaction"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of conversions from interactions divided by the number of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.conversions_value"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.conversions_value_per_cost"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of conversions divided by the cost of ad interactions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.cost_micros"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The sum of your cost-per-click (CPC) and cost-per-thousand impressions (CPM) costs during this period."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.cost_per_all_conversions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The cost of ad interactions divided by all conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.cost_per_conversion"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The cost of ad interactions divided by conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.cross_device_conversions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Conversions from when a customer clicks on a Google Ads ad on one device, then converts on a different device or browser. Cross-device conversions are already included in all_conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.cross_device_conversions_value"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The sum of the value of cross-device conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.ctr"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The number of clicks your ad receives (Clicks) divided by the number of times your ad is shown (Impressions)."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.engagement_rate"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "How often people engage with your ad after it's shown to them. This is the number of ad expansions divided by the number of times your ad is shown."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.engagements"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The number of engagements. An engagement occurs when a viewer expands your Lightbox ad. Also, in the future, other ad types may support engagement metrics."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.impressions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "Count of how often your ad has appeared on a search results page or website on the Google Network."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.interaction_rate"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "How often people interact with your ad after it is shown to them. This is the number of interactions divided by the number of times your ad is shown."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.interactions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The number of interactions. An interaction is the main user action associated with an ad format-clicks for text and shopping ads, views for video ads, and so on."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.value_per_all_conversions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of all conversions divided by the number of all conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.value_per_conversion"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The value of conversions divided by the number of conversions. This only includes conversion actions which include_in_conversions_metric attribute is set to true. If you use conversion-based bidding, your bid strategies will optimize for these conversions."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "DOUBLE"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "metrics.view_through_conversions"
+      ],
+      "rows": [
+        [
+          "Field description",
+          "The total number of view-through conversions. These happen when a customer sees an image or rich media ad, then later completes a conversion on your site without interacting with (for example, clicking on) another ad."
+        ],
+        [
+          "Category",
+          "METRIC"
+        ],
+        [
+          "Data Type",
+          "INT64"
+        ],
+        [
+          "Type URL",
+          "N/A"
+        ],
+        [
+          "Filterable",
+          "True"
+        ],
+        [
+          "Selectable",
+          "True"
+        ],
+        [
+          "Sortable",
+          "True"
+        ],
+        [
+          "Repeated",
+          "False"
+        ]
+      ]
+    }
+  ],
+  "mainText": "To discuss and provide feedback on our products, join the official Google Ads Discord channel in the Google Advertising and Measurement Community server.\n        \n      \n    \n  \n  \n  \n\n  \n    \n    \n    \n  \n  \n    \n    \n    \n      \n  \n    \n        Home\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Products\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Google Ads API\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Reference\n      \n  \n  \n    \n  \n  \n\n    \n      \n    \n    \n  \n    \n  \n  \n    \n\n  \n  \n    \n    Send feedback\n  \n  \n\n  \n    \n      asset_group_asset\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences.\n    \n  \n    \n  \n      \n    \n  \n  \n\n  \n  \n  \n    \n    \n    \n  \n\n  \n    \n      \n  \n    \n    \n    \n    AI-generated Key Takeaways\n    \n  \n  \n    \n      \n        outlined_flag\n      \n    \n    \n      \n        \n          The AssetGroupAsset resource links an asset to an asset group in the Google Ads API and can be used with related resources in SELECT and WHERE clauses.\n\n        \n      \n        \n          When asset_group_asset is used in the FROM clause, specific metrics and segments are available for analysis.\n\n        \n      \n        \n          The document details various resource fields for asset_group_asset, including asset and asset group names, field type, policy summary, and status.\n\n        \n      \n        \n          A list of segments and metrics are provided that can be used with the asset_group_asset resource to analyze performance data.\n\n        \n      \n        \n          The document provides detailed descriptions for various segments and metrics, outlining their definitions, data types, and whether they are filterable, selectable, sortable, or repeatable.\n\n        \n      \n    \n  \n\n    \n    \n\n  \n    Help me build a query\n  \n\n\n\nAssetGroupAsset is the link between an asset and an asset group. Adding an AssetGroupAsset links an asset with an asset group.\n\n\n\n  \n    \n      Attributed resources\n    \n    \n      \n          asset\n      \n          asset_group\n      \n          campaign\n      \n          customer\n      \n  \n\nFields from the above resources may be selected along with this\n  resource in your SELECT and WHERE clauses. These fields will not segment\n  metrics in your SELECT clause.\n\nFields/Segments/Metrics\nThis page shows all metrics and segments that can be put in the same SELECT clause as the fields of asset_group_asset.\n    However, when you specify asset_group_asset in the FROM clause, some metrics and segments\n    cannot be used.\n    Use the following filter to show only the fields that can be used when asset_group_asset is specified in the FROM clause.\n\nIs asset_group_asset specified in the FROM clause of your query?\n\n  \n    No\n    Yes, it is\n  \n\n  \n  \n    \n    \n      \n      \n        \n          info_outline\n           Resource fields\n        \n      \n      \n      \n        \n          asset\n        \n          asset_group\n        \n          field_type\n        \n          policy_summary.approval_status\n        \n          policy_summary.policy_topic_entries\n        \n          policy_summary.review_status\n        \n          primary_status\n        \n          primary_status_details\n        \n          primary_status_reasons\n        \n          resource_name\n        \n          source\n        \n          status\n        \n      \n    \n    \n  \n    \n    \n      \n      \n        \n          layers\n           Segments\n        \n      \n      \n      \n        \n          ad_network_type\n        \n          conversion_action\n        \n          conversion_action_category\n        \n          conversion_action_name\n        \n          date\n        \n          day_of_week\n        \n          device\n        \n          month\n        \n          quarter\n        \n          week\n        \n          year\n        \n      \n    \n    \n  \n  \n    \n    \n      \n      \n        \n          show_chart\n           Metrics\n        \n      \n      \n      \n        \n          all_conversions\n        \n          all_conversions_from_interactions_rate\n        \n          all_conversions_from_interactions_value_per_interaction\n        \n          all_conversions_value\n        \n          all_conversions_value_per_cost\n        \n          average_cost\n        \n          average_cpc\n        \n          clicks\n        \n          conversions\n        \n          conversions_from_interactions_rate\n        \n          conversions_from_interactions_value_per_interaction\n        \n          conversions_value\n        \n          conversions_value_per_cost\n        \n          cost_micros\n        \n          cost_per_all_conversions\n        \n          cost_per_conversion\n        \n          cross_device_conversions\n        \n          cross_device_conversions_value\n        \n          ctr\n        \n          engagement_rate\n        \n          engagements\n        \n          impression",
+  "fetchedAt": "2025-10-30T08:43:53.231Z"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "date": "2025-04-06T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Expert Hardware",
+    "contactID": "4223956d-f3e6-4aee-ab41-db2c32564bc1",
+    "reference": null,
+    "amount": 35.45,
+    "status": "AUTHORISED",
+    "bankTransactionID": "1bbc1806-b7c0-4e99-aad2-be61264fc023",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": true,
+    "updatedDateUTC": "2025-04-06T11:24:43.290Z",
+    "contactDetails": {
+      "contactID": "4223956d-f3e6-4aee-ab41-db2c32564bc1",
+      "name": "Expert Hardware",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-04-17T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "homestore",
+    "contactID": "7566591f-5d42-401d-8093-3d47cfbac7b2",
+    "reference": null,
+    "amount": 47.95,
+    "status": "AUTHORISED",
+    "bankTransactionID": "81fdbf93-af7b-4c1c-a9f5-e1e5b518e8c0",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": true,
+    "updatedDateUTC": "2025-04-18T16:16:23.410Z",
+    "contactDetails": {
+      "contactID": "7566591f-5d42-401d-8093-3d47cfbac7b2",
+      "name": "homestore",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-04-21T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "SuperValu",
+    "contactID": "afd60041-6c67-42e1-92f6-84e312ac7ef9",
+    "reference": null,
+    "amount": 46.85,
+    "status": "AUTHORISED",
+    "bankTransactionID": "c33f2d12-e485-4f2d-b944-6e764610d342",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": true,
+    "updatedDateUTC": "2025-04-21T17:11:14.270Z",
+    "contactDetails": {
+      "contactID": "afd60041-6c67-42e1-92f6-84e312ac7ef9",
+      "name": "SuperValu",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  }
+]

@@ -1,0 +1,361 @@
+{
+  "totalTransactions": 124,
+  "reconciledCount": 121,
+  "unreconciledCount": 0,
+  "deletedCount": 3,
+  "byType": {
+    "RECEIVE": 38,
+    "SPEND": 86
+  },
+  "byStatus": {
+    "AUTHORISED": 121,
+    "DELETED": 3
+  },
+  "byContact": {
+    "ULearn-Student": {
+      "count": 33,
+      "totalReceive": 31061.849999999995,
+      "totalSpend": 0,
+      "reconciled": 33,
+      "references": [
+        "931",
+        "931"
+      ]
+    },
+    "Westwood": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 178,
+      "reconciled": 2,
+      "references": []
+    },
+    "Fathom": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 74,
+      "reconciled": 2,
+      "references": []
+    },
+    "CARD - Google": {
+      "count": 3,
+      "totalReceive": 0,
+      "totalSpend": 309.62,
+      "reconciled": 3,
+      "references": []
+    },
+    "Google": {
+      "count": 5,
+      "totalReceive": 0,
+      "totalSpend": 3352.6,
+      "reconciled": 5,
+      "references": []
+    },
+    "FBD INSURANCE SEPA DD": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 273,
+      "reconciled": 1,
+      "references": []
+    },
+    "Zoho": {
+      "count": 3,
+      "totalReceive": 0,
+      "totalSpend": 81.36,
+      "reconciled": 3,
+      "references": []
+    },
+    "GARDEN VALE PROPERTIES": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 6416.66,
+      "reconciled": 1,
+      "references": []
+    },
+    "Bank Charges": {
+      "count": 13,
+      "totalReceive": 0,
+      "totalSpend": 85.12,
+      "reconciled": 13,
+      "references": []
+    },
+    "MessageBird": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 67.65,
+      "reconciled": 2,
+      "references": []
+    },
+    "Stripe": {
+      "count": 1,
+      "totalReceive": 131.22,
+      "totalSpend": 0,
+      "reconciled": 1,
+      "references": []
+    },
+    "Catalina Diaz": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 360,
+      "reconciled": 2,
+      "references": []
+    },
+    "EIR": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 20,
+      "reconciled": 1,
+      "references": []
+    },
+    "Yugo - Brewers Close": {
+      "count": 3,
+      "totalReceive": 0,
+      "totalSpend": 1860.87,
+      "reconciled": 3,
+      "references": []
+    },
+    "Audible - CARD": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 20.55,
+      "reconciled": 2,
+      "references": []
+    },
+    "CookieBot": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 18.45,
+      "reconciled": 1,
+      "references": []
+    },
+    "BOI": {
+      "count": 3,
+      "totalReceive": 0,
+      "totalSpend": 3.4899999999999998,
+      "reconciled": 3,
+      "references": []
+    },
+    "Bord Gais Energy - DD": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 494.1,
+      "reconciled": 1,
+      "references": []
+    },
+    "ELECTRIC IRELAND": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 527.13,
+      "reconciled": 1,
+      "references": []
+    },
+    "Flogas SEPA - DD": {
+      "count": 6,
+      "totalReceive": 0,
+      "totalSpend": 767.39,
+      "reconciled": 6,
+      "references": []
+    },
+    "A2 Hosting": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 455.65,
+      "reconciled": 1,
+      "references": []
+    },
+    "Virgin Media": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 201.8,
+      "reconciled": 2,
+      "references": []
+    },
+    "ADOBE": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 73.05,
+      "reconciled": 2,
+      "references": []
+    },
+    "Flickr": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 8.49,
+      "reconciled": 1,
+      "references": []
+    },
+    "Amazon Prime": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 6.99,
+      "reconciled": 1,
+      "references": []
+    },
+    "Hubspot": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 601.85,
+      "reconciled": 2,
+      "references": []
+    },
+    "Natia Khmaladze": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 450,
+      "reconciled": 1,
+      "references": []
+    },
+    "Ulgebraz Technologies Pvt.Ltd": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 10,
+      "reconciled": 1,
+      "references": []
+    },
+    "Aer Lingus": {
+      "count": 4,
+      "totalReceive": 220.88,
+      "totalSpend": 0,
+      "reconciled": 4,
+      "references": []
+    },
+    "Unknown": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 65.56,
+      "reconciled": 2,
+      "references": []
+    },
+    "Edel Mc Donald": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 1050,
+      "reconciled": 0,
+      "references": []
+    },
+    "YouTube": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 13.99,
+      "reconciled": 1,
+      "references": []
+    },
+    "PAYROLL": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 33715.89,
+      "reconciled": 2,
+      "references": []
+    },
+    "Spotify": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 11.99,
+      "reconciled": 1,
+      "references": []
+    },
+    "GODADDY": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 32.989999999999995,
+      "reconciled": 2,
+      "references": [
+        "553"
+      ]
+    },
+    "Xero (NZ) Ltd": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 43.93,
+      "reconciled": 1,
+      "references": [
+        "553"
+      ]
+    },
+    "Airtable": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 70.41,
+      "reconciled": 2,
+      "references": [
+        "553",
+        "553"
+      ]
+    },
+    "MiniExtensions": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 142.2,
+      "reconciled": 1,
+      "references": [
+        "553"
+      ]
+    },
+    "zapier": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 55.52,
+      "reconciled": 1,
+      "references": [
+        "553"
+      ]
+    },
+    "Wistia Software company": {
+      "count": 2,
+      "totalReceive": 0,
+      "totalSpend": 92.24,
+      "reconciled": 1,
+      "references": [
+        "553"
+      ]
+    },
+    "REVENUE COMMISSIONERS": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 6201.18,
+      "reconciled": 1,
+      "references": []
+    },
+    "Sushi Restaurant": {
+      "count": 1,
+      "totalReceive": 0,
+      "totalSpend": 70,
+      "reconciled": 0,
+      "references": []
+    },
+    "Upwork - CARD": {
+      "count": 5,
+      "totalReceive": 0,
+      "totalSpend": 97.13000000000001,
+      "reconciled": 5,
+      "references": []
+    }
+  },
+  "referencePatterns": {
+    "553": {
+      "count": 7,
+      "contacts": [
+        "GODADDY",
+        "Xero (NZ) Ltd",
+        "Airtable",
+        "MiniExtensions",
+        "zapier",
+        "Wistia Software company"
+      ],
+      "accountCodes": [],
+      "type": "SPEND"
+    },
+    "931": {
+      "count": 2,
+      "contacts": [
+        "ULearn-Student"
+      ],
+      "accountCodes": [],
+      "type": "RECEIVE"
+    }
+  },
+  "accountCodes": {},
+  "totalValue": {
+    "RECEIVE": 31413.949999999993,
+    "SPEND": 58380.84999999998
+  }
+}

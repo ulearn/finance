@@ -1,0 +1,92 @@
+{
+  "url": "https://developers.google.com/google-ads/api/samples",
+  "title": "Code samples  |  Google Ads API  |  Google for DevelopersGoogleGoogle",
+  "headings": [
+    {
+      "level": "h1",
+      "text": "Code samples\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences."
+    },
+    {
+      "level": "h2",
+      "text": "AI-generated Key Takeaways"
+    },
+    {
+      "level": "h3",
+      "text": "Account Management"
+    },
+    {
+      "level": "h3",
+      "text": "Advanced Operations"
+    },
+    {
+      "level": "h3",
+      "text": "Assets"
+    },
+    {
+      "level": "h3",
+      "text": "Authentication"
+    },
+    {
+      "level": "h3",
+      "text": "Basic Operations"
+    },
+    {
+      "level": "h3",
+      "text": "Billing"
+    },
+    {
+      "level": "h3",
+      "text": "Campaign Management"
+    },
+    {
+      "level": "h3",
+      "text": "Error Handling"
+    },
+    {
+      "level": "h3",
+      "text": "Misc"
+    },
+    {
+      "level": "h3",
+      "text": "Planning"
+    },
+    {
+      "level": "h3",
+      "text": "Recommendations"
+    },
+    {
+      "level": "h3",
+      "text": "Remarketing"
+    },
+    {
+      "level": "h3",
+      "text": "Reporting"
+    },
+    {
+      "level": "h3",
+      "text": "Shopping Ads"
+    },
+    {
+      "level": "h3",
+      "text": "Targeting"
+    },
+    {
+      "level": "h3",
+      "text": "Travel"
+    }
+  ],
+  "codeBlocks": [],
+  "tables": [
+    {
+      "headers": [],
+      "rows": [
+        [
+          "Account Management\n\nCreate customer\nGet account hierarchy\nGet change details\nGet change summary\nInvite user with access role\nLink manager to client\nList accessible customers\nUpdate user access\nVerify advertiser identity\n\n\nAdvanced Operations\n\nAdd ad customizer\nAdd ad group bid modifier\nAdd app campaign\nAdd bidding data exclusion\nAdd bidding seasonality adjustment\nAdd call ad\nAdd display upload ad\nAdd dynamic page feed asset\nAdd dynamic search ads\nAdd Performance Max campaign\nAdd smart campaign\nCreate and attach shared keyword set\nFind and remove criteria from shared set\nGet ad group bid modifiers\nUse cross account bidding strategy\nUse portfolio bidding strategy\n\n\nAssets\n\nAdd call\nAdd hotel callout\nAdd lead form asset\nAdd prices\nAdd sitelinks\n\n\nAuthentication\n\nGenerate user credentials\n\n\nBasic Operations\n\nAdd ad groups\nAdd campaigns\nGet campaigns\nGet responsive search ads\nPause ad\nRemove campaign\nSearch for Google Ads fields\nUpdate ad group\nUpdate campaign\nUpdate responsive search ad\n\n\nBilling\n\nAdd account budget proposal\nAdd billing setup\nGet invoices\n\n\nCampaign Management\n\nAdd campaign labels\nAdd complete campaigns using batch job\nCreate experiment\nGet all disapproved ads\nSet ad parameters\nUpdate campaign criterion bid modifier\nValidate ad\n\n\nError Handling\n\nHandle keyword policy violations\nHandle partial failure\nHandle rate exceeded error\nHandle responsive search ad policy violations",
+          "Misc\n\nAdd ad group image asset\nCampaign report to CSV\nSet custom client timeouts\nUpload image asset\n\n\nPlanning\n\nForecast reach\nGenerate forecast metrics\nGenerate historical metrics\nGenerate keyword ideas\nGet ad group criterion CPC bid simulations\n\n\nRecommendations\n\nDetect and apply recommendations\nDismiss recommendation\n\n\nRemarketing\n\nAdd conversion action\nAdd conversion based user list\nAdd custom audience\nAdd customer match user list\nAdd dynamic remarketing asset\nAdd flexible rule user list\nAdd logical user list\nAdd merchant center dynamic remarketing campaign\nSet up advanced remarketing\nSet up remarketing\nUpdate audience target restriction\nUpload call conversion\nUpload conversion adjustment\nUpload enhanced conversions for leads\nUpload enhanced conversions for web\nUpload offline conversion\nUpload store sales transactions\n\n\nReporting\n\nParallel report download\n\n\nShopping Ads\n\nAdd listing scope\nAdd Performance Max product listing group tree\nAdd Performance Max retail campaign\nAdd Shopping product ad\nAdd Shopping product listing group tree\nGet product category constants\n\n\nTargeting\n\nAdd campaign targeting criteria\nAdd customer negative criteria\nAdd demographic targeting criteria\nGet geo target constants by names\n\n\nTravel\n\nAdd hotel ad\nAdd hotel ad group bid modifiers\nAdd hotel listing group tree\nAdd Performance Max for travel goals campaign\nAdd things to do ad"
+        ]
+      ]
+    }
+  ],
+  "mainText": "To discuss and provide feedback on our products, join the official Google Ads Discord channel in the Google Advertising and Measurement Community server.\n        \n      \n    \n  \n  \n  \n\n  \n    \n    \n    \n  \n  \n    \n    \n    \n      \n  \n    \n        Home\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Products\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Google Ads API\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Google Ads API\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Libraries and samples\n      \n  \n  \n    \n  \n  \n\n    \n      \n    \n    \n  \n    \n  \n  \n    \n      Code samples\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences.\n    \n  \n    \n  \n      \n    \n  \n  \n\n  \n  \n  \n    \n    \n    \n  \n\n  \n    \n      \n  \n    \n    \n    \n    AI-generated Key Takeaways\n    \n  \n  \n    \n      \n        outlined_flag\n      \n    \n    \n      \n        \n          This page provides code samples for various Google Ads API functionalities, categorized by operation type.\n\n        \n      \n        \n          You can browse examples for account management, advanced operations, assets, authentication, basic operations, billing, campaign management, error handling, miscellaneous tasks, planning, recommendations, remarketing, reporting, shopping ads, targeting, and travel.\n\n        \n      \n        \n          To explore a sample, select an example and then choose your desired programming language.\n\n        \n      \n        \n          Each sample includes a link to its source code on GitHub for easy access and reference.\n\n        \n      \n    \n  \n\n    \n    \n\n\nSelect an example and then the language tab of your choice. A link to its GitHub\nsource can be found at the end of each sample.\n\n\n\n\n\nAccount Management\n\nCreate customer\nGet account hierarchy\nGet change details\nGet change summary\nInvite user with access role\nLink manager to client\nList accessible customers\nUpdate user access\nVerify advertiser identity\n\n\nAdvanced Operations\n\nAdd ad customizer\nAdd ad group bid modifier\nAdd app campaign\nAdd bidding data exclusion\nAdd bidding seasonality adjustment\nAdd call ad\nAdd display upload ad\nAdd dynamic page feed asset\nAdd dynamic search ads\nAdd Performance Max campaign\nAdd smart campaign\nCreate and attach shared keyword set\nFind and remove criteria from shared set\nGet ad group bid modifiers\nUse cross account bidding strategy\nUse portfolio bidding strategy\n\n\nAssets\n\nAdd call\nAdd hotel callout\nAdd lead form asset\nAdd prices\nAdd sitelinks\n\n\nAuthentication\n\nGenerate user credentials\n\n\nBasic Operations\n\nAdd ad groups\nAdd campaigns\nGet campaigns\nGet responsive search ads\nPause ad\nRemove campaign\nSearch for Google Ads fields\nUpdate ad group\nUpdate campaign\nUpdate responsive search ad\n\n\nBilling\n\nAdd account budget proposal\nAdd billing setup\nGet invoices\n\n\nCampaign Management\n\nAdd campaign labels\nAdd complete campaigns using batch job\nCreate experiment\nGet all disapproved ads\nSet ad parameters\nUpdate campaign criterion bid modifier\nValidate ad\n\n\nError Handling\n\nHandle keyword policy violations\nHandle partial failure\nHandle rate exceeded error\nHandle responsive search ad policy violations\n\n\n\n\nMisc\n\nAdd ad group image asset\nCampaign report to CSV\nSet custom client timeouts\nUpload image asset\n\n\nPlanning\n\nForecast reach\nGenerate forecast metrics\nGenerate historical metrics\nGenerate keyword ideas\nGet ad group criterion CPC bid simulations\n\n\nRecommendations\n\nDetect and apply recommendations\nDismiss recommendation\n\n\nRemarketing\n\nAdd conversion action\nAdd conversion based user list\nAdd custom audience\nAdd customer match user list\nAdd dynamic remarketing asset\nAdd flexible rule user list\nAdd logical user list\nAdd merchant center dynamic remarketing campaign\nSet up advanced remarketing\nSet up remarketing\nUpdate audience target restriction\nUpload call conversion\nUpload conversion adjustment\nUpload enhanced conversions for leads\nUpload enhanced conversions for web\nUpload offline conversion\nUpload store sales transactions\n\n\nReporting\n\nParallel report download\n\n\nShopping Ads\n\nAdd listing scope\nAdd Performance Max product listing group tree\nAdd Performance Max retail campaign\nAdd Shopping product ad\nAdd Shopping product listing group tree\nGet product category constants\n\n\nTargeting\n\nAdd campaign targeting criteria\nAdd customer negative criteria\nAdd demographic targeting criteria\nGet geo target constants by names\n\n\nTravel\n\nAdd hotel ad\nAdd hotel ad group bid modifiers\nAdd hotel listing group tree\nAdd Performance Max for travel goals campaign\nAdd things to do ad\n\n\n\n\n\n\n  \n\n  \n\n\n  \n    \n      \n      \n    \n    \n      \n    \n    \n  \n       \n    \n    \n      \n    \n  \n\n  \n\n\n\n  Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 L",
+  "fetchedAt": "2025-10-30T08:34:26.153Z"
+}

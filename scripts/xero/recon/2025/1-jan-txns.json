@@ -1,0 +1,79 @@
+{
+  "collectedAt": "2025-11-22T22:28:11.277Z",
+  "month": "jan",
+  "year": "2025",
+  "count": 5,
+  "transactions": [
+    {
+      "index": 0,
+      "dataId": "f14adcecfc8b4811b875b17caa0f5399",
+      "description": "Estudios           IP",
+      "date": "10 Jan 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,490.00",
+      "type": "RECEIVE",
+      "amount": "1,490.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "Estudios IP payment"
+      }
+    },
+    {
+      "index": 1,
+      "dataId": "4e2460b1cce7449db188c94486bcdc13",
+      "description": "PAYMENT GENERAL CO IP",
+      "date": "13 Jan 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "232.00",
+      "type": "RECEIVE",
+      "amount": "232.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 2,
+      "dataId": "2d16d20985954d978bdf2941796840ea",
+      "description": "TO NEIL MCMAHON",
+      "date": "28 Jan 2025",
+      "reference": "537",
+      "amountSpent": "2,000.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "2,000.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 3,
+      "dataId": "d7a4957eb2a140af834c742c8dd9d730",
+      "description": "Linked Financeborr SP",
+      "date": "30 Jan 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "50,225.00",
+      "type": "RECEIVE",
+      "amount": "50,225.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 4,
+      "dataId": "0598893e7cf54394b7ede9fd4ba4b1e9",
+      "description": "OMAR MOHAMMED ALTO GP",
+      "date": "31 Jan 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "350.00",
+      "type": "RECEIVE",
+      "amount": "350.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "Omar Mohammed payment"
+      }
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}
