@@ -1,0 +1,112 @@
+[
+  {
+    "date": "2025-05-01T00:00:00.000Z",
+    "type": "RECEIVE",
+    "contact": "Maria Vict Lopez Olmedillo",
+    "contactID": "1f4f18ed-d445-42c7-afd6-baf0a03d57d2",
+    "reference": "68137951-f140-a319-88fb-dec63578e844",
+    "amount": 1424.4,
+    "status": "AUTHORISED",
+    "bankTransactionID": "bb8078a0-408c-41fc-8c57-b3e7fea6d4a0",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-05-01T13:40:42.323Z",
+    "contactDetails": {
+      "contactID": "1f4f18ed-d445-42c7-afd6-baf0a03d57d2",
+      "name": "Maria Vict Lopez Olmedillo",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-05-01T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Revolut",
+    "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+    "reference": "68137951-f140-a319-88fb-dec63578e844",
+    "amount": 14.44,
+    "status": "AUTHORISED",
+    "bankTransactionID": "fd8476ca-0b09-4e55-ac2a-f9c5980bb884",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-05-02T13:42:19.410Z",
+    "contactDetails": {
+      "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+      "name": "Revolut",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-05-14T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Sonduck Films",
+    "contactID": "a67a48c4-0767-43d7-96c2-6ace3ae5fac3",
+    "reference": "22173",
+    "amount": 58,
+    "status": "AUTHORISED",
+    "bankTransactionID": "3170ae99-5314-4e16-8c27-8538314f1d84",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": true,
+    "updatedDateUTC": "2025-05-14T13:23:51.187Z",
+    "contactDetails": {
+      "contactID": "a67a48c4-0767-43d7-96c2-6ace3ae5fac3",
+      "name": "Sonduck Films",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-05-24T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Raven Books",
+    "contactID": "9f1e6a5d-4a80-45b1-910c-81a015f39ce6",
+    "reference": null,
+    "amount": 10.1,
+    "status": "AUTHORISED",
+    "bankTransactionID": "29875a05-d497-45e6-ba76-1eee6025f972",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": true,
+    "updatedDateUTC": "2025-05-24T12:29:59.460Z",
+    "contactDetails": {
+      "contactID": "9f1e6a5d-4a80-45b1-910c-81a015f39ce6",
+      "name": "Raven Books",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-05-27T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Dublin Airport",
+    "contactID": "3179858c-db2d-4d50-91cd-05117ddba056",
+    "reference": null,
+    "amount": 34.6,
+    "status": "AUTHORISED",
+    "bankTransactionID": "76740c31-ef48-491f-9b1f-4ca105430b09",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": true,
+    "updatedDateUTC": "2025-05-27T10:41:47.670Z",
+    "contactDetails": {
+      "contactID": "3179858c-db2d-4d50-91cd-05117ddba056",
+      "name": "Dublin Airport",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  }
+]

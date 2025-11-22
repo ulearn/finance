@@ -1,0 +1,90 @@
+[
+  {
+    "date": "2025-03-01T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Dublin Airport",
+    "contactID": "3179858c-db2d-4d50-91cd-05117ddba056",
+    "reference": null,
+    "amount": 41.2,
+    "status": "AUTHORISED",
+    "bankTransactionID": "a6718cf1-5834-4b75-a591-e2bd0a8f4e39",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": true,
+    "updatedDateUTC": "2025-03-01T16:10:05.580Z",
+    "contactDetails": {
+      "contactID": "3179858c-db2d-4d50-91cd-05117ddba056",
+      "name": "Dublin Airport",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-03-03T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "gourmet pizza",
+    "contactID": "53803e5c-9523-4649-be2f-ee2e2862b4d6",
+    "reference": null,
+    "amount": 70,
+    "status": "AUTHORISED",
+    "bankTransactionID": "59a1f4d3-690e-497e-8231-6b64f3a84d47",
+    "bankAccount": "ULearn Limited Current account",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-03-03T10:37:12.030Z",
+    "contactDetails": {
+      "contactID": "53803e5c-9523-4649-be2f-ee2e2862b4d6",
+      "name": "gourmet pizza",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-03-18T00:00:00.000Z",
+    "type": "RECEIVE",
+    "contact": "Paul Sais",
+    "contactID": "789743ce-0345-476b-b321-83a19aaa6dbd",
+    "reference": "67d94a7f-e4bc-a105-8ac6-6b93b73d0537",
+    "amount": 1950,
+    "status": "AUTHORISED",
+    "bankTransactionID": "1fe9adfb-80ba-458b-8158-1d99129e48e4",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-03-18T10:37:51.473Z",
+    "contactDetails": {
+      "contactID": "789743ce-0345-476b-b321-83a19aaa6dbd",
+      "name": "Paul Sais",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-03-18T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Revolut",
+    "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+    "reference": "67d94a7f-e4bc-a105-8ac6-6b93b73d0537",
+    "amount": 19.7,
+    "status": "AUTHORISED",
+    "bankTransactionID": "187f2195-3702-48f5-a0cc-bb9d676a07ff",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-03-19T10:39:42.543Z",
+    "contactDetails": {
+      "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+      "name": "Revolut",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  }
+]

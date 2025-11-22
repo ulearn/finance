@@ -1,0 +1,437 @@
+{
+  "url": "https://developers.google.com/google-ads/api/reference/rpc/v22/Asset",
+  "title": "Asset  |  Google Ads API  |  Google for DevelopersGoogleGoogle",
+  "headings": [
+    {
+      "level": "h1",
+      "text": "Asset\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences."
+    },
+    {
+      "level": "h2",
+      "text": "AI-generated Key Takeaways"
+    },
+    {
+      "level": "h3",
+      "text": "resource_name"
+    },
+    {
+      "level": "h3",
+      "text": "type"
+    },
+    {
+      "level": "h3",
+      "text": "final_urls[]"
+    },
+    {
+      "level": "h3",
+      "text": "final_mobile_urls[]"
+    },
+    {
+      "level": "h3",
+      "text": "url_custom_parameters[]"
+    },
+    {
+      "level": "h3",
+      "text": "source"
+    },
+    {
+      "level": "h3",
+      "text": "policy_summary"
+    },
+    {
+      "level": "h3",
+      "text": "field_type_policy_summaries[]"
+    },
+    {
+      "level": "h3",
+      "text": "id"
+    },
+    {
+      "level": "h3",
+      "text": "name"
+    },
+    {
+      "level": "h3",
+      "text": "tracking_url_template"
+    },
+    {
+      "level": "h3",
+      "text": "final_url_suffix"
+    },
+    {
+      "level": "h3",
+      "text": "asset_data"
+    },
+    {
+      "level": "h3",
+      "text": "youtube_video_asset"
+    },
+    {
+      "level": "h3",
+      "text": "media_bundle_asset"
+    },
+    {
+      "level": "h3",
+      "text": "image_asset"
+    },
+    {
+      "level": "h3",
+      "text": "text_asset"
+    },
+    {
+      "level": "h3",
+      "text": "lead_form_asset"
+    },
+    {
+      "level": "h3",
+      "text": "book_on_google_asset"
+    },
+    {
+      "level": "h3",
+      "text": "promotion_asset"
+    },
+    {
+      "level": "h3",
+      "text": "callout_asset"
+    },
+    {
+      "level": "h3",
+      "text": "structured_snippet_asset"
+    },
+    {
+      "level": "h3",
+      "text": "sitelink_asset"
+    },
+    {
+      "level": "h3",
+      "text": "page_feed_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_education_asset"
+    },
+    {
+      "level": "h3",
+      "text": "mobile_app_asset"
+    },
+    {
+      "level": "h3",
+      "text": "hotel_callout_asset"
+    },
+    {
+      "level": "h3",
+      "text": "call_asset"
+    },
+    {
+      "level": "h3",
+      "text": "price_asset"
+    },
+    {
+      "level": "h3",
+      "text": "call_to_action_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_real_estate_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_custom_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_hotels_and_rentals_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_flights_asset"
+    },
+    {
+      "level": "h3",
+      "text": "demand_gen_carousel_card_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_travel_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_local_asset"
+    },
+    {
+      "level": "h3",
+      "text": "dynamic_jobs_asset"
+    },
+    {
+      "level": "h3",
+      "text": "location_asset"
+    },
+    {
+      "level": "h3",
+      "text": "hotel_property_asset"
+    },
+    {
+      "level": "h3",
+      "text": "business_message_asset"
+    },
+    {
+      "level": "h3",
+      "text": "app_deep_link_asset"
+    },
+    {
+      "level": "h3",
+      "text": "youtube_video_list_asset"
+    }
+  ],
+  "codeBlocks": [
+    "resource_name",
+    "customers/{customer_id}/assets/{asset_id}",
+    "final_urls[]",
+    "final_mobile_urls[]",
+    "url_custom_parameters[]",
+    "CustomParameter",
+    "AssetSource",
+    "policy_summary",
+    "AssetPolicySummary",
+    "field_type_policy_summaries[]",
+    "AssetFieldTypePolicySummary",
+    "tracking_url_template",
+    "final_url_suffix",
+    "youtube_video_asset",
+    "YoutubeVideoAsset",
+    "media_bundle_asset",
+    "MediaBundleAsset",
+    "image_asset",
+    "lead_form_asset",
+    "LeadFormAsset",
+    "book_on_google_asset",
+    "BookOnGoogleAsset",
+    "promotion_asset",
+    "PromotionAsset",
+    "callout_asset",
+    "CalloutAsset",
+    "structured_snippet_asset",
+    "StructuredSnippetAsset",
+    "sitelink_asset",
+    "SitelinkAsset",
+    "page_feed_asset",
+    "PageFeedAsset",
+    "dynamic_education_asset",
+    "DynamicEducationAsset",
+    "mobile_app_asset",
+    "MobileAppAsset",
+    "hotel_callout_asset",
+    "HotelCalloutAsset",
+    "price_asset",
+    "call_to_action_asset",
+    "CallToActionAsset",
+    "dynamic_real_estate_asset",
+    "DynamicRealEstateAsset",
+    "dynamic_custom_asset",
+    "DynamicCustomAsset",
+    "dynamic_hotels_and_rentals_asset",
+    "DynamicHotelsAndRentalsAsset",
+    "dynamic_flights_asset",
+    "DynamicFlightsAsset",
+    "demand_gen_carousel_card_asset",
+    "DemandGenCarouselCardAsset",
+    "dynamic_travel_asset",
+    "DynamicTravelAsset",
+    "dynamic_local_asset",
+    "DynamicLocalAsset",
+    "dynamic_jobs_asset",
+    "DynamicJobsAsset",
+    "location_asset",
+    "LocationAsset",
+    "hotel_property_asset",
+    "HotelPropertyAsset",
+    "business_message_asset",
+    "BusinessMessageAsset",
+    "app_deep_link_asset",
+    "AppDeepLinkAsset",
+    "youtube_video_list_asset",
+    "YouTubeVideoListAsset"
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Fields"
+      ],
+      "rows": [
+        [
+          "resource_name",
+          "string\n                  Immutable. The resource name of the asset. Asset resource names have the form:customers/{customer_id}/assets/{asset_id}"
+        ],
+        [
+          "type",
+          "AssetType\n                  Output only. Type of the asset."
+        ],
+        [
+          "final_urls[]",
+          "string\n                  A list of possible final URLs after all cross domain redirects."
+        ],
+        [
+          "final_mobile_urls[]",
+          "string\n                  A list of possible final mobile URLs after all cross domain redirects."
+        ],
+        [
+          "url_custom_parameters[]",
+          "CustomParameter\n                  A list of mappings to be used for substituting URL custom parameter tags in the tracking_url_template, final_urls, and/or final_mobile_urls."
+        ],
+        [
+          "source",
+          "AssetSource\n                  Output only. Source of the asset."
+        ],
+        [
+          "policy_summary",
+          "AssetPolicySummary\n                  Output only. Policy information for the asset."
+        ],
+        [
+          "field_type_policy_summaries[]",
+          "AssetFieldTypePolicySummary\n                  Output only. Policy information for the asset for each FieldType."
+        ],
+        [
+          "id",
+          "int64\n                  Output only. The ID of the asset."
+        ],
+        [
+          "name",
+          "string\n                  Optional name of the asset."
+        ],
+        [
+          "tracking_url_template",
+          "string\n                  URL template for constructing a tracking URL."
+        ],
+        [
+          "final_url_suffix",
+          "string\n                  URL template for appending params to landing page URLs served with parallel tracking."
+        ],
+        [
+          "Union field asset_dataasset_data. The specific type of the asset. asset_data can be only one of the following:"
+        ],
+        [
+          "youtube_video_asset",
+          "YoutubeVideoAsset\n                  Immutable. A YouTube video asset."
+        ],
+        [
+          "media_bundle_asset",
+          "MediaBundleAsset\n                  Immutable. A media bundle asset."
+        ],
+        [
+          "image_asset",
+          "ImageAsset\n                  Output only. An image asset."
+        ],
+        [
+          "text_asset",
+          "TextAsset\n                  Immutable. A text asset."
+        ],
+        [
+          "lead_form_asset",
+          "LeadFormAsset\n                  A lead form asset."
+        ],
+        [
+          "book_on_google_asset",
+          "BookOnGoogleAsset\n                  A book on google asset."
+        ],
+        [
+          "promotion_asset",
+          "PromotionAsset\n                  A promotion asset."
+        ],
+        [
+          "callout_asset",
+          "CalloutAsset\n                  A callout asset."
+        ],
+        [
+          "structured_snippet_asset",
+          "StructuredSnippetAsset\n                  A structured snippet asset."
+        ],
+        [
+          "sitelink_asset",
+          "SitelinkAsset\n                  A sitelink asset."
+        ],
+        [
+          "page_feed_asset",
+          "PageFeedAsset\n                  A page feed asset."
+        ],
+        [
+          "dynamic_education_asset",
+          "DynamicEducationAsset\n                  A dynamic education asset."
+        ],
+        [
+          "mobile_app_asset",
+          "MobileAppAsset\n                  A mobile app asset."
+        ],
+        [
+          "hotel_callout_asset",
+          "HotelCalloutAsset\n                  A hotel callout asset."
+        ],
+        [
+          "call_asset",
+          "CallAsset\n                  A call asset."
+        ],
+        [
+          "price_asset",
+          "PriceAsset\n                  A price asset."
+        ],
+        [
+          "call_to_action_asset",
+          "CallToActionAsset\n                  Immutable. A call to action asset."
+        ],
+        [
+          "dynamic_real_estate_asset",
+          "DynamicRealEstateAsset\n                  A dynamic real estate asset."
+        ],
+        [
+          "dynamic_custom_asset",
+          "DynamicCustomAsset\n                  A dynamic custom asset."
+        ],
+        [
+          "dynamic_hotels_and_rentals_asset",
+          "DynamicHotelsAndRentalsAsset\n                  A dynamic hotels and rentals asset."
+        ],
+        [
+          "dynamic_flights_asset",
+          "DynamicFlightsAsset\n                  A dynamic flights asset."
+        ],
+        [
+          "demand_gen_carousel_card_asset",
+          "DemandGenCarouselCardAsset\n                  Immutable. A Demand Gen carousel card asset."
+        ],
+        [
+          "dynamic_travel_asset",
+          "DynamicTravelAsset\n                  A dynamic travel asset."
+        ],
+        [
+          "dynamic_local_asset",
+          "DynamicLocalAsset\n                  A dynamic local asset."
+        ],
+        [
+          "dynamic_jobs_asset",
+          "DynamicJobsAsset\n                  A dynamic jobs asset."
+        ],
+        [
+          "location_asset",
+          "LocationAsset\n                  Output only. A location asset."
+        ],
+        [
+          "hotel_property_asset",
+          "HotelPropertyAsset\n                  Immutable. A hotel property asset."
+        ],
+        [
+          "business_message_asset",
+          "BusinessMessageAsset\n                  A business message asset."
+        ],
+        [
+          "app_deep_link_asset",
+          "AppDeepLinkAsset\n                  Immutable. An app deep link asset."
+        ],
+        [
+          "youtube_video_list_asset",
+          "YouTubeVideoListAsset\n                  Immutable. A YouTube video list asset."
+        ]
+      ]
+    }
+  ],
+  "mainText": "To discuss and provide feedback on our products, join the official Google Ads Discord channel in the Google Advertising and Measurement Community server.\n        \n      \n    \n  \n  \n  \n\n  \n    \n    \n    \n  \n  \n    \n    \n    \n      \n  \n    \n        Home\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Products\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Google Ads API\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Google Ads API\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Reference\n      \n  \n  \n    \n  \n  \n\n    \n      \n    \n    \n  \n    \n  \n  \n    \n      Asset\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences.\n    \n  \n  \n      \n    \n  \n  \n\n  \n  \n  \n    \n    \n    \n  \n\n  \n    \n      \n  \n    \n    \n    \n    AI-generated Key Takeaways\n    \n  \n  \n    \n      \n        outlined_flag\n      \n    \n    \n      \n        \n          Assets are parts of ads that can be shared across multiple ads and include types like images and videos.\n\n        \n      \n        \n          Assets are immutable and cannot be removed directly; instead, remove them from the entity that uses them to stop serving.\n\n        \n      \n        \n          Assets have a resource name, type, policy information, and data specific to their type.\n\n        \n      \n    \n  \n\n    \n    \n    \n    \n    \n      \n        \n          Asset is a part of an ad which can be shared across multiple ads. It can be an image (ImageAsset), a video (YoutubeVideoAsset), etc. Assets are immutable and cannot be removed. To stop an asset from serving, remove the asset from the entity that is using it.\n        \n        \n          \n            \n              \n              \n            \n            \n              \n                Fields\n              \n            \n            \n              \n                resource_name\n                \n                  string\n                  Immutable. The resource name of the asset. Asset resource names have the form:customers/{customer_id}/assets/{asset_id}\n                \n              \n              \n                type\n                \n                  AssetType\n                  Output only. Type of the asset.\n                \n              \n              \n                final_urls[]\n                \n                  string\n                  A list of possible final URLs after all cross domain redirects.\n                \n              \n              \n                final_mobile_urls[]\n                \n                  string\n                  A list of possible final mobile URLs after all cross domain redirects.\n                \n              \n              \n                url_custom_parameters[]\n                \n                  CustomParameter\n                  A list of mappings to be used for substituting URL custom parameter tags in the tracking_url_template, final_urls, and/or final_mobile_urls.\n                \n              \n              \n                source\n                \n                  AssetSource\n                  Output only. Source of the asset.\n                \n              \n              \n                policy_summary\n                \n                  AssetPolicySummary\n                  Output only. Policy information for the asset.\n                \n              \n              \n                field_type_policy_summaries[]\n                \n                  AssetFieldTypePolicySummary\n                  Output only. Policy information for the asset for each FieldType.\n                \n              \n              \n                id\n                \n                  int64\n                  Output only. The ID of the asset.\n                \n              \n              \n                name\n                \n                  string\n                  Optional name of the asset.\n                \n              \n              \n                tracking_url_template\n                \n                  string\n                  URL template for constructing a tracking URL.\n                \n              \n              \n                final_url_suffix\n                \n                  string\n                  URL template for appending params to landing page URLs served with parallel tracking.\n                \n              \n              \n                Union field asset_dataasset_data. The specific type of the asset. asset_data can be only one of the following:\n              \n              \n                youtube_video_asset\n                \n                  YoutubeVideoAsset\n                  Immutable. A YouTube video asset.\n                \n              \n              \n                media_bundle_asset\n                \n                  MediaBundleAsset\n                  Immutable. A media bundle asset.\n                \n              \n              \n         ",
+  "fetchedAt": "2025-10-30T08:04:18.189Z"
+}

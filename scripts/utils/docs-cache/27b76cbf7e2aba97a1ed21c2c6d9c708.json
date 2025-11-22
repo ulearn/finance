@@ -1,0 +1,321 @@
+{
+  "url": "https://developers.google.com/google-ads/api/reference/rpc/v22/AssetFieldTypeEnum.AssetFieldType",
+  "title": "AssetFieldType  |  Google Ads API  |  Google for DevelopersGoogleGoogle",
+  "headings": [
+    {
+      "level": "h1",
+      "text": "AssetFieldType\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences."
+    },
+    {
+      "level": "h2",
+      "text": "AI-generated Key Takeaways"
+    },
+    {
+      "level": "h3",
+      "text": "UNSPECIFIED"
+    },
+    {
+      "level": "h3",
+      "text": "UNKNOWN"
+    },
+    {
+      "level": "h3",
+      "text": "HEADLINE"
+    },
+    {
+      "level": "h3",
+      "text": "DESCRIPTION"
+    },
+    {
+      "level": "h3",
+      "text": "MANDATORY_AD_TEXT"
+    },
+    {
+      "level": "h3",
+      "text": "MARKETING_IMAGE"
+    },
+    {
+      "level": "h3",
+      "text": "MEDIA_BUNDLE"
+    },
+    {
+      "level": "h3",
+      "text": "YOUTUBE_VIDEO"
+    },
+    {
+      "level": "h3",
+      "text": "BOOK_ON_GOOGLE"
+    },
+    {
+      "level": "h3",
+      "text": "LEAD_FORM"
+    },
+    {
+      "level": "h3",
+      "text": "PROMOTION"
+    },
+    {
+      "level": "h3",
+      "text": "CALLOUT"
+    },
+    {
+      "level": "h3",
+      "text": "STRUCTURED_SNIPPET"
+    },
+    {
+      "level": "h3",
+      "text": "SITELINK"
+    },
+    {
+      "level": "h3",
+      "text": "MOBILE_APP"
+    },
+    {
+      "level": "h3",
+      "text": "HOTEL_CALLOUT"
+    },
+    {
+      "level": "h3",
+      "text": "CALL"
+    },
+    {
+      "level": "h3",
+      "text": "PRICE"
+    },
+    {
+      "level": "h3",
+      "text": "LONG_HEADLINE"
+    },
+    {
+      "level": "h3",
+      "text": "BUSINESS_NAME"
+    },
+    {
+      "level": "h3",
+      "text": "SQUARE_MARKETING_IMAGE"
+    },
+    {
+      "level": "h3",
+      "text": "PORTRAIT_MARKETING_IMAGE"
+    },
+    {
+      "level": "h3",
+      "text": "LOGO"
+    },
+    {
+      "level": "h3",
+      "text": "LANDSCAPE_LOGO"
+    },
+    {
+      "level": "h3",
+      "text": "VIDEO"
+    },
+    {
+      "level": "h3",
+      "text": "CALL_TO_ACTION_SELECTION"
+    },
+    {
+      "level": "h3",
+      "text": "AD_IMAGE"
+    },
+    {
+      "level": "h3",
+      "text": "BUSINESS_LOGO"
+    },
+    {
+      "level": "h3",
+      "text": "HOTEL_PROPERTY"
+    },
+    {
+      "level": "h3",
+      "text": "DEMAND_GEN_CAROUSEL_CARD"
+    },
+    {
+      "level": "h3",
+      "text": "BUSINESS_MESSAGE"
+    },
+    {
+      "level": "h3",
+      "text": "TALL_PORTRAIT_MARKETING_IMAGE"
+    },
+    {
+      "level": "h3",
+      "text": "RELATED_YOUTUBE_VIDEOS"
+    },
+    {
+      "level": "h3",
+      "text": "LANDING_PAGE_PREVIEW"
+    }
+  ],
+  "codeBlocks": [
+    "UNSPECIFIED",
+    "DESCRIPTION",
+    "MANDATORY_AD_TEXT",
+    "MARKETING_IMAGE",
+    "MEDIA_BUNDLE",
+    "YOUTUBE_VIDEO",
+    "BOOK_ON_GOOGLE",
+    "STRUCTURED_SNIPPET",
+    "HOTEL_CALLOUT",
+    "LONG_HEADLINE",
+    "BUSINESS_NAME",
+    "SQUARE_MARKETING_IMAGE",
+    "PORTRAIT_MARKETING_IMAGE",
+    "LANDSCAPE_LOGO",
+    "CALL_TO_ACTION_SELECTION",
+    "BUSINESS_LOGO",
+    "HOTEL_PROPERTY",
+    "DEMAND_GEN_CAROUSEL_CARD",
+    "BUSINESS_MESSAGE",
+    "TALL_PORTRAIT_MARKETING_IMAGE",
+    "RELATED_YOUTUBE_VIDEOS",
+    "LANDING_PAGE_PREVIEW"
+  ],
+  "tables": [
+    {
+      "headers": [
+        "Enums"
+      ],
+      "rows": [
+        [
+          "UNSPECIFIED",
+          "Not specified."
+        ],
+        [
+          "UNKNOWN",
+          "Used for return value only. Represents value unknown in this version."
+        ],
+        [
+          "HEADLINE",
+          "The asset is linked for use as a headline."
+        ],
+        [
+          "DESCRIPTION",
+          "The asset is linked for use as a description."
+        ],
+        [
+          "MANDATORY_AD_TEXT",
+          "The asset is linked for use as mandatory ad text."
+        ],
+        [
+          "MARKETING_IMAGE",
+          "The asset is linked for use as a marketing image."
+        ],
+        [
+          "MEDIA_BUNDLE",
+          "The asset is linked for use as a media bundle."
+        ],
+        [
+          "YOUTUBE_VIDEO",
+          "The asset is linked for use as a YouTube video."
+        ],
+        [
+          "BOOK_ON_GOOGLE",
+          "The asset is linked to indicate that a hotels campaign is \"Book on Google\" enabled."
+        ],
+        [
+          "LEAD_FORM",
+          "The asset is linked for use as a Lead Form extension."
+        ],
+        [
+          "PROMOTION",
+          "The asset is linked for use as a Promotion extension."
+        ],
+        [
+          "CALLOUT",
+          "The asset is linked for use as a Callout extension."
+        ],
+        [
+          "STRUCTURED_SNIPPET",
+          "The asset is linked for use as a Structured Snippet extension."
+        ],
+        [
+          "SITELINK",
+          "The asset is linked for use as a Sitelink."
+        ],
+        [
+          "MOBILE_APP",
+          "The asset is linked for use as a Mobile App extension."
+        ],
+        [
+          "HOTEL_CALLOUT",
+          "The asset is linked for use as a Hotel Callout extension."
+        ],
+        [
+          "CALL",
+          "The asset is linked for use as a Call extension."
+        ],
+        [
+          "PRICE",
+          "The asset is linked for use as a Price extension."
+        ],
+        [
+          "LONG_HEADLINE",
+          "The asset is linked for use as a long headline."
+        ],
+        [
+          "BUSINESS_NAME",
+          "The asset is linked for use as a business name."
+        ],
+        [
+          "SQUARE_MARKETING_IMAGE",
+          "The asset is linked for use as a square marketing image."
+        ],
+        [
+          "PORTRAIT_MARKETING_IMAGE",
+          "The asset is linked for use as a portrait marketing image."
+        ],
+        [
+          "LOGO",
+          "The asset is linked for use as a logo."
+        ],
+        [
+          "LANDSCAPE_LOGO",
+          "The asset is linked for use as a landscape logo."
+        ],
+        [
+          "VIDEO",
+          "The asset is linked for use as a non YouTube logo."
+        ],
+        [
+          "CALL_TO_ACTION_SELECTION",
+          "The asset is linked for use to select a call-to-action."
+        ],
+        [
+          "AD_IMAGE",
+          "The asset is linked for use to select an ad image."
+        ],
+        [
+          "BUSINESS_LOGO",
+          "The asset is linked for use as a business logo."
+        ],
+        [
+          "HOTEL_PROPERTY",
+          "The asset is linked for use as a hotel property in a Performance Max for travel goals campaign."
+        ],
+        [
+          "DEMAND_GEN_CAROUSEL_CARD",
+          "The asset is linked for use as a Demand Gen carousel card."
+        ],
+        [
+          "BUSINESS_MESSAGE",
+          "The asset is linked for use as a Business Message."
+        ],
+        [
+          "TALL_PORTRAIT_MARKETING_IMAGE",
+          "The asset is linked for use as a tall portrait marketing image."
+        ],
+        [
+          "RELATED_YOUTUBE_VIDEOS",
+          "The asset is linked for use as related YouTube videos."
+        ],
+        [
+          "LANDING_PAGE_PREVIEW",
+          "The asset is linked for use as a landing page preview image."
+        ]
+      ]
+    }
+  ],
+  "mainText": "To discuss and provide feedback on our products, join the official Google Ads Discord channel in the Google Advertising and Measurement Community server.\n        \n      \n    \n  \n  \n  \n\n  \n    \n    \n    \n  \n  \n    \n    \n    \n      \n  \n    \n        Home\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Products\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Google Ads API\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Google Ads API\n      \n  \n  \n    \n  \n  \n  \n    \n      \n      \n    \n    \n    \n      \n  \n    \n        Reference\n      \n  \n  \n    \n  \n  \n\n    \n      \n    \n    \n  \n    \n  \n  \n    \n      AssetFieldType\n\n    \n    \n      \n    \n\n    \n      \n      Stay organized with collections\n    \n    \n      \n      Save and categorize content based on your preferences.\n    \n  \n    \n  \n      \n    \n  \n  \n\n  \n  \n  \n    \n    \n    \n  \n\n  \n    \n      \n  \n    \n    \n    \n    AI-generated Key Takeaways\n    \n  \n  \n    \n      \n        outlined_flag\n      \n    \n    \n      \n        \n          This enum describes the possible placements of an asset.\n\n        \n      \n        \n          Possible asset placements include headlines, descriptions, marketing images, videos, and various ad extensions.\n\n        \n      \n        \n          Specific placements are available for different asset types like logos, call-to-actions, and business information.\n\n        \n      \n        \n          Some placements are specific to campaign types such as \"Book on Google\" or Performance Max for travel goals.\n\n        \n      \n        \n          Reserved enum values exist for unspecified or unknown placements.\n\n        \n      \n    \n  \n\n    \n    \n    \n    \n    \n      \n        \n          Enum describing the possible placements of an asset.\n        \n        \n          \n            \n              \n              \n            \n            \n              \n                Enums\n              \n            \n            \n              \n                UNSPECIFIED\n                Not specified.\n              \n              \n                UNKNOWN\n                Used for return value only. Represents value unknown in this version.\n              \n              \n                HEADLINE\n                The asset is linked for use as a headline.\n              \n              \n                DESCRIPTION\n                The asset is linked for use as a description.\n              \n              \n                MANDATORY_AD_TEXT\n                The asset is linked for use as mandatory ad text.\n              \n              \n                MARKETING_IMAGE\n                The asset is linked for use as a marketing image.\n              \n              \n                MEDIA_BUNDLE\n                The asset is linked for use as a media bundle.\n              \n              \n                YOUTUBE_VIDEO\n                The asset is linked for use as a YouTube video.\n              \n              \n                BOOK_ON_GOOGLE\n                The asset is linked to indicate that a hotels campaign is \"Book on Google\" enabled.\n              \n              \n                LEAD_FORM\n                The asset is linked for use as a Lead Form extension.\n              \n              \n                PROMOTION\n                The asset is linked for use as a Promotion extension.\n              \n              \n                CALLOUT\n                The asset is linked for use as a Callout extension.\n              \n              \n                STRUCTURED_SNIPPET\n                The asset is linked for use as a Structured Snippet extension.\n              \n              \n                SITELINK\n                The asset is linked for use as a Sitelink.\n              \n              \n                MOBILE_APP\n                The asset is linked for use as a Mobile App extension.\n              \n              \n                HOTEL_CALLOUT\n                The asset is linked for use as a Hotel Callout extension.\n              \n              \n                CALL\n                The asset is linked for use as a Call extension.\n              \n              \n                PRICE\n                The asset is linked for use as a Price extension.\n              \n              \n                LONG_HEADLINE\n                The asset is linked for use as a long headline.\n              \n              \n                BUSINESS_NAME\n                The asset is linked for use as a business name.\n              \n              \n                SQUARE_MARKETING_IMAGE\n                The asset is linked for use as a square marketing image.\n              \n              \n                PORTRAIT_MARKETING_IMAGE\n                The asset is linked for use as a portrait marketing image.\n              \n              \n                LOGO\n                The asset is linked for use as a logo.\n              \n              \n                LANDSCAPE_LOGO\n                The asset is linked for use as a landsca",
+  "fetchedAt": "2025-11-13T07:15:22.181Z"
+}

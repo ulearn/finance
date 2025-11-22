@@ -1,0 +1,90 @@
+[
+  {
+    "date": "2025-09-11T00:00:00.000Z",
+    "type": "RECEIVE",
+    "contact": "Diana Italia Aguirre Guerra",
+    "contactID": "589ab617-710e-4a4a-b295-5a3367d76708",
+    "reference": "68c30876-50bb-a544-81c9-c390c4d04fd5",
+    "amount": 865,
+    "status": "AUTHORISED",
+    "bankTransactionID": "a47affa9-4114-4be7-a151-d1f2b1ef9f59",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-09-11T17:37:08.120Z",
+    "contactDetails": {
+      "contactID": "589ab617-710e-4a4a-b295-5a3367d76708",
+      "name": "Diana Italia Aguirre Guerra",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-09-11T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Revolut",
+    "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+    "reference": "68c30876-50bb-a544-81c9-c390c4d04fd5",
+    "amount": 24.42,
+    "status": "AUTHORISED",
+    "bankTransactionID": "62b74335-cc23-4dba-a337-a02476bc63c7",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-09-12T17:37:29.203Z",
+    "contactDetails": {
+      "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+      "name": "Revolut",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "type": "RECEIVE",
+    "contact": "Ana Belen Martin garcia",
+    "contactID": "5edca849-bb4a-48fc-b430-a637c0522126",
+    "reference": "68daf2d5-c205-a203-9aef-9c7b735797a4",
+    "amount": 462,
+    "status": "AUTHORISED",
+    "bankTransactionID": "d443cf6b-4a43-4618-89c5-70f4c814392b",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-09-29T20:59:52.660Z",
+    "contactDetails": {
+      "contactID": "5edca849-bb4a-48fc-b430-a637c0522126",
+      "name": "Ana Belen Martin garcia",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-09-29T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Revolut",
+    "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+    "reference": "68daf2d5-c205-a203-9aef-9c7b735797a4",
+    "amount": 4.82,
+    "status": "AUTHORISED",
+    "bankTransactionID": "f63d273d-c965-4641-b252-7860470820e9",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-09-30T21:00:27.427Z",
+    "contactDetails": {
+      "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+      "name": "Revolut",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  }
+]

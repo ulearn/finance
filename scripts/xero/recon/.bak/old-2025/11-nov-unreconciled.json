@@ -1,0 +1,146 @@
+[
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "type": "RECEIVE",
+    "contact": "Sylvie Rizzeri",
+    "contactID": "edcb3ba7-6156-44ea-82f3-65aa73234a61",
+    "reference": "6908fcfd-4021-aaf1-89e9-f0e8cd57b3ee",
+    "amount": 5529.8,
+    "status": "AUTHORISED",
+    "bankTransactionID": "dc9d5dfe-fd88-4578-9aa8-d63a8bc0c916",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-11-03T19:07:40.473Z",
+    "contactDetails": {
+      "contactID": "edcb3ba7-6156-44ea-82f3-65aa73234a61",
+      "name": "Sylvie Rizzeri",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "type": "SPEND-TRANSFER",
+    "contact": "Unknown",
+    "reference": null,
+    "amount": 2900,
+    "status": "AUTHORISED",
+    "bankTransactionID": "4f084284-6bad-4b3d-93d0-d265435aef59",
+    "bankAccount": "Revolut EUR Main",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-11-04T09:46:47.970Z"
+  },
+  {
+    "date": "2025-11-03T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Revolut",
+    "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+    "reference": "6908fcfd-4021-aaf1-89e9-f0e8cd57b3ee",
+    "amount": 55.5,
+    "status": "AUTHORISED",
+    "bankTransactionID": "64613c99-f0f6-44b6-a261-d3475ec0ab15",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-11-04T19:08:13.797Z",
+    "contactDetails": {
+      "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+      "name": "Revolut",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-11-06T00:00:00.000Z",
+    "type": "RECEIVE",
+    "contact": "Paola Parada Pinzon",
+    "contactID": "c43aca37-3f9d-40bc-bb2e-418ff63dc5d6",
+    "reference": "690c8752-328d-a153-a4f4-644cdbec0db5",
+    "amount": 900,
+    "status": "AUTHORISED",
+    "bankTransactionID": "2ebb606f-da5b-410e-877e-7e221ee6dba9",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-11-06T11:36:34.550Z",
+    "contactDetails": {
+      "contactID": "c43aca37-3f9d-40bc-bb2e-418ff63dc5d6",
+      "name": "Paola Parada Pinzon",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-11-06T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Revolut",
+    "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+    "reference": "690c8752-328d-a153-a4f4-644cdbec0db5",
+    "amount": 9.2,
+    "status": "AUTHORISED",
+    "bankTransactionID": "f4958758-5bbe-4556-97bd-94e4d4a5b0c2",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-11-07T11:36:49.873Z",
+    "contactDetails": {
+      "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+      "name": "Revolut",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-11-10T00:00:00.000Z",
+    "type": "RECEIVE",
+    "contact": "Paola Parada Pinzon",
+    "contactID": "c43aca37-3f9d-40bc-bb2e-418ff63dc5d6",
+    "reference": "6911b724-cd71-a720-99e8-08d9376f5c8d",
+    "amount": 1279,
+    "status": "AUTHORISED",
+    "bankTransactionID": "b246ffe4-e731-421f-941e-12b791928d01",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-11-10T10:00:22.460Z",
+    "contactDetails": {
+      "contactID": "c43aca37-3f9d-40bc-bb2e-418ff63dc5d6",
+      "name": "Paola Parada Pinzon",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  },
+  {
+    "date": "2025-11-10T00:00:00.000Z",
+    "type": "SPEND",
+    "contact": "Revolut",
+    "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+    "reference": "6911b724-cd71-a720-99e8-08d9376f5c8d",
+    "amount": 12.99,
+    "status": "AUTHORISED",
+    "bankTransactionID": "9669064b-e09a-4f32-a44d-a17eb5fa5198",
+    "bankAccount": "Revolut EUR Merchant",
+    "hasAttachments": false,
+    "updatedDateUTC": "2025-11-11T10:01:55.753Z",
+    "contactDetails": {
+      "contactID": "be7aa4cc-3835-4d5d-a637-cda25cad9f5e",
+      "name": "Revolut",
+      "contactPersons": [],
+      "addresses": [],
+      "phones": [],
+      "contactGroups": [],
+      "hasValidationErrors": false
+    }
+  }
+]

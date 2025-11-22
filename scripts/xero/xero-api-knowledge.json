@@ -1,0 +1,108 @@
+{
+  "name": "Xero Accounting API",
+  "base": "https://api.xero.com/api.xro/2.0",
+  "auth": "OAuth2",
+  "sdk": "xero-node",
+  "tokenExpiry": {
+    "access_token": 1800,
+    "refresh_token": 5184000,
+    "notes": "access_token: 30 minutes, refresh_token: 60 days"
+  },
+  "scopes": [
+    "openid",
+    "profile",
+    "email",
+    "accounting.settings",
+    "accounting.transactions",
+    "accounting.contacts",
+    "accounting.attachments",
+    "offline_access"
+  ],
+  "requiredScopes": [
+    "openid",
+    "profile",
+    "email",
+    "accounting.transactions",
+    "offline_access"
+  ],
+  "camelCase": true,
+  "tenantRequired": true,
+  "endpoints": {
+    "bankTransactions": {
+      "get": "GET /BankTransactions",
+      "getById": "GET /BankTransactions/{BankTransactionID}",
+      "create": "PUT /BankTransactions",
+      "update": "POST /BankTransactions/{BankTransactionID}",
+      "delete": "POST /BankTransactions/{BankTransactionID}",
+      "reconciliationFields": ["Status", "IsReconciled", "BankAccount", "LineItems"]
+    },
+    "invoices": {
+      "get": "GET /Invoices",
+      "getById": "GET /Invoices/{InvoiceID}",
+      "create": "PUT /Invoices",
+      "update": "POST /Invoices/{InvoiceID}"
+    },
+    "payments": {
+      "get": "GET /Payments",
+      "getById": "GET /Payments/{PaymentID}",
+      "create": "PUT /Payments",
+      "delete": "POST /Payments/{PaymentID}"
+    },
+    "bankTransfers": {
+      "get": "GET /BankTransfers",
+      "create": "PUT /BankTransfers"
+    },
+    "accounts": {
+      "get": "GET /Accounts",
+      "getById": "GET /Accounts/{AccountID}"
+    }
+  },
+  "sdkMethods": {
+    "auth": {
+      "buildConsentUrl": "Generate OAuth2 authorization URL",
+      "apiCallback": "Exchange authorization code for token set",
+      "setTokenSet": "Set token set on client instance",
+      "refreshToken": "Refresh expired access token",
+      "refreshWithRefreshToken": "Direct token refresh with credentials",
+      "revokeToken": "Revoke refresh token and disconnect",
+      "updateTenants": "Get list of connected organizations"
+    },
+    "accounting": {
+      "getBankTransactions": "xero.accountingApi.getBankTransactions(xeroTenantId, ifModifiedSince, where, order, page, unitdp)",
+      "createBankTransactions": "xero.accountingApi.createBankTransactions(xeroTenantId, bankTransactions, summarizeErrors, unitdp)",
+      "updateOrCreateBankTransactions": "xero.accountingApi.updateOrCreateBankTransactions(xeroTenantId, bankTransactions, summarizeErrors, unitdp)",
+      "getInvoices": "xero.accountingApi.getInvoices(xeroTenantId, ifModifiedSince, where, order, iDs, invoiceNumbers, contactIDs, statuses, page, includeArchived, createdByMyApp, unitdp)",
+      "getPayments": "xero.accountingApi.getPayments(xeroTenantId, ifModifiedSince, where, order, page)",
+      "createPayment": "xero.accountingApi.createPayment(xeroTenantId, payment)",
+      "getAccounts": "xero.accountingApi.getAccounts(xeroTenantId, ifModifiedSince, where, order)"
+    }
+  },
+  "reconciliationStatuses": [
+    "AUTHORISED",
+    "DELETED",
+    "VOIDED",
+    "PAID",
+    "SUBMITTED"
+  ],
+  "bankTransactionTypes": [
+    "RECEIVE",
+    "SPEND",
+    "RECEIVE-OVERPAYMENT",
+    "RECEIVE-PREPAYMENT",
+    "SPEND-OVERPAYMENT",
+    "SPEND-PREPAYMENT",
+    "RECEIVE-TRANSFER",
+    "SPEND-TRANSFER"
+  ],
+  "quirks": {
+    "emptyTenantId": "Custom connections (client_credentials) use empty string '' for xeroTenantId",
+    "tokenStorage": "Must implement persistent storage - tokens expire and need refresh",
+    "clockTolerance": "SDK supports clockTolerance parameter for time sync issues",
+    "dateFilters": "Use ifModifiedSince for incremental sync (Date object or ISO string)",
+    "whereClause": "Supports WHERE filtering like 'Status==\"AUTHORISED\"'",
+    "pagination": "Use page parameter for large result sets"
+  },
+  "docs": "https://developer.xero.com/documentation/api/accounting/overview",
+  "sdkDocs": "https://github.com/XeroAPI/xero-node",
+  "notes": "Always check token expiration before API calls. Refresh tokens valid for 60 days. Use updateTenants() to get organization details after auth."
+}

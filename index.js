@@ -148,6 +148,278 @@ app.post('/fins/payroll/zoho/leave/sync-all', async (req, res) => {
   }
 });
 
+// Xero OAuth and API routes
+const XeroAPIClient = require('./scripts/xero/xero-client');
+
+// Xero OAuth callback
+app.get('/fins/xero/callback', async (req, res) => {
+  try {
+    const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+
+    if (!req.query.code) {
+      return res.status(400).send('Authorization code missing');
+    }
+
+    const xeroClient = new XeroAPIClient();
+    const success = await xeroClient.exchangeCodeForTokens(fullUrl);
+
+    if (success) {
+      res.send(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Xero Authorization Success</title>
+          <style>
+            body { font-family: Arial; padding: 50px; text-align: center; }
+            .success { color: green; font-size: 24px; margin-bottom: 20px; }
+            .info { color: #666; }
+          </style>
+        </head>
+        <body>
+          <div class="success">✓ Xero Authorization Successful!</div>
+          <div class="info">You can now close this window and return to the dashboard.</div>
+        </body>
+        </html>
+      `);
+    } else {
+      res.status(500).send('Failed to exchange authorization code');
+    }
+  } catch (error) {
+    console.error('OAuth callback error:', error);
+    res.status(500).send(`Authorization failed: ${error.message}`);
+  }
+});
+
+// Get Xero authorization URL
+app.get('/fins/xero/auth-url', async (req, res) => {
+  try {
+    const xeroClient = new XeroAPIClient();
+    const authUrl = await xeroClient.getAuthorizationUrl();
+    res.json({
+      success: true,
+      authUrl: authUrl
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get organization info
+app.get('/fins/xero/organization', async (req, res) => {
+  try {
+    const xeroClient = new XeroAPIClient();
+    const orgs = await xeroClient.getOrganizationInfo();
+    res.json({
+      success: true,
+      organizations: orgs
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get bank transactions
+app.get('/fins/xero/bank-transactions', async (req, res) => {
+  try {
+    const xeroClient = new XeroAPIClient();
+    const transactions = await xeroClient.getBankTransactions({
+      where: req.query.where,
+      order: req.query.order,
+      page: req.query.page
+    });
+    res.json({
+      success: true,
+      data: transactions
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get invoices
+app.get('/fins/xero/invoices', async (req, res) => {
+  try {
+    const xeroClient = new XeroAPIClient();
+    const invoices = await xeroClient.getInvoices({
+      where: req.query.where,
+      statuses: req.query.statuses,
+      page: req.query.page
+    });
+    res.json({
+      success: true,
+      data: invoices
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get payments
+app.get('/fins/xero/payments', async (req, res) => {
+  try {
+    const xeroClient = new XeroAPIClient();
+    const payments = await xeroClient.getPayments({
+      where: req.query.where,
+      page: req.query.page
+    });
+    res.json({
+      success: true,
+      data: payments
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get bank accounts
+app.get('/fins/xero/bank-accounts', async (req, res) => {
+  try {
+    const xeroClient = new XeroAPIClient();
+    const accounts = await xeroClient.getBankAccounts();
+    res.json({
+      success: true,
+      data: accounts
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get contacts
+app.get('/fins/xero/contacts', async (req, res) => {
+  try {
+    const xeroClient = new XeroAPIClient();
+    const contacts = await xeroClient.getContacts({
+      where: req.query.where,
+      page: req.query.page,
+      includeArchived: req.query.includeArchived === 'true'
+    });
+    res.json({
+      success: true,
+      data: contacts
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Google OAuth and API routes
+const GoogleAPIClient = require('./scripts/google/client');
+
+// Google OAuth callback
+app.get('/fins/google/callback', async (req, res) => {
+  try {
+    const { code } = req.query;
+
+    if (!code) {
+      return res.status(400).send('Authorization code missing');
+    }
+
+    const googleClient = new GoogleAPIClient();
+    const success = await googleClient.exchangeCodeForTokens(code);
+
+    if (success) {
+      res.send(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Google Authorization Success</title>
+          <style>
+            body { font-family: Arial; padding: 50px; text-align: center; }
+            .success { color: green; font-size: 24px; margin-bottom: 20px; }
+            .info { color: #666; }
+          </style>
+        </head>
+        <body>
+          <div class="success">✓ Google Authorization Successful!</div>
+          <div class="info">You can now close this window and return to the dashboard.</div>
+        </body>
+        </html>
+      `);
+    } else {
+      res.status(500).send('Failed to exchange authorization code');
+    }
+  } catch (error) {
+    console.error('OAuth callback error:', error);
+    res.status(500).send(`Authorization failed: ${error.message}`);
+  }
+});
+
+// Get Google authorization URL
+app.get('/fins/google/auth-url', (req, res) => {
+  try {
+    const googleClient = new GoogleAPIClient();
+    const authUrl = googleClient.getAuthorizationUrl();
+    res.json({
+      success: true,
+      authUrl: authUrl
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// List Google Drive files
+app.get('/fins/google/drive/files', async (req, res) => {
+  try {
+    const googleClient = new GoogleAPIClient();
+    const files = await googleClient.listDriveFiles({
+      q: req.query.q,
+      pageSize: req.query.pageSize ? parseInt(req.query.pageSize) : 100,
+      pageToken: req.query.pageToken
+    });
+    res.json({
+      success: true,
+      data: files
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Search Google Sites
+app.get('/fins/google/sites/search', async (req, res) => {
+  try {
+    const googleClient = new GoogleAPIClient();
+    const sites = await googleClient.searchGoogleSites(req.query.name);
+    res.json({
+      success: true,
+      data: sites
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Get file content from Drive
+app.get('/fins/google/drive/file/:fileId', async (req, res) => {
+  try {
+    const googleClient = new GoogleAPIClient();
+    const content = await googleClient.getFileContent(req.params.fileId);
+    res.json({
+      success: true,
+      data: content
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Export Google file (Docs/Sheets/Slides)
+app.get('/fins/google/drive/export/:fileId', async (req, res) => {
+  try {
+    const googleClient = new GoogleAPIClient();
+    const mimeType = req.query.mimeType || 'text/html';
+    const content = await googleClient.exportFile(req.params.fileId, mimeType);
+    res.json({
+      success: true,
+      data: content
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 // If import-api.js exports a router, uncomment this:
 // app.use('/fins/scripts/pay/sales/api', apiImportRouter);
 
