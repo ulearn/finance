@@ -1,5 +1,44 @@
 # Xero Reconciliation Manual
 
+## Login Process
+
+### Login Page Selectors
+
+**Email Page:**
+```html
+<input data-automationid="Username--input"
+       id="xl-form-email"
+       type="email"
+       class="xui-textinput--input xl-form-username"
+       placeholder="Email address">
+```
+- Selector: `input[data-automationid="Username--input"]`
+- Submit: Press `Enter` after typing email
+
+**Password Page:**
+```html
+<input data-automationid="PassWord--input"
+       id="xl-form-password"
+       type="password"
+       class="xui-textinput--input xl-form-password"
+       placeholder="Password">
+```
+- Selector: `input[data-automationid="PassWord--input"]`
+- Submit: Press `Enter` after typing password
+
+**2FA Page (MFA/TOTP):**
+```html
+<input data-automationid="auth-onetimepassword--input"
+       autocomplete="off"
+       maxlength="6"
+       placeholder="123456">
+```
+- Code Input: `input[data-automationid="auth-onetimepassword--input"]`
+- Submit Button: `button[data-automationid="auth-submitcodebutton"]`
+- Button Text: "Confirm"
+
+---
+
 ## Reconciliation Navigation
 
 ### Getting to the Reconciliation Screen
@@ -15,7 +54,7 @@
        ULearn Limited Current account
      </h2>
      ```
-
+To access the Reconciliation screen directly click the Blue Reconcile Button:
 3. **Reconcile Button**
    - Blue button showing number of unreconciled items:
      ```html
@@ -32,6 +71,14 @@
 4. **Reconciliation Screen URL**
    - Direct URL: `https://go.xero.com/BankRec/BankRec.aspx?accountID=93D5D790E7A14C9D9CF28B68DB272970`
    - Account ID: `93D5D790E7A14C9D9CF28B68DB272970`
+
+### Viewing Reconciled Transactions (History)
+
+**Reconciled Transactions Report** - View all previously reconciled bank transactions:
+- URL: `https://go.xero.com/app/!1RBrS/bank-rec/reconciled-transactions/93d5d790-e7a1-4c9d-9cf2-8b68db272970`
+- More fit-for-purpose than General Ledger Detail for reviewing reconciliation history
+- Shows what has already been matched/created/transferred
+- API accessibility: Unknown (needs investigation)
 
 ## Reconciliation Actions
 

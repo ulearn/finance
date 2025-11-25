@@ -100,49 +100,55 @@ function loadSession() {
 
 async function login() {
     console.log('Logging in to Fidelo...');
-    
+
     try {
         // Clear cookies
         cookieJar = {};
-        
+
         // Step 1: GET login page for PHPSESSID
         const loginPageRes = await client.get(FIDELO_CONFIG.loginUrl);
         parseCookies(loginPageRes.headers['set-cookie']);
-        
-        // Step 2: POST login
-        const formData = new URLSearchParams();
-        formData.append('login', 'ok');
-        formData.append('username', FIDELO_CONFIG.credentials.username);
-        formData.append('password', FIDELO_CONFIG.credentials.password);
-        formData.append('systemlanguage', 'en');
-        
-        const loginRes = await client.post(FIDELO_CONFIG.loginUrl, formData, {
+
+        // Step 2: POST login to /admin/login/attempt (NEW endpoint as of Nov 2025)
+        const loginPayload = {
+            force: false,
+            login: 'ok',
+            username: FIDELO_CONFIG.credentials.username,
+            password: FIDELO_CONFIG.credentials.password,
+            language: 'en',
+            passkey: ''
+        };
+
+        const loginRes = await client.post('https://ulearn.fidelo.com/admin/login/attempt', loginPayload, {
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json',
                 'Cookie': getCookieString(),
                 'Referer': FIDELO_CONFIG.loginUrl,
-                'Origin': FIDELO_CONFIG.baseUrl
+                'Origin': FIDELO_CONFIG.baseUrl,
+                'Accept': 'text/html, application/xhtml+xml',
+                'X-Inertia': 'true',
+                'X-Requested-With': 'XMLHttpRequest'
             },
             maxRedirects: 0,
             validateStatus: () => true
         });
-        
-        if (loginRes.status === 302) {
-            parseCookies(loginRes.headers['set-cookie']);
-            
-            // Follow redirect
-            await client.get(loginRes.headers.location, {
-                headers: { 'Cookie': getCookieString() }
-            });
-            
-            console.log('✅ Login successful');
-            saveSession(); // Save session after successful login
-            return true;
+
+        parseCookies(loginRes.headers['set-cookie']);
+
+        // Check for successful login (409 Conflict is actually success with Inertia redirects)
+        if (loginRes.status === 409 || loginRes.status === 302 || loginRes.status === 200) {
+            // Check if we got valid auth cookies
+            if (cookieJar.passcookie && cookieJar.passcookie !== 'deleted') {
+                console.log('✅ Login successful');
+                saveSession();
+                return true;
+            }
         }
 
         console.log('❌ Login failed - Status:', loginRes.status);
+        console.log('   Cookies:', getCookieString());
         return false;
-        
+
     } catch (error) {
         console.error('Login error:', error.message);
         return false;

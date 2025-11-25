@@ -1,0 +1,1453 @@
+FORMAT: 1A
+
+HOST: /api/1.1/ts
+
+# Fidelo School
+
+Create and update enquiries and bookings within Fidelo School.
+
+# Version
+
+Fidelo School API v. 1.1
+
+# Group Authentication
+
+The API follows standard Bearer Token Authentication rules.
+The request header must contain the "Authorization" attribute with a valid bearer access token.
+
+ 'Authorization: Bearer access_token'
+
+Replace access_token with a valid access token which is found at "Administration » Frontend » API Token".
+Make sure the IP of the request sender is whitelisted for the access token.
+
+# Group Request
+
+# Allowed HTTPs requests
+<table>
+    <tr>
+        <td>POST</td>
+        <td>Create new enquiry/booking</td>    
+    </tr>
+    <tr>
+        <td>PATCH</td>
+        <td>Update existing enquiry/booking</td> 
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>Get an enquiry/booking or search for existing enquiries/bookings</td> 
+    </tr>
+</table>
+
+# Group Response
+
+# Possible Server Responses
+- 200 `OK` - The request was successful.
+- 400 `Bad Request` - The request could not be understood or was missing required parameters.
+- 500 `Internal Server Error` - Something went wrong internally.
+- 401 `Unauthorized` - Either the token is wrong or the IP is not stored with the Token.
+
+# Field Error Codes (Status 400)
+<table>
+    <tr>
+        <th>Code</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>REQUIRED_FIELD_MISSING</td>
+        <td>Required field is missing in request.</td>
+    </tr>
+    <tr>
+        <td>INVALID_FIELD</td>
+        <td>Field does not exist in API.</td>
+    </tr>
+    <tr>
+        <td>INVALID_VALUE</td>
+        <td>Invalid value for field. This could be a mismatching ID for resources.</td>
+    </tr>
+    <tr>
+        <td>INVALID_DATE</td>
+        <td>Invalid date format.</td>
+    </tr>
+    <tr>
+        <td>INVALID_EMAIL</td>
+        <td>Invalid e-mail format.</td>
+    </tr>
+       <tr>
+        <td>INVALID_PHONE</td>
+        <td>Invalid phone number format.</td>
+    </tr>
+</table>
+
+# Group Fields
+
+## Enquiry/Booking Fields
+
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>school_id</td>
+        <td>integer </td>
+        <td>yes</td>
+        <td>Only required for creating.</td>
+    </tr>
+    <tr>
+        <td>firstname</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>First name of user</td>
+    </tr>
+    <tr>
+        <td>lastname</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>Last name of user</td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>Valid e-mail address</td>
+    </tr>
+    <tr>
+        <td>corresponding_language</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>ISO 15897<sup>1</sup></td>
+    </tr>
+    <tr>
+        <td>nationality</td>
+        <td>string</td> 
+        <td></td>
+        <td>ISO 3166-1 alpha-2 (uppercase)</td>
+    </tr>
+    <tr>
+        <td>language</td>
+        <td>string</td> 
+        <td></td>
+        <td>ISO 639-1 (lowercase)</td>
+    </tr>
+    <tr>
+        <td>birthday</td>
+        <td>string</td> 
+        <td></td>
+        <td>Birthday, format: YYYY-MM-DD</td>
+    </tr>
+    <tr>
+        <td>gender</td>
+        <td>integer</td> 
+        <td></td>
+        <td>1 -> male<br>2 -> female<br>3 -> non-binary</td>
+    </tr>
+    <tr>
+        <td>phone_private</td>
+        <td>string</td> 
+        <td></td>
+        <td>Valid ITU telephone number, like: +49 221 123456789</td>
+    </tr>
+    <tr>
+        <td>detail_phone_mobile</td>
+        <td>string</td> 
+        <td></td>
+        <td>Valid ITU telephone number, like: +49 221 123456789</td>
+    </tr>
+    <tr>
+        <td>comment</td>
+        <td>string</td> 
+        <td></td>
+        <td>Comment field</td>
+    </tr>
+    <tr>
+        <td>comment_course_category</td>
+        <td>string</td> 
+        <td></td>
+        <td>Comment field</td>
+    </tr>
+    <tr>
+        <td>referrer_id</td>
+        <td>integer</td> 
+        <td></td>
+        <td>How did you hear about us? Must be the corresponding ID.</td>
+    </tr>
+    <tr>
+        <td>student_status_id</td>
+        <td>integer</td> 
+        <td></td>
+        <td>Student status</td>
+    </tr>
+    <tr>
+        <td>agency_id</td>
+        <td>integer</td> 
+        <td></td>
+        <td>Agency ID</td>
+    </tr>
+    <tr>
+        <td>inbox</td>
+        <td>string</td> 
+        <td></td>
+        <td>Inbox</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>string</td> 
+        <td></td>
+        <td>Users address</td>
+    </tr>
+    <tr>
+        <td>zip</td>
+        <td>string</td> 
+        <td></td>
+        <td>Users zip code</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>string</td> 
+        <td></td>
+        <td>Users city</td>
+    </tr>
+    <tr>
+        <td>country_iso</td>
+        <td>string</td> 
+        <td></td>
+        <td>Users country, ISO 3166.2</td>
+    </tr>
+    <tr>
+        <td>state</td>
+        <td>string</td> 
+        <td></td>
+        <td>Users state</td>
+    </tr>
+    <tr>
+        <td>confirmed</td>
+        <td>string</td> 
+        <td></td>
+        <td>Unix timestamp</td>
+    </tr>
+    <tr>
+        <td>emergency_firstname</td>
+        <td>string</td> 
+        <td></td>
+        <td>First name of emergency contact</td>
+    </tr>
+    <tr>
+        <td>emergency_lastname</td>
+        <td>string</td> 
+        <td></td>
+        <td>Last name of emergency contact</td>
+    </tr>
+    <tr>
+        <td>emergency_phone</td>
+        <td>string</td> 
+        <td></td>
+        <td>Valid ITU telephone number, of emergency contact</td>
+    </tr>
+    <tr>
+        <td>emergency_email</td>
+        <td>string</td> 
+        <td></td>
+        <td>Valid email address of emergency contact</td>
+    </tr>
+    <tr>
+        <td>billing_firstname</td>
+        <td>string</td> 
+        <td></td>
+        <td>First name of billing contact</td>
+    </tr>
+    <tr>
+        <td>billing_lastname</td>
+        <td>string</td> 
+        <td></td>
+        <td>Last name of billing contact</td>
+    </tr>
+    <tr>
+        <td>billing_email</td>
+        <td>string</td> 
+        <td></td>
+        <td>Valid email address of billing contact</td>
+    </tr>
+    <tr>
+        <td>billing_phone</td>
+        <td>string</td> 
+        <td></td>
+        <td>Valid ITU telephone number of billing contact</td>
+    </tr>
+    <tr>
+        <td>billing_address</td>
+        <td>string</td> 
+        <td></td>
+        <td>Billing address</td>
+    </tr>
+    <tr>
+        <td>billing_city</td>
+        <td>string</td> 
+        <td></td>
+        <td>Billing city</td>
+    </tr>
+    <tr>
+        <td>billing_zip</td>
+        <td>string</td> 
+        <td></td>
+        <td>Billing zip code</td>
+    </tr>
+    <tr>
+        <td>billing_country</td>
+        <td>string</td> 
+        <td></td>
+        <td>Billing country, ISO 3166-1 alpha-2</td>
+    </tr>
+    <tr>
+        <td>matching_allergies</td>
+        <td>string</td> 
+        <td></td>
+        <td>Comma-separated list of allergies</td>
+    </tr>
+    <tr>
+        <td>passport_number</td>
+        <td>string</td> 
+        <td></td>
+        <td>Passport number of the user</td>
+    </tr>
+</table>
+
+
+<sup>1</sup> IETF Language Tag with underscore, configured frontend languages only. E.g., if you use `de_DE` (German (German)) instead of `de` (German), you need to submit `de_DE` also.
+
+## Course Fields
+
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>course_id</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>ID of the course you want to book</td>
+    </tr>
+    <tr>
+        <td>language_id</td>
+        <td>integer</td>
+        <td>yes</td>
+        <td>ID of the course language</td>
+    </tr>
+    <tr>
+        <td>level_id</td>
+        <td>integer</td>
+        <td>yes</td>
+        <td>ID of the course level</td>
+    </tr>
+    <tr>
+        <td>weeks</td>
+        <td>integer</td>
+        <td>yes</td>
+        <td>Duration of the course</td>
+    </tr>
+    <tr>
+        <td>from</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>Start date of the course, format: YYYY-MM-DD</td>
+    </tr>
+    <tr>
+        <td>until</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>End date of the course, format: YYYY-MM-DD</td>
+    </tr>
+</table>
+
+## Accommodation Fields
+
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>accommodation_id</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>ID of the accommodation you want to book</td>
+    </tr>
+    <tr>
+        <td>weeks</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>Duration of the accommodation</td>
+    </tr>
+    <tr>
+        <td>from</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>Start date of the accommodation, format: YYYY-MM-DD</td>
+    </tr>
+    <tr>
+        <td>until</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>End date of the accommodation, format: YYYY-MM-DD</td>
+    </tr>
+</table>
+
+## Transfer Fields
+
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>Type of Transfer.<br>0 - additional<br>1 - arrival<br>2 - departure</td>
+    </tr>
+    <tr>
+        <td>pickup_type</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>Valid location type: location, school or accommodation</td>
+    </tr>
+    <tr>
+        <td>pickup_location</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>- must be 0 if pickup_type is accommodation<br>- must be 1 if pickup_type is school<br>- must be a valid location id > 1 if pickup_type is location</td>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>Date of the transfer, format: YYYY-MM-DD</td>
+    </tr>
+    <tr>
+        <td>time</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>Time of the transfer, format: HH-MM-SS</td>
+    </tr>
+    <tr>
+        <td>dropoff_type</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>Valid location type: location, school or accommodation</td>
+    </tr>
+    <tr>
+        <td>dropoff_location</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>- must be 0 if dropoff_type is accommodation<br>- must be 1 if dropoff_type is school<br>- must be a valid location id > 1 if dropoff_type is location</td>
+    </tr>
+</table>
+
+## Insurance Fields
+
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>insurance_id</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>ID of the insurance you want to book</td>
+    </tr>
+    <tr>
+        <td>weeks</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>Duration of the insurance</td>
+    </tr>
+    <tr>
+        <td>from</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>Start date of the insurance, format: YYYY-MM-DD</td>
+    </tr>
+    <tr>
+        <td>until</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>End date of the insurance, format: YYYY-MM-DD</td>
+    </tr>
+</table>
+
+## Activity Fields
+
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>ID of the activity you want to book</td>
+    </tr>
+    <tr>
+        <td>weeks</td>
+        <td>integer</td> 
+        <td>yes</td>
+        <td>Duration of the activity</td>
+    </tr>
+    <tr>
+        <td>from</td>
+        <td>string</td> 
+        <td>yes</td>
+        <td>Start date of the activity, format: YYYY-MM-DD</td>
+    </tr>
+    <tr>
+        <td>until</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>End date of the activity, format: YYYY-MM-DD</td>
+    </tr>
+</table>
+
+## Custom fields
+
+Values for custom fields can also be added and updated. The ID of the field is needed. For select fields the IDs for the corresponding options are also needed. See the create request for definition of custom fields.
+
+Further validation is performed for custom fields:
+<table>
+    <tr>
+        <th>Field types</th>
+        <th>Format</th>
+    </tr>
+    <tr>
+        <td>Text/Textarea/HTML</td>
+        <td>Maximum of 64 KB</td>
+    </tr>
+    <tr>
+        <td>Checkbox</td>
+        <td>0 or 1</td>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td>YYYY-MM-DD</td>
+    </tr>
+    <tr>
+        <td>Select</td>
+        <td>Integer: Valid option ID</td>
+    </tr>
+    <tr>
+        <td>Yes/No</td>
+        <td>yes or no</td>
+    </tr>
+</table>
+
+# Group Enquiry
+
+## Create an enquiry [/enquiries]
+
+### Create an enquiry [POST]
+
++ Request
+
+    + Header
+    
+            Authorization: Bearer access_token
+
++ Request (application/json)
+
+        {
+            "school_id": 1,
+            "firstname": "API",
+            "lastname": "Test",
+            "birthday": "1990-01-01",
+            "gender": 1,
+            "phone_private": "+49213112345",
+            "email": "test@test.de",
+            "nationality": "DE",
+            "language": "de",
+            "corresponding_language": "de",
+            "comment": "Test comment",
+            "comment_course_category": "Comment",
+            "referrer_id": 5,
+            "student_status_id": 1,
+            "custom_fields": {
+                "4": "Text",
+                "5": 5
+            }
+        }
+
++ Response 200 (application/json)
+
+    The entity has been created successfully. For further updates you can find the corresponding ID for this entity in the response.
+    
+    It can take a moment for the enquiry to show up in the software.
+    
+    + Body
+    
+            {
+                "id": 3698,
+                "status": 200,
+                "message": "Entry successfully created"
+            }
+
+
++ Response 400 (application/json)
+
+    The validation of your input data has failed. The entity was not created. You can find the issues in the response JSON.
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field": "referrer_id",
+                        "code": "INVALID_VALUE",
+                        "message": "Field referrer id has invalid value: 666"
+                    },
+                    {
+                        "field": "birthday",
+                        "code": "INVALID_DATE",
+                        "message": "Field birthday has invalid date format: 1990-01-01x"
+                    },
+                    {
+                        "field": "corresponding_language",
+                        "code": "REQUIRED_FIELD_MISSING",
+                        "message": "Field is required: corresponding language"
+                    },
+                    {
+                        "field": "custom_fields.124",
+                        "code": "INVALID_VALUE",
+                        "message": "Field custom fields.124 has invalid length"
+                    },
+                    {
+                        "field": "what_field",
+                        "code": "INVALID_FIELD",
+                        "message": "Field does not exist: what_field"
+                    }
+                ],
+                "status": 400,
+                "message": "Validation Error"
+            }
+
+
++ Response 500 (application/json)
+
+    An internal error has happend, the enitity is likely not to be created. Please contact the support team if this error persists.
+
+    + Body
+    
+            {
+                "status": 500,
+                "message": "Internal Error"
+            }
+
+## Get or update an enquiry [/enquiries/{enquiry_id}]
+
++ Parameters
+    + enquiry_id (required, integer, `123`) ... Internal Enquiry ID
+
+### Update an enquiry [PATCH]
+
++ Request
+
+    + Header
+    
+            Authorization: Bearer access_token
+
++ Request (application/json)
+
+        {
+            "comment": "Updated comment"
+        }
+        
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                "id": 123,
+                "status": 200,
+                "message": "Entry successfully updated"
+            }
+        
++ Response 400 (application/json)
+
+    The validation of your input data has failed. The entity was not updated. You can find the issues in the response JSON.
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field": "referrer_id",
+                        "code": "INVALID_VALUE",
+                        "message": "Field referrer id has invalid value: 666"
+                    },
+                ],
+                "status": 400,
+                "message": "Validation Error"
+            }
+
+
++ Response 500 (application/json)
+
+    An internal error has happend, the enitity is likely not to be updated. Please contact the support team if this error persists.
+
+    + Body
+    
+            {
+                "status": 500,
+                "message": "Internal Error"
+            }
+            
++ Response 400
+
+            {
+                "status": 400,
+                "message": "No valid JSON body"
+            }
+
+### Get an enquiry [GET]
+
++ Request
+
+    + Header
+    
+            Authorization: Bearer access_token
+
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                "id": "5",
+                "referrer_id": "",
+                "student_status_id": "0",
+                "agency_id": "1",
+                "inbox": "default",
+                "comment": "",
+                "comment_course_category": null,
+                "firstname": "John",
+                "lastname": "Cole",
+                "gender": "1",
+                "birthday": "1992-05-08",
+                "nationality": "US",
+                "language": "en",
+                "corresponding_language": "en",
+                "phone_private": null,
+                "email": "John-Cole@hotmail123.com",
+                "address": "",
+                "zip": "",
+                "city": "",
+                "country_iso": "",
+                "contact_number": null,
+                "state": "",
+                "mothertongue": "en",
+                "detail_phone_mobile": null,
+                "emergency_firstname": "",
+                "emergency_lastname": "",
+                "emergency_phone": null,
+                "emergency_email": "",
+                "confirmed": "1314892113"
+            }
+
++ Response 400
+
+            {
+                "status": 400,
+                "message": "Invalid entry given: ID 32"
+            }
+
+## Search for enquiries [/enquiries/search]
+
+### Search for enquiries [GET]
+
++ Request (application/json)
+
+    + Header
+    
+            Authorization: Bearer access_token
+
+    + Body
+
+            {
+                "school_id": 1,
+                "email": "hans@fidelo.com"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                enquiries: [
+                    {
+                        "id": 123,
+                        ...
+                    }
+                ]
+            }
+
+# Group Booking
+
+## Create a booking [/bookings]
+
+### Create a booking [POST]
+
++ Request
+
+    + Header
+    
+            Authorization: Bearer access_token
+
++ Request (application/json)
+
+            {
+              "inbox": "default",
+              "school_id": 1,
+              "firstname": "API2",
+              "lastname": "Test",
+              "birthday": "1990-01-01",
+              "gender": 1,
+              "phone_private": "+49213112345",
+              "email": "test2@test.de",
+              "nationality": "DE",
+              "language": "de",
+              "corresponding_language": "de",
+              "comment": "Test comment",
+              "comment_course_category": "Comment",
+              "referrer_id": 5,
+              "student_status_id": 1,
+              "courses" : [
+                {
+                  "course_id": 4,
+                  "language_id": 5,
+                  "level_id": 1,
+                  "weeks": 10,
+                  "from": "2025-02-16",
+                  "until": "2025-05-31"
+                },
+                {
+                  "course_id": 77,
+                  "language_id": 5,
+                  "level_id": 1,
+                  "weeks": 10,
+                  "from": "2025-02-16",
+                  "until": "2025-05-31"
+                }
+              ],
+              "accommodations": [
+                {
+                  "accommodation_id": 31,
+                  "weeks": 10,
+                  "from": "2025-02-16",
+                  "until": "2025-05-31"
+                }
+              ],
+              "activities": [
+                {
+                  "activity_id": 1,
+                  "weeks": 10,
+                  "from": "2025-02-16",
+                  "until": "2025-05-31"
+                },
+                {
+                  "activity_id": 6,
+                  "weeks": 10,
+                  "from": "2025-02-16",
+                  "until": "2025-05-31"
+                }
+              ],
+              "insurances": [
+                {
+                  "insurance_id": 1,
+                  "weeks": 10,
+                  "from": "2025-02-16",
+                  "until": "2025-05-31"
+                },
+                {
+                  "insurance_id": 2,
+                  "weeks": 10,
+                  "from": "2025-02-16",
+                  "until": "2025-05-31"
+                }
+              ],
+              "transfers": [
+                {
+                  "type": 1,
+                  "pickup_type": "location",
+                  "pickup_location": 19,
+                  "date": "2025-05-31",
+                  "time": "11:00:00",
+                  "dropoff_type": "location",
+                  "dropoff_location": 4
+                },
+                {
+                  "type": 2,
+                  "pickup_type": "location",
+                  "pickup_location": 19,
+                  "date": "2025-05-31",
+                  "time": "11:00:00",
+                  "dropoff_type": "location",
+                  "dropoff_location": 4
+                },
+                {
+                  "type": 0,
+                  "pickup_type": "location",
+                  "pickup_location": 19,
+                  "date": "2025-02-26",
+                  "time": "11:00:00",
+                  "dropoff_type": "location",
+                  "dropoff_location": 4
+                }
+              ],
+              "custom_fields": {
+                    "221": "Text"
+                }
+            }
+
++ Response 200 (application/json)
+
+    The entity has been created successfully. For further updates you can find the corresponding ID for this entity in the response.
+    
+    It can take a moment for the enquiry to show up in the software.
+    
+    + Body
+    
+            {
+                "id": 123,
+                "status": 200,
+                "message": "Entry successfully created"
+            }
+
+
++ Response 400 (application/json)
+
+    The validation of your input data has failed. The entity was not created. You can find the issues in the response JSON.
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field": "referrer_id",
+                        "code": "INVALID_VALUE",
+                        "message": "Field referrer id has invalid value: 666"
+                    },
+                    {
+                        "field": "birthday",
+                        "code": "INVALID_DATE",
+                        "message": "Field birthday has invalid date format: 1990-01-01x"
+                    },
+                    {
+                        "field": "corresponding_language",
+                        "code": "REQUIRED_FIELD_MISSING",
+                        "message": "Field is required: corresponding language"
+                    },
+                    {
+                        "field": "custom_fields.124",
+                        "code": "INVALID_VALUE",
+                        "message": "Field custom fields.124 has invalid length"
+                    },
+                    {
+                        "field": "what_field",
+                        "code": "INVALID_FIELD",
+                        "message": "Field does not exist: what_field"
+                    }
+                ],
+                "status": 400,
+                "message": "Validation Error"
+            }
+
+
++ Response 500 (application/json)
+
+    An internal error has happend, the enitity is likely not to be created. Please contact the support team if this error persists.
+
+    + Body
+    
+            {
+                "status": 500,
+                "message": "Internal Error"
+            }
+
+## Get or update a booking [/bookings/{booking_id}]
+
++ Parameters
+    + booking_id (required, integer, `123`) ... Internal Booking ID
+
+### Update a booking [PATCH]
+
++ Request
+
+    + Header
+    
+            Authorization: Bearer access_token
+
++ Request (application/json)
+
+        {
+            "comment": "Updated comment"
+        }
+        
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                "id": 123,
+                "status": 200,
+                "message": "Enquiry successfully updated"
+            }
+        
++ Response 400 (application/json)
+
+    The validation of your input data has failed. The entity was not updated. You can find the issues in the response JSON.
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field": "referrer_id",
+                        "code": "INVALID_VALUE",
+                        "message": "Field referrer id has invalid value: 666"
+                    },
+                ],
+                "status": 400,
+                "message": "Validation Error"
+            }
+
+
++ Response 500 (application/json)
+
+    An internal error has happend, the enitity is likely not to be updated. Please contact the support team if this error persists.
+
+    + Body
+    
+            {
+                "status": 500,
+                "message": "Internal Error"
+            }
+
+### Get a booking [GET]
+
++ Request
+
+    + Header
+    
+            Authorization: Bearer access_token
+
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                "id": "5",
+                "referrer_id": "",
+                "student_status_id": "0",
+                "agency_id": "1",
+                "inbox": "default",
+                "comment": "",
+                "comment_course_category": null,
+                "firstname": "John",
+                "lastname": "Cole",
+                "gender": "1",
+                "birthday": "1992-05-08",
+                "nationality": "US",
+                "language": "en",
+                "corresponding_language": "en",
+                "phone_private": null,
+                "email": "John-Cole@hotmail123.com",
+                "address": "",
+                "zip": "",
+                "city": "",
+                "country_iso": "",
+                "contact_number": null,
+                "state": "",
+                "mothertongue": "en",
+                "detail_phone_mobile": null,
+                "emergency_firstname": "",
+                "emergency_lastname": "",
+                "emergency_phone": null,
+                "emergency_email": "",
+                "confirmed": "1314892113"
+            }
+            
++ Response 400
+
+            {
+                "status": 400,
+                "message": "Invalid entry given: ID 32"
+            }
+
+## Search for bookings [/bookings/search]
+
+### Search for bookings [GET]
+
++ Request (application/json)
+
+    + Header
+    
+            Authorization: Bearer access_token
+
+    + Body
+
+            {
+                "school_id": 1,
+                "email": "hans@fidelo.com"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                enquiries: [
+                    {
+                        "id": 123,
+                        [booking-object]
+                    }
+                ]
+            }
+
+## List bookings [/bookings{?filter%5Bcontact_id%5D}{?profile_pictures}]
+
+### List bookings [GET]
+
++ Parameters
+
+    + filter%5Bcontact_id%5D: 1 (number, optional) - Contact id
+    + profile_pictures: 1 (number, optional)
+    
++ Request
+
+    + Headers
+    
+            Authorization: Bearer access_token
+
++ Response 200 (application/json)
+
+    + Body
+            
+            {
+                "hits": 1,
+                "entries": {
+                    "1": {
+                        "id": 1,
+                        "all_start": "2023-06-04T00:00:00.000Z",
+                        "all_end": "2023-07-01T00:00:00.000Z",
+                        "inbox_visible": "...",
+                        "booking_number": "...",
+                        "group": "",
+                        "group_number": null,
+                        "has_student_app": false,
+                        "agency_name": null,
+                        "agency_full_name": null,
+                        "agency_number": null,
+                        "sponsored": false,
+                        "sponsor_name": null,
+                        "sponsor_id_number": "",
+                        "sponsoring_fg_from": null,
+                        "sponsoring_fg_until": null,
+                        "sponsoring_fg_has_upload": null,
+                        "customer_number": "...",
+                        "document_number": null,
+                        "customer_name": "Hans, Test",
+                        "customer_lastname": "Hans",
+                        "customer_firstname": "Test",
+                        "email": "...",
+                        "customer_birthday_original": "1990-01-01T00:00:00.000Z",
+                        "customer_age": "1990-01-01T00:00:00.000Z",
+                        "customer_city": "Stadt",
+                        "customer_zip": "PLZ",
+                        "customer_address": "Adresse",
+                        "customer_address_addon": "Adresszusatz",
+                        "customer_address_state": "Bundesland",
+                        "customer_comment": "",
+                        "customer_status": 0,
+                        "customer_tel": "0221987456",
+                        "customer_mobile": "01711252426",
+                        "document_numbers_invoices": "",
+                        "billingaddress_company": "Fidelo Software GmbH",
+                        "emergency_name": "",
+                        "emergency_phone": "",
+                        "emergency_mail": "",
+                        "visum_name": "",
+                        "visa_required": false,
+                        "visum_service_id_original": "",
+                        "visum_tracking_number_original": "",
+                        "visum_passport_number_original": "",
+                        "visum_date_of_issue_original": "",
+                        "visum_due_date_original": "",
+                        "visum_date_from_original": "",
+                        "visum_date_until_original": "",
+                        "course_fulllist": "G20 (80)",
+                        "course_units": "80",
+                        "course_from": "2023-06-05T00:00:00.000Z",
+                        "course_until": "2023-06-30T00:00:00.000Z",
+                        "first_course_start": "2023-06-05T00:00:00.000Z",
+                        "course_last_end_date": "2023-06-30T00:00:00.000Z",
+                        "first_course_name": "G20",
+                        "course_weeks": 4,
+                        "course_weeks_relative": 4,
+                        "current_level_intern_short": null,
+                        "last_teacher_name": null,
+                        "course_comment": "",
+                        "placementtest_level_internal": null,
+                        "placementtest_comment": null,
+                        "accommodation_from": "2023-06-04T00:00:00.000Z",
+                        "accommodation_until": "2023-07-01T00:00:00.000Z",
+                        "acc_comment": "",
+                        "acc_comment2": "",
+                        "transfer_from": "2023-06-04T00:00:00.000Z",
+                        "transfer_until": "2023-07-01T00:00:00.000Z",
+                        "transfer_airline": "",
+                        "transfer_airline_departure": "",
+                        "transfer_flightnumber": "",
+                        "transfer_flightnumber_departure": "",
+                        "transfer_comment": null,
+                        "arrival_comment": "",
+                        "departure_comment": "",
+                        "transfer_departure_info_en": "...",
+                        "transfer_arrival_info_en": "...",
+                        "transfer_mode": 0,
+                        "insurance_name_en": null,
+                        "insurance_from": null,
+                        "insurance_end": null,
+                        "activities_startdate": null,
+                        "activities_enddate": null,
+                        "activities_weeks": null,
+                        "acc_allergies": "",
+                        "accommodation_name": null,
+                        "accommodation_room": null,
+                        "accommodation_bed": null,
+                        "accommodation_room_bed": null,
+                        "accommodation_details": null,
+                        "accommodation_street": null,
+                        "accommodation_address_addon": null,
+                        "accommodation_share_with": null,
+                        "accommodation_zip": null,
+                        "accommodation_city": null,
+                        "accommodation_tel": null,
+                        "accommodation_tel2": null,
+                        "accommodation_mobile": null,
+                        "accommodation_email": null,
+                        "accommodation_description_en": null,
+                        "payment_reminder": "",
+                        "amount": 0,
+                        "amount_initial": 0,
+                        "open_payment_prior_to_arrival": 0,
+                        "open_payment_at_school": 0,
+                        "payments": 0,
+                        "payments_local": 0,
+                        "amount_open": 0,
+                        "amount_refund": 0,
+                        "paymentterms_info": "0\n",
+                        "paymentterms_next_date": null,
+                        "paymentterms_next_amount": null,
+                        "pdf_netto": null,
+                        "pdf_brutto": null,
+                        "pdf_loa": null,
+                        "last_message_date": null,
+                        "last_message_user": null,
+                        "status": "ready",
+                        "follow_up": null,
+                        "confirmed_date": "2023-03-20T18:24:01.000Z",
+                        "confirmed": true,
+                        "checkin": null,
+                        "checkout": null,
+                        "promotion": "",
+                        "social_security_number": "",
+                        "creator_id": "7",
+                        "created_original": "2023-03-20T18:23:41.000Z",
+                        "booking_created_original": "2023-03-20T18:23:41.000Z",
+                        "editor_id": "7",
+                        "changed_original": "2023-03-20T18:24:01.000Z",
+                        "flex_170": null,
+                        "flex_185": null,
+                        "flex_186": null,
+                        "flex_93_en": null,
+                        "flex_177_en": null,
+                        "flex_143_en": null,
+                        "flex_148": null,
+                        "flex_180": null,
+                        "profile_picture": "data:image/png;base64,..."
+                    }
+                }
+            }
+
+## Get booking details [/booking/{bookingId}{?include_inactive_services}{?include_credit_notes}]
+
+### Get booking details [GET]
+
++ Request
+
+    + Headers
+    
+            Authorization: Bearer access_token
+
++ Parameters
+
+    + bookingId (required, Number, `1`) ... Numeric `id` of the booking
+    + include_inactive_services (required, Number, `1`) ... 1 if inactive services should be returned
+    + include_credit_notes (Number, `1`) ... 1 if credit notes should be returned
+
++ Response 200 (application/json)
+
+    + Body
+                  
+            {
+                "data": {
+                    "student": {
+                        "firstname": "Test",
+                        "surname": "Api",
+                        "email": "..."
+                    },
+                    "booking": {
+                        "courses": [
+                            {
+                                "active": "1",
+                                "created": "2024-11-07 16:04:46",
+                                "from": "2023-04-03",
+                                "until": "2023-04-28",
+                                "weeks": "2",
+                                "name": "Group classes (20 lessons/week)",
+                                "category": "Group courses",
+                                "note": "",
+                                "flexible_allocation": "0",
+                                "custom_fields": [],
+                                "additional_services": [],
+                                "assignments": [
+                                    {
+                                        "week": "2023-04-03",
+                                        "class": "G20",
+                                        "days": [
+                                            "1",
+                                            "2",
+                                            "4"
+                                        ],
+                                        "start": "09:00:00",
+                                        "end": "13:00:00",
+                                        "teacher": "Ernandez, Mia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "accommodations": [
+                            {
+                                "active": "0",
+                                "created": "2024-11-07 16:04:46",
+                                "from": "2023-04-02",
+                                "until": "2023-04-29",
+                                "weeks": "2",
+                                "category": "Hotel",
+                                "roomtype": "Single room",
+                                "board": "Breakfast",
+                                "from_time": "16:00:00",
+                                "until_time": "10:00:00",
+                                "note": "",
+                                "additional_services": [],
+                                "assignments": [
+                                    {
+                                        "from": "2023-04-02 00:00:00",
+                                        "until": "2023-04-29 00:00:00",
+                                        "provider": "Hotel Seaview",
+                                        "room": "Room 5"
+                                    }
+                                ]
+                            }
+                        ],
+                        "transfers": [
+                            {
+                                "date": "2023-04-02",
+                                "time": null,
+                                "type": "1"
+                            },
+                            {
+                                "date": "2023-04-29",
+                                "time": null,
+                                "type": "2"
+                            }
+                        ],
+                        "holidays": {
+                            "125": {
+                                "from": "2024-11-11",
+                                "until": "2024-11-17",
+                                "weeks": "1",
+                                "type": "student",
+                                "splitting": {
+                                    "133": {
+                                        "type": "course",
+                                        "original_id": "4004",
+                                        "split_id": "4007",
+                                        "original_from": "2024-11-04",
+                                        "original_until": "2024-11-15"
+                                    },
+                                    "134": {
+                                        "type": "accommodation",
+                                        "original_id": "2625",
+                                        "split_id": "2627",
+                                        "original_from": "2024-11-03",
+                                        "original_until": "2024-11-30"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "invoices": [
+                        {
+                            "filename": "....pdf",
+                            "number": "...",
+                            "type": "brutto",
+                            "released_for_student": true,
+                            "base64": "data:application/pdf;base64,..."
+                            "credit_note_number": "CDX34308334",
+                            "created": "2024-01-01",
+                            "updated": "2024-03-22",
+                            "is_last_document": true,
+                            "date": "2024-01-01",
+                            "updated_by": "Doe, John",
+                            "created_by": "Doe, John",
+                            "items": [
+                                {
+                                    "description": "Group classes (20 lessons/week)",
+                                    "service_from": "2025-01-01",
+                                    "service_until": "2025-12-31",
+                                    "amount": 100.42,
+                                    "tax": 19,
+                                    "active": true
+                                }
+                            ]
+                        }
+                    ],
+                    "school": {
+                        "name": "...",
+                        "address": "...",
+                        "zip": "...",
+                        "city": "...",
+                        "country_id": "DE",
+                        "phone": "+49 ...",
+                        "email": "..."
+                    }
+                }
+            }
+            
++ Response 404
+
+            {
+                "status": 400,
+                "message": "Invalid entry given: ID 0"
+            }

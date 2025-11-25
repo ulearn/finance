@@ -1,16 +1,20 @@
 const axios = require('axios');
 
-// Updated to use the correct API endpoints from the documentation
+// Fidelo API v1.0/ts endpoints
+const FIDELO_API_BASE = 'https://ulearn.fidelo.com/api/1.0/ts';
+const FIDELO_API_TOKEN = '699c957fb710153384dc0aea54e5dbec'; // Token with bookings read scope
+
+// Get single booking by ID
 async function getFideloBookingAxios(bookingId) {
     try {
-        const response = await axios.get(`https://ulearn.fidelo.com/bookings/${bookingId}`, {
+        const response = await axios.get(`${FIDELO_API_BASE}/bookings/${bookingId}`, {
             headers: {
-                'Authorization': 'Bearer 54b1c34031393ae0bafb5cd4874deb17',
+                'Authorization': `Bearer ${FIDELO_API_TOKEN}`,
                 'Accept': 'application/json'
             },
             decompress: true
         });
-        
+
         return response.data;
     } catch (error) {
         console.error('API Error:', error.response?.data || error.message);
@@ -18,16 +22,17 @@ async function getFideloBookingAxios(bookingId) {
     }
 }
 
+// Get all bookings (paginated)
 async function getFideloBookingsAxios() {
     try {
-        const response = await axios.get('https://ulearn.fidelo.com/bookings', {
+        const response = await axios.get(`${FIDELO_API_BASE}/bookings`, {
             headers: {
-                'Authorization': 'Bearer 54b1c34031393ae0bafb5cd4874deb17',
+                'Authorization': `Bearer ${FIDELO_API_TOKEN}`,
                 'Accept': 'application/json'
             },
             decompress: true
         });
-        
+
         return response.data;
     } catch (error) {
         console.error('API Error:', error.response?.data || error.message);
@@ -38,14 +43,14 @@ async function getFideloBookingsAxios() {
 // Get booking by contact ID (student ID)
 async function getFideloBookingByContactId(contactId) {
     try {
-        const response = await axios.get(`https://ulearn.fidelo.com/bookings?filter[contact_id]=${contactId}`, {
+        const response = await axios.get(`${FIDELO_API_BASE}/bookings?filter[contact_id]=${contactId}`, {
             headers: {
-                'Authorization': 'Bearer 54b1c34031393ae0bafb5cd4874deb17',
+                'Authorization': `Bearer ${FIDELO_API_TOKEN}`,
                 'Accept': 'application/json'
             },
             decompress: true
         });
-        
+
         return response.data;
     } catch (error) {
         console.error('API Error:', error.response?.data || error.message);

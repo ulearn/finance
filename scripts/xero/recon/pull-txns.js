@@ -27,6 +27,7 @@ class TransactionCollector {
     this.logsDir = path.join(__dirname, 'logs');
     this.month = options.month || 'jan';
     this.year = options.year || '2025';
+    this.pageNum = options.page || null;
     this.outputDir = path.join(__dirname, this.year);
   }
 
@@ -70,14 +71,16 @@ class TransactionCollector {
   }
 
   async navigateToReconciliation() {
-    console.log('🏦 Navigating to Bank Reconciliation...');
+    const pageInfo = this.pageNum ? ` (Page ${this.pageNum})` : '';
+    console.log(`🏦 Navigating to Bank Reconciliation${pageInfo}...`);
     await new Promise(resolve => setTimeout(resolve, 5000));
 
-    const reconcileButtonSelector = 'a[data-automationid="reconcileBankItems"]';
-    await this.page.waitForSelector(reconcileButtonSelector, { timeout: 10000 });
-    await this.page.click(reconcileButtonSelector);
+    const baseUrl = 'https://go.xero.com/BankRec/BankRec.aspx?accountID=93D5D790E7A14C9D9CF28B68DB272970';
+    // NOTE: page flag added for quick & dirty testing
+    const url = this.pageNum ? `${baseUrl}&page=${this.pageNum}` : baseUrl;
 
-    await this.page.waitForNavigation({
+    // Always use direct URL navigation (with optional page parameter)
+    await this.page.goto(url, {
       waitUntil: 'networkidle2',
       timeout: 30000
     });
@@ -133,6 +136,13 @@ class TransactionCollector {
     });
 
     // Filter for target month
+    // Debug: Show first 10 dates to see format
+    console.log(`  📅 Sample dates from unreconciled transactions:`);
+    allTransactions.slice(0, 10).forEach((t, i) => {
+      console.log(`     ${i + 1}. ${t.date}`);
+    });
+    console.log('');
+
     const targetTransactions = allTransactions.filter(t => this.isTargetMonth(t.date));
 
     console.log(`  ✓ Found ${targetTransactions.length} transactions for ${this.month.toUpperCase()} ${this.year}`);
@@ -283,6 +293,9 @@ for (let i = 0; i < args.length; i++) {
     i++;
   } else if (args[i] === '--year' && args[i + 1]) {
     options.year = args[i + 1];
+    i++;
+  } else if (args[i] === '--page' && args[i + 1]) {
+    options.page = args[i + 1];
     i++;
   }
 }

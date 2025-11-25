@@ -1,0 +1,192 @@
+Fidelo Software GmbH  School Management Software  Admin
+Frontend » API for enquiries & bookings and payments
+Anne Flakowski - September 12, 2025 at 7:58 AM
+
+This manual explains how to interact with the Fidelo School Enquiries and Bookings API, which allows the creation, updating, and retrieval of enquiries and bookings within your Fidelo software. The API is accessible via HTTPS requests and uses bearer tokens for authentication.
+
+ 
+
+Here you can find a full technical documentation
+
+Enquires: https://fideloschool.docs.apiary.io/#reference/enquiry 
+Bookings: https://fideloschool.docs.apiary.io/#reference/booking
+Payments: https://fideloschoolpayments.docs.apiary.io/
+ 
+
+Authentication 
+Include a bearer token in the Authorization header for all API requests:
+
+Authorization: Bearer <your_token_here>
+If the token is invalid or the IP address is not associated with the token, you will receive an e0001 Error. The token can be created as described here.
+
+ 
+
+ 
+
+Enquiries
+1. Create a new enquiry
+
+Method: POST
+Endpoint: /enquiries 
+
+Required Fields:
+
+school_id (integer): The ID of the school.
+firstname (string): First name of the user.
+lastname (string): Last name of the user.
+email (string): Valid email address.
+corresponding_language (string): Language code (ISO 15897).
+Sample:
+
+POST /enquiries HTTP/1.1
+Authorization: Bearer <your_token_here>
+Content-Type: application/json
+
+{
+"school_id": 123,
+"firstname": "John",
+"lastname": "Doe",
+"email": "john.doe@example.com",
+"corresponding_language": "en_US"
+}
+ 
+
+2. Update an existing enquiry
+
+Method: PATCH
+Endpoint: /enquiries/{id} 
+
+Use this endpoint to update fields of an existing enquiry.
+
+Sample:
+
+PATCH /enquiries/456 HTTP/1.1
+Authorization: Bearer <your_token_here>
+Content-Type: application/json
+
+{
+"email": "new.email@example.com",
+"phone_private": "+49 123 456789"
+}
+ 
+
+3. Retrieve or search for enquiries
+
+Method: GET
+Endpoint:
+
+/enquiries/{id}: Retrieve an enquiry or booking by ID.
+/enquiries?search=<query>: Search for enquiries or bookings using query parameters.
+Example Request:
+
+GET /enquiries/456 HTTP/1.1
+Authorization: Bearer <your_token_here>
+ 
+
+ 
+
+Bookings
+1. Create a new booking
+
+Method: POST
+Endpoint: /bookings
+
+Use this endpoint to create a new booking. The same fields and requirements apply as for creating enquiries.
+
+Required Fields:
+
+school_id (integer): The ID of the school.
+firstname (string): First name of the user.
+lastname (string): Last name of the user.
+email (string): Valid email address.
+corresponding_language (string): Language code (ISO 15897).
+Sample:
+
+POST /bookings HTTP/1.1
+Authorization: Bearer <your_token_here>
+Content-Type: application/json
+
+{
+"school_id": 123,
+"inbox": "default",
+"firstname": "Jane",
+"lastname": "Smith",
+"email": "jane.smith@example.com",
+"corresponding_language": "en_US"
+}
+ 
+
+2. Update existing bookings
+
+Method: PATCH
+Endpoint: /bookings/{id}
+
+Use this endpoint to update fields for an existing booking.
+
+Sample:
+
+PATCH /bookings/789 HTTP/1.1
+Authorization: Bearer <your_token_here>
+Content-Type: application/json
+
+{
+"email": "updated.email@example.com",
+"phone_private": "+49 321 654987"
+}
+ 
+
+3. List bookings
+
+Method: GET
+Endpoint: /bookings
+
+Fetch a list of all bookings. You can filter using query parameters (if supported).
+
+Example Request:
+
+GET /bookings HTTP/1.1
+Authorization: Bearer <your_token_here>
+ 
+
+4. Get booking details
+
+Method: GET
+Endpoint: /bookings?filter[contact_id]=1
+
+Retrieve detailed information for a specific booking using the student ID.
+
+Example Request:
+
+GET /bookings/12345 HTTP/1.1
+Authorization: Bearer <your_token_here>
+ 
+
+ 
+
+Shared attributes
+Field	Type	Required	Description
+school_id	integer	Yes	The ID of the school (required for creating).
+firstname	string	Yes	First name of the user.
+lastname	string	Yes	Last name of the user.
+email	string	Yes	Valid email address.
+corresponding_language	string	Yes	ISO 15897 language code.
+nationality	string	No	Nationality (ISO 3166-1 alpha-2).
+language	string	No	Language (ISO 639-1).
+birthday	string	No	Birthday in YYYY-MM-DD format.
+gender	integer	No	1 for male, 2 for female.
+phone_private	string	No	ITU-compliant phone number (e.g., +49 221 123456789).
+comment	string	No	General comment field.
+ 
+Booking-Specific Attributes
+bookingId (Number): Unique identifier for the booking.
+contactId (Number): Unique identifier for the associated contact.
+ 
+
+Server responses
+Both the Enquiries and Bookings APIs return the following status codes:
+
+Code	Description
+200 OK	The request was successful.
+400 Bad Request	The request could not be understood or had invalid parameters.
+500 Internal Server Error	The server encountered an internal error.
+401 Unauthorizede0001 Error	Invalid token or unregistered IP address.

@@ -151,8 +151,21 @@ class FideloPayTeachersImporter {
             console.log('Extracting instance hash...');
 
             const response = await this.client.get(this.payTeachersPageUrl, {
-                headers: { 'Cookie': sessionLogin.getCookieString() }
+                headers: {
+                    'Cookie': sessionLogin.getCookieString(),
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                    'Referer': 'https://ulearn.fidelo.com/admin',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+                },
+                validateStatus: () => true  // Don't throw on non-2xx status
             });
+
+            console.log(`  Response status: ${response.status}`);
+
+            if (response.status === 401 || response.status === 403) {
+                console.log(`✗ Access denied (${response.status}) - account may not have permission or 2FA required`);
+                return null;
+            }
 
             if (response.status !== 200) {
                 console.log(`✗ Page returned status: ${response.status}`);
@@ -169,11 +182,14 @@ class FideloPayTeachersImporter {
                 return this.instanceHash;
             }
 
-            console.log('✗ Could not extract instance hash');
+            console.log('✗ Could not extract instance hash from page HTML');
             return null;
 
         } catch (error) {
             console.log('✗ Error getting instance hash:', error.message);
+            if (error.response) {
+                console.log(`  Status: ${error.response.status}`);
+            }
             return null;
         }
     }

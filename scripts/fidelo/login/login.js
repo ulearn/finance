@@ -10,7 +10,7 @@ class FideloAuth {
         this.timeout = 60000; // 60 second timeout
 
         // Login credentials from environment
-        this.username = process.env.FIDELO_USERNAME || 'paul@ulearn.ie';
+        this.username = process.env.FIDELO_USERNAME || 'dos@ulearnschool.com';
         this.password = process.env.FIDELO_PASSWORD;
 
         this.sessionToken = null;
