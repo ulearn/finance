@@ -317,13 +317,20 @@ window.MonthlyPayrollComponent = function({ data, selectedMonthlyPeriod, onDataR
             : 0;
 
         // Calculate sick leave hours: sick days × average hours per day
-        // Average hours per day = total hours in period / number of working days
-        const workingDaysInPeriod = filteredWeeks.length * 5;
+        // Average hours per day = total hours in period / total working days (INCLUDING sick days)
+        // First week always has 2 days (Thu+Fri), Last week always has 3 days (Mon+Tue+Wed), middle weeks have 5 days
+        const numWeeks = filteredWeeks.length;
+        const workingDaysInPeriod = numWeeks === 1
+            ? 5  // Edge case: single week period (shouldn't normally happen)
+            : 2 + ((numWeeks - 2) * 5) + 3;  // First(2) + Middle(5 each) + Last(3)
+
+        // Calculate average using ALL working days (sick days remain in denominator for "usual earnings")
         const avgHoursPerDay = workingDaysInPeriod > 0 ? periodTotalHours / workingDaysInPeriod : 0;
         const sickLeaveHours = sickDaysFromZoho * avgHoursPerDay;
 
         console.log(`[MONTH.JS] Leave found for ${teacher.email}: ${leaveFromZoho}h leave, ${sickDaysFromZoho} sick days`);
-        console.log(`[MONTH.JS] Sick leave calculation: ${sickDaysFromZoho} days × ${avgHoursPerDay.toFixed(2)} avg h/day = ${sickLeaveHours.toFixed(2)} hours`);
+        console.log(`[MONTH.JS] Sick leave calculation: ${numWeeks} weeks = ${workingDaysInPeriod} working days in period`);
+        console.log(`[MONTH.JS] Average: ${periodTotalHours}h ÷ ${workingDaysInPeriod} days = ${avgHoursPerDay.toFixed(2)} h/day → Sick: ${sickDaysFromZoho} days × ${avgHoursPerDay.toFixed(2)} h/day × €rate × 0.70 = sick pay`);
 
         // Get monthly adjustments from the new table (NOT from weekly data)
         // Reverse name back to "Surname, First Name" format for lookup

@@ -81,7 +81,7 @@ class TransactionCollector {
 
     // Always use direct URL navigation (with optional page parameter)
     await this.page.goto(url, {
-      waitUntil: 'networkidle2',
+      waitUntil: 'domcontentloaded',
       timeout: 30000
     });
 

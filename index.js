@@ -305,25 +305,40 @@ app.get('/fins/xero/contacts', async (req, res) => {
 
 // Google OAuth and API routes
 const GoogleAPIClient = require('./scripts/google/client');
+const GmailClient = require('./scripts/gmail/gmail-client');
 
-// Google OAuth callback
+// Google OAuth callback (handles both Drive and Gmail)
 app.get('/fins/google/callback', async (req, res) => {
   try {
-    const { code } = req.query;
+    const { code, scope } = req.query;
 
     if (!code) {
       return res.status(400).send('Authorization code missing');
     }
 
-    const googleClient = new GoogleAPIClient();
-    const success = await googleClient.exchangeCodeForTokens(code);
+    // Detect if this is Gmail or Drive authorization based on scope
+    const isGmail = scope && scope.includes('gmail');
+
+    let success, serviceType;
+
+    if (isGmail) {
+      // Gmail authorization
+      const gmailClient = new GmailClient();
+      success = await gmailClient.exchangeCodeForTokens(code);
+      serviceType = 'Gmail';
+    } else {
+      // Google Drive/Sites/YouTube authorization
+      const googleClient = new GoogleAPIClient();
+      success = await googleClient.exchangeCodeForTokens(code);
+      serviceType = 'Google Drive/Sites';
+    }
 
     if (success) {
       res.send(`
         <!DOCTYPE html>
         <html>
         <head>
-          <title>Google Authorization Success</title>
+          <title>${serviceType} Authorization Success</title>
           <style>
             body { font-family: Arial; padding: 50px; text-align: center; }
             .success { color: green; font-size: 24px; margin-bottom: 20px; }
@@ -331,8 +346,8 @@ app.get('/fins/google/callback', async (req, res) => {
           </style>
         </head>
         <body>
-          <div class="success">✓ Google Authorization Successful!</div>
-          <div class="info">You can now close this window and return to the dashboard.</div>
+          <div class="success">✓ ${serviceType} Authorization Successful!</div>
+          <div class="info">${isGmail ? 'accounts@ulearnschool.com is now connected' : 'You can now close this window and return to the dashboard.'}</div>
         </body>
         </html>
       `);
@@ -353,6 +368,22 @@ app.get('/fins/google/auth-url', (req, res) => {
     res.json({
       success: true,
       authUrl: authUrl
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Gmail OAuth routes
+// Get Gmail authorization URL
+app.get('/fins/gmail/auth-url', (req, res) => {
+  try {
+    const gmailClient = new GmailClient();
+    const authUrl = gmailClient.getAuthorizationUrl();
+    res.json({
+      success: true,
+      authUrl: authUrl,
+      hint: 'Log in as accounts@ulearnschool.com'
     });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });

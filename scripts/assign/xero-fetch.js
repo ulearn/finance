@@ -1,6 +1,6 @@
 /**
- * Xero Unreconciled Credit Transactions Fetcher
- * Location: /home/hub/public_html/fins/scripts/incomings/xero-unreconciled-fetcher.js
+ * Xero Transaction Fetcher
+ * Location: /home/hub/public_html/fins/scripts/incomings/xero-fetch.js
  *
  * Purpose: Fetch unreconciled credit transactions (incoming payments) from Xero
  *

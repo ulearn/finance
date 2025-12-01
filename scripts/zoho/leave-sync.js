@@ -497,24 +497,38 @@ class ZohoLeaveSync {
             console.log(`Leave Taken (period): ${leaveTaken}h`);
 
             // Calculate leave accrued (8% of hours worked)
+            // Smart logic: Use MAX when all classes have same hours_included_this_month (redundant weekly total)
+            // Use SUM when hours_included_this_month is NULL or varies by class (per-class hours)
             const connection = await this.getConnection();
             const [rows] = await connection.execute(`
-                SELECT SUM(
-                    COALESCE(hours_included_this_month,
-                        CASE WHEN can_auto_populate = 1
-                            THEN CAST(hours AS DECIMAL(10,2))
-                            ELSE 0
-                        END)
-                ) as total_hours
-                FROM teacher_payments
-                WHERE email = ?
-                AND select_value IN (
-                    SELECT DISTINCT select_value
+                SELECT SUM(week_hours) as total_hours
+                FROM (
+                    SELECT
+                        select_value,
+                        CASE
+                            -- If all non-NULL hours_included_this_month are the same, use it once (weekly total)
+                            WHEN COUNT(DISTINCT hours_included_this_month) = 1 AND MAX(hours_included_this_month) IS NOT NULL
+                            THEN MAX(hours_included_this_month)
+                            -- Otherwise, sum the hours across classes
+                            ELSE SUM(
+                                COALESCE(hours_included_this_month,
+                                    CASE WHEN can_auto_populate = 1
+                                        THEN CAST(hours AS DECIMAL(10,2))
+                                        ELSE 0
+                                    END)
+                            )
+                        END as week_hours
                     FROM teacher_payments
-                    WHERE STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y') >= ?
-                    AND STR_TO_DATE(SUBSTRING_INDEX(select_value, ' – ', -1), '%d/%m/%Y') <= ?
-                )
-            `, [email, dateFrom, dateTo]);
+                    WHERE email = ?
+                    AND select_value IN (
+                        SELECT DISTINCT select_value
+                        FROM teacher_payments
+                        WHERE STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y') <= ?
+                        AND STR_TO_DATE(SUBSTRING_INDEX(select_value, ' – ', -1), '%d/%m/%Y') >= ?
+                    )
+                    GROUP BY select_value
+                ) as weekly_totals
+            `, [email, dateTo, dateFrom]);
 
             const hoursWorked = parseFloat(rows[0]?.total_hours || 0);
             const leaveAccrued = hoursWorked * 0.08;
@@ -591,6 +605,7 @@ class ZohoLeaveSync {
 
         try {
             // Get only teachers who worked during this specific payroll period
+            // Use overlap logic to include weeks that partially overlap (e.g., Week 44 spans Oct/Nov)
             const [teachers] = await connection.execute(`
                 SELECT DISTINCT email, firstname
                 FROM teacher_payments
@@ -598,11 +613,11 @@ class ZohoLeaveSync {
                 AND select_value IN (
                     SELECT DISTINCT select_value
                     FROM teacher_payments
-                    WHERE STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y') >= ?
-                    AND STR_TO_DATE(SUBSTRING_INDEX(select_value, ' – ', -1), '%d/%m/%Y') <= ?
+                    WHERE STR_TO_DATE(SUBSTRING_INDEX(SUBSTRING_INDEX(select_value, ', ', -1), ' – ', 1), '%d/%m/%Y') <= ?
+                    AND STR_TO_DATE(SUBSTRING_INDEX(select_value, ' – ', -1), '%d/%m/%Y') >= ?
                 )
                 ORDER BY firstname
-            `, [dateFrom, dateTo]);
+            `, [dateTo, dateFrom]);
 
             console.log(`\n=== Updating leave balances for ${teachers.length} teachers who worked in this period ===`);
             console.log(`Period: ${dateFrom} to ${dateTo}`);

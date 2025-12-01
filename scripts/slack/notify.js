@@ -31,8 +31,12 @@ class SlackNotifier {
 
     /**
      * Send message to Slack using Bot Token
+     * @param {string} channel - Channel ID or name
+     * @param {string} text - Plain text message
+     * @param {Array} blocks - Slack blocks for rich formatting
+     * @param {string} threadTs - Optional: Thread timestamp to reply in a thread
      */
-    async sendMessage(channel, text, blocks = null) {
+    async sendMessage(channel, text, blocks = null, threadTs = null) {
         if (!this.botToken && !this.webhookUrl) {
             console.error('❌ No Slack credentials configured. Add SLACK_BOT_TOKEN or SLACK_WEBHOOK_URL to .env');
             return { success: false, error: 'No credentials' };
@@ -41,11 +45,19 @@ class SlackNotifier {
         try {
             if (this.botToken) {
                 // Use Bot Token (more flexible)
-                const response = await axios.post('https://slack.com/api/chat.postMessage', {
+                const payload = {
                     channel,
                     text,
                     blocks
-                }, {
+                };
+
+                // Add thread_ts if provided (for threaded replies)
+                if (threadTs) {
+                    payload.thread_ts = threadTs;
+                    console.log(`📎 Posting as thread reply to message ${threadTs}`);
+                }
+
+                const response = await axios.post('https://slack.com/api/chat.postMessage', payload, {
                     headers: {
                         'Authorization': `Bearer ${this.botToken}`,
                         'Content-Type': 'application/json'
@@ -53,7 +65,8 @@ class SlackNotifier {
                 });
 
                 if (response.data.ok) {
-                    console.log(`✅ Slack message sent to ${channel}`);
+                    const threadInfo = threadTs ? ' (as thread reply)' : '';
+                    console.log(`✅ Slack message sent to ${channel}${threadInfo}`);
                     return { success: true, timestamp: response.data.ts };
                 } else {
                     console.error('❌ Slack API error:', response.data.error);
@@ -61,6 +74,11 @@ class SlackNotifier {
                 }
             } else if (this.webhookUrl) {
                 // Use Webhook URL (simpler, but channel is predefined)
+                // NOTE: Webhooks don't support thread_ts
+                if (threadTs) {
+                    console.warn('⚠️  Webhook URL does not support threaded replies - posting as regular message');
+                }
+
                 const response = await axios.post(this.webhookUrl, {
                     text,
                     blocks
@@ -115,7 +133,7 @@ class SlackNotifier {
                     },
                     {
                         type: "mrkdwn",
-                        text: `*Fidelo ID:*\n${payment.bookingId}`
+                        text: `*Student ID:*\n${payment.studentId || payment.bookingId}`
                     },
                     {
                         type: "mrkdwn",
@@ -209,7 +227,7 @@ class SlackNotifier {
                     },
                     {
                         type: "mrkdwn",
-                        text: `*Fidelo ID:*\n${payment.bookingId}`
+                        text: `*Student ID:*\n${payment.studentId || payment.bookingId}`
                     },
                     {
                         type: "mrkdwn",
@@ -380,26 +398,36 @@ class SlackNotifier {
 
     /**
      * Send payment success notification
+     * @param {object} payment - Payment details
+     * @param {string} channel - Slack channel (optional)
+     * @param {string} threadTs - Thread timestamp for replying (optional)
      */
-    async notifyPaymentSuccess(payment, channel = null) {
+    async notifyPaymentSuccess(payment, channel = null, threadTs = null) {
         const { text, blocks } = this.formatPaymentSuccess(payment);
-        return await this.sendMessage(channel || this.defaultChannel, text, blocks);
+        return await this.sendMessage(channel || this.defaultChannel, text, blocks, threadTs);
     }
 
     /**
      * Send underpayment alert
+     * @param {object} payment - Payment details
+     * @param {string} channel - Slack channel (optional)
+     * @param {string} threadTs - Thread timestamp for replying (optional)
      */
-    async notifyUnderpayment(payment, channel = null) {
+    async notifyUnderpayment(payment, channel = null, threadTs = null) {
         const { text, blocks } = this.formatUnderpaymentAlert(payment);
-        return await this.sendMessage(channel || this.defaultChannel, text, blocks);
+        return await this.sendMessage(channel || this.defaultChannel, text, blocks, threadTs);
     }
 
     /**
      * Send manual review alert
+     * @param {object} transaction - Transaction details
+     * @param {string} reason - Reason for manual review
+     * @param {string} channel - Slack channel (optional)
+     * @param {string} threadTs - Thread timestamp for replying (optional)
      */
-    async notifyManualReview(transaction, reason, channel = null) {
+    async notifyManualReview(transaction, reason, channel = null, threadTs = null) {
         const { text, blocks } = this.formatManualReviewAlert(transaction, reason);
-        return await this.sendMessage(channel || this.defaultChannel, text, blocks);
+        return await this.sendMessage(channel || this.defaultChannel, text, blocks, threadTs);
     }
 
     /**

@@ -336,16 +336,12 @@ async function importCSV(filePath) {
 
 async function main() {
     try {
-       
-        // 2024
-        await importCSV('/home/hub/public_html/fins/scripts/fidelo/data/01-12-2024_Pay_Detail_04.10.2025.csv');
-        
-        // Import 2025 data
-        await importCSV('/home/hub/public_html/fins/scripts/fidelo/data/01-09-2025_Pay_Detail_04.10.2025.csv');
-        
+        // NEW October 2025 full month data (Nov 25, 2025)
+        await importCSV('/home/hub/www/fins/scripts/fidelo/data/incoming_payments_detail_25.11.2025.csv');
+
         console.log('\n' + '='.repeat(60));
-        console.log('✓ All imports complete to payment_detail table!');
-        
+        console.log('✓ October 2025 import complete to payment_detail table!');
+
     } catch (error) {
         console.error('\nFatal error:', error);
     }

@@ -66,4 +66,26 @@ g) Notification & Output Options (Added 2025-11-22):
 h) Current Output System:
    - "Incoming Payments" email sent to all hands (sales@, info@, accomm@, director neil@, etc.)
    - Problem: Everyone gets same exact information regardless of need-to-know
-   - Solution: Dashboard with role-based permissions + optional targeted notifications 
+   - Solution: Dashboard with role-based permissions + optional targeted notifications
+
+i) Revolut Integration (Added 2025-11-25):
+   - Xero Account: "Revolut EUR Merchant" (currently 72 unreconciled items)
+   - Option 1: Use Xero Puppeteer approach (click Reconcile button) - similar to BOI Current Account
+   - Option 2: Use Revolut API directly (PREFERRED - cleaner than Puppeteer scraping)
+   - Benefits: Better transaction data than BOI, API availability
+   - Research: Can Revolut handle bulk payment files? (Currently done via BOI)
+   - Decision pending: Switch primary account from BOI to Revolut or keep both?
+
+j) Stripe Integration (Added 2025-11-25):
+   - Payment Source: Stripe API (gross amounts + full customer info)
+   - Xero Impact: Stripe deposits appear in "ULearn Current Account" (net of fees)
+   - Challenge: Avoid double-counting (Stripe payment vs Xero deposit)
+   - Workflow:
+     1. Pull Stripe payment data via API (gross amount, customer, date)
+     2. Match to Fidelo booking using customer info
+     3. Assign payment in Fidelo with method = "Stripe" (payment_method_id = ?)
+     4. Mark corresponding Xero transaction as reconciled (net amount after Stripe fees)
+   - Benefits: Full customer information, automatic reconciliation, fee tracking
+   - TODO: Determine Stripe payment_method_id in Fidelo
+   - TODO: Build Stripe API integration module
+   - TODO: Handle Stripe fee reconciliation (difference between gross and net) 

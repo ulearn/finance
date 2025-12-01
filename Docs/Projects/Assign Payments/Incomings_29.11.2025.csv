@@ -1,0 +1,13 @@
+DATA SOURCES,,,
+Financial ,Xero?,Xero Method,API
+Bank of Ireland Current Account,Yes,Pupeteer,No
+Revolut Euro Account ,Yes,Pupeteer,No
+Revolut Merchant Account,Yes,Pupeteer,Yes
+Stripe,No ,N/A,Yes
+,,,
+CRM / GUIDES ,Connection,Provision,
+HubSpot ,API,Contact gives CRM (name/ email etc) | Deal provides financial amounts etc | Conversations API could provide email history | Ulgebra integration shows User chats in Bird,
+Slack ,API,Sales Team posts remittance info when they have it to Slack #financial,Often gives Fidelo ID and Student name while the image/PDF gives txn info (could be the customers bank / Stripe / Revolut etc) 
+,,,
+Assignment Target,Connection,Search Target ,
+Fidelo SIS ,API (GUI2 + Bookings + Payment),"Student ID, First and/or Last Name, email, amount, date range, nationality all used to narrow search & find the Student ",
