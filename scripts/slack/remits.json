@@ -930,8 +930,75 @@
           "success": true
         }
       ]
+    },
+    {
+      "messageId": "1764672739.505059",
+      "timestamp": "2025-12-02T10:52:19.505Z",
+      "studentId": "29224",
+      "studentName": "Lozano Alvarez, Alvaro",
+      "amount": 528,
+      "messageText": "ID 29224\t\tLozano Alvarez, Alvaro",
+      "userId": "U07CL253LJH",
+      "hasFiles": true,
+      "fileCount": 1,
+      "files": [
+        {
+          "name": "image.png",
+          "mimetype": "image/png",
+          "size": 108110,
+          "url_private": "https://files.slack.com/files-pri/T4CUW7RUK-F0A0TSAC16F/image.png"
+        }
+      ],
+      "parsedAttachment": {
+        "amount": 528,
+        "date": "2025-12-31",
+        "paymentMethod": "",
+        "bookingReference": "P20251019",
+        "transactionId": "",
+        "notes": "Paid: €0.00, Due amount: €528.00"
+      },
+      "attachmentsParsed": [
+        {
+          "filename": "image.png",
+          "mimetype": "image/png",
+          "parsed": {
+            "amount": 528,
+            "currency": "EUR",
+            "date": "2025-12-31",
+            "paymentMethod": "",
+            "studentId": "29224",
+            "studentName": "Alvaro Lozano Alvarez",
+            "bookingReference": "P20251019",
+            "transactionId": "",
+            "notes": "Paid: €0.00, Due amount: €528.00"
+          },
+          "success": true
+        }
+      ]
+    },
+    {
+      "messageId": "1764681693.048729",
+      "timestamp": "2025-12-02T13:21:33.048Z",
+      "studentId": "30389",
+      "studentName": "Lu, Biao\nHis visa was refused and he wasn",
+      "amount": null,
+      "messageText": "<@U4CUW7S2X> <@U08SHU1M96D> ID \t30389\t\tLu, Biao\nHis visa was refused and he wasn’t able to complete the refund form but he paid with Alipay using transfermate (escrow) and is wondering if the refund can be done with Alipay. Is that possible?",
+      "userId": "U07CL253LJH",
+      "fileCount": 0,
+      "files": []
+    },
+    {
+      "messageId": "1764696401.558139",
+      "timestamp": "2025-12-02T17:26:41.558Z",
+      "studentId": "30400",
+      "studentName": "Altarabeen, Marwan",
+      "amount": null,
+      "messageText": "Hi <@U4CUW7S2X> <@U08SHU1M96D>\nDid we process a refund for ID 30400 Altarabeen, Marwan?",
+      "userId": "U07CL253LJH",
+      "fileCount": 0,
+      "files": []
     }
   ],
-  "lastMessageId": "1764602560.748939",
-  "lastUpdated": "2025-12-01T22:40:58.828Z"
+  "lastMessageId": "1764696401.558139",
+  "lastUpdated": "2025-12-02T17:43:38.000Z"
 }

@@ -32,6 +32,47 @@ class FideloAssignmentHandler {
     }
 
     /**
+     * Convert date from "1 Dec 2025" format to "2025-12-01" (Y-m-d) format
+     * @param {string} dateStr - Date string in various formats
+     * @returns {string} - Date in Y-m-d format (e.g., "2025-12-01")
+     */
+    convertToYMD(dateStr) {
+        // If already in Y-m-d format (2025-12-01), return as-is
+        if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
+            return dateStr;
+        }
+
+        // Parse "1 Dec 2025" format
+        const monthMap = {
+            'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04',
+            'may': '05', 'jun': '06', 'jul': '07', 'aug': '08',
+            'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
+        };
+
+        // Match pattern: "1 Dec 2025" or "01 Dec 2025"
+        const match = dateStr.match(/(\d{1,2})\s+(\w{3})\s+(\d{4})/i);
+        if (match) {
+            const day = match[1].padStart(2, '0');
+            const month = monthMap[match[2].toLowerCase()];
+            const year = match[3];
+            return `${year}-${month}-${day}`;
+        }
+
+        // Fallback: try to parse with Date object
+        const date = new Date(dateStr);
+        if (!isNaN(date.getTime())) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        // If all else fails, return original string
+        console.warn(`⚠️  Could not convert date format: ${dateStr}`);
+        return dateStr;
+    }
+
+    /**
      * Connect to MySQL database
      */
     async connect() {
@@ -482,11 +523,107 @@ class FideloAssignmentHandler {
     }
 
     /**
+     * Check if a booking is confirmed
+     *
+     * @param {Object} booking - Fidelo booking object
+     * @returns {Promise<boolean>} true if confirmed, false if unconfirmed
+     */
+    async isBookingConfirmed(booking) {
+        // First, check if confirmation status is already in the booking object
+        // The booking object from Fidelo search includes a 'confirmed' field
+        if (typeof booking.confirmed !== 'undefined') {
+            // Convert to boolean - can be true, 1, or a timestamp string
+            return booking.confirmed === true ||
+                   booking.confirmed === 1 ||
+                   (typeof booking.confirmed === 'string' && booking.confirmed !== '' && booking.confirmed !== '0');
+        }
+
+        // Fallback: Query API if confirmed field not available
+        // Note: This may not work for all API endpoints, so we default to true on error
+        try {
+            const bookingId = booking.bookingId || booking.id;
+            const response = await axios.get(
+                `https://ulearn.fidelo.com/api/1.0/ts/bookings`,
+                {
+                    params: {
+                        'filter[id]': bookingId
+                    },
+                    headers: {
+                        'Authorization': `Bearer ${this.apiToken}`,
+                        'Accept': 'application/json'
+                    }
+                }
+            );
+
+            if (response.data && response.data.entries) {
+                const entries = Object.values(response.data.entries);
+                if (entries.length > 0) {
+                    const bookingData = entries[0];
+                    return bookingData.confirmed === true || bookingData.confirmed === 1;
+                }
+            }
+
+            // Default to assuming confirmed if we can't determine
+            console.log(`   ℹ️  Unable to determine confirmation status - assuming confirmed`);
+            return true;
+
+        } catch (error) {
+            console.error(`   ⚠️  Error checking booking confirmation status:`, error.message);
+            // On error, assume confirmed to avoid blocking legitimate payments
+            console.log(`   ℹ️  Assuming student is confirmed (error fallback)`);
+            return true;
+        }
+    }
+
+    /**
+     * Confirm a booking (auto-confirm unconfirmed students when payment received)
+     *
+     * @param {number} bookingId - Booking ID
+     * @param {string} studentName - Student name for logging
+     * @returns {Promise<boolean>} true if successful
+     */
+    async confirmBooking(bookingId, studentName) {
+        try {
+            console.log(`   🔄 Confirming student: ${studentName} (Booking ${bookingId})...`);
+
+            // Use current Unix timestamp
+            const confirmedTimestamp = Math.floor(Date.now() / 1000).toString();
+
+            const response = await axios.patch(
+                `https://ulearn.fidelo.com/api/1.1/ts/bookings/${bookingId}`,
+                {
+                    confirmed: confirmedTimestamp
+                },
+                {
+                    headers: {
+                        'Authorization': `Bearer ${this.apiToken}`,
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    }
+                }
+            );
+
+            if (response.data && response.data.status === 200) {
+                console.log(`   ✅ Student confirmed: ${studentName}`);
+                return true;
+            }
+
+            console.error(`   ⚠️  Unexpected confirmation response:`, response.data);
+            return false;
+
+        } catch (error) {
+            console.error(`   ❌ Error confirming booking ${bookingId}:`, error.response?.data || error.message);
+            return false;
+        }
+    }
+
+    /**
      * Assign payment to Fidelo with all necessary checks
      * This is the main entry point for payment assignment - handles:
      * 1. Duplicate detection (across ALL invoices for Student ID)
      * 2. Escrow payment handling
-     * 3. Actual payment assignment
+     * 3. Student confirmation check (auto-confirm if needed)
+     * 4. Actual payment assignment
      *
      * @param {Object} txn - Transaction object { date, amount, description, source }
      * @param {Object} booking - Fidelo booking object
@@ -533,6 +670,36 @@ class FideloAssignmentHandler {
             }
         }
 
+        // STEP 2.5: Check and confirm student if unconfirmed
+        // Logic: If payment hit bank account → Student is real → Auto-confirm
+        console.log(`🔍 Checking student confirmation status...`);
+        const isConfirmed = await this.isBookingConfirmed(booking);
+
+        let studentConfirmed = false;
+        if (!isConfirmed) {
+            const studentName = booking.customerName || booking.customer_name || `Student ${studentId}`;
+            console.log(`   ⚠️  Student is UNCONFIRMED: ${studentName}`);
+            console.log(`   💰 Payment received → Auto-confirming student...`);
+
+            if (!dryRun) {
+                studentConfirmed = await this.confirmBooking(bookingId, studentName);
+
+                if (!studentConfirmed) {
+                    // Failed to confirm - return error
+                    return {
+                        success: false,
+                        error: 'Failed to confirm unconfirmed student',
+                        message: `Student ${studentName} is unconfirmed and auto-confirmation failed. Cannot assign payment.`
+                    };
+                }
+            } else {
+                console.log(`   🧪 DRY RUN: Would confirm student ${studentName}`);
+                studentConfirmed = true; // Pretend success in dry-run
+            }
+        } else {
+            console.log(`   ✅ Student is already confirmed`);
+        }
+
         // STEP 3: Build payment comment with useful reference info
         let paymentComment = txn.description;
 
@@ -555,7 +722,7 @@ class FideloAssignmentHandler {
             inquiry_id: bookingId,
             school_id: 1,
             booking_id: bookingId,
-            payment_date: txn.date,
+            payment_date: this.convertToYMD(txn.date), // Convert to Y-m-d format
             payment_method_id: paymentMethodId,
             payment_amount: txn.amount,
             payment_comment: paymentComment
@@ -569,6 +736,7 @@ class FideloAssignmentHandler {
                 paymentData,
                 escrowHandled: escrowCount > 0,
                 escrowCount,
+                studentConfirmed: studentConfirmed,
                 methodUsed: paymentMethodName
             };
         }
@@ -592,15 +760,27 @@ class FideloAssignmentHandler {
                 escrowHandled: escrowCount > 0,
                 escrowCount,
                 escrowDeleted,
+                studentConfirmed: studentConfirmed,
                 methodUsed: paymentMethodName,
                 response: response.data
             };
 
         } catch (error) {
+            // Enhanced error logging for debugging
+            console.error(`   ❌ Payment assignment failed: ${error.message}`);
+            if (error.response?.status === 422) {
+                console.error(`   📋 422 Validation Error Details:`);
+                console.error(`      Status: ${error.response.status}`);
+                console.error(`      Response:`, JSON.stringify(error.response.data, null, 2));
+                console.error(`   📤 Payment data that was sent:`);
+                console.error(`     `, JSON.stringify(paymentData, null, 2));
+            }
+
             return {
                 success: false,
                 error: error.message,
-                errorDetails: error.response?.data
+                errorDetails: error.response?.data,
+                errorStatus: error.response?.status
             };
         }
     }

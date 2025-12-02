@@ -1,0 +1,774 @@
+{
+  "collectedAt": "2025-12-02T09:17:29.529Z",
+  "month": "jul",
+  "year": "2025",
+  "count": 50,
+  "transactions": [
+    {
+      "index": 0,
+      "dataId": "77f07d2367174e92a6adc2dcfcd0ebcf",
+      "description": "NEPOSCHGUSD 000000.42",
+      "date": "14 Jul 2025",
+      "reference": "407",
+      "amountSpent": "0.42",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.42",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "BOI",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.48 407"
+      }
+    },
+    {
+      "index": 1,
+      "dataId": "19a84a560197439fbf0fb433a2ee923b",
+      "description": "STRIPE-AL5NMFBAYGT SP",
+      "date": "14 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "239.69",
+      "type": "RECEIVE",
+      "amount": "239.69",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 2,
+      "dataId": "6d20a0180a4a4fc98839d1c251cd167d",
+      "description": "ULEARN20241224-113 SP",
+      "date": "14 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "2,265.00",
+      "type": "RECEIVE",
+      "amount": "2,265.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 3,
+      "dataId": "02f64893b8e34ce4815c81c5e8219e2f",
+      "description": "POS11JUL GOCAR CARSHA",
+      "date": "14 Jul 2025",
+      "reference": "545",
+      "amountSpent": "6.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "6.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "GoCar",
+        "account": "A104 - Transport",
+        "description": "Transport (Van/CityCar)"
+      }
+    },
+    {
+      "index": 4,
+      "dataId": "4c9c10395c6d42a9af0114bc43cdfde8",
+      "description": "P1307US 24.60@0.85731",
+      "date": "14 Jul 2025",
+      "reference": "553",
+      "amountSpent": "21.09",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "21.09",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Airtable",
+        "account": "B106 - Software / Hosting",
+        "description": "P2311US 24.00@0.96791"
+      }
+    },
+    {
+      "index": 5,
+      "dataId": "6aecd7e4bd804e268620758265c3ccf3",
+      "description": "POS11JUL Spotify P387",
+      "date": "14 Jul 2025",
+      "reference": "545",
+      "amountSpent": "11.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "11.99",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Spotify",
+        "account": "B102 - Office Running Expenses",
+        "description": "Rec Room Music"
+      }
+    },
+    {
+      "index": 6,
+      "dataId": "8be4ee5a44ed44a5924f8a1aca67053b",
+      "description": "POS11JUL GOCAR CARSHA",
+      "date": "14 Jul 2025",
+      "reference": "545",
+      "amountSpent": "21.65",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "21.65",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "GoCar",
+        "account": "A104 - Transport",
+        "description": "Transport (Van/CityCar)"
+      }
+    },
+    {
+      "index": 7,
+      "dataId": "819d11af0cb54fddb4560fcb7ff9683d",
+      "description": "POS12JUL DNH*GODADDY#",
+      "date": "14 Jul 2025",
+      "reference": "545",
+      "amountSpent": "92.63",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "92.63",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "GODADDY",
+        "account": "B106 - Software / Hosting",
+        "description": null
+      }
+    },
+    {
+      "index": 8,
+      "dataId": "3ff0b7ed24514611a0d0c6e3ff2be0e5",
+      "description": "POS13JUL FREENOW* CJC",
+      "date": "14 Jul 2025",
+      "reference": "545",
+      "amountSpent": "20.60",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "20.60",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 9,
+      "dataId": "559581df4d7a4deb98968608b6ebbe09",
+      "description": "POS11JUL DNH*GODADDY#",
+      "date": "14 Jul 2025",
+      "reference": "545",
+      "amountSpent": "54.66",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "54.66",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "GODADDY",
+        "account": "B106 - Software / Hosting",
+        "description": null
+      }
+    },
+    {
+      "index": 10,
+      "dataId": "e4b0fce837ee462e87e651fad82d7196",
+      "description": "NEPOSCHGUSD 000002.56",
+      "date": "14 Jul 2025",
+      "reference": "407",
+      "amountSpent": "2.56",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "2.56",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000001.96"
+      }
+    },
+    {
+      "index": 11,
+      "dataId": "52da0c446b41416eab41e1c63441e0e2",
+      "description": "P1207US149.00@0.85738",
+      "date": "14 Jul 2025",
+      "reference": "553",
+      "amountSpent": "127.75",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "127.75",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Starbucks",
+        "account": "B112a - Travel - National",
+        "description": null
+      }
+    },
+    {
+      "index": 12,
+      "dataId": "2e8eba1b85c4449bb6725c81615fe34f",
+      "description": "Simone BucciolFIDE SP",
+      "date": "14 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,089.50",
+      "type": "RECEIVE",
+      "amount": "1,089.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 13,
+      "dataId": "03ba8f92de414c09a4c1ec1e9edc6c1c",
+      "description": "ID 28991           SP",
+      "date": "14 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,137.00",
+      "type": "RECEIVE",
+      "amount": "1,137.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 14,
+      "dataId": "9f1e88fadc58495f8790c6478222afc2",
+      "description": "POS11JUL ZOHO-PEOPLE",
+      "date": "14 Jul 2025",
+      "reference": "545",
+      "amountSpent": "9.90",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "9.90",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Zoho",
+        "account": "B106 - Software / Hosting",
+        "description": "Zoho People subscription"
+      }
+    },
+    {
+      "index": 15,
+      "dataId": "33d162145f564cb09975c2276ddce99d",
+      "description": "P1507US  6.21@0.85829",
+      "date": "15 Jul 2025",
+      "reference": "553",
+      "amountSpent": "5.33",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.33",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Wistia Software company",
+        "account": "B106 - Software / Hosting",
+        "description": "P0207US 81.00@0.85037"
+      }
+    },
+    {
+      "index": 16,
+      "dataId": "61c6c631cdf944e49ce756a07b790c70",
+      "description": "EFT DD CHARGES",
+      "date": "15 Jul 2025",
+      "reference": "540",
+      "amountSpent": "5.20",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.20",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "EFT DD CHARGES"
+      }
+    },
+    {
+      "index": 17,
+      "dataId": "ec706a169af44859a25aed044aa67fca",
+      "description": "EFT DD CHARGES",
+      "date": "15 Jul 2025",
+      "reference": "540",
+      "amountSpent": "7.60",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "7.60",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "EFT DD CHARGES"
+      }
+    },
+    {
+      "index": 18,
+      "dataId": "6f02e35aa6d94f28808c22f88da1ead6",
+      "description": "EFT DD CHARGES",
+      "date": "15 Jul 2025",
+      "reference": "540",
+      "amountSpent": "3.12",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "3.12",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "EFT DD CHARGES"
+      }
+    },
+    {
+      "index": 19,
+      "dataId": "b227806485dd4e00ae0307012d99af84",
+      "description": "x3 ULearn Ltd.     SP",
+      "date": "15 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "5,642.80",
+      "type": "RECEIVE",
+      "amount": "5,642.80",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 20,
+      "dataId": "996bb396faee43deb4930b7f61546e14",
+      "description": "pmntx2 ULearn Ltd. SP",
+      "date": "16 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "2,804.00",
+      "type": "RECEIVE",
+      "amount": "2,804.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 21,
+      "dataId": "ed93c6f42b4d4bc39db9f3487ff4bb81",
+      "description": "P1707US 46.00@0.86500",
+      "date": "17 Jul 2025",
+      "reference": "553",
+      "amountSpent": "39.79",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "39.79",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Xero (NZ) Ltd",
+        "account": "B106 - Software / Hosting",
+        "description": "P1712US 46.00@0.95500"
+      }
+    },
+    {
+      "index": 22,
+      "dataId": "0466c3ccb03d4d43b0c16639c3274e11",
+      "description": "P1607US  6.25@0.86240",
+      "date": "17 Jul 2025",
+      "reference": "553",
+      "amountSpent": "5.39",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.39",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "GODADDY",
+        "account": "B106 - Software / Hosting",
+        "description": "Web Hosting"
+      }
+    },
+    {
+      "index": 23,
+      "dataId": "bf9ff979fd2b49709d6c4a6d4d0cef0e",
+      "description": "P1607GB 12000@1.15473",
+      "date": "17 Jul 2025",
+      "reference": "553",
+      "amountSpent": "13,856.76",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "13,856.76",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 24,
+      "dataId": "1de5b5dca0354e5bab39673d8a7e85ed",
+      "description": "POS16JUL Google YouTu",
+      "date": "17 Jul 2025",
+      "reference": "545",
+      "amountSpent": "13.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "13.99",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "YouTube",
+        "account": "B106 - Software / Hosting",
+        "description": "YouTube subscription - Teacher download account"
+      }
+    },
+    {
+      "index": 25,
+      "dataId": "a874d568390e48708e55cf7c6f5d6037",
+      "description": "ULEARND2025339     SP",
+      "date": "17 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,000.00",
+      "type": "RECEIVE",
+      "amount": "1,000.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 26,
+      "dataId": "7e0d64cffa5a4353810ce7ac7dc4ba67",
+      "description": "POS17JUL CELTIC WATER",
+      "date": "18 Jul 2025",
+      "reference": "545",
+      "amountSpent": "180.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "180.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 27,
+      "dataId": "6dc31999de284a258d08a4fcb6c50626",
+      "description": "POS17JUL YAUNDRY",
+      "date": "18 Jul 2025",
+      "reference": "545",
+      "amountSpent": "34.65",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "34.65",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Yaundry",
+        "account": "A101 - Accomm - Apartments Running Expns",
+        "description": "Laundry cleaning service"
+      }
+    },
+    {
+      "index": 28,
+      "dataId": "f6e5997bed004250ad4b3dab30ee022f",
+      "description": "POS16JUL WWW.YUGO.COM",
+      "date": "18 Jul 2025",
+      "reference": "624",
+      "amountSpent": "",
+      "amountReceived": "500.00",
+      "type": "RECEIVE",
+      "amount": "500.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 29,
+      "dataId": "fd0c5acf824844578a3df9f6fb26adab",
+      "description": "POS20JUL AMAZON.IE",
+      "date": "21 Jul 2025",
+      "reference": "545",
+      "amountSpent": "6.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "6.99",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 30,
+      "dataId": "e345aa012a204d8d90a3bd3eb24db2c4",
+      "description": "POS17JUL DNH*GODADDY#",
+      "date": "21 Jul 2025",
+      "reference": "545",
+      "amountSpent": "13.52",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "13.52",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "GODADDY",
+        "account": "B106 - Software / Hosting",
+        "description": null
+      }
+    },
+    {
+      "index": 31,
+      "dataId": "e098ca1362da4b388defd9668f5da2fa",
+      "description": "P2007US  6.16@0.86363",
+      "date": "21 Jul 2025",
+      "reference": "553",
+      "amountSpent": "5.32",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.32",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "CoinTracking.info",
+        "account": "B106 - Software / Hosting",
+        "description": "Reconciliation Software"
+      }
+    },
+    {
+      "index": 32,
+      "dataId": "cee90893d40c43ebbb69e3f949093986",
+      "description": "POS18JUL eBay O*13-13",
+      "date": "21 Jul 2025",
+      "reference": "545",
+      "amountSpent": "74.25",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "74.25",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 33,
+      "dataId": "ef53e87089a04924967e415d33ed3c44",
+      "description": "P2107US  6.17@0.86223",
+      "date": "22 Jul 2025",
+      "reference": "553",
+      "amountSpent": "5.32",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.32",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Airtable",
+        "account": "B106 - Software / Hosting",
+        "description": "P2412US 49.00@0.96326"
+      }
+    },
+    {
+      "index": 34,
+      "dataId": "9836437e19b940a98a651e345b02054b",
+      "description": "x2 ULearn Ltd.     SP",
+      "date": "22 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "4,370.00",
+      "type": "RECEIVE",
+      "amount": "4,370.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 35,
+      "dataId": "49eada9e4fb641ed9904e07f5a5ad9f8",
+      "description": "P2307US 24.00@0.85625",
+      "date": "23 Jul 2025",
+      "reference": "553",
+      "amountSpent": "20.55",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "20.55",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Airtable",
+        "account": "B106 - Software / Hosting",
+        "description": "P2302US 24.00@0.95750"
+      }
+    },
+    {
+      "index": 36,
+      "dataId": "e3e27966a7c74ba28e6702a4b593fe95",
+      "description": "P2307SK 44.62@0.85634",
+      "date": "24 Jul 2025",
+      "reference": "553",
+      "amountSpent": "38.21",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "38.21",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Wistia Software company",
+        "account": "B106 - Software / Hosting",
+        "description": "P0207US 81.00@0.85037"
+      }
+    },
+    {
+      "index": 37,
+      "dataId": "bce380492c3c4b55980da85da5b2c092",
+      "description": "P2407US  6.35@0.85354",
+      "date": "24 Jul 2025",
+      "reference": "553",
+      "amountSpent": "5.42",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.42",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Audible - CARD",
+        "account": "B121 - Text Books & Academic Materials",
+        "description": "P0811GB  7.99@1.15269"
+      }
+    },
+    {
+      "index": 38,
+      "dataId": "c42d09ffea6b463b8affcbf8d259ea14",
+      "description": "Jakub Tomek FIDELO SP",
+      "date": "24 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "330.00",
+      "type": "RECEIVE",
+      "amount": "330.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 39,
+      "dataId": "e6362e1be7cd4dec95aec656f14d76a4",
+      "description": "Maiko YamaguchiFID SP",
+      "date": "25 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,550.00",
+      "type": "RECEIVE",
+      "amount": "1,550.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 40,
+      "dataId": "43d25872e0a64a92b01f6b2b2d00dcbd",
+      "description": "INVOICE N D2025360 SP",
+      "date": "25 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,042.00",
+      "type": "RECEIVE",
+      "amount": "1,042.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 41,
+      "dataId": "8f31655e50ae47308d12ddf05337fe8c",
+      "description": "POS24JUL UCDPROFESSIO",
+      "date": "25 Jul 2025",
+      "reference": "545",
+      "amountSpent": "399.60",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "399.60",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 42,
+      "dataId": "3c38d4b160ad44319f3a57c170b5a329",
+      "description": "POSC24JUL O BRIENS SA",
+      "date": "25 Jul 2025",
+      "reference": "221",
+      "amountSpent": "10.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "10.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 43,
+      "dataId": "09689573322a4dc19140807665cd5ce6",
+      "description": "P2407US 49.00@0.85265",
+      "date": "25 Jul 2025",
+      "reference": "553",
+      "amountSpent": "41.78",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "41.78",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Wistia Software company",
+        "account": "B106 - Software / Hosting",
+        "description": "P0205US 81.00@0.88765"
+      }
+    },
+    {
+      "index": 44,
+      "dataId": "3504759c6b2f442ba41b927a6686f02c",
+      "description": "FLOGAS NATURA SEPA DD",
+      "date": "25 Jul 2025",
+      "reference": "340",
+      "amountSpent": "164.78",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "164.78",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flogas SEPA - DD",
+        "account": "B105 - Utils - Power, Light, Heat",
+        "description": "Gas (Combines 753569 € 430.76 & prior 742459 -€113.20)"
+      }
+    },
+    {
+      "index": 45,
+      "dataId": "7390788968e84d23a0e6b903ad4bf6b2",
+      "description": "HS-102 Gadtours SK SP",
+      "date": "25 Jul 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "21,612.80",
+      "type": "RECEIVE",
+      "amount": "21,612.80",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 46,
+      "dataId": "2106b3424ca1475cb0833b99a09964c2",
+      "description": "NEPOSCHGUSD 000000.84",
+      "date": "25 Jul 2025",
+      "reference": "407",
+      "amountSpent": "0.84",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.84",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.80"
+      }
+    },
+    {
+      "index": 47,
+      "dataId": "a6e47be3dce849f79f802bb24b9e6554",
+      "description": "FLOGAS NATURA SEPA DD",
+      "date": "25 Jul 2025",
+      "reference": "340",
+      "amountSpent": "192.27",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "192.27",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flogas SEPA - DD",
+        "account": "B105 - Utils - Power, Light, Heat",
+        "description": "Gas (Combines 753569 € 430.76 & prior 742459 -€113.20)"
+      }
+    },
+    {
+      "index": 48,
+      "dataId": "cebd0eec98fb45bfb6dcbedf221a1dc7",
+      "description": "FLOGAS NATURA SEPA DD",
+      "date": "25 Jul 2025",
+      "reference": "340",
+      "amountSpent": "250.05",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "250.05",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flogas SEPA - DD",
+        "account": "B105 - Utils - Power, Light, Heat",
+        "description": "Gas (Combines 753569 € 430.76 & prior 742459 -€113.20)"
+      }
+    },
+    {
+      "index": 49,
+      "dataId": "2a73685469ed43c083d4306f04da74b4",
+      "description": "FLOGAS NATURA SEPA DD",
+      "date": "25 Jul 2025",
+      "reference": "340",
+      "amountSpent": "165.33",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "165.33",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flogas SEPA - DD",
+        "account": "B105 - Utils - Power, Light, Heat",
+        "description": "Gas (Combines 753569 € 430.76 & prior 742459 -€113.20)"
+      }
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}

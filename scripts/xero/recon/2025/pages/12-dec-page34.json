@@ -1,0 +1,55 @@
+{
+  "collectedAt": "2025-12-02T11:22:04.999Z",
+  "month": "dec",
+  "year": "2025",
+  "count": 3,
+  "transactions": [
+    {
+      "index": 0,
+      "dataId": "f3687e957bd6469ca3613c8f0dc98548",
+      "description": "RENT BLACKHALL     SP",
+      "date": "1 Dec 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "3,350.00",
+      "type": "RECEIVE",
+      "amount": "3,350.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 1,
+      "dataId": "b537833878f64792b0b412a2759b9303",
+      "description": "CONTRA CTO",
+      "date": "1 Dec 2025",
+      "reference": "331",
+      "amountSpent": "29,128.04",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "29,128.04",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "PAYROLL",
+        "account": "B107 - Wages and Salaries",
+        "description": "Monthly Salary SEPA"
+      }
+    },
+    {
+      "index": 2,
+      "dataId": "d7e4a5bdbe1445ec86a627dc0b7b71eb",
+      "description": "ULEARNP20251003TMU SP",
+      "date": "1 Dec 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,126.60",
+      "type": "RECEIVE",
+      "amount": "1,126.60",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}

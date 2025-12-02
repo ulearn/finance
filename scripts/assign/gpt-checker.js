@@ -49,7 +49,7 @@ class GPTPaymentChecker {
     async loadFullManual() {
         if (this.fullManual) return this.fullManual;
 
-        const manualPath = path.join(__dirname, '../../Docs/Projects/Incomings/Manual.md');
+        const manualPath = path.join(__dirname, '../../Docs/Projects/Assign/Manual.md');
         this.fullManual = await fs.readFile(manualPath, 'utf8');
         this.stats.fullManualReads++;
         return this.fullManual;

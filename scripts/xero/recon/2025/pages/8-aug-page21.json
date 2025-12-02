@@ -1,0 +1,101 @@
+{
+  "collectedAt": "2025-12-02T09:19:12.274Z",
+  "month": "aug",
+  "year": "2025",
+  "count": 6,
+  "transactions": [
+    {
+      "index": 44,
+      "dataId": "1fa5206022e7437b8711fd75edd27648",
+      "description": "POS31JUL PAYZONE",
+      "date": "1 Aug 2025",
+      "reference": "545",
+      "amountSpent": "10.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "10.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 45,
+      "dataId": "f3105d3266e644d38c5925c9b00782c4",
+      "description": "FBD INSURANCE SEPA DD",
+      "date": "1 Aug 2025",
+      "reference": "340",
+      "amountSpent": "247.78",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "247.78",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "FBD INSURANCE SEPA DD",
+        "account": "B120 - Insurance - Commercial Premises",
+        "description": "FBD INSURANCE SEPA DD"
+      }
+    },
+    {
+      "index": 46,
+      "dataId": "d298bd4f5c2849328d087c570284d8c0",
+      "description": "NEPOSCHGUSD 000000.11",
+      "date": "1 Aug 2025",
+      "reference": "407",
+      "amountSpent": "0.11",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.11",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.31"
+      }
+    },
+    {
+      "index": 47,
+      "dataId": "c184508eccb94242822840b9acb750e9",
+      "description": "P3107US  6.33@0.87677",
+      "date": "1 Aug 2025",
+      "reference": "553",
+      "amountSpent": "5.55",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.55",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Wistia Software company",
+        "account": "B106 - Software / Hosting",
+        "description": "P0207US 81.00@0.85037"
+      }
+    },
+    {
+      "index": 48,
+      "dataId": "86940d15cb6e45b58b803fccdcbb9fe3",
+      "description": "ULEARNP2025724     SP",
+      "date": "1 Aug 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "2,350.00",
+      "type": "RECEIVE",
+      "amount": "2,350.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 49,
+      "dataId": "f2f3ac5c53b74b488d062017a807acbb",
+      "description": "BAYARTUNGALAG BATKHUY",
+      "date": "1 Aug 2025",
+      "reference": "331",
+      "amountSpent": "1,277.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1,277.50",
+      "xeroSuggestion": null
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}

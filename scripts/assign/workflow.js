@@ -50,6 +50,7 @@ const GmailReader = require('../gmail/reader');
 const FideloAssignmentHandler = require('./fidelo-assign');
 const AssignmentTracker = require('./tracker');
 const GPTPaymentChecker = require('./gpt-checker');
+const EscrowTracker = require('./escrow');
 const { determinePaymentMethod } = require('./payment-methods');
 const StripeIntegration = require('../stripe/api');
 const RevolutIntegration = require('../revolut/api');
@@ -66,6 +67,7 @@ class PaymentAssignmentWorkflow {
         this.fideloAssignment = new FideloAssignmentHandler();
         this.tracker = new AssignmentTracker();
         this.gptChecker = new GPTPaymentChecker();
+        this.escrowTracker = new EscrowTracker();
 
         // Storage for TransferMate payout emails
         this.transferMatePayments = [];
@@ -80,7 +82,7 @@ class PaymentAssignmentWorkflow {
         this.transactionThreadParentTs = null;
 
         // API Rate Limiting: Delay between transactions (ms) to prevent Fidelo API 422 errors
-        this.apiDelay = options.apiDelay || 1000; // Default: 1 second between transactions
+        this.apiDelay = options.apiDelay || 3000; // Default: 3 seconds between transactions
 
         // Thresholds
         this.thresholds = {
@@ -100,6 +102,7 @@ class PaymentAssignmentWorkflow {
             underpayment: 0,
             manualReview: 0,
             alreadyAssigned: 0,  // NEW: Track already-assigned payments (duplicate prevention)
+            escrowPending: 0,    // NEW: Track escrow payments (awaiting visa approval)
             failed: 0,
             transactions: []
         };
@@ -225,6 +228,13 @@ class PaymentAssignmentWorkflow {
                 return false;
             }
 
+            // Skip Blackhall rent transactions (handled separately, not student-related)
+            const description = (txn.description || '').toLowerCase();
+            if (description.includes('blackhall') && description.includes('rent')) {
+                console.log(`⚠️  Skipping Blackhall rent (non-student transaction): ${txn.description}`);
+                return false;
+            }
+
             return true;
         });
 
@@ -233,7 +243,22 @@ class PaymentAssignmentWorkflow {
             console.log(`✅ Filtered ${skipped} Xero transaction(s) to prevent double-counting`);
         }
 
-        return filtered;
+        // Normalize amount field: convert string amounts with commas to numbers
+        // Xero recon data has amounts like "1,250.40" which need to be parsed
+        return filtered.map(txn => {
+            // If amount is already a number, keep it as is
+            if (typeof txn.amount === 'number') {
+                return txn;
+            }
+
+            // Parse string amount (remove commas and convert to float)
+            const parsedAmount = parseFloat(String(txn.amount).replace(/,/g, ''));
+
+            return {
+                ...txn,
+                amount: parsedAmount
+            };
+        });
     }
 
     /**
@@ -367,6 +392,8 @@ class PaymentAssignmentWorkflow {
                     this.results.manualReview++;
                 } else if (result.status === 'already_assigned') {
                     this.results.alreadyAssigned++;
+                } else if (result.status === 'escrow_pending') {
+                    this.results.escrowPending++;
                 } else {
                     this.results.failed++;
                 }
@@ -444,8 +471,39 @@ class PaymentAssignmentWorkflow {
             result.slackMessageId = slackMatch.remittance.messageId;
             result.slackThreadTs = slackMatch.remittance.messageId; // Used for threading replies
 
+            // Check for ESCROW before attempting assignment (top of financial funnel - unsettled funds)
+            console.log('\n🔍 Checking escrow status (unsettled funds check)...');
+            const matchingEscrow = await this.escrowTracker.findMatchingEscrow(txn);
+
+            if (matchingEscrow && matchingEscrow.status === 'PENDING') {
+                console.log(`   🔒 ESCROW PAYMENT DETECTED: ${matchingEscrow.escrow_id}`);
+                console.log(`   Student: ${matchingEscrow.student_name} (ID: ${matchingEscrow.student_id})`);
+                console.log(`   Amount: €${matchingEscrow.amount}`);
+                console.log(`   ⚠️  Funds in TransferMate escrow - NOT in ULearn BOI account`);
+                console.log(`   ⚠️  SKIPPING Fidelo assignment until visa approval\n`);
+
+                // Reply to Slack thread with escrow warning
+                const escrowMessage = this.escrowTracker.formatSlackEscrowMessage(matchingEscrow, txn);
+
+                if (!this.dryRun) {
+                    await this.slackNotifier.sendMessage(escrowMessage, this.slackChannel, result.slackThreadTs);
+                    console.log(`   📢 Escrow notification sent to Slack thread`);
+                } else {
+                    console.log('   📢 [DRY RUN] Would reply to Slack thread with escrow notification');
+                }
+
+                // Return special escrow status - do NOT proceed with assignment
+                result.status = 'escrow_pending';
+                result.escrowId = matchingEscrow.escrow_id;
+                result.notification = 'Payment in TransferMate escrow - awaiting visa approval';
+
+                return result;
+            } else {
+                console.log('   ✓ Not an escrow payment - proceeding with assignment');
+            }
+
             // Search Fidelo by student ID
-            console.log(`   Searching Fidelo for student ID ${slackMatch.remittance.studentId}...`);
+            console.log(`\n   Searching Fidelo for student ID ${slackMatch.remittance.studentId}...`);
             const studentBooking = await this.fideloSearch.findBookingByStudentId(slackMatch.remittance.studentId);
 
             if (!studentBooking.success) {
@@ -465,8 +523,14 @@ class PaymentAssignmentWorkflow {
             // Determine payment method
             const paymentMethod = determinePaymentMethod(txn.description, false);
 
+            // Convert date format before assignment (Fidelo requires Y-m-d format)
+            const txnWithConvertedDate = {
+                ...txn,
+                date: this.fideloAssignment.convertToYMD(txn.date)
+            };
+
             // Assign payment with all checks (duplicate detection, escrow handling)
-            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txn, result.booking, {
+            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txnWithConvertedDate, result.booking, {
                 dryRun: this.dryRun,
                 paymentMethodId: paymentMethod.methodId,
                 paymentMethodName: paymentMethod.methodName
@@ -531,8 +595,39 @@ class PaymentAssignmentWorkflow {
             result.matchMethod = 'transfermate_email';
             result.transferMatePaymentId = tmPayment.pmntId;
 
+            // Check for ESCROW before attempting assignment (top of financial funnel - unsettled funds)
+            console.log('\n🔍 Checking escrow status (unsettled funds check)...');
+            const matchingEscrow = await this.escrowTracker.findMatchingEscrow(txn);
+
+            if (matchingEscrow && matchingEscrow.status === 'PENDING') {
+                console.log(`   🔒 ESCROW PAYMENT DETECTED: ${matchingEscrow.escrow_id}`);
+                console.log(`   Student: ${matchingEscrow.student_name} (ID: ${matchingEscrow.student_id})`);
+                console.log(`   Amount: €${matchingEscrow.amount}`);
+                console.log(`   ⚠️  Funds in TransferMate escrow - NOT in ULearn BOI account`);
+                console.log(`   ⚠️  SKIPPING Fidelo assignment until visa approval\n`);
+
+                // Post standalone escrow notification (no Slack thread to reply to)
+                const escrowMessage = this.escrowTracker.formatSlackEscrowMessage(matchingEscrow, txn);
+
+                if (!this.dryRun) {
+                    await this.slackNotifier.sendMessage(escrowMessage, this.slackChannel);
+                    console.log(`   📢 Escrow notification sent to Slack`);
+                } else {
+                    console.log('   📢 [DRY RUN] Would send standalone escrow notification to Slack');
+                }
+
+                // Return special escrow status - do NOT proceed with assignment
+                result.status = 'escrow_pending';
+                result.escrowId = matchingEscrow.escrow_id;
+                result.notification = 'Payment in TransferMate escrow - awaiting visa approval';
+
+                return result;
+            } else {
+                console.log('   ✓ Not an escrow payment - proceeding with assignment');
+            }
+
             // Search Fidelo by student ID from TransferMate email
-            console.log(`   Searching Fidelo for student ID ${tmPayment.fideloRef}...`);
+            console.log(`\n   Searching Fidelo for student ID ${tmPayment.fideloRef}...`);
             const studentBooking = await this.fideloSearch.findBookingByStudentId(tmPayment.fideloRef);
 
             if (!studentBooking.success) {
@@ -552,8 +647,14 @@ class PaymentAssignmentWorkflow {
             // Determine payment method (always Bank Transfer for TransferMate)
             const paymentMethod = determinePaymentMethod(txn.description, false);
 
+            // Convert date format before assignment (Fidelo requires Y-m-d format)
+            const txnWithConvertedDate = {
+                ...txn,
+                date: this.fideloAssignment.convertToYMD(txn.date)
+            };
+
             // Assign payment with all checks
-            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txn, result.booking, {
+            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txnWithConvertedDate, result.booking, {
                 dryRun: this.dryRun,
                 paymentMethodId: paymentMethod.methodId,
                 paymentMethodName: paymentMethod.methodName
@@ -615,6 +716,34 @@ class PaymentAssignmentWorkflow {
             }
             result.booking = bookingIdMatch.booking;
 
+            // FIX #1: Check for duplicate payment BEFORE checking discrepancy
+            // This prevents false "large_discrepancy" flags when payment already exists
+            console.log('\n   Checking for duplicate payment...');
+            const studentId = result.booking.customer_number;
+            console.log(`   Student ID: ${studentId}`);
+            const duplicateCheck = await this.fideloAssignment.checkForDuplicatePaymentByStudentId(
+                studentId,
+                txn.amount,
+                txn.date
+            );
+
+            if (duplicateCheck.alreadyAssigned) {
+                const match = duplicateCheck.existingPayment;
+                console.log(`\n⚠️  ALREADY ASSIGNED: Payment already exists in Fidelo`);
+                console.log(`   Invoice: ${match.invoice || 'Unknown'}`);
+                console.log(`   Existing Payment ID: ${match.id}`);
+                console.log(`   Amount: €${match.amount} (diff: €${match.amountDifference || '0.00'})`);
+                console.log(`   Date: ${match.date} (${match.daysDifference} days difference)`);
+                console.log(`   Method: ${match.method}`);
+                console.log(`   Comment: ${match.comment || 'N/A'}`);
+                console.log(`\n✅ Skipping to avoid duplicate - payment already reconciled\n`);
+
+                result.status = 'already_assigned';
+                result.existingPayment = match;
+                result.notification = 'Payment already assigned - skipped';
+                return result;
+            }
+
             // Check for discrepancy (not Slack-verified)
             const discrepancy = await this.checkDiscrepancy(txn, result.booking);
             result.discrepancy = discrepancy;
@@ -628,8 +757,15 @@ class PaymentAssignmentWorkflow {
             // Determine payment method
             const paymentMethod = determinePaymentMethod(txn.description, false);
 
+            // FIX #2: Convert date format before assignment
+            // Fidelo API requires Y-m-d format (e.g., "2025-12-01"), not "1 Dec 2025"
+            const txnWithConvertedDate = {
+                ...txn,
+                date: this.fideloAssignment.convertToYMD(txn.date)
+            };
+
             // Assign payment with all checks (duplicate detection, escrow handling)
-            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txn, result.booking, {
+            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txnWithConvertedDate, result.booking, {
                 dryRun: this.dryRun,
                 paymentMethodId: paymentMethod.methodId,
                 paymentMethodName: paymentMethod.methodName
@@ -744,8 +880,14 @@ class PaymentAssignmentWorkflow {
             // Determine payment method
             const paymentMethod = determinePaymentMethod(txn.description, false);
 
+            // Convert date format before assignment (Fidelo requires Y-m-d format)
+            const txnWithConvertedDate = {
+                ...txn,
+                date: this.fideloAssignment.convertToYMD(txn.date)
+            };
+
             // Assign payment with all checks (duplicate detection, escrow handling)
-            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txn, result.booking, {
+            const assignmentResult = await this.fideloAssignment.assignPaymentWithChecks(txnWithConvertedDate, result.booking, {
                 dryRun: this.dryRun,
                 paymentMethodId: paymentMethod.methodId,
                 paymentMethodName: paymentMethod.methodName
@@ -865,6 +1007,7 @@ class PaymentAssignmentWorkflow {
     /**
      * Load TransferMate payout emails from Gmail (last 60 days)
      * Stores payments with Fidelo references for matching
+     * Detects and records INCOMING ESCROW payments (separate from released payments)
      */
     async loadTransferMatePayouts() {
         try {
@@ -887,9 +1030,60 @@ class PaymentAssignmentWorkflow {
                 unreadOnly: false
             });
 
+            // Load escrow tracker
+            await this.escrowTracker.load();
+            console.log('   🔒 Escrow tracker loaded');
+
             // Parse all emails and extract payments
             this.transferMatePayments = [];
             for (const email of emails) {
+                // Check for INCOMING ESCROW payment
+                if (this.escrowTracker.detectIncomingEscrow(email)) {
+                    console.log(`   🔒 INCOMING ESCROW DETECTED in email: ${email.subject}`);
+
+                    // Parse payments from escrow email
+                    const escrowPayments = this.gmailReader.parseTransferMateBatchEmail(email.body);
+
+                    // Record each escrow payment
+                    for (const payment of escrowPayments) {
+                        try {
+                            const escrowRecord = await this.escrowTracker.recordIncoming({
+                                studentId: payment.fideloRef,
+                                studentName: payment.recipientName || 'Unknown',
+                                invoice: payment.invoice || null,
+                                amount: payment.amount,
+                                transactionDate: email.date,
+                                source: 'transfermate_email',
+                                sourceReference: email.id,
+                                sourceData: {
+                                    emailSubject: email.subject,
+                                    emailDate: email.date,
+                                    pmntId: payment.pmntId,
+                                    currency: payment.currency
+                                }
+                            });
+
+                            console.log(`      ✅ Escrow tracked: ${escrowRecord.escrow_id} - Student ${payment.fideloRef}`);
+
+                            // Mark payment as escrow
+                            this.transferMatePayments.push({
+                                ...payment,
+                                emailId: email.id,
+                                emailDate: email.date,
+                                emailSubject: email.subject,
+                                isEscrow: true,
+                                escrowId: escrowRecord.escrow_id
+                            });
+
+                        } catch (error) {
+                            console.error(`      ❌ Error recording escrow: ${error.message}`);
+                        }
+                    }
+
+                    continue; // Skip to next email
+                }
+
+                // Normal (non-escrow) payment processing
                 const payments = this.gmailReader.parseTransferMateBatchEmail(email.body);
 
                 if (payments.length > 0) {
@@ -899,10 +1093,18 @@ class PaymentAssignmentWorkflow {
                             ...payment,
                             emailId: email.id,
                             emailDate: email.date,
-                            emailSubject: email.subject
+                            emailSubject: email.subject,
+                            isEscrow: false
                         });
                     });
                 }
+            }
+
+            // Show escrow stats
+            const escrowStats = this.escrowTracker.getStats();
+            if (escrowStats.pending > 0) {
+                console.log(`   🔒 Escrow Status: ${escrowStats.pending} pending, ${escrowStats.released} released, ${escrowStats.refunded} refunded`);
+                console.log(`   💰 Total in escrow: €${escrowStats.pending_amount.toFixed(2)}`);
             }
 
             return this.transferMatePayments;
@@ -1207,6 +1409,7 @@ class PaymentAssignmentWorkflow {
         console.log(`✅ Successfully Assigned: ${this.results.success}`);
         console.log(`⚠️  Underpayments (assigned with alert): ${this.results.underpayment}`);
         console.log(`♻️  Already Assigned (skipped): ${this.results.alreadyAssigned}`);
+        console.log(`🔒 Escrow Pending (visa approval): ${this.results.escrowPending}`);
         console.log(`🚫 Manual Review Required: ${this.results.manualReview}`);
         console.log(`❌ Failed/Errors: ${this.results.failed}`);
 
@@ -1229,6 +1432,7 @@ class PaymentAssignmentWorkflow {
                 `✅ Success: ${this.results.success}\n` +
                 `⚠️ Underpayments: ${this.results.underpayment}\n` +
                 `♻️ Already Assigned: ${this.results.alreadyAssigned}\n` +
+                `🔒 Escrow Pending: ${this.results.escrowPending}\n` +
                 `🚫 Manual Review: ${this.results.manualReview}\n` +
                 `❌ Failed: ${this.results.failed}`;
 

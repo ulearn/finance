@@ -1,0 +1,132 @@
+{
+  "collectedAt": "2025-12-02T09:03:27.519Z",
+  "month": "apr",
+  "year": "2025",
+  "count": 9,
+  "transactions": [
+    {
+      "index": 0,
+      "dataId": "5d2d62095002489e8c670a122c3ad4dc",
+      "description": "POS28APR Upwork -8032",
+      "date": "29 Apr 2025",
+      "reference": "545",
+      "amountSpent": "23.37",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "23.37",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Upwork - CARD",
+        "account": "B118 - Consulting & Accounting (Professional Services)",
+        "description": "POS04AUG Upwork -6072"
+      }
+    },
+    {
+      "index": 1,
+      "dataId": "c40973bcff404f80a1be466ce4ed261e",
+      "description": "STRIPE-W4PNGSZTBDA SP",
+      "date": "29 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "401.82",
+      "type": "RECEIVE",
+      "amount": "401.82",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 2,
+      "dataId": "4f2a2f621ce84b908256f076f5b6ca76",
+      "description": "POS29APR Amazon.ie",
+      "date": "30 Apr 2025",
+      "reference": "545",
+      "amountSpent": "79.98",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "79.98",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 3,
+      "dataId": "d0ad8c1b0c4647ad9af8352a376e7274",
+      "description": "TO ERIKA BUENFIL",
+      "date": "30 Apr 2025",
+      "reference": "537",
+      "amountSpent": "2,000.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "2,000.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 4,
+      "dataId": "49e23115d9de4c7f8cfc0da297e0ad49",
+      "description": "TO PHONE PULSE LIMITE",
+      "date": "30 Apr 2025",
+      "reference": "537",
+      "amountSpent": "18.21",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "18.21",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 5,
+      "dataId": "cb62329bdb234d2ba104a8877730b436",
+      "description": "TO KARLA VICTORIA MIC",
+      "date": "30 Apr 2025",
+      "reference": "537",
+      "amountSpent": "202.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "202.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 6,
+      "dataId": "c56e399e32a34558834506726f4fc490",
+      "description": "Ulises FragosoFIDE SP",
+      "date": "30 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "270.00",
+      "type": "RECEIVE",
+      "amount": "270.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 7,
+      "dataId": "5ba9d899e915461798f276e8312e1b90",
+      "description": "TO NATIA KHMALADZE",
+      "date": "30 Apr 2025",
+      "reference": "537",
+      "amountSpent": "212.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "212.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 8,
+      "dataId": "9aca763e004940afa1fbff00dc7ac3e7",
+      "description": "TO CATALINA DIAZ FERN",
+      "date": "30 Apr 2025",
+      "reference": "537",
+      "amountSpent": "135.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "135.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Catalina Diaz",
+        "account": "A100 - Accomm - Host Pay",
+        "description": null
+      }
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}

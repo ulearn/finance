@@ -1,0 +1,171 @@
+{
+  "collectedAt": "2025-12-02T09:30:42.183Z",
+  "month": "oct",
+  "year": "2025",
+  "count": 11,
+  "transactions": [
+    {
+      "index": 0,
+      "dataId": "5b34df53ceea426f9408c77086b934bc",
+      "description": "POS25OCT Bird",
+      "date": "28 Oct 2025",
+      "reference": "545",
+      "amountSpent": "15.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "15.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bird",
+        "account": "B106 - Software / Hosting",
+        "description": "Chat Module"
+      }
+    },
+    {
+      "index": 1,
+      "dataId": "3c40509a7d9e4bf49bcfd47cf614e93c",
+      "description": "ULEARNP2025921TMUL SP",
+      "date": "28 Oct 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "275.00",
+      "type": "RECEIVE",
+      "amount": "275.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 2,
+      "dataId": "f92f3fdf88994d59a35b48e70f0d8ef1",
+      "description": "POS26OCT AMAZON.IE",
+      "date": "28 Oct 2025",
+      "reference": "545",
+      "amountSpent": "6.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "6.99",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 3,
+      "dataId": "d69eade582864f4089c715c3c9481ecd",
+      "description": "LINKED P2P LT SEPA DD",
+      "date": "28 Oct 2025",
+      "reference": "340",
+      "amountSpent": "1,690.32",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1,690.32",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 4,
+      "dataId": "9abdc5773a1f492d9741d46b344f0423",
+      "description": "POS28OCT Lycamobile I",
+      "date": "28 Oct 2025",
+      "reference": "545",
+      "amountSpent": "15.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "15.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Lycamobile",
+        "account": "B104 - Telephone & Internet",
+        "description": "POS22JAN Lycamobile top-up"
+      }
+    },
+    {
+      "index": 5,
+      "dataId": "a1547c6580624c35ac41e06918b5581a",
+      "description": "POS28OCT Amazon.ie",
+      "date": "29 Oct 2025",
+      "reference": "545",
+      "amountSpent": "36.76",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "36.76",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 6,
+      "dataId": "781503b6d1d2443782179cf072108983",
+      "description": "Revenue Commi SEPA DD",
+      "date": "29 Oct 2025",
+      "reference": "340",
+      "amountSpent": "10,434.79",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "10,434.79",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "REVENUE COMMISSIONERS",
+        "account": "B107c - Payroll Tax - Expense",
+        "description": "PAYE Payroll Tax"
+      }
+    },
+    {
+      "index": 7,
+      "dataId": "5375124a2c3e4b089a69d8160081b2c7",
+      "description": "BLUE CONSULTORIA E GP",
+      "date": "30 Oct 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,774.20",
+      "type": "RECEIVE",
+      "amount": "1,774.20",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "BLUE CONSULTORIA E GP"
+      }
+    },
+    {
+      "index": 8,
+      "dataId": "43c8cf8cb8fd4c329c2dc2281dfda2d8",
+      "description": "POS30OCT FATHOM AN AC",
+      "date": "30 Oct 2025",
+      "reference": "545",
+      "amountSpent": "39.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "39.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Fathom",
+        "account": "B106 - Software / Hosting",
+        "description": "Financial Forecasting Software"
+      }
+    },
+    {
+      "index": 9,
+      "dataId": "3a7e9db50d764ef2b904a6afc834c840",
+      "description": "BLUE CONSULTO CHRG GP",
+      "date": "30 Oct 2025",
+      "reference": "240",
+      "amountSpent": "12.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "12.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 10,
+      "dataId": "8dbae024b13e49bd96a6c6e5e50d588b",
+      "description": "POS29OCT AMZN Mktp UK",
+      "date": "30 Oct 2025",
+      "reference": "545",
+      "amountSpent": "77.67",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "77.67",
+      "xeroSuggestion": null
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}

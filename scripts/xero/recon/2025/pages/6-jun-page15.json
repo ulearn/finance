@@ -1,0 +1,769 @@
+{
+  "collectedAt": "2025-12-02T09:11:04.180Z",
+  "month": "jun",
+  "year": "2025",
+  "count": 50,
+  "transactions": [
+    {
+      "index": 0,
+      "dataId": "67c05365dc204e6ba76c13b28efe76a3",
+      "description": "POS01JUN Bird",
+      "date": "3 Jun 2025",
+      "reference": "545",
+      "amountSpent": "15.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "15.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bird",
+        "account": "B106 - Software / Hosting",
+        "description": "Chat Module"
+      }
+    },
+    {
+      "index": 1,
+      "dataId": "ccb83e48d42247cb9fb0bb5e39bc2562",
+      "description": "POS03JUN Hotel at Boo",
+      "date": "4 Jun 2025",
+      "reference": "545",
+      "amountSpent": "748.60",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "748.60",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Hotel at Boo",
+        "account": "B112 - Marketing Trips",
+        "description": "Hotel at Boo accommodation (travel)"
+      }
+    },
+    {
+      "index": 2,
+      "dataId": "e76df2aea2324af5a44bb3fe33e0c5e7",
+      "description": "ULEARN SCHOOL FEE  SP",
+      "date": "4 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "830.00",
+      "type": "RECEIVE",
+      "amount": "830.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "ULEARN SCHOOL FEE SP 931"
+      }
+    },
+    {
+      "index": 3,
+      "dataId": "4385b322ca2140ff8e99c07405467eb7",
+      "description": "POSC03JUN LICENCIA 10",
+      "date": "4 Jun 2025",
+      "reference": "221",
+      "amountSpent": "9.60",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "9.60",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 4,
+      "dataId": "1819802d636b454ca36a578c8316a59a",
+      "description": "POSC03JUN IRYO ATOCHA",
+      "date": "4 Jun 2025",
+      "reference": "221",
+      "amountSpent": "186.98",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "186.98",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 5,
+      "dataId": "5d32bb5be9e54363a7e93d691def2e1a",
+      "description": "POS03JUN METRO BARCEL",
+      "date": "4 Jun 2025",
+      "reference": "545",
+      "amountSpent": "21.95",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "21.95",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 6,
+      "dataId": "0b5e0cfe30284e35a7d3c2024b2eef0b",
+      "description": "GOCARDLESS    SEPA DD",
+      "date": "4 Jun 2025",
+      "reference": "340",
+      "amountSpent": "15.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "15.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 7,
+      "dataId": "23d67b095a13453891efdb8f503f73bc",
+      "description": "ULEARNP2025446TMUL SP",
+      "date": "4 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "564.00",
+      "type": "RECEIVE",
+      "amount": "564.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 8,
+      "dataId": "585b11ddcffb410a8802e4deff2b3d9e",
+      "description": "POS03JUN AB APARTMENT",
+      "date": "4 Jun 2025",
+      "reference": "545",
+      "amountSpent": "41.28",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "41.28",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 9,
+      "dataId": "215623e268054f9cb508abb29ef19361",
+      "description": "FBD INSURANCE SEPA DD",
+      "date": "4 Jun 2025",
+      "reference": "340",
+      "amountSpent": "520.77",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "520.77",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "FBD INSURANCE SEPA DD",
+        "account": "B120 - Insurance - Commercial Premises",
+        "description": "FBD INSURANCE SEPA DD"
+      }
+    },
+    {
+      "index": 10,
+      "dataId": "88dc6b8702dc4b93801f89aabb0912d9",
+      "description": "POS04JUN COOKIEBOT",
+      "date": "5 Jun 2025",
+      "reference": "545",
+      "amountSpent": "18.45",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "18.45",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "CookieBot",
+        "account": "B106 - Software / Hosting",
+        "description": "Cookie Banner"
+      }
+    },
+    {
+      "index": 11,
+      "dataId": "a8d85b4b9b174e46b41af65a630ba2ec",
+      "description": "ULEARNP2025332     SP",
+      "date": "5 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,065.00",
+      "type": "RECEIVE",
+      "amount": "1,065.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 12,
+      "dataId": "86f483036e664f6f9975645c8e95e48a",
+      "description": "365 Online  Karla Vi",
+      "date": "5 Jun 2025",
+      "reference": "554",
+      "amountSpent": "90.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "90.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 13,
+      "dataId": "50d2582c5ac74b09ac0d75017f7fff6c",
+      "description": "365 Online  Natia Kh",
+      "date": "5 Jun 2025",
+      "reference": "554",
+      "amountSpent": "233.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "233.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Cleaning services",
+        "account": "B129 - Cleaning",
+        "description": "FM Services"
+      }
+    },
+    {
+      "index": 14,
+      "dataId": "40f2319b462c42a9b60951bfb5c03a60",
+      "description": "TO PAUL NEENAN",
+      "date": "5 Jun 2025",
+      "reference": "537",
+      "amountSpent": "655.20",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "655.20",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 15,
+      "dataId": "540c9a0596534b83ab174ddc52debfa1",
+      "description": "CONTRA CTO",
+      "date": "6 Jun 2025",
+      "reference": "331",
+      "amountSpent": "935.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "935.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "PAYROLL",
+        "account": "B107 - Wages and Salaries",
+        "description": "Monthly Salary SEPA"
+      }
+    },
+    {
+      "index": 16,
+      "dataId": "b43fb02b0fc54450be90b693b19b61cf",
+      "description": "Karine IzidorioRib SP",
+      "date": "6 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,722.00",
+      "type": "RECEIVE",
+      "amount": "1,722.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 17,
+      "dataId": "cadb30a1948841f1b8d006d0f31bc9a9",
+      "description": "STRIPE-SEB1H3PHV9U SP",
+      "date": "6 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "239.69",
+      "type": "RECEIVE",
+      "amount": "239.69",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 18,
+      "dataId": "50be430e1df74632881e75343570dce6",
+      "description": "POS06JUN SIXT96016837",
+      "date": "6 Jun 2025",
+      "reference": "545",
+      "amountSpent": "185.88",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "185.88",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 19,
+      "dataId": "30dc895fb2484b7cb05f25b524b264c7",
+      "description": "POS08JUN Google YouTu",
+      "date": "9 Jun 2025",
+      "reference": "545",
+      "amountSpent": "3.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "3.99",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "YouTube",
+        "account": "B106 - Software / Hosting",
+        "description": "YouTube subscription - Teacher download account"
+      }
+    },
+    {
+      "index": 20,
+      "dataId": "1e3eb635969043b996f4474679d86729",
+      "description": "POS07JUN Vesta EIR To",
+      "date": "9 Jun 2025",
+      "reference": "545",
+      "amountSpent": "20.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "20.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "EIR",
+        "account": "B104 - Telephone & Internet",
+        "description": "EIR phone top-up (Vesta EIR)"
+      }
+    },
+    {
+      "index": 21,
+      "dataId": "d30c473915474ac7b02a605575116152",
+      "description": "P0806GB  7.99@1.18773",
+      "date": "9 Jun 2025",
+      "reference": "553",
+      "amountSpent": "9.49",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "9.49",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Audible - CARD",
+        "account": "B121 - Text Books & Academic Materials",
+        "description": "P0804GB  7.99@1.14142"
+      }
+    },
+    {
+      "index": 22,
+      "dataId": "71c98a28cef14e67aa18dbd2784c9002",
+      "description": "P0706US  6.35@0.88031",
+      "date": "9 Jun 2025",
+      "reference": "553",
+      "amountSpent": "5.59",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.59",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Wistia Software company",
+        "account": "B106 - Software / Hosting",
+        "description": "P0207US 81.00@0.85037"
+      }
+    },
+    {
+      "index": 23,
+      "dataId": "4dd58d99264d4752b2ad4b9d580264ab",
+      "description": "POSC06JUN SMARTE CART",
+      "date": "9 Jun 2025",
+      "reference": "221",
+      "amountSpent": "30.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "30.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 24,
+      "dataId": "ca12ba7d794d4e1ab9c19d5dfd044cc1",
+      "description": "NEPOSCHGUSD 000000.76",
+      "date": "9 Jun 2025",
+      "reference": "407",
+      "amountSpent": "0.76",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.76",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "BOI",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.44"
+      }
+    },
+    {
+      "index": 25,
+      "dataId": "70c6394e19454d988c5932f3d4efa121",
+      "description": "NEPOSCHGUSD 000000.11",
+      "date": "9 Jun 2025",
+      "reference": "407",
+      "amountSpent": "0.11",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.11",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.31"
+      }
+    },
+    {
+      "index": 26,
+      "dataId": "ace771d392dc4e188d66d8aaca4654ef",
+      "description": "POS07JUN Google ADS10",
+      "date": "9 Jun 2025",
+      "reference": "545",
+      "amountSpent": "1,000.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1,000.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Google",
+        "account": "B110 - Google Ad (or other advertising)",
+        "description": "POS25SEP GOOGLE *ADS1"
+      }
+    },
+    {
+      "index": 27,
+      "dataId": "481a088e8f624a9a9c09947b68bfc62d",
+      "description": "POSC01JUN AP-1 ARABAT",
+      "date": "9 Jun 2025",
+      "reference": "221",
+      "amountSpent": "16.34",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "16.34",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 28,
+      "dataId": "4245b245fafa4d76ae8e3db87b2f867b",
+      "description": "POS07JUN FREENOW* CDL",
+      "date": "9 Jun 2025",
+      "reference": "545",
+      "amountSpent": "27.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "27.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 29,
+      "dataId": "148a37ac5de94ca687f767de792ecdc3",
+      "description": "POSC06JUN 28301072 -",
+      "date": "9 Jun 2025",
+      "reference": "221",
+      "amountSpent": "23.80",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "23.80",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 30,
+      "dataId": "678523208e9c461ead46c42ce93f2a81",
+      "description": "POS09JUN A2WEBHOST* I",
+      "date": "9 Jun 2025",
+      "reference": "545",
+      "amountSpent": "374.19",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "374.19",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "A2 Hosting",
+        "account": "B106 - Software / Hosting",
+        "description": "POS19OCT A2WEBHOST* I"
+      }
+    },
+    {
+      "index": 31,
+      "dataId": "243333736efe4e5c8336fb3c376dd8e6",
+      "description": "NEPOSCHGGBP 000000.19",
+      "date": "9 Jun 2025",
+      "reference": "407",
+      "amountSpent": "0.19",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.19",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "BOI",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGGBP 000000.19"
+      }
+    },
+    {
+      "index": 32,
+      "dataId": "1e6352cc635043ef8a6adf6c9a9cd480",
+      "description": "POS05JUN UBER   *EATS",
+      "date": "9 Jun 2025",
+      "reference": "545",
+      "amountSpent": "36.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "36.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 33,
+      "dataId": "2292b412aa3b40d5b5d8f774145a0769",
+      "description": "POSC06JUN WH Smith Du",
+      "date": "9 Jun 2025",
+      "reference": "221",
+      "amountSpent": "5.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 34,
+      "dataId": "119093b04d394a11925ce961a862d15d",
+      "description": "P0806US 43.05@0.87967",
+      "date": "9 Jun 2025",
+      "reference": "553",
+      "amountSpent": "37.87",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "37.87",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Wistia Software company",
+        "account": "B106 - Software / Hosting",
+        "description": "P0207US 81.00@0.85037"
+      }
+    },
+    {
+      "index": 35,
+      "dataId": "985c3a08860341499a674aea265e10d5",
+      "description": "pmntx3students     SP",
+      "date": "9 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,313.00",
+      "type": "RECEIVE",
+      "amount": "1,313.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 36,
+      "dataId": "1b583c793392404f96d9335ad9ede533",
+      "description": "WESTWOOD DUN  SEPA DD",
+      "date": "9 Jun 2025",
+      "reference": "340",
+      "amountSpent": "99.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "99.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Westwood",
+        "account": "BIK - BIK",
+        "description": "WESTWOOD DUN  SEPA DD"
+      }
+    },
+    {
+      "index": 37,
+      "dataId": "4d19bd4c50b84774ad418d27492935a2",
+      "description": "STRIPE-M6TC9UO4OGA SP",
+      "date": "9 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "239.69",
+      "type": "RECEIVE",
+      "amount": "239.69",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 38,
+      "dataId": "3cc63f274de5426e811425a63e76caff",
+      "description": "POSC30MAY INTERBIAK /",
+      "date": "9 Jun 2025",
+      "reference": "221",
+      "amountSpent": "1.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 39,
+      "dataId": "ebe1e64a25624ea2b83b9852e6a96644",
+      "description": "FLOGAS NATURA SEPA DD",
+      "date": "10 Jun 2025",
+      "reference": "340",
+      "amountSpent": "714.53",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "714.53",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flogas SEPA - DD",
+        "account": "B105 - Utils - Power, Light, Heat",
+        "description": "Gas (Combines 753569 € 430.76 & prior 742459 -€113.20)"
+      }
+    },
+    {
+      "index": 40,
+      "dataId": "a809ad38a50a45699764a6df0d5eec81",
+      "description": "POS09JUN WWW.WEWORK.C",
+      "date": "10 Jun 2025",
+      "reference": "545",
+      "amountSpent": "258.30",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "258.30",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 41,
+      "dataId": "8393a6b0d3a4460ca29ec56a23c5b9f1",
+      "description": "POSC09JUN IRISH RAIL",
+      "date": "10 Jun 2025",
+      "reference": "221",
+      "amountSpent": "20.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "20.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Dublin Bus",
+        "account": "A104 - Transport",
+        "description": "Social Transport - Dart"
+      }
+    },
+    {
+      "index": 42,
+      "dataId": "d5451e3f020e43b5a2e630229375c810",
+      "description": "pmntx3students     SP",
+      "date": "10 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "3,034.00",
+      "type": "RECEIVE",
+      "amount": "3,034.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 43,
+      "dataId": "2f6a88f51ee743978b44e40d094f1473",
+      "description": "TO SARANTUYA TAIVANKH",
+      "date": "10 Jun 2025",
+      "reference": "537",
+      "amountSpent": "2,563.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "2,563.50",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Sarantuya Taivankhuu",
+        "account": "A106 - Partner Payments",
+        "description": "Mongolia Marketing Payments"
+      }
+    },
+    {
+      "index": 44,
+      "dataId": "671fa7a9d1154718b457e096f388f497",
+      "description": "STRIPE-LATIVXLKB9Y SP",
+      "date": "10 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "245.08",
+      "type": "RECEIVE",
+      "amount": "245.08",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 45,
+      "dataId": "214fcbac199348eba6612855eb6c58b2",
+      "description": "POS09JUN Upwork -8162",
+      "date": "10 Jun 2025",
+      "reference": "545",
+      "amountSpent": "41.44",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "41.44",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Upwork - CARD",
+        "account": "B118 - Consulting & Accounting (Professional Services)",
+        "description": "POS04AUG Upwork -6072"
+      }
+    },
+    {
+      "index": 46,
+      "dataId": "202e6f52406a498a8f79db37c3b12c7a",
+      "description": "STRIPE-WM1TLWEK0MO SP",
+      "date": "10 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "177.04",
+      "type": "RECEIVE",
+      "amount": "177.04",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 47,
+      "dataId": "cca00780d4804adc90980b07cb09d7ef",
+      "description": "NO REG ULEARND2025 SP",
+      "date": "10 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "648.00",
+      "type": "RECEIVE",
+      "amount": "648.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 48,
+      "dataId": "33918292e3e24f20b5e540ddf59d4e99",
+      "description": "1367987179Adriely  IP",
+      "date": "10 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,722.00",
+      "type": "RECEIVE",
+      "amount": "1,722.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "1177115083P2024113 IP"
+      }
+    },
+    {
+      "index": 49,
+      "dataId": "f8c8aea7143b40aeb1137834cf7bb4c7",
+      "description": "1369099126P2025598 IP",
+      "date": "10 Jun 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "2,250.00",
+      "type": "RECEIVE",
+      "amount": "2,250.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "1177115083P2024113 IP"
+      }
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}

@@ -78,10 +78,10 @@ class FideloReferenceSearch {
         const references = [];
 
         // Pattern 1: P#### format (Proforma Invoice)
-        // Matches: P2024929 (full year+seq), P2025951, or P2 (short format with year inference)
+        // Matches: P2024929 (full year+seq), P20251003, or P2 (short format with year inference)
         // Full format: P + year (202X) + sequence (3-4 digits)
         // Short format: P + 1-3 digits (year gets inferred)
-        const pMatches = bankDescription.match(/P(202\d{4}|\d{1,3})/gi);
+        const pMatches = bankDescription.match(/P(202\d\d{3,4}|\d{1,3})/gi);
         if (pMatches) {
             pMatches.forEach(match => {
                 let digits = match.substring(1); // Remove 'P'
@@ -97,9 +97,9 @@ class FideloReferenceSearch {
         }
 
         // Pattern 2: D#### format (Document/Invoice)
-        // Matches: D2025380, D2025548 (year 202X + sequence)
+        // Matches: D2025380, D2025548 (year 202X + sequence 3-4 digits)
         // Does NOT match: D29297 or "ID29297" (no year format)
-        const dMatches = bankDescription.match(/D(202\d{4})/gi);
+        const dMatches = bankDescription.match(/D(202\d\d{3,4})/gi);
         if (dMatches) {
             dMatches.forEach(match => {
                 references.push(match.toUpperCase());

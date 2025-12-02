@@ -1,0 +1,779 @@
+{
+  "collectedAt": "2025-12-02T09:02:42.732Z",
+  "month": "apr",
+  "year": "2025",
+  "count": 50,
+  "transactions": [
+    {
+      "index": 0,
+      "dataId": "f9ac9057191940dca03faae1bfcc5482",
+      "description": "P2025096, Student  SP",
+      "date": "23 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "245.75",
+      "type": "RECEIVE",
+      "amount": "245.75",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 1,
+      "dataId": "47459965134444fab8760fb3cb3c044b",
+      "description": "POS23APR FLICKR PRO M",
+      "date": "23 Apr 2025",
+      "reference": "545",
+      "amountSpent": "9.34",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "9.34",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flickr",
+        "account": "B106 - Software / Hosting",
+        "description": "POS23JUL FLICKR PRO M"
+      }
+    },
+    {
+      "index": 2,
+      "dataId": "432543aa621745b393c304f17d41e29e",
+      "description": "NEPOSCHGUSD 000000.42",
+      "date": "23 Apr 2025",
+      "reference": "407",
+      "amountSpent": "0.42",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.42",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "BOI",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.48 407"
+      }
+    },
+    {
+      "index": 3,
+      "dataId": "a91778054c214a9f9dd03010c6fe847b",
+      "description": "STRIPE-KQIGE4J6F8N SP",
+      "date": "23 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "243.85",
+      "type": "RECEIVE",
+      "amount": "243.85",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 4,
+      "dataId": "3473b445b2aa4cadac717f357b29c69c",
+      "description": "BAYARTUNGALAG BATKHUY",
+      "date": "23 Apr 2025",
+      "reference": "331",
+      "amountSpent": "5,995.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "5,995.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 5,
+      "dataId": "0aba20b4be3e4e4f99250b1b08d49986",
+      "description": "ULEARNP2025125TMUL SP",
+      "date": "23 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "2,782.50",
+      "type": "RECEIVE",
+      "amount": "2,782.50",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 6,
+      "dataId": "db00bd448f4d44d5bdf5ba1cf3b9bc84",
+      "description": "P2304US 24.00@0.87583",
+      "date": "23 Apr 2025",
+      "reference": "553",
+      "amountSpent": "21.02",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "21.02",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Airtable",
+        "account": "B106 - Software / Hosting",
+        "description": "Airtable subscription (USD 24.60 @ 0.97886)"
+      }
+    },
+    {
+      "index": 7,
+      "dataId": "f2c8c88f29b54553a81d4a16821ca863",
+      "description": "BAYARTUNGALAG BATKHUY",
+      "date": "23 Apr 2025",
+      "reference": "331",
+      "amountSpent": "4,262.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "4,262.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 8,
+      "dataId": "b619c79d8a88435fb36d70985927cd1c",
+      "description": "POS22APR Prime Video",
+      "date": "23 Apr 2025",
+      "reference": "545",
+      "amountSpent": "6.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "6.99",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Amazon Prime",
+        "account": "B106 - Software / Hosting",
+        "description": "Prime Video subscription"
+      }
+    },
+    {
+      "index": 9,
+      "dataId": "03d2f3e84623477684a2efb55027fe82",
+      "description": "CONTRA CTO",
+      "date": "24 Apr 2025",
+      "reference": "331",
+      "amountSpent": "1,576.52",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1,576.52",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "PAYROLL",
+        "account": "B107 - Wages and Salaries",
+        "description": "Monthly Salary SEPA"
+      }
+    },
+    {
+      "index": 10,
+      "dataId": "149e0f84e20d4de68af926ea78a5b8f3",
+      "description": "TO DONNA FLOOD",
+      "date": "24 Apr 2025",
+      "reference": "537",
+      "amountSpent": "54.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "54.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 11,
+      "dataId": "cb9c1cce278f4803a20023136b2f587f",
+      "description": "TO NATIA KHMALADZE",
+      "date": "24 Apr 2025",
+      "reference": "537",
+      "amountSpent": "198.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "198.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 12,
+      "dataId": "0e03c09260e346a6998f37eb7a90c432",
+      "description": "TO KARLA VICTORIA MIC",
+      "date": "24 Apr 2025",
+      "reference": "537",
+      "amountSpent": "270.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "270.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 13,
+      "dataId": "bd8e050e7faa4aff903d9e358ab83284",
+      "description": "POS23APR FREENOW* C7I",
+      "date": "24 Apr 2025",
+      "reference": "545",
+      "amountSpent": "25.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "25.50",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 14,
+      "dataId": "388f5760855a458ab1bd93d595ff23f4",
+      "description": "TO PATTY MCSWEENEY",
+      "date": "24 Apr 2025",
+      "reference": "537",
+      "amountSpent": "450.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "450.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 15,
+      "dataId": "123fa0aabac243179be3eb17890dc2c3",
+      "description": "POS23APR FREENOW* C7I",
+      "date": "24 Apr 2025",
+      "reference": "545",
+      "amountSpent": "23.20",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "23.20",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 16,
+      "dataId": "d347a21237dc4b049aee74e2a776af67",
+      "description": "TO CATALINA DIAZ FERN",
+      "date": "24 Apr 2025",
+      "reference": "537",
+      "amountSpent": "67.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "67.50",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Catalina Diaz",
+        "account": "A100 - Accomm - Host Pay",
+        "description": null
+      }
+    },
+    {
+      "index": 17,
+      "dataId": "9d32f007b7924f79b2a20f925951e227",
+      "description": "POS23APR DNH*GODADDY#",
+      "date": "25 Apr 2025",
+      "reference": "545",
+      "amountSpent": "13.52",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "13.52",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "GODADDY",
+        "account": "B106 - Software / Hosting",
+        "description": null
+      }
+    },
+    {
+      "index": 18,
+      "dataId": "96e0857c662540a28291341b52886136",
+      "description": "STRIPE-ZFPN5NFEXKW SP",
+      "date": "25 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "239.69",
+      "type": "RECEIVE",
+      "amount": "239.69",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "STRIPE-GMRR0JM7ZRH SP 931"
+      }
+    },
+    {
+      "index": 19,
+      "dataId": "4a8dbab41430462b8d895345b05c95e2",
+      "description": "NEPOSCHGUSD 000000.87",
+      "date": "25 Apr 2025",
+      "reference": "407",
+      "amountSpent": "0.87",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.87",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.86"
+      }
+    },
+    {
+      "index": 20,
+      "dataId": "aa1b13b3e49d40afb0a0a171668c786d",
+      "description": "P2404US 49.00@0.88448",
+      "date": "25 Apr 2025",
+      "reference": "553",
+      "amountSpent": "43.34",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "43.34",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Airtable",
+        "account": "B106 - Software / Hosting",
+        "description": "P2412US 49.00@0.96326"
+      }
+    },
+    {
+      "index": 21,
+      "dataId": "1cbaa835e4964f61a97dbc33df731b12",
+      "description": "ULEARND2025009TMUL SP",
+      "date": "25 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "83.22",
+      "type": "RECEIVE",
+      "amount": "83.22",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "ULEARND2025009TMUL"
+      }
+    },
+    {
+      "index": 22,
+      "dataId": "5373ee50ef884f299824d9a6462a7ace",
+      "description": "POS24APR Google ADS10",
+      "date": "25 Apr 2025",
+      "reference": "545",
+      "amountSpent": "1,000.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1,000.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Google",
+        "account": "B110 - Google Ad (or other advertising)",
+        "description": "POS25SEP GOOGLE *ADS1"
+      }
+    },
+    {
+      "index": 23,
+      "dataId": "770e847fe7e446bdb8e5f3ade8ee410f",
+      "description": "POS24APR ADOBE SYSTEM",
+      "date": "25 Apr 2025",
+      "reference": "545",
+      "amountSpent": "36.89",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "36.89",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ADOBE",
+        "account": "B106 - Software / Hosting",
+        "description": "JUL  ADOBE SYSTEM"
+      }
+    },
+    {
+      "index": 24,
+      "dataId": "10869b6b6c844895bd06036d9fd72c8d",
+      "description": "POS25APR ADOBE SYSTEM",
+      "date": "28 Apr 2025",
+      "reference": "545",
+      "amountSpent": "36.16",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "36.16",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ADOBE",
+        "account": "B106 - Software / Hosting",
+        "description": "JUL  ADOBE SYSTEM"
+      }
+    },
+    {
+      "index": 25,
+      "dataId": "4b59fb301cb94230958055e28835a81c",
+      "description": "NEPOSCHGMXN 000000.14",
+      "date": "28 Apr 2025",
+      "reference": "407",
+      "amountSpent": "0.14",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.14",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGMXN 000000.91"
+      }
+    },
+    {
+      "index": 26,
+      "dataId": "6fe6528c6868468ba8342c733b186e8d",
+      "description": "POS26APR YAUNDRY",
+      "date": "28 Apr 2025",
+      "reference": "545",
+      "amountSpent": "16.50",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "16.50",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Yaundry",
+        "account": "A101 - Accomm - Apartments Running Expns",
+        "description": "Laundry cleaning service"
+      }
+    },
+    {
+      "index": 27,
+      "dataId": "3b6ee34537d44b9ba7d776201b5a968a",
+      "description": "P2504MX150.00@0.04520",
+      "date": "28 Apr 2025",
+      "reference": "553",
+      "amountSpent": "6.78",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "6.78",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Starbucks",
+        "account": "B102 - Office Running Expenses",
+        "description": "Coffee / Office Rent"
+      }
+    },
+    {
+      "index": 28,
+      "dataId": "606711ca1558450f9fb7938eccf37fa9",
+      "description": "VIRGIN MEDIA  SEPA DD",
+      "date": "28 Apr 2025",
+      "reference": "340",
+      "amountSpent": "73.80",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "73.80",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Virgin Media",
+        "account": "B104a - Telephone & Internet Apartments",
+        "description": "VIRGIN MEDIA  SEPA DD"
+      }
+    },
+    {
+      "index": 29,
+      "dataId": "8d6dea455a364290bbf76210d0a1b57a",
+      "description": "Luis and Jorge     SP",
+      "date": "28 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "2,948.00",
+      "type": "RECEIVE",
+      "amount": "2,948.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 30,
+      "dataId": "eeffde2cb6e24ec9a8fd300e2ee6928f",
+      "description": "Revenue Commi SEPA DD",
+      "date": "28 Apr 2025",
+      "reference": "340",
+      "amountSpent": "8,803.38",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "8,803.38",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "REVENUE COMMISSIONERS",
+        "account": "B107c - Payroll Tax - Expense",
+        "description": "PAYE Payroll Tax"
+      }
+    },
+    {
+      "index": 31,
+      "dataId": "cf18a67b6b9e46aca44443f76c20d9e3",
+      "description": "BOI BOL CHARGE",
+      "date": "28 Apr 2025",
+      "reference": "540",
+      "amountSpent": "10.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "10.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "BOI BOL CHARGE 540"
+      }
+    },
+    {
+      "index": 32,
+      "dataId": "b8342dc69e194e25839cb0230e55b4c7",
+      "description": "POS26APR ULGEBRAZ",
+      "date": "28 Apr 2025",
+      "reference": "545",
+      "amountSpent": "10.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "10.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Ulgebraz Technologies Pvt.Ltd",
+        "account": "B106 - Software / Hosting",
+        "description": "POS26SEP ULGEBRAZ"
+      }
+    },
+    {
+      "index": 33,
+      "dataId": "412e0c62519e4abda22008a2eb10851c",
+      "description": "POS26APR VIRGIN MEDIA",
+      "date": "28 Apr 2025",
+      "reference": "545",
+      "amountSpent": "145.49",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "145.49",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Virgin Media",
+        "account": "B104a - Telephone & Internet Apartments",
+        "description": "POS26SEP VIRGIN MEDIA"
+      }
+    },
+    {
+      "index": 34,
+      "dataId": "a271af2216f34a668e7c47b660a97b19",
+      "description": "NEPOSCHGUSD 000004.35",
+      "date": "28 Apr 2025",
+      "reference": "407",
+      "amountSpent": "4.35",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "4.35",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGUSD 000000.35"
+      }
+    },
+    {
+      "index": 35,
+      "dataId": "26fc684cf93d455888a9c7e719bace3a",
+      "description": "POS26APR ZOHO-SIGN",
+      "date": "28 Apr 2025",
+      "reference": "545",
+      "amountSpent": "14.76",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "14.76",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Zoho",
+        "account": "B106 - Software / Hosting",
+        "description": "POS27JAN ZOHO-SIGN 545"
+      }
+    },
+    {
+      "index": 36,
+      "dataId": "f65e817d33a1429f9f96b80784368046",
+      "description": "POS26APR HubSpot Irel",
+      "date": "28 Apr 2025",
+      "reference": "545",
+      "amountSpent": "599.75",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "599.75",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Hubspot",
+        "account": "B106 - Software / Hosting",
+        "description": "POS18OCT HubSpot Irel"
+      }
+    },
+    {
+      "index": 37,
+      "dataId": "1a49e8992c364444bece559453a322a8",
+      "description": "P2504US245.99@0.88401",
+      "date": "28 Apr 2025",
+      "reference": "553",
+      "amountSpent": "217.46",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "217.46",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Wistia Software company",
+        "account": "B106 - Software / Hosting",
+        "description": "P0206US 81.00@0.88407"
+      }
+    },
+    {
+      "index": 38,
+      "dataId": "201353f1b77d48659e67aeb1220d6ae7",
+      "description": "POS25APR MESSAGEBIRD.",
+      "date": "28 Apr 2025",
+      "reference": "545",
+      "amountSpent": "18.45",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "18.45",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "MessageBird",
+        "account": "B106 - Software / Hosting",
+        "description": "MessageBird messaging service"
+      }
+    },
+    {
+      "index": 39,
+      "dataId": "d13c4c902c7c4cd0a3720b3043fa4397",
+      "description": "LINKED P2P LT SEPA DD",
+      "date": "28 Apr 2025",
+      "reference": "340",
+      "amountSpent": "1,690.32",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1,690.32",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 40,
+      "dataId": "d511b344ace74488b6ba0d7323b74eaa",
+      "description": "Carlo Manzo FIDELO SP",
+      "date": "29 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "1,095.00",
+      "type": "RECEIVE",
+      "amount": "1,095.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 41,
+      "dataId": "ff7e7a57ba9b45c79366c850bc330372",
+      "description": "POSC28APR CRILLY SHOE",
+      "date": "29 Apr 2025",
+      "reference": "221",
+      "amountSpent": "22.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "22.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 42,
+      "dataId": "9f9b03afa80e461c94745697b9e7c525",
+      "description": "POS29APR FATHOM AN AC",
+      "date": "29 Apr 2025",
+      "reference": "545",
+      "amountSpent": "37.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "37.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Fathom",
+        "account": "B106 - Software / Hosting",
+        "description": "Financial Forecasting Software"
+      }
+    },
+    {
+      "index": 43,
+      "dataId": "4c1e9ed4a6bf4526a17f03e283c9bfcd",
+      "description": "ULEARNP20241072    SP",
+      "date": "29 Apr 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "3,550.00",
+      "type": "RECEIVE",
+      "amount": "3,550.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "ULearn-Student",
+        "account": "100 - General Course Sales",
+        "description": "003320250103OEM020 SP"
+      }
+    },
+    {
+      "index": 44,
+      "dataId": "df615bede8044344b2ba6b158964db25",
+      "description": "POS28APR WETRANSFER*",
+      "date": "29 Apr 2025",
+      "reference": "545",
+      "amountSpent": "23.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "23.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "WeTransfer",
+        "account": "B106 - Software / Hosting",
+        "description": "Online Storage"
+      }
+    },
+    {
+      "index": 45,
+      "dataId": "7cc72dd1e82b446fa86b623bfa481e0d",
+      "description": "POS28APR YAUNDRY",
+      "date": "29 Apr 2025",
+      "reference": "545",
+      "amountSpent": "57.75",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "57.75",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Yaundry",
+        "account": "A101 - Accomm - Apartments Running Expns",
+        "description": "Laundry cleaning service"
+      }
+    },
+    {
+      "index": 46,
+      "dataId": "7fc5dc4241fc4fac809eebb3140fb50f",
+      "description": "POS28APR VIRGIN MEDIA",
+      "date": "29 Apr 2025",
+      "reference": "545",
+      "amountSpent": "145.49",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "145.49",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Virgin Media",
+        "account": "B104a - Telephone & Internet Apartments",
+        "description": "POS26SEP VIRGIN MEDIA"
+      }
+    },
+    {
+      "index": 47,
+      "dataId": "f64b0c6b435b4c46980d65636c3e293f",
+      "description": "TO PAUL NEENAN",
+      "date": "29 Apr 2025",
+      "reference": "537",
+      "amountSpent": "405.60",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "405.60",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 48,
+      "dataId": "b5e23d2e69e048f5b1b6c336623609c7",
+      "description": "TO SIMON THOMA",
+      "date": "29 Apr 2025",
+      "reference": "537",
+      "amountSpent": "200.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "200.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 49,
+      "dataId": "56efeccd942b4d9b9cd5a14ee6d9903c",
+      "description": "POS27APR GOOGLE*GOOGL",
+      "date": "29 Apr 2025",
+      "reference": "545",
+      "amountSpent": "1.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1.99",
+      "xeroSuggestion": null
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}

@@ -1,0 +1,101 @@
+{
+  "collectedAt": "2025-12-02T08:28:35.664Z",
+  "month": "mar",
+  "year": "2025",
+  "count": 6,
+  "transactions": [
+    {
+      "index": 44,
+      "dataId": "83aa76fea39f4ecb915e3232467cc474",
+      "description": "POSC01MAR SUMUP  *MOH",
+      "date": "3 Mar 2025",
+      "reference": "221",
+      "amountSpent": "86.20",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "86.20",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 45,
+      "dataId": "3189ad3f1c354ee4944e6cd456352d4f",
+      "description": "POS01MAR Google ADS10",
+      "date": "3 Mar 2025",
+      "reference": "545",
+      "amountSpent": "787.87",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "787.87",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Google",
+        "account": "B110 - Google Ad (or other advertising)",
+        "description": "POS25SEP GOOGLE *ADS1"
+      }
+    },
+    {
+      "index": 46,
+      "dataId": "75fd4f703ca448a2bce410dcec8dc6c2",
+      "description": "C0203GB  2.75@1.21454",
+      "date": "3 Mar 2025",
+      "reference": "239",
+      "amountSpent": "3.34",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "3.34",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Audible - CARD",
+        "account": "B121 - Text Books & Academic Materials",
+        "description": "P0811GB  7.99@1.15269"
+      }
+    },
+    {
+      "index": 47,
+      "dataId": "4e79ce94786d418eb0b73ef097076aed",
+      "description": "NECLSCHGGBP 000000.57",
+      "date": "3 Mar 2025",
+      "reference": "406",
+      "amountSpent": "0.57",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.57",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 48,
+      "dataId": "0347751bb5694f2997746b4c992b422b",
+      "description": "POS01MAR MESSAGEBIRD.",
+      "date": "3 Mar 2025",
+      "reference": "545",
+      "amountSpent": "73.80",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "73.80",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "MessageBird",
+        "account": "B106 - Software / Hosting",
+        "description": "MessageBird messaging service"
+      }
+    },
+    {
+      "index": 49,
+      "dataId": "a7b1a946cdb642deb5b7a7cdb902628a",
+      "description": "POS01MAR Google GSUIT",
+      "date": "3 Mar 2025",
+      "reference": "545",
+      "amountSpent": "237.64",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "237.64",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "CARD - Google",
+        "account": "B106 - Software / Hosting",
+        "description": "Google Apps Bus"
+      }
+    }
+  ],
+  "status": "AWAITING_AI_ANALYSIS"
+}
