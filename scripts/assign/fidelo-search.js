@@ -437,12 +437,17 @@ class FideloReferenceSearch {
                         booking: {
                             bookingId: booking.id,
                             contactId: booking.contact_id,
-                            customerId: booking.customer_number, // Student ID (not customer_id which is internal DB ID)
+                            customer_number: booking.customer_number, // Student ID (use underscore for consistency)
+                            customerNumber: booking.customer_number,  // Also provide camelCase for compatibility
+                            customer_name: `${booking.customer_lastname}, ${booking.customer_firstname}`,
+                            customerName: `${booking.customer_lastname}, ${booking.customer_firstname}`,
                             documentNumber: booking.document_number,
+                            document_number: booking.document_number,
                             bookingNumber: booking.booking_number,
                             studentName: `${booking.customer_lastname}, ${booking.customer_firstname}`,
                             amount: booking.amount,
                             payments: booking.payments,
+                            amount_open: booking.amount_open,
                             amountOpen: booking.amount_open,
                             agencyId: booking.agency_id,
                             pipeline: booking.agency_id ? 'B2B' : 'B2C'

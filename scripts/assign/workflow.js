@@ -21,13 +21,13 @@
  *    e. Flag for manual review if no match
  *    f. Create payment in Fidelo (if matched)
  *    g. Handle discrepancies (€1-€10 = underpayment alert, >€10 = manual review)
- * 5. AI Checker Review (GPT-4o analyzes ALL results):
+ * 5. Checker Review (GPT-4o analyzes ALL results):
  *    - Validates successful assignments
  *    - Diagnoses errors and proposes fixes
  *    - Attempts to resolve manual review cases
  *    - Tracks which manual sections are referenced
- * 6. Send Slack notifications (success/underpayment/manual review) with AI insights
- * 7. Generate summary report with AI checker stats
+ * 6. Send Slack notifications (success/underpayment/manual review) with checker insights
+ * 7. Generate summary report with checker stats
  *
  * Enforcement Rules:
  * - €0-€1 difference: Assign lower amount, no alert (rounding)
@@ -415,7 +415,7 @@ class PaymentAssignmentWorkflow {
             }
         }
 
-        // Step 5: AI Checker Review (if enabled)
+        // Step 5: Checker Review (if enabled)
         if (this.useAIChecker && this.results.transactions.length > 0) {
             console.log('\n' + '═'.repeat(70));
             console.log('STEP 5: AI PAYMENT CHECKER REVIEW');
@@ -436,7 +436,7 @@ class PaymentAssignmentWorkflow {
                 this.results.aiCheckerSummary = aiSummary;
 
             } catch (error) {
-                console.error('\n❌ AI Checker failed:', error.message);
+                console.error('\n❌ Checker failed:', error.message);
                 console.log('   Continuing without AI assessments...\n');
             }
         }
@@ -719,16 +719,18 @@ class PaymentAssignmentWorkflow {
             // FIX #1: Check for duplicate payment BEFORE checking discrepancy
             // This prevents false "large_discrepancy" flags when payment already exists
             console.log('\n   Checking for duplicate payment...');
-            const studentId = result.booking.customer_number;
+            const studentId = result.booking.customer_number || result.booking.customerNumber;
             console.log(`   Student ID: ${studentId}`);
             const duplicateCheck = await this.fideloAssignment.checkForDuplicatePaymentByStudentId(
                 studentId,
-                txn.amount,
-                txn.date
+                result.booking,  // Pass booking object (not amount)
+                txn.amount,      // Pass amount as 3rd parameter
+                txn.date,        // Pass date as 4th parameter
+                5                // 5 days tolerance
             );
 
-            if (duplicateCheck.alreadyAssigned) {
-                const match = duplicateCheck.existingPayment;
+            if (duplicateCheck.exists) {
+                const match = duplicateCheck.matchedPayment;
                 console.log(`\n⚠️  ALREADY ASSIGNED: Payment already exists in Fidelo`);
                 console.log(`   Invoice: ${match.invoice || 'Unknown'}`);
                 console.log(`   Existing Payment ID: ${match.id}`);
@@ -1413,9 +1415,9 @@ class PaymentAssignmentWorkflow {
         console.log(`🚫 Manual Review Required: ${this.results.manualReview}`);
         console.log(`❌ Failed/Errors: ${this.results.failed}`);
 
-        // Show AI Checker stats if available
+        // Show Checker stats if available
         if (this.results.aiCheckerStats) {
-            console.log('\n🤖 AI CHECKER STATS:');
+            console.log('\n🤖 CHECKER STATS:');
             console.log(`   Total Reviewed: ${this.results.aiCheckerStats.totalChecked}`);
             console.log(`   ✅ Approved: ${this.results.aiCheckerStats.approved}`);
             console.log(`   🔧 Fix Proposed: ${this.results.aiCheckerStats.fixProposed}`);
@@ -1436,9 +1438,9 @@ class PaymentAssignmentWorkflow {
                 `🚫 Manual Review: ${this.results.manualReview}\n` +
                 `❌ Failed: ${this.results.failed}`;
 
-            // Add AI Checker stats to Slack summary
+            // Add Checker stats to Slack summary
             if (this.results.aiCheckerStats) {
-                summaryText += `\n\n🤖 *AI Checker:*\n` +
+                summaryText += `\n\n🤖 *Checker:*\n` +
                     `   Approved: ${this.results.aiCheckerStats.approved}\n` +
                     `   Fix Proposed: ${this.results.aiCheckerStats.fixProposed}\n` +
                     `   Flagged: ${this.results.aiCheckerStats.flagged}`;
@@ -1477,7 +1479,7 @@ class PaymentAssignmentWorkflow {
                     if (result.status === 'success') {
                         detailText += `\n   Student ID: ${studentId} | Payment ID: ${result.payment?.paymentId || 'N/A'}`;
                     } else if (result.status === 'already_assigned') {
-                        detailText += `\n   Student ID: ${studentId} | Duplicate (already paid)`;
+                        detailText += `\n   Student ID: ${studentId} | Already Assigned`;
                     } else if (result.status === 'underpayment') {
                         const diff = result.discrepancy?.difference?.toFixed(2) || '0.00';
                         detailText += `\n   Student ID: ${studentId} | Shortfall: €${diff}`;
@@ -1487,17 +1489,21 @@ class PaymentAssignmentWorkflow {
                         detailText += `\n   Error: ${result.error || 'Unknown error'}`;
                     }
 
-                    // Add AI assessment if available
+                    // Add assessment if available
                     if (result.aiAssessment) {
                         const ai = result.aiAssessment;
                         const action = ai.recommendedAction || 'unknown';
-                        const confidence = ai.aiAssessment?.confidence || 'N/A';
+                        const confidence = ai.confidence || ai.aiAssessment?.confidence || 'N/A';
 
-                        detailText += `\n   🤖 AI: ${action} (${confidence})`;
+                        // Format: 🤖 approve (high) → Student 30732
+                        detailText += `\n   🤖 ${action} (${confidence})`;
 
                         // Add proposed fix if available
                         if (ai.proposedFix && ai.proposedFix.studentId) {
                             detailText += ` → Student ${ai.proposedFix.studentId}`;
+                        } else if (studentId && studentId !== '—') {
+                            // If no proposed fix but we have the student ID, show it
+                            detailText += ` → Student ${studentId}`;
                         }
                     }
                 });
