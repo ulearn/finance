@@ -71,21 +71,66 @@ class TransactionCollector {
   }
 
   async navigateToReconciliation() {
-    const pageInfo = this.pageNum ? ` (Page ${this.pageNum})` : '';
-    console.log(`🏦 Navigating to Bank Reconciliation${pageInfo}...`);
-    await new Promise(resolve => setTimeout(resolve, 5000));
-
     const baseUrl = 'https://go.xero.com/BankRec/BankRec.aspx?accountID=93D5D790E7A14C9D9CF28B68DB272970';
-    // NOTE: page flag added for quick & dirty testing
-    const url = this.pageNum ? `${baseUrl}&page=${this.pageNum}` : baseUrl;
 
-    // Always use direct URL navigation (with optional page parameter)
-    await this.page.goto(url, {
-      waitUntil: 'domcontentloaded',
-      timeout: 30000
-    });
+    // If page not specified, detect the last page (newest transactions)
+    if (!this.pageNum) {
+      console.log(`🏦 Navigating to Bank Reconciliation (detecting last page)...`);
+      await new Promise(resolve => setTimeout(resolve, 5000));
 
-    await new Promise(resolve => setTimeout(resolve, 3000));
+      // First load page 1 to get pagination info
+      await this.page.goto(baseUrl, {
+        waitUntil: 'domcontentloaded',
+        timeout: 30000
+      });
+
+      await new Promise(resolve => setTimeout(resolve, 3000));
+
+      // Detect last page number from pagination dropdown "Page X of Y"
+      const lastPage = await this.page.evaluate(() => {
+        // Look for the page selector dropdown with text like "Page 34 of 34"
+        const pageSelectors = document.querySelectorAll('.xui-select--content, [class*="select"]');
+
+        for (const selector of pageSelectors) {
+          const text = selector.textContent.trim();
+          // Match "Page 1 of 34" or "Page 34 of 34" format
+          const match = text.match(/Page\s+\d+\s+of\s+(\d+)/i);
+          if (match) {
+            return parseInt(match[1]);
+          }
+        }
+
+        return 1;
+      });
+
+      console.log(`  ✓ Detected ${lastPage} page(s) of unreconciled transactions`);
+
+      if (lastPage > 1) {
+        this.pageNum = lastPage;
+        console.log(`  → Navigating to last page (${lastPage}) for newest transactions...`);
+
+        const url = `${baseUrl}&page=${lastPage}`;
+        await this.page.goto(url, {
+          waitUntil: 'domcontentloaded',
+          timeout: 30000
+        });
+
+        await new Promise(resolve => setTimeout(resolve, 3000));
+      }
+    } else {
+      // Page number explicitly specified
+      console.log(`🏦 Navigating to Bank Reconciliation (Page ${this.pageNum})...`);
+      await new Promise(resolve => setTimeout(resolve, 5000));
+
+      const url = `${baseUrl}&page=${this.pageNum}`;
+      await this.page.goto(url, {
+        waitUntil: 'domcontentloaded',
+        timeout: 30000
+      });
+
+      await new Promise(resolve => setTimeout(resolve, 3000));
+    }
+
     console.log('✓ Reconciliation screen loaded');
     console.log('');
   }
@@ -102,8 +147,37 @@ class TransactionCollector {
     return dateString.includes(`${targetMonth} ${this.year}`);
   }
 
+  async loadExistingTransactions() {
+    try {
+      const monthNum = this.getMonthNumber(this.month);
+      const filename = `${monthNum}-${this.month}-txns.json`;
+      const filepath = path.join(this.outputDir, filename);
+
+      const data = await fs.readFile(filepath, 'utf8');
+      const parsed = JSON.parse(data);
+      return parsed.transactions || [];
+    } catch (error) {
+      // File doesn't exist or can't be read - that's okay
+      return [];
+    }
+  }
+
   async collectTransactions() {
     console.log(`📋 Collecting ${this.month.toUpperCase()} ${this.year} transactions...`);
+
+    // Load existing transactions to find last known one
+    const existingTransactions = await this.loadExistingTransactions();
+    const lastKnownDataId = existingTransactions.length > 0
+      ? existingTransactions[existingTransactions.length - 1].dataId
+      : null;
+
+    if (lastKnownDataId) {
+      console.log(`  📌 Last known transaction: ${lastKnownDataId}`);
+      console.log(`     (${existingTransactions.length} already collected)`);
+    } else {
+      console.log(`  📌 No existing transactions - full collection mode`);
+    }
+    console.log('');
 
     await this.page.waitForSelector('#statementLines', { timeout: 10000 });
     await new Promise(resolve => setTimeout(resolve, 2000));
@@ -135,18 +209,36 @@ class TransactionCollector {
       });
     });
 
-    // Filter for target month
-    // Debug: Show first 10 dates to see format
-    console.log(`  📅 Sample dates from unreconciled transactions:`);
-    allTransactions.slice(0, 10).forEach((t, i) => {
-      console.log(`     ${i + 1}. ${t.date}`);
-    });
+    console.log(`  📊 Found ${allTransactions.length} unreconciled transactions on this page`);
+
+    // Find the last known transaction in the list
+    let startIndex = 0;
+    if (lastKnownDataId) {
+      const lastKnownIndex = allTransactions.findIndex(t => t.dataId === lastKnownDataId);
+      if (lastKnownIndex !== -1) {
+        startIndex = lastKnownIndex + 1; // Start AFTER the last known
+        console.log(`  ✓ Found last known transaction at index ${lastKnownIndex}`);
+        console.log(`     Collecting ${allTransactions.length - startIndex} new transactions after it`);
+      } else {
+        console.log(`  ⚠️  Last known transaction not found on this page`);
+        console.log(`     This may mean all transactions are new, or you need to check pagination`);
+      }
+    }
     console.log('');
 
-    const targetTransactions = allTransactions.filter(t => this.isTargetMonth(t.date));
+    // Get only NEW transactions (after last known)
+    const newTransactions = allTransactions.slice(startIndex);
 
-    console.log(`  ✓ Found ${targetTransactions.length} transactions for ${this.month.toUpperCase()} ${this.year}`);
-    console.log(`    (out of ${allTransactions.length} total unreconciled)`);
+    // Filter for target month
+    const targetTransactions = newTransactions.filter(t => this.isTargetMonth(t.date));
+
+    console.log(`  ✓ Found ${targetTransactions.length} NEW transactions for ${this.month.toUpperCase()} ${this.year}`);
+    console.log(`    (filtered from ${newTransactions.length} new unreconciled)`);
+
+    if (targetTransactions.length > 0) {
+      console.log(`  📅 Date range: ${targetTransactions[0].date} to ${targetTransactions[targetTransactions.length - 1].date}`);
+    }
+    console.log('');
 
     // Second pass: check for Xero suggestions on target transactions
     console.log(`  📊 Checking for Xero Create Suggestions...`);
@@ -210,17 +302,26 @@ class TransactionCollector {
     }
   }
 
-  async saveForAIAnalysis(transactions) {
+  async saveForAIAnalysis(newTransactions) {
     const monthNum = this.getMonthNumber(this.month);
     const filename = `${monthNum}-${this.month}-txns.json`;
     const filepath = path.join(this.outputDir, filename);
+
+    // Load existing transactions
+    const existingTransactions = await this.loadExistingTransactions();
+
+    // Merge: existing + new (avoiding duplicates by dataId)
+    const existingIds = new Set(existingTransactions.map(t => t.dataId));
+    const uniqueNewTransactions = newTransactions.filter(t => !existingIds.has(t.dataId));
+
+    const allTransactions = [...existingTransactions, ...uniqueNewTransactions];
 
     const data = {
       collectedAt: new Date().toISOString(),
       month: this.month,
       year: this.year,
-      count: transactions.length,
-      transactions: transactions,
+      count: allTransactions.length,
+      transactions: allTransactions,
       status: 'AWAITING_AI_ANALYSIS'
     };
 
@@ -235,9 +336,11 @@ class TransactionCollector {
     console.log('');
     console.log('📊 Summary:');
     console.log(`   Month: ${this.month.toUpperCase()} ${this.year}`);
-    console.log(`   Total Transactions: ${transactions.length}`);
-    console.log(`   RECEIVE: ${transactions.filter(t => t.type === 'RECEIVE').length}`);
-    console.log(`   SPEND: ${transactions.filter(t => t.type === 'SPEND').length}`);
+    console.log(`   Previously Collected: ${existingTransactions.length}`);
+    console.log(`   New This Run: ${uniqueNewTransactions.length}`);
+    console.log(`   Total Now: ${allTransactions.length}`);
+    console.log(`   └─ RECEIVE: ${allTransactions.filter(t => t.type === 'RECEIVE').length}`);
+    console.log(`   └─ SPEND: ${allTransactions.filter(t => t.type === 'SPEND').length}`);
     console.log('');
     console.log('📝 Next Step:');
     console.log('   Claude will now analyze these transactions and generate reconciliation decisions.');

@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Modeling & Simulation - ULearn</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 15px;
+            font-weight: 500;
+            color: #666;
+            transition: all 0.3s;
+        }
+
+        .tab:hover {
+            color: #667eea;
+        }
+
+        .tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-card .label {
+            font-size: 13px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .stat-card .value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .stat-card .change {
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        .change.positive {
+            color: #10b981;
+        }
+
+        .change.negative {
+            color: #ef4444;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f3f4f6;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e5e7eb;
+        }
+
+        .btn-danger {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-success {
+            background: #10b981;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .scenario-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .scenario-item {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .scenario-item:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+        }
+
+        .scenario-item.selected {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+
+        .scenario-item h3 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .scenario-item p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .scenario-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .alert-success {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            color: #065f46;
+        }
+
+        .alert-error {
+            background: #fee2e2;
+            border-left: 4px solid #ef4444;
+            color: #991b1b;
+        }
+
+        .alert-warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            color: #92400e;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #555;
+        }
+
+        tr:hover {
+            background: #f8f9ff;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-primary {
+            background: #e0e7ff;
+            color: #667eea;
+        }
+
+        .badge-success {
+            background: #d1fae5;
+            color: #10b981;
+        }
+
+        .badge-warning {
+            background: #fef3c7;
+            color: #f59e0b;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal h2 {
+            margin-bottom: 20px;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        const API_BASE = '/fins/model/dashboard';
+
+        // Helper function to format dates
+        const formatMonthYear = (dateString) => {
+            const date = new Date(dateString);
+            const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                          'July', 'August', 'September', 'October', 'November', 'December'];
+            return `${months[date.getMonth()]} ${date.getFullYear()}`;
+        };
+
+        function App() {
+            const [activeTab, setActiveTab] = useState('scenarios');
+            const [scenarios, setScenarios] = useState([]);
+            const [selectedScenario, setSelectedScenario] = useState(null);
+            const [forecast, setForecast] = useState(null);
+            const [loading, setLoading] = useState(false);
+            const [alert, setAlert] = useState(null);
+
+            useEffect(() => {
+                loadScenarios();
+            }, []);
+
+            const loadScenarios = async () => {
+                try {
+                    const response = await axios.get(`${API_BASE}/scenarios`);
+                    setScenarios(response.data.scenarios);
+                } catch (error) {
+                    showAlert('Error loading scenarios: ' + error.message, 'error');
+                }
+            };
+
+            const showAlert = (message, type = 'success') => {
+                setAlert({ message, type });
+                setTimeout(() => setAlert(null), 5000);
+            };
+
+            return (
+                <div className="container">
+                    <header>
+                        <h1>Financial Modeling & Simulation</h1>
+                        <p>Driver-based forecasting system replacing Fathom</p>
+                    </header>
+
+                    {alert && (
+                        <div className={`alert alert-${alert.type}`}>
+                            {alert.message}
+                        </div>
+                    )}
+
+                    <div className="tabs">
+                        <button
+                            className={`tab ${activeTab === 'scenarios' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('scenarios')}
+                        >
+                            Scenarios
+                        </button>
+                        <button
+                            className={`tab ${activeTab === 'drivers' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('drivers')}
+                        >
+                            Drivers
+                        </button>
+                        <button
+                            className={`tab ${activeTab === 'forecast' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('forecast')}
+                        >
+                            Forecast
+                        </button>
+                        <button
+                            className={`tab ${activeTab === 'lto' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('lto')}
+                        >
+                            LTO Simulation
+                        </button>
+                        <button
+                            className={`tab ${activeTab === 'data' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('data')}
+                        >
+                            Data Sync
+                        </button>
+                    </div>
+
+                    {activeTab === 'scenarios' && (
+                        <ScenariosTab
+                            scenarios={scenarios}
+                            onScenarioSelect={setSelectedScenario}
+                            onRefresh={loadScenarios}
+                            showAlert={showAlert}
+                        />
+                    )}
+
+                    {activeTab === 'drivers' && (
+                        <DriversTab
+                            selectedScenario={selectedScenario}
+                            showAlert={showAlert}
+                        />
+                    )}
+
+                    {activeTab === 'forecast' && (
+                        <ForecastTab
+                            selectedScenario={selectedScenario}
+                            showAlert={showAlert}
+                        />
+                    )}
+
+                    {activeTab === 'lto' && (
+                        <LTOTab
+                            selectedScenario={selectedScenario}
+                            showAlert={showAlert}
+                        />
+                    )}
+
+                    {activeTab === 'data' && (
+                        <DataSyncTab
+                            showAlert={showAlert}
+                        />
+                    )}
+                </div>
+            );
+        }
+
+        function ScenariosTab({ scenarios, onScenarioSelect, onRefresh, showAlert }) {
+            const [showCreateModal, setShowCreateModal] = useState(false);
+            const [newScenario, setNewScenario] = useState({
+                name: '',
+                description: '',
+                base_year: new Date().getFullYear(),
+                forecast_years: 3
+            });
+
+            const createScenario = async () => {
+                try {
+                    await axios.post(`${API_BASE}/scenarios`, newScenario);
+                    showAlert('Scenario created successfully!');
+                    setShowCreateModal(false);
+                    onRefresh();
+                } catch (error) {
+                    showAlert('Error creating scenario: ' + error.message, 'error');
+                }
+            };
+
+            const createFromTemplate = async (template) => {
+                try {
+                    await axios.post(`${API_BASE}/scenarios/template/${template}`, {
+                        baseYear: new Date().getFullYear()
+                    });
+                    showAlert(`Created ${template} scenario!`);
+                    onRefresh();
+                } catch (error) {
+                    showAlert('Error: ' + error.message, 'error');
+                }
+            };
+
+            return (
+                <div>
+                    <div className="card">
+                        <h2>Scenarios</h2>
+                        <div className="action-buttons">
+                            <button
+                                className="btn btn-primary"
+                                onClick={() => setShowCreateModal(true)}
+                            >
+                                + Create Custom Scenario
+                            </button>
+                            <button
+                                className="btn btn-secondary"
+                                onClick={() => createFromTemplate('baseline')}
+                            >
+                                Create Baseline
+                            </button>
+                            <button
+                                className="btn btn-secondary"
+                                onClick={() => createFromTemplate('aggressive_growth')}
+                            >
+                                Aggressive Growth
+                            </button>
+                            <button
+                                className="btn btn-secondary"
+                                onClick={() => createFromTemplate('conservative')}
+                            >
+                                Conservative
+                            </button>
+                        </div>
+
+                        <div className="scenario-list" style={{marginTop: '20px'}}>
+                            {scenarios.length === 0 ? (
+                                <div className="loading">
+                                    <p>No scenarios yet. Create one to get started!</p>
+                                </div>
+                            ) : (
+                                scenarios.map(scenario => (
+                                    <div
+                                        key={scenario.id}
+                                        className="scenario-item"
+                                        onClick={() => onScenarioSelect(scenario)}
+                                    >
+                                        <h3>{scenario.name}</h3>
+                                        <p>{scenario.description}</p>
+                                        <div className="scenario-meta">
+                                            <span>Base: {scenario.base_year}</span>
+                                            <span>Forecast: {scenario.forecast_years} years</span>
+                                            <span>{scenario.driver_count || 0} drivers</span>
+                                            {scenario.is_baseline && (
+                                                <span className="badge badge-primary">Baseline</span>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))
+                            )}
+                        </div>
+                    </div>
+
+                    {showCreateModal && (
+                        <div className="modal-overlay" onClick={() => setShowCreateModal(false)}>
+                            <div className="modal" onClick={(e) => e.stopPropagation()}>
+                                <h2>Create New Scenario</h2>
+                                <div className="form-group">
+                                    <label>Name</label>
+                                    <input
+                                        type="text"
+                                        value={newScenario.name}
+                                        onChange={(e) => setNewScenario({...newScenario, name: e.target.value})}
+                                        placeholder="e.g., 2025 Growth Plan"
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label>Description</label>
+                                    <textarea
+                                        value={newScenario.description}
+                                        onChange={(e) => setNewScenario({...newScenario, description: e.target.value})}
+                                        placeholder="What makes this scenario unique?"
+                                        rows="3"
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label>Base Year</label>
+                                    <input
+                                        type="number"
+                                        value={newScenario.base_year}
+                                        onChange={(e) => setNewScenario({...newScenario, base_year: parseInt(e.target.value)})}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label>Forecast Years</label>
+                                    <input
+                                        type="number"
+                                        value={newScenario.forecast_years}
+                                        onChange={(e) => setNewScenario({...newScenario, forecast_years: parseInt(e.target.value)})}
+                                        min="1"
+                                        max="5"
+                                    />
+                                </div>
+                                <div className="modal-actions">
+                                    <button
+                                        className="btn btn-secondary"
+                                        onClick={() => setShowCreateModal(false)}
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button
+                                        className="btn btn-primary"
+                                        onClick={createScenario}
+                                    >
+                                        Create Scenario
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        function DriversTab({ selectedScenario, showAlert }) {
+            const [drivers, setDrivers] = useState([]);
+            const [showAddModal, setShowAddModal] = useState(false);
+            const [newDriver, setNewDriver] = useState({
+                driver_type: 'hire',
+                name: '',
+                description: '',
+                channel: 'Both',
+                start_date: '',
+                end_date: '',
+                value_numeric: '',
+                value_percentage: ''
+            });
+
+            const loadDrivers = async () => {
+                if (!selectedScenario) return;
+
+                try {
+                    const response = await axios.get(`${API_BASE}/scenarios/${selectedScenario.id}`);
+                    setDrivers(response.data.scenario.drivers || []);
+                } catch (error) {
+                    showAlert('Error loading drivers: ' + error.message, 'error');
+                }
+            };
+
+            const addDriver = async () => {
+                if (!selectedScenario) return;
+
+                try {
+                    await axios.post(`${API_BASE}/scenarios/${selectedScenario.id}/drivers`, newDriver);
+                    showAlert('Driver added successfully!');
+                    setShowAddModal(false);
+                    loadDrivers();
+                    // Reset form
+                    setNewDriver({
+                        driver_type: 'hire',
+                        name: '',
+                        description: '',
+                        channel: 'Both',
+                        start_date: '',
+                        end_date: '',
+                        value_numeric: '',
+                        value_percentage: ''
+                    });
+                } catch (error) {
+                    showAlert('Error adding driver: ' + error.message, 'error');
+                }
+            };
+
+            useEffect(() => {
+                loadDrivers();
+            }, [selectedScenario]);
+
+            if (!selectedScenario) {
+                return (
+                    <div className="card">
+                        <div className="loading">
+                            <p>Select a scenario from the Scenarios tab to manage drivers</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            const driverTypeExplanations = {
+                'hire': 'New hire that will generate revenue over time (e.g., B2B Sales Rep generating €30k/month)',
+                'price_change': 'Price increase/decrease as a percentage (e.g., 10% price increase)',
+                'lto_discount': 'Limited Time Offer discount percentage (e.g., 20% off promotion)',
+                'strategic_initiative': 'One-time or ongoing strategic revenue (e.g., Life Pass program)',
+                'fixed_cost': 'Change in fixed costs (rent, utilities) - amount per month',
+                'variable_cost': 'Change in variable costs (marketing budget) - amount per month'
+            };
+
+            return (
+                <div>
+                    <div className="card">
+                        <h2>Drivers: {selectedScenario.name}</h2>
+                        <p style={{color: '#666', marginBottom: '20px'}}>
+                            Drivers are factors that change your forecast. They can affect revenue (hires, price changes)
+                            or costs (marketing budget, rent). The KEY feature: variable costs automatically scale with revenue!
+                        </p>
+
+                        <button
+                            className="btn btn-primary"
+                            onClick={() => setShowAddModal(true)}
+                        >
+                            + Add Driver
+                        </button>
+
+                        {drivers.length === 0 ? (
+                            <div className="loading" style={{marginTop: '20px'}}>
+                                <p>No drivers configured. Add drivers to model different scenarios.</p>
+                            </div>
+                        ) : (
+                            <div style={{marginTop: '30px'}}>
+                                <h3>Configured Drivers ({drivers.length})</h3>
+                                <div style={{overflowX: 'auto'}}>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Channel</th>
+                                                <th>Value</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {drivers.map(driver => (
+                                                <tr key={driver.id}>
+                                                    <td><span className="badge">{driver.driver_type}</span></td>
+                                                    <td><strong>{driver.name}</strong></td>
+                                                    <td>{driver.description || '-'}</td>
+                                                    <td>{driver.channel}</td>
+                                                    <td>
+                                                        {driver.value_numeric && `€${parseFloat(driver.value_numeric).toLocaleString()}`}
+                                                        {driver.value_percentage && `${driver.value_percentage}%`}
+                                                    </td>
+                                                    <td>{driver.start_date ? formatMonthYear(driver.start_date) : '-'}</td>
+                                                    <td>{driver.end_date ? formatMonthYear(driver.end_date) : 'Ongoing'}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    {showAddModal && (
+                        <div className="modal-overlay" onClick={() => setShowAddModal(false)}>
+                            <div className="modal" onClick={(e) => e.stopPropagation()} style={{maxWidth: '600px'}}>
+                                <h2>Add Driver</h2>
+
+                                <div className="form-group">
+                                    <label>Driver Type</label>
+                                    <select
+                                        value={newDriver.driver_type}
+                                        onChange={(e) => setNewDriver({...newDriver, driver_type: e.target.value})}
+                                    >
+                                        <option value="hire">Hire (Revenue Impact)</option>
+                                        <option value="price_change">Price Change (%)</option>
+                                        <option value="lto_discount">LTO Discount (%)</option>
+                                        <option value="strategic_initiative">Strategic Initiative</option>
+                                        <option value="fixed_cost">Fixed Cost Change</option>
+                                        <option value="variable_cost">Variable Cost Change</option>
+                                    </select>
+                                    <small style={{color: '#666', display: 'block', marginTop: '5px'}}>
+                                        {driverTypeExplanations[newDriver.driver_type]}
+                                    </small>
+                                </div>
+
+                                <div className="form-group">
+                                    <label>Name</label>
+                                    <input
+                                        type="text"
+                                        value={newDriver.name}
+                                        onChange={(e) => setNewDriver({...newDriver, name: e.target.value})}
+                                        placeholder="e.g., B2B Sales Hire, 10% Price Increase"
+                                    />
+                                </div>
+
+                                <div className="form-group">
+                                    <label>Description (optional)</label>
+                                    <textarea
+                                        value={newDriver.description}
+                                        onChange={(e) => setNewDriver({...newDriver, description: e.target.value})}
+                                        placeholder="Additional details about this driver"
+                                        rows="2"
+                                    />
+                                </div>
+
+                                <div className="form-group">
+                                    <label>Channel</label>
+                                    <select
+                                        value={newDriver.channel}
+                                        onChange={(e) => setNewDriver({...newDriver, channel: e.target.value})}
+                                    >
+                                        <option value="Both">Both B2B & B2C</option>
+                                        <option value="B2B">B2B Only</option>
+                                        <option value="B2C">B2C Only</option>
+                                    </select>
+                                </div>
+
+                                {(newDriver.driver_type === 'hire' || newDriver.driver_type === 'strategic_initiative' ||
+                                  newDriver.driver_type === 'fixed_cost' || newDriver.driver_type === 'variable_cost') && (
+                                    <div className="form-group">
+                                        <label>Monthly Value (€)</label>
+                                        <input
+                                            type="number"
+                                            value={newDriver.value_numeric}
+                                            onChange={(e) => setNewDriver({...newDriver, value_numeric: e.target.value})}
+                                            placeholder="e.g., 30000 for hire, 5000 for marketing increase"
+                                        />
+                                    </div>
+                                )}
+
+                                {(newDriver.driver_type === 'price_change' || newDriver.driver_type === 'lto_discount') && (
+                                    <div className="form-group">
+                                        <label>Percentage (%)</label>
+                                        <input
+                                            type="number"
+                                            value={newDriver.value_percentage}
+                                            onChange={(e) => setNewDriver({...newDriver, value_percentage: e.target.value})}
+                                            placeholder="e.g., 10 for 10% increase, -5 for 5% decrease"
+                                        />
+                                    </div>
+                                )}
+
+                                <div className="form-group">
+                                    <label>Start Date</label>
+                                    <input
+                                        type="date"
+                                        value={newDriver.start_date}
+                                        onChange={(e) => setNewDriver({...newDriver, start_date: e.target.value})}
+                                    />
+                                </div>
+
+                                <div className="form-group">
+                                    <label>End Date (optional)</label>
+                                    <input
+                                        type="date"
+                                        value={newDriver.end_date}
+                                        onChange={(e) => setNewDriver({...newDriver, end_date: e.target.value})}
+                                    />
+                                    <small style={{color: '#666', display: 'block', marginTop: '5px'}}>
+                                        Leave blank for ongoing impact
+                                    </small>
+                                </div>
+
+                                <div className="modal-actions">
+                                    <button
+                                        className="btn btn-secondary"
+                                        onClick={() => setShowAddModal(false)}
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button
+                                        className="btn btn-primary"
+                                        onClick={addDriver}
+                                    >
+                                        Add Driver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        function ForecastTab({ selectedScenario, showAlert }) {
+            const [forecast, setForecast] = useState([]);
+            const [loading, setLoading] = useState(false);
+
+            const generateForecast = async () => {
+                if (!selectedScenario) {
+                    showAlert('Please select a scenario first', 'warning');
+                    return;
+                }
+
+                setLoading(true);
+                try {
+                    const response = await axios.post(
+                        `${API_BASE}/scenarios/${selectedScenario.id}/forecast`
+                    );
+                    showAlert('Forecast generated successfully!');
+                    loadForecast();
+                } catch (error) {
+                    showAlert('Error generating forecast: ' + error.message, 'error');
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            const loadForecast = async () => {
+                if (!selectedScenario) return;
+
+                try {
+                    const response = await axios.get(
+                        `${API_BASE}/scenarios/${selectedScenario.id}/forecast`
+                    );
+                    setForecast(response.data.forecast);
+                } catch (error) {
+                    showAlert('Error loading forecast: ' + error.message, 'error');
+                }
+            };
+
+            useEffect(() => {
+                if (selectedScenario) {
+                    loadForecast();
+                }
+            }, [selectedScenario]);
+
+            if (!selectedScenario) {
+                return (
+                    <div className="card">
+                        <div className="loading">
+                            <p>Select a scenario from the Scenarios tab to view forecasts</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div>
+                    <div className="card">
+                        <h2>Forecast: {selectedScenario.name}</h2>
+                        <button
+                            className="btn btn-primary"
+                            onClick={generateForecast}
+                            disabled={loading}
+                        >
+                            {loading ? 'Generating...' : 'Generate Forecast'}
+                        </button>
+
+                        {forecast.length > 0 && (
+                            <div style={{marginTop: '30px'}}>
+                                <h3>Monthly Projections</h3>
+                                <div style={{overflowX: 'auto'}}>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Month</th>
+                                                <th>Revenue B2B</th>
+                                                <th>Revenue B2C</th>
+                                                <th>Total Revenue</th>
+                                                <th>LTO Discount</th>
+                                                <th>Net Revenue</th>
+                                                <th>Operating Profit</th>
+                                                <th>Net Income</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {forecast.slice(0, 12).map(month => (
+                                                <tr key={month.period_date}>
+                                                    <td>{formatMonthYear(month.period_date)}</td>
+                                                    <td>€{parseFloat(month.revenue_b2b).toLocaleString()}</td>
+                                                    <td>€{parseFloat(month.revenue_b2c).toLocaleString()}</td>
+                                                    <td>€{parseFloat(month.revenue_total).toLocaleString()}</td>
+                                                    <td>{month.lto_discount_percentage}%</td>
+                                                    <td>€{parseFloat(month.net_revenue).toLocaleString()}</td>
+                                                    <td>€{parseFloat(month.operating_profit).toLocaleString()}</td>
+                                                    <td>€{parseFloat(month.net_income).toLocaleString()}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            );
+        }
+
+        function LTOTab({ selectedScenario, showAlert }) {
+            const [ltoParams, setLTOParams] = useState({
+                discount_percentage: 20,
+                channel: 'Both',
+                expected_volume_increase: 50,
+                baseline_monthly_students: 100,
+                avg_revenue_per_student: 800,
+                start_date: new Date().toISOString().split('T')[0],
+                end_date: new Date(Date.now() + 90*24*60*60*1000).toISOString().split('T')[0]
+            });
+            const [result, setResult] = useState(null);
+            const [loading, setLoading] = useState(false);
+
+            const runSimulation = async () => {
+                if (!selectedScenario) {
+                    showAlert('Please select a scenario first', 'warning');
+                    return;
+                }
+
+                setLoading(true);
+                try {
+                    const response = await axios.post(
+                        `${API_BASE}/scenarios/${selectedScenario.id}/lto/simulate`,
+                        ltoParams
+                    );
+                    setResult(response.data);
+                    showAlert('LTO simulation complete!');
+                } catch (error) {
+                    showAlert('Error running simulation: ' + error.message, 'error');
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            if (!selectedScenario) {
+                return (
+                    <div className="card">
+                        <div className="loading">
+                            <p>Select a scenario from the Scenarios tab</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div>
+                    <div className="card">
+                        <h2>LTO Simulation: {selectedScenario.name}</h2>
+                        <p style={{color: '#666', marginBottom: '20px'}}>
+                            Analyze profitability breakpoints for discount campaigns
+                        </p>
+
+                        <div className="grid">
+                            <div className="form-group">
+                                <label>Discount %</label>
+                                <input
+                                    type="number"
+                                    value={ltoParams.discount_percentage}
+                                    onChange={(e) => setLTOParams({...ltoParams, discount_percentage: parseFloat(e.target.value)})}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Channel</label>
+                                <select
+                                    value={ltoParams.channel}
+                                    onChange={(e) => setLTOParams({...ltoParams, channel: e.target.value})}
+                                >
+                                    <option>Both</option>
+                                    <option>B2B</option>
+                                    <option>B2C</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Expected Volume Increase %</label>
+                                <input
+                                    type="number"
+                                    value={ltoParams.expected_volume_increase}
+                                    onChange={(e) => setLTOParams({...ltoParams, expected_volume_increase: parseFloat(e.target.value)})}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Baseline Students/Month</label>
+                                <input
+                                    type="number"
+                                    value={ltoParams.baseline_monthly_students}
+                                    onChange={(e) => setLTOParams({...ltoParams, baseline_monthly_students: parseInt(e.target.value)})}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Avg Revenue per Student (€)</label>
+                                <input
+                                    type="number"
+                                    value={ltoParams.avg_revenue_per_student}
+                                    onChange={(e) => setLTOParams({...ltoParams, avg_revenue_per_student: parseFloat(e.target.value)})}
+                                />
+                            </div>
+                        </div>
+
+                        <button
+                            className="btn btn-primary"
+                            onClick={runSimulation}
+                            disabled={loading}
+                        >
+                            {loading ? 'Running Simulation...' : 'Run Simulation'}
+                        </button>
+
+                        {result && (
+                            <div style={{marginTop: '30px'}}>
+                                <div className={`alert alert-${result.recommendation.includes('✅') ? 'success' : 'warning'}`}>
+                                    <strong>{result.recommendation}</strong>
+                                </div>
+
+                                <div className="grid">
+                                    <div className="stat-card">
+                                        <div className="label">Breakeven Students</div>
+                                        <div className="value">{result.breakeven.students}</div>
+                                        <div className="change">
+                                            {result.breakeven.volume_increase_required.toFixed(1)}% increase required
+                                        </div>
+                                    </div>
+                                    <div className="stat-card">
+                                        <div className="label">ROI</div>
+                                        <div className="value">{result.roi.toFixed(1)}%</div>
+                                    </div>
+                                    <div className="stat-card">
+                                        <div className="label">Incremental Profit</div>
+                                        <div className="value">€{result.incremental_profit.toLocaleString()}</div>
+                                    </div>
+                                    <div className="stat-card">
+                                        <div className="label">Months to Breakeven</div>
+                                        <div className="value">{result.breakeven.months}</div>
+                                    </div>
+                                </div>
+
+                                <div style={{marginTop: '20px'}}>
+                                    <h3>Comparison</h3>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Baseline</th>
+                                                <th>With LTO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Students</td>
+                                                <td>{result.baseline.students}</td>
+                                                <td>{result.with_lto.students}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gross Revenue</td>
+                                                <td>€{result.baseline.gross_revenue.toLocaleString()}</td>
+                                                <td>€{result.with_lto.gross_revenue.toLocaleString()}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Discount</td>
+                                                <td>€0</td>
+                                                <td>€{result.with_lto.discount_amount.toLocaleString()}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Net Revenue</td>
+                                                <td>€{result.baseline.net_revenue.toLocaleString()}</td>
+                                                <td>€{result.with_lto.net_revenue.toLocaleString()}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Profit</td>
+                                                <td>€{result.baseline.profit.toLocaleString()}</td>
+                                                <td>€{result.with_lto.profit.toLocaleString()}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Margin</td>
+                                                <td>{result.baseline.margin.toFixed(1)}%</td>
+                                                <td>{result.with_lto.margin.toFixed(1)}%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            );
+        }
+
+        function DataSyncTab({ showAlert }) {
+            const [syncing, setSyncing] = useState(false);
+            const [costRatio, setCostRatio] = useState(null);
+
+            const syncXero = async () => {
+                setSyncing(true);
+                try {
+                    const response = await axios.post(`${API_BASE}/data/sync-xero`, {
+                        startDate: '2023-01-01',
+                        endDate: new Date().toISOString().split('T')[0]
+                    });
+                    showAlert('Xero data synced successfully!');
+                } catch (error) {
+                    showAlert('Error syncing Xero: ' + error.message, 'error');
+                } finally {
+                    setSyncing(false);
+                }
+            };
+
+            const calculateRatios = async () => {
+                try {
+                    const response = await axios.post(`${API_BASE}/data/calculate-ratios`, {
+                        months: 24
+                    });
+                    showAlert('Cost ratios calculated!');
+                    loadCostRatio();
+                } catch (error) {
+                    showAlert('Error calculating ratios: ' + error.message, 'error');
+                }
+            };
+
+            const loadCostRatio = async () => {
+                try {
+                    const response = await axios.get(`${API_BASE}/data/cost-ratio?period=12m`);
+                    setCostRatio(response.data.ratio);
+                } catch (error) {
+                    console.error('Error loading cost ratio:', error);
+                }
+            };
+
+            useEffect(() => {
+                loadCostRatio();
+            }, []);
+
+            return (
+                <div>
+                    <div className="card">
+                        <h2>Data Synchronization</h2>
+                        <p style={{color: '#666', marginBottom: '20px'}}>
+                            Sync historical data from Xero and calculate cost ratios
+                        </p>
+
+                        {costRatio && (
+                            <div className="stat-card" style={{marginBottom: '20px'}}>
+                                <div className="label">Current Variable Cost Ratio (12m avg)</div>
+                                <div className="value">{(costRatio * 100).toFixed(2)}%</div>
+                                <div className="change">
+                                    Used for automatic cost scaling in forecasts
+                                </div>
+                            </div>
+                        )}
+
+                        <div className="action-buttons">
+                            <button
+                                className="btn btn-primary"
+                                onClick={syncXero}
+                                disabled={syncing}
+                            >
+                                {syncing ? 'Syncing...' : 'Sync Xero Actuals'}
+                            </button>
+                            <button
+                                className="btn btn-secondary"
+                                onClick={calculateRatios}
+                            >
+                                Calculate Cost Ratios
+                            </button>
+                        </div>
+
+                        <div style={{marginTop: '30px', padding: '20px', background: '#f8f9fa', borderRadius: '8px'}}>
+                            <h3 style={{marginBottom: '15px'}}>About Data Sync</h3>
+                            <p style={{marginBottom: '10px', color: '#666'}}>
+                                <strong>Sync Xero Actuals:</strong> Pulls historical P&L data from Xero
+                                and stores it locally for faster access.
+                            </p>
+                            <p style={{color: '#666'}}>
+                                <strong>Calculate Cost Ratios:</strong> Analyzes the relationship between
+                                revenue and variable costs. This is THE KEY FEATURE that Fathom couldn't do -
+                                costs automatically scale with revenue changes!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>

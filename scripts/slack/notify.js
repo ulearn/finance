@@ -319,6 +319,20 @@ class SlackNotifier {
     }
 
     /**
+     * Format financial source for display
+     */
+    formatFinancialSource(source) {
+        const sourceMap = {
+            'boi': 'BOI (Bank Transfer)',
+            'stripe': 'Stripe',
+            'revolut': 'Revolut',
+            'transfermate': 'TransferMate',
+            'transfermate_escrow': 'TransferMate Escrow'
+        };
+        return sourceMap[source] || source || 'Unknown';
+    }
+
+    /**
      * Format manual review alert (>€10 discrepancy or no match)
      */
     formatManualReviewAlert(transaction, reason) {
@@ -355,10 +369,16 @@ class SlackNotifier {
             },
             {
                 type: "section",
-                text: {
-                    type: "mrkdwn",
-                    text: `*Bank Description:*\n\`${transaction.description}\``
-                }
+                fields: [
+                    {
+                        type: "mrkdwn",
+                        text: `*Bank Description:*\n\`${transaction.description}\``
+                    },
+                    {
+                        type: "mrkdwn",
+                        text: `*Financial Source:*\n${this.formatFinancialSource(transaction.source)}`
+                    }
+                ]
             },
             {
                 type: "section",

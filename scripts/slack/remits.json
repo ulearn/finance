@@ -997,8 +997,199 @@
       "userId": "U07CL253LJH",
       "fileCount": 0,
       "files": []
+    },
+    {
+      "messageId": "1764871874.913009",
+      "timestamp": "2025-12-04T18:11:14.913Z",
+      "studentId": "29297",
+      "studentName": "",
+      "amount": 1195,
+      "messageText": "Undralbayar ID29297 ( €1195) ",
+      "userId": "U07D1SRFPGR",
+      "hasFiles": true,
+      "fileCount": 1,
+      "files": [
+        {
+          "name": "IMG_2092.png",
+          "mimetype": "image/png",
+          "size": 237202,
+          "url_private": "https://files.slack.com/files-pri/T4CUW7RUK-F0A1M2KNGF4/img_2092.png"
+        }
+      ],
+      "parsedAttachment": {
+        "amount": 1195,
+        "date": "2025-12-04",
+        "paymentMethod": "Bank Transfer",
+        "bookingReference": "",
+        "transactionId": "IE25120444874438",
+        "notes": "Receiver: ULEARN LIMITED, BIC: BOFIIE2DXXX, IBAN: IE50BOFI90017290814728"
+      },
+      "attachmentsParsed": [
+        {
+          "filename": "IMG_2092.png",
+          "mimetype": "image/png",
+          "parsed": {
+            "amount": 1195,
+            "currency": "EUR",
+            "date": "2025-12-04",
+            "paymentMethod": "Bank Transfer",
+            "studentId": "ID2929",
+            "studentName": "UNDRALBAYAR",
+            "bookingReference": "",
+            "transactionId": "IE25120444874438",
+            "notes": "Receiver: ULEARN LIMITED, BIC: BOFIIE2DXXX, IBAN: IE50BOFI90017290814728"
+          },
+          "success": true
+        }
+      ]
+    },
+    {
+      "messageId": "1764778432.556309",
+      "timestamp": "2025-12-03T16:13:52.556Z",
+      "studentId": "30797",
+      "studentName": "Uuganbayar secure deposit",
+      "amount": 140,
+      "messageText": "ID30797 Uuganbayar secure deposit ( €140)",
+      "userId": "U07D1SRFPGR",
+      "hasFiles": true,
+      "fileCount": 1,
+      "files": [
+        {
+          "name": "IMG_1990.png",
+          "mimetype": "image/png",
+          "size": 237163,
+          "url_private": "https://files.slack.com/files-pri/T4CUW7RUK-F0A1Q8NUMH7/img_1990.png"
+        }
+      ],
+      "parsedAttachment": {
+        "amount": 140,
+        "date": "2025-12-03",
+        "paymentMethod": "Bank Transfer",
+        "bookingReference": "P20251045",
+        "transactionId": "IE25120343280622",
+        "notes": "Payee message: UUGANBAYAR SECURE"
+      },
+      "attachmentsParsed": [
+        {
+          "filename": "IMG_1990.png",
+          "mimetype": "image/png",
+          "parsed": {
+            "amount": 140,
+            "currency": "EUR",
+            "date": "2025-12-03",
+            "paymentMethod": "Bank Transfer",
+            "studentId": null,
+            "studentName": null,
+            "bookingReference": "P20251045",
+            "transactionId": "IE25120343280622",
+            "notes": "Payee message: UUGANBAYAR SECURE"
+          },
+          "success": true
+        }
+      ]
+    },
+    {
+      "messageId": "1764761509.473879",
+      "timestamp": "2025-12-03T11:31:49.473Z",
+      "studentId": "30795",
+      "studentName": "Bayanzul secure deposit",
+      "amount": 250,
+      "messageText": "ID30795 Bayanzul secure deposit (€250)",
+      "userId": "U07D1SRFPGR",
+      "hasFiles": true,
+      "fileCount": 1,
+      "files": [
+        {
+          "name": "IMG_1985.png",
+          "mimetype": "image/png",
+          "size": 234990,
+          "url_private": "https://files.slack.com/files-pri/T4CUW7RUK-F0A15RVBYQM/img_1985.png"
+        }
+      ],
+      "parsedAttachment": {
+        "amount": 250,
+        "date": "2025-12-03",
+        "paymentMethod": "Bank Transfer",
+        "bookingReference": "",
+        "transactionId": "IE25120342898441",
+        "notes": "Payee: BAYANZUL"
+      },
+      "attachmentsParsed": [
+        {
+          "filename": "IMG_1985.png",
+          "mimetype": "image/png",
+          "parsed": {
+            "amount": 250,
+            "currency": "EUR",
+            "date": "2025-12-03",
+            "paymentMethod": "Bank Transfer",
+            "studentId": "ID30795",
+            "studentName": "",
+            "bookingReference": "",
+            "transactionId": "IE25120342898441",
+            "notes": "Payee: BAYANZUL"
+          },
+          "success": true
+        }
+      ]
+    },
+    {
+      "messageId": "1764760791.980899",
+      "timestamp": "2025-12-03T11:19:51.980Z",
+      "studentId": "30715",
+      "studentName": "Geovana Ribeiro Frigi",
+      "amount": 1250.4,
+      "messageText": "ID 30715 Geovana Ribeiro Frigi",
+      "userId": "U080LTXMJSZ",
+      "hasFiles": true,
+      "fileCount": 1,
+      "files": [
+        {
+          "name": "Geovana Ribeiro Frigi - student payment (Ulearn).pdf",
+          "mimetype": "application/pdf",
+          "size": 107273,
+          "url_private": "https://files.slack.com/files-pri/T4CUW7RUK-F0A0TPWBM7Z/geovana_ribeiro_frigi_-_student_payment__ulearn_.pdf"
+        }
+      ],
+      "parsedAttachment": {
+        "amount": 1250.4,
+        "date": "2025-12-01",
+        "paymentMethod": "Bank Transfer",
+        "bookingReference": "P2025949",
+        "transactionId": "4254530",
+        "notes": "School payment"
+      },
+      "attachmentsParsed": [
+        {
+          "filename": "Geovana Ribeiro Frigi - student payment (Ulearn).pdf",
+          "mimetype": "application/pdf",
+          "parsed": {
+            "amount": 1250.4,
+            "currency": "EUR",
+            "date": "2025-12-01",
+            "paymentMethod": "Bank Transfer",
+            "studentId": null,
+            "studentName": "Geovana Ribeiro Frigi",
+            "bookingReference": "P2025949",
+            "transactionId": "4254530",
+            "notes": "School payment"
+          },
+          "success": true
+        }
+      ]
+    },
+    {
+      "messageId": "1765198714.954319",
+      "timestamp": "2025-12-08T12:58:34.954Z",
+      "studentId": "30793",
+      "studentName": "Moreno, Olga\nHas this payment arrived",
+      "amount": null,
+      "messageText": "ID \t30793\t\tMoreno, Olga\nHas this payment arrived?",
+      "userId": "U07CL253LJH",
+      "fileCount": 0,
+      "files": []
     }
   ],
-  "lastMessageId": "1764696401.558139",
-  "lastUpdated": "2025-12-02T17:43:38.000Z"
+  "lastMessageId": "1765198714.954319",
+  "lastUpdated": "2025-12-09T06:30:22.916Z"
 }

@@ -338,15 +338,73 @@ class XeroAPIClient {
     }
 
     /**
-     * Get a specific report by ID
-     * @param {string} reportID - Report ID (e.g., '1071' for General Ledger Detail)
+     * Get a specific report by name with date parameters
+     * @param {string} reportName - Report name (ProfitAndLoss, BalanceSheet, etc.)
+     * @param {Object} params - Report parameters (fromDate, toDate, periods, timeframe, etc.)
      * @returns {Promise<Object>} - Report data
      */
-    async getReport(reportID) {
+    async getReport(reportName, params = {}) {
         const method = async () => {
-            const response = await this.xero.accountingApi.getReportFromId(
-                this.tenantId,
-                reportID
+            let response;
+
+            switch(reportName) {
+                case 'ProfitAndLoss':
+                    response = await this.xero.accountingApi.getReportProfitAndLoss(
+                        this.tenantId,
+                        params.fromDate,
+                        params.toDate,
+                        params.periods,
+                        params.timeframe,
+                        params.trackingCategoryID,
+                        params.trackingCategoryID2,
+                        params.trackingOptionID,
+                        params.trackingOptionID2,
+                        params.standardLayout,
+                        params.paymentsOnly
+                    );
+                    break;
+
+                case 'BalanceSheet':
+                    response = await this.xero.accountingApi.getReportBalanceSheet(
+                        this.tenantId,
+                        params.date,
+                        params.periods,
+                        params.timeframe,
+                        params.trackingOptionID,
+                        params.trackingOptionID2,
+                        params.standardLayout,
+                        params.paymentsOnly
+                    );
+                    break;
+
+                case 'BankSummary':
+                    response = await this.xero.accountingApi.getReportBankSummary(
+                        this.tenantId,
+                        params.fromDate,
+                        params.toDate
+                    );
+                    break;
+
+                default:
+                    // Fallback to generic report by ID
+                    response = await this.xero.accountingApi.getReportFromId(
+                        this.tenantId,
+                        reportName
+                    );
+            }
+
+            return response.body;
+        };
+        return await this.makeApiCall(method);
+    }
+
+    /**
+     * Get available reports list
+     */
+    async getReports() {
+        const method = async () => {
+            const response = await this.xero.accountingApi.getReportsList(
+                this.tenantId
             );
             return response.body;
         };

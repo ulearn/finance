@@ -322,6 +322,53 @@ class PaymentAssignmentWorkflow {
         console.log(`Mode: ${this.dryRun ? 'DRY RUN (no payments created)' : 'LIVE'}`);
         console.log(`Transactions to process: ${transactions.length}\n`);
 
+        // Sync transactions to tracker (adds them if not already tracked)
+        const boiTransactions = transactions.filter(t => t.source === 'boi');
+        const stripeTransactions = transactions.filter(t => t.source === 'stripe');
+        const revolutTransactions = transactions.filter(t => t.source === 'revolut');
+
+        await this.tracker.syncAllSources({
+            boiTransactions,
+            stripeTransactions,
+            revolutTransactions
+        });
+
+        // Filter out already-processed transactions (assigned, duplicate, review, failed)
+        console.log('\n🔍 Filtering already-processed transactions...');
+        const trackerData = await this.tracker.loadAssignments();
+
+        const beforeCount = transactions.length;
+        const skipped = { assigned: 0, duplicate: 0, review: 0, failed: 0 };
+
+        transactions = transactions.filter(txn => {
+            if (!txn.source || !txn.id) return true;  // Keep if no tracking info
+
+            const sourceData = trackerData.transactions[txn.source];
+            if (!sourceData) return true;  // Keep if source not tracked
+
+            const tracked = sourceData.find(t => t.id === txn.id);
+            if (!tracked) return true;  // Keep if not in tracker
+
+            const status = tracked.assignStatus;
+            if (status && status !== 'unprocessed') {
+                skipped[status] = (skipped[status] || 0) + 1;
+                console.log(`   ⏭️  Skip [${status}]: ${txn.description.substring(0, 40)}... (€${txn.amount})`);
+                return false;
+            }
+            return true;  // Keep unprocessed
+        });
+
+        const skippedTotal = beforeCount - transactions.length;
+        console.log(`\n   📊 Filtered Results:`);
+        console.log(`      Total: ${beforeCount} transactions`);
+        console.log(`      Skipped: ${skippedTotal} (assigned: ${skipped.assigned || 0}, duplicate: ${skipped.duplicate || 0}, review: ${skipped.review || 0}, failed: ${skipped.failed || 0})`);
+        console.log(`      To Process: ${transactions.length}\n`);
+
+        if (transactions.length === 0) {
+            console.log('✅ No new transactions to process - all already handled\n');
+            return this.results;
+        }
+
         // Load Slack remittances from #financial channel
         try {
             console.log('📥 Loading Slack remittances from #financial channel...');
@@ -1365,6 +1412,7 @@ class PaymentAssignmentWorkflow {
             date: txn.date,
             amount: txn.amount,
             description: txn.description,
+            source: txn.source,
             possibleMatches: reason.possibleMatches || []
         };
 
@@ -1404,16 +1452,23 @@ class PaymentAssignmentWorkflow {
      * Generate summary report
      */
     async generateSummary() {
+        // Get aggregated pending counts across all recent months (not just current month)
+        const pendingCounts = await this.tracker.getPendingCounts();
+
         console.log('\n\n═══════════════════════════════════════════');
         console.log('PAYMENT ASSIGNMENT SUMMARY');
         console.log('═══════════════════════════════════════════');
-        console.log(`Total Transactions: ${this.results.total}`);
+        console.log(`Total Transactions Processed: ${this.results.total}`);
         console.log(`✅ Successfully Assigned: ${this.results.success}`);
         console.log(`⚠️  Underpayments (assigned with alert): ${this.results.underpayment}`);
         console.log(`♻️  Already Assigned (skipped): ${this.results.alreadyAssigned}`);
         console.log(`🔒 Escrow Pending (visa approval): ${this.results.escrowPending}`);
-        console.log(`🚫 Manual Review Required: ${this.results.manualReview}`);
-        console.log(`❌ Failed/Errors: ${this.results.failed}`);
+        console.log(`🚫 Manual Review Required (this run): ${this.results.manualReview}`);
+        console.log(`❌ Failed/Errors (this run): ${this.results.failed}`);
+        console.log(`\n📊 TRACKER TOTALS (Last 6 Months):`);
+        console.log(`   🚫 Pending Manual Review: ${pendingCounts.review}`);
+        console.log(`   ❌ Failed: ${pendingCounts.failed}`);
+        console.log(`   Total Pending: ${pendingCounts.totalPending}`);
 
         // Show Checker stats if available
         if (this.results.aiCheckerStats) {
@@ -1427,16 +1482,24 @@ class PaymentAssignmentWorkflow {
 
         console.log('═══════════════════════════════════════════\n');
 
-        // Send summary to Slack
-        if (!this.dryRun && this.results.total > 0) {
-            let summaryText = `📊 Incoming Payments Summary\n\n` +
-                `Total: ${this.results.total}\n` +
-                `✅ Success: ${this.results.success}\n` +
-                `⚠️ Underpayments: ${this.results.underpayment}\n` +
-                `♻️ Already Assigned: ${this.results.alreadyAssigned}\n` +
-                `🔒 Escrow Pending: ${this.results.escrowPending}\n` +
-                `🚫 Manual Review: ${this.results.manualReview}\n` +
-                `❌ Failed: ${this.results.failed}`;
+        // Send summary to Slack (always send, even if no new transactions)
+        if (!this.dryRun) {
+            let summaryText = `📊 *Assign Payments Summary*\n\n`;
+
+            // Only show processing stats if we processed transactions this run
+            if (this.results.total > 0) {
+                summaryText += `*This Run:*\n` +
+                    `Processed: ${this.results.total}\n` +
+                    `✅ Success: ${this.results.success}\n` +
+                    `⚠️ Underpayments: ${this.results.underpayment}\n` +
+                    `♻️ Already Assigned: ${this.results.alreadyAssigned}\n` +
+                    `🔒 Escrow Pending: ${this.results.escrowPending}\n\n`;
+            }
+
+            // Always show total pending across all recent months
+            summaryText += `*Total Pending:*\n` +
+                `🚫 Manual Review: ${pendingCounts.review}\n` +
+                `❌ Failed: ${pendingCounts.failed}`;
 
             // Add Checker stats to Slack summary
             if (this.results.aiCheckerStats) {

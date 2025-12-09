@@ -4,7 +4,7 @@
     "month": 11,
     "monthName": "nov",
     "created": "2025-11-30T19:52:32.961Z",
-    "lastUpdated": "2025-11-30T19:56:05.045Z"
+    "lastUpdated": "2025-12-08T06:38:52.174Z"
   },
   "transactions": {
     "boi": [
@@ -15,13 +15,13 @@
         "date": "28 Nov 2025",
         "description": "ULEARND2025548TMUL SP",
         "reference": "931",
-        "assignStatus": "failed",
+        "assignStatus": "duplicate",
         "fideloPaymentId": null,
         "fideloStudentId": "30706",
         "fideloInvoice": "D2025548",
         "addedAt": "2025-11-30T19:52:32.962Z",
-        "lastUpdated": "2025-11-30T19:54:48.213Z",
-        "notes": "Request failed with status code 422"
+        "lastUpdated": "2025-12-08T06:31:03.310Z",
+        "notes": "Payment already assigned - skipped"
       },
       {
         "id": "f938a781669d4df78318eee13b650b9c",
@@ -35,7 +35,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:32.964Z",
-        "lastUpdated": "2025-11-30T19:54:52.599Z",
+        "lastUpdated": "2025-12-08T06:31:10.648Z",
         "notes": null
       },
       {
@@ -45,13 +45,13 @@
         "date": "27 Nov 2025",
         "description": "ULEARNP2025995TMUL SP",
         "reference": "931",
-        "assignStatus": "review",
+        "assignStatus": "duplicate",
         "fideloPaymentId": null,
-        "fideloStudentId": null,
+        "fideloStudentId": "28937",
         "fideloInvoice": "D2025552",
         "addedAt": "2025-11-30T19:52:32.965Z",
-        "lastUpdated": "2025-11-30T19:54:53.308Z",
-        "notes": null
+        "lastUpdated": "2025-12-08T06:31:15.477Z",
+        "notes": "Payment already assigned - skipped"
       },
       {
         "id": "ffc26e2843ec4507aa088d5195199ace",
@@ -65,7 +65,7 @@
         "fideloStudentId": "30732",
         "fideloInvoice": "D2025558",
         "addedAt": "2025-11-30T19:52:32.967Z",
-        "lastUpdated": "2025-11-30T19:54:54.643Z",
+        "lastUpdated": "2025-12-08T06:31:20.021Z",
         "notes": "Payment already assigned - skipped"
       },
       {
@@ -75,12 +75,12 @@
         "date": "26 Nov 2025",
         "description": "Kseniia Avramchenk SP",
         "reference": "931",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37044,
         "fideloStudentId": "30757",
         "fideloInvoice": "D2025542",
         "addedAt": "2025-11-30T19:52:32.969Z",
-        "lastUpdated": "2025-11-30T19:54:57.409Z",
+        "lastUpdated": "2025-12-08T06:31:57.213Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -95,7 +95,7 @@
         "fideloStudentId": "30694",
         "fideloInvoice": "D2025554",
         "addedAt": "2025-11-30T19:52:32.971Z",
-        "lastUpdated": "2025-11-30T19:54:58.747Z",
+        "lastUpdated": "2025-12-08T06:32:01.593Z",
         "notes": "Payment already assigned - skipped"
       },
       {
@@ -110,7 +110,7 @@
         "fideloStudentId": "30751",
         "fideloInvoice": "D2025553",
         "addedAt": "2025-11-30T19:52:32.972Z",
-        "lastUpdated": "2025-11-30T19:55:00.102Z",
+        "lastUpdated": "2025-12-08T06:32:06.060Z",
         "notes": "Payment already assigned - skipped"
       },
       {
@@ -120,12 +120,12 @@
         "date": "25 Nov 2025",
         "description": "Yeongjae Jang FIDE SP",
         "reference": "931",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37045,
         "fideloStudentId": "29804",
         "fideloInvoice": "D2025551",
         "addedAt": "2025-11-30T19:52:32.973Z",
-        "lastUpdated": "2025-11-30T19:55:03.003Z",
+        "lastUpdated": "2025-12-08T06:32:42.672Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -137,10 +137,10 @@
         "reference": "931",
         "assignStatus": "review",
         "fideloPaymentId": null,
-        "fideloStudentId": null,
+        "fideloStudentId": "30551",
         "fideloInvoice": "D2025412",
         "addedAt": "2025-11-30T19:52:32.975Z",
-        "lastUpdated": "2025-11-30T19:55:03.901Z",
+        "lastUpdated": "2025-12-08T06:32:46.324Z",
         "notes": null
       },
       {
@@ -155,7 +155,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:32.977Z",
-        "lastUpdated": "2025-11-30T19:55:04.161Z",
+        "lastUpdated": "2025-12-08T06:32:49.547Z",
         "notes": null
       },
       {
@@ -165,12 +165,12 @@
         "date": "20 Nov 2025",
         "description": "P2025991           SP",
         "reference": "931",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37046,
         "fideloStudentId": "30761",
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:32.979Z",
-        "lastUpdated": "2025-11-30T19:55:04.318Z",
+        "lastUpdated": "2025-12-08T06:33:23.850Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -195,13 +195,13 @@
         "date": "20 Nov 2025",
         "description": "ULEARNP2025979     SP",
         "reference": "931",
-        "assignStatus": "review",
+        "assignStatus": "duplicate",
         "fideloPaymentId": null,
-        "fideloStudentId": null,
+        "fideloStudentId": "30752",
         "fideloInvoice": "D2025541",
         "addedAt": "2025-11-30T19:52:32.981Z",
-        "lastUpdated": "2025-11-30T19:55:05.147Z",
-        "notes": null
+        "lastUpdated": "2025-12-08T06:33:28.678Z",
+        "notes": "Payment already assigned - skipped"
       },
       {
         "id": "7d8b4a61f7e346e89fce1362bc3d2828",
@@ -210,12 +210,12 @@
         "date": "19 Nov 2025",
         "description": "OTGONBAYAR         SP",
         "reference": "931",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37047,
         "fideloStudentId": "30694",
         "fideloInvoice": "D2025554",
         "addedAt": "2025-11-30T19:52:32.983Z",
-        "lastUpdated": "2025-11-30T19:55:07.963Z",
+        "lastUpdated": "2025-12-08T06:34:04.851Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -225,13 +225,13 @@
         "date": "19 Nov 2025",
         "description": "Tsengelbayar Mends SP",
         "reference": "931",
-        "assignStatus": "review",
+        "assignStatus": "duplicate",
         "fideloPaymentId": null,
         "fideloStudentId": null,
         "fideloInvoice": "D2025538",
         "addedAt": "2025-11-30T19:52:32.984Z",
-        "lastUpdated": "2025-11-30T19:55:09.867Z",
-        "notes": null
+        "lastUpdated": "2025-12-08T06:34:10.118Z",
+        "notes": "Payment already assigned - skipped"
       },
       {
         "id": "bd6116781daf46d9983190549e7743d4",
@@ -240,13 +240,13 @@
         "date": "18 Nov 2025",
         "description": "Sodnom Bat-Erdene  SP",
         "reference": "931",
-        "assignStatus": "review",
+        "assignStatus": "duplicate",
         "fideloPaymentId": null,
         "fideloStudentId": null,
         "fideloInvoice": "D2025537",
         "addedAt": "2025-11-30T19:52:32.986Z",
-        "lastUpdated": "2025-11-30T19:55:10.888Z",
-        "notes": null
+        "lastUpdated": "2025-12-08T06:34:16.261Z",
+        "notes": "Payment already assigned - skipped"
       },
       {
         "id": "89b189d6b9564e3296df2380758e8daa",
@@ -260,7 +260,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:32.987Z",
-        "lastUpdated": "2025-11-30T19:55:19.166Z",
+        "lastUpdated": "2025-12-08T06:34:27.561Z",
         "notes": null
       },
       {
@@ -275,7 +275,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:32.989Z",
-        "lastUpdated": "2025-11-30T19:55:19.784Z",
+        "lastUpdated": "2025-12-08T06:34:31.546Z",
         "notes": null
       },
       {
@@ -290,7 +290,7 @@
         "fideloStudentId": "30749",
         "fideloInvoice": "D2025547",
         "addedAt": "2025-11-30T19:52:32.990Z",
-        "lastUpdated": "2025-11-30T19:55:21.121Z",
+        "lastUpdated": "2025-12-08T06:34:35.893Z",
         "notes": "Payment already assigned - skipped"
       },
       {
@@ -305,7 +305,7 @@
         "fideloStudentId": "30746",
         "fideloInvoice": "D2025546",
         "addedAt": "2025-11-30T19:52:32.991Z",
-        "lastUpdated": "2025-11-30T19:55:22.453Z",
+        "lastUpdated": "2025-12-08T06:34:40.250Z",
         "notes": "Payment already assigned - skipped"
       },
       {
@@ -315,12 +315,12 @@
         "date": "14 Nov 2025",
         "description": "Amine Ibrani FIDEL SP",
         "reference": "931",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37048,
         "fideloStudentId": "29804",
         "fideloInvoice": "D2025551",
         "addedAt": "2025-11-30T19:52:32.993Z",
-        "lastUpdated": "2025-11-30T19:55:25.265Z",
+        "lastUpdated": "2025-12-08T06:35:17.182Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -330,12 +330,12 @@
         "date": "13 Nov 2025",
         "description": "REFUND",
         "reference": "878",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37049,
         "fideloStudentId": "30428",
         "fideloInvoice": "D2025511",
         "addedAt": "2025-11-30T19:52:32.994Z",
-        "lastUpdated": "2025-11-30T19:55:27.974Z",
+        "lastUpdated": "2025-12-08T06:35:54.143Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -350,7 +350,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:32.996Z",
-        "lastUpdated": "2025-11-30T19:55:28.359Z",
+        "lastUpdated": "2025-12-08T06:35:58.568Z",
         "notes": null
       },
       {
@@ -360,12 +360,12 @@
         "date": "12 Nov 2025",
         "description": "Yagmur Sirkecioglu SP",
         "reference": "931",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37050,
         "fideloStudentId": "30645",
         "fideloInvoice": "D2025432",
         "addedAt": "2025-11-30T19:52:32.997Z",
-        "lastUpdated": "2025-11-30T19:55:31.082Z",
+        "lastUpdated": "2025-12-08T06:36:34.621Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -380,7 +380,7 @@
         "fideloStudentId": "30446",
         "fideloInvoice": "D2025532",
         "addedAt": "2025-11-30T19:52:32.998Z",
-        "lastUpdated": "2025-11-30T19:55:32.411Z",
+        "lastUpdated": "2025-12-08T06:36:38.936Z",
         "notes": "Payment already assigned - skipped"
       },
       {
@@ -395,7 +395,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:33.000Z",
-        "lastUpdated": "2025-11-30T19:55:32.631Z",
+        "lastUpdated": "2025-12-08T06:36:42.348Z",
         "notes": null
       },
       {
@@ -410,7 +410,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:33.002Z",
-        "lastUpdated": "2025-11-30T19:55:32.825Z",
+        "lastUpdated": "2025-12-08T06:36:45.564Z",
         "notes": null
       },
       {
@@ -425,7 +425,7 @@
         "fideloStudentId": "30447",
         "fideloInvoice": "D2025529",
         "addedAt": "2025-11-30T19:52:33.008Z",
-        "lastUpdated": "2025-11-30T19:55:34.196Z",
+        "lastUpdated": "2025-12-08T06:36:49.959Z",
         "notes": "Payment already assigned - skipped"
       },
       {
@@ -440,7 +440,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:33.010Z",
-        "lastUpdated": "2025-11-30T19:55:34.380Z",
+        "lastUpdated": "2025-12-08T06:36:54.559Z",
         "notes": null
       },
       {
@@ -452,10 +452,10 @@
         "reference": "931",
         "assignStatus": "review",
         "fideloPaymentId": null,
-        "fideloStudentId": null,
-        "fideloInvoice": null,
+        "fideloStudentId": "29160",
+        "fideloInvoice": "D2024437",
         "addedAt": "2025-11-30T19:52:33.012Z",
-        "lastUpdated": "2025-11-30T19:55:34.573Z",
+        "lastUpdated": "2025-12-08T06:36:59.687Z",
         "notes": null
       },
       {
@@ -467,10 +467,10 @@
         "reference": "931",
         "assignStatus": "review",
         "fideloPaymentId": null,
-        "fideloStudentId": null,
+        "fideloStudentId": "29159",
         "fideloInvoice": "D2024465",
         "addedAt": "2025-11-30T19:52:33.020Z",
-        "lastUpdated": "2025-11-30T19:55:35.416Z",
+        "lastUpdated": "2025-12-08T06:37:04.856Z",
         "notes": null
       },
       {
@@ -480,12 +480,12 @@
         "date": "7 Nov 2025",
         "description": "1580214041P2025951 IP",
         "reference": "931",
-        "assignStatus": "review",
-        "fideloPaymentId": null,
-        "fideloStudentId": null,
-        "fideloInvoice": "D2025526",
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37051,
+        "fideloStudentId": "30772",
+        "fideloInvoice": "D2025556",
         "addedAt": "2025-11-30T19:52:33.022Z",
-        "lastUpdated": "2025-11-30T19:55:36.026Z",
+        "lastUpdated": "2025-12-08T06:37:41.219Z",
         "notes": null
       },
       {
@@ -500,7 +500,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:33.025Z",
-        "lastUpdated": "2025-11-30T19:55:44.658Z",
+        "lastUpdated": "2025-12-08T06:38:00.344Z",
         "notes": null
       },
       {
@@ -510,12 +510,12 @@
         "date": "5 Nov 2025",
         "description": "Laia Padros FIDELO SP",
         "reference": "931",
-        "assignStatus": "failed",
-        "fideloPaymentId": null,
+        "assignStatus": "assigned",
+        "fideloPaymentId": 37052,
         "fideloStudentId": "30737",
         "fideloInvoice": "D2025559",
         "addedAt": "2025-11-30T19:52:33.027Z",
-        "lastUpdated": "2025-11-30T19:55:47.412Z",
+        "lastUpdated": "2025-12-08T06:38:37.097Z",
         "notes": "Request failed with status code 422"
       },
       {
@@ -530,7 +530,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:33.029Z",
-        "lastUpdated": "2025-11-30T19:55:47.596Z",
+        "lastUpdated": "2025-12-08T06:38:40.380Z",
         "notes": null
       },
       {
@@ -545,7 +545,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:33.031Z",
-        "lastUpdated": "2025-11-30T19:55:47.818Z",
+        "lastUpdated": "2025-12-08T06:38:43.602Z",
         "notes": null
       },
       {
@@ -555,13 +555,13 @@
         "date": "4 Nov 2025",
         "description": "ULEARND2025380TMUL SP",
         "reference": "931",
-        "assignStatus": "review",
+        "assignStatus": "duplicate",
         "fideloPaymentId": null,
-        "fideloStudentId": null,
+        "fideloStudentId": "29164",
         "fideloInvoice": "D2025380",
         "addedAt": "2025-11-30T19:52:33.035Z",
-        "lastUpdated": "2025-11-30T19:55:48.431Z",
-        "notes": null
+        "lastUpdated": "2025-12-08T06:38:48.316Z",
+        "notes": "Payment already assigned - skipped"
       },
       {
         "id": "631f5cd34b3e4ee390bc26d3042d4c5d",
@@ -575,7 +575,7 @@
         "fideloStudentId": null,
         "fideloInvoice": null,
         "addedAt": "2025-11-30T19:52:33.037Z",
-        "lastUpdated": "2025-11-30T19:55:48.618Z",
+        "lastUpdated": "2025-12-08T06:38:52.174Z",
         "notes": null
       }
     ],
@@ -699,9 +699,9 @@
   "stats": {
     "total": 46,
     "unprocessed": 1,
-    "assigned": 1,
-    "duplicate": 10,
-    "review": 25,
-    "failed": 9
+    "assigned": 10,
+    "duplicate": 16,
+    "review": 19,
+    "failed": 0
   }
 }

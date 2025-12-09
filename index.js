@@ -305,7 +305,7 @@ app.get('/fins/xero/contacts', async (req, res) => {
 
 // Google OAuth and API routes
 const GoogleAPIClient = require('./scripts/google/client');
-const GmailClient = require('./scripts/gmail/gmail-client');
+const GmailClient = require('./scripts/gmail/client');
 
 // Google OAuth callback (handles both Drive and Gmail)
 app.get('/fins/google/callback', async (req, res) => {
@@ -475,6 +475,15 @@ app.get('/fins/scripts/pay/hourly/dashboard.html', (req, res) => {
 // Payroll Output Dashboard HTML
 app.get('/fins/scripts/pay/output.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'scripts/pay/output.html'));
+});
+
+// Financial Modeling Dashboard
+const modelDashboardRouter = require('./scripts/model/dashboard');
+app.use('/fins/model/dashboard', modelDashboardRouter);
+
+// Serve Model Dashboard HTML
+app.get('/fins/scripts/model/dashboard.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'scripts/model/dashboard.html'));
 });
 
 // Error handling

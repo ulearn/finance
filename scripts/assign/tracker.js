@@ -43,10 +43,52 @@ class AssignmentTracker {
     }
 
     /**
-     * Initialize assignment file if it doesn't exist
+     * Get month file path for a specific transaction date
+     * Format: /scripts/assign/2025/11-nov-tracker.json
+     * @param {string} txnDate - Transaction date (e.g., "28 Nov 2025" or "2025-11-28")
      */
-    async ensureFileExists() {
-        const { dir, filepath } = this.getCurrentMonthFile();
+    getMonthFileForDate(txnDate) {
+        // Parse the transaction date
+        let dateObj;
+
+        // Handle "28 Nov 2025" format
+        if (txnDate.match(/\d{1,2}\s+\w{3}\s+\d{4}/)) {
+            dateObj = new Date(txnDate);
+        }
+        // Handle "2025-11-28" format
+        else if (txnDate.match(/\d{4}-\d{2}-\d{2}/)) {
+            dateObj = new Date(txnDate);
+        }
+        // Fallback to current date if can't parse
+        else {
+            console.warn(`⚠️  Could not parse transaction date: ${txnDate}, using current month`);
+            return this.getCurrentMonthFile();
+        }
+
+        const year = dateObj.getFullYear();
+        const month = dateObj.getMonth() + 1; // 1-12
+        const monthName = dateObj.toLocaleString('en-US', { month: 'short' }).toLowerCase();
+
+        const dir = path.join(this.baseDir, String(year));
+        const filename = `${month}-${monthName}-tracker.json`;
+
+        return {
+            dir,
+            filepath: path.join(dir, filename),
+            year,
+            month,
+            monthName
+        };
+    }
+
+    /**
+     * Initialize assignment file if it doesn't exist
+     * @param {string} txnDate - Optional transaction date to determine which month file to use
+     */
+    async ensureFileExists(txnDate = null) {
+        const { dir, filepath, year, month, monthName } = txnDate
+            ? this.getMonthFileForDate(txnDate)
+            : this.getCurrentMonthFile();
 
         // Ensure directory exists
         try {
@@ -62,11 +104,11 @@ class AssignmentTracker {
             const content = await fs.readFile(filepath, 'utf8');
             if (!content || content.trim() === '') {
                 // Empty file - initialize
-                await this.initializeFile(filepath);
+                await this.initializeFile(filepath, year, month, monthName);
             }
         } catch {
             // File doesn't exist - create it
-            await this.initializeFile(filepath);
+            await this.initializeFile(filepath, year, month, monthName);
         }
 
         return filepath;
@@ -75,9 +117,7 @@ class AssignmentTracker {
     /**
      * Initialize new assignment file with structure
      */
-    async initializeFile(filepath) {
-        const { year, month, monthName } = this.getCurrentMonthFile();
-
+    async initializeFile(filepath, year, month, monthName) {
         const initialData = {
             metadata: {
                 year,
@@ -106,19 +146,22 @@ class AssignmentTracker {
     }
 
     /**
-     * Load current month's assignment data
+     * Load assignment data for a specific transaction date
+     * @param {string} txnDate - Optional transaction date to determine which month file to use
      */
-    async loadAssignments() {
-        const filepath = await this.ensureFileExists();
+    async loadAssignments(txnDate = null) {
+        const filepath = await this.ensureFileExists(txnDate);
         const content = await fs.readFile(filepath, 'utf8');
         return JSON.parse(content);
     }
 
     /**
-     * Save assignment data
+     * Save assignment data to the correct month file
+     * @param {Object} data - Assignment data to save
+     * @param {string} txnDate - Optional transaction date to determine which month file to use
      */
-    async saveAssignments(data) {
-        const filepath = await this.ensureFileExists();
+    async saveAssignments(data, txnDate = null) {
+        const filepath = await this.ensureFileExists(txnDate);
 
         // Update metadata
         data.metadata.lastUpdated = new Date().toISOString();
@@ -163,7 +206,7 @@ class AssignmentTracker {
      * Uses dataId from Xero recon file
      */
     async addBoiTransaction(dataId, amount, date, description, reference) {
-        const data = await this.loadAssignments();
+        const data = await this.loadAssignments(date);
 
         // Check if already exists
         const existing = data.transactions.boi.find(t => t.id === dataId);
@@ -191,7 +234,7 @@ class AssignmentTracker {
             };
 
             data.transactions.boi.push(newTxn);
-            await this.saveAssignments(data);
+            await this.saveAssignments(data, date);
             return newTxn;
         }
     }
@@ -201,7 +244,7 @@ class AssignmentTracker {
      * Uses Stripe charge ID (ch_xxx or py_xxx)
      */
     async addStripeTransaction(chargeId, amount, date, customerName = null) {
-        const data = await this.loadAssignments();
+        const data = await this.loadAssignments(date);
 
         const existing = data.transactions.stripe.find(t => t.id === chargeId);
 
@@ -225,7 +268,7 @@ class AssignmentTracker {
             };
 
             data.transactions.stripe.push(newTxn);
-            await this.saveAssignments(data);
+            await this.saveAssignments(data, date);
             return newTxn;
         }
     }
@@ -235,7 +278,7 @@ class AssignmentTracker {
      * Uses Revolut order ID
      */
     async addRevolutTransaction(orderId, amount, date, customerName = null) {
-        const data = await this.loadAssignments();
+        const data = await this.loadAssignments(date);
 
         const existing = data.transactions.revolut.find(t => t.id === orderId);
 
@@ -259,21 +302,36 @@ class AssignmentTracker {
             };
 
             data.transactions.revolut.push(newTxn);
-            await this.saveAssignments(data);
+            await this.saveAssignments(data, date);
             return newTxn;
         }
     }
 
     /**
      * Update transaction status after assignment attempt
+     * Searches the correct month file based on transaction date if available
      */
     async updateStatus(source, txnId, status, details = {}) {
-        const data = await this.loadAssignments();
+        // First try to load from the transaction's date if we have it in details
+        let txnDate = null;
 
-        const txn = data.transactions[source].find(t => t.id === txnId);
+        // Try current month first (most common case)
+        let data = await this.loadAssignments();
+        let txn = data.transactions[source].find(t => t.id === txnId);
+
+        // If not found in current month, try previous month (in case of late processing)
+        if (!txn) {
+            const now = new Date();
+            const prevMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+            const prevMonthDate = prevMonth.toISOString().split('T')[0];
+
+            data = await this.loadAssignments(prevMonthDate);
+            txn = data.transactions[source].find(t => t.id === txnId);
+            txnDate = prevMonthDate;
+        }
 
         if (!txn) {
-            throw new Error(`Transaction ${txnId} not found in ${source}`);
+            throw new Error(`Transaction ${txnId} not found in ${source} (checked current and previous month)`);
         }
 
         // Update status
@@ -286,7 +344,8 @@ class AssignmentTracker {
         if (details.fideloInvoice) txn.fideloInvoice = details.fideloInvoice;
         if (details.notes) txn.notes = details.notes;
 
-        await this.saveAssignments(data);
+        // Save to the file where we found the transaction
+        await this.saveAssignments(data, txnDate || txn.date);
         return txn;
     }
 
@@ -303,6 +362,55 @@ class AssignmentTracker {
         };
 
         return unprocessed;
+    }
+
+    /**
+     * Get aggregated pending counts across multiple months
+     * Checks current month and previous 5 months for review/failed transactions
+     * @returns {Object} { review: number, failed: number, totalPending: number }
+     */
+    async getPendingCounts() {
+        const fs = require('fs').promises;
+        const path = require('path');
+
+        const now = new Date();
+        const counts = { review: 0, failed: 0, totalPending: 0 };
+
+        // Check current month and previous 5 months (6 months total)
+        for (let i = 0; i < 6; i++) {
+            const checkDate = new Date(now.getFullYear(), now.getMonth() - i, 1);
+            const year = checkDate.getFullYear();
+            const month = checkDate.getMonth() + 1;
+            const monthName = checkDate.toLocaleString('en-US', { month: 'short' }).toLowerCase();
+
+            const filepath = path.join(this.baseDir, String(year), `${month}-${monthName}-tracker.json`);
+
+            try {
+                // Check if file exists
+                await fs.access(filepath);
+                const content = await fs.readFile(filepath, 'utf8');
+                const data = JSON.parse(content);
+
+                // Count review and failed across all sources
+                const allTransactions = [
+                    ...data.transactions.boi,
+                    ...data.transactions.stripe,
+                    ...data.transactions.revolut
+                ];
+
+                allTransactions.forEach(txn => {
+                    if (txn.assignStatus === 'review') counts.review++;
+                    if (txn.assignStatus === 'failed') counts.failed++;
+                });
+
+            } catch (error) {
+                // File doesn't exist for this month - skip
+                continue;
+            }
+        }
+
+        counts.totalPending = counts.review + counts.failed;
+        return counts;
     }
 
     /**
