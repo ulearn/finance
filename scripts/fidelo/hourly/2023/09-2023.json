@@ -1,0 +1,3844 @@
+{
+  "generated": "2025-12-15T14:43:37.707Z",
+  "period": "2023-09-01 to 2023-09-30",
+  "description": "Master data: All D-invoices (with payments) for 2023 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 48,
+    "totalRevenue": 59349.99999999995,
+    "totalDiscounts": 2853.4,
+    "totalCommissions": 2445,
+    "agentStudents": 5,
+    "directStudents": 43
+  },
+  "invoices": [
+    {
+      "bookingId": 37794,
+      "invoiceNumber": "D2023578",
+      "invoiceDate": "2023-10-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27188",
+        "firstName": "Svenja",
+        "surname": "Lanz",
+        "email": "svenja_maria@gmx.de"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-11-13",
+          "until": "2023-12-08",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-11-13",
+          "serviceUntil": "2023-12-08",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning IELTS 13/11/2023 - 08/12/2023",
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720,
+          "serviceFrom": "2023-11-13",
+          "serviceUntil": "2023-12-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 770
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37795,
+      "invoiceNumber": "D2023584",
+      "invoiceDate": "2023-11-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27189",
+        "firstName": "Samya",
+        "surname": "Rodrigues",
+        "email": "Samyalimaro@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-09-04",
+          "until": "2023-09-15",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-09-18",
+          "until": "2023-10-13",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-10-16",
+          "until": "2023-11-03",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-11-06",
+          "until": "2023-12-01",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning IELTS 06/11/2023 - 01/12/2023 Halloween Promotion 20% off",
+          "amount": 612,
+          "discount": 122.4,
+          "commission": 0,
+          "nadc": 489.6,
+          "serviceFrom": "2023-11-06",
+          "serviceUntil": "2023-12-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 612,
+        "discount": 122.4,
+        "commission": 0,
+        "nadc": 489.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37797,
+      "invoiceNumber": "D2023613",
+      "invoiceDate": "2023-11-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27191",
+        "firstName": "Ferdinando",
+        "surname": "Paolucci",
+        "email": "Ferdinandopaolucci12@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-11-06",
+          "until": "2023-11-24",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-11-27",
+          "until": "2023-12-15",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Morning IELTS 27/11/2023 - 15/12/2023 ULearn Autumn Offer | 25% OFF",
+          "amount": 540,
+          "discount": 135,
+          "commission": 0,
+          "nadc": 405,
+          "serviceFrom": "2023-11-27",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (APT-SUPR-SNGL/Self catering) 26/11/2023 - 17/12/2023",
+          "amount": 1020,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1020,
+          "serviceFrom": "2023-11-26",
+          "serviceUntil": "2023-12-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1560,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 1425
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37798,
+      "invoiceNumber": "D2023524",
+      "invoiceDate": "2023-09-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27192",
+        "firstName": "Alba",
+        "surname": "Ciardini Utiel",
+        "email": "albaciardiniutiel@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-09-04",
+          "until": "2023-09-08",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General 04/09/2023 - 08/09/2023",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2023-09-04",
+          "serviceUntil": "2023-09-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-04",
+          "serviceUntil": "2023-09-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 190,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 190
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37802,
+      "invoiceNumber": "D2023544",
+      "invoiceDate": "2023-09-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27196",
+        "firstName": "Ai",
+        "surname": "Kono",
+        "email": "aiamazake0214@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-10-16",
+          "until": "2023-12-08",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-10-15",
+          "serviceUntil": "2023-12-10",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Host Family (Individual room/Half-board) 15/10/2023 - 10/12/2023",
+          "amount": 1920,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1920,
+          "serviceFrom": "2023-10-15",
+          "serviceUntil": "2023-12-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-16",
+          "serviceUntil": "2023-12-08",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General Plus 16/10/2023 - 08/12/2023",
+          "amount": 1576,
+          "discount": 0,
+          "commission": 394,
+          "nadc": 1182,
+          "serviceFrom": "2023-10-16",
+          "serviceUntil": "2023-12-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3611,
+        "discount": 0,
+        "commission": 394,
+        "nadc": 3217
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37803,
+      "invoiceNumber": "D2023532",
+      "invoiceDate": "2023-09-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27197",
+        "firstName": "Simone",
+        "surname": "Zandomeengo",
+        "email": "zando.simone@libero.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-10-02",
+          "until": "2023-10-27",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-09-30",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Individual room/Half-board) 30/09/2023 - 28/10/2023",
+          "amount": 960,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 960,
+          "serviceFrom": "2023-09-30",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning IELTS 02/10/2023 - 27/10/2023",
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1795,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1795
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37804,
+      "invoiceNumber": "D2023528",
+      "invoiceDate": "2023-09-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27198",
+        "firstName": "Chisa",
+        "surname": "Masukawa",
+        "email": "masukawa2022@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-09-11",
+          "until": "2023-10-06",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-11",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning IELTS 11/09/2023 - 06/10/2023",
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720,
+          "serviceFrom": "2023-09-11",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 770
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37808,
+      "invoiceNumber": "D2024217",
+      "invoiceDate": "2024-05-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "25379",
+        "firstName": "Pamela Andrea",
+        "surname": "Vergara San Martín",
+        "email": "pamela.vergaras@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-02-19",
+          "until": "2024-04-05",
+          "weeks": 7,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-04-15",
+          "until": "2024-05-24",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2024-05-27",
+          "until": "2024-06-28",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2024-07-08",
+          "until": "2024-08-23",
+          "weeks": 7,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Academic Year Renewal Morning 27/05/2024 - 16/08/2024 Changing to IELTS class AM",
+          "amount": 144,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 144,
+          "serviceFrom": "2024-05-27",
+          "serviceUntil": "2024-08-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 144,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 144
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37809,
+      "invoiceNumber": "D2023533",
+      "invoiceDate": "2023-09-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26270",
+        "firstName": "Malak",
+        "surname": "El Allali",
+        "email": "malakelallali@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2023-09-11",
+          "until": "2023-09-15",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General Plus 11/09/2023 - 15/09/2023",
+          "amount": 170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 170,
+          "serviceFrom": "2023-09-11",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 170,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 170
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37816,
+      "invoiceNumber": "D2023538",
+      "invoiceDate": "2023-09-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27208",
+        "firstName": "Maria Sophia Charlotte",
+        "surname": "Mosig",
+        "email": "mariamosig@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-16",
+          "until": "2023-12-22",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-10-15",
+          "serviceUntil": "2023-12-23",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Apartment (APT-PRM-SNGL/Self catering) 15/10/2023 - 23/12/2023",
+          "amount": 3500,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3500,
+          "serviceFrom": "2023-10-15",
+          "serviceUntil": "2023-12-23",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-16",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Morning General 16/10/2023 - 22/12/2023",
+          "amount": 1580,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1580,
+          "serviceFrom": "2023-10-16",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5195,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 5195
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37817,
+      "invoiceNumber": "D2023531",
+      "invoiceDate": "2023-09-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27209",
+        "firstName": "Romina",
+        "surname": "Carvalho",
+        "email": "romicarva@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-09",
+          "until": "2023-11-03",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Sa 07/10/2023)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2023-10-07",
+          "serviceUntil": "2023-10-07",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-10-07",
+          "serviceUntil": "2023-11-04",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (APT-SUPR-SNGL/Self catering) 07/10/2023 - 04/11/2023",
+          "amount": 1360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1360,
+          "serviceFrom": "2023-10-07",
+          "serviceUntil": "2023-11-04",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-09",
+          "serviceUntil": "2023-11-03",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning General 09/10/2023 - 03/11/2023",
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720,
+          "serviceFrom": "2023-10-09",
+          "serviceUntil": "2023-11-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2275,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2275
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37819,
+      "invoiceNumber": "D2023545",
+      "invoiceDate": "2023-09-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27211",
+        "firstName": "Maria",
+        "surname": "Soler Barberan",
+        "email": "mariasolerbarberan@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2024-02-05",
+          "until": "2024-03-15",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-02-03",
+          "serviceUntil": "2024-03-16",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Apartment (APT-PRM-SNGL/Self catering) 03/02/2024 - 16/03/2024",
+          "amount": 2100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2100,
+          "serviceFrom": "2024-02-03",
+          "serviceUntil": "2024-03-16",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-02-05",
+          "serviceUntil": "2024-03-15",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Morning General 05/02/2024 - 15/03/2024",
+          "amount": 972,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 972,
+          "serviceFrom": "2024-02-05",
+          "serviceUntil": "2024-03-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3187,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3187
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37820,
+      "invoiceNumber": "D2023536",
+      "invoiceDate": "2023-09-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27212",
+        "firstName": "Maribel",
+        "surname": "Servín Montes de Oca",
+        "email": "servinmaribel6@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-02-12",
+          "until": "2024-08-02",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "PEL insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-08-02",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-08-02",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-08-02",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Afternoon 12/02/2024 - 02/08/2024",
+          "amount": 2400,
+          "discount": 0,
+          "commission": 600,
+          "nadc": 1800,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-08-02",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2680,
+        "discount": 0,
+        "commission": 600,
+        "nadc": 2080
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37821,
+      "invoiceNumber": "D2023637",
+      "invoiceDate": "2024-01-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27213",
+        "firstName": "Ceylan Meryem",
+        "surname": "Gunay",
+        "email": "gulnur_gunay@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2024-01-08",
+          "until": "2024-03-01",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee (Host Family / Individual room / Half-board)",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-01-06",
+          "serviceUntil": "2024-01-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 06/01/2024 - 13/01/2024",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2024-01-06",
+          "serviceUntil": "2024-01-13",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (APT-SUPR-SNGL/Self catering) 13/01/2024 - 03/02/2024",
+          "amount": 1020,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1020,
+          "serviceFrom": "2024-01-13",
+          "serviceUntil": "2024-02-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1325,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1325
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37823,
+      "invoiceNumber": "D2023543",
+      "invoiceDate": "2023-09-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27215",
+        "firstName": "Mikel",
+        "surname": "Garcia Bosque",
+        "email": "mikelgbosque@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-09",
+          "until": "2023-12-15",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "10 weeks Morning General 09/10/2023 - 15/12/2023",
+          "amount": 1580,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1580,
+          "serviceFrom": "2023-10-09",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-09",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Apartment (Shared Room/Self catering) 07/10/2023 - 14/10/2023",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2023-10-07",
+          "serviceUntil": "2023-10-14",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-10-07",
+          "serviceUntil": "2023-10-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1895,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1895
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37824,
+      "invoiceNumber": "D2023577",
+      "invoiceDate": "2023-10-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27216",
+        "firstName": "Elisa",
+        "surname": "Behr",
+        "email": "behr@dolmenschen.de"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Private lessons",
+          "category": "Private lessons",
+          "from": "2024-03-11",
+          "until": "2024-03-15",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-03-11",
+          "serviceUntil": "2024-03-15",
+          "tax": 0
+        },
+        {
+          "description": "15.00 Lessons Private lessons (1-to-2) 11/03/2024 - 15/03/2024",
+          "amount": 450,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 450,
+          "serviceFrom": "2024-03-11",
+          "serviceUntil": "2024-03-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 500,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 500
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37830,
+      "invoiceNumber": "D2024144",
+      "invoiceDate": "2024-04-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27222",
+        "firstName": "Khadher Ahmad K",
+        "surname": "Almohalawi",
+        "email": "raljohani@windowslive.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning Plus",
+          "category": "Morning Classes",
+          "from": "2023-10-30",
+          "until": "2023-12-22",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning Plus",
+          "category": "Morning Classes",
+          "from": "2024-01-01",
+          "until": "2024-04-26",
+          "weeks": 17,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-04-29",
+          "until": "2024-06-21",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "8 weeks Morning General Plus 29/04/2024 - 21/06/2024",
+          "amount": 1576,
+          "discount": 0,
+          "commission": 394,
+          "nadc": 1182,
+          "serviceFrom": "2024-04-29",
+          "serviceUntil": "2024-06-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1576,
+        "discount": 0,
+        "commission": 394,
+        "nadc": 1182
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37844,
+      "invoiceNumber": "D2023565",
+      "invoiceDate": "2023-10-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27235",
+        "firstName": "Wei (Wendy)",
+        "surname": "Fuwei",
+        "email": "451842249@qq.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-02-26",
+          "until": "2024-08-16",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Sa 06/01/2024)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2023-12-23",
+          "serviceUntil": "2023-12-23",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-01-06",
+          "serviceUntil": "2024-03-02",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Apartment (Shared Room/Self catering) 06/01/2024 - 02/03/2024",
+          "amount": 1600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1600,
+          "serviceFrom": "2024-01-06",
+          "serviceUntil": "2024-03-02",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-06-28",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-06-28",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-06-28",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 08/01/2024 - 28/06/2024",
+          "amount": 3150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3150,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-06-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5295,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 5295
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37846,
+      "invoiceNumber": "D2023541",
+      "invoiceDate": "2023-09-19",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27237",
+        "firstName": "Giuseppe",
+        "surname": "Gatti",
+        "email": "gattigius@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-09-25",
+          "until": "2023-10-06",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 25/09/2023 - 06/10/2023",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 410,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 410
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37847,
+      "invoiceNumber": "D2023560",
+      "invoiceDate": "2023-10-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27238",
+        "firstName": "Aminata",
+        "surname": "Sar",
+        "email": "aminatasar24@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2024-03-04",
+          "until": "2024-05-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Intensive General 30 22/01/2024 - 12/04/2024",
+          "amount": 2964,
+          "discount": 0,
+          "commission": 741,
+          "nadc": 2223,
+          "serviceFrom": "2024-01-22",
+          "serviceUntil": "2024-04-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-22",
+          "serviceUntil": "2024-04-12",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Apartment (APT-STNDRD/Self catering) 21/01/2024 - 14/04/2024",
+          "amount": 3960,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3960,
+          "serviceFrom": "2024-01-21",
+          "serviceUntil": "2024-04-14",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-01-21",
+          "serviceUntil": "2024-04-14",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 7039,
+        "discount": 0,
+        "commission": 741,
+        "nadc": 6298
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37849,
+      "invoiceNumber": "D2023542",
+      "invoiceDate": "2023-09-19",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27240",
+        "firstName": "Marina",
+        "surname": "De Andrade Lino",
+        "email": "marinalinom@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-09-25",
+          "until": "2023-10-20",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-10-20",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Afternoon General 25/09/2023 - 20/10/2023",
+          "amount": 560,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 560,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-10-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 610,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 610
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37856,
+      "invoiceNumber": "D2023552",
+      "invoiceDate": "2023-09-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27247",
+        "firstName": "Rosanna",
+        "surname": "Serena",
+        "email": "serena.rosanna@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-02",
+          "until": "2023-10-06",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 02/10/2023 - 06/10/2023",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 230
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37860,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27250",
+        "firstName": "Rosa",
+        "surname": "Armenteros",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 674.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 606.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37861,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27251",
+        "firstName": "Alba",
+        "surname": "Bertholet",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37862,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27252",
+        "firstName": "Berta",
+        "surname": "Farré",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37863,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27253",
+        "firstName": "Laura",
+        "surname": "Ferraz",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37864,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27254",
+        "firstName": "Jana",
+        "surname": "Fité",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37865,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27255",
+        "firstName": "Laia",
+        "surname": "Gallego",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37866,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27256",
+        "firstName": "Sandra",
+        "surname": "Garcia",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37867,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27257",
+        "firstName": "Mireia",
+        "surname": "Guixà",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37868,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27258",
+        "firstName": "Abril",
+        "surname": "Homedes",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37869,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27259",
+        "firstName": "Anvar",
+        "surname": "Ichart",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37870,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27260",
+        "firstName": "Ares",
+        "surname": "Ojeda",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37871,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27261",
+        "firstName": "Biel",
+        "surname": "Planes",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37872,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27262",
+        "firstName": "Joan",
+        "surname": "Safont",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37873,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27263",
+        "firstName": "Pau",
+        "surname": "Sentoll",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37874,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27264",
+        "firstName": "Pere",
+        "surname": "Solsona",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37875,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27265",
+        "firstName": "Helena",
+        "surname": "Tor",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37876,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27266",
+        "firstName": "Daniel",
+        "surname": "Vazquez",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-10-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 23/10/2023 - 27/10/2023",
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 21/10/2023 - 28/10/2023",
+          "amount": 245,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 245,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Social & Cultural Programme",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Weekend Excursion",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for Juniors",
+          "amount": 14.2,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 14.2,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 644.2,
+        "discount": 68,
+        "commission": 0,
+        "nadc": 576.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37878,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27268",
+        "firstName": "SÍLVIA",
+        "surname": "CANTONS",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Full-board) 21/10/2023 - 28/10/2023 Leaders",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 650,
+          "discount": 650,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for adults (2 leaders)",
+          "amount": 32,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 712,
+        "discount": 650,
+        "commission": 0,
+        "nadc": 62
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37879,
+      "invoiceNumber": "D2023548",
+      "invoiceDate": "2023-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27269",
+        "firstName": "MAR",
+        "surname": "MIRET",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Full-board) 21/10/2023 - 28/10/2023 Leaders",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 650,
+          "discount": 650,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "Group Airport Transfer 10 - 20pax",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        },
+        {
+          "description": "1 week Public Transport Ticket - BUS tickets for adults (2 leaders)",
+          "amount": 32,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32,
+          "serviceFrom": "2023-10-21",
+          "serviceUntil": "2023-10-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 712,
+        "discount": 650,
+        "commission": 0,
+        "nadc": 62
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37881,
+      "invoiceNumber": "D2023585",
+      "invoiceDate": "2023-11-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27271",
+        "firstName": "Victor Eduardo",
+        "surname": "Jaume Morado",
+        "email": "vjaumemorado@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-09",
+          "until": "2023-10-13",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-16",
+          "until": "2023-11-10",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-11-13",
+          "until": "2023-12-15",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "5 weeks Afternoon General 13/11/2023 - 15/12/2023 Halloween Promotion 20% Off",
+          "amount": 700,
+          "discount": 140,
+          "commission": 0,
+          "nadc": 560,
+          "serviceFrom": "2023-11-13",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Apartment (APT-SUPR-SNGL/Self catering) 11/11/2023 - 16/12/2023",
+          "amount": 1700,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1700,
+          "serviceFrom": "2023-11-11",
+          "serviceUntil": "2023-12-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2400,
+        "discount": 140,
+        "commission": 0,
+        "nadc": 2260
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37890,
+      "invoiceNumber": "D2023572",
+      "invoiceDate": "2023-10-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27280",
+        "firstName": "Noa Beatrice",
+        "surname": "Valente",
+        "email": "cristinazai7@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-31",
+          "until": "2023-12-22",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-10-29",
+          "serviceUntil": "2023-12-23",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Host Family (Individual room/Half-board) 29/10/2023 - 23/12/2023",
+          "amount": 1920,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1920,
+          "serviceFrom": "2023-10-29",
+          "serviceUntil": "2023-12-23",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-31",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 31/10/2023 - 22/12/2023",
+          "amount": 1264,
+          "discount": 0,
+          "commission": 316,
+          "nadc": 948,
+          "serviceFrom": "2023-10-31",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3299,
+        "discount": 0,
+        "commission": 316,
+        "nadc": 2983
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37892,
+      "invoiceNumber": "D2023556",
+      "invoiceDate": "2023-09-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26270",
+        "firstName": "Malak",
+        "surname": "El Allali",
+        "email": "malakelallali@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2023-10-02",
+          "until": "2023-10-06",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General Plus 02/10/2023 - 06/10/2023",
+          "amount": 170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 170,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 170,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 170
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37894,
+      "invoiceNumber": "D2023557",
+      "invoiceDate": "2023-10-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27283",
+        "firstName": "Ana María",
+        "surname": "Maya",
+        "email": "ana_correro@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2023-10-02",
+          "until": "2023-10-06",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Intensive General 30 02/10/2023 - 06/10/2023",
+          "amount": 290,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 290,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-10-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 340,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 340
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37895,
+      "invoiceNumber": "D2023551",
+      "invoiceDate": "2023-09-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27284",
+        "firstName": "Beatriz",
+        "surname": "Tejero",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Full-board) 11/10/2023 - 17/10/2023",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2023-10-11",
+          "serviceUntil": "2023-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 240,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 240
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37896,
+      "invoiceNumber": "D2023555",
+      "invoiceDate": "2023-09-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27192",
+        "firstName": "Alba",
+        "surname": "Ciardini Utiel",
+        "email": "albaciardiniutiel@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-02",
+          "until": "2023-12-15",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "11 weeks Morning General 02/10/2023 - 15/12/2023",
+          "amount": 1738,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1738,
+          "serviceFrom": "2023-10-02",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1738,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1738
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37897,
+      "invoiceNumber": "D2023562",
+      "invoiceDate": "2023-10-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27285",
+        "firstName": "Laura",
+        "surname": "Costa Alcazar",
+        "email": "lauracostaalcazar@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-01-08",
+          "until": "2024-03-22",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-03-22",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Morning General Plus 08/01/2024 - 22/03/2024",
+          "amount": 2167,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2167,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-03-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2217,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2217
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

@@ -1,0 +1,3356 @@
+{
+  "generated": "2025-12-15T16:14:01.584Z",
+  "year": "2021",
+  "description": "All courses and accommodation from 2021 master data",
+  "summary": {
+    "morning": {
+      "count": 67,
+      "revenue": 75842.4
+    },
+    "afternoon": {
+      "count": 19,
+      "revenue": 17141.25
+    },
+    "accommodation": {
+      "count": 40,
+      "revenue": 69915
+    }
+  },
+  "data": {
+    "morning": [
+      {
+        "bookingId": 33363,
+        "studentId": "23322",
+        "studentName": "Fumie Takezawa",
+        "invoice": "D2021008",
+        "invoiceDate": "2021-01-29",
+        "studentType": "direct",
+        "weeks": 5,
+        "totalHours": 75,
+        "amountOriginal": 395,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 395,
+        "ratePerHour": 5.266666666666667,
+        "courseItems": [
+          {
+            "description": "5 weeks Morning General 02/02/2021 - 08/03/2021 ONLINE DISCOUNT",
+            "weeks": 5,
+            "hoursPerWeek": 15,
+            "amount": 395,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 395,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33371,
+        "studentId": "23423",
+        "studentName": "Monica Janeth Gonzalez Rosales",
+        "invoice": "D2021009",
+        "invoiceDate": "2021-01-29",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1575,
+        "discount": 0,
+        "commission": 100,
+        "courseFeeNADC": 1475,
+        "ratePerHour": 3.933333333333333,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Renewal Morning 01/02/2021 - 23/07/2021",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 1575,
+            "discount": 0,
+            "commission": 100,
+            "nadc": 1475,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33375,
+        "studentId": "23375",
+        "studentName": "Yousef Sarhan",
+        "invoice": "D2021010",
+        "invoiceDate": "2021-01-31",
+        "studentType": "direct",
+        "weeks": 12,
+        "totalHours": 180,
+        "amountOriginal": 708,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 708,
+        "ratePerHour": 3.933333333333333,
+        "courseItems": [
+          {
+            "description": "12 weeks Online Morning 01/02/2021 - 23/04/2021",
+            "weeks": 12,
+            "hoursPerWeek": 15,
+            "amount": 708,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 708,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33376,
+        "studentId": "23425",
+        "studentName": "Maelle Hermelin",
+        "invoice": "D2021072",
+        "invoiceDate": "2021-10-12",
+        "studentType": "agent",
+        "weeks": 20,
+        "totalHours": 300,
+        "amountOriginal": 2520,
+        "discount": 0,
+        "commission": 756,
+        "courseFeeNADC": 1764,
+        "ratePerHour": 5.88,
+        "courseItems": [
+          {
+            "description": "9 weeks Morning General 03/01/2022 - 04/03/2022",
+            "weeks": 9,
+            "hoursPerWeek": 15,
+            "amount": 1260,
+            "discount": 0,
+            "commission": 378,
+            "nadc": 882,
+            "courseType": "morning"
+          },
+          {
+            "description": "9 weeks Morning General 18/10/2021 - 17/12/2021",
+            "weeks": 9,
+            "hoursPerWeek": 15,
+            "amount": 1260,
+            "discount": 0,
+            "commission": 378,
+            "nadc": 882,
+            "courseType": "morning"
+          },
+          {
+            "description": "2 weeks Morning General 07/03/2022 - 18/03/2022  COMPLIMENTARY",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 0,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 0,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33378,
+        "studentId": "23427",
+        "studentName": "Celia Delcey",
+        "invoice": "D2021027",
+        "invoiceDate": "2021-03-26",
+        "studentType": "agent",
+        "weeks": 13,
+        "totalHours": 195,
+        "amountOriginal": 1584,
+        "discount": 0,
+        "commission": 475.2,
+        "courseFeeNADC": 1108.8,
+        "ratePerHour": 5.686153846153846,
+        "courseItems": [
+          {
+            "description": "11 weeks Morning General 12/04/2021 - 25/06/2021",
+            "weeks": 11,
+            "hoursPerWeek": 15,
+            "amount": 1584,
+            "discount": 0,
+            "commission": 475.2,
+            "nadc": 1108.8,
+            "courseType": "morning"
+          },
+          {
+            "description": "2 weeks ONLINE ISOLATION 29/03/2021 - 09/04/2021",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 0,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 0,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33379,
+        "studentId": "23428",
+        "studentName": "Natalia Yoko Alves Akita",
+        "invoice": "D2021016",
+        "invoiceDate": "2021-02-09",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1964.29,
+        "discount": 589.29,
+        "commission": 0,
+        "courseFeeNADC": 1375,
+        "ratePerHour": 3.6666666666666665,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Renewal Morning 15/03/2021 - 03/09/2021",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 1964.29,
+            "discount": 589.29,
+            "commission": 0,
+            "nadc": 1375,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33387,
+        "studentId": "23433",
+        "studentName": "Fatima del Rosario Moreno Rosales",
+        "invoice": "D2021021",
+        "invoiceDate": "2021-02-25",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1964.29,
+        "discount": 589.29,
+        "commission": 0,
+        "courseFeeNADC": 1375,
+        "ratePerHour": 3.6666666666666665,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Renewal Morning 08/03/2021 - 27/08/2021",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 1964.29,
+            "discount": 589.29,
+            "commission": 0,
+            "nadc": 1375,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33391,
+        "studentId": "23435",
+        "studentName": "Lucie Veylon",
+        "invoice": "D2021083",
+        "invoiceDate": "2021-10-21",
+        "studentType": "agent",
+        "weeks": 20,
+        "totalHours": 300,
+        "amountOriginal": 2520,
+        "discount": 0,
+        "commission": 756,
+        "courseFeeNADC": 1764,
+        "ratePerHour": 5.88,
+        "courseItems": [
+          {
+            "description": "10 weeks Morning General 03/01/2022 - 11/03/2022",
+            "weeks": 10,
+            "hoursPerWeek": 15,
+            "amount": 1400,
+            "discount": 0,
+            "commission": 420,
+            "nadc": 980,
+            "courseType": "morning"
+          },
+          {
+            "description": "8 weeks Morning General 25/10/2021 - 17/12/2021",
+            "weeks": 8,
+            "hoursPerWeek": 15,
+            "amount": 1120,
+            "discount": 0,
+            "commission": 336,
+            "nadc": 784,
+            "courseType": "morning"
+          },
+          {
+            "description": "2 weeks Morning General 14/03/2022 - 25/03/2022 COMPLIMENTARY",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 0,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 0,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33396,
+        "studentId": "23438",
+        "studentName": "Antoine Moreau",
+        "invoice": "D2021037",
+        "invoiceDate": "2021-07-06",
+        "studentType": "agent",
+        "weeks": 21,
+        "totalHours": 315,
+        "amountOriginal": 2940,
+        "discount": 0,
+        "commission": 882,
+        "courseFeeNADC": 2058,
+        "ratePerHour": 6.533333333333333,
+        "courseItems": [
+          {
+            "description": "21 weeks Morning General 19/07/2021 - 10/12/2021",
+            "weeks": 21,
+            "hoursPerWeek": 15,
+            "amount": 2940,
+            "discount": 0,
+            "commission": 882,
+            "nadc": 2058,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33397,
+        "studentId": "23439",
+        "studentName": "Louis Mannerie",
+        "invoice": "D2021036",
+        "invoiceDate": "2021-07-06",
+        "studentType": "agent",
+        "weeks": 21,
+        "totalHours": 315,
+        "amountOriginal": 2940,
+        "discount": 0,
+        "commission": 882,
+        "courseFeeNADC": 2058,
+        "ratePerHour": 6.533333333333333,
+        "courseItems": [
+          {
+            "description": "21 weeks Morning General 19/07/2021 - 10/12/2021",
+            "weeks": 21,
+            "hoursPerWeek": 15,
+            "amount": 2940,
+            "discount": 0,
+            "commission": 882,
+            "nadc": 2058,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33425,
+        "studentId": "23465",
+        "studentName": "Sabine Borgialli",
+        "invoice": "D2021100",
+        "invoiceDate": "2021-11-17",
+        "studentType": "agent",
+        "weeks": 20,
+        "totalHours": 400,
+        "amountOriginal": 3400,
+        "discount": 0,
+        "commission": 1020,
+        "courseFeeNADC": 2380,
+        "ratePerHour": 5.95,
+        "courseItems": [
+          {
+            "description": "20 weeks Morning General Plus 22/11/2021 - 08/04/2022",
+            "weeks": 20,
+            "hoursPerWeek": 20,
+            "amount": 3400,
+            "discount": 0,
+            "commission": 1020,
+            "nadc": 2380,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33427,
+        "studentId": "23467",
+        "studentName": "Michela Baiamonte",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33428,
+        "studentId": "23468",
+        "studentName": "Simone Caccialanza",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33429,
+        "studentId": "23469",
+        "studentName": "Alessia Capello",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33430,
+        "studentId": "23470",
+        "studentName": "Franck Alessio Enobo Belomo",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33432,
+        "studentId": "23472",
+        "studentName": "Andrea Necchi",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33433,
+        "studentId": "23473",
+        "studentName": "Mattia Pizzetti",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33434,
+        "studentId": "23474",
+        "studentName": "Samantha Vignati",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33435,
+        "studentId": "23475",
+        "studentName": "Emma Barbieri",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33436,
+        "studentId": "23476",
+        "studentName": "Anna Grazioli",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33437,
+        "studentId": "23477",
+        "studentName": "Aurora Crivella",
+        "invoice": "D2021031",
+        "invoiceDate": "2021-05-27",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 330,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 330,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33452,
+        "studentId": "23319",
+        "studentName": "Yingxin Jiang",
+        "invoice": "D2021038",
+        "invoiceDate": "2021-07-08",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1100,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 1100,
+        "ratePerHour": 2.933333333333333,
+        "courseItems": [
+          {
+            "description": "1 week Academic Year Renewal Morning 03/01/2022 - 07/01/2022",
+            "weeks": 1,
+            "hoursPerWeek": 15,
+            "amount": 44,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 44,
+            "courseType": "morning"
+          },
+          {
+            "description": "24 weeks Academic Year Renewal Morning 05/07/2021 - 17/12/2021",
+            "weeks": 24,
+            "hoursPerWeek": 15,
+            "amount": 1056,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 1056,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33457,
+        "studentId": "23495",
+        "studentName": "Mathilde Brassier",
+        "invoice": "D2021057",
+        "invoiceDate": "2021-09-16",
+        "studentType": "agent",
+        "weeks": 13,
+        "totalHours": 195,
+        "amountOriginal": 1820,
+        "discount": 0,
+        "commission": 546,
+        "courseFeeNADC": 1274,
+        "ratePerHour": 6.533333333333333,
+        "courseItems": [
+          {
+            "description": "13 weeks Morning General 20/09/2021 - 17/12/2021",
+            "weeks": 13,
+            "hoursPerWeek": 15,
+            "amount": 1820,
+            "discount": 0,
+            "commission": 546,
+            "nadc": 1274,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33478,
+        "studentId": "23516",
+        "studentName": "Oyundari Munkhbat",
+        "invoice": "D2021043",
+        "invoiceDate": "2021-07-30",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 3175,
+        "discount": 0,
+        "commission": 635,
+        "courseFeeNADC": 2540,
+        "ratePerHour": 6.773333333333333,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Morning 04/10/2021 - 25/03/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 3175,
+            "discount": 0,
+            "commission": 635,
+            "nadc": 2540,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33479,
+        "studentId": "23517",
+        "studentName": "Bayanmunkh Munkhbatmanlai",
+        "invoice": "D2021042",
+        "invoiceDate": "2021-07-30",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 3175,
+        "discount": 0,
+        "commission": 635,
+        "courseFeeNADC": 2540,
+        "ratePerHour": 6.773333333333333,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Morning 04/10/2021 - 25/03/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 3175,
+            "discount": 0,
+            "commission": 635,
+            "nadc": 2540,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33484,
+        "studentId": "23522",
+        "studentName": "Ana Bodes Fernandez",
+        "invoice": "D2021084",
+        "invoiceDate": "2021-10-21",
+        "studentType": "direct",
+        "weeks": 8,
+        "totalHours": 120,
+        "amountOriginal": 1040,
+        "discount": 520,
+        "commission": 0,
+        "courseFeeNADC": 520,
+        "ratePerHour": 4.333333333333333,
+        "courseItems": [
+          {
+            "description": "8 weeks Morning General 04/10/2021 - 26/11/2021",
+            "weeks": 8,
+            "hoursPerWeek": 15,
+            "amount": 1040,
+            "discount": 520,
+            "commission": 0,
+            "nadc": 520,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33492,
+        "studentId": "23530",
+        "studentName": "Louis Pailhé",
+        "invoice": "D2022003",
+        "invoiceDate": "2022-01-03",
+        "studentType": "direct",
+        "weeks": 18,
+        "totalHours": 270,
+        "amountOriginal": 2520,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 2520,
+        "ratePerHour": 9.333333333333334,
+        "courseItems": [
+          {
+            "description": "18 weeks Morning General 10/01/2022 - 13/05/2022",
+            "weeks": 18,
+            "hoursPerWeek": 15,
+            "amount": 2520,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 2520,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33503,
+        "studentId": "23540",
+        "studentName": "Francois Butty",
+        "invoice": "D2021047",
+        "invoiceDate": "2021-08-27",
+        "studentType": "direct",
+        "weeks": 7,
+        "totalHours": 140,
+        "amountOriginal": 1400,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 1400,
+        "ratePerHour": 10,
+        "courseItems": [
+          {
+            "description": "3 weeks Morning General Plus 13/09/2021 - 01/10/2021",
+            "weeks": 3,
+            "hoursPerWeek": 20,
+            "amount": 600,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 600,
+            "courseType": "morning"
+          },
+          {
+            "description": "4 weeks Morning General Plus 18/10/2021 - 12/11/2021",
+            "weeks": 4,
+            "hoursPerWeek": 20,
+            "amount": 800,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 800,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33507,
+        "studentId": "23307",
+        "studentName": "Eunyoung Kim",
+        "invoice": "D2021049",
+        "invoiceDate": "2021-09-03",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1300,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 1300,
+        "ratePerHour": 3.466666666666667,
+        "courseItems": [
+          {
+            "description": "10 weeks ULearn Renewal MORN 03/01/2022 - 11/03/2022",
+            "weeks": 10,
+            "hoursPerWeek": 15,
+            "amount": 520,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 520,
+            "courseType": "morning"
+          },
+          {
+            "description": "15 weeks ULearn Renewal MORN 06/09/2021 - 17/12/2021",
+            "weeks": 15,
+            "hoursPerWeek": 15,
+            "amount": 780,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 780,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33514,
+        "studentId": "23550",
+        "studentName": "Victoria Kalfon",
+        "invoice": "D2021054",
+        "invoiceDate": "2021-09-16",
+        "studentType": "agent",
+        "weeks": 20,
+        "totalHours": 400,
+        "amountOriginal": 3400,
+        "discount": 0,
+        "commission": 1020,
+        "courseFeeNADC": 2380,
+        "ratePerHour": 5.95,
+        "courseItems": [
+          {
+            "description": "7 weeks Morning General Plus 03/01/2022 - 18/02/2022",
+            "weeks": 7,
+            "hoursPerWeek": 20,
+            "amount": 1190,
+            "discount": 0,
+            "commission": 357,
+            "nadc": 833,
+            "courseType": "morning"
+          },
+          {
+            "description": "13 weeks Morning General Plus 20/09/2021 - 17/12/2021",
+            "weeks": 13,
+            "hoursPerWeek": 20,
+            "amount": 2210,
+            "discount": 0,
+            "commission": 663,
+            "nadc": 1547,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 33525,
+        "studentId": "23558",
+        "studentName": "Mathis Fontaine",
+        "invoice": "D2021058",
+        "invoiceDate": "2021-09-16",
+        "studentType": "agent",
+        "weeks": 11,
+        "totalHours": 330,
+        "amountOriginal": 2177,
+        "discount": 0,
+        "commission": 653.1,
+        "courseFeeNADC": 1523.9,
+        "ratePerHour": 4.617878787878788,
+        "courseItems": [
+          {
+            "description": "10 weeks Morning General Plus 03/01/2022 - 11/03/2022",
+            "weeks": 5,
+            "hoursPerWeek": 30,
+            "amount": 875,
+            "discount": 0,
+            "commission": 262.5,
+            "nadc": 612.5,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          },
+          {
+            "description": "12 weeks Intensive General 30 27/09/2021 - 17/12/2021",
+            "weeks": 6,
+            "hoursPerWeek": 30,
+            "amount": 1302,
+            "discount": 0,
+            "commission": 390.6,
+            "nadc": 911.4,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 33526,
+        "studentId": "23561",
+        "studentName": "Silvia Bucciol",
+        "invoice": "D2021065",
+        "invoiceDate": "2021-09-28",
+        "studentType": "direct",
+        "weeks": 4,
+        "totalHours": 60,
+        "amountOriginal": 660,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 660,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "4 weeks Morning General 04/10/2021 - 29/10/2021",
+            "weeks": 4,
+            "hoursPerWeek": 15,
+            "amount": 660,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 660,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34059,
+        "studentId": "23564",
+        "studentName": "Katia Bravo",
+        "invoice": "D2021062",
+        "invoiceDate": "2021-09-23",
+        "studentType": "direct",
+        "weeks": 6,
+        "totalHours": 90,
+        "amountOriginal": 894,
+        "discount": 178.8,
+        "commission": 0,
+        "courseFeeNADC": 715.2,
+        "ratePerHour": 7.946666666666667,
+        "courseItems": [
+          {
+            "description": "6 weeks Morning General 20/09/2021 - 29/10/2021",
+            "weeks": 6,
+            "hoursPerWeek": 15,
+            "amount": 894,
+            "discount": 178.8,
+            "commission": 0,
+            "nadc": 715.2,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34064,
+        "studentId": "23569",
+        "studentName": "Elisa Dutoya",
+        "invoice": "D2021070",
+        "invoiceDate": "2021-10-11",
+        "studentType": "direct",
+        "weeks": 4,
+        "totalHours": 60,
+        "amountOriginal": 560,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 560,
+        "ratePerHour": 9.333333333333334,
+        "courseItems": [
+          {
+            "description": "4 weeks Morning General 18/10/2021 - 12/11/2021",
+            "weeks": 4,
+            "hoursPerWeek": 15,
+            "amount": 560,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 560,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34082,
+        "studentId": "23585",
+        "studentName": "Louise Moreau",
+        "invoice": "D2022006",
+        "invoiceDate": "2022-01-04",
+        "studentType": "agent",
+        "weeks": 15,
+        "totalHours": 300,
+        "amountOriginal": 1820,
+        "discount": 0,
+        "commission": 546,
+        "courseFeeNADC": 1274,
+        "ratePerHour": 4.246666666666667,
+        "courseItems": [
+          {
+            "description": "13 weeks Morning General Plus 10/01/2022 - 08/04/2022",
+            "weeks": 13,
+            "hoursPerWeek": 20,
+            "amount": 1820,
+            "discount": 0,
+            "commission": 546,
+            "nadc": 1274,
+            "courseType": "morning"
+          },
+          {
+            "description": "2 weeks Morning General Plus  FREE 11/04/2022 - 22/04/2022",
+            "weeks": 2,
+            "hoursPerWeek": 20,
+            "amount": 0,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 0,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34086,
+        "studentId": "22289",
+        "studentName": "Arantza Aguilar Ibarzo",
+        "invoice": "D2021071",
+        "invoiceDate": "2021-10-11",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 20,
+        "amountOriginal": 200,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 200,
+        "ratePerHour": 10,
+        "courseItems": [
+          {
+            "description": "1 week Morning General Plus 01/11/2021 - 05/11/2021",
+            "weeks": 1,
+            "hoursPerWeek": 20,
+            "amount": 200,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 200,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34087,
+        "studentId": "23589",
+        "studentName": "Ophelie Ferreira",
+        "invoice": "D2022005",
+        "invoiceDate": "2022-01-04",
+        "studentType": "agent",
+        "weeks": 15,
+        "totalHours": 300,
+        "amountOriginal": 1820,
+        "discount": 0,
+        "commission": 546,
+        "courseFeeNADC": 1274,
+        "ratePerHour": 4.246666666666667,
+        "courseItems": [
+          {
+            "description": "13 weeks Morning General Plus 10/01/2022 - 08/04/2022",
+            "weeks": 13,
+            "hoursPerWeek": 20,
+            "amount": 1820,
+            "discount": 0,
+            "commission": 546,
+            "nadc": 1274,
+            "courseType": "morning"
+          },
+          {
+            "description": "2 weeks Morning General Plus 11/04/2022 - 22/04/2022",
+            "weeks": 2,
+            "hoursPerWeek": 20,
+            "amount": 0,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 0,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34094,
+        "studentId": "23596",
+        "studentName": "Mallaurie Baudrand",
+        "invoice": "D2021082",
+        "invoiceDate": "2021-10-20",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 15,
+        "amountOriginal": 165,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 165,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "1 week Morning General 25/10/2021 - 29/10/2021",
+            "weeks": 1,
+            "hoursPerWeek": 15,
+            "amount": 165,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 165,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34101,
+        "studentId": "23603",
+        "studentName": "Clarisse Blanc",
+        "invoice": "D2021066",
+        "invoiceDate": "2021-10-05",
+        "studentType": "agent",
+        "weeks": 10,
+        "totalHours": 200,
+        "amountOriginal": 1750,
+        "discount": 0,
+        "commission": 525,
+        "courseFeeNADC": 1225,
+        "ratePerHour": 6.125,
+        "courseItems": [
+          {
+            "description": "10 weeks Morning General Plus 11/10/2021 - 17/12/2021",
+            "weeks": 10,
+            "hoursPerWeek": 20,
+            "amount": 1750,
+            "discount": 0,
+            "commission": 525,
+            "nadc": 1225,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34114,
+        "studentId": "23616",
+        "studentName": "Bat-Erdene Sharaa",
+        "invoice": "D2021089",
+        "invoiceDate": "2021-11-01",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 3175,
+        "discount": 0,
+        "commission": 635,
+        "courseFeeNADC": 2540,
+        "ratePerHour": 6.773333333333333,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Morning 17/01/2022 - 08/07/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 3175,
+            "discount": 0,
+            "commission": 635,
+            "nadc": 2540,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34117,
+        "studentId": "23618",
+        "studentName": "Juan Alberto Paineo Sandoval",
+        "invoice": "D2022114",
+        "invoiceDate": "2022-04-14",
+        "studentType": "direct",
+        "weeks": 4,
+        "totalHours": 60,
+        "amountOriginal": 140,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 140,
+        "ratePerHour": 2.3333333333333335,
+        "courseItems": [
+          {
+            "description": "4 weeks +5 Hours 02/05/2022 - 27/05/2022",
+            "weeks": 4,
+            "hoursPerWeek": 15,
+            "amount": 140,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 140,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34118,
+        "studentId": "23619",
+        "studentName": "Julia Davydova",
+        "invoice": "D2021081",
+        "invoiceDate": "2021-10-19",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 30,
+        "amountOriginal": 255,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 255,
+        "ratePerHour": 8.5,
+        "courseItems": [
+          {
+            "description": "2 weeks Intensive General 30 25/10/2021 - 05/11/2021",
+            "weeks": 1,
+            "hoursPerWeek": 30,
+            "amount": 255,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 255,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34119,
+        "studentId": "23620",
+        "studentName": "Lea Bagnis",
+        "invoice": "D2021088",
+        "invoiceDate": "2021-10-27",
+        "studentType": "agent",
+        "weeks": 5,
+        "totalHours": 100,
+        "amountOriginal": 1000,
+        "discount": 0,
+        "commission": 300,
+        "courseFeeNADC": 700,
+        "ratePerHour": 7,
+        "courseItems": [
+          {
+            "description": "5 weeks Morning General Plus 08/11/2021 - 10/12/2021",
+            "weeks": 5,
+            "hoursPerWeek": 20,
+            "amount": 1000,
+            "discount": 0,
+            "commission": 300,
+            "nadc": 700,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34125,
+        "studentId": "23626",
+        "studentName": "Enzo Delieuze",
+        "invoice": "D2022004",
+        "invoiceDate": "2022-01-04",
+        "studentType": "agent",
+        "weeks": 18,
+        "totalHours": 270,
+        "amountOriginal": 1915,
+        "discount": 0,
+        "commission": 400,
+        "courseFeeNADC": 1515,
+        "ratePerHour": 5.611111111111111,
+        "courseItems": [
+          {
+            "description": "18 weeks Morning General 10/01/2022 - 13/05/2022",
+            "weeks": 18,
+            "hoursPerWeek": 15,
+            "amount": 1915,
+            "discount": 0,
+            "commission": 400,
+            "nadc": 1515,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34126,
+        "studentId": "23627",
+        "studentName": "Lina Mortajine",
+        "invoice": "D2021093",
+        "invoiceDate": "2021-11-10",
+        "studentType": "agent",
+        "weeks": 4,
+        "totalHours": 80,
+        "amountOriginal": 800,
+        "discount": 0,
+        "commission": 240,
+        "courseFeeNADC": 560,
+        "ratePerHour": 7,
+        "courseItems": [
+          {
+            "description": "4 weeks Morning General Plus 15/11/2021 - 10/12/2021",
+            "weeks": 4,
+            "hoursPerWeek": 20,
+            "amount": 800,
+            "discount": 0,
+            "commission": 240,
+            "nadc": 560,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34127,
+        "studentId": "23628",
+        "studentName": "Rebeca Judith Romero Guevara",
+        "invoice": "D2021116",
+        "invoiceDate": "2021-12-16",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 3175,
+        "discount": 0,
+        "commission": 793.75,
+        "courseFeeNADC": 2381.25,
+        "ratePerHour": 6.35,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Morning 14/03/2022 - 02/09/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 3175,
+            "discount": 0,
+            "commission": 793.75,
+            "nadc": 2381.25,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34133,
+        "studentId": "23632",
+        "studentName": "Camille Lariviere",
+        "invoice": "D2022410",
+        "invoiceDate": "2022-09-07",
+        "studentType": "agent",
+        "weeks": 20,
+        "totalHours": 300,
+        "amountOriginal": 2800,
+        "discount": 0,
+        "commission": 840,
+        "courseFeeNADC": 1960,
+        "ratePerHour": 6.533333333333333,
+        "courseItems": [
+          {
+            "description": "10 weeks Morning General 10/10/2022 - 16/12/2022",
+            "weeks": 10,
+            "hoursPerWeek": 15,
+            "amount": 1400,
+            "discount": 0,
+            "commission": 420,
+            "nadc": 980,
+            "courseType": "morning"
+          },
+          {
+            "description": "10 weeks Morning General 02/01/2023 - 10/03/2023",
+            "weeks": 10,
+            "hoursPerWeek": 15,
+            "amount": 1400,
+            "discount": 0,
+            "commission": 420,
+            "nadc": 980,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34143,
+        "studentId": "23642",
+        "studentName": "Thaïs Henault",
+        "invoice": "D2022047",
+        "invoiceDate": "2022-03-02",
+        "studentType": "agent",
+        "weeks": 15,
+        "totalHours": 300,
+        "amountOriginal": 2550,
+        "discount": 0,
+        "commission": 765,
+        "courseFeeNADC": 1785,
+        "ratePerHour": 5.95,
+        "courseItems": [
+          {
+            "description": "15 weeks Morning General Plus 07/03/2022 - 17/06/2022",
+            "weeks": 15,
+            "hoursPerWeek": 20,
+            "amount": 2550,
+            "discount": 0,
+            "commission": 765,
+            "nadc": 1785,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34147,
+        "studentId": "23645",
+        "studentName": "Lara Espert",
+        "invoice": "D2021096",
+        "invoiceDate": "2021-11-12",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 15,
+        "amountOriginal": 165,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 165,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "1 week Morning General 22/11/2021 - 26/11/2021",
+            "weeks": 1,
+            "hoursPerWeek": 15,
+            "amount": 165,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 165,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34152,
+        "studentId": "23649",
+        "studentName": "Vitaliia Vlasova",
+        "invoice": "D2021095",
+        "invoiceDate": "2021-11-11",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 15,
+        "amountOriginal": 165,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 165,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "1 week Morning General 15/11/2021 - 19/11/2021",
+            "weeks": 1,
+            "hoursPerWeek": 15,
+            "amount": 165,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 165,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34154,
+        "studentId": "23321",
+        "studentName": "Javier Gonzalez Marmolejo",
+        "invoice": "D2021097",
+        "invoiceDate": "2021-11-12",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1970,
+        "discount": 295.5,
+        "commission": 0,
+        "courseFeeNADC": 1674.5,
+        "ratePerHour": 4.465333333333334,
+        "courseItems": [
+          {
+            "description": "22 weeks ULearn Renewal MORN 03/01/2022 - 03/06/2022",
+            "weeks": 22,
+            "hoursPerWeek": 15,
+            "amount": 1733.6,
+            "discount": 260.04,
+            "commission": 0,
+            "nadc": 1473.56,
+            "courseType": "morning"
+          },
+          {
+            "description": "3 weeks ULearn Renewal MORN 29/11/2021 - 17/12/2021",
+            "weeks": 3,
+            "hoursPerWeek": 15,
+            "amount": 236.4,
+            "discount": 35.46,
+            "commission": 0,
+            "nadc": 200.94,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34156,
+        "studentId": "23652",
+        "studentName": "Rocio Santos Buitrago",
+        "invoice": "D2021102",
+        "invoiceDate": "2021-11-17",
+        "studentType": "direct",
+        "weeks": 12,
+        "totalHours": 180,
+        "amountOriginal": 1680,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 1680,
+        "ratePerHour": 9.333333333333334,
+        "courseItems": [
+          {
+            "description": "12 weeks Morning General 22/11/2021 - 11/02/2022",
+            "weeks": 12,
+            "hoursPerWeek": 15,
+            "amount": 1680,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 1680,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34173,
+        "studentId": "23666",
+        "studentName": "Pau Suros",
+        "invoice": "D2021110",
+        "invoiceDate": "2021-12-03",
+        "studentType": "direct",
+        "weeks": 12,
+        "totalHours": 180,
+        "amountOriginal": 1680,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 1680,
+        "ratePerHour": 9.333333333333334,
+        "courseItems": [
+          {
+            "description": "12 weeks Morning General 10/01/2022 - 01/04/2022",
+            "weeks": 12,
+            "hoursPerWeek": 15,
+            "amount": 1680,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 1680,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34176,
+        "studentId": "23670",
+        "studentName": "Cristiane Luuz",
+        "invoice": "D2023128",
+        "invoiceDate": "2023-02-28",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 3175,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 3175,
+        "ratePerHour": 8.466666666666667,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Morning 08/08/2022 - 27/01/2023",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 3175,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 3175,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34187,
+        "studentId": "23680",
+        "studentName": "Thomas Lebouder",
+        "invoice": "D2022045",
+        "invoiceDate": "2022-02-21",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 15,
+        "amountOriginal": 165,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 165,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "1 week Morning General 14/03/2022 - 18/03/2022",
+            "weeks": 1,
+            "hoursPerWeek": 15,
+            "amount": 165,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 165,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34188,
+        "studentId": "23681",
+        "studentName": "Patrice Roques",
+        "invoice": "D2022041",
+        "invoiceDate": "2022-02-18",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 15,
+        "amountOriginal": 165,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 165,
+        "ratePerHour": 11,
+        "courseItems": [
+          {
+            "description": "1 week Morning General 14/03/2022 - 18/03/2022",
+            "weeks": 1,
+            "hoursPerWeek": 15,
+            "amount": 165,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 165,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34191,
+        "studentId": "23683",
+        "studentName": "Dinnat Elise",
+        "invoice": "D2022053",
+        "invoiceDate": "2022-03-09",
+        "studentType": "direct",
+        "weeks": 0.5,
+        "totalHours": 15,
+        "amountOriginal": 127.5,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 127.5,
+        "ratePerHour": 8.5,
+        "courseItems": [
+          {
+            "description": "1 Week Intensive General 30 16/05/2022 - 20/05/2022",
+            "weeks": 0.5,
+            "hoursPerWeek": 30,
+            "amount": 127.5,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 127.5,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34192,
+        "studentId": "22948",
+        "studentName": "Odile Bruyere",
+        "invoice": "D2022008",
+        "invoiceDate": "2022-01-04",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 20,
+        "amountOriginal": 200,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 200,
+        "ratePerHour": 10,
+        "courseItems": [
+          {
+            "description": "1 week Morning General Plus (INTENSIVE)  03/01/2022 - 07/01/2022",
+            "weeks": 1,
+            "hoursPerWeek": 20,
+            "amount": 200,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 200,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34193,
+        "studentId": "23684",
+        "studentName": "Miguel Bagán Ledesma",
+        "invoice": "D2022018",
+        "invoiceDate": "2022-01-09",
+        "studentType": "direct",
+        "weeks": 13,
+        "totalHours": 260,
+        "amountOriginal": 2210,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 2210,
+        "ratePerHour": 8.5,
+        "courseItems": [
+          {
+            "description": "13 weeks Morning General Plus 10/01/2022 - 08/04/2022",
+            "weeks": 13,
+            "hoursPerWeek": 20,
+            "amount": 2210,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 2210,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34197,
+        "studentId": "23687",
+        "studentName": "Cassandre Basire",
+        "invoice": "D2022046",
+        "invoiceDate": "2022-02-28",
+        "studentType": "direct",
+        "weeks": 2.5,
+        "totalHours": 75,
+        "amountOriginal": 637.5,
+        "discount": 63.75,
+        "commission": 0,
+        "courseFeeNADC": 573.75,
+        "ratePerHour": 7.65,
+        "courseItems": [
+          {
+            "description": "5 weeks Intensive General 30 24/01/2022 - 25/02/2022",
+            "weeks": 2.5,
+            "hoursPerWeek": 30,
+            "amount": 637.5,
+            "discount": 63.75,
+            "commission": 0,
+            "nadc": 573.75,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34202,
+        "studentId": "23692",
+        "studentName": "Julie Dalbin",
+        "invoice": "D2022014",
+        "invoiceDate": "2022-01-07",
+        "studentType": "agent",
+        "weeks": 12,
+        "totalHours": 240,
+        "amountOriginal": 1925,
+        "discount": 0,
+        "commission": 577.5,
+        "courseFeeNADC": 1347.5,
+        "ratePerHour": 5.614583333333333,
+        "courseItems": [
+          {
+            "description": "11 weeks Morning General Plus 17/01/2022 - 01/04/2022",
+            "weeks": 11,
+            "hoursPerWeek": 20,
+            "amount": 1925,
+            "discount": 0,
+            "commission": 577.5,
+            "nadc": 1347.5,
+            "courseType": "morning"
+          },
+          {
+            "description": "1 week Morning General Plus 04/04/2022 - 08/04/2022",
+            "weeks": 1,
+            "hoursPerWeek": 20,
+            "amount": 0,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 0,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34212,
+        "studentId": "23702",
+        "studentName": "Anna Katharina Souza Ferreira",
+        "invoice": "D2023077",
+        "invoiceDate": "2023-02-07",
+        "studentType": "agent",
+        "weeks": 12,
+        "totalHours": 180,
+        "amountOriginal": 1680,
+        "discount": 0,
+        "commission": 420,
+        "courseFeeNADC": 1260,
+        "ratePerHour": 7,
+        "courseItems": [
+          {
+            "description": "12 weeks Morning General 06/03/2023 - 26/05/2023",
+            "weeks": 12,
+            "hoursPerWeek": 15,
+            "amount": 1680,
+            "discount": 0,
+            "commission": 420,
+            "nadc": 1260,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34213,
+        "studentId": "23703",
+        "studentName": "Bataa Zorigoo",
+        "invoice": "D2022002",
+        "invoiceDate": "2022-01-03",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 3175,
+        "discount": 0,
+        "commission": 635,
+        "courseFeeNADC": 2540,
+        "ratePerHour": 6.773333333333333,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Morning 21/02/2022 - 12/08/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 3175,
+            "discount": 0,
+            "commission": 635,
+            "nadc": 2540,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34216,
+        "studentId": "23706",
+        "studentName": "Andre Agner Da Luz Siben",
+        "invoice": "D2023107",
+        "invoiceDate": "2023-02-17",
+        "studentType": "agent",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 330,
+        "discount": 0,
+        "commission": 82.5,
+        "courseFeeNADC": 247.5,
+        "ratePerHour": 8.25,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 06/03/2023 - 17/03/2023",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 330,
+            "discount": 0,
+            "commission": 82.5,
+            "nadc": 247.5,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34218,
+        "studentId": "23708",
+        "studentName": "Valentin Mahe",
+        "invoice": "D2021117",
+        "invoiceDate": "2021-12-22",
+        "studentType": "direct",
+        "weeks": 3,
+        "totalHours": 90,
+        "amountOriginal": 690,
+        "discount": 138,
+        "commission": 0,
+        "courseFeeNADC": 552,
+        "ratePerHour": 6.133333333333334,
+        "courseItems": [
+          {
+            "description": "6 weeks Intensive General 30 10/01/2022 - 18/02/2022",
+            "weeks": 3,
+            "hoursPerWeek": 30,
+            "amount": 690,
+            "discount": 138,
+            "commission": 0,
+            "nadc": 552,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34221,
+        "studentId": "23711",
+        "studentName": "Jules Bouqueneur-Bauer",
+        "invoice": "D2022299",
+        "invoiceDate": "2022-07-01",
+        "studentType": "agent",
+        "weeks": 3,
+        "totalHours": 45,
+        "amountOriginal": 495,
+        "discount": 0,
+        "commission": 148.5,
+        "courseFeeNADC": 346.5,
+        "ratePerHour": 7.7,
+        "courseItems": [
+          {
+            "description": "3 weeks Morning General 11/07/2022 - 29/07/2022",
+            "weeks": 3,
+            "hoursPerWeek": 15,
+            "amount": 495,
+            "discount": 0,
+            "commission": 148.5,
+            "nadc": 346.5,
+            "courseType": "morning"
+          }
+        ]
+      },
+      {
+        "bookingId": 34222,
+        "studentId": "23712",
+        "studentName": "Leyre Ozcoidi",
+        "invoice": "D2022015",
+        "invoiceDate": "2022-01-07",
+        "studentType": "direct",
+        "weeks": 20,
+        "totalHours": 300,
+        "amountOriginal": 2800,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 2800,
+        "ratePerHour": 9.333333333333334,
+        "courseItems": [
+          {
+            "description": "20 weeks Morning General 17/01/2022 - 03/06/2022",
+            "weeks": 20,
+            "hoursPerWeek": 15,
+            "amount": 2800,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 2800,
+            "courseType": "morning"
+          }
+        ]
+      }
+    ],
+    "afternoon": [
+      {
+        "bookingId": 33377,
+        "studentId": "23426",
+        "studentName": "Juliana Feliciano de Almeida",
+        "invoice": "D2021029",
+        "invoiceDate": "2021-03-29",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 15,
+        "amountOriginal": 65,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 65,
+        "ratePerHour": 4.333333333333333,
+        "courseItems": [
+          {
+            "description": "1 week Afternoon General 29/03/2021 - 02/04/2021 ONLINE PRICE 4-DAY WEEK",
+            "weeks": 1,
+            "hoursPerWeek": 15,
+            "amount": 65,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 65,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 33381,
+        "studentId": "21591",
+        "studentName": "Irina Shmytova",
+        "invoice": "D2021017",
+        "invoiceDate": "2021-02-10",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1625,
+        "discount": 325,
+        "commission": 0,
+        "courseFeeNADC": 1300,
+        "ratePerHour": 3.466666666666667,
+        "courseItems": [
+          {
+            "description": "25 weeks ULearn Renewal AFT 22/02/2021 - 13/08/2021",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 1625,
+            "discount": 325,
+            "commission": 0,
+            "nadc": 1300,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 33382,
+        "studentId": "23430",
+        "studentName": "Indira Laksmi Briones Sanchez",
+        "invoice": "D2021020",
+        "invoiceDate": "2021-02-16",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1200,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 1200,
+        "ratePerHour": 3.2,
+        "courseItems": [
+          {
+            "description": "25 weeks ULearn Renewal AFT 22/02/2021 - 13/08/2021",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 1200,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 1200,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 33439,
+        "studentId": "23364",
+        "studentName": "Pricilla Ferreira Mezzotero",
+        "invoice": "D2021035",
+        "invoiceDate": "2021-06-11",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 900,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 900,
+        "ratePerHour": 2.4,
+        "courseItems": [
+          {
+            "description": "25 weeks ULearn Renewal AFT 31/05/2021 - end September 2021)",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 900,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 900,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 33476,
+        "studentId": "23514",
+        "studentName": "Xavier Marcin",
+        "invoice": "D2021099",
+        "invoiceDate": "2021-11-17",
+        "studentType": "direct",
+        "weeks": 2,
+        "totalHours": 30,
+        "amountOriginal": 260,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 260,
+        "ratePerHour": 8.666666666666666,
+        "courseItems": [
+          {
+            "description": "2 weeks Morning General 06/12/2021 - 17/12/2021 at Afternoon Price",
+            "weeks": 2,
+            "hoursPerWeek": 15,
+            "amount": 260,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 260,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 33525,
+        "studentId": "23558",
+        "studentName": "Mathis Fontaine",
+        "invoice": "D2021058",
+        "invoiceDate": "2021-09-16",
+        "studentType": "agent",
+        "weeks": 11,
+        "totalHours": 330,
+        "amountOriginal": 2177,
+        "discount": 0,
+        "commission": 653.1,
+        "courseFeeNADC": 1523.9,
+        "ratePerHour": 4.617878787878788,
+        "courseItems": [
+          {
+            "description": "10 weeks Morning General Plus 03/01/2022 - 11/03/2022",
+            "weeks": 5,
+            "hoursPerWeek": 30,
+            "amount": 875,
+            "discount": 0,
+            "commission": 262.5,
+            "nadc": 612.5,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          },
+          {
+            "description": "12 weeks Intensive General 30 27/09/2021 - 17/12/2021",
+            "weeks": 6,
+            "hoursPerWeek": 30,
+            "amount": 1302,
+            "discount": 0,
+            "commission": 390.6,
+            "nadc": 911.4,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34088,
+        "studentId": "23590",
+        "studentName": "Jireh Diaz",
+        "invoice": "D2021101",
+        "invoiceDate": "2021-11-17",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 2425,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 2425,
+        "ratePerHour": 6.466666666666667,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Afternoon 03/01/2022 - 24/06/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 2425,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 2425,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34096,
+        "studentId": "23598",
+        "studentName": "Egshiglen Dashdondog",
+        "invoice": "D2021080",
+        "invoiceDate": "2021-10-15",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 2425,
+        "discount": 0,
+        "commission": 485,
+        "courseFeeNADC": 1940,
+        "ratePerHour": 5.173333333333333,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Afternoon 03/01/2022 - 24/06/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 2425,
+            "discount": 0,
+            "commission": 485,
+            "nadc": 1940,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34116,
+        "studentId": "23617",
+        "studentName": "Sakura Annen",
+        "invoice": "D2021074",
+        "invoiceDate": "2021-10-14",
+        "studentType": "agent",
+        "weeks": 8,
+        "totalHours": 120,
+        "amountOriginal": 912,
+        "discount": 0,
+        "commission": 273.6,
+        "courseFeeNADC": 638.4,
+        "ratePerHour": 5.319999999999999,
+        "courseItems": [
+          {
+            "description": "4 weeks Afternoon General 03/01/2022 - 28/01/2022",
+            "weeks": 4,
+            "hoursPerWeek": 15,
+            "amount": 456,
+            "discount": 0,
+            "commission": 136.8,
+            "nadc": 319.2,
+            "courseType": "afternoon"
+          },
+          {
+            "description": "4 weeks Afternoon General 22/11/2021 - 17/12/2021",
+            "weeks": 4,
+            "hoursPerWeek": 15,
+            "amount": 456,
+            "discount": 0,
+            "commission": 136.8,
+            "nadc": 319.2,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34118,
+        "studentId": "23619",
+        "studentName": "Julia Davydova",
+        "invoice": "D2021081",
+        "invoiceDate": "2021-10-19",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 30,
+        "amountOriginal": 255,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 255,
+        "ratePerHour": 8.5,
+        "courseItems": [
+          {
+            "description": "2 weeks Intensive General 30 25/10/2021 - 05/11/2021",
+            "weeks": 1,
+            "hoursPerWeek": 30,
+            "amount": 255,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 255,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34122,
+        "studentId": "23623",
+        "studentName": "Iman Bangoli",
+        "invoice": "D2021086",
+        "invoiceDate": "2021-10-26",
+        "studentType": "direct",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 1625,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 1625,
+        "ratePerHour": 4.333333333333333,
+        "courseItems": [
+          {
+            "description": "8 weeks Academic Year Renewal Afternoon 25/10/2021 - 17/12/2021",
+            "weeks": 8,
+            "hoursPerWeek": 15,
+            "amount": 520,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 520,
+            "courseType": "afternoon"
+          },
+          {
+            "description": "17 weeks Academic Year Renewal Afternoon 03/01/2022 - 29/04/2022",
+            "weeks": 17,
+            "hoursPerWeek": 15,
+            "amount": 1105,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 1105,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34136,
+        "studentId": "23635",
+        "studentName": "Oyunbold Bayarbaatar",
+        "invoice": "D2021094",
+        "invoiceDate": "2021-11-10",
+        "studentType": "agent",
+        "weeks": 25,
+        "totalHours": 375,
+        "amountOriginal": 2425,
+        "discount": 0,
+        "commission": 485,
+        "courseFeeNADC": 1940,
+        "ratePerHour": 5.173333333333333,
+        "courseItems": [
+          {
+            "description": "25 weeks Academic Year Afternoon 24/01/2022 - 15/07/2022",
+            "weeks": 25,
+            "hoursPerWeek": 15,
+            "amount": 2425,
+            "discount": 0,
+            "commission": 485,
+            "nadc": 1940,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34153,
+        "studentId": "23650",
+        "studentName": "Daiki Miyaji",
+        "invoice": "D2022010",
+        "invoiceDate": "2022-01-05",
+        "studentType": "agent",
+        "weeks": 7,
+        "totalHours": 105,
+        "amountOriginal": 819,
+        "discount": 0,
+        "commission": 245.7,
+        "courseFeeNADC": 573.3,
+        "ratePerHour": 5.46,
+        "courseItems": [
+          {
+            "description": "7 weeks Afternoon General 10/01/2022 - 25/02/2022",
+            "weeks": 7,
+            "hoursPerWeek": 15,
+            "amount": 819,
+            "discount": 0,
+            "commission": 245.7,
+            "nadc": 573.3,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34155,
+        "studentId": "23651",
+        "studentName": "Maryana De Oliveira Camillo",
+        "invoice": "D2022397",
+        "invoiceDate": "2022-08-29",
+        "studentType": "agent",
+        "weeks": 12,
+        "totalHours": 180,
+        "amountOriginal": 360,
+        "discount": 0,
+        "commission": 90,
+        "courseFeeNADC": 270,
+        "ratePerHour": 1.5,
+        "courseItems": [
+          {
+            "description": "12 weeks +5 Hours 26/09/2022 - 16/12/2022",
+            "weeks": 12,
+            "hoursPerWeek": 15,
+            "amount": 360,
+            "discount": 0,
+            "commission": 90,
+            "nadc": 270,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34161,
+        "studentId": "23657",
+        "studentName": "Yuka Fujiwara",
+        "invoice": "D2022011",
+        "invoiceDate": "2022-01-05",
+        "studentType": "agent",
+        "weeks": 12,
+        "totalHours": 180,
+        "amountOriginal": 1332,
+        "discount": 0,
+        "commission": 399.6,
+        "courseFeeNADC": 932.4,
+        "ratePerHour": 5.18,
+        "courseItems": [
+          {
+            "description": "12 weeks Afternoon General 31/01/2022 - 22/04/2022",
+            "weeks": 12,
+            "hoursPerWeek": 15,
+            "amount": 1332,
+            "discount": 0,
+            "commission": 399.6,
+            "nadc": 932.4,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34170,
+        "studentId": "23668",
+        "studentName": "Emma Martini",
+        "invoice": "D2021113",
+        "invoiceDate": "2021-12-10",
+        "studentType": "direct",
+        "weeks": 1,
+        "totalHours": 20,
+        "amountOriginal": 40,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 40,
+        "ratePerHour": 2,
+        "courseItems": [
+          {
+            "description": "1 week ULearn Excursion 11/12/2021 - 11/12/2021",
+            "weeks": 1,
+            "hoursPerWeek": 20,
+            "amount": 40,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 40,
+            "courseType": "afternoon"
+          }
+        ]
+      },
+      {
+        "bookingId": 34191,
+        "studentId": "23683",
+        "studentName": "Dinnat Elise",
+        "invoice": "D2022053",
+        "invoiceDate": "2022-03-09",
+        "studentType": "direct",
+        "weeks": 0.5,
+        "totalHours": 15,
+        "amountOriginal": 127.5,
+        "discount": 0,
+        "commission": 0,
+        "courseFeeNADC": 127.5,
+        "ratePerHour": 8.5,
+        "courseItems": [
+          {
+            "description": "1 Week Intensive General 30 16/05/2022 - 20/05/2022",
+            "weeks": 0.5,
+            "hoursPerWeek": 30,
+            "amount": 127.5,
+            "discount": 0,
+            "commission": 0,
+            "nadc": 127.5,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34197,
+        "studentId": "23687",
+        "studentName": "Cassandre Basire",
+        "invoice": "D2022046",
+        "invoiceDate": "2022-02-28",
+        "studentType": "direct",
+        "weeks": 2.5,
+        "totalHours": 75,
+        "amountOriginal": 637.5,
+        "discount": 63.75,
+        "commission": 0,
+        "courseFeeNADC": 573.75,
+        "ratePerHour": 7.65,
+        "courseItems": [
+          {
+            "description": "5 weeks Intensive General 30 24/01/2022 - 25/02/2022",
+            "weeks": 2.5,
+            "hoursPerWeek": 30,
+            "amount": 637.5,
+            "discount": 63.75,
+            "commission": 0,
+            "nadc": 573.75,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      },
+      {
+        "bookingId": 34218,
+        "studentId": "23708",
+        "studentName": "Valentin Mahe",
+        "invoice": "D2021117",
+        "invoiceDate": "2021-12-22",
+        "studentType": "direct",
+        "weeks": 3,
+        "totalHours": 90,
+        "amountOriginal": 690,
+        "discount": 138,
+        "commission": 0,
+        "courseFeeNADC": 552,
+        "ratePerHour": 6.133333333333334,
+        "courseItems": [
+          {
+            "description": "6 weeks Intensive General 30 10/01/2022 - 18/02/2022",
+            "weeks": 3,
+            "hoursPerWeek": 30,
+            "amount": 690,
+            "discount": 138,
+            "commission": 0,
+            "nadc": 552,
+            "courseType": "both",
+            "note": "Split 50/50 from GE30/Intensive"
+          }
+        ]
+      }
+    ],
+    "accommodation": [
+      {
+        "bookingId": 33376,
+        "studentId": "23425",
+        "studentName": "Maelle Hermelin",
+        "invoice": "D2021072",
+        "invoiceDate": "2021-10-12",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Su 12/09/2021 12:00)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "22 weeks Apartment (APT-STNDRD/Self catering) 16/10/2021 - 19/03/2022",
+            "amount": 5170,
+            "nadc": 5170
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 0
+          }
+        ],
+        "totalNADC": 5250
+      },
+      {
+        "bookingId": 33378,
+        "studentId": "23427",
+        "studentName": "Celia Delcey",
+        "invoice": "D2021027",
+        "invoiceDate": "2021-03-26",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "12 weeks Apartment (APT-STNDRD / Self catering) 04/04/2021 - 27/06/2021",
+            "amount": 2520,
+            "nadc": 2520
+          }
+        ],
+        "totalNADC": 2585
+      },
+      {
+        "bookingId": 33386,
+        "studentId": "23432",
+        "studentName": "Pauline Garrot",
+        "invoice": "D2021061",
+        "invoiceDate": "2021-09-16",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Arrival: DUBLIN PORT - Accommodation (Sa 18/09/2021 10:45)",
+            "amount": 80,
+            "nadc": 80
+          }
+        ],
+        "totalNADC": 80
+      },
+      {
+        "bookingId": 33391,
+        "studentId": "23435",
+        "studentName": "Lucie Veylon",
+        "invoice": "D2021083",
+        "invoiceDate": "2021-10-21",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "22 weeks Apartment (APT-STNDRD/Self catering) 24/10/2021 - 27/03/2022",
+            "amount": 5170,
+            "nadc": 5170
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 0
+          }
+        ],
+        "totalNADC": 5170
+      },
+      {
+        "bookingId": 33396,
+        "studentId": "23438",
+        "studentName": "Antoine Moreau",
+        "invoice": "D2021037",
+        "invoiceDate": "2021-07-06",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "21 weeks Apartment (Shared Room/Self catering) 18/07/2021 - 12/12/2021",
+            "amount": 3465,
+            "nadc": 3465
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 3530
+      },
+      {
+        "bookingId": 33397,
+        "studentId": "23439",
+        "studentName": "Louis Mannerie",
+        "invoice": "D2021036",
+        "invoiceDate": "2021-07-06",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "21 weeks Apartment (Shared Room/Self catering) 18/07/2021 - 12/12/2021",
+            "amount": 3465,
+            "nadc": 3465
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 3530
+      },
+      {
+        "bookingId": 33425,
+        "studentId": "23465",
+        "studentName": "Sabine Borgialli",
+        "invoice": "D2021100",
+        "invoiceDate": "2021-11-17",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Su 20/11/2022)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "Accommodation Placement fee (Host Family / Individual room / Half-board)",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 145
+      },
+      {
+        "bookingId": 33464,
+        "studentId": "23502",
+        "studentName": "Gerburg Kamm",
+        "invoice": "D2021039",
+        "invoiceDate": "2021-07-26",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "4 weeks Apartment (APT-PRM-SNGL/Self catering) 21/07/2021 - 18/08/2021",
+            "amount": 1000,
+            "nadc": 1000
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 1065
+      },
+      {
+        "bookingId": 33476,
+        "studentId": "23514",
+        "studentName": "Xavier Marcin",
+        "invoice": "D2021099",
+        "invoiceDate": "2021-11-17",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 04/12/2021 - 18/12/2021",
+            "amount": 530,
+            "nadc": 530
+          }
+        ],
+        "totalNADC": 530
+      },
+      {
+        "bookingId": 33484,
+        "studentId": "23522",
+        "studentName": "Ana Bodes Fernandez",
+        "invoice": "D2021084",
+        "invoiceDate": "2021-10-21",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "7 weeks Apartment (APT-PRM-SNGL/Self catering) 23/10/2021 - 11/12/2021",
+            "amount": 1645,
+            "nadc": 1645
+          }
+        ],
+        "totalNADC": 1645
+      },
+      {
+        "bookingId": 33492,
+        "studentId": "23530",
+        "studentName": "Louis Pailhé",
+        "invoice": "D2022003",
+        "invoiceDate": "2022-01-03",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "18 weeks Apartment (APT-PRM-SNGL/Self catering) 08/01/2022 - 14/05/2022",
+            "amount": 4500,
+            "nadc": 4500
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 4565
+      },
+      {
+        "bookingId": 33501,
+        "studentId": "14956",
+        "studentName": "Pietro Sardanelli",
+        "invoice": "D2022021",
+        "invoiceDate": "2022-01-14",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "3 weeks Apartment (APT-PRM-SNGL/Self catering) 19/12/2021 - 09/01/2022",
+            "amount": 810,
+            "nadc": 810
+          }
+        ],
+        "totalNADC": 810
+      },
+      {
+        "bookingId": 33503,
+        "studentId": "23540",
+        "studentName": "Francois Butty",
+        "invoice": "D2021047",
+        "invoiceDate": "2021-08-27",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "3 weeks Apartment (APT-PRM-SNGL/Self catering) 11/09/2021 - 02/10/2021",
+            "amount": 795,
+            "nadc": 795
+          },
+          {
+            "description": "Accommodation Placement fee (Apartment / APT-PRM-SNGL / Self catering)",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "4 weeks Apartment (APT-PRM-SNGL/Self catering) 16/10/2021 - 13/11/2021",
+            "amount": 1060,
+            "nadc": 1060
+          }
+        ],
+        "totalNADC": 1920
+      },
+      {
+        "bookingId": 33514,
+        "studentId": "23550",
+        "studentName": "Victoria Kalfon",
+        "invoice": "D2021054",
+        "invoiceDate": "2021-09-16",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Sa 18/09/2021)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 145
+      },
+      {
+        "bookingId": 33525,
+        "studentId": "23558",
+        "studentName": "Mathis Fontaine",
+        "invoice": "D2021058",
+        "invoiceDate": "2021-09-16",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 65
+      },
+      {
+        "bookingId": 33526,
+        "studentId": "23561",
+        "studentName": "Silvia Bucciol",
+        "invoice": "D2021065",
+        "invoiceDate": "2021-09-28",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 65
+      },
+      {
+        "bookingId": 34082,
+        "studentId": "23585",
+        "studentName": "Louise Moreau",
+        "invoice": "D2022006",
+        "invoiceDate": "2022-01-04",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "15 weeks Apartment (APT-PRM-SNGL/Self catering) 09/01/2022 - 24/04/2022",
+            "amount": 4275,
+            "nadc": 4275
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 4340
+      },
+      {
+        "bookingId": 34086,
+        "studentId": "22289",
+        "studentName": "Arantza Aguilar Ibarzo",
+        "invoice": "D2021071",
+        "invoiceDate": "2021-10-11",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "1 week Apartment (APT-STNDRD/Self catering) 30/10/2021 - 06/11/2021",
+            "amount": 210,
+            "nadc": 210
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 275
+      },
+      {
+        "bookingId": 34087,
+        "studentId": "23589",
+        "studentName": "Ophelie Ferreira",
+        "invoice": "D2022005",
+        "invoiceDate": "2022-01-04",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "15 weeks Apartment (APT-PRM-SNGL/Self catering) 09/01/2022 - 24/04/2022",
+            "amount": 4275,
+            "nadc": 4275
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 4340
+      },
+      {
+        "bookingId": 34101,
+        "studentId": "23603",
+        "studentName": "Clarisse Blanc",
+        "invoice": "D2021066",
+        "invoiceDate": "2021-10-05",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Sa 09/10/2021)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 145
+      },
+      {
+        "bookingId": 34113,
+        "studentId": "23615",
+        "studentName": "Chingis Dondogdorj",
+        "invoice": "D2021119",
+        "invoiceDate": "2021-12-24",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 15/01/2022 - 29/01/2022",
+            "amount": 600,
+            "nadc": 600
+          }
+        ],
+        "totalNADC": 665
+      },
+      {
+        "bookingId": 34115,
+        "studentId": "22390",
+        "studentName": "Bayarbaatar Lkhagvasuren",
+        "invoice": "D2021118",
+        "invoiceDate": "2021-12-24",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Accommodation Placement fee (Host Family / Individual room / Half-board)",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "1 week Apartment (APT-PRM-SNGL/Self catering) 08/01/2022 - 15/01/2022",
+            "amount": 300,
+            "nadc": 300
+          }
+        ],
+        "totalNADC": 365
+      },
+      {
+        "bookingId": 34118,
+        "studentId": "23619",
+        "studentName": "Julia Davydova",
+        "invoice": "D2021081",
+        "invoiceDate": "2021-10-19",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Accommodation Placement fee (Apartment / APT-SUPR-SNGL / Self catering)",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "1 week Apartment (APT-SUPR-SNGL/Self catering) 23/10/2021 - 30/10/2021",
+            "amount": 230,
+            "nadc": 230
+          },
+          {
+            "description": "Arrival: Airport - Accommodation (Su 24/10/2021 17:20)",
+            "amount": 80,
+            "nadc": 80
+          }
+        ],
+        "totalNADC": 375
+      },
+      {
+        "bookingId": 34119,
+        "studentId": "23620",
+        "studentName": "Lea Bagnis",
+        "invoice": "D2021088",
+        "invoiceDate": "2021-10-27",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 65
+      },
+      {
+        "bookingId": 34125,
+        "studentId": "23626",
+        "studentName": "Enzo Delieuze",
+        "invoice": "D2022004",
+        "invoiceDate": "2022-01-04",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Su 09/01/2022)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "18 weeks Apartment (APT-PRM-SNGL/Self catering) 09/01/2022 - 15/05/2022",
+            "amount": 4950,
+            "nadc": 4950
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 0
+          }
+        ],
+        "totalNADC": 5030
+      },
+      {
+        "bookingId": 34126,
+        "studentId": "23627",
+        "studentName": "Lina Mortajine",
+        "invoice": "D2021093",
+        "invoiceDate": "2021-11-10",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Sa 13/11/2021)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 145
+      },
+      {
+        "bookingId": 34133,
+        "studentId": "23632",
+        "studentName": "Camille Lariviere",
+        "invoice": "D2022410",
+        "invoiceDate": "2022-09-07",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Su 11/09/2022)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "22 weeks Apartment (APT-PRM-SNGL/Self catering) 08/10/2022 - 11/03/2023",
+            "amount": 6600,
+            "nadc": 6600
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 6745
+      },
+      {
+        "bookingId": 34143,
+        "studentId": "23642",
+        "studentName": "Thaïs Henault",
+        "invoice": "D2022047",
+        "invoiceDate": "2022-03-02",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Su 06/03/2022)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "15 weeks Apartment (APT-PRM-SNGL/Self catering) 06/03/2022 - 19/06/2022",
+            "amount": 3525,
+            "nadc": 3525
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 3670
+      },
+      {
+        "bookingId": 34156,
+        "studentId": "23652",
+        "studentName": "Rocio Santos Buitrago",
+        "invoice": "D2021102",
+        "invoiceDate": "2021-11-17",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "12 weeks Apartment (APT-STNDRD/Self catering) 20/11/2021 - 12/02/2022",
+            "amount": 2520,
+            "nadc": 2520
+          }
+        ],
+        "totalNADC": 2585
+      },
+      {
+        "bookingId": 34166,
+        "studentId": "23662",
+        "studentName": "Bruna Suelen Pereira Gomes",
+        "invoice": "D2022165",
+        "invoiceDate": "2022-05-13",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "1 additional night (Apartment / Shared Room / Self catering: 14/05/2022 - 15/05/2022)",
+            "amount": 37.5,
+            "nadc": 37.5
+          }
+        ],
+        "totalNADC": 37.5
+      },
+      {
+        "bookingId": 34167,
+        "studentId": "23663",
+        "studentName": "Hudson Pereira Gomes",
+        "invoice": "D2022164",
+        "invoiceDate": "2022-05-13",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "1 additional night (Apartment / Shared Room / Self catering: 14/05/2022 - 15/05/2022)",
+            "amount": 37.5,
+            "nadc": 37.5
+          }
+        ],
+        "totalNADC": 37.5
+      },
+      {
+        "bookingId": 34176,
+        "studentId": "23670",
+        "studentName": "Cristiane Luuz",
+        "invoice": "D2023128",
+        "invoiceDate": "2023-02-28",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Sa 06/08/2022)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 145
+      },
+      {
+        "bookingId": 34178,
+        "studentId": "23672",
+        "studentName": "Uyara Regia Pereira Gomes Vieitez",
+        "invoice": "D2022055",
+        "invoiceDate": "2022-03-11",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "9 weeks Apartment (Shared Room/Self catering) 12/03/2022 - 14/05/2022",
+            "amount": 1665,
+            "nadc": 1665
+          }
+        ],
+        "totalNADC": 1730
+      },
+      {
+        "bookingId": 34179,
+        "studentId": "23673",
+        "studentName": "Juan Vieitez Vazquez de Freitas",
+        "invoice": "D2022056",
+        "invoiceDate": "2022-03-11",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "9 weeks Apartment (Shared Room/Self catering) 12/03/2022 - 14/05/2022",
+            "amount": 1665,
+            "nadc": 1665
+          }
+        ],
+        "totalNADC": 1730
+      },
+      {
+        "bookingId": 34192,
+        "studentId": "22948",
+        "studentName": "Odile Bruyere",
+        "invoice": "D2022008",
+        "invoiceDate": "2022-01-04",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "3 weeks Apartment (APT-PRM-SNGL/Self catering) 18/12/2021 - 08/01/2022",
+            "amount": 750,
+            "nadc": 750
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          },
+          {
+            "description": "Departure: Accommodation - Airport (Su 09/01/2022)",
+            "amount": 80,
+            "nadc": 80
+          }
+        ],
+        "totalNADC": 895
+      },
+      {
+        "bookingId": 34202,
+        "studentId": "23692",
+        "studentName": "Julie Dalbin",
+        "invoice": "D2022014",
+        "invoiceDate": "2022-01-07",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Arrival: Airport - Accommodation (Sa 15/01/2022)",
+            "amount": 80,
+            "nadc": 80
+          },
+          {
+            "description": "12 weeks Apartment (APT-PRM-SNGL/Self catering) 15/01/2022 - 09/04/2022",
+            "amount": 3420,
+            "nadc": 3420
+          },
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 0
+          }
+        ],
+        "totalNADC": 3500
+      },
+      {
+        "bookingId": 34213,
+        "studentId": "23703",
+        "studentName": "Bataa Zorigoo",
+        "invoice": "D2022002",
+        "invoiceDate": "2022-01-03",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 65
+      },
+      {
+        "bookingId": 34216,
+        "studentId": "23706",
+        "studentName": "Andre Agner Da Luz Siben",
+        "invoice": "D2023107",
+        "invoiceDate": "2023-02-17",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 65
+      },
+      {
+        "bookingId": 34218,
+        "studentId": "23708",
+        "studentName": "Valentin Mahe",
+        "invoice": "D2021117",
+        "invoiceDate": "2021-12-22",
+        "studentType": "direct",
+        "items": [
+          {
+            "description": "6 weeks Apartment (APT-PRM-SNGL/Self catering) 08/01/2022 - 19/02/2022",
+            "amount": 1800,
+            "nadc": 1800
+          }
+        ],
+        "totalNADC": 1800
+      },
+      {
+        "bookingId": 34221,
+        "studentId": "23711",
+        "studentName": "Jules Bouqueneur-Bauer",
+        "invoice": "D2022299",
+        "invoiceDate": "2022-07-01",
+        "studentType": "agent",
+        "items": [
+          {
+            "description": "Accommodation Placement fee",
+            "amount": 65,
+            "nadc": 65
+          }
+        ],
+        "totalNADC": 65
+      }
+    ]
+  }
+}

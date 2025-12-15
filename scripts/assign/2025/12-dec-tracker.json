@@ -4,7 +4,7 @@
     "month": 12,
     "monthName": "dec",
     "created": "2025-12-01T11:07:57.802Z",
-    "lastUpdated": "2025-12-09T12:38:58.782Z"
+    "lastUpdated": "2025-12-10T12:37:42.193Z"
   },
   "transactions": {
     "boi": [
@@ -232,17 +232,32 @@
         "addedAt": "2025-12-09T06:30:22.264Z",
         "lastUpdated": "2025-12-09T12:38:58.782Z",
         "notes": "Payment already assigned - skipped"
+      },
+      {
+        "id": "ee2bc0544bf545b0ba02944117c53760",
+        "source": "boi",
+        "amount": 904,
+        "date": "9 Dec 2025",
+        "description": "x2 ULearn Ltd.     SP",
+        "reference": "931",
+        "assignStatus": "review",
+        "fideloPaymentId": null,
+        "fideloStudentId": null,
+        "fideloInvoice": null,
+        "addedAt": "2025-12-10T12:37:11.025Z",
+        "lastUpdated": "2025-12-10T12:37:42.192Z",
+        "notes": null
       }
     ],
     "stripe": [],
     "revolut": []
   },
   "stats": {
-    "total": 15,
+    "total": 16,
     "unprocessed": 0,
     "assigned": 0,
     "duplicate": 9,
-    "review": 6,
+    "review": 7,
     "failed": 0
   }
 }

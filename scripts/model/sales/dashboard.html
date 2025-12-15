@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales | Acquisition & Profit | CAC LTV CCC</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="b2b-cac-data.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .filters {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-group label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        select, input {
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            background: white;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .summary-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .summary-card h3 {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .summary-card .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .summary-card .subtitle {
+            font-size: 11px;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        .summary-card.green .value {
+            color: #38a169;
+        }
+
+        .summary-card.red .value {
+            color: #e53e3e;
+        }
+
+        .summary-card.orange .value {
+            color: #dd6b20;
+        }
+
+        .dashboard {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th {
+            padding: 12px 10px;
+            text-align: right;
+            font-weight: 600;
+            white-space: nowrap;
+            font-size: 11px;
+        }
+
+        th:first-child {
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+        }
+
+        td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        .total-row:hover {
+            background-color: #8b9cec !important;
+        }
+
+        .total-row:hover td {
+            color: #000 !important;
+        }
+
+        .currency {
+            color: #2d3748;
+        }
+
+        .positive {
+            color: #38a169;
+        }
+
+        .negative {
+            color: #e53e3e;
+        }
+
+        .ratio {
+            color: #805ad5;
+            font-weight: 600;
+        }
+
+        .subtotal-row {
+            background: #f8f9ff;
+            font-weight: 600;
+        }
+
+        .total-row {
+            background: #667eea;
+            color: white;
+            font-weight: 700;
+        }
+
+        .total-row td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function Dashboard() {
+            const [sessionType, setSessionType] = useState('morning');
+            const [averageMonths, setAverageMonths] = useState(3);
+            const [selectedYear, setSelectedYear] = useState('2025');
+
+            // Data by year
+            const data2024 = [
+                { month: 'JAN', ads: 4970.50, software: 1305.00, salaries: 2257.23 + 0, commissions: 179, salesWon: 41 },
+                { month: 'FEB', ads: 2760.35, software: 1490.39, salaries: 2347.01 + 533.70, commissions: 374.90, salesWon: 31 },
+                { month: 'MAR', ads: 3890.27, software: 1344.18, salaries: 2322.95 + 1410, commissions: 273.55, salesWon: 33 },
+                { month: 'APR', ads: 3943.97, software: 1725.37, salaries: 2309.62 + 1300, commissions: 498.38, salesWon: 36 },
+                { month: 'MAY', ads: 3274.44, software: 1249.89, salaries: 3472.43 + 1500, commissions: 357.60, salesWon: 55 },
+                { month: 'JUN', ads: 3217.18, software: 2229.40, salaries: 2373.54 + 1200, commissions: 565.33, salesWon: 45 },
+                { month: 'JUL', ads: 4936.44, software: 1521.55, salaries: 2796.17 + 1200, commissions: 350.78, salesWon: 48 },
+                { month: 'AUG', ads: 3513.75, software: 973.81, salaries: 2374.07 + 1500, commissions: 535.15, salesWon: 31 },
+                { month: 'SEP', ads: 4080.55, software: 1495.90, salaries: 2447.00 + 1380, commissions: 284.64, salesWon: 29 },
+                { month: 'OCT', ads: 4453.91, software: 1926.37, salaries: 2517.98 + 1200, commissions: 266.18, salesWon: 20 },
+                { month: 'NOV', ads: 3694.39, software: 888.12, salaries: 2695.93 + 1500, commissions: 178.63, salesWon: 31 },
+                { month: 'DEC', ads: 3350.61, software: 1308.99, salaries: 2007.82 + 0, commissions: 431.26, salesWon: 0 }
+            ];
+
+            // 2025 data - Google Ads from actual Google Ads platform
+            // Software costs estimated at €1,300/month, Salaries = Sara only (Diego ended), Commissions/SalesWon TBD
+            const data2025 = [
+                { month: 'JAN', ads: 5273.76, software: 1300, salaries: 1500, commissions: 0, salesWon: 0 },
+                { month: 'FEB', ads: 5135.00, software: 1300, salaries: 1500, commissions: 0, salesWon: 0 },
+                { month: 'MAR', ads: 4787.00, software: 1300, salaries: 0, commissions: 0, salesWon: 0 },
+                { month: 'APR', ads: 4740.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
+                { month: 'MAY', ads: 5012.00, software: 1300, salaries: 2805.35, commissions: 0, salesWon: 0 },
+                { month: 'JUN', ads: 4635.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
+                { month: 'JUL', ads: 4504.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
+                { month: 'AUG', ads: 3317.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
+                { month: 'SEP', ads: 5499.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
+                { month: 'OCT', ads: 6388.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
+                { month: 'NOV', ads: 5369.00, software: 1300, salaries: 0, commissions: 0, salesWon: 0 },
+                { month: 'DEC', ads: 0, software: 1300, salaries: 0, commissions: 0, salesWon: 0 }
+            ];
+
+            // Select data based on year
+            const monthlyData = selectedYear === '2024' ? data2024 : data2025;
+
+            // Calculate metrics
+            const results = calculateMetrics(monthlyData, sessionType, averageMonths);
+
+            const formatCurrency = (value) => {
+                return '€' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            };
+
+            const formatRatio = (value) => {
+                return value.toFixed(2) + ':1';
+            };
+
+            const formatPercent = (value) => {
+                return value.toFixed(1) + '%';
+            };
+
+            return (
+                <div className="container">
+                    <div className="header">
+                        <h1>Sales | Acquisition & Profit | CAC LTV CCC</h1>
+                        <p>Customer acquisition metrics, lifetime value, and unit economics</p>
+                    </div>
+
+                    <div className="filters">
+                        <div className="filter-group">
+                            <label>Year</label>
+                            <select value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                            </select>
+                        </div>
+                        <div className="filter-group">
+                            <label>Session Type</label>
+                            <select value={sessionType} onChange={(e) => setSessionType(e.target.value)}>
+                                <option value="morning">Morning Session (€7/hr)</option>
+                                <option value="afternoon">Afternoon Session (€6/hr)</option>
+                            </select>
+                        </div>
+                        <div className="filter-group">
+                            <label>Avg. Customer Lifetime (Months)</label>
+                            <input
+                                type="number"
+                                value={averageMonths}
+                                onChange={(e) => setAverageMonths(parseInt(e.target.value) || 1)}
+                                min="1"
+                                max="24"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="summary-cards">
+                        <div className="summary-card">
+                            <h3>Avg CAC/Customer</h3>
+                            <div className="value">{formatCurrency(results.totals.avgCACPerCustomer)}</div>
+                            <div className="subtitle">Fully Loaded</div>
+                        </div>
+                        <div className="summary-card green">
+                            <h3>Lifetime Value</h3>
+                            <div className="value">{formatCurrency(results.totals.ltv)}</div>
+                            <div className="subtitle">{averageMonths} months average</div>
+                        </div>
+                        <div className="summary-card orange">
+                            <h3>LTV:CAC Ratio</h3>
+                            <div className="value">{formatRatio(results.totals.avgLTVtoCAC)}</div>
+                            <div className="subtitle">Target: 3:1 or higher</div>
+                        </div>
+                        <div className="summary-card green">
+                            <h3>Gross Margin</h3>
+                            <div className="value">{formatPercent(results.totals.grossMargin)}</div>
+                            <div className="subtitle">{formatCurrency(results.totals.grossProfit)} per student</div>
+                        </div>
+                        <div className="summary-card">
+                            <h3>Total Sales</h3>
+                            <div className="value">{results.totals.salesWon}</div>
+                            <div className="subtitle">Students won</div>
+                        </div>
+                        <div className="summary-card">
+                            <h3>Media CAC</h3>
+                            <div className="value">{formatCurrency(results.totals.mediaCAC)}</div>
+                            <div className="subtitle">Ads + Software only</div>
+                        </div>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="section-title">B2C - Customer Acquisition Cost</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style={{minWidth: '150px', textAlign: 'left'}}>CAC</th>
+                                    {monthlyData.map(m => <th key={m.month}>{m.month}</th>)}
+                                    <th>TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Ads</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">{formatCurrency(m.ads)}</td>)}
+                                    <td className="currency">{formatCurrency(monthlyData.reduce((s, m) => s + m.ads, 0))}</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Creative</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">€0.00</td>)}
+                                    <td className="currency">€0.00</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Software Subs (HubSpot etc)</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">{formatCurrency(m.software)}</td>)}
+                                    <td className="currency">{formatCurrency(monthlyData.reduce((s, m) => s + m.software, 0))}</td>
+                                </tr>
+                                <tr className="subtotal-row">
+                                    <td style={{textAlign: 'left'}}>Media CAC</td>
+                                    {results.monthly.map((m, idx) => <td key={idx} className="currency">{formatCurrency(m.mediaCAC)}</td>)}
+                                    <td className="currency">{formatCurrency(results.totals.mediaCAC)}</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Salaries</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">{formatCurrency(m.salaries)}</td>)}
+                                    <td className="currency">{formatCurrency(monthlyData.reduce((s, m) => s + m.salaries, 0))}</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Commissions</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">{formatCurrency(m.commissions)}</td>)}
+                                    <td className="currency">{formatCurrency(monthlyData.reduce((s, m) => s + m.commissions, 0))}</td>
+                                </tr>
+                                <tr className="total-row">
+                                    <td style={{textAlign: 'left', color: 'white'}}>Fully Loaded CAC</td>
+                                    {results.monthly.map((m, idx) => <td key={idx} style={{color: 'white'}}>{formatCurrency(m.fullyLoadedCAC)}</td>)}
+                                    <td style={{color: 'white'}}>{formatCurrency(results.totals.fullyLoadedCAC)}</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Sales WON</td>
+                                    {results.monthly.map((m, idx) => <td key={idx}>{m.salesWon}</td>)}
+                                    <td>{results.totals.salesWon}</td>
+                                </tr>
+                                <tr className="subtotal-row">
+                                    <td style={{textAlign: 'left'}}>B2C CAC</td>
+                                    {results.monthly.map((m, idx) => <td key={idx} className="positive">{m.salesWon > 0 ? formatCurrency(m.cacPerCustomer) : '-'}</td>)}
+                                    <td className="positive">{formatCurrency(results.totals.avgCACPerCustomer)}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="section-title">Gross Profit & Cash Conversion Cycle</div>
+                        <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px'}}>
+                            {/* LEFT SIDE - GROSS PROFIT */}
+                            <div>
+                                <table style={{border: '2px solid #ddd'}}>
+                                    <thead>
+                                        <tr>
+                                            <th colSpan="2" style={{textAlign: 'left', background: '#f97316', color: 'white', borderRight: '2px solid #ddd'}}>MORNING SESSION</th>
+                                            <th colSpan="2" style={{textAlign: 'left', background: '#38a169', color: 'white'}}>AFTERNOON SESSION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
+                                            <td className="currency">€7.00</td>
+                                            <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
+                                            <td className="currency">€6.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Hours</td>
+                                            <td>15</td>
+                                            <td style={{textAlign: 'left'}}>Hours</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Weekly Price</td>
+                                            <td className="currency">€105.00</td>
+                                            <td style={{textAlign: 'left'}}>Weekly Price</td>
+                                            <td className="currency">€90.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Monthly Price</td>
+                                            <td className="currency">€420.00</td>
+                                            <td style={{textAlign: 'left'}}>Monthly Price</td>
+                                            <td className="currency">€360.00</td>
+                                        </tr>
+                                        <tr style={{height: '10px'}}><td colSpan="4"></td></tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Teacher</td>
+                                            <td className="currency">€21.00</td>
+                                            <td style={{textAlign: 'left'}}>Teacher</td>
+                                            <td className="currency">€21.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Hours/Week</td>
+                                            <td>15</td>
+                                            <td style={{textAlign: 'left'}}>Hours/Week</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Teacher €/Month</td>
+                                            <td className="negative">€1,260.00</td>
+                                            <td style={{textAlign: 'left'}}>Teacher €/Month</td>
+                                            <td className="negative">€1,260.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Max Students</td>
+                                            <td>15</td>
+                                            <td style={{textAlign: 'left'}}>Max Students</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Cost Per Client</td>
+                                            <td className="negative">€84.00</td>
+                                            <td style={{textAlign: 'left'}}>Cost Per Client</td>
+                                            <td className="negative">€84.00</td>
+                                        </tr>
+                                        <tr style={{height: '10px'}}><td colSpan="4"></td></tr>
+                                        <tr className="total-row">
+                                            <td style={{textAlign: 'left', color: 'white'}}>Gross Profit</td>
+                                            <td style={{color: 'white'}}>€336.00</td>
+                                            <td style={{textAlign: 'left', color: 'white'}}>Gross Profit</td>
+                                            <td style={{color: 'white'}}>€276.00</td>
+                                        </tr>
+                                        <tr className="subtotal-row">
+                                            <td style={{textAlign: 'left'}}>Gross Margin</td>
+                                            <td>80.00%</td>
+                                            <td style={{textAlign: 'left'}}>Gross Margin</td>
+                                            <td>76.67%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            {/* RIGHT SIDE - PAYBACK PERIOD */}
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr style={{background: '#667eea', color: 'white'}}>
+                                            <th colSpan="3" style={{textAlign: 'center'}}>CASH CONVERSION CYCLE (CCC) | "Pay Back Period"</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style={{background: '#f0f0f0'}}>
+                                            <td style={{textAlign: 'left', fontWeight: 'bold'}}>MORNING</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #1</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #2</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Gross Profit</td>
+                                            <td className="positive">€336.00</td>
+                                            <td className="positive">€336.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>CAC</td>
+                                            <td className="negative">{formatCurrency(results.totals.avgCACPerCustomer)}</td>
+                                            <td>€0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Upsell [Anything]</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr className="total-row">
+                                            <td style={{textAlign: 'left', color: 'white'}}>Balance</td>
+                                            <td style={{color: 'white'}}>{formatCurrency(336 - results.totals.avgCACPerCustomer)}</td>
+                                            <td style={{color: 'white'}}>{formatCurrency(336 - results.totals.avgCACPerCustomer + 336)}</td>
+                                        </tr>
+                                        <tr style={{height: '15px'}}><td colSpan="3"></td></tr>
+                                        <tr style={{background: '#f0f0f0'}}>
+                                            <td style={{textAlign: 'left', fontWeight: 'bold'}}>AFTERNOON</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #1</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #2</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Gross Profit</td>
+                                            <td className="positive">€276.00</td>
+                                            <td className="positive">€276.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>CAC</td>
+                                            <td className="negative">{formatCurrency(results.totals.avgCACPerCustomer)}</td>
+                                            <td>€0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Upsell [Anything]</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr className="total-row">
+                                            <td style={{textAlign: 'left', color: 'white'}}>Balance</td>
+                                            <td style={{color: 'white'}}>{formatCurrency(276 - results.totals.avgCACPerCustomer)}</td>
+                                            <td style={{color: 'white'}}>{formatCurrency(276 - results.totals.avgCACPerCustomer + 276)}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="section-title">B2B - Customer Acquisition Cost</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style={{minWidth: '150px', textAlign: 'left'}}>B2B CAC</th>
+                                    {monthlyData.map(m => <th key={m.month}>{m.month}</th>)}
+                                    <th>TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Printing</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">€0.00</td>)}
+                                    <td className="currency">€0.00</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Events</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">€0.00</td>)}
+                                    <td className="currency">€0.00</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Travel & Subsistence</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">€0.00</td>)}
+                                    <td className="currency">€0.00</td>
+                                </tr>
+                                <tr className="total-row">
+                                    <td style={{textAlign: 'left', color: 'white'}}>Prospecting CAC</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} style={{color: 'white'}}>€0.00</td>)}
+                                    <td style={{color: 'white'}}>€0.00</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Partner Commissions</td>
+                                    {[8733.46, 5234.59, 2525.40, 1037.00, 2775.25, 1652.90, 2719.50, 2207.45, 3700.00, 5049.52, 6464.60, 7300.80].map((c, idx) => (
+                                        <td key={idx} className="currency">€{c.toFixed(2)}</td>
+                                    ))}
+                                    <td className="currency">€49,400.47</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Salaries (Cenker)</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">€3,550.00</td>)}
+                                    <td className="currency">€42,600.00</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Salaries (Sara)</td>
+                                    {monthlyData.map((m, idx) => <td key={idx} className="currency">€0.00</td>)}
+                                    <td className="currency">€0.00</td>
+                                </tr>
+                                <tr className="total-row">
+                                    <td style={{textAlign: 'left', color: 'white'}}>Fully Loaded CAC</td>
+                                    {[12283.46, 8784.59, 6075.40, 4587.00, 6325.25, 5202.90, 6269.50, 5757.45, 7248.81, 8599.52, 10014.60, 10850.80].map((c, idx) => (
+                                        <td key={idx} style={{color: 'white'}}>€{c.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                                    ))}
+                                    <td style={{color: 'white'}}>€91,999.28</td>
+                                </tr>
+                                <tr>
+                                    <td style={{textAlign: 'left'}}>Sales WON</td>
+                                    {[21, 11, 7, 5, 4, 5, 10, 8, 7, 11, 16, 14].map((s, idx) => (
+                                        <td key={idx}>{s}</td>
+                                    ))}
+                                    <td>119</td>
+                                </tr>
+                                <tr className="subtotal-row">
+                                    <td style={{textAlign: 'left'}}>B2B CAC</td>
+                                    {[585.02, 798.60, 867.91, 917.40, 1581.31, 1040.58, 626.95, 719.68, 1035.55, 781.77, 625.91, 775.06].map((c, idx) => (
+                                        <td key={idx} className="currency">€{c.toFixed(2)}</td>
+                                    ))}
+                                    <td className="currency">€773.10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="section-title">Gross Profit & Cash Conversion Cycle</div>
+                        <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px'}}>
+                            {/* LEFT SIDE - GROSS PROFIT */}
+                            <div>
+                                <table style={{border: '2px solid #ddd'}}>
+                                    <thead>
+                                        <tr>
+                                            <th colSpan="2" style={{textAlign: 'left', background: '#f97316', color: 'white', borderRight: '2px solid #ddd'}}>MORNING SESSION</th>
+                                            <th colSpan="2" style={{textAlign: 'left', background: '#38a169', color: 'white'}}>AFTERNOON SESSION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
+                                            <td className="currency">€7.00</td>
+                                            <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
+                                            <td className="currency">€6.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Hours</td>
+                                            <td>15</td>
+                                            <td style={{textAlign: 'left'}}>Hours</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Weekly Price</td>
+                                            <td className="currency">€105.00</td>
+                                            <td style={{textAlign: 'left'}}>Weekly Price</td>
+                                            <td className="currency">€90.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Monthly Price</td>
+                                            <td className="currency">€420.00</td>
+                                            <td style={{textAlign: 'left'}}>Monthly Price</td>
+                                            <td className="currency">€360.00</td>
+                                        </tr>
+                                        <tr style={{height: '10px'}}><td colSpan="4"></td></tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Teacher</td>
+                                            <td className="currency">€21.00</td>
+                                            <td style={{textAlign: 'left'}}>Teacher</td>
+                                            <td className="currency">€21.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Hours/Week</td>
+                                            <td>15</td>
+                                            <td style={{textAlign: 'left'}}>Hours/Week</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Teacher €/Month</td>
+                                            <td className="negative">€1,260.00</td>
+                                            <td style={{textAlign: 'left'}}>Teacher €/Month</td>
+                                            <td className="negative">€1,260.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Max Students</td>
+                                            <td>15</td>
+                                            <td style={{textAlign: 'left'}}>Max Students</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Cost Per Client</td>
+                                            <td className="negative">€84.00</td>
+                                            <td style={{textAlign: 'left'}}>Cost Per Client</td>
+                                            <td className="negative">€84.00</td>
+                                        </tr>
+                                        <tr style={{height: '10px'}}><td colSpan="4"></td></tr>
+                                        <tr className="total-row">
+                                            <td style={{textAlign: 'left', color: 'white'}}>Gross Profit</td>
+                                            <td style={{color: 'white'}}>€336.00</td>
+                                            <td style={{textAlign: 'left', color: 'white'}}>Gross Profit</td>
+                                            <td style={{color: 'white'}}>€276.00</td>
+                                        </tr>
+                                        <tr className="subtotal-row">
+                                            <td style={{textAlign: 'left'}}>Gross Margin</td>
+                                            <td>80.00%</td>
+                                            <td style={{textAlign: 'left'}}>Gross Margin</td>
+                                            <td>76.67%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            {/* RIGHT SIDE - PAYBACK PERIOD */}
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr style={{background: '#667eea', color: 'white'}}>
+                                            <th colSpan="4" style={{textAlign: 'center'}}>CASH CONVERSION CYCLE (CCC) | "Pay Back Period"</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style={{background: '#f0f0f0'}}>
+                                            <td style={{textAlign: 'left', fontWeight: 'bold'}}>MORNING</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #1</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #2</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #3</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Gross Profit</td>
+                                            <td className="positive">€336.00</td>
+                                            <td className="positive">€336.00</td>
+                                            <td className="positive">€336.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>CAC</td>
+                                            <td className="negative">€773.10</td>
+                                            <td>€0.00</td>
+                                            <td>€0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Upsell [Anything]</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr className="total-row">
+                                            <td style={{textAlign: 'left', color: 'white'}}>Balance</td>
+                                            <td style={{color: 'white'}}>-€437.10</td>
+                                            <td style={{color: 'white'}}>-€101.10</td>
+                                            <td style={{color: 'white'}}>€234.90</td>
+                                        </tr>
+                                        <tr style={{height: '15px'}}><td colSpan="4"></td></tr>
+                                        <tr style={{background: '#f0f0f0'}}>
+                                            <td style={{textAlign: 'left', fontWeight: 'bold'}}>AFTERNOON</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #1</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #2</td>
+                                            <td style={{textAlign: 'center', fontWeight: 'bold'}}>MONTH #3</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Gross Profit</td>
+                                            <td className="positive">€276.00</td>
+                                            <td className="positive">€276.00</td>
+                                            <td className="positive">€276.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>CAC</td>
+                                            <td className="negative">€773.10</td>
+                                            <td>€0.00</td>
+                                            <td>€0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{textAlign: 'left'}}>Upsell [Anything]</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr className="total-row">
+                                            <td style={{textAlign: 'left', color: 'white'}}>Balance</td>
+                                            <td style={{color: 'white'}}>-€497.10</td>
+                                            <td style={{color: 'white'}}>-€221.10</td>
+                                            <td style={{color: 'white'}}>€54.90</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="section-title">Unit Economics & LTV</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>METRIC</th>
+                                    <th>VALUE</th>
+                                    <th>NOTES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monthly Price</td>
+                                    <td className="currency">{formatCurrency(sessionType === 'morning' ? 420 : 360)}</td>
+                                    <td style={{textAlign: 'left', color: '#666', fontSize: '12px'}}>15 hrs/week × {sessionType === 'morning' ? '€7' : '€6'}/hr × 4 weeks</td>
+                                </tr>
+                                <tr>
+                                    <td>Teacher Cost/Student</td>
+                                    <td className="negative">{formatCurrency(84)}</td>
+                                    <td style={{textAlign: 'left', color: '#666', fontSize: '12px'}}>€1,260/month ÷ 15 students max</td>
+                                </tr>
+                                <tr className="subtotal-row">
+                                    <td>Gross Profit/Month</td>
+                                    <td className="positive">{formatCurrency(results.totals.grossProfit)}</td>
+                                    <td style={{textAlign: 'left', color: '#666', fontSize: '12px'}}>Revenue - Variable Costs</td>
+                                </tr>
+                                <tr>
+                                    <td>Gross Margin %</td>
+                                    <td className="positive">{formatPercent(results.totals.grossMargin)}</td>
+                                    <td style={{textAlign: 'left', color: '#666', fontSize: '12px'}}>Gross Profit ÷ Revenue</td>
+                                </tr>
+                                <tr>
+                                    <td>Lifetime Revenue ({averageMonths} months)</td>
+                                    <td className="currency">{formatCurrency(results.totals.ltr)}</td>
+                                    <td style={{textAlign: 'left', color: '#666', fontSize: '12px'}}>Monthly Price × Months</td>
+                                </tr>
+                                <tr className="total-row">
+                                    <td>Lifetime Value (LTV)</td>
+                                    <td>{formatCurrency(results.totals.ltv)}</td>
+                                    <td style={{textAlign: 'left', color: 'white', fontSize: '12px'}}>Gross Profit × Months</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            );
+        }
+
+        function calculateMetrics(monthlyData, sessionType, averageMonths) {
+            const session = sessionType === 'morning'
+                ? { monthlyPrice: 420, grossProfit: 336, grossMargin: 80.0 }
+                : { monthlyPrice: 360, grossProfit: 276, grossMargin: 76.67 };
+
+            const monthly = monthlyData.map(m => {
+                const mediaCAC = m.ads + m.software;
+                const fullyLoadedCAC = mediaCAC + m.salaries + m.commissions;
+                const cacPerCustomer = m.salesWon > 0 ? fullyLoadedCAC / m.salesWon : 0;
+                const ltv = session.grossProfit * averageMonths;
+                const ltvToCAC = cacPerCustomer > 0 ? ltv / cacPerCustomer : 0;
+
+                return {
+                    month: m.month,
+                    mediaCAC,
+                    fullyLoadedCAC,
+                    salesWon: m.salesWon,
+                    cacPerCustomer,
+                    ltvToCAC
+                };
+            });
+
+            const totals = {
+                mediaCAC: monthly.reduce((s, m) => s + m.mediaCAC, 0),
+                fullyLoadedCAC: monthly.reduce((s, m) => s + m.fullyLoadedCAC, 0),
+                salesWon: monthly.reduce((s, m) => s + m.salesWon, 0),
+                grossProfit: session.grossProfit,
+                grossMargin: session.grossMargin,
+                ltr: session.monthlyPrice * averageMonths,
+                ltv: session.grossProfit * averageMonths
+            };
+
+            totals.avgCACPerCustomer = totals.salesWon > 0 ? totals.fullyLoadedCAC / totals.salesWon : 0;
+            totals.avgLTVtoCAC = totals.avgCACPerCustomer > 0 ? totals.ltv / totals.avgCACPerCustomer : 0;
+
+            return { monthly, totals };
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Dashboard />);
+    </script>
+</body>
+</html>

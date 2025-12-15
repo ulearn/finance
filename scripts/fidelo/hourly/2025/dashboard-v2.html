@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Revenue Dashboard 2025</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .filters {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-group label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        select {
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        select:hover {
+            border-color: #667eea;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .dashboard {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #c33;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th {
+            padding: 12px 10px;
+            text-align: right;
+            font-weight: 600;
+            white-space: nowrap;
+            font-size: 11px;
+        }
+
+        th:first-child {
+            text-align: left;
+            position: sticky;
+            left: 0;
+            background: #667eea;
+            z-index: 2;
+        }
+
+        td {
+            padding: 10px;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+        }
+
+        td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: #667eea;
+            position: sticky;
+            left: 0;
+            background: white;
+            z-index: 1;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        tbody tr:hover td:first-child {
+            background-color: #f8f9ff;
+        }
+
+        .currency {
+            color: #2d3748;
+        }
+
+        .positive {
+            color: #38a169;
+        }
+
+        .negative {
+            color: #e53e3e;
+        }
+
+        .percentage {
+            color: #805ad5;
+        }
+
+        .rate {
+            color: #dd6b20;
+            font-weight: 600;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: #f0f0f0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.3s;
+        }
+
+        .tab:hover {
+            background: #e0e0e0;
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+        }
+
+        .summary-card h3 {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .summary-card .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                padding: 15px;
+            }
+
+            th, td {
+                padding: 8px 6px;
+                font-size: 11px;
+            }
+
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function Dashboard() {
+            const [allData, setAllData] = useState(null);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
+            const [courseFilter, setCourseFilter] = useState('morning');
+            const [studentFilter, setStudentFilter] = useState('all');
+
+            useEffect(() => {
+                fetch('./all-courses-2025.json')
+                    .then(res => res.json())
+                    .then(jsonData => {
+                        setAllData(jsonData);
+                        setLoading(false);
+                    })
+                    .catch(err => {
+                        setError(err.message);
+                        setLoading(false);
+                    });
+            }, []);
+
+            const formatCurrency = (value) => {
+                return '€' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            };
+
+            const formatPercentage = (value) => {
+                return value.toFixed(1) + '%';
+            };
+
+            if (loading) {
+                return (
+                    <div className="container">
+                        <div className="dashboard">
+                            <div className="loading">Loading data...</div>
+                        </div>
+                    </div>
+                );
+            }
+
+            if (error) {
+                return (
+                    <div className="container">
+                        <div className="dashboard">
+                            <div className="error">Error loading data: {error}</div>
+                        </div>
+                    </div>
+                );
+            }
+
+            // Get selected course data
+            const getCourseData = () => {
+                if (courseFilter === 'both') {
+                    return [...allData.data.morning, ...allData.data.afternoon];
+                }
+                return allData.data[courseFilter] || [];
+            };
+
+            const courseData = getCourseData();
+
+            // Filter by student type
+            const filteredData = studentFilter === 'all'
+                ? courseData
+                : courseData.filter(item => item.studentType === studentFilter);
+
+            // Process monthly data
+            const processMonthlyData = (data) => {
+                const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+                const monthlyData = months.map(month => ({
+                    month,
+                    courseFees: 0,
+                    commission: 0,
+                    discount: 0,
+                    nadc: 0,
+                    hours: 0,
+                    count: 0
+                }));
+
+                data.forEach(item => {
+                    if (!item.invoiceDate) return;
+                    const invoiceMonth = new Date(item.invoiceDate).getMonth();
+                    const monthData = monthlyData[invoiceMonth];
+
+                    monthData.courseFees += item.amountOriginal || 0;
+                    monthData.commission += item.commission || 0;
+                    monthData.discount += item.discount || 0;
+                    monthData.nadc += item.courseFeeNADC || 0;
+                    monthData.hours += item.totalHours || 0;
+                    monthData.count += 1;
+                });
+
+                monthlyData.forEach(month => {
+                    month.discountPct = month.courseFees > 0
+                        ? (month.discount / month.courseFees * 100)
+                        : 0;
+                    month.ratePerHour = month.hours > 0
+                        ? (month.nadc / month.hours)
+                        : 0;
+                });
+
+                return monthlyData;
+            };
+
+            // Process accommodation monthly data
+            const processAccommodationData = () => {
+                const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+                const monthlyData = months.map(month => ({
+                    month,
+                    revenue: 0,
+                    count: 0
+                }));
+
+                const accommData = studentFilter === 'all'
+                    ? allData.data.accommodation
+                    : allData.data.accommodation.filter(item => item.studentType === studentFilter);
+
+                accommData.forEach(item => {
+                    if (!item.invoiceDate) return;
+                    const invoiceMonth = new Date(item.invoiceDate).getMonth();
+                    monthlyData[invoiceMonth].revenue += item.totalNADC || 0;
+                    monthlyData[invoiceMonth].count += 1;
+                });
+
+                return monthlyData;
+            };
+
+            const monthlyData = processMonthlyData(filteredData);
+            const accommMonthlyData = processAccommodationData();
+
+            // Calculate totals
+            const totals = monthlyData.reduce((acc, month) => ({
+                courseFees: acc.courseFees + month.courseFees,
+                commission: acc.commission + month.commission,
+                discount: acc.discount + month.discount,
+                nadc: acc.nadc + month.nadc,
+                hours: acc.hours + month.hours,
+                count: acc.count + month.count
+            }), { courseFees: 0, commission: 0, discount: 0, nadc: 0, hours: 0, count: 0 });
+
+            totals.discountPct = totals.courseFees > 0
+                ? (totals.discount / totals.courseFees * 100)
+                : 0;
+            totals.ratePerHour = totals.hours > 0
+                ? (totals.nadc / totals.hours)
+                : 0;
+
+            const accommTotals = accommMonthlyData.reduce((acc, month) => ({
+                revenue: acc.revenue + month.revenue,
+                count: acc.count + month.count
+            }), { revenue: 0, count: 0 });
+
+            return (
+                <div className="container">
+                    <div className="header">
+                        <h1>Course Revenue Dashboard 2025</h1>
+                        <p>Comprehensive analysis of course fees, commissions, discounts, and accommodation</p>
+                    </div>
+
+                    <div className="filters">
+                        <div className="filter-group">
+                            <label>Course Type</label>
+                            <select value={courseFilter} onChange={(e) => setCourseFilter(e.target.value)}>
+                                <option value="morning">Morning Classes</option>
+                                <option value="afternoon">Afternoon Classes</option>
+                                <option value="both">Both (Morning + Afternoon)</option>
+                            </select>
+                        </div>
+                        <div className="filter-group">
+                            <label>Student Type</label>
+                            <select value={studentFilter} onChange={(e) => setStudentFilter(e.target.value)}>
+                                <option value="all">All Students</option>
+                                <option value="direct">Direct Students</option>
+                                <option value="agent">Agent Students</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div className="summary-cards">
+                        <div className="summary-card">
+                            <h3>Bookings</h3>
+                            <div className="value">{totals.count}</div>
+                        </div>
+                        <div className="summary-card">
+                            <h3>Total Revenue</h3>
+                            <div className="value">{formatCurrency(totals.nadc)}</div>
+                        </div>
+                        <div className="summary-card">
+                            <h3>Avg Rate/Hour</h3>
+                            <div className="value">{formatCurrency(totals.ratePerHour)}</div>
+                        </div>
+                        <div className="summary-card">
+                            <h3>Accommodation</h3>
+                            <div className="value">{formatCurrency(accommTotals.revenue)}</div>
+                        </div>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="section-title">
+                            {courseFilter === 'morning' ? 'Morning Classes' : courseFilter === 'afternoon' ? 'Afternoon Classes' : 'All Classes'} - Monthly Breakdown
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    {monthlyData.map(month => (
+                                        <th key={month.month}>{month.month}</th>
+                                    ))}
+                                    <th>TOTAL / AVG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>COURSE FEES</td>
+                                    {monthlyData.map(month => (
+                                        <td key={month.month} className="currency">{formatCurrency(month.courseFees)}</td>
+                                    ))}
+                                    <td className="currency">{formatCurrency(totals.courseFees)}</td>
+                                </tr>
+                                <tr>
+                                    <td>COMMISSION</td>
+                                    {monthlyData.map(month => (
+                                        <td key={month.month} className="negative">{formatCurrency(month.commission)}</td>
+                                    ))}
+                                    <td className="negative">{formatCurrency(totals.commission)}</td>
+                                </tr>
+                                <tr>
+                                    <td>DISCOUNT</td>
+                                    {monthlyData.map(month => (
+                                        <td key={month.month} className="negative">{formatCurrency(month.discount)}</td>
+                                    ))}
+                                    <td className="negative">{formatCurrency(totals.discount)}</td>
+                                </tr>
+                                <tr>
+                                    <td>DISCOUNT %</td>
+                                    {monthlyData.map(month => (
+                                        <td key={month.month} className="percentage">{formatPercentage(month.discountPct)}</td>
+                                    ))}
+                                    <td className="percentage">{formatPercentage(totals.discountPct)}</td>
+                                </tr>
+                                <tr>
+                                    <td>NADC</td>
+                                    {monthlyData.map(month => (
+                                        <td key={month.month} className="positive">{formatCurrency(month.nadc)}</td>
+                                    ))}
+                                    <td className="positive">{formatCurrency(totals.nadc)}</td>
+                                </tr>
+                                <tr>
+                                    <td>€/HOUR</td>
+                                    {monthlyData.map(month => (
+                                        <td key={month.month} className="rate">{formatCurrency(month.ratePerHour)}</td>
+                                    ))}
+                                    <td className="rate">{formatCurrency(totals.ratePerHour)}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="section-title">Accommodation Revenue - Monthly Breakdown</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    {accommMonthlyData.map(month => (
+                                        <th key={month.month}>{month.month}</th>
+                                    ))}
+                                    <th>TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>REVENUE</td>
+                                    {accommMonthlyData.map(month => (
+                                        <td key={month.month} className="positive">{formatCurrency(month.revenue)}</td>
+                                    ))}
+                                    <td className="positive">{formatCurrency(accommTotals.revenue)}</td>
+                                </tr>
+                                <tr>
+                                    <td>BOOKINGS</td>
+                                    {accommMonthlyData.map(month => (
+                                        <td key={month.month}>{month.count}</td>
+                                    ))}
+                                    <td>{accommTotals.count}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Dashboard />);
+    </script>
+</body>
+</html>

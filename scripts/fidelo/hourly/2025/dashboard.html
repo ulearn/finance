@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Classes 2025 - Revenue Dashboard</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .dashboard {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #c33;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th {
+            padding: 15px 12px;
+            text-align: right;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        th:first-child {
+            text-align: left;
+            position: sticky;
+            left: 0;
+            background: #667eea;
+            z-index: 2;
+        }
+
+        td {
+            padding: 12px;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+        }
+
+        td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: #667eea;
+            position: sticky;
+            left: 0;
+            background: white;
+            z-index: 1;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        tfoot {
+            background: #f8f9ff;
+            font-weight: 600;
+        }
+
+        tfoot td {
+            padding: 15px 12px;
+            border-top: 2px solid #667eea;
+            border-bottom: none;
+            color: #333;
+        }
+
+        tfoot td:first-child {
+            background: #f8f9ff;
+        }
+
+        .currency {
+            color: #2d3748;
+        }
+
+        .positive {
+            color: #38a169;
+        }
+
+        .negative {
+            color: #e53e3e;
+        }
+
+        .percentage {
+            color: #805ad5;
+        }
+
+        .rate {
+            color: #dd6b20;
+            font-weight: 600;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: #f0f0f0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.3s;
+        }
+
+        .tab:hover {
+            background: #e0e0e0;
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                padding: 15px;
+            }
+
+            th, td {
+                padding: 8px 6px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function Dashboard() {
+            const [allData, setAllData] = useState(null);
+            const [directData, setDirectData] = useState(null);
+            const [agentData, setAgentData] = useState(null);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
+            const [activeTab, setActiveTab] = useState('all');
+
+            useEffect(() => {
+                fetch('./2025-full-year.json')
+                    .then(res => res.json())
+                    .then(jsonData => {
+                        processData(jsonData);
+                        setLoading(false);
+                    })
+                    .catch(err => {
+                        setError(err.message);
+                        setLoading(false);
+                    });
+            }, []);
+
+            const processData = (jsonData) => {
+                const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+
+                // Initialize monthly data for all, direct, and agent
+                const createEmptyMonthlyData = () => months.map(month => ({
+                    month,
+                    courseFees: 0,
+                    commission: 0,
+                    discount: 0,
+                    nadc: 0,
+                    hours: 0,
+                    count: 0
+                }));
+
+                const all = createEmptyMonthlyData();
+                const direct = createEmptyMonthlyData();
+                const agent = createEmptyMonthlyData();
+
+                // Process each booking and group by invoice month
+                jsonData.results.forEach(booking => {
+                    if (!booking.invoiceDate) return;
+
+                    const invoiceMonth = new Date(booking.invoiceDate).getMonth(); // 0-11
+
+                    const updateMonthData = (monthData) => {
+                        monthData.courseFees += booking.amountOriginal || 0;
+                        monthData.commission += booking.commission || 0;
+                        monthData.discount += booking.discount || 0;
+                        monthData.nadc += booking.courseFeeNADC || 0;
+                        monthData.hours += booking.totalHours || 0;
+                        monthData.count += 1;
+                    };
+
+                    // Update all data
+                    updateMonthData(all[invoiceMonth]);
+
+                    // Update direct or agent data
+                    if (booking.studentType === 'direct') {
+                        updateMonthData(direct[invoiceMonth]);
+                    } else if (booking.studentType === 'agent') {
+                        updateMonthData(agent[invoiceMonth]);
+                    }
+                });
+
+                // Calculate percentages and rates for all datasets
+                const finalizeData = (monthlyData) => {
+                    monthlyData.forEach(month => {
+                        month.discountPct = month.courseFees > 0
+                            ? (month.discount / month.courseFees * 100)
+                            : 0;
+                        month.ratePerHour = month.hours > 0
+                            ? (month.nadc / month.hours)
+                            : 0;
+                    });
+                };
+
+                finalizeData(all);
+                finalizeData(direct);
+                finalizeData(agent);
+
+                setAllData(all);
+                setDirectData(direct);
+                setAgentData(agent);
+            };
+
+            const formatCurrency = (value) => {
+                return '€' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            };
+
+            const formatPercentage = (value) => {
+                return value.toFixed(1) + '%';
+            };
+
+            if (loading) {
+                return (
+                    <div className="container">
+                        <div className="dashboard">
+                            <div className="loading">Loading data...</div>
+                        </div>
+                    </div>
+                );
+            }
+
+            if (error) {
+                return (
+                    <div className="container">
+                        <div className="dashboard">
+                            <div className="error">Error loading data: {error}</div>
+                        </div>
+                    </div>
+                );
+            }
+
+            // Select active dataset
+            const data = activeTab === 'all' ? allData : activeTab === 'direct' ? directData : agentData;
+
+            // Calculate totals
+            const totals = data.reduce((acc, month) => ({
+                courseFees: acc.courseFees + month.courseFees,
+                commission: acc.commission + month.commission,
+                discount: acc.discount + month.discount,
+                nadc: acc.nadc + month.nadc,
+                hours: acc.hours + month.hours,
+                count: acc.count + month.count
+            }), { courseFees: 0, commission: 0, discount: 0, nadc: 0, hours: 0, count: 0 });
+
+            totals.discountPct = totals.courseFees > 0
+                ? (totals.discount / totals.courseFees * 100)
+                : 0;
+            totals.ratePerHour = totals.hours > 0
+                ? (totals.nadc / totals.hours)
+                : 0;
+
+            const renderTable = () => (
+                <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    {data.map(month => (
+                                        <th key={month.month}>{month.month}</th>
+                                    ))}
+                                    <th>TOTAL / AVG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>COURSE FEES</td>
+                                    {data.map(month => (
+                                        <td key={month.month} className="currency">{formatCurrency(month.courseFees)}</td>
+                                    ))}
+                                    <td className="currency">{formatCurrency(totals.courseFees)}</td>
+                                </tr>
+                                <tr>
+                                    <td>COMMISSION</td>
+                                    {data.map(month => (
+                                        <td key={month.month} className="negative">{formatCurrency(month.commission)}</td>
+                                    ))}
+                                    <td className="negative">{formatCurrency(totals.commission)}</td>
+                                </tr>
+                                <tr>
+                                    <td>DISCOUNT</td>
+                                    {data.map(month => (
+                                        <td key={month.month} className="negative">{formatCurrency(month.discount)}</td>
+                                    ))}
+                                    <td className="negative">{formatCurrency(totals.discount)}</td>
+                                </tr>
+                                <tr>
+                                    <td>DISCOUNT %</td>
+                                    {data.map(month => (
+                                        <td key={month.month} className="percentage">{formatPercentage(month.discountPct)}</td>
+                                    ))}
+                                    <td className="percentage">{formatPercentage(totals.discountPct)}</td>
+                                </tr>
+                                <tr>
+                                    <td>NADC</td>
+                                    {data.map(month => (
+                                        <td key={month.month} className="positive">{formatCurrency(month.nadc)}</td>
+                                    ))}
+                                    <td className="positive">{formatCurrency(totals.nadc)}</td>
+                                </tr>
+                                <tr>
+                                    <td>€/HOUR</td>
+                                    {data.map(month => (
+                                        <td key={month.month} className="rate">{formatCurrency(month.ratePerHour)}</td>
+                                    ))}
+                                    <td className="rate">{formatCurrency(totals.ratePerHour)}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+            );
+
+            return (
+                <div className="container">
+                    <div className="header">
+                        <h1>Morning Classes 2025 - Revenue Dashboard</h1>
+                        <p>Monthly breakdown of course fees, commissions, discounts, and rates</p>
+                    </div>
+
+                    <div className="dashboard">
+                        <div className="tabs">
+                            <button
+                                className={`tab ${activeTab === 'all' ? 'active' : ''}`}
+                                onClick={() => setActiveTab('all')}
+                            >
+                                All Students ({allData.reduce((sum, m) => sum + m.count, 0)})
+                            </button>
+                            <button
+                                className={`tab ${activeTab === 'direct' ? 'active' : ''}`}
+                                onClick={() => setActiveTab('direct')}
+                            >
+                                Direct Students ({directData.reduce((sum, m) => sum + m.count, 0)})
+                            </button>
+                            <button
+                                className={`tab ${activeTab === 'agent' ? 'active' : ''}`}
+                                onClick={() => setActiveTab('agent')}
+                            >
+                                Agent Students ({agentData.reduce((sum, m) => sum + m.count, 0)})
+                            </button>
+                        </div>
+
+                        {renderTable()}
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Dashboard />);
+    </script>
+</body>
+</html>

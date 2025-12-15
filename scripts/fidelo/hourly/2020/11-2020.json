@@ -1,0 +1,491 @@
+{
+  "generated": "2025-12-15T14:09:14.250Z",
+  "period": "2020-11-01 to 2020-11-30",
+  "description": "Master data: All D-invoices (with payments) for 2020 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 5,
+    "totalRevenue": 10970.45,
+    "totalDiscounts": 1131,
+    "totalCommissions": 1788.55,
+    "agentStudents": 4,
+    "directStudents": 1
+  },
+  "invoices": [
+    {
+      "bookingId": 33339,
+      "invoiceNumber": "D2020522",
+      "invoiceDate": "2020-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23410",
+        "firstName": "Frederic",
+        "surname": "Lagrange",
+        "email": "frederic.lagrange@alstomgroup.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Private lessons",
+          "category": "Private lessons",
+          "from": "2020-11-05",
+          "until": "2020-11-18",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Private lessons",
+          "category": "Private lessons",
+          "from": "2020-11-19",
+          "until": "2020-12-02",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Private lessons",
+          "category": "Private lessons",
+          "from": "2020-12-03",
+          "until": "2020-12-16",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "20.00 Lessons Private lessons 03/12/2020 - 16/12/2020",
+          "amount": 800,
+          "discount": 160,
+          "commission": 0,
+          "nadc": 640,
+          "serviceFrom": "2020-12-03",
+          "serviceUntil": "2020-12-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 800,
+        "discount": 160,
+        "commission": 0,
+        "nadc": 640
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33340,
+      "invoiceNumber": "D2023168",
+      "invoiceDate": "2023-03-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23411",
+        "firstName": "Flavia Carolina",
+        "surname": "Costa",
+        "email": "flacarolcosta@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2023-05-08",
+          "until": "2023-08-25",
+          "weeks": 16,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2023-09-04",
+          "until": "2023-11-03",
+          "weeks": 9,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 08/05/2023 - 27/10/2023",
+          "amount": 3175,
+          "discount": 0,
+          "commission": 793.75,
+          "nadc": 2381.25,
+          "serviceFrom": "2023-05-08",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-05-08",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2023-05-08",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2023-05-08",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Individual room/Half-board) 06/05/2023 - 20/05/2023",
+          "amount": 480,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 480,
+          "serviceFrom": "2023-05-06",
+          "serviceUntil": "2023-05-20",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-05-06",
+          "serviceUntil": "2023-05-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4120,
+        "discount": 0,
+        "commission": 793.75,
+        "nadc": 3326.25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33341,
+      "invoiceNumber": "D2020528",
+      "invoiceDate": "2020-12-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23412",
+        "firstName": "Kaoru",
+        "surname": "Tohyama",
+        "email": "caol.nov29@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2021-01-11",
+          "until": "2021-07-02",
+          "weeks": 25,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-01-04",
+          "until": "2021-01-08",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee (Apartment / APT-PRM-SNGL / Self catering)",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2020-12-28",
+          "serviceUntil": "2021-01-10",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Individual room / Half-board) 10/01/2021 - 24/01/2021",
+          "amount": 410,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 410,
+          "serviceFrom": "2021-01-10",
+          "serviceUntil": "2021-01-24",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Accomm Isolation wing 28/12/2020 - 10/01/2021",
+          "amount": 520,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 520,
+          "serviceFrom": "2020-12-28",
+          "serviceUntil": "2021-01-10",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee (Academic Year Morning)",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2021-01-11",
+          "serviceUntil": "2021-07-02",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Academic Year Morning)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-01-11",
+          "serviceUntil": "2021-07-02",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 11/01/2021 - 02/07/2021",
+          "amount": 3175,
+          "discount": 635,
+          "commission": 558.8,
+          "nadc": 1981.2,
+          "serviceFrom": "2021-01-11",
+          "serviceUntil": "2021-07-02",
+          "tax": 0
+        },
+        {
+          "description": "1 week Free ONLINE ISOLATION 04/01/2021 - 08/01/2021",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-01-04",
+          "serviceUntil": "2021-01-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4420,
+        "discount": 635,
+        "commission": 558.8,
+        "nadc": 3226.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33348,
+      "invoiceNumber": "D2020524",
+      "invoiceDate": "2020-12-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23415",
+        "firstName": "Arturo Daniel",
+        "surname": "Sanchez Pacheco",
+        "email": "danpach1994@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2020-12-07",
+          "until": "2020-12-18",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2021-01-04",
+          "until": "2021-06-11",
+          "weeks": 23,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee (Academic Year Renewal Morning)",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2020-12-07",
+          "serviceUntil": "2020-12-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Academic Year Renewal Morning)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2020-12-07",
+          "serviceUntil": "2020-12-18",
+          "tax": 0
+        },
+        {
+          "description": "23 weeks Academic Year Renewal Morning 04/01/2021 - 11/06/2021",
+          "amount": 1449,
+          "discount": 0,
+          "commission": 50,
+          "nadc": 1399,
+          "serviceFrom": "2021-01-04",
+          "serviceUntil": "2021-06-11",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Academic Year Renewal Morning 07/12/2020 - 18/12/2020",
+          "amount": 126,
+          "discount": 0,
+          "commission": 50,
+          "nadc": 76,
+          "serviceFrom": "2020-12-07",
+          "serviceUntil": "2020-12-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1825,
+        "discount": 0,
+        "commission": 100,
+        "nadc": 1725
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33349,
+      "invoiceNumber": "D2020526",
+      "invoiceDate": "2020-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23416",
+        "firstName": "Hyemin",
+        "surname": "Noh",
+        "email": "jmk2093@naver.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-05-16",
+          "until": "2022-07-22",
+          "weeks": 10,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-01-04",
+          "until": "2021-01-08",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-08-15",
+          "until": "2022-08-26",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee (Apartment / APT-PRM-SNGL / Self catering)",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2020-12-26",
+          "serviceUntil": "2021-01-09",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Individual room / Half-board) 09/01/2021 - 23/01/2021",
+          "amount": 410,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 410,
+          "serviceFrom": "2021-01-09",
+          "serviceUntil": "2021-01-23",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (Isolation wing) 26/12/2020 - 09/01/2021",
+          "amount": 520,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 520,
+          "serviceFrom": "2020-12-26",
+          "serviceUntil": "2021-01-09",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Morning General)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-01-11",
+          "serviceUntil": "2021-04-02",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General 11/01/2021 - 02/04/2021",
+          "amount": 1680,
+          "discount": 336,
+          "commission": 336,
+          "nadc": 1008,
+          "serviceFrom": "2021-01-11",
+          "serviceUntil": "2021-04-02",
+          "tax": 0
+        },
+        {
+          "description": "1 week ONLINE ISOLATION 04/01/2021 - 08/01/2021",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-01-04",
+          "serviceUntil": "2021-01-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2725,
+        "discount": 336,
+        "commission": 336,
+        "nadc": 2053
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

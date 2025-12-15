@@ -1,0 +1,4804 @@
+{
+  "generated": "2025-12-15T14:15:22.882Z",
+  "period": "2022-04-01 to 2022-04-30",
+  "description": "Master data: All D-invoices (with payments) for 2022 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 75,
+    "totalRevenue": 65858.20000000001,
+    "totalDiscounts": 76,
+    "totalCommissions": 5308.8,
+    "agentStudents": 14,
+    "directStudents": 61
+  },
+  "invoices": [
+    {
+      "bookingId": 34508,
+      "invoiceNumber": "D2022086",
+      "invoiceDate": "2022-04-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23986",
+        "firstName": "Cecilia",
+        "surname": "Sevastei",
+        "email": "ceciliasevastei@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2022-04-07",
+          "until": "2022-05-26",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "8 weeks Evening General 12/04/2022 - 02/06/2022",
+          "amount": 256,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 256,
+          "serviceFrom": "2022-04-12",
+          "serviceUntil": "2022-06-02",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 256,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 256
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34511,
+      "invoiceNumber": "D2022543",
+      "invoiceDate": "2022-11-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23989",
+        "firstName": "Jesenia",
+        "surname": "Rubiños Huanca",
+        "email": "jesenia.rubinos.h@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-12-22",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-01-15",
+          "until": "2024-05-03",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2022-10-31",
+          "serviceUntil": "2022-12-16",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-10-31",
+          "serviceUntil": "2022-12-16",
+          "tax": 0
+        },
+        {
+          "description": "18 weeks Academic Year Morning 02/01/2023 - 05/05/2023",
+          "amount": 2286,
+          "discount": 0,
+          "commission": 571.5,
+          "nadc": 1714.5,
+          "serviceFrom": "2023-01-02",
+          "serviceUntil": "2023-05-05",
+          "tax": 0
+        },
+        {
+          "description": "7 weeks Academic Year Morning 31/10/2022 - 16/12/2022",
+          "amount": 889,
+          "discount": 0,
+          "commission": 222.25,
+          "nadc": 666.75,
+          "serviceFrom": "2022-10-31",
+          "serviceUntil": "2022-12-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3425,
+        "discount": 0,
+        "commission": 793.75,
+        "nadc": 2631.25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34517,
+      "invoiceNumber": "D2022104",
+      "invoiceDate": "2022-04-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23995",
+        "firstName": "Camille",
+        "surname": "Dubruel",
+        "email": "camille.dubruel@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2022-06-06",
+          "until": "2022-07-01",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-07-01",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Afternoon General Plus 06/06/2022 - 01/07/2022",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-07-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 650,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 650
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34521,
+      "invoiceNumber": "D2022107",
+      "invoiceDate": "2022-10-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23999",
+        "firstName": "Dan",
+        "surname": "Antonov",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2024-04-15",
+          "until": "2024-04-26",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Afternoon General 15/04/2024 - 26/04/2024",
+          "amount": 280,
+          "discount": 0,
+          "commission": 70,
+          "nadc": 210,
+          "serviceFrom": "2024-04-15",
+          "serviceUntil": "2024-04-26",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-04-15",
+          "serviceUntil": "2024-04-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 70,
+        "nadc": 260
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34524,
+      "invoiceNumber": "D2022168",
+      "invoiceDate": "2022-05-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24002",
+        "firstName": "Rocio",
+        "surname": "Villar",
+        "email": "rocio.villar@outlook.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-04-05",
+          "until": "2022-05-13",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-05-16",
+          "until": "2022-06-03",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Morning General 16/05/2022 - 03/06/2022",
+          "amount": 390,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 390,
+          "serviceFrom": "2022-05-16",
+          "serviceUntil": "2022-06-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 390,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 390
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34525,
+      "invoiceNumber": "D2022111",
+      "invoiceDate": "2022-04-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23684",
+        "firstName": "Miguel",
+        "surname": "Bagán Ledesma",
+        "email": "miguelbaganuni@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-04-25",
+          "until": "2022-07-01",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "10 weeks Morning General Plus 25/04/2022 - 01/07/2022",
+          "amount": 1750,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1750,
+          "serviceFrom": "2022-04-25",
+          "serviceUntil": "2022-07-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1750,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1750
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34526,
+      "invoiceNumber": "D2022390",
+      "invoiceDate": "2022-08-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24003",
+        "firstName": "Jenny",
+        "surname": "Brisson",
+        "email": "jennybrisson2003@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-09-12",
+          "until": "2022-12-02",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival (Sa 10/09/2022)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-09-11",
+          "serviceUntil": "2022-09-11",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-09-11",
+          "serviceUntil": "2022-12-04",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2022-09-11",
+          "serviceUntil": "2022-12-04",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Host Family (Individual room/Half-board) 10/09/2022 - 03/12/2022",
+          "amount": 2760,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2760,
+          "serviceFrom": "2022-09-11",
+          "serviceUntil": "2022-12-04",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-09-12",
+          "serviceUntil": "2022-12-02",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General Plus 12/09/2022 - 02/12/2022",
+          "amount": 2292,
+          "discount": 0,
+          "commission": 687.6,
+          "nadc": 1604.4,
+          "serviceFrom": "2022-09-12",
+          "serviceUntil": "2022-12-02",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5277,
+        "discount": 0,
+        "commission": 687.6,
+        "nadc": 4589.4
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34528,
+      "invoiceNumber": "D2022303",
+      "invoiceDate": "2022-07-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24005",
+        "firstName": "Elisa",
+        "surname": "Corrado",
+        "email": "valeria.dicandia@yahoo.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-07-25",
+          "until": "2022-08-26",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Morning General Plus 25/07/2022 - 26/08/2022",
+          "amount": 1000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1000,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1100,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 1075
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34529,
+      "invoiceNumber": "D2022302",
+      "invoiceDate": "2022-07-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24006",
+        "firstName": "Ilaria",
+        "surname": "Corrado",
+        "email": "valeria.dicandia@yahoo.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-07-25",
+          "until": "2022-08-26",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Morning General Plus 25/07/2022 - 26/08/2022",
+          "amount": 1000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1000,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1100,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 1075
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34534,
+      "invoiceNumber": "D2022138",
+      "invoiceDate": "2022-04-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24011",
+        "firstName": "Alexandra",
+        "surname": "Wernli",
+        "email": "alexandra.wernli@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-06-20",
+          "until": "2022-07-01",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-06-19",
+          "serviceUntil": "2022-07-03",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 19/06/2022 - 03/07/2022",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2022-06-19",
+          "serviceUntil": "2022-07-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-06-20",
+          "serviceUntil": "2022-07-01",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General Plus 20/06/2022 - 01/07/2022",
+          "amount": 400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 400,
+          "serviceFrom": "2022-06-20",
+          "serviceUntil": "2022-07-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1115,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1115
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34535,
+      "invoiceNumber": "D2022099",
+      "invoiceDate": "2022-04-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24012",
+        "firstName": "Irina",
+        "surname": "Sukhova",
+        "email": "irinaskva@ya.ru"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2022-04-11",
+          "until": "2022-04-15",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General 11/04/2022 - 15/04/2022",
+          "amount": 130,
+          "discount": 26,
+          "commission": 0,
+          "nadc": 104,
+          "serviceFrom": "2022-04-11",
+          "serviceUntil": "2022-04-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-04-11",
+          "serviceUntil": "2022-04-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 180,
+        "discount": 26,
+        "commission": 0,
+        "nadc": 154
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34536,
+      "invoiceNumber": "D2022106",
+      "invoiceDate": "2022-04-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24013",
+        "firstName": "Urantulga",
+        "surname": "Odkhuu",
+        "email": "odkhuuurantulga@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2022-04-11",
+          "until": "2022-09-30",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2022-04-11",
+          "serviceUntil": "2022-09-30",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2022-04-11",
+          "serviceUntil": "2022-09-30",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-04-11",
+          "serviceUntil": "2022-09-30",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 11/04/2022 - 30/09/2022",
+          "amount": 3175,
+          "discount": 0,
+          "commission": 793.75,
+          "nadc": 2381.25,
+          "serviceFrom": "2022-04-11",
+          "serviceUntil": "2022-09-30",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 0,
+        "commission": 793.75,
+        "nadc": 2756.25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34537,
+      "invoiceNumber": "D2022135",
+      "invoiceDate": "2022-04-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24014",
+        "firstName": "Alessandro",
+        "surname": "Tranchida",
+        "email": "alex97knot@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2022-05-09",
+          "until": "2022-06-24",
+          "weeks": 7,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport (Sa 07/05/2022 11:10)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-05-07",
+          "serviceUntil": "2022-05-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 80,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 80
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34538,
+      "invoiceNumber": "D2022139",
+      "invoiceDate": "2022-04-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24015",
+        "firstName": "Lea",
+        "surname": "Solderer",
+        "email": "soldererlea@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-04-25",
+          "until": "2022-05-20",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-05-23",
+          "until": "2022-06-24",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "5 weeks Morning General Plus 23/05/2022 - 24/06/2022",
+          "amount": 1000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1000,
+          "serviceFrom": "2022-05-23",
+          "serviceUntil": "2022-06-24",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Apartment (APT-PRM-SNGL/Self catering) 08/05/2022 - 15/05/2022",
+          "amount": 300,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 300,
+          "serviceFrom": "2022-05-08",
+          "serviceUntil": "2022-05-15",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Apartment (APT-STNDRD/Self catering) 15/05/2022 - 26/06/2022",
+          "amount": 1320,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1320,
+          "serviceFrom": "2022-05-15",
+          "serviceUntil": "2022-06-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2620,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2620
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34539,
+      "invoiceNumber": "D2023422",
+      "invoiceDate": "2023-06-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24016",
+        "firstName": "Marcio Anderson",
+        "surname": "Carvalho da Silva",
+        "email": "marcio.anderson.carvalho@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-08-08",
+          "until": "2023-09-15",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 10,
+          "nadc": 30,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Morning General 07/08/2023 - 15/09/2023",
+          "amount": 894,
+          "discount": 0,
+          "commission": 223.5,
+          "nadc": 670.5,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 984,
+        "discount": 0,
+        "commission": 233.5,
+        "nadc": 750.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34540,
+      "invoiceNumber": "D2023431",
+      "invoiceDate": "2023-07-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24017",
+        "firstName": "Ana Gabriela",
+        "surname": "Chagas e Silva",
+        "email": "agabrielacs@outlook.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-08-08",
+          "until": "2023-09-15",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 10,
+          "nadc": 30,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Morning General 07/08/2023 - 15/09/2023",
+          "amount": 894,
+          "discount": 0,
+          "commission": 223.5,
+          "nadc": 670.5,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 984,
+        "discount": 0,
+        "commission": 233.5,
+        "nadc": 750.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34543,
+      "invoiceNumber": "D2022112",
+      "invoiceDate": "2022-04-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24020",
+        "firstName": "Timothée",
+        "surname": "Matos",
+        "email": "timothee.matos@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-05-09",
+          "until": "2022-06-17",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks Morning General 09/05/2022 - 17/06/2022",
+          "amount": 894,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 894,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-06-17",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-06-17",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (APT-PRM-SNGL/Self catering) 14/05/2022 - 11/06/2022",
+          "amount": 1250,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1250,
+          "serviceFrom": "2022-05-14",
+          "serviceUntil": "2022-06-11",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 11/06/2022 - 18/06/2022",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2022-06-11",
+          "serviceUntil": "2022-06-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2434,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2434
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34544,
+      "invoiceNumber": "D2022124",
+      "invoiceDate": "2022-04-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24021",
+        "firstName": "Federico",
+        "surname": "De Lorenzi",
+        "email": "federicodelorenzi06@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-05-02",
+          "until": "2022-07-15",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport (Sa 30/04/2022 12:00)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-04-30",
+          "serviceUntil": "2022-04-30",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 80,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 80
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34546,
+      "invoiceNumber": "D2022182",
+      "invoiceDate": "2022-05-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24023",
+        "firstName": "Maida Aysla",
+        "surname": "Costa De Oliveira",
+        "email": "costadem@tcd.ie"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Eve Gen Trial",
+          "category": "Group classes",
+          "from": "2022-04-12",
+          "until": "2022-04-12",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2022-04-21",
+          "until": "2022-05-17",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2022-05-19",
+          "until": "2022-06-14",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Evening General 19/05/2022 - 14/06/2022",
+          "amount": 144,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 144,
+          "serviceFrom": "2022-05-19",
+          "serviceUntil": "2022-06-14",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 144,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 144
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34547,
+      "invoiceNumber": "D2022129",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24024",
+        "firstName": "Sana",
+        "surname": "Sekido",
+        "email": "ry59_0924@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2022-07-25",
+          "until": "2022-08-19",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival transfer (Su 24/07/2022)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-07-24",
+          "serviceUntil": "2022-07-24",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-07-24",
+          "serviceUntil": "2022-08-21",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-07-24",
+          "serviceUntil": "2022-08-21",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Individual room/Half-board) 24/07/2022 - 21/08/2022",
+          "amount": 880,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 880,
+          "serviceFrom": "2022-07-24",
+          "serviceUntil": "2022-08-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 12,
+          "nadc": 28,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Afternoon General 25/07/2022 - 19/08/2022",
+          "amount": 520,
+          "discount": 0,
+          "commission": 156,
+          "nadc": 364,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1715,
+        "discount": 0,
+        "commission": 168,
+        "nadc": 1547
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34553,
+      "invoiceNumber": "D2022272",
+      "invoiceDate": "2022-06-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24030",
+        "firstName": "Juan",
+        "surname": "Montenegro",
+        "email": "juan.montenegro1@utp.ac.pa"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2022-05-02",
+          "until": "2022-10-21",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Host Family (Individual room/Half-board) 26/06/2022 - 24/07/2022",
+          "amount": 880,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 880,
+          "serviceFrom": "2022-06-26",
+          "serviceUntil": "2022-07-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 880,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 880
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34554,
+      "invoiceNumber": "D2022122",
+      "invoiceDate": "2022-04-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24031",
+        "firstName": "Franco",
+        "surname": "Zambiasi",
+        "email": "zambiasifranco@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2022-05-09",
+          "until": "2022-06-03",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-06-03",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Intensive General 30 09/05/2022 - 03/06/2022",
+          "amount": 1020,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1020,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-06-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1070,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1070
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34561,
+      "invoiceNumber": "D2022120",
+      "invoiceDate": "2022-04-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24038",
+        "firstName": "Aurélie",
+        "surname": "Harnist",
+        "email": "aurelie@harnist.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2022-04-25",
+          "until": "2022-05-13",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-04-23",
+          "serviceUntil": "2022-05-14",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (APT-PRM-SNGL/Self catering) 23/04/2022 - 14/05/2022",
+          "amount": 900,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 900,
+          "serviceFrom": "2022-04-23",
+          "serviceUntil": "2022-05-14",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-04-25",
+          "serviceUntil": "2022-05-13",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Intensive General 30 25/04/2022 - 13/05/2022",
+          "amount": 765,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 765,
+          "serviceFrom": "2022-04-25",
+          "serviceUntil": "2022-05-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1780,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1780
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34562,
+      "invoiceNumber": "D2022134",
+      "invoiceDate": "2022-04-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24039",
+        "firstName": "Claire",
+        "surname": "Seroux",
+        "email": "runklere@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-07-11",
+          "until": "2022-07-22",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 11/07/2022 - 22/07/2022",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 400,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 400
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34563,
+      "invoiceNumber": "D2022160",
+      "invoiceDate": "2022-05-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24040",
+        "firstName": "Audrey",
+        "surname": "Radenac",
+        "email": "audrey.rdnc@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-07-04",
+          "until": "2022-07-29",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport (Sa 02/07/2022)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-07-02",
+          "serviceUntil": "2022-07-02",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-07-02",
+          "serviceUntil": "2022-07-30",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-07-02",
+          "serviceUntil": "2022-07-30",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Individual room/Half-board) 02/07/2022 - 30/07/2022",
+          "amount": 880,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 880,
+          "serviceFrom": "2022-07-02",
+          "serviceUntil": "2022-07-30",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 12,
+          "nadc": 28,
+          "serviceFrom": "2022-07-04",
+          "serviceUntil": "2022-07-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-04",
+          "serviceUntil": "2022-07-29",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning General Plus 04/07/2022 - 29/07/2022",
+          "amount": 800,
+          "discount": 0,
+          "commission": 240,
+          "nadc": 560,
+          "serviceFrom": "2022-07-04",
+          "serviceUntil": "2022-07-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1995,
+        "discount": 0,
+        "commission": 252,
+        "nadc": 1743
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34564,
+      "invoiceNumber": "D2022119",
+      "invoiceDate": "2022-04-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24041",
+        "firstName": "Miryam",
+        "surname": "Alonso Miguel",
+        "email": "miriam88203@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2022-05-02",
+          "until": "2022-07-01",
+          "weeks": 9,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-07-01",
+          "tax": 0
+        },
+        {
+          "description": "9 weeks Evening General 02/05/2022 - 01/07/2022",
+          "amount": 288,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 288,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-07-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 338,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 338
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34566,
+      "invoiceNumber": "D2022130",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24043",
+        "firstName": "Sergio",
+        "surname": "Leguen",
+        "email": "leguensergio@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-05-23",
+          "until": "2022-06-10",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-05-22",
+          "serviceUntil": "2022-06-12",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (APT-PRM-SNGL/Self catering) 22/05/2022 - 12/06/2022",
+          "amount": 900,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 900,
+          "serviceFrom": "2022-05-22",
+          "serviceUntil": "2022-06-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-23",
+          "serviceUntil": "2022-06-10",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning General Plus 23/05/2022 - 10/06/2022",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2022-05-23",
+          "serviceUntil": "2022-06-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1615,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1615
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34567,
+      "invoiceNumber": "D2022215",
+      "invoiceDate": "2022-06-03",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24044",
+        "firstName": "Mai",
+        "surname": "Okuda",
+        "email": "maimy9.18@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2022-08-01",
+          "until": "2022-09-23",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2022-07-30",
+          "serviceUntil": "2022-09-24",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-07-30",
+          "serviceUntil": "2022-09-24",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Host Family (Individual room/Half-board) 30/07/2022 - 24/09/2022",
+          "amount": 1760,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1760,
+          "serviceFrom": "2022-07-30",
+          "serviceUntil": "2022-09-24",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 12,
+          "nadc": 28,
+          "serviceFrom": "2022-08-01",
+          "serviceUntil": "2022-09-23",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-08-01",
+          "serviceUntil": "2022-09-23",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Intensive General 30 01/08/2022 - 23/09/2022",
+          "amount": 1784,
+          "discount": 0,
+          "commission": 535.2,
+          "nadc": 1248.8,
+          "serviceFrom": "2022-08-01",
+          "serviceUntil": "2022-09-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3799,
+        "discount": 0,
+        "commission": 547.2,
+        "nadc": 3251.8
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34568,
+      "invoiceNumber": "D2022123",
+      "invoiceDate": "2022-04-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24045",
+        "firstName": "Arnau",
+        "surname": "Cirac",
+        "email": "arnau.cirac@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "+5 Hours",
+          "category": "Afternoon Classes",
+          "from": "2022-05-04",
+          "until": "2022-05-27",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "10 lessons/hours of +5 Hours 04/05/2022 - 27/05/2022 (Flexible)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-05-04",
+          "serviceUntil": "2022-05-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 80,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 80
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34570,
+      "invoiceNumber": "D2022126",
+      "invoiceDate": "2022-04-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24047",
+        "firstName": "Emma",
+        "surname": "Marchand",
+        "email": "emmamarchand15@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Eve Gen Trial",
+          "category": "Group classes",
+          "from": "2022-04-26",
+          "until": "2022-04-26",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2022-04-28",
+          "until": "2022-07-14",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1.00 Lesson Eve Gen Trial",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2022-04-26",
+          "serviceUntil": "2022-04-26",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Evening General 28/04/2022 - 14/07/2022",
+          "amount": 372,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 372,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-07-14",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-07-14",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 422,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 422
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34571,
+      "invoiceNumber": "D2022133",
+      "invoiceDate": "2022-04-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24048",
+        "firstName": "Maria Rosa",
+        "surname": "Ghiani",
+        "email": "ghiro53@tiscali.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2022-07-25",
+          "until": "2022-08-05",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-05",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-05",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General 25/07/2022 - 05/08/2022",
+          "amount": 260,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 260,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34572,
+      "invoiceNumber": "D2022149",
+      "invoiceDate": "2022-05-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24049",
+        "firstName": "Francesco",
+        "surname": "Galeazzi",
+        "email": "mceci.oem@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-06-27",
+          "until": "2022-07-15",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Departure: Accommodation - Airport (Sa 16/07/2022 17:40)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-07-16",
+          "serviceUntil": "2022-07-16",
+          "tax": 0
+        },
+        {
+          "description": "Arrival: Airport - Accommodation (Sa 25/06/2022 14:00)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-06-24",
+          "serviceUntil": "2022-06-24",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-06-25",
+          "serviceUntil": "2022-07-16",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Host Family (Twin Room/Half-board) 25/06/2022 - 16/07/2022",
+          "amount": 615,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 615,
+          "serviceFrom": "2022-06-25",
+          "serviceUntil": "2022-07-16",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2022-06-27",
+          "serviceUntil": "2022-07-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-06-27",
+          "serviceUntil": "2022-07-15",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning General 27/06/2022 - 15/07/2022",
+          "amount": 495,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 495,
+          "serviceFrom": "2022-06-27",
+          "serviceUntil": "2022-07-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1405,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1405
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34573,
+      "invoiceNumber": "D2022137",
+      "invoiceDate": "2022-04-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24050",
+        "firstName": "Paolo",
+        "surname": "Posenato",
+        "email": "paoloposenato73@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-05-02",
+          "until": "2022-06-24",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Private lessons",
+          "category": "Private lessons",
+          "from": "2022-05-02",
+          "until": "2022-06-24",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-04-30",
+          "serviceUntil": "2022-06-25",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Apartment (APT-PRM-SNGL/Self catering) 30/04/2022 - 25/06/2022",
+          "amount": 2400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2400,
+          "serviceFrom": "2022-04-30",
+          "serviceUntil": "2022-06-25",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-06-24",
+          "tax": 0
+        },
+        {
+          "description": "40.00 Lessons Private lessons English for Wine Business 02/05/2022 - 24/06/2022",
+          "amount": 1600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1600,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-06-24",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 02/05/2022 - 24/06/2022",
+          "amount": 1152,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1152,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-06-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5267,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 5267
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34574,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24051",
+        "firstName": "Marta",
+        "surname": "Jerez Carnero",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34575,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24052",
+        "firstName": "Sara",
+        "surname": "Merino Molina",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34576,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24053",
+        "firstName": "Ana",
+        "surname": "Molinillo Núñez",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34577,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24054",
+        "firstName": "Carla",
+        "surname": "Zaragoza Recio",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34578,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24055",
+        "firstName": "Lucía",
+        "surname": "Bueno López",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34579,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24056",
+        "firstName": "Laura",
+        "surname": "Bueno Zambrana",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34580,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24057",
+        "firstName": "María",
+        "surname": "Jaime Cuevas",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34581,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24058",
+        "firstName": "Laura Triana",
+        "surname": "Pérez Carrasco",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34582,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24059",
+        "firstName": "Ángela",
+        "surname": "Rueda López",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34583,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24060",
+        "firstName": "Marta",
+        "surname": "Sedeño Salvatier",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34584,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24061",
+        "firstName": "Nicolás",
+        "surname": "Pérez Florido",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34585,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24062",
+        "firstName": "Jonathan",
+        "surname": "Tizard Burgos",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34586,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24063",
+        "firstName": "Ignacio",
+        "surname": "Campos Núñez",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34587,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24064",
+        "firstName": "Darío",
+        "surname": "García Sánchez",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34588,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24065",
+        "firstName": "Moisés",
+        "surname": "García Cortés",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34589,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24066",
+        "firstName": "Natalia",
+        "surname": "Dupont Ruiz",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34590,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24067",
+        "firstName": "Sandra",
+        "surname": "Jaime González",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34591,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24068",
+        "firstName": "Carolina",
+        "surname": "Tamayo Flores",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34592,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24069",
+        "firstName": "Nayra",
+        "surname": "Fernández Díaz",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34593,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24070",
+        "firstName": "Noa",
+        "surname": "Núñez García",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34594,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24071",
+        "firstName": "Nerea",
+        "surname": "Gálvez Cuevas",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34595,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24072",
+        "firstName": "Gabriella Philiss",
+        "surname": "O'Connor",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34596,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24073",
+        "firstName": "Gabriella María",
+        "surname": "Afram",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34597,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24074",
+        "firstName": "Joana",
+        "surname": "García Jiménez",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34598,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24075",
+        "firstName": "Lukas",
+        "surname": "Moreno Cuevas",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34599,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24076",
+        "firstName": "Natalia",
+        "surname": "Bueno Cortés",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34600,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24077",
+        "firstName": "Valeria",
+        "surname": "Hernández González",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34601,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24078",
+        "firstName": "Nuria",
+        "surname": "Ruíz Pérez",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34602,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24079",
+        "firstName": "Julián",
+        "surname": "Crego Obrador",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2022-04-28",
+          "until": "2022-05-03",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 28/04/2022 - 03/05/2022",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 28/04/2022 - 03/05/2022",
+          "amount": 35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 210,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 210
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34603,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24080",
+        "firstName": "Rafael",
+        "surname": "Damas Quiles",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 28/04/2022 - 03/05/2022",
+          "amount": 92.67,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 92.67,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 92.67,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 92.67
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34604,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24081",
+        "firstName": "Lidia",
+        "surname": "Almodóvar García",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 28/04/2022 - 03/05/2022",
+          "amount": 92.67,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 92.67,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 92.67,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 92.67
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34605,
+      "invoiceNumber": "D2022128",
+      "invoiceDate": "2022-04-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24082",
+        "firstName": "Paula",
+        "surname": "Salvatierra Soria",
+        "email": "fdezruizpedro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 28/04/2022 - 03/05/2022 (FREE)",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 28/04/2022 - 03/05/2022",
+          "amount": 92.66,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 92.66,
+          "serviceFrom": "2022-04-28",
+          "serviceUntil": "2022-05-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 92.66,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 92.66
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34607,
+      "invoiceNumber": "D2022205",
+      "invoiceDate": "2022-05-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24084",
+        "firstName": "Clément",
+        "surname": "Bozo",
+        "email": "clem6097@hotmail.fr"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-06-06",
+          "until": "2022-07-29",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport (Sa 04/06/2022)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-06-04",
+          "serviceUntil": "2022-06-04",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-06-04",
+          "serviceUntil": "2022-07-30",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-06-04",
+          "serviceUntil": "2022-07-30",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Host Family (Individual room/Half-board) 04/06/2022 - 30/07/2022",
+          "amount": 1760,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1760,
+          "serviceFrom": "2022-06-04",
+          "serviceUntil": "2022-07-30",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 12,
+          "nadc": 28,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-07-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-07-29",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General Plus 06/06/2022 - 29/07/2022",
+          "amount": 1400,
+          "discount": 0,
+          "commission": 420,
+          "nadc": 980,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-07-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3475,
+        "discount": 0,
+        "commission": 432,
+        "nadc": 3043
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34608,
+      "invoiceNumber": "D2022141",
+      "invoiceDate": "2022-05-03",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24085",
+        "firstName": "Camille",
+        "surname": "Vaille",
+        "email": "camillevaille@yahoo.fr"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-07-11",
+          "until": "2022-07-15",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-15",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 11/07/2022 - 15/07/2022",
+          "amount": 165,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 165,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 225,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 225
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34609,
+      "invoiceNumber": "D2022339",
+      "invoiceDate": "2022-07-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24086",
+        "firstName": "Esperanza",
+        "surname": "Pérez",
+        "email": "esperanza@iesbatalladeclavijo.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-08-15",
+          "until": "2022-08-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2022-08-15",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-08-15",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 15/08/2022 - 19/08/2022",
+          "amount": 165,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 165,
+          "serviceFrom": "2022-08-15",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 225,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 225
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34610,
+      "invoiceNumber": "D2022132",
+      "invoiceDate": "2022-04-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24087",
+        "firstName": "Simone",
+        "surname": "Rivara",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-05-09",
+          "until": "2022-05-20",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-05-07",
+          "serviceUntil": "2022-05-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Half-board) 07/05/2022 - 21/05/2022",
+          "amount": 370,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 370,
+          "serviceFrom": "2022-05-07",
+          "serviceUntil": "2022-05-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-05-20",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General Plus 09/05/2022 - 20/05/2022",
+          "amount": 400,
+          "discount": 0,
+          "commission": 80,
+          "nadc": 320,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-05-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 885,
+        "discount": 0,
+        "commission": 80,
+        "nadc": 805
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34611,
+      "invoiceNumber": "D2022131",
+      "invoiceDate": "2022-04-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24088",
+        "firstName": "Annalisa",
+        "surname": "Carbone",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-05-09",
+          "until": "2022-05-20",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-05-07",
+          "serviceUntil": "2022-05-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Half-board) 07/05/2022 - 21/05/2022",
+          "amount": 370,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 370,
+          "serviceFrom": "2022-05-07",
+          "serviceUntil": "2022-05-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-05-20",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General Plus 09/05/2022 - 20/05/2022",
+          "amount": 400,
+          "discount": 0,
+          "commission": 80,
+          "nadc": 320,
+          "serviceFrom": "2022-05-09",
+          "serviceUntil": "2022-05-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 885,
+        "discount": 0,
+        "commission": 80,
+        "nadc": 805
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34612,
+      "invoiceNumber": "D2022152",
+      "invoiceDate": "2022-05-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24089",
+        "firstName": "Sojiro",
+        "surname": "Shimizu",
+        "email": "bumpofchicken.071821.ss@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2022-06-06",
+          "until": "2022-11-25",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport (Sa 04/06/2022)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-06-04",
+          "serviceUntil": "2022-06-04",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2022-06-05",
+          "serviceUntil": "2022-11-27",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2022-06-05",
+          "serviceUntil": "2022-11-27",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Host Family (Individual room/Half-board) 05/06/2022 - 27/11/2022",
+          "amount": 5500,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 5500,
+          "serviceFrom": "2022-06-05",
+          "serviceUntil": "2022-11-27",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-11-25",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-11-25",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Afternoon 06/06/2022 - 25/11/2022",
+          "amount": 2425,
+          "discount": 0,
+          "commission": 727.5,
+          "nadc": 1697.5,
+          "serviceFrom": "2022-06-06",
+          "serviceUntil": "2022-11-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 8500,
+        "discount": 0,
+        "commission": 727.5,
+        "nadc": 7772.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34615,
+      "invoiceNumber": "D2022136",
+      "invoiceDate": "2022-04-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24092",
+        "firstName": "Patricia",
+        "surname": "Benito Doñate",
+        "email": "patriciabenitodonate@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-05-02",
+          "until": "2022-07-22",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General 02/05/2022 - 22/07/2022",
+          "amount": 1680,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1680,
+          "serviceFrom": "2022-05-02",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1760,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1760
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34616,
+      "invoiceNumber": "D2022290",
+      "invoiceDate": "2022-06-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24093",
+        "firstName": "Miyu",
+        "surname": "Nakano",
+        "email": "peter.0505.0712@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2022-07-26",
+          "until": "2022-08-26",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 50,
+          "discount": 0,
+          "commission": 15,
+          "nadc": 35,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Afternoon General 25/07/2022 - 26/08/2022",
+          "amount": 650,
+          "discount": 0,
+          "commission": 195,
+          "nadc": 455,
+          "serviceFrom": "2022-07-25",
+          "serviceUntil": "2022-08-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 750,
+        "discount": 0,
+        "commission": 210,
+        "nadc": 540
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34617,
+      "invoiceNumber": "D2022142",
+      "invoiceDate": "2022-05-03",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24094",
+        "firstName": "Olivia",
+        "surname": "Couraud",
+        "email": "olivia-974@hotmail.fr"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-07-11",
+          "until": "2022-07-22",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 11/07/2022 - 22/07/2022",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2022-07-11",
+          "serviceUntil": "2022-07-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 400,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 400
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 34619,
+      "invoiceNumber": "D2022338",
+      "invoiceDate": "2022-07-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24096",
+        "firstName": "Montserrat",
+        "surname": "Castillo",
+        "email": "moncasan@yahoo.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-08-15",
+          "until": "2022-08-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2022-08-15",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2022-08-15",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 15/08/2022 - 19/08/2022",
+          "amount": 165,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 165,
+          "serviceFrom": "2022-08-15",
+          "serviceUntil": "2022-08-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 225,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 225
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

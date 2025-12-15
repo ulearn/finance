@@ -1,0 +1,157 @@
+{
+  "generated": "2025-12-15T14:09:17.789Z",
+  "period": "2020-12-01 to 2020-12-31",
+  "description": "Master data: All D-invoices (with payments) for 2020 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 2,
+    "totalRevenue": 4465,
+    "totalDiscounts": 200,
+    "totalCommissions": 725,
+    "agentStudents": 1,
+    "directStudents": 1
+  },
+  "invoices": [
+    {
+      "bookingId": 33358,
+      "invoiceNumber": "D2021022",
+      "invoiceDate": "2021-03-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23420",
+        "firstName": "Seika",
+        "surname": "Noguchi",
+        "email": "news-915.yt@softbank.ne.jp"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon Plus",
+          "category": "Afternoon Classes",
+          "from": "2021-03-22",
+          "until": "2021-09-10",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2021-03-22",
+          "serviceUntil": "2021-09-10",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2021-03-22",
+          "serviceUntil": "2021-09-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-03-22",
+          "serviceUntil": "2021-09-10",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Afternoon Plus 22/03/2021 - 10/09/2021",
+          "amount": 2900,
+          "discount": 0,
+          "commission": 725,
+          "nadc": 2175,
+          "serviceFrom": "2021-03-22",
+          "serviceUntil": "2021-09-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3275,
+        "discount": 0,
+        "commission": 725,
+        "nadc": 2550
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33359,
+      "invoiceNumber": "D2020533",
+      "invoiceDate": "2020-12-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23267",
+        "firstName": "Pablo",
+        "surname": "Alvarez Flores Calderon",
+        "email": "pabloaf95@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2021-02-01",
+          "until": "2021-02-26",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "5 weeks Apartment (APT-PRM-SNGL / Self catering) 26/12/2020 - 30/01/2021",
+          "amount": 1250,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1250,
+          "serviceFrom": "2020-12-26",
+          "serviceUntil": "2021-01-30",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning General Plus 04/01/2021 - 29/01/2021",
+          "amount": 800,
+          "discount": 200,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2021-01-04",
+          "serviceUntil": "2021-01-29",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2020-12-26",
+          "serviceUntil": "2021-01-30",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2115,
+        "discount": 200,
+        "commission": 0,
+        "nadc": 1915
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

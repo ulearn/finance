@@ -1,0 +1,653 @@
+{
+  "generated": "2025-12-15T14:10:05.642Z",
+  "period": "2021-05-01 to 2021-05-31",
+  "description": "Master data: All D-invoices (with payments) for 2021 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 12,
+    "totalRevenue": 11550,
+    "totalDiscounts": 0,
+    "totalCommissions": 1020,
+    "agentStudents": 1,
+    "directStudents": 11
+  },
+  "invoices": [
+    {
+      "bookingId": 33425,
+      "invoiceNumber": "D2021100",
+      "invoiceDate": "2021-11-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23465",
+        "firstName": "Sabine",
+        "surname": "Borgialli",
+        "email": "sabine.borgialli2@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2021-11-22",
+          "until": "2021-12-17",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2022-01-03",
+          "until": "2022-04-22",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Su 20/11/2022)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2022-11-20",
+          "serviceUntil": "2022-11-20",
+          "tax": 0
+        },
+        {
+          "description": "16 weeks Host Family (Individual room/Half-board) 02/01/2022 - 24/04/2022",
+          "amount": 3280,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3280,
+          "serviceFrom": "2022-01-02",
+          "serviceUntil": "2022-04-24",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Individual room/Half-board Christmas & New Year) 19/12/2021 - 02/01/2022",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2021-12-19",
+          "serviceUntil": "2022-01-02",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Individual room/Half-board) 21/11/2021 - 19/12/2021",
+          "amount": 820,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 820,
+          "serviceFrom": "2021-11-21",
+          "serviceUntil": "2021-12-19",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee (Host Family / Individual room / Half-board)",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2021-11-21",
+          "serviceUntil": "2021-12-19",
+          "tax": 0
+        },
+        {
+          "description": "20 weeks Morning General Plus 22/11/2021 - 08/04/2022",
+          "amount": 3400,
+          "discount": 0,
+          "commission": 1020,
+          "nadc": 2380,
+          "serviceFrom": "2021-11-22",
+          "serviceUntil": "2022-04-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-11-22",
+          "serviceUntil": "2022-04-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 8295,
+        "discount": 0,
+        "commission": 1020,
+        "nadc": 7275
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33427,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23467",
+        "firstName": "Michela",
+        "surname": "Baiamonte",
+        "email": "michela.baiamonte@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33428,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23468",
+        "firstName": "Simone",
+        "surname": "Caccialanza",
+        "email": "simone.caccialanza@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33429,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23469",
+        "firstName": "Alessia",
+        "surname": "Capello",
+        "email": "alessia.capello@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33430,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23470",
+        "firstName": "Franck Alessio",
+        "surname": "Enobo Belomo",
+        "email": "f.enobo@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33432,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23472",
+        "firstName": "Andrea",
+        "surname": "Necchi",
+        "email": "andrea.necchi@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33433,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23473",
+        "firstName": "Mattia",
+        "surname": "Pizzetti",
+        "email": "mattia.pizzetti@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33434,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23474",
+        "firstName": "Samantha",
+        "surname": "Vignati",
+        "email": "samantha.vignati@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33435,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23475",
+        "firstName": "Emma",
+        "surname": "Barbieri",
+        "email": "emma.barbieri@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33436,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23476",
+        "firstName": "Anna",
+        "surname": "Grazioli",
+        "email": "anna.grazioli@cesaris.edu.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33437,
+      "invoiceNumber": "D2021031",
+      "invoiceDate": "2021-05-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23477",
+        "firstName": "Aurora",
+        "surname": "Crivella",
+        "email": "aurora.crivella@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 14/06/2021 - 10/07/2021 (for cancelled 2020 group trip)",
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330,
+          "serviceFrom": "2021-06-14",
+          "serviceUntil": "2021-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33439,
+      "invoiceNumber": "D2021035",
+      "invoiceDate": "2021-06-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23364",
+        "firstName": "Pricilla",
+        "surname": "Ferreira Mezzotero",
+        "email": "pricilla_ferreira@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-05-31",
+          "until": "2021-09-03",
+          "weeks": 14,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-10-04",
+          "until": "2021-12-17",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks ULearn Renewal AFT 31/05/2021 - end September 2021)",
+          "amount": 900,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 900,
+          "serviceFrom": "2021-05-31",
+          "serviceUntil": "2021-11-19",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 75,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 75,
+          "serviceFrom": "2021-05-31",
+          "serviceUntil": "2021-11-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 975,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 975
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "year": "2022",
+  "generatedAt": "2025-12-15T18:40:36.876Z",
+  "rates": {
+    "morning": {
+      "b2c": 6.83,
+      "b2b": 6.21
+    },
+    "afternoon": {
+      "b2c": 6.3,
+      "b2b": 4.91
+    }
+  },
+  "details": {
+    "year": "2022",
+    "morning": {
+      "b2c": {
+        "totalRevenue": 191456.02000000005,
+        "totalHours": 28025,
+        "count": 496,
+        "avgRate": 6.831615343443356
+      },
+      "b2b": {
+        "totalRevenue": 111268.02,
+        "totalHours": 17925,
+        "count": 102,
+        "avgRate": 6.207420920502092
+      }
+    },
+    "afternoon": {
+      "b2c": {
+        "totalRevenue": 46776.09999999999,
+        "totalHours": 7425,
+        "count": 85,
+        "avgRate": 6.299811447811447
+      },
+      "b2b": {
+        "totalRevenue": 24533.48,
+        "totalHours": 4995,
+        "count": 25,
+        "avgRate": 4.911607607607608
+      }
+    }
+  }
+}

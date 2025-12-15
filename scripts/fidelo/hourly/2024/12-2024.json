@@ -1,0 +1,6918 @@
+{
+  "generated": "2025-12-15T14:58:43.053Z",
+  "period": "2024-12-01 to 2024-12-31",
+  "description": "Master data: All D-invoices (with payments) for 2024 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 99,
+    "totalRevenue": 99593.04999999999,
+    "totalDiscounts": 31127.399999999998,
+    "totalCommissions": 7689.950000000001,
+    "agentStudents": 21,
+    "directStudents": 78
+  },
+  "invoices": [
+    {
+      "bookingId": 40135,
+      "invoiceNumber": "D2025189",
+      "invoiceDate": "2025-04-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29318",
+        "firstName": "Abdulrahman",
+        "surname": "Hijazi",
+        "email": "dhmy_h@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-02-10",
+          "until": "2025-02-28",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-03-03",
+          "until": "2025-04-04",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-04-07",
+          "until": "2025-05-02",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-05-05",
+          "until": "2025-05-09",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Intensive General 30 05/05/2025 - 09/05/2025",
+          "amount": 247,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 247,
+          "serviceFrom": "2025-05-05",
+          "serviceUntil": "2025-05-09",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (APT-SUPR-SNGL/Self catering) 12/04/2025 - 04/05/2025 (Price difference with host-family)",
+          "amount": 300,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 300,
+          "serviceFrom": "2025-04-12",
+          "serviceUntil": "2025-05-03",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Apartment (APT-SUPR-SNGL/Self catering) 04/05/2025 - 10/05/2025",
+          "amount": 340,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 340,
+          "serviceFrom": "2025-05-04",
+          "serviceUntil": "2025-05-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 887,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 887
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40138,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29321",
+        "firstName": "Aitana",
+        "surname": "Llorente Guitierrez",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40139,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29322",
+        "firstName": "Álex",
+        "surname": "Berne Abad",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40140,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29323",
+        "firstName": "Ander",
+        "surname": "Fernández González",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40141,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29324",
+        "firstName": "Andrés",
+        "surname": "Gutiérrez Montañés",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4.14,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 4.14
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40142,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29325",
+        "firstName": "Celia",
+        "surname": "Diaz-Aldagalan Casas",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40143,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29326",
+        "firstName": "Diego",
+        "surname": "Miguel Ochoa",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40144,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29327",
+        "firstName": "ELSA",
+        "surname": "RODRÍGUEZ CASAS",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40145,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29328",
+        "firstName": "Esther",
+        "surname": "Iriso Llorente",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40146,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29329",
+        "firstName": "Héctor",
+        "surname": "Jiménez Arpón",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40147,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29330",
+        "firstName": "Iñigo",
+        "surname": "Chivite Jarauta",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40148,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29331",
+        "firstName": "Irene",
+        "surname": "Jiménez Magallón",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40149,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29332",
+        "firstName": "Isabel",
+        "surname": "Vallejo Vallejo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40150,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29333",
+        "firstName": "Jorge",
+        "surname": "Cunchillos García",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40151,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29334",
+        "firstName": "Lucía",
+        "surname": "Forcada Gil",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40152,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29335",
+        "firstName": "María",
+        "surname": "Marin Nialet",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40153,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29336",
+        "firstName": "Mariana",
+        "surname": "Valencia Vasquez",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40154,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29337",
+        "firstName": "Mario",
+        "surname": "Ruiz Nevot",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40155,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29338",
+        "firstName": "Martina",
+        "surname": "Rodríguez Arnal",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40156,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29339",
+        "firstName": "Mateo",
+        "surname": "Arpón Gutiérrez",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40157,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29340",
+        "firstName": "MONICA",
+        "surname": "MILAGRO SAENZ",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40158,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29341",
+        "firstName": "NOA",
+        "surname": "MARTINEZ ANTON",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40159,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29342",
+        "firstName": "Pablo",
+        "surname": "Martinez Merino",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40160,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29343",
+        "firstName": "RAÚL",
+        "surname": "CALBET  JIMENEZ",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40161,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29344",
+        "firstName": "Ruben",
+        "surname": "Sáenz Palco",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40162,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29345",
+        "firstName": "Sofia",
+        "surname": "Carbonera Medrano",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.08,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.08,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.49,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.49
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40163,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29346",
+        "firstName": "VICTORIA",
+        "surname": "MIGUEL FADRIQUE",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40164,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29347",
+        "firstName": "Ana",
+        "surname": "Sesma García",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.22,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.15,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.15,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 22.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 22.04,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40165,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29348",
+        "firstName": "Laura",
+        "surname": "Chivite Oliva",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2024-12-09",
+          "until": "2024-12-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Tuition 3 Course Days (18 in HF + 10 Private Accomm Students)\r\nDates: 12-17/12/2024",
+          "amount": 83.28,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 83.28,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Accomm Host Family \r\nDates: 12-17/12/2024\r\nNights: 5\r\nDays: 6 (departing 17/12/2024)",
+          "amount": 148.1,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 148.1,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "LEAP Transport (16 HF Students + 1 Leader Transport)",
+          "amount": 21.96,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 21.96,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 257.48,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 257.48
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40166,
+      "invoiceNumber": "D2024505",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29349",
+        "firstName": "María Alejandra",
+        "surname": "Calavia Sarnago",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee (Host Family / Individual room / Full-board)",
+          "amount": 250,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 250,
+          "serviceFrom": "2024-12-07",
+          "serviceUntil": "2024-12-12",
+          "tax": 0
+        },
+        {
+          "description": "ULearn Leader Hours Provision (Erika Buenfil)",
+          "amount": 680.4,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 680.4,
+          "serviceFrom": "2024-12-07",
+          "serviceUntil": "2024-12-12",
+          "tax": 0
+        },
+        {
+          "description": "Misc Transport",
+          "amount": 4.14,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4.14,
+          "serviceFrom": "2024-12-04",
+          "serviceUntil": "2024-12-09",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 934.54,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 934.54
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40168,
+      "invoiceNumber": "D2024506",
+      "invoiceDate": "2024-12-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29351",
+        "firstName": "Carolina",
+        "surname": "Angel",
+        "email": "angelca1@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2024-12-09",
+          "until": "2024-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning IELTS 09/12/2024 - 13/12/2024 Black Friday Promotion",
+          "amount": 180,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 108,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 72,
+        "commission": 0,
+        "nadc": 158
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40169,
+      "invoiceNumber": "D2024516",
+      "invoiceDate": "2024-12-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29352",
+        "firstName": "Yao",
+        "surname": "Lan",
+        "email": "852610029@qq.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-05-12",
+          "until": "2025-08-22",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-09-01",
+          "until": "2025-09-26",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-06",
+          "until": "2025-10-10",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-20",
+          "until": "2025-11-21",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee - Happy Plan!",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 31/03/2025 - 19/09/2025 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1285,
+        "commission": 0,
+        "nadc": 2265
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40170,
+      "invoiceNumber": "D2024504",
+      "invoiceDate": "2024-12-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29353",
+        "firstName": "Analia Vera",
+        "surname": "Fisela",
+        "email": "analiavf188@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2024-12-09",
+          "until": "2024-12-20",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2025-01-06",
+          "until": "2025-02-14",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-20",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Afternoon General Plus 06/01/2025 - 14/02/2025 Black Friday Promotion",
+          "amount": 894,
+          "discount": 357.6,
+          "commission": 0,
+          "nadc": 536.4,
+          "serviceFrom": "2025-01-06",
+          "serviceUntil": "2025-02-14",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General Plus 09/12/2024 - 20/12/2024 Black Friday Promotion",
+          "amount": 298,
+          "discount": 119.2,
+          "commission": 0,
+          "nadc": 178.8,
+          "serviceFrom": "2024-12-09",
+          "serviceUntil": "2024-12-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1242,
+        "discount": 476.8,
+        "commission": 0,
+        "nadc": 765.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40176,
+      "invoiceNumber": "D2024512",
+      "invoiceDate": "2024-12-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29359",
+        "firstName": "Shiyu",
+        "surname": "Wang",
+        "email": "faith42w@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-03-03",
+          "until": "2025-07-04",
+          "weeks": 18,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-07-14",
+          "until": "2025-07-25",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-15",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-08-25",
+          "until": "2025-09-05",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 10/02/2025 - 01/08/2025",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 415.8,
+          "nadc": 1474.2,
+          "serviceFrom": "2025-02-10",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-02-10",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-02-10",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-02-10",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 415.8,
+        "nadc": 1874.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40180,
+      "invoiceNumber": "D2024520",
+      "invoiceDate": "2024-12-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29363",
+        "firstName": "Yuqing",
+        "surname": "Liu",
+        "email": "2670368712@qq.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-03-10",
+          "until": "2025-08-01",
+          "weeks": 21,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-08-25",
+          "until": "2025-09-19",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 24/02/2025 - 08/08/2025",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 415.8,
+          "nadc": 1474.2,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 415.8,
+        "nadc": 1874.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40181,
+      "invoiceNumber": "D2024511",
+      "invoiceDate": "2024-12-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29364",
+        "firstName": "Ambre",
+        "surname": "Dalrue",
+        "email": "ambre.dalrue@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-04-14",
+          "until": "2025-05-23",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks Intensive General 30 20/01/2025 - 28/02/2025 Black Friday Promotion",
+          "amount": 1566,
+          "discount": 626.4,
+          "commission": 0,
+          "nadc": 939.6,
+          "serviceFrom": "2025-01-20",
+          "serviceUntil": "2025-02-28",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-01-20",
+          "serviceUntil": "2025-02-28",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Host Family (Individual room/Half-board) 18/01/2025 - 01/03/2025",
+          "amount": 1440,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1440,
+          "serviceFrom": "2025-01-18",
+          "serviceUntil": "2025-03-01",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-01-18",
+          "serviceUntil": "2025-03-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3121,
+        "discount": 626.4,
+        "commission": 0,
+        "nadc": 2494.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40183,
+      "invoiceNumber": "D2025488",
+      "invoiceDate": "2025-10-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29366",
+        "firstName": "Juann Gustavo",
+        "surname": "Casimiro Ferreira Maciel",
+        "email": "juanncasimiro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-10-20",
+          "until": "2025-12-19",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-24",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 20/10/2025 - 10/04/2026",
+          "amount": 2400,
+          "discount": 960,
+          "commission": 360,
+          "nadc": 1080,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 30,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2700,
+        "discount": 990,
+        "commission": 360,
+        "nadc": 1350
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40184,
+      "invoiceNumber": "D2025015",
+      "invoiceDate": "2025-01-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29367",
+        "firstName": "Mateus",
+        "surname": "Silva Mariano",
+        "email": "mateusmariano18@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-02-10",
+          "until": "2025-08-01",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 27/01/2025 - 18/07/2025",
+          "amount": 2400,
+          "discount": 960,
+          "commission": 360,
+          "nadc": 1080,
+          "serviceFrom": "2025-01-27",
+          "serviceUntil": "2025-07-18",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-01-27",
+          "serviceUntil": "2025-07-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-01-27",
+          "serviceUntil": "2025-07-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2650,
+        "discount": 960,
+        "commission": 360,
+        "nadc": 1330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40185,
+      "invoiceNumber": "D2025013",
+      "invoiceDate": "2025-01-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29368",
+        "firstName": "Gabriela",
+        "surname": "Aparecida Venancio",
+        "email": "bia11venancio@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-01-13",
+          "until": "2025-07-04",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 13/01/2025 - 04/07/2025",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 472.5,
+          "nadc": 1417.5,
+          "serviceFrom": "2025-01-13",
+          "serviceUntil": "2025-07-04",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-01-13",
+          "serviceUntil": "2025-07-04",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-01-13",
+          "serviceUntil": "2025-07-04",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3400,
+        "discount": 1260,
+        "commission": 472.5,
+        "nadc": 1667.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40186,
+      "invoiceNumber": "D2025071",
+      "invoiceDate": "2025-02-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29369",
+        "firstName": "Ana Luiza",
+        "surname": "De Sousa",
+        "email": "analuiza231000@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-03-17",
+          "until": "2025-07-11",
+          "weeks": 17,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-07-21",
+          "until": "2025-08-22",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-08-10",
+          "until": "2026-08-28",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 14/04/2024 - 04/10/2024",
+          "amount": 2400,
+          "discount": 960,
+          "commission": 360,
+          "nadc": 1080,
+          "serviceFrom": "2024-04-14",
+          "serviceUntil": "2024-10-04",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2024-04-14",
+          "serviceUntil": "2024-10-04",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-04-14",
+          "serviceUntil": "2024-10-04",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2650,
+        "discount": 960,
+        "commission": 360,
+        "nadc": 1330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40187,
+      "invoiceNumber": "D2024523",
+      "invoiceDate": "2024-12-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27480",
+        "firstName": "Krystof",
+        "surname": "Jezdik",
+        "email": "jezdikk@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2025-08-11",
+          "until": "2025-08-29",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-08-09",
+          "serviceUntil": "2025-08-30",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Host Family (Individual room/Half-board) 09/08/2025 - 30/08/2025 On-Peak season",
+          "amount": 750,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 750,
+          "serviceFrom": "2025-08-09",
+          "serviceUntil": "2025-08-30",
+          "tax": 0
+        },
+        {
+          "description": "Summer supplement - Special discount",
+          "amount": 30,
+          "discount": 3,
+          "commission": 0,
+          "nadc": 27,
+          "serviceFrom": "2025-08-11",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning IELTS 11/08/2025 - 29/08/2025 Special discount",
+          "amount": 540,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 486,
+          "serviceFrom": "2025-08-11",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1385,
+        "discount": 57,
+        "commission": 0,
+        "nadc": 1328
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40191,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29374",
+        "firstName": "Ona",
+        "surname": "Rofín Avante",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40192,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29375",
+        "firstName": "Aitor",
+        "surname": "Andreo Reina",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40193,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29376",
+        "firstName": "Martí",
+        "surname": "Crivillé Moreno",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40194,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29377",
+        "firstName": "Mireia",
+        "surname": "Fortuny Garcia",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40195,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29378",
+        "firstName": "Ona",
+        "surname": "Fortuny Garcia",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40196,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29379",
+        "firstName": "Anna",
+        "surname": "Ibañez Gelonch",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40197,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29380",
+        "firstName": "Daniela",
+        "surname": "Parra Moncusí",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40198,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29381",
+        "firstName": "Anna",
+        "surname": "Fernández Ubach",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40199,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29382",
+        "firstName": "Paula",
+        "surname": "Pérez Candalija",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40200,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29383",
+        "firstName": "Marina",
+        "surname": "Pros Mulet",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40201,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29384",
+        "firstName": "Marc",
+        "surname": "Medina Aldana",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40202,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29385",
+        "firstName": "Jan",
+        "surname": "Jordà Saiz",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40203,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29386",
+        "firstName": "Joel",
+        "surname": "Garcia Sedeño",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40204,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29387",
+        "firstName": "Montsant",
+        "surname": "Miró  Amill",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40205,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29388",
+        "firstName": "Blanca",
+        "surname": "Voltas Claür",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40206,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29389",
+        "firstName": "Jacob",
+        "surname": "Anglès De Porras",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40207,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29390",
+        "firstName": "Hugo",
+        "surname": "Solla Castro",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40208,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29391",
+        "firstName": "Mihai Raul",
+        "surname": "Marciuc",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40209,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29392",
+        "firstName": "Cristina",
+        "surname": "Rodríguez Barreñada",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40210,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29393",
+        "firstName": "Laura",
+        "surname": "Fortuny Cano",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40211,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29394",
+        "firstName": "Joana",
+        "surname": "Limón Astilleros",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40212,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29395",
+        "firstName": "Oleguer",
+        "surname": "Caelles Jansà",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40213,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29396",
+        "firstName": "Noa",
+        "surname": "Varela Guilera",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Morning 15-hour",
+          "category": "Group classes",
+          "from": "2025-03-31",
+          "until": "2025-04-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 530,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 530,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Junior Group Morning 15-hour 31/03/2025 - 11/04/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 890,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 890
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40214,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29397",
+        "firstName": "Gloria ",
+        "surname": "Gaspà Ferrate",
+        "email": "ggaspa@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Individual room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 240,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 240
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40215,
+      "invoiceNumber": "D2025137",
+      "invoiceDate": "2025-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29398",
+        "firstName": "Raquel ",
+        "surname": "Avante Torres",
+        "email": "ravante2@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Individual room/Full-board) 30/03/2025 - 12/04/2025",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2025-03-30",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 240,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 240
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40218,
+      "invoiceNumber": "D2025206",
+      "invoiceDate": "2025-05-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29401",
+        "firstName": "Younghee",
+        "surname": "Choi",
+        "email": "miniheeyoni@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-04-21",
+          "until": "2025-04-25",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-04-28",
+          "until": "2025-06-06",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-06-16",
+          "until": "2025-07-11",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-07-21",
+          "until": "2025-08-29",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-09-08",
+          "until": "2025-09-12",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-09-22",
+          "until": "2025-09-26",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-13",
+          "until": "2025-11-21",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 11/05/2025 - 25/05/2025",
+          "amount": 700,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 700,
+          "serviceFrom": "2025-05-11",
+          "serviceUntil": "2025-05-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 700,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 700
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40220,
+      "invoiceNumber": "D2025153",
+      "invoiceDate": "2025-04-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26982",
+        "firstName": "Kevin",
+        "surname": "Le Ronce",
+        "email": "kevinleronce@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-01-13",
+          "until": "2025-04-04",
+          "weeks": 12,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-04-07",
+          "until": "2025-05-16",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks Morning General 07/04/2025 - 16/05/2025 Special Offer",
+          "amount": 918,
+          "discount": 91.8,
+          "commission": 0,
+          "nadc": 826.2,
+          "serviceFrom": "2025-04-07",
+          "serviceUntil": "2025-05-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 918,
+        "discount": 91.8,
+        "commission": 0,
+        "nadc": 826.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40221,
+      "invoiceNumber": "D2025036",
+      "invoiceDate": "2025-01-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29403",
+        "firstName": "Xue",
+        "surname": "Zhang",
+        "email": "giselle@bonnoinc.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-03-24",
+          "until": "2025-05-09",
+          "weeks": 7,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-05-11",
+          "until": "2026-09-11",
+          "weeks": 18,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 17/03/2025 - 05/09/2025",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 415.8,
+          "nadc": 1474.2,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 415.8,
+        "nadc": 1874.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40224,
+      "invoiceNumber": "D2024518",
+      "invoiceDate": "2024-12-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29406",
+        "firstName": "Linda",
+        "surname": "Gentilini",
+        "email": "lindagen@live.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2024-12-16",
+          "until": "2024-12-20",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-12-16",
+          "serviceUntil": "2024-12-20",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 16/12/2024 - 20/12/2024 Black Friday Promotion",
+          "amount": 180,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 108,
+          "serviceFrom": "2024-12-16",
+          "serviceUntil": "2024-12-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 72,
+        "commission": 0,
+        "nadc": 158
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40225,
+      "invoiceNumber": "D2025034",
+      "invoiceDate": "2025-01-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29407",
+        "firstName": "Damien",
+        "surname": "Bouchat",
+        "email": "damien.bouchat@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-03-10",
+          "until": "2025-03-28",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Apartment (APT-PRM-SNGL/Self catering) 08/03/2025 - 29/03/2025",
+          "amount": 1050,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1050,
+          "serviceFrom": "2025-03-08",
+          "serviceUntil": "2025-03-29",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning General 10/03/2025 - 28/03/2025",
+          "amount": 540,
+          "discount": 0,
+          "commission": 118.8,
+          "nadc": 421.2,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-03-28",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-03-08",
+          "serviceUntil": "2025-03-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-03-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1705,
+        "discount": 0,
+        "commission": 118.8,
+        "nadc": 1586.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40227,
+      "invoiceNumber": "D2025408",
+      "invoiceDate": "2025-08-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29409",
+        "firstName": "Lucas",
+        "surname": "Do Nascimento de Freitas",
+        "email": "lucas.nascimento186@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-09-22",
+          "until": "2025-12-19",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-03-27",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 22/09/2025 - 13/03/2026",
+          "amount": 2400,
+          "discount": 960,
+          "commission": 360,
+          "nadc": 1080,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 30,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2680,
+        "discount": 990,
+        "commission": 360,
+        "nadc": 1330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40228,
+      "invoiceNumber": "D2024519",
+      "invoiceDate": "2024-12-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29410",
+        "firstName": "Maria Fernanda",
+        "surname": "Sarquis Carro",
+        "email": "fernanda.sarquis04@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-04-14",
+          "until": "2025-07-04",
+          "weeks": 12,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-07-14",
+          "until": "2025-08-08",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-08-18",
+          "until": "2025-10-17",
+          "weeks": 9,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Happy Plan)",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 24/03/2025 - 12/09/2025 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1310,
+        "commission": 0,
+        "nadc": 2240
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40229,
+      "invoiceNumber": "D2024529",
+      "invoiceDate": "2024-12-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29411",
+        "firstName": "David Rivero Lugardo",
+        "surname": "RIVERO LUGARDO",
+        "email": "hola@always-idiomas.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-29",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 288,
+        "commission": 86.4,
+        "nadc": 395.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40230,
+      "invoiceNumber": "D2024528",
+      "invoiceDate": "2024-12-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29412",
+        "firstName": "TOBIAS",
+        "surname": "MARINO BLANCO",
+        "email": "hola@always-idiomas.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-29",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 288,
+        "commission": 86.4,
+        "nadc": 395.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40231,
+      "invoiceNumber": "D2024530",
+      "invoiceDate": "2024-12-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29413",
+        "firstName": "MENCIA",
+        "surname": "ALONSO FERNANDEZ",
+        "email": "hola@always-idiomas.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-29",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 288,
+        "commission": 86.4,
+        "nadc": 395.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40233,
+      "invoiceNumber": "D2025029",
+      "invoiceDate": "2025-01-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29415",
+        "firstName": "Nasser",
+        "surname": "Muhieddine el Didi",
+        "email": "Nassermdidi@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-02-17",
+          "until": "2025-08-08",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 20/01/2025 - 11/07/2025",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 472.5,
+          "nadc": 1417.5,
+          "serviceFrom": "2025-01-20",
+          "serviceUntil": "2025-07-11",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-01-20",
+          "serviceUntil": "2025-07-11",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-01-20",
+          "serviceUntil": "2025-07-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3400,
+        "discount": 1260,
+        "commission": 472.5,
+        "nadc": 1667.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40234,
+      "invoiceNumber": "D2025056",
+      "invoiceDate": "2025-02-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29416",
+        "firstName": "Danielly Cristina",
+        "surname": "Ferreira Pereira",
+        "email": "dac.ferreiraa@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-02-24",
+          "until": "2025-08-15",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 24/02/2025 - 15/08/2025",
+          "amount": 2400,
+          "discount": 960,
+          "commission": 360,
+          "nadc": 1080,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2650,
+        "discount": 960,
+        "commission": 360,
+        "nadc": 1330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40236,
+      "invoiceNumber": "D2025031",
+      "invoiceDate": "2025-01-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29418",
+        "firstName": "Bolorgerel",
+        "surname": "Bat-erdene",
+        "email": "boloroobolor368@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-05-19",
+          "until": "2025-09-12",
+          "weeks": 17,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-20",
+          "until": "2025-12-12",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Apartment (APT-PRM-SNGL/Self catering) 15/03/2025 - 05/04/2025",
+          "amount": 1050,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1050,
+          "serviceFrom": "2025-03-15",
+          "serviceUntil": "2025-04-05",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 17/03/2025 - 05/09/2025",
+          "amount": 3150,
+          "discount": 0,
+          "commission": 787.5,
+          "nadc": 2362.5,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-03-15",
+          "serviceUntil": "2025-04-05",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4665,
+        "discount": 0,
+        "commission": 787.5,
+        "nadc": 3877.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40237,
+      "invoiceNumber": "D2024535",
+      "invoiceDate": "2024-12-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29419",
+        "firstName": "Jiayi (Elaine)",
+        "surname": "Zhu",
+        "email": "elainezjy@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-06-02",
+          "until": "2025-07-04",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-07-14",
+          "until": "2025-11-14",
+          "weeks": 18,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-11-24",
+          "until": "2025-12-05",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 10/03/2025 - 29/08/2025 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 0,
+        "nadc": 2290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40238,
+      "invoiceNumber": "D2025085",
+      "invoiceDate": "2025-02-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29420",
+        "firstName": "Shih-Wei",
+        "surname": "Huang",
+        "email": "alex730617@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning Plus",
+          "category": "Morning Classes",
+          "from": "2025-03-17",
+          "until": "2025-07-11",
+          "weeks": 17,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning Plus",
+          "category": "Morning Classes",
+          "from": "2025-10-27",
+          "until": "2025-12-19",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Host Family (Individual room/Half-board) 08/03/2025 - 05/04/2025",
+          "amount": 960,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 960,
+          "serviceFrom": "2025-03-08",
+          "serviceUntil": "2025-04-05",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning Plus 10/03/2025 - 29/08/2025",
+          "amount": 3875,
+          "discount": 1550,
+          "commission": 581.25,
+          "nadc": 1743.75,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-03-08",
+          "serviceUntil": "2025-04-05",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-10",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5300,
+        "discount": 1550,
+        "commission": 581.25,
+        "nadc": 3168.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40239,
+      "invoiceNumber": "D2024521",
+      "invoiceDate": "2024-12-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29421",
+        "firstName": "Alceu Jose",
+        "surname": "Nunis Junior",
+        "email": "alceunjunior@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-01-06",
+          "until": "2025-01-31",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-01-04",
+          "serviceUntil": "2025-02-01",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (APT-PRM-SNGL/Self catering) 04/01/2025 - 01/02/2025",
+          "amount": 1400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1400,
+          "serviceFrom": "2025-01-04",
+          "serviceUntil": "2025-02-01",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-01-06",
+          "serviceUntil": "2025-01-31",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning General Plus 06/01/2025 - 31/01/2025 Black Friday Promotion",
+          "amount": 900,
+          "discount": 360,
+          "commission": 0,
+          "nadc": 540,
+          "serviceFrom": "2025-01-06",
+          "serviceUntil": "2025-01-31",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2415,
+        "discount": 360,
+        "commission": 0,
+        "nadc": 2055
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40241,
+      "invoiceNumber": "D2024525",
+      "invoiceDate": "2024-12-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29423",
+        "firstName": "Marcos Paulo",
+        "surname": "Da Silva Batista",
+        "email": "marcos.batista@foundever.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-09-08",
+          "until": "2025-10-03",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee (Happy Plan)",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-10-03",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning General Plus 08/09/2025 - 03/10/2025 Black Friday Promotion",
+          "amount": 900,
+          "discount": 360,
+          "commission": 0,
+          "nadc": 540,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-10-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 950,
+        "discount": 385,
+        "commission": 0,
+        "nadc": 565
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40243,
+      "invoiceNumber": "D2025037",
+      "invoiceDate": "2025-01-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29425",
+        "firstName": "Kodai",
+        "surname": "Seta",
+        "email": "baseboll.koudai@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-02-17",
+          "until": "2025-03-28",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Su 16/02/2025)",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-02-16",
+          "serviceUntil": "2025-02-16",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Host Family (Individual room/Half-board) 15/02/2025 - 29/03/2025",
+          "amount": 1440,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1440,
+          "serviceFrom": "2025-02-15",
+          "serviceUntil": "2025-03-29",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Morning General 17/02/2025 - 28/03/2025",
+          "amount": 972,
+          "discount": 388.8,
+          "commission": 128.3,
+          "nadc": 454.9,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-03-28",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-02-15",
+          "serviceUntil": "2025-03-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-03-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2527,
+        "discount": 388.8,
+        "commission": 128.3,
+        "nadc": 2009.9
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40244,
+      "invoiceNumber": "D2025014",
+      "invoiceDate": "2025-01-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29426",
+        "firstName": "Karla Victoria",
+        "surname": "Michel Lecou",
+        "email": "vicmlec@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-02-24",
+          "until": "2025-08-15",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 24/02/2025 - 15/08/2025",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 472.5,
+          "nadc": 1417.5,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-02-24",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3400,
+        "discount": 1260,
+        "commission": 472.5,
+        "nadc": 1667.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40245,
+      "invoiceNumber": "D2025079",
+      "invoiceDate": "2025-02-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29427",
+        "firstName": "João Vitor",
+        "surname": "Moura Bernardino",
+        "email": "joaovitor@salesianos.org.br"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-05-05",
+          "until": "2025-07-25",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer supplement (July & August)",
+          "amount": 40,
+          "discount": 4,
+          "commission": 0,
+          "nadc": 36,
+          "serviceFrom": "2025-05-05",
+          "serviceUntil": "2025-07-25",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-05-05",
+          "serviceUntil": "2025-07-25",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General Plus 06/05/2025 - 25/07/2025 Special Offer",
+          "amount": 2292,
+          "discount": 229.2,
+          "commission": 0,
+          "nadc": 2062.8,
+          "serviceFrom": "2025-05-05",
+          "serviceUntil": "2025-07-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2382,
+        "discount": 233.2,
+        "commission": 0,
+        "nadc": 2148.8
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40246,
+      "invoiceNumber": "D2025424",
+      "invoiceDate": "2025-09-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29428",
+        "firstName": "Alberto Claudio",
+        "surname": "Rizzi",
+        "email": "alberto.rizzi@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-09-01",
+          "until": "2025-09-26",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 additional nights (Apartment / APT-PRM-SNGL / Self catering: 28/09/2025 - 01/10/2025)",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-28",
+          "serviceUntil": "2025-10-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 180,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 180
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40247,
+      "invoiceNumber": "D2024532",
+      "invoiceDate": "2024-12-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29429",
+        "firstName": "Yuyan",
+        "surname": "Li",
+        "email": "1204224192@qq.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-04-28",
+          "until": "2025-08-29",
+          "weeks": 18,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-09-15",
+          "until": "2025-10-31",
+          "weeks": 7,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 18/03/2025 - 05/09/2025 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 0,
+        "nadc": 2290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40248,
+      "invoiceNumber": "D2024531",
+      "invoiceDate": "2024-12-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29430",
+        "firstName": "Fátima",
+        "surname": "González-Perabá Gálvez",
+        "email": "fatimagonzalezperaba@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-01-13",
+          "until": "2025-02-07",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-01-13",
+          "serviceUntil": "2025-02-07",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning General 13/01/2025 - 07/02/2025 Black Friday Promotion",
+          "amount": 720,
+          "discount": 288,
+          "commission": 0,
+          "nadc": 432,
+          "serviceFrom": "2025-01-13",
+          "serviceUntil": "2025-02-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 288,
+        "commission": 0,
+        "nadc": 482
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40251,
+      "invoiceNumber": "D2025032",
+      "invoiceDate": "2025-01-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29433",
+        "firstName": "Khaliunaa",
+        "surname": "Batzorig",
+        "email": "calyx0310@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-04-07",
+          "until": "2025-09-26",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 24/03/2025 - 12/09/2025",
+          "amount": 3150,
+          "discount": 315,
+          "commission": 0,
+          "nadc": 2835,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-24",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 315,
+        "commission": 0,
+        "nadc": 3235
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40252,
+      "invoiceNumber": "D2025042",
+      "invoiceDate": "2025-01-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29434",
+        "firstName": "Estevão",
+        "surname": "Silva Rodrigues",
+        "email": "esrodrigues94@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-02-17",
+          "until": "2025-05-09",
+          "weeks": 12,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-05-19",
+          "until": "2025-08-01",
+          "weeks": 11,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-08-11",
+          "until": "2025-08-22",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 17/02/2025 - 08/08/2025",
+          "amount": 2400,
+          "discount": 960,
+          "commission": 360,
+          "nadc": 1080,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2650,
+        "discount": 960,
+        "commission": 360,
+        "nadc": 1330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40256,
+      "invoiceNumber": "D2024526",
+      "invoiceDate": "2024-12-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "28402",
+        "firstName": "Daniela",
+        "surname": "Gariup",
+        "email": "danigariup@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-01-13",
+          "until": "2025-02-28",
+          "weeks": 7,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "7 weeks Morning General 13/01/2025 - 28/02/2025 Black Friday Promotion",
+          "amount": 1134,
+          "discount": 453.6,
+          "commission": 0,
+          "nadc": 680.4,
+          "serviceFrom": "2025-01-13",
+          "serviceUntil": "2025-02-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1134,
+        "discount": 453.6,
+        "commission": 0,
+        "nadc": 680.4
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40257,
+      "invoiceNumber": "D2025043",
+      "invoiceDate": "2025-01-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29437",
+        "firstName": "Giulia",
+        "surname": "Pinto Lopes do Evangelho",
+        "email": "giulialopes.ev@outlook.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-02-17",
+          "until": "2025-07-11",
+          "weeks": 21,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-07-28",
+          "until": "2025-08-22",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 17/02/2025 - 08/08/2025",
+          "amount": 2400,
+          "discount": 960,
+          "commission": 360,
+          "nadc": 1080,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-02-17",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2650,
+        "discount": 960,
+        "commission": 360,
+        "nadc": 1330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40261,
+      "invoiceNumber": "D2024534",
+      "invoiceDate": "2024-12-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29441",
+        "firstName": "Mulian",
+        "surname": "He",
+        "email": "Sunnyhoo0721@outlook.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-05-12",
+          "until": "2025-08-29",
+          "weeks": 16,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-09-08",
+          "until": "2025-10-10",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-20",
+          "until": "2025-11-14",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-05-12",
+          "serviceUntil": "2025-10-31",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-05-12",
+          "serviceUntil": "2025-10-31",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-05-12",
+          "serviceUntil": "2025-10-31",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 12/05/2025 - 31/10/2025 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2025-05-12",
+          "serviceUntil": "2025-10-31",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 0,
+        "nadc": 2290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40262,
+      "invoiceNumber": "D2025002",
+      "invoiceDate": "2025-01-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29442",
+        "firstName": "Sara",
+        "surname": "Brugnettini",
+        "email": "brugnettini.sara@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-01-20",
+          "until": "2025-04-11",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-01-18",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Apartment (Shared Room/Self catering) 18/01/2025 - 12/04/2025",
+          "amount": 2400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2400,
+          "serviceFrom": "2025-01-18",
+          "serviceUntil": "2025-04-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-01-20",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General Plus 20/01/2025 - 11/04/2025 Black Friday Promotion",
+          "amount": 2292,
+          "discount": 916.8,
+          "commission": 0,
+          "nadc": 1375.2,
+          "serviceFrom": "2025-01-20",
+          "serviceUntil": "2025-04-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4807,
+        "discount": 916.8,
+        "commission": 0,
+        "nadc": 3890.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40264,
+      "invoiceNumber": "D2025004",
+      "invoiceDate": "2025-01-03",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29059",
+        "firstName": "Ujin",
+        "surname": "Chae",
+        "email": "chaeriii94@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-01-06",
+          "until": "2025-01-17",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Afternoon General 06/01/2025 - 17/01/2025 Black Friday Promotion",
+          "amount": 280,
+          "discount": 112,
+          "commission": 0,
+          "nadc": 168,
+          "serviceFrom": "2025-01-06",
+          "serviceUntil": "2025-01-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 280,
+        "discount": 112,
+        "commission": 0,
+        "nadc": 168
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40269,
+      "invoiceNumber": "D2025038",
+      "invoiceDate": "2025-01-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29448",
+        "firstName": "Dulguun",
+        "surname": "Battur",
+        "email": "21dulu@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-05-05",
+          "until": "2025-08-08",
+          "weeks": 14,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-08-25",
+          "until": "2025-11-07",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 31/03/2025 - 19/09/2025",
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890,
+          "serviceFrom": "2025-03-31",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 630,
+        "commission": 630,
+        "nadc": 2290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40270,
+      "invoiceNumber": "D2025003",
+      "invoiceDate": "2025-01-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29449",
+        "firstName": "Hao",
+        "surname": "Li",
+        "email": "1597147173@qq.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-05-05",
+          "until": "2025-10-24",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 18/03/2025 - 05/09/2025 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2025-03-17",
+          "serviceUntil": "2025-09-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 0,
+        "nadc": 2290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 40271,
+      "invoiceNumber": "D2025010",
+      "invoiceDate": "2025-01-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29450",
+        "firstName": "Xiaoqiang",
+        "surname": "Mu",
+        "email": "cncmachinesale@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-04-14",
+          "until": "2025-10-03",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-04-14",
+          "serviceUntil": "2025-10-03",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-04-14",
+          "serviceUntil": "2025-10-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-04-14",
+          "serviceUntil": "2025-10-03",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 14/04/2025 - 03/10/2025 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2025-04-14",
+          "serviceUntil": "2025-10-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 1260,
+        "commission": 0,
+        "nadc": 2290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

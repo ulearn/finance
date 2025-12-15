@@ -1,0 +1,737 @@
+{
+  "generated": "2025-12-15T14:09:29.866Z",
+  "period": "2021-02-01 to 2021-02-28",
+  "description": "Master data: All D-invoices (with payments) for 2021 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 8,
+    "totalRevenue": 17382.8,
+    "totalDiscounts": 1718.58,
+    "totalCommissions": 1231.2,
+    "agentStudents": 2,
+    "directStudents": 6
+  },
+  "invoices": [
+    {
+      "bookingId": 33376,
+      "invoiceNumber": "D2021072",
+      "invoiceDate": "2021-10-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23425",
+        "firstName": "Maelle",
+        "surname": "Hermelin",
+        "email": "m.hermelin41@outlook.fr"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-10-18",
+          "until": "2021-12-17",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-03-07",
+          "until": "2022-03-18",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-01-03",
+          "until": "2022-03-04",
+          "weeks": 9,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "9 weeks Morning General 03/01/2022 - 04/03/2022",
+          "amount": 1260,
+          "discount": 0,
+          "commission": 378,
+          "nadc": 882,
+          "serviceFrom": "2022-01-03",
+          "serviceUntil": "2022-03-04",
+          "tax": 0
+        },
+        {
+          "description": "Arrival: Airport - Accommodation (Su 12/09/2021 12:00)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2021-09-12",
+          "serviceUntil": "2021-09-12",
+          "tax": 0
+        },
+        {
+          "description": "22 weeks Apartment (APT-STNDRD/Self catering) 16/10/2021 - 19/03/2022",
+          "amount": 5170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 5170,
+          "serviceFrom": "2021-10-16",
+          "serviceUntil": "2022-03-19",
+          "tax": 0
+        },
+        {
+          "description": "9 weeks Morning General 18/10/2021 - 17/12/2021",
+          "amount": 1260,
+          "discount": 0,
+          "commission": 378,
+          "nadc": 882,
+          "serviceFrom": "2021-10-18",
+          "serviceUntil": "2021-12-17",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-10-16",
+          "serviceUntil": "2022-03-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-10-18",
+          "serviceUntil": "2021-12-17",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 07/03/2022 - 18/03/2022  COMPLIMENTARY",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2022-03-07",
+          "serviceUntil": "2022-03-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 7885,
+        "discount": 115,
+        "commission": 756,
+        "nadc": 7014
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33377,
+      "invoiceNumber": "D2021029",
+      "invoiceDate": "2021-03-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23426",
+        "firstName": "Juliana",
+        "surname": "Feliciano de Almeida",
+        "email": "juliana.feliciano.almeida@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning Trial",
+          "category": "Group classes",
+          "from": "2021-02-03",
+          "until": "2021-02-04",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-02-08",
+          "until": "2021-02-12",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-02-15",
+          "until": "2021-02-19",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-02-22",
+          "until": "2021-02-26",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-03-01",
+          "until": "2021-03-05",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-03-08",
+          "until": "2021-03-12",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-03-15",
+          "until": "2021-03-19",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-03-22",
+          "until": "2021-03-26",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2021-03-29",
+          "until": "2021-04-02",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Afternoon General 29/03/2021 - 02/04/2021 ONLINE PRICE 4-DAY WEEK",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2021-03-29",
+          "serviceUntil": "2021-04-02",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 65,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 65
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33378,
+      "invoiceNumber": "D2021027",
+      "invoiceDate": "2021-03-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23427",
+        "firstName": "Celia",
+        "surname": "Delcey",
+        "email": "celia.delcey@hotmail.fr"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-04-12",
+          "until": "2021-06-25",
+          "weeks": 11,
+          "hours": 0
+        },
+        {
+          "name": "ONLINE ISOLATION",
+          "category": "Intensive Classes",
+          "from": "2021-03-29",
+          "until": "2021-04-09",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Airport Transfer Arrival (Mo 29/03/2021 13:10)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2021-03-29",
+          "serviceUntil": "2021-03-29",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2021-04-04",
+          "serviceUntil": "2021-06-27",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Apartment (APT-STNDRD / Self catering) 04/04/2021 - 27/06/2021",
+          "amount": 2520,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2520,
+          "serviceFrom": "2021-04-04",
+          "serviceUntil": "2021-06-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Morning General)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-04-12",
+          "serviceUntil": "2021-06-25",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Morning General 12/04/2021 - 25/06/2021",
+          "amount": 1584,
+          "discount": 0,
+          "commission": 475.2,
+          "nadc": 1108.8,
+          "serviceFrom": "2021-04-12",
+          "serviceUntil": "2021-06-25",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks ONLINE ISOLATION 29/03/2021 - 09/04/2021",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-03-29",
+          "serviceUntil": "2021-04-09",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4299,
+        "discount": 0,
+        "commission": 475.2,
+        "nadc": 3823.8
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33379,
+      "invoiceNumber": "D2021016",
+      "invoiceDate": "2021-02-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23428",
+        "firstName": "Natalia",
+        "surname": "Yoko Alves Akita",
+        "email": "natalia.yoko@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2021-03-15",
+          "until": "2021-09-03",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 15/03/2021 - 03/09/2021",
+          "amount": 1964.29,
+          "discount": 589.29,
+          "commission": 0,
+          "nadc": 1375,
+          "serviceFrom": "2021-03-15",
+          "serviceUntil": "2021-09-03",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2021-03-15",
+          "serviceUntil": "2021-09-03",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2021-03-15",
+          "serviceUntil": "2021-09-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-03-15",
+          "serviceUntil": "2021-09-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2339.29,
+        "discount": 639.29,
+        "commission": 0,
+        "nadc": 1700
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33381,
+      "invoiceNumber": "D2021017",
+      "invoiceDate": "2021-02-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "21591",
+        "firstName": "Irina",
+        "surname": "Shmytova",
+        "email": "via-88@mail.ru"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-02-22",
+          "until": "2021-06-04",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-02",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-07-12",
+          "until": "2021-08-27",
+          "weeks": 7,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks ULearn Renewal AFT 22/02/2021 - 13/08/2021",
+          "amount": 1625,
+          "discount": 325,
+          "commission": 0,
+          "nadc": 1300,
+          "serviceFrom": "2021-02-22",
+          "serviceUntil": "2021-08-13",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2021-02-22",
+          "serviceUntil": "2021-08-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1750,
+        "discount": 325,
+        "commission": 0,
+        "nadc": 1425
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33382,
+      "invoiceNumber": "D2021020",
+      "invoiceDate": "2021-02-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23430",
+        "firstName": "Indira Laksmi",
+        "surname": "Briones Sanchez",
+        "email": "inlak55@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-02-22",
+          "until": "2021-05-21",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-06-14",
+          "until": "2021-07-09",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-07-19",
+          "until": "2021-08-06",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2021-08-16",
+          "until": "2021-09-17",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-02-22",
+          "serviceUntil": "2021-08-13",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks ULearn Renewal AFT 22/02/2021 - 13/08/2021",
+          "amount": 1200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1200,
+          "serviceFrom": "2021-02-22",
+          "serviceUntil": "2021-08-13",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2021-02-22",
+          "serviceUntil": "2021-08-13",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2021-02-22",
+          "serviceUntil": "2021-08-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1575,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1575
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33386,
+      "invoiceNumber": "D2021061",
+      "invoiceDate": "2021-09-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23432",
+        "firstName": "Pauline",
+        "surname": "Garrot",
+        "email": "pauline.garrot@hotmail.fr"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-09-20",
+          "until": "2021-12-03",
+          "weeks": 11,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-12-06",
+          "until": "2021-12-10",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: DUBLIN PORT - Accommodation (Sa 18/09/2021 10:45)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2021-09-18",
+          "serviceUntil": "2021-09-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 80,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 80
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33387,
+      "invoiceNumber": "D2021021",
+      "invoiceDate": "2021-02-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23433",
+        "firstName": "Fatima del Rosario",
+        "surname": "Moreno Rosales",
+        "email": "famoro2103@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2021-03-08",
+          "until": "2021-06-25",
+          "weeks": 16,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2021-07-12",
+          "until": "2021-09-10",
+          "weeks": 9,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-03-08",
+          "serviceUntil": "2021-08-27",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2021-03-08",
+          "serviceUntil": "2021-08-27",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2021-03-08",
+          "serviceUntil": "2021-08-27",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Renewal Morning 08/03/2021 - 27/08/2021",
+          "amount": 1964.29,
+          "discount": 589.29,
+          "commission": 0,
+          "nadc": 1375,
+          "serviceFrom": "2021-03-08",
+          "serviceUntil": "2021-08-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2339.29,
+        "discount": 639.29,
+        "commission": 0,
+        "nadc": 1700
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

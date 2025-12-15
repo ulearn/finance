@@ -1,0 +1,4794 @@
+{
+  "generated": "2025-12-15T21:16:42.943Z",
+  "period": "2025-08-01 to 2025-08-31",
+  "description": "Master data: All D-invoices (with payments) for 2025 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 52,
+    "totalRevenue": 48838.57999999996,
+    "totalDiscounts": 13928.290000000008,
+    "totalCommissions": 5133.72,
+    "agentStudents": 10,
+    "directStudents": 42
+  },
+  "invoices": [
+    {
+      "bookingId": 41379,
+      "invoiceNumber": "D2025379",
+      "invoiceDate": "2025-08-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30538",
+        "firstName": "María Pilar",
+        "surname": "Fernández Arroyo",
+        "email": "pfernandezarroyo@yahoo.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Private lessons",
+          "category": "Private lessons",
+          "from": "2025-08-05",
+          "until": "2025-08-08",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee - Happy Plan!",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2025-08-05",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        },
+        {
+          "description": "4 Lessons Private lessons 05/08/2025 - 08/08/2025",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-08-05",
+          "serviceUntil": "2025-08-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 250,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 225
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41381,
+      "invoiceNumber": "D2025393",
+      "invoiceDate": "2025-08-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "13195",
+        "firstName": "Javier",
+        "surname": "Jimenez Solano",
+        "email": "frajimsol@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-08",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-08-11",
+          "until": "2025-08-15",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-08-18",
+          "until": "2025-08-22",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Intensive General 30 18/08/2025 - 22/08/2025",
+          "amount": 290,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 290,
+          "serviceFrom": "2025-08-18",
+          "serviceUntil": "2025-08-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 290,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41383,
+      "invoiceNumber": "D2025447",
+      "invoiceDate": "2025-09-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30540",
+        "firstName": "Iury",
+        "surname": "Marra dos Santos",
+        "email": "iurymarra@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-09-15",
+          "until": "2025-12-19",
+          "weeks": 14,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-03-20",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 additional nights (Apartment / APT-STNDRD / Self catering: 27/09/2025 - 30/09/2025)",
+          "amount": 62,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 62,
+          "serviceFrom": "2025-09-27",
+          "serviceUntil": "2025-09-30",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 62,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 62
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41389,
+      "invoiceNumber": "D2025391",
+      "invoiceDate": "2025-08-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30546",
+        "firstName": "Tuguldurtugs",
+        "surname": "Enkhtugs",
+        "email": "tuguldurtugse@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-27",
+          "until": "2025-12-19",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-05-01",
+          "weeks": 17,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 29/09/2025 - 20/03/2026",
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 630,
+        "commission": 630,
+        "nadc": 2290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41390,
+      "invoiceNumber": "D2025383",
+      "invoiceDate": "2025-08-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29258",
+        "firstName": "Sara",
+        "surname": "Gawkowska",
+        "email": "gawsara@yahoo.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-09-08",
+          "until": "2025-09-26",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Morning General 08/09/2025 - 26/09/2025",
+          "amount": 459,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 459,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-09-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 459,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 459
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41391,
+      "invoiceNumber": "D2025386",
+      "invoiceDate": "2025-08-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30547",
+        "firstName": "Jenell Veronica",
+        "surname": "Guarino",
+        "email": "jenellguarino@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2026-01-26",
+          "until": "2026-02-13",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Su 25/01/2026) (shared transfer)",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2026-01-24",
+          "serviceUntil": "2026-01-24",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2026-01-24",
+          "serviceUntil": "2026-02-14",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Host Family (Junior Student/Full-board) 25/01/2026 - 15/02/2026",
+          "amount": 795,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 795,
+          "serviceFrom": "2026-01-24",
+          "serviceUntil": "2026-02-14",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Happy Plan)",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2026-01-26",
+          "serviceUntil": "2026-02-13",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning General 26/01/2026 - 13/02/2026 Special Offer",
+          "amount": 540,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 486,
+          "serviceFrom": "2026-01-26",
+          "serviceUntil": "2026-02-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1450,
+        "discount": 79,
+        "commission": 0,
+        "nadc": 1371
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41394,
+      "invoiceNumber": "D2025450",
+      "invoiceDate": "2025-09-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30550",
+        "firstName": "Denner Augusto",
+        "surname": "dos Santos Neves Pereira",
+        "email": "denerau@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-13",
+          "until": "2025-12-19",
+          "weeks": 10,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-17",
+          "weeks": 15,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+          "amount": 1890,
+          "discount": 661.5,
+          "commission": 343.98,
+          "nadc": 884.52,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025",
+          "amount": 1260,
+          "discount": 441,
+          "commission": 229,
+          "nadc": 590,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3450,
+        "discount": 1102.5,
+        "commission": 572.98,
+        "nadc": 1774.52
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41395,
+      "invoiceNumber": "D2025412",
+      "invoiceDate": "2025-09-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30551",
+        "firstName": "Yan",
+        "surname": "Wang",
+        "email": "janewykk@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-12-15",
+          "until": "2026-06-05",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 03/11/2025 - 24/04/2026",
+          "amount": 3150,
+          "discount": 945,
+          "commission": 551.25,
+          "nadc": 1653.75,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2026-04-24",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2026-04-24",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2026-04-24",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2026-04-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3570,
+        "discount": 945,
+        "commission": 551.25,
+        "nadc": 2073.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41397,
+      "invoiceNumber": "D2025394",
+      "invoiceDate": "2025-08-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30553",
+        "firstName": "Anna",
+        "surname": "Niewiadomska",
+        "email": "aniewiadomska1@wp.pl"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-09-08",
+          "until": "2025-12-19",
+          "weeks": 15,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "15 weeks Morning General Plus 08/09/2025 - 19/12/2025",
+          "amount": 2865,
+          "discount": 286.5,
+          "commission": 0,
+          "nadc": 2578.5,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2915,
+        "discount": 286.5,
+        "commission": 0,
+        "nadc": 2628.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41399,
+      "invoiceNumber": "D2025407",
+      "invoiceDate": "2025-08-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30555",
+        "firstName": "Alexandre",
+        "surname": "Reis Herméto",
+        "email": "alexhermeto@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-09-22",
+          "until": "2025-11-28",
+          "weeks": 10,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-12-08",
+          "until": "2025-12-19",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-03",
+          "weeks": 13,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 22/09/2025 - 13/03/2026",
+          "amount": 2400,
+          "discount": 840,
+          "commission": 437.36,
+          "nadc": 1122.64,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2700,
+        "discount": 840,
+        "commission": 437.36,
+        "nadc": 1422.64
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41400,
+      "invoiceNumber": "D2025435",
+      "invoiceDate": "2025-09-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30556",
+        "firstName": "Kristina",
+        "surname": "Dincer",
+        "email": "kristina.dincer@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-09-01",
+          "until": "2025-10-10",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-10-13",
+          "until": "2025-10-24",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-11-03",
+          "until": "2025-12-12",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 13/10/2025 - 24/10/2025",
+          "amount": 306,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-24",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Morning General 03/11/2025 - 12/12/2025",
+          "amount": 918,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 918,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2025-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1224,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1224
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41402,
+      "invoiceNumber": "D2025398",
+      "invoiceDate": "2025-08-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30330",
+        "firstName": "Paola",
+        "surname": "Parada",
+        "email": "paolaparada03@yahoo.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-11-24",
+          "until": "2025-12-19",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-11-22",
+          "serviceUntil": "2025-12-20",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (APT-STNDRD/Self catering) 22/11/2025 - 20/12/2025",
+          "amount": 1320,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1320,
+          "serviceFrom": "2025-11-22",
+          "serviceUntil": "2025-12-20",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Intensive General 30 24/11/2025 - 19/12/2025",
+          "amount": 1160,
+          "discount": 116,
+          "commission": 0,
+          "nadc": 1044,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2545,
+        "discount": 116,
+        "commission": 0,
+        "nadc": 2429
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41405,
+      "invoiceNumber": "D2025402",
+      "invoiceDate": "2025-08-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30560",
+        "firstName": "Guadalupe",
+        "surname": "Zenteno Mondragon",
+        "email": "lupith.znt@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-09-29",
+          "until": "2025-12-19",
+          "weeks": 12,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-03",
+          "weeks": 13,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 06/10/2025 - 27/03/2026",
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 511.88,
+          "nadc": 1535.62,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3450,
+        "discount": 1102.5,
+        "commission": 511.88,
+        "nadc": 1835.62
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41407,
+      "invoiceNumber": "D2025399",
+      "invoiceDate": "2025-08-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30562",
+        "firstName": "Barkhaschinbai",
+        "surname": "Sainzaya",
+        "email": "barhashuder@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-10-27",
+          "until": "2026-04-17",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 06/10/2025 - 27/03/2026",
+          "amount": 2400,
+          "discount": 480,
+          "commission": 480,
+          "nadc": 1440,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-06",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2800,
+        "discount": 480,
+        "commission": 480,
+        "nadc": 1840
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41409,
+      "invoiceNumber": "D2025409",
+      "invoiceDate": "2025-08-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30564",
+        "firstName": "Halil",
+        "surname": "Yoztyurk",
+        "email": "yoztyurkhalil@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-09-08",
+          "until": "2025-12-19",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2026-01-05",
+          "until": "2026-01-09",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "16 weeks Morning General Plus 08/09/2025 - 26/12/2025",
+          "amount": 3056,
+          "discount": 611.2,
+          "commission": 611.2,
+          "nadc": 1833.6,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-12-26",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-12-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3106,
+        "discount": 611.2,
+        "commission": 611.2,
+        "nadc": 1883.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41411,
+      "invoiceNumber": "D2025531",
+      "invoiceDate": "2025-11-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30566",
+        "firstName": "Willians",
+        "surname": "dos Santos Coelho",
+        "email": "willianscoelho00@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-12-08",
+          "until": "2025-12-19",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-06-12",
+          "weeks": 23,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 08/12/2025 - 29/05/2026",
+          "amount": 2400,
+          "discount": 840,
+          "commission": 436.8,
+          "nadc": 1123.2,
+          "serviceFrom": "2025-12-08",
+          "serviceUntil": "2026-05-29",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2025-12-08",
+          "serviceUntil": "2026-05-29",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-12-08",
+          "serviceUntil": "2026-05-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-12-08",
+          "serviceUntil": "2026-05-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2700,
+        "discount": 840,
+        "commission": 436.8,
+        "nadc": 1423.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41412,
+      "invoiceNumber": "D2025439",
+      "invoiceDate": "2025-09-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30567",
+        "firstName": "Felipe",
+        "surname": "Ribeiro Cardoso",
+        "email": "felipe_r_cardoso23@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-10-20",
+          "until": "2025-12-19",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-24",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 20/10/2025 - 10/04/2026",
+          "amount": 2400,
+          "discount": 840,
+          "commission": 351,
+          "nadc": 1209,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2820,
+        "discount": 840,
+        "commission": 351,
+        "nadc": 1629
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41416,
+      "invoiceNumber": "D2025410",
+      "invoiceDate": "2025-09-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30571",
+        "firstName": "Wanying",
+        "surname": "SONG",
+        "email": "wanyingsong0228@163.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-11-24",
+          "until": "2026-05-15",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 27/10/2025 - 17/04/2026",
+          "amount": 3150,
+          "discount": 945,
+          "commission": 551.25,
+          "nadc": 1653.75,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3570,
+        "discount": 945,
+        "commission": 551.25,
+        "nadc": 2073.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41418,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30573",
+        "firstName": "Ares",
+        "surname": "Andreu Borràs",
+        "email": "familycoquito@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41419,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30574",
+        "firstName": "Eudald",
+        "surname": "Arnau Vidal",
+        "email": "jordiarnauimoliner@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41420,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30575",
+        "firstName": "Wanbing",
+        "surname": "Caba Santoro",
+        "email": "isantoro@insronda.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41421,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30576",
+        "firstName": "Ares",
+        "surname": "Cádiz",
+        "email": "mcadizarancibia@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41422,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30577",
+        "firstName": "David",
+        "surname": "Casey",
+        "email": "jocarecasey@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41423,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30578",
+        "firstName": "Gerard",
+        "surname": "Estragués",
+        "email": "fx.esfer@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41424,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30579",
+        "firstName": "Paula",
+        "surname": "Farran",
+        "email": "esole228@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41425,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30580",
+        "firstName": "Arnau",
+        "surname": "Farré",
+        "email": "angels.piro@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41426,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30581",
+        "firstName": "Marc",
+        "surname": "Fornós",
+        "email": "evalopeztruco@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41427,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30582",
+        "firstName": "Laia",
+        "surname": "Garcia",
+        "email": "patriadrianlaia@hotmail.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41428,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30583",
+        "firstName": "Martí",
+        "surname": "Ichart",
+        "email": "jordi@transportsichart.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41429,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30584",
+        "firstName": "Elena",
+        "surname": "Jové",
+        "email": "eduaigues@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41430,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30585",
+        "firstName": "Àlex",
+        "surname": "Jover",
+        "email": "jjjoverg@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41431,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30586",
+        "firstName": "David",
+        "surname": "Linte",
+        "email": "lilianayubitu@yahoo.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41432,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30587",
+        "firstName": "Gerard",
+        "surname": "Llurda",
+        "email": "enric.llurda@udl.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41433,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30588",
+        "firstName": "Ona",
+        "surname": "Malet",
+        "email": "dolorstorrellescastells@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41434,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30589",
+        "firstName": "Daia",
+        "surname": "Márquez",
+        "email": "joanmf65@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41435,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30590",
+        "firstName": "Martina",
+        "surname": "Monsonís",
+        "email": "nuricanes@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41436,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30591",
+        "firstName": "Telma",
+        "surname": "Mora",
+        "email": "sefaromerogomez@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41437,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30592",
+        "firstName": "Sarah",
+        "surname": "Moreno",
+        "email": "ferchomoreno@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41438,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30593",
+        "firstName": "Sara",
+        "surname": "Mur",
+        "email": "jo_elisa@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41439,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30594",
+        "firstName": "Aran",
+        "surname": "Mur",
+        "email": "estefaniarene@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41440,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30595",
+        "firstName": "Joel Eloi",
+        "surname": "Oró",
+        "email": "jaume.oro@gencat.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.98,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.98,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.43,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.43,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.1,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.1,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.49,
+          "discount": 51.49,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.5,
+          "discount": 41.3,
+          "commission": 0,
+          "nadc": 165.2,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.5,
+        "discount": 157.79000000000002,
+        "commission": 0,
+        "nadc": 694.71
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41441,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30596",
+        "firstName": "Omar",
+        "surname": "Ortega",
+        "email": "familiaortegaoliva@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41442,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30597",
+        "firstName": "Helena",
+        "surname": "Pérez",
+        "email": "mrubio74@xtec.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41443,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30598",
+        "firstName": "Jordi",
+        "surname": "Pujol",
+        "email": "octavi40@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41444,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30599",
+        "firstName": "Adrià",
+        "surname": "Rúbio",
+        "email": "eva00gimeno@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41445,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30600",
+        "firstName": "Guillem",
+        "surname": "Simó",
+        "email": "beleng661@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41446,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30601",
+        "firstName": "Bilal",
+        "surname": "Sellak",
+        "email": "msellakbafdi@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41447,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30602",
+        "firstName": "Nizar",
+        "surname": "Skhiene",
+        "email": "montse.cagi@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41448,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30603",
+        "firstName": "Vicens",
+        "surname": "Mario",
+        "email": "gce8930@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-10-13",
+          "until": "2025-10-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Stay Junior 1 Week (Oct-Jun)",
+          "amount": 289.03,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 289.03,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 51.47,
+          "discount": 51.47,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Junior Group Morning 15-hour 13/10/2025 - 17/10/2025",
+          "amount": 206.45,
+          "discount": 41.29,
+          "commission": 0,
+          "nadc": 165.16,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2025-10-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 852.1800000000001,
+        "discount": 157.76,
+        "commission": 0,
+        "nadc": 694.42
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41449,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30604",
+        "firstName": "SÍLVIA",
+        "surname": "CANTONS VENDRELL",
+        "email": "scantons@insronda.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 133.23,
+        "discount": 65,
+        "commission": 0,
+        "nadc": 68.22999999999999
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41450,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30605",
+        "firstName": "MARIA DEL MAR",
+        "surname": "MIRET REÑÉ",
+        "email": "scantons@insronda.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 133.23,
+        "discount": 65,
+        "commission": 0,
+        "nadc": 68.22999999999999
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41451,
+      "invoiceNumber": "D2025415",
+      "invoiceDate": "2025-09-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30606",
+        "firstName": "CRISTINA",
+        "surname": "LACAMBRA BRAVO",
+        "email": "scantons@insronda.cat"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Public Transport Tickets",
+          "amount": 32.94,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32.94,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Airport Transport Groups",
+          "amount": 35.29,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 35.29,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Junior-Active Package Extras",
+          "amount": 172,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 172,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-10-11",
+          "serviceUntil": "2025-10-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 305.23,
+        "discount": 65,
+        "commission": 0,
+        "nadc": 240.23
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

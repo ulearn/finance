@@ -1,8 +1,8 @@
 {
-  "collectedAt": "2025-12-09T15:01:09.705Z",
+  "collectedAt": "2025-12-15T15:00:59.664Z",
   "month": "dec",
   "year": "2025",
-  "count": 39,
+  "count": 54,
   "transactions": [
     {
       "index": 44,
@@ -576,6 +576,246 @@
         "account": "B110 - Google Ad (or other advertising)",
         "description": "POS25SEP GOOGLE *ADS1"
       }
+    },
+    {
+      "index": 37,
+      "dataId": "ee2bc0544bf545b0ba02944117c53760",
+      "description": "x2 ULearn Ltd.     SP",
+      "date": "9 Dec 2025",
+      "reference": "931",
+      "amountSpent": "",
+      "amountReceived": "904.00",
+      "type": "RECEIVE",
+      "amount": "904.00",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 38,
+      "dataId": "c97615a2086d42a6b2e15807ac3b6d66",
+      "description": "POS09DEC A2WEBHOST* I",
+      "date": "9 Dec 2025",
+      "reference": "545",
+      "amountSpent": "460.25",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "460.25",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "A2 Hosting",
+        "account": "B106 - Software / Hosting",
+        "description": "POS19OCT A2WEBHOST* I"
+      }
+    },
+    {
+      "index": 39,
+      "dataId": "a6635fbea5cb48b09d31cc9ddece41ee",
+      "description": "NEPOSCHGGBP 000000.21",
+      "date": "9 Dec 2025",
+      "reference": "407",
+      "amountSpent": "0.21",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.21",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGGBP 000000.21"
+      }
+    },
+    {
+      "index": 40,
+      "dataId": "5e33b295093a4de9a9ec723525dc4cb5",
+      "description": "P0812GB  8.99@1.14571",
+      "date": "9 Dec 2025",
+      "reference": "553",
+      "amountSpent": "10.30",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "10.30",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Audible - CARD",
+        "account": "B121 - Text Books & Academic Materials",
+        "description": "P0811GB  7.99@1.15269"
+      }
+    },
+    {
+      "index": 41,
+      "dataId": "0872e84a27b145e4b469582071d3409d",
+      "description": "POS08DEC Upwork -8728",
+      "date": "9 Dec 2025",
+      "reference": "545",
+      "amountSpent": "76.18",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "76.18",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Upwork - CARD",
+        "account": "B118 - Consulting & Accounting (Professional Services)",
+        "description": "Upwork -7705 service"
+      }
+    },
+    {
+      "index": 42,
+      "dataId": "104649b68731461d8f26acfdb4910e24",
+      "description": "POS08DEC APPLE.COM/BI",
+      "date": "9 Dec 2025",
+      "reference": "545",
+      "amountSpent": "4.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "4.99",
+      "xeroSuggestion": null
+    },
+    {
+      "index": 43,
+      "dataId": "ae8b46d1dbcc498e985aeb54672e363b",
+      "description": "BORD GAIS EIR SEPA DD",
+      "date": "10 Dec 2025",
+      "reference": "340",
+      "amountSpent": "465.77",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "465.77",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bord Gais Energy - DD",
+        "account": "B105a - Utils - Power, Light, Heat (Apartments)",
+        "description": "BORD GAIS EIR SEPA DD"
+      }
+    },
+    {
+      "index": 44,
+      "dataId": "15fe995309d34727a3f75e41b252704c",
+      "description": "P0912GB  8.99@1.14682",
+      "date": "10 Dec 2025",
+      "reference": "553",
+      "amountSpent": "10.31",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "10.31",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Audible - CARD",
+        "account": "B121 - Text Books & Academic Materials",
+        "description": "P0811GB  7.99@1.15269"
+      }
+    },
+    {
+      "index": 45,
+      "dataId": "e7025286e8584d14aabb4317e7bd6f64",
+      "description": "NEPOSCHGGBP 000000.21",
+      "date": "10 Dec 2025",
+      "reference": "407",
+      "amountSpent": "0.21",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "0.21",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Bank Charges",
+        "account": "B127 - Bank Fees",
+        "description": "NEPOSCHGGBP 000000.21"
+      }
+    },
+    {
+      "index": 0,
+      "dataId": "a82f835bfc4e4b858bd1523e0807fa9e",
+      "description": "Flogas Natura SEPA DD",
+      "date": "11 Dec 2025",
+      "reference": "340",
+      "amountSpent": "180.35",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "180.35",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flogas SEPA - DD",
+        "account": "B105 - Utils - Power, Light, Heat",
+        "description": "Gas (Combines 753569 € 430.76 & prior 742459 -€113.20)"
+      }
+    },
+    {
+      "index": 1,
+      "dataId": "5a6895fcda1448a4a34919ab4fa430b7",
+      "description": "Flogas Natura SEPA DD",
+      "date": "11 Dec 2025",
+      "reference": "340",
+      "amountSpent": "303.40",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "303.40",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Flogas SEPA - DD",
+        "account": "B105 - Utils - Power, Light, Heat",
+        "description": "Gas (Combines 753569 € 430.76 & prior 742459 -€113.20)"
+      }
+    },
+    {
+      "index": 2,
+      "dataId": "545aabd1dc104ecf8574b4098aa80389",
+      "description": "POS12DEC ZOHO-PEOPLE",
+      "date": "12 Dec 2025",
+      "reference": "545",
+      "amountSpent": "9.90",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "9.90",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Zoho",
+        "account": "B106 - Software / Hosting",
+        "description": "POS12MAR ZOHO-PEOPLE"
+      }
+    },
+    {
+      "index": 3,
+      "dataId": "586afe2c9a8d4303bfa0f085e787ae6c",
+      "description": "POS11DEC Spotify P3D5",
+      "date": "12 Dec 2025",
+      "reference": "545",
+      "amountSpent": "11.99",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "11.99",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Spotify",
+        "account": "B102 - Office Running Expenses",
+        "description": "Rec Room Music"
+      }
+    },
+    {
+      "index": 4,
+      "dataId": "9f47e02f60394662bd518687bdf4d256",
+      "description": "POS11DEC Google ADS10",
+      "date": "12 Dec 2025",
+      "reference": "545",
+      "amountSpent": "1,000.00",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "1,000.00",
+      "xeroSuggestion": {
+        "hasSuggestion": true,
+        "contact": "Google",
+        "account": "B110 - Google Ad (or other advertising)",
+        "description": "POS25SEP GOOGLE *ADS1"
+      }
+    },
+    {
+      "index": 5,
+      "dataId": "23245c6449a74cc0b21a321da404d88e",
+      "description": "POS11DEC PDFSimpli",
+      "date": "12 Dec 2025",
+      "reference": "545",
+      "amountSpent": "49.95",
+      "amountReceived": "",
+      "type": "SPEND",
+      "amount": "49.95",
+      "xeroSuggestion": null
     }
   ],
   "status": "AWAITING_AI_ANALYSIS"

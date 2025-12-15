@@ -1,0 +1,369 @@
+{
+  "generated": "2025-12-15T14:09:33.939Z",
+  "period": "2021-03-01 to 2021-03-31",
+  "description": "Master data: All D-invoices (with payments) for 2021 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 3,
+    "totalRevenue": 15245,
+    "totalDiscounts": 115,
+    "totalCommissions": 2520,
+    "agentStudents": 3,
+    "directStudents": 0
+  },
+  "invoices": [
+    {
+      "bookingId": 33391,
+      "invoiceNumber": "D2021083",
+      "invoiceDate": "2021-10-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23435",
+        "firstName": "Lucie",
+        "surname": "Veylon",
+        "email": "lucie.veylon@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-10-25",
+          "until": "2021-12-17",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-03-14",
+          "until": "2022-03-25",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2022-01-03",
+          "until": "2022-03-11",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "10 weeks Morning General 03/01/2022 - 11/03/2022",
+          "amount": 1400,
+          "discount": 0,
+          "commission": 420,
+          "nadc": 980,
+          "serviceFrom": "2022-01-03",
+          "serviceUntil": "2022-03-11",
+          "tax": 0
+        },
+        {
+          "description": "Individual Airport Transfer (One-Way)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2021-09-12",
+          "serviceUntil": "2022-02-13",
+          "tax": 0
+        },
+        {
+          "description": "22 weeks Apartment (APT-STNDRD/Self catering) 24/10/2021 - 27/03/2022",
+          "amount": 5170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 5170,
+          "serviceFrom": "2021-10-24",
+          "serviceUntil": "2022-03-27",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 25/10/2021 - 17/12/2021",
+          "amount": 1120,
+          "discount": 0,
+          "commission": 336,
+          "nadc": 784,
+          "serviceFrom": "2021-10-25",
+          "serviceUntil": "2021-12-17",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-10-24",
+          "serviceUntil": "2022-03-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Morning General)",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-09-13",
+          "serviceUntil": "2021-12-17",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 14/03/2022 - 25/03/2022 COMPLIMENTARY",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2022-03-14",
+          "serviceUntil": "2022-03-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 7885,
+        "discount": 115,
+        "commission": 756,
+        "nadc": 7014
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33396,
+      "invoiceNumber": "D2021037",
+      "invoiceDate": "2021-07-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23438",
+        "firstName": "Antoine",
+        "surname": "Moreau",
+        "email": "antoine.m44118@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-07-19",
+          "until": "2021-12-10",
+          "weeks": 21,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Lisa Bothamy Credit",
+          "amount": -137,
+          "discount": 0,
+          "commission": 0,
+          "nadc": -137,
+          "serviceFrom": "2021-07-18",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "Matthis Ginestet Manual Credit Note MCN2021002",
+          "amount": -1425.5,
+          "discount": 0,
+          "commission": 0,
+          "nadc": -1425.5,
+          "serviceFrom": "2021-07-11",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "Shared  Airport Transfer (One-Way)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2021-07-11",
+          "serviceUntil": "2021-12-04",
+          "tax": 0
+        },
+        {
+          "description": "21 weeks Apartment (Shared Room/Self catering) 18/07/2021 - 12/12/2021",
+          "amount": 3465,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3465,
+          "serviceFrom": "2021-07-18",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "21 weeks Morning General 19/07/2021 - 10/12/2021",
+          "amount": 2940,
+          "discount": 0,
+          "commission": 882,
+          "nadc": 2058,
+          "serviceFrom": "2021-07-19",
+          "serviceUntil": "2021-12-10",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2021-07-18",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-07-19",
+          "serviceUntil": "2021-12-10",
+          "tax": 0
+        },
+        {
+          "description": "Arrival (Su 11/07/2021)",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-07-11",
+          "serviceUntil": "2021-07-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5037.5,
+        "discount": 0,
+        "commission": 882,
+        "nadc": 4155.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33397,
+      "invoiceNumber": "D2021036",
+      "invoiceDate": "2021-07-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23439",
+        "firstName": "Louis",
+        "surname": "Mannerie",
+        "email": "lmannerie@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-07-19",
+          "until": "2021-12-10",
+          "weeks": 21,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Lisa Bothamy credit",
+          "amount": -137,
+          "discount": 0,
+          "commission": 0,
+          "nadc": -137,
+          "serviceFrom": "2021-07-18",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "Mathis Ginestet Manual Credit Note MCN2021002",
+          "amount": -1425.5,
+          "discount": 0,
+          "commission": 0,
+          "nadc": -1425.5,
+          "serviceFrom": "2021-07-11",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "Shared Airport Transfer (One-Way) on Antoine Moreau's invoice",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-07-11",
+          "serviceUntil": "2021-12-04",
+          "tax": 0
+        },
+        {
+          "description": "21 weeks Apartment (Shared Room/Self catering) 18/07/2021 - 12/12/2021",
+          "amount": 3465,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3465,
+          "serviceFrom": "2021-07-18",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "21 weeks Morning General 19/07/2021 - 10/12/2021",
+          "amount": 2940,
+          "discount": 0,
+          "commission": 882,
+          "nadc": 2058,
+          "serviceFrom": "2021-07-19",
+          "serviceUntil": "2021-12-10",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2021-07-18",
+          "serviceUntil": "2021-12-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-07-19",
+          "serviceUntil": "2021-12-10",
+          "tax": 0
+        },
+        {
+          "description": "Arrival (Su 11/07/2021)",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2021-07-11",
+          "serviceUntil": "2021-07-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4957.5,
+        "discount": 0,
+        "commission": 882,
+        "nadc": 4075.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

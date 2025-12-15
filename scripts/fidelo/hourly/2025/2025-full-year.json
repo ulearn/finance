@@ -1,0 +1,5371 @@
+{
+  "generated": "2025-12-09T23:09:05.238Z",
+  "period": "2025-01-01 to 2025-11-30",
+  "summary": {
+    "totalBookings": 179,
+    "totalRevenue": 209538.69,
+    "totalHours": 37395,
+    "avgRate": 7.561998553693355
+  },
+  "results": [
+    {
+      "bookingId": 40278,
+      "studentId": "29456",
+      "studentName": "Mariane Adario Kobayashi",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-03-03 to 2025-08-22",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 03/03/2025 - 22/08/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 472.5,
+          "nadc": 1417.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 03/03/2025 - 22/08/2025",
+      "amountOriginal": 3150,
+      "discount": 1260,
+      "commission": 472.5,
+      "courseFeeNADC": 1417.5,
+      "ratePerHour": 3.78,
+      "invoice": "D2025044",
+      "invoiceDate": "2025-01-24",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40281,
+      "studentId": "29459",
+      "studentName": "Danhong Ye",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-07-14 to 2025-12-12",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 03/03/2025 - 22/08/2025 Black Friday Promotion",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 03/03/2025 - 22/08/2025 Black Friday Promotion",
+      "amountOriginal": 3150,
+      "discount": 1260,
+      "commission": 0,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025006",
+      "invoiceDate": "2025-01-06",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40293,
+      "studentId": "29471",
+      "studentName": "Yu-Ting Wang",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-04-21 to 2025-07-04",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 21/04/2025 - 10/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 472.5,
+          "nadc": 1417.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 21/04/2025 - 10/10/2025",
+      "amountOriginal": 3150,
+      "discount": 1260,
+      "commission": 472.5,
+      "courseFeeNADC": 1417.5,
+      "ratePerHour": 3.78,
+      "invoice": "D2025084",
+      "invoiceDate": "2025-02-21",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40299,
+      "studentId": "29477",
+      "studentName": "Adriano Pereira da Silva",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-02-10 to 2025-08-01",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 10/02/2025 - 01/08/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 472.5,
+          "nadc": 1417.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 10/02/2025 - 01/08/2025",
+      "amountOriginal": 3150,
+      "discount": 1260,
+      "commission": 472.5,
+      "courseFeeNADC": 1417.5,
+      "ratePerHour": 3.78,
+      "invoice": "D2025045",
+      "invoiceDate": "2025-01-24",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40308,
+      "studentId": "29486",
+      "studentName": "Natsumi Taguchi",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-03-17 to 2025-05-09",
+      "weeks": 8,
+      "totalHours": 120,
+      "courseLineItems": [
+        {
+          "description": "8 weeks Morning General 17/03/2025 - 09/05/2025",
+          "weeks": 8,
+          "amount": 1264,
+          "discount": 0,
+          "commission": 316,
+          "nadc": 948
+        }
+      ],
+      "courseDescription": "8 weeks Morning General 17/03/2025 - 09/05/2025",
+      "amountOriginal": 1264,
+      "discount": 0,
+      "commission": 316,
+      "courseFeeNADC": 948,
+      "ratePerHour": 7.9,
+      "invoice": "D2025016",
+      "invoiceDate": "2025-01-10",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40318,
+      "studentId": "29495",
+      "studentName": "Jorge Sastre-Martínez",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-01-20 to 2025-01-24",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 20/01/2025 - 24/01/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 20/01/2025 - 24/01/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025022",
+      "invoiceDate": "2025-01-16",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40324,
+      "studentId": "29501",
+      "studentName": "Abril Eunice Becerra Rosales",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-03-03 to 2025-08-22",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 24/02/2025 - 15/08/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 590.63,
+          "nadc": 1771.87
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 24/02/2025 - 15/08/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 590.63,
+      "courseFeeNADC": 1771.87,
+      "ratePerHour": 4.724986666666666,
+      "invoice": "D2025050",
+      "invoiceDate": "2025-01-29",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40326,
+      "studentId": "29503",
+      "studentName": "Yumihiko Uemura",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-02-03 to 2025-05-09",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 04/02/2025 - 25/07/2025 Special offer",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 315,
+          "commission": 0,
+          "nadc": 2835
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 04/02/2025 - 25/07/2025 Special offer",
+      "amountOriginal": 3150,
+      "discount": 315,
+      "commission": 0,
+      "courseFeeNADC": 2835,
+      "ratePerHour": 7.56,
+      "invoice": "D2025039",
+      "invoiceDate": "2025-01-23",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40328,
+      "studentId": "29505",
+      "studentName": "Paula Marques Lluch",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-03-24 to 2025-06-13",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General Plus 11/08/2025 - 22/08/2025",
+          "weeks": 2,
+          "amount": 382,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 382
+        }
+      ],
+      "courseDescription": "2 weeks Morning General Plus 11/08/2025 - 22/08/2025",
+      "amountOriginal": 382,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 382,
+      "ratePerHour": 12.733333333333333,
+      "invoice": "D2025360",
+      "invoiceDate": "2025-07-21",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40336,
+      "studentId": "29513",
+      "studentName": "Burnice Zhao",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-01-20 to 2025-01-31",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning IELTS 20/01/2025 - 07/02/2025",
+          "weeks": 3,
+          "amount": 540,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 540
+        }
+      ],
+      "courseDescription": "3 weeks Morning IELTS 20/01/2025 - 07/02/2025",
+      "amountOriginal": 540,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 540,
+      "ratePerHour": 12,
+      "invoice": "D2025030",
+      "invoiceDate": "2025-01-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40337,
+      "studentId": "29514",
+      "studentName": "Omar Altork",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-01-20 to 2025-01-31",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 04/02/2025 - 14/02/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 04/02/2025 - 14/02/2025",
+      "amountOriginal": 360,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 360,
+      "ratePerHour": 12,
+      "invoice": "D2025053",
+      "invoiceDate": "2025-01-30",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40338,
+      "studentId": "29515",
+      "studentName": "Carmen Lorenzo Rubio",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-01-20 to 2025-01-31",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 24/02/2025 - 07/03/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 24/02/2025 - 07/03/2025",
+      "amountOriginal": 360,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 360,
+      "ratePerHour": 12,
+      "invoice": "D2025083",
+      "invoiceDate": "2025-02-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40344,
+      "studentId": "26195",
+      "studentName": "Maria Sievert",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-18 to 2025-08-29",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 18/08/2025 - 29/08/2025",
+          "weeks": 2,
+          "amount": 380,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 380
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 18/08/2025 - 29/08/2025",
+      "amountOriginal": 380,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 380,
+      "ratePerHour": 12.666666666666666,
+      "invoice": "D2025033",
+      "invoiceDate": "2025-01-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40348,
+      "studentId": "27748",
+      "studentName": "Catalina Meribet Diaz Fernandez",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-02-24 to 2025-05-09",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 24/02/2025 - 15/08/2025",
+          "weeks": 25,
+          "amount": 1600,
+          "discount": 800,
+          "commission": 0,
+          "nadc": 800
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Renewal Morning 24/02/2025 - 15/08/2025",
+      "amountOriginal": 1600,
+      "discount": 800,
+      "commission": 0,
+      "courseFeeNADC": 800,
+      "ratePerHour": 2.1333333333333333,
+      "invoice": "D2025046",
+      "invoiceDate": "2025-01-24",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40355,
+      "studentId": "29531",
+      "studentName": "Saikhantes Shagdarsuren",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-06-30 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 30/06/2025 - 19/12/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 590.63,
+          "nadc": 1771.87
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 30/06/2025 - 19/12/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 590.63,
+      "courseFeeNADC": 1771.87,
+      "ratePerHour": 4.724986666666666,
+      "invoice": "D2025185",
+      "invoiceDate": "2025-04-22",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40398,
+      "studentId": "29574",
+      "studentName": "Álvaro Martínez",
+      "courseName": "Morning General Plus",
+      "coursePeriod": "2025-02-10 to 2025-03-07",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 10/03/2025 - 21/03/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 10/03/2025 - 21/03/2025",
+      "amountOriginal": 360,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 360,
+      "ratePerHour": 12,
+      "invoice": "D2025106",
+      "invoiceDate": "2025-03-07",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40401,
+      "studentId": "29577",
+      "studentName": "Lethicia Marques Silva",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-05-12 to 2025-10-10",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 12/05/2025 - 31/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3150
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 12/05/2025 - 31/10/2025",
+      "amountOriginal": 3150,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 3150,
+      "ratePerHour": 8.4,
+      "invoice": "D2025218",
+      "invoiceDate": "2025-05-06",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40411,
+      "studentId": "29587",
+      "studentName": "Guillermo Casaus Rabaneda",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-02-03 to 2025-02-07",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 04/02/2025 - 07/02/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 04/02/2025 - 07/02/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025049",
+      "invoiceDate": "2025-01-29",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40415,
+      "studentId": "29591",
+      "studentName": "Renan Gabriel Furtado de Oliveira",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-05-26 to 2025-08-22",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 26/05/2025 - 14/11/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 590.63,
+          "nadc": 1771.87
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 26/05/2025 - 14/11/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 590.63,
+      "courseFeeNADC": 1771.87,
+      "ratePerHour": 4.724986666666666,
+      "invoice": "D2025242",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40444,
+      "studentId": "29620",
+      "studentName": "Ganbat Altanshagai",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-05-19 to 2025-11-07",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 28/04/2025 - 17/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 315,
+          "commission": 708.75,
+          "nadc": 2126.25
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 28/04/2025 - 17/10/2025",
+      "amountOriginal": 3150,
+      "discount": 315,
+      "commission": 708.75,
+      "courseFeeNADC": 2126.25,
+      "ratePerHour": 5.67,
+      "invoice": "D2025059",
+      "invoiceDate": "2025-02-06",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40474,
+      "studentId": "29650",
+      "studentName": "Lu Zhang",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-05-12 to 2025-10-31",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 24/03/2025 - 12/09/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 519.75,
+          "nadc": 1842.75
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 24/03/2025 - 12/09/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 519.75,
+      "courseFeeNADC": 1842.75,
+      "ratePerHour": 4.914,
+      "invoice": "D2025072",
+      "invoiceDate": "2025-02-14",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40478,
+      "studentId": "29654",
+      "studentName": "Yazmin Chavez Rubio",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-03-03 to 2025-08-22",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 03/03/2025 - 22/08/2025",
+          "weeks": 25,
+          "amount": 1950,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1950
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Renewal Morning 03/03/2025 - 22/08/2025",
+      "amountOriginal": 1950,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1950,
+      "ratePerHour": 5.2,
+      "invoice": "D2025055",
+      "invoiceDate": "2025-01-31",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40491,
+      "studentId": "29667",
+      "studentName": "Ochgerel Basan",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-07-07 to 2025-10-31",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 21/04/2025 - 10/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 21/04/2025 - 10/10/2025",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025209",
+      "invoiceDate": "2025-05-05",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40493,
+      "studentId": "29669",
+      "studentName": "Oyun-Erdene Enkhbat",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-07-07 to 2025-10-31",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 21/04/2025 - 10/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 21/04/2025 - 10/10/2025",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025069",
+      "invoiceDate": "2025-02-12",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40521,
+      "studentId": "29697",
+      "studentName": "Juliana Cardoso Joukoski",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-04-14 to 2025-06-06",
+      "weeks": 24,
+      "totalHours": 360,
+      "courseLineItems": [
+        {
+          "description": "24 weeks Academic Year Morning 14/04/2025 - 26/09/2025",
+          "weeks": 24,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 590.63,
+          "nadc": 1771.87
+        }
+      ],
+      "courseDescription": "24 weeks Academic Year Morning 14/04/2025 - 26/09/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 590.63,
+      "courseFeeNADC": 1771.87,
+      "ratePerHour": 4.921861111111111,
+      "invoice": "D2025144",
+      "invoiceDate": "2025-03-27",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40568,
+      "studentId": "29744",
+      "studentName": "Sofia Nicolaou",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-07-21 to 2025-08-22",
+      "weeks": 5,
+      "totalHours": 75,
+      "courseLineItems": [
+        {
+          "description": "5 weeks Morning IELTS 21/07/2025 - 22/08/2025 On-peak season",
+          "weeks": 5,
+          "amount": 950,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 950
+        }
+      ],
+      "courseDescription": "5 weeks Morning IELTS 21/07/2025 - 22/08/2025 On-peak season",
+      "amountOriginal": 950,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 950,
+      "ratePerHour": 12.666666666666666,
+      "invoice": "D2025067",
+      "invoiceDate": "2025-02-12",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40569,
+      "studentId": "29745",
+      "studentName": "Fernanda Begue Ferreira",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-08-25 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 25/08/2025 - 13/02/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 661.5,
+          "nadc": 1701
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 25/08/2025 - 13/02/2026",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 661.5,
+      "courseFeeNADC": 1701,
+      "ratePerHour": 4.536,
+      "invoice": "D2025392",
+      "invoiceDate": "2025-08-14",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40571,
+      "studentId": "29747",
+      "studentName": "Jose Daniel Melendez Valencia",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-13 to 2025-10-17",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Academic Year Morning 13/10/2025 - 17/10/2025",
+          "weeks": 1,
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30
+        }
+      ],
+      "courseDescription": "1 Week Academic Year Morning 13/10/2025 - 17/10/2025",
+      "amountOriginal": 30,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 30,
+      "ratePerHour": 2,
+      "invoice": "D2025481",
+      "invoiceDate": "2025-10-07",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40574,
+      "studentId": "29750",
+      "studentName": "Dariimaa Bayandalai",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-06-09 to 2025-11-28",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025068",
+      "invoiceDate": "2025-02-12",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40577,
+      "studentId": "29753",
+      "studentName": "Phannamas Puttang",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-02-24 to 2025-08-15",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 24/02/2025 - 15/08/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 531,
+          "nadc": 1831.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 24/02/2025 - 15/08/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 531,
+      "courseFeeNADC": 1831.5,
+      "ratePerHour": 4.884,
+      "invoice": "D2025074",
+      "invoiceDate": "2025-02-17",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40584,
+      "studentId": "27962",
+      "studentName": "Louise Didion Sallé",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-06-30 to 2025-07-18",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 30/06/2025 - 18/07/2025",
+          "weeks": 3,
+          "amount": 570,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 570
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 30/06/2025 - 18/07/2025",
+      "amountOriginal": 570,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 570,
+      "ratePerHour": 12.666666666666666,
+      "invoice": "D2025102",
+      "invoiceDate": "2025-03-07",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40620,
+      "studentId": "29796",
+      "studentName": "Moka Kanazawa",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-03-24 to 2025-04-18",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 24/03/2025 - 18/04/2025 Special Offer",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 648
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 24/03/2025 - 18/04/2025 Special Offer",
+      "amountOriginal": 720,
+      "discount": 72,
+      "commission": 0,
+      "courseFeeNADC": 648,
+      "ratePerHour": 10.8,
+      "invoice": "D2025094",
+      "invoiceDate": "2025-03-03",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40632,
+      "studentId": "29808",
+      "studentName": "Temuulen Undrakh",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-07-14 to 2025-12-05",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025098",
+      "invoiceDate": "2025-03-06",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40633,
+      "studentId": "29809",
+      "studentName": "Dashmaa Munkhbayar",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-07-14 to 2025-12-12",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025099",
+      "invoiceDate": "2025-03-06",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40638,
+      "studentId": "29814",
+      "studentName": "Carlos Gómez Arevalillo",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-02-24 to 2025-02-28",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 24/02/2025 - 28/02/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 24/02/2025 - 28/02/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025086",
+      "invoiceDate": "2025-02-21",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40639,
+      "studentId": "29815",
+      "studentName": "Hugo Baranx",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-03-10 to 2025-03-21",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 10/03/2025 - 21/03/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 10/03/2025 - 21/03/2025",
+      "amountOriginal": 360,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 360,
+      "ratePerHour": 12,
+      "invoice": "D2025088",
+      "invoiceDate": "2025-02-25",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40640,
+      "studentId": "29816",
+      "studentName": "Sofia Zhuang",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-08-04 to 2025-08-22",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning IELTS 05/08/2025 - 22/08/2025 Special offer",
+          "weeks": 3,
+          "amount": 540,
+          "discount": 108,
+          "commission": 0,
+          "nadc": 432
+        }
+      ],
+      "courseDescription": "3 weeks Morning IELTS 05/08/2025 - 22/08/2025 Special offer",
+      "amountOriginal": 540,
+      "discount": 108,
+      "commission": 0,
+      "courseFeeNADC": 432,
+      "ratePerHour": 9.6,
+      "invoice": "D2025093",
+      "invoiceDate": "2025-02-28",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40642,
+      "studentId": "29818",
+      "studentName": "Nominjin Amartsogt",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-08 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 07/07/2025 - 26/12/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 590.63,
+          "nadc": 1771.87
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 07/07/2025 - 26/12/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 590.63,
+      "courseFeeNADC": 1771.87,
+      "ratePerHour": 4.724986666666666,
+      "invoice": "D2025332",
+      "invoiceDate": "2025-07-03",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40643,
+      "studentId": "29819",
+      "studentName": "Taisei Kawai",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-05-19 to 2025-06-27",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 19/05/2025 - 27/06/2025",
+          "weeks": 6,
+          "amount": 972,
+          "discount": 194.4,
+          "commission": 174.96,
+          "nadc": 602.64
+        }
+      ],
+      "courseDescription": "6 weeks Morning General 19/05/2025 - 27/06/2025",
+      "amountOriginal": 972,
+      "discount": 194.4,
+      "commission": 174.96,
+      "courseFeeNADC": 602.64,
+      "ratePerHour": 6.696,
+      "invoice": "D2025149",
+      "invoiceDate": "2025-04-01",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40645,
+      "studentId": "29821",
+      "studentName": "Ketmanee Suwannayam",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-06-16 to 2025-12-05",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 531.56,
+          "nadc": 1830.94
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 05/05/2025 - 24/10/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 531.56,
+      "courseFeeNADC": 1830.94,
+      "ratePerHour": 4.882506666666667,
+      "invoice": "D2025097",
+      "invoiceDate": "2025-03-06",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40646,
+      "studentId": "29822",
+      "studentName": "BAt-Orgil Baljinnyam",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-11-17 to 2026-05-08",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 12/05/2025 - 31/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 531.56,
+          "nadc": 1830.94
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 12/05/2025 - 31/10/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 531.56,
+      "courseFeeNADC": 1830.94,
+      "ratePerHour": 4.882506666666667,
+      "invoice": "D2025121",
+      "invoiceDate": "2025-03-18",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40651,
+      "studentId": "29827",
+      "studentName": "Ben Kroll",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-03-03 to 2025-03-07",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 03/03/2025 - 07/03/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 03/03/2025 - 07/03/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025090",
+      "invoiceDate": "2025-02-25",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40698,
+      "studentId": "29874",
+      "studentName": "Antonio Marciel Bezerra dos Santos",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-03-17 to 2025-04-25",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 18/03/2025 - 25/04/2025 Special Offer",
+          "weeks": 6,
+          "amount": 972,
+          "discount": 97.2,
+          "commission": 0,
+          "nadc": 874.8
+        }
+      ],
+      "courseDescription": "6 weeks Morning General 18/03/2025 - 25/04/2025 Special Offer",
+      "amountOriginal": 972,
+      "discount": 97.2,
+      "commission": 0,
+      "courseFeeNADC": 874.8,
+      "ratePerHour": 9.719999999999999,
+      "invoice": "D2025112",
+      "invoiceDate": "2025-03-12",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40819,
+      "studentId": "29995",
+      "studentName": "Daniele Miozzi",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-04-07 to 2025-05-02",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 07/04/2025 - 02/05/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 144,
+          "commission": 126.72,
+          "nadc": 449.28
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 07/04/2025 - 02/05/2025",
+      "amountOriginal": 720,
+      "discount": 144,
+      "commission": 126.72,
+      "courseFeeNADC": 449.28,
+      "ratePerHour": 7.4879999999999995,
+      "invoice": "D2025113",
+      "invoiceDate": "2025-03-12",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40820,
+      "studentId": "29996",
+      "studentName": "Nora Puig",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-03-10 to 2025-04-11",
+      "weeks": 5,
+      "totalHours": 75,
+      "courseLineItems": [
+        {
+          "description": "5 weeks Morning General 10/03/2025 - 11/04/2025 Special Offer",
+          "weeks": 5,
+          "amount": 900,
+          "discount": 90,
+          "commission": 0,
+          "nadc": 810
+        }
+      ],
+      "courseDescription": "5 weeks Morning General 10/03/2025 - 11/04/2025 Special Offer",
+      "amountOriginal": 900,
+      "discount": 90,
+      "commission": 0,
+      "courseFeeNADC": 810,
+      "ratePerHour": 10.8,
+      "invoice": "D2025107",
+      "invoiceDate": "2025-03-07",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40824,
+      "studentId": "27599",
+      "studentName": "Sterne Chauvel",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-07 to 2025-08-29",
+      "weeks": 8,
+      "totalHours": 120,
+      "courseLineItems": [
+        {
+          "description": "8 weeks Morning General 07/07/2025 - 29/08/2025",
+          "weeks": 8,
+          "amount": 1344,
+          "discount": 134.4,
+          "commission": 0,
+          "nadc": 1209.6
+        }
+      ],
+      "courseDescription": "8 weeks Morning General 07/07/2025 - 29/08/2025",
+      "amountOriginal": 1344,
+      "discount": 134.4,
+      "commission": 0,
+      "courseFeeNADC": 1209.6,
+      "ratePerHour": 10.08,
+      "invoice": "D2025120",
+      "invoiceDate": "2025-03-18",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40825,
+      "studentId": "30001",
+      "studentName": "Sofiia Korkishchenko",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-09-29 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "11 weeks Academic Year Morning 05/01/2026 - 20/03/2026",
+          "weeks": 11,
+          "amount": 1386,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1386
+        },
+        {
+          "description": "14 weeks Academic Year Morning 15/09/2025 - 19/12/2025",
+          "weeks": 14,
+          "amount": 1764,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1764
+        }
+      ],
+      "courseDescription": "11 weeks Academic Year Morning 05/01/2026 - 20/03/2026 + 14 weeks Academic Year Morning 15/09/2025 - 19/12/2025",
+      "amountOriginal": 3150,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 3150,
+      "ratePerHour": 8.4,
+      "invoice": "D2025245",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40827,
+      "studentId": "30003",
+      "studentName": "Kaho Yamamoto",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-05-19 to 2025-11-07",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 19/05/2025 - 07/11/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 19/05/2025 - 07/11/2025",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025143",
+      "invoiceDate": "2025-03-27",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40828,
+      "studentId": "30004",
+      "studentName": "Xiao Shi Qui",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-05-05 to 2025-08-08",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 14/04/2025 - 03/10/2025 Special offer",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 0,
+          "nadc": 2520
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 14/04/2025 - 03/10/2025 Special offer",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 0,
+      "courseFeeNADC": 2520,
+      "ratePerHour": 6.72,
+      "invoice": "D2025119",
+      "invoiceDate": "2025-03-18",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 40870,
+      "studentId": "30046",
+      "studentName": "Otgontsengel Luvsantseren",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-08-04 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 30/06/2025 - 19/12/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 600.07,
+          "commission": 637.48,
+          "nadc": 1912.45
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 30/06/2025 - 19/12/2025",
+      "amountOriginal": 3150,
+      "discount": 600.07,
+      "commission": 637.48,
+      "courseFeeNADC": 1912.45,
+      "ratePerHour": 5.099866666666667,
+      "invoice": "D2025163",
+      "invoiceDate": "2025-04-04",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 40871,
+      "studentId": "30047",
+      "studentName": "Tuguldur Lkhagvasuren",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-08-11 to 2025-10-17",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 16/06/2025 - 05/12/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 600.07,
+          "commission": 637.48,
+          "nadc": 1912.45
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 16/06/2025 - 05/12/2025",
+      "amountOriginal": 3150,
+      "discount": 600.07,
+      "commission": 637.48,
+      "courseFeeNADC": 1912.45,
+      "ratePerHour": 5.099866666666667,
+      "invoice": "D2025131",
+      "invoiceDate": "2025-03-25",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41017,
+      "studentId": "30193",
+      "studentName": "Hsin-Pei Chen",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-07 to 2025-07-18",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 14/07/2025 - 25/07/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 72,
+          "commission": 72,
+          "nadc": 216
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 14/07/2025 - 25/07/2025",
+      "amountOriginal": 360,
+      "discount": 72,
+      "commission": 72,
+      "courseFeeNADC": 216,
+      "ratePerHour": 7.2,
+      "invoice": "D2025172",
+      "invoiceDate": "2025-04-10",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41023,
+      "studentId": "30198",
+      "studentName": "Ygor Santos Melo",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-04-21 to 2025-07-11",
+      "weeks": 12,
+      "totalHours": 180,
+      "courseLineItems": [
+        {
+          "description": "12 weeks Morning General 21/04/2025 - 11/07/2025",
+          "weeks": 12,
+          "amount": 918,
+          "discount": 0,
+          "commission": 229.5,
+          "nadc": 688.5
+        }
+      ],
+      "courseDescription": "12 weeks Morning General 21/04/2025 - 11/07/2025",
+      "amountOriginal": 918,
+      "discount": 0,
+      "commission": 229.5,
+      "courseFeeNADC": 688.5,
+      "ratePerHour": 3.825,
+      "invoice": "D2025173",
+      "invoiceDate": "2025-04-10",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41025,
+      "studentId": "30199",
+      "studentName": "Hidemi Kawanishi",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-07-21 to 2025-09-26",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "22 weeks Academic Year Renewal Morning 21/07/2025 - 19/12/2025",
+          "weeks": 22,
+          "amount": 1452,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1452
+        },
+        {
+          "description": "3 weeks Academic Year Renewal Morning 05/01/2026 - 23/01/2026",
+          "weeks": 3,
+          "amount": 198,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 198
+        }
+      ],
+      "courseDescription": "22 weeks Academic Year Renewal Morning 21/07/2025 - 19/12/2025 + 3 weeks Academic Year Renewal Morning 05/01/2026 - 23/01/2026",
+      "amountOriginal": 1650,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1650,
+      "ratePerHour": 4.4,
+      "invoice": "D2025181",
+      "invoiceDate": "2025-04-14",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41047,
+      "studentId": "30221",
+      "studentName": "Moaath Bahaydan",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-06-02 to 2025-07-04",
+      "weeks": 5,
+      "totalHours": 75,
+      "courseLineItems": [
+        {
+          "description": "5 weeks Morning General 03/06/2025 - 04/07/2025",
+          "weeks": 5,
+          "amount": 910,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 910
+        }
+      ],
+      "courseDescription": "5 weeks Morning General 03/06/2025 - 04/07/2025",
+      "amountOriginal": 910,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 910,
+      "ratePerHour": 12.133333333333333,
+      "invoice": "D2025187",
+      "invoiceDate": "2025-04-22",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41054,
+      "studentId": "30228",
+      "studentName": "Undram Otgonbayar",
+      "courseName": "ULearn Renewal MORN",
+      "coursePeriod": "2025-06-16 to 2025-08-29",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 30/06/2025 - 19/12/2025",
+          "weeks": 25,
+          "amount": 1963,
+          "discount": 151.15,
+          "commission": 100,
+          "nadc": 1711.85
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 30/06/2025 - 19/12/2025",
+      "amountOriginal": 1963,
+      "discount": 151.15,
+      "commission": 100,
+      "courseFeeNADC": 1711.85,
+      "ratePerHour": 4.564933333333333,
+      "invoice": "D2025138",
+      "invoiceDate": "2025-03-26",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41067,
+      "studentId": "30241",
+      "studentName": "Ying Pan",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-07-21 to 2025-10-17",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 09/06/2025 - 28/11/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 531.56,
+          "nadc": 1830.94
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 09/06/2025 - 28/11/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 531.56,
+      "courseFeeNADC": 1830.94,
+      "ratePerHour": 4.882506666666667,
+      "invoice": "D2025170",
+      "invoiceDate": "2025-04-09",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41076,
+      "studentId": "30250",
+      "studentName": "Vicente Aracena",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-11-17 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "20 weeks Academic Year Morning 05/01/2026 - 22/05/2026 Special Offer",
+          "weeks": 20,
+          "amount": 2520,
+          "discount": 504,
+          "commission": 0,
+          "nadc": 2016
+        },
+        {
+          "description": "5 weeks Academic Year Morning 17/11/2025 - 19/12/2025 Special Offer",
+          "weeks": 5,
+          "amount": 630,
+          "discount": 126,
+          "commission": 0,
+          "nadc": 504
+        }
+      ],
+      "courseDescription": "20 weeks Academic Year Morning 05/01/2026 - 22/05/2026 Special Offer + 5 weeks Academic Year Morning 17/11/2025 - 19/12/2025 Special Offer",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 0,
+      "courseFeeNADC": 2520,
+      "ratePerHour": 6.72,
+      "invoice": "D2025168",
+      "invoiceDate": "2025-04-08",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41077,
+      "studentId": "30251",
+      "studentName": "Nicole Pizarro Villanueva",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-11-17 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "20 weeks Academic Year Morning 05/01/2026 - 22/05/2026 Special Offer",
+          "weeks": 20,
+          "amount": 2520,
+          "discount": 504,
+          "commission": 0,
+          "nadc": 2016
+        },
+        {
+          "description": "5 weeks Academic Year Morning 17/11/2025 - 19/12/2025 Special Offer",
+          "weeks": 5,
+          "amount": 630,
+          "discount": 126,
+          "commission": 0,
+          "nadc": 504
+        }
+      ],
+      "courseDescription": "20 weeks Academic Year Morning 05/01/2026 - 22/05/2026 Special Offer + 5 weeks Academic Year Morning 17/11/2025 - 19/12/2025 Special Offer",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 0,
+      "courseFeeNADC": 2520,
+      "ratePerHour": 6.72,
+      "invoice": "D2025169",
+      "invoiceDate": "2025-04-08",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41083,
+      "studentId": "30257",
+      "studentName": "Andrea Federico Aniello",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-05-26 to 2025-07-11",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning IELTS 14/07/2025 - 22/08/2025",
+          "weeks": 6,
+          "amount": 978,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 978
+        }
+      ],
+      "courseDescription": "6 weeks Morning IELTS 14/07/2025 - 22/08/2025",
+      "amountOriginal": 978,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 978,
+      "ratePerHour": 10.866666666666667,
+      "invoice": "D2025338",
+      "invoiceDate": "2025-07-08",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41087,
+      "studentId": "30260",
+      "studentName": "SAIRI IWASAKI",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-05-12 to 2025-06-06",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 12/05/2025 - 06/06/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 144,
+          "commission": 144,
+          "nadc": 432
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 12/05/2025 - 06/06/2025",
+      "amountOriginal": 720,
+      "discount": 144,
+      "commission": 144,
+      "courseFeeNADC": 432,
+      "ratePerHour": 7.2,
+      "invoice": "D2025183",
+      "invoiceDate": "2025-04-15",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41088,
+      "studentId": "30261",
+      "studentName": "Mayu Yamamoto",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-05-12 to 2025-06-06",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 12/05/2025 - 06/06/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 144,
+          "commission": 126.72,
+          "nadc": 449.28
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 12/05/2025 - 06/06/2025",
+      "amountOriginal": 720,
+      "discount": 144,
+      "commission": 126.72,
+      "courseFeeNADC": 449.28,
+      "ratePerHour": 7.4879999999999995,
+      "invoice": "D2025184",
+      "invoiceDate": "2025-04-22",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41091,
+      "studentId": "30264",
+      "studentName": "Anna Caroline De Sousa",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-05-12 to 2025-08-29",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 12/05/2025 - 31/10/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 590.63,
+          "nadc": 1771.87
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 12/05/2025 - 31/10/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 590.63,
+      "courseFeeNADC": 1771.87,
+      "ratePerHour": 4.724986666666666,
+      "invoice": "D2025210",
+      "invoiceDate": "2025-05-05",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41092,
+      "studentId": "30265",
+      "studentName": "Rodrigo Araújo De Carvalho Rodrigues",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-06 to 2025-12-19",
+      "weeks": 13,
+      "totalHours": 195,
+      "courseLineItems": [
+        {
+          "description": "11 weeks Academic Year Morning 06/10/2025 - 19/12/2025",
+          "weeks": 11,
+          "amount": 330,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 330
+        },
+        {
+          "description": "2 weeks Academic Year Morning 05/01/2026 - 16/01/2026",
+          "weeks": 2,
+          "amount": 60,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 60
+        }
+      ],
+      "courseDescription": "11 weeks Academic Year Morning 06/10/2025 - 19/12/2025 + 2 weeks Academic Year Morning 05/01/2026 - 16/01/2026",
+      "amountOriginal": 390,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 390,
+      "ratePerHour": 2,
+      "invoice": "D2025444",
+      "invoiceDate": "2025-09-25",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41102,
+      "studentId": "30275",
+      "studentName": "Carlo Manzo",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-28 to 2025-08-08",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 28/07/2025 - 08/08/2025",
+          "weeks": 2,
+          "amount": 380,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 380
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 28/07/2025 - 08/08/2025",
+      "amountOriginal": 380,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 380,
+      "ratePerHour": 12.666666666666666,
+      "invoice": "D2025200",
+      "invoiceDate": "2025-04-28",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41104,
+      "studentId": "27189",
+      "studentName": "Samya Rodrigues",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-04-28 to 2025-05-02",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning IELTS 28/04/2025 - 02/05/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning IELTS 28/04/2025 - 02/05/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025194",
+      "invoiceDate": "2025-04-25",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41106,
+      "studentId": "30278",
+      "studentName": "Mengmeng Zhou",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-04-28 to 2025-05-02",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning IELTS 26/05/2025 - 20/06/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 648
+        }
+      ],
+      "courseDescription": "4 weeks Morning IELTS 26/05/2025 - 20/06/2025",
+      "amountOriginal": 720,
+      "discount": 72,
+      "commission": 0,
+      "courseFeeNADC": 648,
+      "ratePerHour": 10.8,
+      "invoice": "D2025251",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41107,
+      "studentId": "30279",
+      "studentName": "Giacomo Rigo",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-05-05 to 2025-06-20",
+      "weeks": 7,
+      "totalHours": 105,
+      "courseLineItems": [
+        {
+          "description": "7 weeks Morning IELTS 06/05/2025 - 20/06/2025",
+          "weeks": 7,
+          "amount": 1134,
+          "discount": 113.4,
+          "commission": 0,
+          "nadc": 1020.6
+        }
+      ],
+      "courseDescription": "7 weeks Morning IELTS 06/05/2025 - 20/06/2025",
+      "amountOriginal": 1134,
+      "discount": 113.4,
+      "commission": 0,
+      "courseFeeNADC": 1020.6,
+      "ratePerHour": 9.72,
+      "invoice": "D2025203",
+      "invoiceDate": "2025-04-29",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41116,
+      "studentId": "30288",
+      "studentName": "Gabriel Bueno De Morais Silva",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-06-16 to 2025-08-29",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 16/06/2025 - 05/12/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 661.5,
+          "nadc": 1701
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 16/06/2025 - 05/12/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 661.5,
+      "courseFeeNADC": 1701,
+      "ratePerHour": 4.536,
+      "invoice": "D2025227",
+      "invoiceDate": "2025-05-08",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41118,
+      "studentId": "30290",
+      "studentName": "Bastian Schmidt",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-05-12 to 2025-05-16",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 12/05/2025 - 16/05/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162
+        }
+      ],
+      "courseDescription": "1 Week Morning General 12/05/2025 - 16/05/2025",
+      "amountOriginal": 180,
+      "discount": 18,
+      "commission": 0,
+      "courseFeeNADC": 162,
+      "ratePerHour": 10.8,
+      "invoice": "D2025212",
+      "invoiceDate": "2025-05-06",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41119,
+      "studentId": "30291",
+      "studentName": "Mariana Regina Ferreira",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-06-23 to 2025-08-29",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 23/06/2025 - 12/12/2025",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 661.5,
+          "nadc": 1701
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 23/06/2025 - 12/12/2025",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 661.5,
+      "courseFeeNADC": 1701,
+      "ratePerHour": 4.536,
+      "invoice": "D2025305",
+      "invoiceDate": "2025-06-23",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41121,
+      "studentId": "30293",
+      "studentName": "Wenpu Chen",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-02-02 to 2026-07-24",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 04/08/2025 - 23/01/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 0,
+          "nadc": 2362.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 04/08/2025 - 23/01/2026",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 0,
+      "courseFeeNADC": 2362.5,
+      "ratePerHour": 6.3,
+      "invoice": "D2025223",
+      "invoiceDate": "2025-05-08",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41122,
+      "studentId": "30294",
+      "studentName": "Chia-hui Liu",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-06-02 to 2025-06-27",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 03/06/2025 - 27/06/2025 Special Offer",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 648
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 03/06/2025 - 27/06/2025 Special Offer",
+      "amountOriginal": 720,
+      "discount": 72,
+      "commission": 0,
+      "courseFeeNADC": 648,
+      "ratePerHour": 10.8,
+      "invoice": "D2025204",
+      "invoiceDate": "2025-05-01",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41124,
+      "studentId": "26410",
+      "studentName": "Kelly Taiz Coleman Quinonez",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-08-18 to 2025-10-10",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "7 weeks Academic Year Renewal Morning 05/01/2026 - 20/02/2026 Special offer",
+          "weeks": 7,
+          "amount": 434,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 434
+        },
+        {
+          "description": "18 weeks Academic Year Renewal Morning 18/08/2025 - 19/12/2025 Special offer",
+          "weeks": 18,
+          "amount": 1116,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1116
+        }
+      ],
+      "courseDescription": "7 weeks Academic Year Renewal Morning 05/01/2026 - 20/02/2026 Special offer + 18 weeks Academic Year Renewal Morning 18/08/2025 - 19/12/2025 Special offer",
+      "amountOriginal": 1550,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1550,
+      "ratePerHour": 4.133333333333334,
+      "invoice": "D2025205",
+      "invoiceDate": "2025-05-01",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41128,
+      "studentId": "30298",
+      "studentName": "LYUMEI YE",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-21 to 2025-08-01",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 72,
+          "commission": 72,
+          "nadc": 216
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+      "amountOriginal": 360,
+      "discount": 72,
+      "commission": 72,
+      "courseFeeNADC": 216,
+      "ratePerHour": 7.2,
+      "invoice": "D2025246",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41129,
+      "studentId": "30299",
+      "studentName": "JIANPING FU",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-21 to 2025-08-01",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 72,
+          "commission": 72,
+          "nadc": 216
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+      "amountOriginal": 360,
+      "discount": 72,
+      "commission": 72,
+      "courseFeeNADC": 216,
+      "ratePerHour": 7.2,
+      "invoice": "D2025249",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41130,
+      "studentId": "30300",
+      "studentName": "Weimiao Han",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-21 to 2025-08-01",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 72,
+          "commission": 72,
+          "nadc": 216
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+      "amountOriginal": 360,
+      "discount": 72,
+      "commission": 72,
+      "courseFeeNADC": 216,
+      "ratePerHour": 7.2,
+      "invoice": "D2025248",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41132,
+      "studentId": "28675",
+      "studentName": "Alin Dumitru Sapariuc",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-08-25 to 2025-09-05",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "17 weeks Academic Year Renewal Morning 25/08/2025 - 19/12/2025 Special offer",
+          "weeks": 17,
+          "amount": 1360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1360
+        },
+        {
+          "description": "8 weeks Academic Year Renewal Morning 05/01/2026 - 27/02/2026 Special offer",
+          "weeks": 8,
+          "amount": 640,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 640
+        }
+      ],
+      "courseDescription": "17 weeks Academic Year Renewal Morning 25/08/2025 - 19/12/2025 Special offer + 8 weeks Academic Year Renewal Morning 05/01/2026 - 27/02/2026 Special offer",
+      "amountOriginal": 2000,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 2000,
+      "ratePerHour": 5.333333333333333,
+      "invoice": "D2025243",
+      "invoiceDate": "2025-07-25",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41133,
+      "studentId": "30302",
+      "studentName": "Laura Carrasco",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-05-12 to 2025-07-18",
+      "weeks": 10,
+      "totalHours": 150,
+      "courseLineItems": [
+        {
+          "description": "10 weeks Morning General 12/05/2025 - 18/07/2025 Special offer",
+          "weeks": 10,
+          "amount": 1580,
+          "discount": 158,
+          "commission": 0,
+          "nadc": 1422
+        }
+      ],
+      "courseDescription": "10 weeks Morning General 12/05/2025 - 18/07/2025 Special offer",
+      "amountOriginal": 1580,
+      "discount": 158,
+      "commission": 0,
+      "courseFeeNADC": 1422,
+      "ratePerHour": 9.48,
+      "invoice": "D2025228",
+      "invoiceDate": "2025-05-09",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41155,
+      "studentId": "30323",
+      "studentName": "Leandro Piva De Santana",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-13 to 2025-12-19",
+      "weeks": 10,
+      "totalHours": 150,
+      "courseLineItems": [
+        {
+          "description": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025 & 15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+          "weeks": 10,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 661.5,
+          "nadc": 1701
+        }
+      ],
+      "courseDescription": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025 & 15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 661.5,
+      "courseFeeNADC": 1701,
+      "ratePerHour": 11.34,
+      "invoice": "D2025427",
+      "invoiceDate": "2025-09-18",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41156,
+      "studentId": "30324",
+      "studentName": "Gabriela De Oliveira Teixeira Erhardt",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-13 to 2025-12-19",
+      "weeks": 10,
+      "totalHours": 150,
+      "courseLineItems": [
+        {
+          "description": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025 & 15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+          "weeks": 10,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 661.5,
+          "nadc": 1701
+        }
+      ],
+      "courseDescription": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025 & 15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 661.5,
+      "courseFeeNADC": 1701,
+      "ratePerHour": 11.34,
+      "invoice": "D2025451",
+      "invoiceDate": "2025-09-29",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41158,
+      "studentId": "30326",
+      "studentName": "Emanuela Laurito",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-04 to 2025-08-08",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 05/08/2025 - 08/08/2025",
+          "weeks": 1,
+          "amount": 190,
+          "discount": 19,
+          "commission": 0,
+          "nadc": 171
+        }
+      ],
+      "courseDescription": "1 Week Morning General 05/08/2025 - 08/08/2025",
+      "amountOriginal": 190,
+      "discount": 19,
+      "commission": 0,
+      "courseFeeNADC": 171,
+      "ratePerHour": 11.4,
+      "invoice": "D2025241",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41160,
+      "studentId": "30328",
+      "studentName": "Maï-Ly Noailly",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-28 to 2025-08-22",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 28/07/2025 - 22/08/2025 Special Offer",
+          "weeks": 4,
+          "amount": 760,
+          "discount": 76,
+          "commission": 0,
+          "nadc": 684
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 28/07/2025 - 22/08/2025 Special Offer",
+      "amountOriginal": 760,
+      "discount": 76,
+      "commission": 0,
+      "courseFeeNADC": 684,
+      "ratePerHour": 11.4,
+      "invoice": "D2025232",
+      "invoiceDate": "2025-05-14",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41163,
+      "studentId": "30331",
+      "studentName": "Florentino Alonso Santos",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-28 to 2025-08-29",
+      "weeks": 5,
+      "totalHours": 75,
+      "courseLineItems": [
+        {
+          "description": "5 weeks Morning General 28/07/2025 - 29/08/2025",
+          "weeks": 5,
+          "amount": 950,
+          "discount": 95,
+          "commission": 0,
+          "nadc": 855
+        }
+      ],
+      "courseDescription": "5 weeks Morning General 28/07/2025 - 29/08/2025",
+      "amountOriginal": 950,
+      "discount": 95,
+      "commission": 0,
+      "courseFeeNADC": 855,
+      "ratePerHour": 11.4,
+      "invoice": "D2025264",
+      "invoiceDate": "2025-05-23",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41164,
+      "studentId": "30332",
+      "studentName": "Pablo Vila",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-07 to 2025-07-11",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 07/07/2025 - 11/07/2025",
+          "weeks": 1,
+          "amount": 190,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 190
+        }
+      ],
+      "courseDescription": "1 Week Morning General 07/07/2025 - 11/07/2025",
+      "amountOriginal": 190,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 190,
+      "ratePerHour": 12.666666666666666,
+      "invoice": "D2025306",
+      "invoiceDate": "2025-06-24",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41170,
+      "studentId": "30338",
+      "studentName": "Muhammet Kerem Cayir",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-14 to 2025-08-22",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 14/07/2025 - 22/08/2025",
+          "weeks": 6,
+          "amount": 1032,
+          "discount": 103.2,
+          "commission": 0,
+          "nadc": 928.8
+        }
+      ],
+      "courseDescription": "6 weeks Morning General 14/07/2025 - 22/08/2025",
+      "amountOriginal": 1032,
+      "discount": 103.2,
+      "commission": 0,
+      "courseFeeNADC": 928.8,
+      "ratePerHour": 10.32,
+      "invoice": "D2025244",
+      "invoiceDate": "2025-05-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41171,
+      "studentId": "30339",
+      "studentName": "Aitana López",
+      "courseName": "Morning General",
+      "coursePeriod": "2026-04-06 to 2026-04-17",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 26/05/2025 - 06/06/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 26/05/2025 - 06/06/2025",
+      "amountOriginal": 360,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 360,
+      "ratePerHour": 12,
+      "invoice": "D2025255",
+      "invoiceDate": "2025-05-21",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41172,
+      "studentId": "30340",
+      "studentName": "Antonio Aguilar López",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-06-02 to 2025-06-27",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 03/06/2025 - 27/06/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 03/06/2025 - 27/06/2025",
+      "amountOriginal": 720,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 720,
+      "ratePerHour": 12,
+      "invoice": "D2025267",
+      "invoiceDate": "2025-05-27",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41175,
+      "studentId": "30343",
+      "studentName": "Francisco Rodrigo Geoghegan",
+      "courseName": "Morning General",
+      "coursePeriod": "2026-01-26 to 2026-02-13",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 26/01/2026 - 13/02/2026 Special offer",
+          "weeks": 3,
+          "amount": 540,
+          "discount": 108,
+          "commission": 0,
+          "nadc": 432
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 26/01/2026 - 13/02/2026 Special offer",
+      "amountOriginal": 540,
+      "discount": 108,
+      "commission": 0,
+      "courseFeeNADC": 432,
+      "ratePerHour": 9.6,
+      "invoice": "D2025253",
+      "invoiceDate": "2025-05-21",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41176,
+      "studentId": "30344",
+      "studentName": "Angelyna Machado Fagundes",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-06-23 to 2025-12-12",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 23/06/2025 - 12/12/2025 Special Offer",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 0,
+          "nadc": 2520
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 23/06/2025 - 12/12/2025 Special Offer",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 0,
+      "courseFeeNADC": 2520,
+      "ratePerHour": 6.72,
+      "invoice": "D2025254",
+      "invoiceDate": "2025-05-21",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41184,
+      "studentId": "30352",
+      "studentName": "Sujin Park",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-11 to 2025-09-05",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 11/08/2025 - 05/09/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 0,
+          "commission": 234,
+          "nadc": 486
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 11/08/2025 - 05/09/2025",
+      "amountOriginal": 720,
+      "discount": 0,
+      "commission": 234,
+      "courseFeeNADC": 486,
+      "ratePerHour": 8.1,
+      "invoice": "D2025268",
+      "invoiceDate": "2025-05-27",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41191,
+      "studentId": "30358",
+      "studentName": "Emma Pastorino",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-06-09 to 2025-06-13",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 09/06/2025 - 13/06/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 09/06/2025 - 13/06/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025273",
+      "invoiceDate": "2025-05-29",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41198,
+      "studentId": "30365",
+      "studentName": "Tselmeg Erdenebaatar",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-01-19 to 2026-07-10",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 28/07/2025 - 16/01/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 28/07/2025 - 16/01/2026",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025323",
+      "invoiceDate": "2025-06-27",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41199,
+      "studentId": "30366",
+      "studentName": "Preedapond Tippawan",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-09-29 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/09/2025 - 06/03/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 787.5,
+          "commission": 531.56,
+          "nadc": 1830.94
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 15/09/2025 - 06/03/2026",
+      "amountOriginal": 3150,
+      "discount": 787.5,
+      "commission": 531.56,
+      "courseFeeNADC": 1830.94,
+      "ratePerHour": 4.882506666666667,
+      "invoice": "D2025307",
+      "invoiceDate": "2025-06-24",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41200,
+      "studentId": "30367",
+      "studentName": "Susann Richert",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-07 to 2025-07-11",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 07/07/2025 - 11/07/2025",
+          "weeks": 1,
+          "amount": 190,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 190
+        }
+      ],
+      "courseDescription": "1 Week Morning General 07/07/2025 - 11/07/2025",
+      "amountOriginal": 190,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 190,
+      "ratePerHour": 12.666666666666666,
+      "invoice": "D2025293",
+      "invoiceDate": "2025-06-10",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41201,
+      "studentId": "30368",
+      "studentName": "Aline Moraes de Oliveira",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-07-07 to 2025-08-29",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "1 Week Academic Year Renewal Morning 05/01/2026 - 09/01/2026",
+          "weeks": 1,
+          "amount": 78,
+          "discount": 0,
+          "commission": 50,
+          "nadc": 28
+        },
+        {
+          "description": "24 weeks Academic Year Renewal Morning 07/07/2025 - 19/12/2025",
+          "weeks": 24,
+          "amount": 1872,
+          "discount": 0,
+          "commission": 50,
+          "nadc": 1822
+        }
+      ],
+      "courseDescription": "1 Week Academic Year Renewal Morning 05/01/2026 - 09/01/2026 + 24 weeks Academic Year Renewal Morning 07/07/2025 - 19/12/2025",
+      "amountOriginal": 1950,
+      "discount": 0,
+      "commission": 100,
+      "courseFeeNADC": 1850,
+      "ratePerHour": 4.933333333333334,
+      "invoice": "D2025315",
+      "invoiceDate": "2025-06-25",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41202,
+      "studentId": "30369",
+      "studentName": "Tarik Elouahbi",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-06 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "14 weeks Academic Year Morning 05/01/2026 - 10/04/2026",
+          "weeks": 14,
+          "amount": 1764,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1764
+        },
+        {
+          "description": "11 weeks Academic Year Morning 06/10/2025 - 19/12/2025",
+          "weeks": 11,
+          "amount": 1386,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1386
+        }
+      ],
+      "courseDescription": "14 weeks Academic Year Morning 05/01/2026 - 10/04/2026 + 11 weeks Academic Year Morning 06/10/2025 - 19/12/2025",
+      "amountOriginal": 3150,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 3150,
+      "ratePerHour": 8.4,
+      "invoice": "D2025284",
+      "invoiceDate": "2025-06-03",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41204,
+      "studentId": "30371",
+      "studentName": "Paola Pérez",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-07 to 2025-07-25",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 07/07/2025 - 25/07/2025",
+          "weeks": 3,
+          "amount": 540,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 540
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 07/07/2025 - 25/07/2025",
+      "amountOriginal": 540,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 540,
+      "ratePerHour": 12,
+      "invoice": "D2025287",
+      "invoiceDate": "2025-06-04",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41207,
+      "studentId": "30374",
+      "studentName": "Gantuguldur Gansukh",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 29/09/2025 - 20/03/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 29/09/2025 - 20/03/2026",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025333",
+      "invoiceDate": "2025-07-03",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41223,
+      "studentId": "30390",
+      "studentName": "Giulia Ambrosi",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-04 to 2025-08-29",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+      "amountOriginal": 720,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 720,
+      "ratePerHour": 12,
+      "invoice": "D2025300",
+      "invoiceDate": "2025-06-17",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41226,
+      "studentId": "30393",
+      "studentName": "Guiomar Gomez Guajardo-Fajardo",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-28 to 2025-08-15",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 28/07/2025 - 15/08/2025",
+          "weeks": 3,
+          "amount": 540,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 540
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 28/07/2025 - 15/08/2025",
+      "amountOriginal": 540,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 540,
+      "ratePerHour": 12,
+      "invoice": "D2025302",
+      "invoiceDate": "2025-06-19",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41227,
+      "studentId": "30394",
+      "studentName": "Alvaro Gomez Guajardo-Fajardo",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-28 to 2025-08-15",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 28/07/2025 - 15/08/2025",
+          "weeks": 3,
+          "amount": 540,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 540
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 28/07/2025 - 15/08/2025",
+      "amountOriginal": 540,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 540,
+      "ratePerHour": 12,
+      "invoice": "D2025301",
+      "invoiceDate": "2025-06-19",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41231,
+      "studentId": "28686",
+      "studentName": "Claudia Maria De Gonzalo Aguar",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-21 to 2025-08-08",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 21/07/2025 - 08/08/2025",
+          "weeks": 3,
+          "amount": 570,
+          "discount": 57,
+          "commission": 0,
+          "nadc": 513
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 21/07/2025 - 08/08/2025",
+      "amountOriginal": 570,
+      "discount": 57,
+      "commission": 0,
+      "courseFeeNADC": 513,
+      "ratePerHour": 11.4,
+      "invoice": "D2025326",
+      "invoiceDate": "2025-07-01",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41239,
+      "studentId": "24760",
+      "studentName": "Paolo Sorrentino",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-07 to 2025-08-15",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 07/07/2025 - 15/08/2025",
+          "weeks": 6,
+          "amount": 1032,
+          "discount": 103.2,
+          "commission": 0,
+          "nadc": 928.8
+        }
+      ],
+      "courseDescription": "6 weeks Morning General 07/07/2025 - 15/08/2025",
+      "amountOriginal": 1032,
+      "discount": 103.2,
+      "commission": 0,
+      "courseFeeNADC": 928.8,
+      "ratePerHour": 10.32,
+      "invoice": "D2025316",
+      "invoiceDate": "2025-06-25",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41240,
+      "studentId": "30407",
+      "studentName": "Yuya Yamagishi",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-14 to 2025-10-03",
+      "weeks": 12,
+      "totalHours": 180,
+      "courseLineItems": [
+        {
+          "description": "12 weeks Morning General 14/07/2025 - 03/10/2025",
+          "weeks": 12,
+          "amount": 1896,
+          "discount": 189.6,
+          "commission": 0,
+          "nadc": 1706.4
+        }
+      ],
+      "courseDescription": "12 weeks Morning General 14/07/2025 - 03/10/2025",
+      "amountOriginal": 1896,
+      "discount": 189.6,
+      "commission": 0,
+      "courseFeeNADC": 1706.4,
+      "ratePerHour": 9.48,
+      "invoice": "D2025318",
+      "invoiceDate": "2025-06-26",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41257,
+      "studentId": "28843",
+      "studentName": "Shotaro Terashima",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-07-14 to 2025-08-22",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Academic Year Renewal Morning 05/01/2026 - 16/01/2026",
+          "weeks": 2,
+          "amount": 156,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 156
+        },
+        {
+          "description": "23 weeks Academic Year Renewal Morning 14/07/2025 - 19/12/2025",
+          "weeks": 23,
+          "amount": 1794,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1794
+        }
+      ],
+      "courseDescription": "2 weeks Academic Year Renewal Morning 05/01/2026 - 16/01/2026 + 23 weeks Academic Year Renewal Morning 14/07/2025 - 19/12/2025",
+      "amountOriginal": 1950,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1950,
+      "ratePerHour": 5.2,
+      "invoice": "D2025324",
+      "invoiceDate": "2025-06-30",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41271,
+      "studentId": "30436",
+      "studentName": "KOTOWA UEDA",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-01 to 2025-09-12",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 01/09/2025 - 12/09/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 72,
+          "commission": 86.4,
+          "nadc": 201.6
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 01/09/2025 - 12/09/2025",
+      "amountOriginal": 360,
+      "discount": 72,
+      "commission": 86.4,
+      "courseFeeNADC": 201.6,
+      "ratePerHour": 6.72,
+      "invoice": "D2025357",
+      "invoiceDate": "2025-07-18",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41276,
+      "studentId": "30441",
+      "studentName": "Lara Maria Vögele",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-18 to 2025-08-22",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 18/08/2025 - 22/08/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 18/08/2025 - 22/08/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025368",
+      "invoiceDate": "2025-07-28",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41288,
+      "studentId": "28671",
+      "studentName": "Claudia Valiente Gomez",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-14 to 2025-07-18",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 14/07/2025 - 18/07/2025",
+          "weeks": 1,
+          "amount": 190,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 190
+        }
+      ],
+      "courseDescription": "1 Week Morning General 14/07/2025 - 18/07/2025",
+      "amountOriginal": 190,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 190,
+      "ratePerHour": 12.666666666666666,
+      "invoice": "D2025349",
+      "invoiceDate": "2025-07-14",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41298,
+      "studentId": "30460",
+      "studentName": "Rion Akamine",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-07-21 to 2025-08-01",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 0,
+          "commission": 79.2,
+          "nadc": 280.8
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+      "amountOriginal": 360,
+      "discount": 0,
+      "commission": 79.2,
+      "courseFeeNADC": 280.8,
+      "ratePerHour": 9.360000000000001,
+      "invoice": "D2025358",
+      "invoiceDate": "2025-07-18",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41348,
+      "studentId": "30510",
+      "studentName": "NADIA MORALES ESPINEL",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-04 to 2025-08-29",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+      "amountOriginal": 720,
+      "discount": 288,
+      "commission": 86.4,
+      "courseFeeNADC": 345.6,
+      "ratePerHour": 5.760000000000001,
+      "invoice": "D2025406",
+      "invoiceDate": "2025-08-29",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41349,
+      "studentId": "30511",
+      "studentName": "ADRIÁN BRITO VIU",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-04 to 2025-08-29",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+      "amountOriginal": 720,
+      "discount": 288,
+      "commission": 86.4,
+      "courseFeeNADC": 345.6,
+      "ratePerHour": 5.760000000000001,
+      "invoice": "D2025405",
+      "invoiceDate": "2025-08-29",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41350,
+      "studentId": "30512",
+      "studentName": "NIRA MONEIBA GUTIÉRREZ OLIOSI",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-08-04 to 2025-08-29",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+      "amountOriginal": 720,
+      "discount": 288,
+      "commission": 86.4,
+      "courseFeeNADC": 345.6,
+      "ratePerHour": 5.760000000000001,
+      "invoice": "D2025404",
+      "invoiceDate": "2025-08-28",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41355,
+      "studentId": "30516",
+      "studentName": "Patricia Saraiva De Souza",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-20 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 20/10/2025 - 10/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 573.3,
+          "nadc": 1474.2
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 20/10/2025 - 10/04/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 573.3,
+      "courseFeeNADC": 1474.2,
+      "ratePerHour": 3.9312,
+      "invoice": "D2025487",
+      "invoiceDate": "2025-10-08",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41361,
+      "studentId": "30522",
+      "studentName": "Fangjia Liang",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2026-01-05 to 2026-06-26",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "13 weeks Academic Year Renewal Morning 05/01/2026 - 03/04/2026",
+          "weeks": 13,
+          "amount": 1014,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1014
+        },
+        {
+          "description": "12 weeks Academic Year Renewal Morning 29/09/2025 - 19/12/2025",
+          "weeks": 12,
+          "amount": 936,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 936
+        }
+      ],
+      "courseDescription": "13 weeks Academic Year Renewal Morning 05/01/2026 - 03/04/2026 + 12 weeks Academic Year Renewal Morning 29/09/2025 - 19/12/2025",
+      "amountOriginal": 1950,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1950,
+      "ratePerHour": 5.2,
+      "invoice": "D2025365",
+      "invoiceDate": "2025-07-24",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41364,
+      "studentId": "30525",
+      "studentName": "YU-CHI (Helen) HUANG",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-09-01 to 2025-09-12",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning IELTS 01/09/2025 - 12/09/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 180,
+          "commission": 39.6,
+          "nadc": 140.4
+        }
+      ],
+      "courseDescription": "2 weeks Morning IELTS 01/09/2025 - 12/09/2025",
+      "amountOriginal": 360,
+      "discount": 180,
+      "commission": 39.6,
+      "courseFeeNADC": 140.4,
+      "ratePerHour": 4.680000000000001,
+      "invoice": "D2025384",
+      "invoiceDate": "2025-08-12",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41368,
+      "studentId": "30528",
+      "studentName": "Kayque Tauann Lopes Coelho",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-20 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 460.57,
+          "nadc": 1586.93
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 460.57,
+      "courseFeeNADC": 1586.93,
+      "ratePerHour": 4.231813333333333,
+      "invoice": "D2025437",
+      "invoiceDate": "2025-09-23",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41369,
+      "studentId": "30529",
+      "studentName": "Sophia Emilly Gallo Borim",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-20 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 460.57,
+          "nadc": 1586.93
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 460.57,
+      "courseFeeNADC": 1586.93,
+      "ratePerHour": 4.231813333333333,
+      "invoice": "D2025438",
+      "invoiceDate": "2025-09-23",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41370,
+      "studentId": "30530",
+      "studentName": "Bartolome Tortella Barceló",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-08 to 2025-09-19",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 08/09/2025 - 19/09/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 08/09/2025 - 19/09/2025",
+      "amountOriginal": 360,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 360,
+      "ratePerHour": 12,
+      "invoice": "D2025372",
+      "invoiceDate": "2025-07-29",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41372,
+      "studentId": "30532",
+      "studentName": "Dorjpalam Munkhtur",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 27/10/2025 - 17/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 400.05,
+          "commission": 687.49,
+          "nadc": 2062.46
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 27/10/2025 - 17/04/2026",
+      "amountOriginal": 3150,
+      "discount": 400.05,
+      "commission": 687.49,
+      "courseFeeNADC": 2062.46,
+      "ratePerHour": 5.4998933333333335,
+      "invoice": "D2025387",
+      "invoiceDate": "2025-08-13",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41389,
+      "studentId": "30546",
+      "studentName": "Tuguldurtugs Enkhtugs",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-27 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 29/09/2025 - 20/03/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 29/09/2025 - 20/03/2026",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025391",
+      "invoiceDate": "2025-08-14",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41390,
+      "studentId": "29258",
+      "studentName": "Sara Gawkowska",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-08 to 2025-09-26",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 08/09/2025 - 26/09/2025",
+          "weeks": 3,
+          "amount": 459,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 459
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 08/09/2025 - 26/09/2025",
+      "amountOriginal": 459,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 459,
+      "ratePerHour": 10.2,
+      "invoice": "D2025383",
+      "invoiceDate": "2025-08-12",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41391,
+      "studentId": "30547",
+      "studentName": "Jenell Veronica Guarino",
+      "courseName": "Morning General",
+      "coursePeriod": "2026-01-26 to 2026-02-13",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 26/01/2026 - 13/02/2026 Special Offer",
+          "weeks": 3,
+          "amount": 540,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 486
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 26/01/2026 - 13/02/2026 Special Offer",
+      "amountOriginal": 540,
+      "discount": 54,
+      "commission": 0,
+      "courseFeeNADC": 486,
+      "ratePerHour": 10.8,
+      "invoice": "D2025386",
+      "invoiceDate": "2025-08-13",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41394,
+      "studentId": "30550",
+      "studentName": "Denner Augusto dos Santos Neves Pereira",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-13 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+          "weeks": 15,
+          "amount": 1890,
+          "discount": 661.5,
+          "commission": 343.98,
+          "nadc": 884.52
+        },
+        {
+          "description": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025",
+          "weeks": 10,
+          "amount": 1260,
+          "discount": 441,
+          "commission": 229,
+          "nadc": 590
+        }
+      ],
+      "courseDescription": "15 weeks Academic Year Morning 05/01/2026 - 17/04/2026 + 10 weeks Academic Year Morning 13/10/2025 - 19/12/2025",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 572.98,
+      "courseFeeNADC": 1474.52,
+      "ratePerHour": 3.932053333333333,
+      "invoice": "D2025450",
+      "invoiceDate": "2025-09-29",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41395,
+      "studentId": "30551",
+      "studentName": "WANG YAN",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2026-06-05",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 03/11/2025 - 24/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 945,
+          "commission": 551.25,
+          "nadc": 1653.75
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 03/11/2025 - 24/04/2026",
+      "amountOriginal": 3150,
+      "discount": 945,
+      "commission": 551.25,
+      "courseFeeNADC": 1653.75,
+      "ratePerHour": 4.41,
+      "invoice": "D2025412",
+      "invoiceDate": "2025-09-04",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41400,
+      "studentId": "30556",
+      "studentName": "Kristina Dincer",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-01 to 2025-10-10",
+      "weeks": 8,
+      "totalHours": 120,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 13/10/2025 - 24/10/2025",
+          "weeks": 2,
+          "amount": 306,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 306
+        },
+        {
+          "description": "6 weeks Morning General 03/11/2025 - 12/12/2025",
+          "weeks": 6,
+          "amount": 918,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 918
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 13/10/2025 - 24/10/2025 + 6 weeks Morning General 03/11/2025 - 12/12/2025",
+      "amountOriginal": 1224,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1224,
+      "ratePerHour": 10.2,
+      "invoice": "D2025435",
+      "invoiceDate": "2025-09-22",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41405,
+      "studentId": "30560",
+      "studentName": "Guadalupe Zenteno Mondragon",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-09-29 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 06/10/2025 - 27/03/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 511.88,
+          "nadc": 1535.62
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 06/10/2025 - 27/03/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 511.88,
+      "courseFeeNADC": 1535.62,
+      "ratePerHour": 4.094986666666666,
+      "invoice": "D2025402",
+      "invoiceDate": "2025-08-27",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41416,
+      "studentId": "30571",
+      "studentName": "Wanying SONG",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-11-24 to 2026-05-15",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 27/10/2025 - 17/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 945,
+          "commission": 551.25,
+          "nadc": 1653.75
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 27/10/2025 - 17/04/2026",
+      "amountOriginal": 3150,
+      "discount": 945,
+      "commission": 551.25,
+      "courseFeeNADC": 1653.75,
+      "ratePerHour": 4.41,
+      "invoice": "D2025410",
+      "invoiceDate": "2025-09-01",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41453,
+      "studentId": "30608",
+      "studentName": "Xiao Lin",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 945,
+          "commission": 551.25,
+          "nadc": 1653.75
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+      "amountOriginal": 3150,
+      "discount": 945,
+      "commission": 551.25,
+      "courseFeeNADC": 1653.75,
+      "ratePerHour": 4.41,
+      "invoice": "D2025420",
+      "invoiceDate": "2025-09-15",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41454,
+      "studentId": "30609",
+      "studentName": "Daniela Marquez Flores",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-13 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 511.88,
+          "nadc": 1535.62
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 511.88,
+      "courseFeeNADC": 1535.62,
+      "ratePerHour": 4.094986666666666,
+      "invoice": "D2025425",
+      "invoiceDate": "2025-09-17",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41459,
+      "studentId": "30614",
+      "studentName": "Felix Edgardo Lopez Rivera",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-01-05 to 2026-06-26",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 315,
+          "commission": 0,
+          "nadc": 2835
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026",
+      "amountOriginal": 3150,
+      "discount": 315,
+      "commission": 0,
+      "courseFeeNADC": 2835,
+      "ratePerHour": 7.56,
+      "invoice": "D2025416",
+      "invoiceDate": "2025-09-09",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41462,
+      "studentId": "30617",
+      "studentName": "Alvaro Garza Ramos",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-20 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 20/10/2025 - 10/04/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 511.88,
+          "nadc": 1535.62
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 20/10/2025 - 10/04/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 511.88,
+      "courseFeeNADC": 1535.62,
+      "ratePerHour": 4.094986666666666,
+      "invoice": "D2025429",
+      "invoiceDate": "2025-09-18",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41463,
+      "studentId": "30618",
+      "studentName": "Laura Puddu",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-10-13 to 2025-11-07",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 13/10/2025 - 07/11/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 648
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 13/10/2025 - 07/11/2025",
+      "amountOriginal": 720,
+      "discount": 72,
+      "commission": 0,
+      "courseFeeNADC": 648,
+      "ratePerHour": 10.8,
+      "invoice": "D2025417",
+      "invoiceDate": "2025-09-10",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41465,
+      "studentId": "30620",
+      "studentName": "Daniel Hexiong Sánchez Goñi",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-15 to 2025-12-19",
+      "weeks": 14,
+      "totalHours": 210,
+      "courseLineItems": [
+        {
+          "description": "14 weeks Morning General 15/09/2025 - 19/12/2025",
+          "weeks": 14,
+          "amount": 2142,
+          "discount": 214.2,
+          "commission": 0,
+          "nadc": 1927.8
+        }
+      ],
+      "courseDescription": "14 weeks Morning General 15/09/2025 - 19/12/2025",
+      "amountOriginal": 2142,
+      "discount": 214.2,
+      "commission": 0,
+      "courseFeeNADC": 1927.8,
+      "ratePerHour": 9.18,
+      "invoice": "D2025418",
+      "invoiceDate": "2025-09-11",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41466,
+      "studentId": "30621",
+      "studentName": "Toshimi Hanakawa",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 01/12/2025 - 22/05/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 01/12/2025 - 22/05/2026",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025484",
+      "invoiceDate": "2025-10-08",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41471,
+      "studentId": "30626",
+      "studentName": "Valério De Negreiros Oliveira",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-10-13 to 2025-11-28",
+      "weeks": 10,
+      "totalHours": 150,
+      "courseLineItems": [
+        {
+          "description": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025 / 15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+          "weeks": 10,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 573.3,
+          "nadc": 1474.2
+        }
+      ],
+      "courseDescription": "10 weeks Academic Year Morning 13/10/2025 - 19/12/2025 / 15 weeks Academic Year Morning 05/01/2026 - 17/04/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 573.3,
+      "courseFeeNADC": 1474.2,
+      "ratePerHour": 9.828000000000001,
+      "invoice": "D2025428",
+      "invoiceDate": "2025-09-18",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41476,
+      "studentId": "30631",
+      "studentName": "Anand narantuya",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 504,
+          "commission": 661.5,
+          "nadc": 1984.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+      "amountOriginal": 3150,
+      "discount": 504,
+      "commission": 661.5,
+      "courseFeeNADC": 1984.5,
+      "ratePerHour": 5.292,
+      "invoice": "D2025500",
+      "invoiceDate": "2025-10-17",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41489,
+      "studentId": "29503",
+      "studentName": "Yumihiko Uemura",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-10-06 to 2025-10-24",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "14 weeks Academic Year Renewal Morning 05/01/2026 - 10/04/2026",
+          "weeks": 14,
+          "amount": 812,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 812
+        },
+        {
+          "description": "11 weeks Academic Year Renewal Morning 06/10/2025 - 19/12/2025",
+          "weeks": 11,
+          "amount": 638,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 638
+        }
+      ],
+      "courseDescription": "14 weeks Academic Year Renewal Morning 05/01/2026 - 10/04/2026 + 11 weeks Academic Year Renewal Morning 06/10/2025 - 19/12/2025",
+      "amountOriginal": 1450,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1450,
+      "ratePerHour": 3.8666666666666667,
+      "invoice": "D2025430",
+      "invoiceDate": "2025-09-18",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41491,
+      "studentId": "30645",
+      "studentName": "Yagmur Sirkecioğlu Şenol",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-22 to 2025-10-24",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 22/09/2025 - 31/10/2025",
+          "weeks": 6,
+          "amount": 972,
+          "discount": 97.2,
+          "commission": 0,
+          "nadc": 874.8
+        }
+      ],
+      "courseDescription": "6 weeks Morning General 22/09/2025 - 31/10/2025",
+      "amountOriginal": 972,
+      "discount": 97.2,
+      "commission": 0,
+      "courseFeeNADC": 874.8,
+      "ratePerHour": 9.719999999999999,
+      "invoice": "D2025432",
+      "invoiceDate": "2025-09-19",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41492,
+      "studentId": "30646",
+      "studentName": "Xu Lei",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 29/12/2025 - 19/06/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 945,
+          "commission": 551.25,
+          "nadc": 1653.75
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 29/12/2025 - 19/06/2026",
+      "amountOriginal": 3150,
+      "discount": 945,
+      "commission": 551.25,
+      "courseFeeNADC": 1653.75,
+      "ratePerHour": 4.41,
+      "invoice": "D2025449",
+      "invoiceDate": "2025-09-29",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41493,
+      "studentId": "30647",
+      "studentName": "Tiago Behar",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-10-06 to 2025-10-31",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 06/10/2025 - 31/10/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 648
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 06/10/2025 - 31/10/2025",
+      "amountOriginal": 720,
+      "discount": 72,
+      "commission": 0,
+      "courseFeeNADC": 648,
+      "ratePerHour": 10.8,
+      "invoice": "D2025436",
+      "invoiceDate": "2025-09-23",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41497,
+      "studentId": "30651",
+      "studentName": "Alvaro Sanchez Granel",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-29 to 2025-10-10",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 29/09/2025 - 10/10/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 36,
+          "commission": 0,
+          "nadc": 324
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 29/09/2025 - 10/10/2025",
+      "amountOriginal": 360,
+      "discount": 36,
+      "commission": 0,
+      "courseFeeNADC": 324,
+      "ratePerHour": 10.8,
+      "invoice": "D2025433",
+      "invoiceDate": "2025-09-22",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41498,
+      "studentId": "30652",
+      "studentName": "Nora Patricia Keilty",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-29 to 2025-10-10",
+      "weeks": 2,
+      "totalHours": 30,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Morning General 29/09/2025 - 10/10/2025",
+          "weeks": 2,
+          "amount": 360,
+          "discount": 36,
+          "commission": 0,
+          "nadc": 324
+        }
+      ],
+      "courseDescription": "2 weeks Morning General 29/09/2025 - 10/10/2025",
+      "amountOriginal": 360,
+      "discount": 36,
+      "commission": 0,
+      "courseFeeNADC": 324,
+      "ratePerHour": 10.8,
+      "invoice": "D2025434",
+      "invoiceDate": "2025-09-22",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41501,
+      "studentId": "30655",
+      "studentName": "Amin-Erdene Odonpurev",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 08/12/2025 - 29/05/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 0,
+          "commission": 787.5,
+          "nadc": 2362.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 08/12/2025 - 29/05/2026",
+      "amountOriginal": 3150,
+      "discount": 0,
+      "commission": 787.5,
+      "courseFeeNADC": 2362.5,
+      "ratePerHour": 6.3,
+      "invoice": "D2025482",
+      "invoiceDate": "2025-10-08",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41503,
+      "studentId": "30657",
+      "studentName": "Jade Kerguen",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-12-01 to 2025-12-05",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 01/12/2025 - 05/12/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 36,
+          "commission": 31.68,
+          "nadc": 112.32
+        }
+      ],
+      "courseDescription": "1 Week Morning General 01/12/2025 - 05/12/2025",
+      "amountOriginal": 180,
+      "discount": 36,
+      "commission": 31.68,
+      "courseFeeNADC": 112.32,
+      "ratePerHour": 7.4879999999999995,
+      "invoice": "D2025506",
+      "invoiceDate": "2025-10-24",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41504,
+      "studentId": "30658",
+      "studentName": "Mathieu Mangeant",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-12-01 to 2025-12-05",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 01/12/2025 - 05/12/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 36,
+          "commission": 31.68,
+          "nadc": 112.32
+        }
+      ],
+      "courseDescription": "1 Week Morning General 01/12/2025 - 05/12/2025",
+      "amountOriginal": 180,
+      "discount": 36,
+      "commission": 31.68,
+      "courseFeeNADC": 112.32,
+      "ratePerHour": 7.4879999999999995,
+      "invoice": "D2025492",
+      "invoiceDate": "2025-10-13",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41508,
+      "studentId": "30661",
+      "studentName": "Turbold Altankhuyag",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-02-23 to 2026-08-14",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 504,
+          "commission": 787.5,
+          "nadc": 1858.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+      "amountOriginal": 3150,
+      "discount": 504,
+      "commission": 787.5,
+      "courseFeeNADC": 1858.5,
+      "ratePerHour": 4.956,
+      "invoice": "D2025491",
+      "invoiceDate": "2025-10-09",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41509,
+      "studentId": "30662",
+      "studentName": "Charlotte Madelaine",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-09-29 to 2025-10-03",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 29/09/2025 - 03/10/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162
+        }
+      ],
+      "courseDescription": "1 Week Morning General 29/09/2025 - 03/10/2025",
+      "amountOriginal": 180,
+      "discount": 18,
+      "commission": 0,
+      "courseFeeNADC": 162,
+      "ratePerHour": 10.8,
+      "invoice": "D2025443",
+      "invoiceDate": "2025-09-25",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41510,
+      "studentId": "30663",
+      "studentName": "Joao Rafael de Sena Velloso Pinto",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "weeks": 11,
+      "totalHours": 165,
+      "courseLineItems": [
+        {
+          "description": "11 weeks Morning General 01/12/2025 - 13/02/2026",
+          "weeks": 11,
+          "amount": 1738,
+          "discount": 0,
+          "commission": 434.5,
+          "nadc": 1303.5
+        }
+      ],
+      "courseDescription": "11 weeks Morning General 01/12/2025 - 13/02/2026",
+      "amountOriginal": 1738,
+      "discount": 0,
+      "commission": 434.5,
+      "courseFeeNADC": 1303.5,
+      "ratePerHour": 7.9,
+      "invoice": "D2025504",
+      "invoiceDate": "2025-10-21",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41523,
+      "studentId": "30676",
+      "studentName": "Pedro De Pauli Pastre",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 01/12/2025 - 22/05/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 573.3,
+          "nadc": 1474.2
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 01/12/2025 - 22/05/2026",
+      "amountOriginal": 3150,
+      "discount": 1102.5,
+      "commission": 573.3,
+      "courseFeeNADC": 1474.2,
+      "ratePerHour": 3.9312,
+      "invoice": "D2025521",
+      "invoiceDate": "2025-11-05",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41545,
+      "studentId": "30687",
+      "studentName": "Uyanga Tungalag",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-04-27 to 2026-10-16",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 27/04/2026 - 16/10/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 504,
+          "commission": 661,
+          "nadc": 1985
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 27/04/2026 - 16/10/2026",
+      "amountOriginal": 3150,
+      "discount": 504,
+      "commission": 661,
+      "courseFeeNADC": 1985,
+      "ratePerHour": 5.293333333333333,
+      "invoice": "D2025502",
+      "invoiceDate": "2025-10-21",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41546,
+      "studentId": "30688",
+      "studentName": "Andrea Michelle Diaz Moreno",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-08 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "2 weeks Academic Year Morning 08/12/2025 - 19/12/2025 Halloween Promotion",
+          "weeks": 2,
+          "amount": 252,
+          "discount": 83.16,
+          "commission": 0,
+          "nadc": 168.84
+        },
+        {
+          "description": "23 weeks Academic Year Morning 05/01/2026 - 12/06/2026 Halloween Promotion",
+          "weeks": 23,
+          "amount": 2898,
+          "discount": 956.34,
+          "commission": 0,
+          "nadc": 1941.66
+        }
+      ],
+      "courseDescription": "2 weeks Academic Year Morning 08/12/2025 - 19/12/2025 Halloween Promotion + 23 weeks Academic Year Morning 05/01/2026 - 12/06/2026 Halloween Promotion",
+      "amountOriginal": 3150,
+      "discount": 1039.5,
+      "commission": 0,
+      "courseFeeNADC": 2110.5,
+      "ratePerHour": 5.628,
+      "invoice": "D2025490",
+      "invoiceDate": "2025-10-30",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41547,
+      "studentId": "30689",
+      "studentName": "Amanda Deliany Souza Ramos",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-11-10 to 2025-12-05",
+      "weeks": 4,
+      "totalHours": 60,
+      "courseLineItems": [
+        {
+          "description": "4 weeks Morning General 10/11/2025 - 05/12/2025",
+          "weeks": 4,
+          "amount": 720,
+          "discount": 0,
+          "commission": 158.4,
+          "nadc": 561.6
+        }
+      ],
+      "courseDescription": "4 weeks Morning General 10/11/2025 - 05/12/2025",
+      "amountOriginal": 720,
+      "discount": 0,
+      "commission": 158.4,
+      "courseFeeNADC": 561.6,
+      "ratePerHour": 9.360000000000001,
+      "invoice": "D2025493",
+      "invoiceDate": "2025-10-15",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41548,
+      "studentId": "30690",
+      "studentName": "Azzaya Enebish",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-01-12 to 2026-07-03",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 12/01/2026 - 03/07/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 500.85,
+          "commission": 662.28,
+          "nadc": 1986.87
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 12/01/2026 - 03/07/2026",
+      "amountOriginal": 3150,
+      "discount": 500.85,
+      "commission": 662.28,
+      "courseFeeNADC": 1986.87,
+      "ratePerHour": 5.2983199999999995,
+      "invoice": "D2025494",
+      "invoiceDate": "2025-10-16",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41555,
+      "studentId": "30694",
+      "studentName": "Nandin-erdene Gankhuyag",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-07-13 to 2027-01-01",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 13/07/2026 - 01/01/2027",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 976.5,
+          "commission": 630,
+          "nadc": 1543.5
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 13/07/2026 - 01/01/2027",
+      "amountOriginal": 3150,
+      "discount": 976.5,
+      "commission": 630,
+      "courseFeeNADC": 1543.5,
+      "ratePerHour": 4.116,
+      "invoice": "D2025554",
+      "invoiceDate": "2025-11-25",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41556,
+      "studentId": "30695",
+      "studentName": "Csilla Kálózi-Szabó",
+      "courseName": "Morning General",
+      "coursePeriod": "2026-05-11 to 2026-05-15",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 11/05/2026 - 15/05/2026",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162
+        }
+      ],
+      "courseDescription": "1 Week Morning General 11/05/2026 - 15/05/2026",
+      "amountOriginal": 180,
+      "discount": 18,
+      "commission": 0,
+      "courseFeeNADC": 162,
+      "ratePerHour": 10.8,
+      "invoice": "D2025566",
+      "invoiceDate": "2025-12-04",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41557,
+      "studentId": "30696",
+      "studentName": "Noémi Napravszky",
+      "courseName": "Morning General",
+      "coursePeriod": "2026-05-11 to 2026-05-15",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 11/05/2026 - 15/05/2026",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 18,
+          "commission": 0,
+          "nadc": 162
+        }
+      ],
+      "courseDescription": "1 Week Morning General 11/05/2026 - 15/05/2026",
+      "amountOriginal": 180,
+      "discount": 18,
+      "commission": 0,
+      "courseFeeNADC": 162,
+      "ratePerHour": 10.8,
+      "invoice": "D2025565",
+      "invoiceDate": "2025-12-04",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41559,
+      "studentId": "30698",
+      "studentName": "Mathias Barry",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-10-20 to 2025-10-24",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 20/10/2025 - 24/10/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 20/10/2025 - 24/10/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025497",
+      "invoiceDate": "2025-10-16",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41567,
+      "studentId": "30706",
+      "studentName": "Sara Vierstra",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-11-03 to 2025-11-28",
+      "weeks": 3,
+      "totalHours": 45,
+      "courseLineItems": [
+        {
+          "description": "3 weeks Morning General 01/12/2025 - 19/12/2025 Black Friday Promotion",
+          "weeks": 3,
+          "amount": 486,
+          "discount": 194.4,
+          "commission": 0,
+          "nadc": 291.6
+        }
+      ],
+      "courseDescription": "3 weeks Morning General 01/12/2025 - 19/12/2025 Black Friday Promotion",
+      "amountOriginal": 486,
+      "discount": 194.4,
+      "commission": 0,
+      "courseFeeNADC": 291.6,
+      "ratePerHour": 6.48,
+      "invoice": "D2025548",
+      "invoiceDate": "2025-11-24",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41574,
+      "studentId": "30713",
+      "studentName": "Belén Isabel Méndez Peña",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-06-15 to 2026-12-04",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/06/2026 - 04/12/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 315,
+          "commission": 0,
+          "nadc": 2835
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 15/06/2026 - 04/12/2026",
+      "amountOriginal": 3150,
+      "discount": 315,
+      "commission": 0,
+      "courseFeeNADC": 2835,
+      "ratePerHour": 7.56,
+      "invoice": "D2025505",
+      "invoiceDate": "2025-10-22",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41589,
+      "studentId": "30728",
+      "studentName": "Elżbieta Zarzycka",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-11-17 to 2025-11-21",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 17/11/2025 - 21/11/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 17/11/2025 - 21/11/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025517",
+      "invoiceDate": "2025-11-03",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41590,
+      "studentId": "30729",
+      "studentName": "Mikołaj Januszewski",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-11-17 to 2025-11-21",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 17/11/2025 - 21/11/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180
+        }
+      ],
+      "courseDescription": "1 Week Morning General 17/11/2025 - 21/11/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 180,
+      "ratePerHour": 12,
+      "invoice": "D2025519",
+      "invoiceDate": "2025-11-04",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41594,
+      "studentId": "30733",
+      "studentName": "Busra Bas",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-11-03 to 2025-12-12",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 03/11/2025 - 12/12/2025",
+          "weeks": 6,
+          "amount": 972,
+          "discount": 0,
+          "commission": 243,
+          "nadc": 729
+        }
+      ],
+      "courseDescription": "6 weeks Morning General 03/11/2025 - 12/12/2025",
+      "amountOriginal": 972,
+      "discount": 0,
+      "commission": 243,
+      "courseFeeNADC": 729,
+      "ratePerHour": 8.1,
+      "invoice": "D2025516",
+      "invoiceDate": "2025-11-03",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41595,
+      "studentId": "30734",
+      "studentName": "Yusuke Kuramura",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2026-06-05",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 630,
+          "commission": 630,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+      "amountOriginal": 3150,
+      "discount": 630,
+      "commission": 630,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025526",
+      "invoiceDate": "2025-11-10",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41598,
+      "studentId": "30737",
+      "studentName": "Laia Padros",
+      "courseName": "Morning IELTS",
+      "coursePeriod": "2025-11-10 to 2025-12-05",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning IELTS 08/12/2025 - 12/12/2025 Black Friday Promotion",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 72,
+          "commission": 0,
+          "nadc": 108
+        }
+      ],
+      "courseDescription": "1 Week Morning IELTS 08/12/2025 - 12/12/2025 Black Friday Promotion",
+      "amountOriginal": 180,
+      "discount": 72,
+      "commission": 0,
+      "courseFeeNADC": 108,
+      "ratePerHour": 7.2,
+      "invoice": "D2025559",
+      "invoiceDate": "2025-11-28",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41617,
+      "studentId": "30746",
+      "studentName": "Pablo González Clavain",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-12-01 to 2025-12-05",
+      "weeks": 1,
+      "totalHours": 15,
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 01/12/2025 - 05/12/2025",
+          "weeks": 1,
+          "amount": 180,
+          "discount": 0,
+          "commission": 58.5,
+          "nadc": 121.5
+        }
+      ],
+      "courseDescription": "1 Week Morning General 01/12/2025 - 05/12/2025",
+      "amountOriginal": 180,
+      "discount": 0,
+      "commission": 58.5,
+      "courseFeeNADC": 121.5,
+      "ratePerHour": 8.1,
+      "invoice": "D2025546",
+      "invoiceDate": "2025-11-17",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41619,
+      "studentId": "30645",
+      "studentName": "Yagmur Sirkecioğlu Şenol",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-11-10 to 2025-12-19",
+      "weeks": 6,
+      "totalHours": 90,
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 10/11/2025 - 19/12/2025 Special offer",
+          "weeks": 6,
+          "amount": 918,
+          "discount": 91.8,
+          "commission": 0,
+          "nadc": 826.2
+        }
+      ],
+      "courseDescription": "6 weeks Morning General 10/11/2025 - 19/12/2025 Special offer",
+      "amountOriginal": 918,
+      "discount": 91.8,
+      "commission": 0,
+      "courseFeeNADC": 826.2,
+      "ratePerHour": 9.18,
+      "invoice": "D2025525",
+      "invoiceDate": "2025-11-07",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41648,
+      "studentId": "29150",
+      "studentName": "Badamkhand Otgonbayar",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "22 weeks Academic Year Renewal Morning 05/01/2026 - 05/06/2026 Black Friday Promotion",
+          "weeks": 22,
+          "amount": 1149.28,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1149.28
+        },
+        {
+          "description": "3 weeks Academic Year Renewal Morning 01/12/2025 - 19/12/2025 \tBlack Friday Promotion",
+          "weeks": 3,
+          "amount": 156.72,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 156.72
+        }
+      ],
+      "courseDescription": "22 weeks Academic Year Renewal Morning 05/01/2026 - 05/06/2026 Black Friday Promotion + 3 weeks Academic Year Renewal Morning 01/12/2025 - 19/12/2025 \tBlack Friday Promotion",
+      "amountOriginal": 1306,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1306,
+      "ratePerHour": 3.482666666666667,
+      "invoice": "D2025543",
+      "invoiceDate": "2025-11-20",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41649,
+      "studentId": "29283",
+      "studentName": "Sodnom Bat-Erdene",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-11-24 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "21 weeks Academic Year Renewal Morning 05/01/2026 - 29/05/2026 Black Friday Promotion",
+          "weeks": 21,
+          "amount": 1097.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1097.04
+        },
+        {
+          "description": "4 weeks Academic Year Renewal Morning 24/11/2025 - 19/12/2025 Black Friday Promotion",
+          "weeks": 4,
+          "amount": 208.96,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 208.96
+        }
+      ],
+      "courseDescription": "21 weeks Academic Year Renewal Morning 05/01/2026 - 29/05/2026 Black Friday Promotion + 4 weeks Academic Year Renewal Morning 24/11/2025 - 19/12/2025 Black Friday Promotion",
+      "amountOriginal": 1306,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1306,
+      "ratePerHour": 3.482666666666667,
+      "invoice": "D2025537",
+      "invoiceDate": "2025-11-13",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41651,
+      "studentId": "29058",
+      "studentName": "Tsengelbayar Mendsaikhan",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "22 weeks Academic Year Renewal Morning 05/01/2026 - 05/06/2026 Black Friday Promotion",
+          "weeks": 22,
+          "amount": 1149.28,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1149.28
+        },
+        {
+          "description": "3 weeks Academic Year Renewal Morning 01/12/2025 - 19/12/2025 Black Friday Promotion",
+          "weeks": 3,
+          "amount": 156.72,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 156.72
+        }
+      ],
+      "courseDescription": "22 weeks Academic Year Renewal Morning 05/01/2026 - 05/06/2026 Black Friday Promotion + 3 weeks Academic Year Renewal Morning 01/12/2025 - 19/12/2025 Black Friday Promotion",
+      "amountOriginal": 1306,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1306,
+      "ratePerHour": 3.482666666666667,
+      "invoice": "D2025538",
+      "invoiceDate": "2025-11-17",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41653,
+      "studentId": "30752",
+      "studentName": "Wei Zhang",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-11-24 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "21 weeks Academic Year Renewal Morning 05/01/2026 - 29/05/2026 Black Friday Promotion",
+          "weeks": 21,
+          "amount": 1097.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1097.04
+        },
+        {
+          "description": "4 weeks Academic Year Renewal Morning 24/11/2025 - 19/12/2025 Black Friday Promotion",
+          "weeks": 4,
+          "amount": 208.96,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 208.96
+        }
+      ],
+      "courseDescription": "21 weeks Academic Year Renewal Morning 05/01/2026 - 29/05/2026 Black Friday Promotion + 4 weeks Academic Year Renewal Morning 24/11/2025 - 19/12/2025 Black Friday Promotion",
+      "amountOriginal": 1306,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1306,
+      "ratePerHour": 3.482666666666667,
+      "invoice": "D2025541",
+      "invoiceDate": "2025-11-19",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41654,
+      "studentId": "30753",
+      "studentName": "Raquel Álvarez Fernández",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-01-12 to 2026-07-03",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 12/01/2026 - 03/07/2026 Black Friday Promotion",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 12/01/2026 - 03/07/2026 Black Friday Promotion",
+      "amountOriginal": 3150,
+      "discount": 1260,
+      "commission": 0,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025535",
+      "invoiceDate": "2025-11-12",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41657,
+      "studentId": "29297",
+      "studentName": "Undralbat Ganbaatar",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2025-12-15 to 2026-06-05",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+          "weeks": 25,
+          "amount": 2000,
+          "discount": 694,
+          "commission": 130.6,
+          "nadc": 1175.4
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+      "amountOriginal": 2000,
+      "discount": 694,
+      "commission": 130.6,
+      "courseFeeNADC": 1175.4,
+      "ratePerHour": 3.1344000000000003,
+      "invoice": "D2025545",
+      "invoiceDate": "2025-11-17",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41661,
+      "studentId": "30757",
+      "studentName": "Kseniia Avramchenko",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2026-03-16 to 2026-09-04",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 16/03/2026 - 04/09/2026 Black Friday Promotion",
+          "weeks": 25,
+          "amount": 1772,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1772
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Renewal Morning 16/03/2026 - 04/09/2026 Black Friday Promotion",
+      "amountOriginal": 1772,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1772,
+      "ratePerHour": 4.725333333333333,
+      "invoice": "D2025542",
+      "invoiceDate": "2025-11-19",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41664,
+      "studentId": "30760",
+      "studentName": "Jiaojiao Yu",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-01-05 to 2026-06-26",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026 Black Friday Promotion",
+          "weeks": 25,
+          "amount": 2199,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2199
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026 Black Friday Promotion",
+      "amountOriginal": 2199,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 2199,
+      "ratePerHour": 5.864,
+      "invoice": "D2025550",
+      "invoiceDate": "2025-11-24",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41668,
+      "studentId": "30764",
+      "studentName": "Javkhlan Gantsooj",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-12-08 to 2026-05-29",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 08/12/2025 - 29/05/2026",
+          "weeks": 25,
+          "amount": 1950,
+          "discount": 643.5,
+          "commission": 130.65,
+          "nadc": 1175.85
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Renewal Morning 08/12/2025 - 29/05/2026",
+      "amountOriginal": 1950,
+      "discount": 643.5,
+      "commission": 130.65,
+      "courseFeeNADC": 1175.85,
+      "ratePerHour": 3.1355999999999997,
+      "invoice": "D2025549",
+      "invoiceDate": "2025-11-24",
+      "hasAgent": true,
+      "studentType": "agent"
+    },
+    {
+      "bookingId": 41678,
+      "studentId": "30771",
+      "studentName": "Luca Feola",
+      "courseName": "Morning General",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "weeks": 12,
+      "totalHours": 180,
+      "courseLineItems": [
+        {
+          "description": "9 weeks Morning General 05/01/2026 - 06/03/2026 Black Friday Promotion",
+          "weeks": 9,
+          "amount": 1377,
+          "discount": 550.8,
+          "commission": 0,
+          "nadc": 826.2
+        },
+        {
+          "description": "3 weeks Morning General 01/12/2025 - 19/12/2025 Black Friday Promotion",
+          "weeks": 3,
+          "amount": 459,
+          "discount": 183.6,
+          "commission": 0,
+          "nadc": 275.4
+        }
+      ],
+      "courseDescription": "9 weeks Morning General 05/01/2026 - 06/03/2026 Black Friday Promotion + 3 weeks Morning General 01/12/2025 - 19/12/2025 Black Friday Promotion",
+      "amountOriginal": 1836,
+      "discount": 734.4,
+      "commission": 0,
+      "courseFeeNADC": 1101.6,
+      "ratePerHour": 6.119999999999999,
+      "invoice": "D2025555",
+      "invoiceDate": "2025-11-26",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41679,
+      "studentId": "30196",
+      "studentName": "Julio Cesar Chavez Rubio",
+      "courseName": "Academic Year Renewal Morning",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "24 weeks Academic Year Renewal Morning 05/01/2026 - 19/06/2026 Black Friday Promotion",
+          "weeks": 24,
+          "amount": 1253.76,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1253.76
+        },
+        {
+          "description": "1 Week Academic Year Renewal Morning 15/12/2025 - 19/12/2025 Black Friday Promotion",
+          "weeks": 1,
+          "amount": 52.24,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 52.24
+        }
+      ],
+      "courseDescription": "24 weeks Academic Year Renewal Morning 05/01/2026 - 19/06/2026 Black Friday Promotion + 1 Week Academic Year Renewal Morning 15/12/2025 - 19/12/2025 Black Friday Promotion",
+      "amountOriginal": 1306,
+      "discount": 0,
+      "commission": 0,
+      "courseFeeNADC": 1306,
+      "ratePerHour": 3.482666666666667,
+      "invoice": "D2025557",
+      "invoiceDate": "2025-11-28",
+      "hasAgent": false,
+      "studentType": "direct"
+    },
+    {
+      "bookingId": 41680,
+      "studentId": "30772",
+      "studentName": "Ignacio Giovanelli Barrio",
+      "courseName": "Academic Year Morning",
+      "coursePeriod": "2026-01-05 to 2026-06-26",
+      "weeks": 25,
+      "totalHours": 375,
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026 Black Friday Promotion",
+          "weeks": 25,
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890
+        }
+      ],
+      "courseDescription": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026 Black Friday Promotion",
+      "amountOriginal": 3150,
+      "discount": 1260,
+      "commission": 0,
+      "courseFeeNADC": 1890,
+      "ratePerHour": 5.04,
+      "invoice": "D2025556",
+      "invoiceDate": "2025-11-26",
+      "hasAgent": false,
+      "studentType": "direct"
+    }
+  ]
+}

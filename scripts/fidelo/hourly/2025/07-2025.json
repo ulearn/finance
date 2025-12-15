@@ -1,0 +1,6530 @@
+{
+  "generated": "2025-12-15T21:16:14.734Z",
+  "period": "2025-07-01 to 2025-07-31",
+  "description": "Master data: All D-invoices (with payments) for 2025 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 82,
+    "totalRevenue": 98305.72,
+    "totalDiscounts": 14882.9,
+    "totalCommissions": 4482.43,
+    "agentStudents": 16,
+    "directStudents": 66
+  },
+  "invoices": [
+    {
+      "bookingId": 41264,
+      "invoiceNumber": "D2025337",
+      "invoiceDate": "2025-07-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30430",
+        "firstName": "Jessica",
+        "surname": "Sanchez",
+        "email": "jessy13594@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2025-08-18",
+          "until": "2025-08-29",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-18",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General Plus 18/08/2025 - 29/08/2025",
+          "amount": 360,
+          "discount": 36,
+          "commission": 0,
+          "nadc": 324,
+          "serviceFrom": "2025-08-18",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 410,
+        "discount": 36,
+        "commission": 0,
+        "nadc": 374
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41265,
+      "invoiceNumber": "D2025331",
+      "invoiceDate": "2025-07-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "28654",
+        "firstName": "Maiko",
+        "surname": "Yamaguchi",
+        "email": "tb9r.hmm481@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-09-08",
+          "until": "2025-12-19",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-03-13",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Academic Year Renewal Afternoon 05/01/2026 - 13/03/2026",
+          "amount": 580,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 580,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "15 weeks Academic Year Renewal Afternoon 08/09/2025 - 19/12/2025",
+          "amount": 870,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 870,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1800,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1800
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41266,
+      "invoiceNumber": "D2025328",
+      "invoiceDate": "2025-07-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30431",
+        "firstName": "Zalan",
+        "surname": "Ulrich",
+        "email": "ulrich.zalanpeter@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2025-07-07",
+          "until": "2025-07-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-07-07",
+          "serviceUntil": "2025-07-11",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Afternoon General Plus 07/07/2025 - 11/07/2025",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-07-07",
+          "serviceUntil": "2025-07-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 230
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41267,
+      "invoiceNumber": "D2025381",
+      "invoiceDate": "2025-08-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30432",
+        "firstName": "Diana Italia",
+        "surname": "Aguirre",
+        "email": "dianaitaliaaguirre@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-09-22",
+          "until": "2025-10-10",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-10-13",
+          "until": "2025-12-26",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Academic Year Afternoon 29/09/2025 - 19/12/2025",
+          "amount": 1152,
+          "discount": 115.2,
+          "commission": 0,
+          "nadc": 1036.8,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "13 weeks Academic Year Afternoon 05/01/2026 - 03/04/2026",
+          "amount": 1248,
+          "discount": 124.8,
+          "commission": 0,
+          "nadc": 1123.2,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Apartment (Shared Room/Self catering) 27/09/2025 - 20/12/2025",
+          "amount": 2400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2400,
+          "serviceFrom": "2025-09-27",
+          "serviceUntil": "2025-12-20",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-09-27",
+          "serviceUntil": "2025-12-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5265,
+        "discount": 240,
+        "commission": 0,
+        "nadc": 5025
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41269,
+      "invoiceNumber": "D2025348",
+      "invoiceDate": "2025-07-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30434",
+        "firstName": "Jiaming",
+        "surname": "Wang",
+        "email": "zachary0505@163.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-09-29",
+          "until": "2026-03-20",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Academic Year Afternoon 29/09/2025 - 19/12/2025",
+          "amount": 1152,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1152,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "13 weeks Academic Year Afternoon 05/01/2026 - 03/04/2026",
+          "amount": 1248,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1248,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2026-03-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2800,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2800
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41271,
+      "invoiceNumber": "D2025357",
+      "invoiceDate": "2025-07-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30436",
+        "firstName": "KOTOWA",
+        "surname": "UEDA",
+        "email": "shangtianqinhe33@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-09-01",
+          "until": "2025-09-12",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 01/09/2025 - 12/09/2025",
+          "amount": 360,
+          "discount": 72,
+          "commission": 86.4,
+          "nadc": 201.6,
+          "serviceFrom": "2025-09-01",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-01",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 410,
+        "discount": 122,
+        "commission": 86.4,
+        "nadc": 201.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41273,
+      "invoiceNumber": "D2025340",
+      "invoiceDate": "2025-07-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30438",
+        "firstName": "Simone",
+        "surname": "Bucciol",
+        "email": "simone.bucciol03@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-08-11",
+          "until": "2025-09-12",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-11",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Morning General Plus 11/08/2025 - 12/09/2025 Special Offer",
+          "amount": 1155,
+          "discount": 115.5,
+          "commission": 0,
+          "nadc": 1039.5,
+          "serviceFrom": "2025-08-11",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1205,
+        "discount": 115.5,
+        "commission": 0,
+        "nadc": 1089.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41275,
+      "invoiceNumber": "D2025346",
+      "invoiceDate": "2025-07-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30440",
+        "firstName": "Adéla",
+        "surname": "Nimrichterová",
+        "email": "adela.nimrichterova@seznam.cz"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2025-07-28",
+          "until": "2025-08-22",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-07-26",
+          "serviceUntil": "2025-08-23",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Individual room/Half-board) 26/07/2025 - 23/08/2025",
+          "amount": 1000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1000,
+          "serviceFrom": "2025-07-26",
+          "serviceUntil": "2025-08-23",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-07-28",
+          "serviceUntil": "2025-08-22",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning General Plus 28/07/2025 - 22/08/2025",
+          "amount": 940,
+          "discount": 94,
+          "commission": 0,
+          "nadc": 846,
+          "serviceFrom": "2025-07-28",
+          "serviceUntil": "2025-08-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2055,
+        "discount": 94,
+        "commission": 0,
+        "nadc": 1961
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41276,
+      "invoiceNumber": "D2025368",
+      "invoiceDate": "2025-07-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30441",
+        "firstName": "Lara Maria",
+        "surname": "Vögele",
+        "email": "lamavoegele@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-08-18",
+          "until": "2025-08-22",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-18",
+          "serviceUntil": "2025-08-22",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 18/08/2025 - 22/08/2025",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-08-18",
+          "serviceUntil": "2025-08-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 230
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41281,
+      "invoiceNumber": "D2025532",
+      "invoiceDate": "2025-11-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30446",
+        "firstName": "Diego",
+        "surname": "Alves da Silva Molina",
+        "email": "diego_alvesdasilva@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-11-24",
+          "until": "2025-12-19",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-05-29",
+          "weeks": 21,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 24/11/2025 - 15/05/2026",
+          "amount": 2400,
+          "discount": 840,
+          "commission": 390,
+          "nadc": 1170,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2820,
+        "discount": 840,
+        "commission": 390,
+        "nadc": 1590
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41282,
+      "invoiceNumber": "D2025529",
+      "invoiceDate": "2025-11-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30447",
+        "firstName": "Aurora",
+        "surname": "Madril Oliveira Molina",
+        "email": "auroramomolina@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-11-24",
+          "until": "2025-12-19",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-05-29",
+          "weeks": 21,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Afternoon 24/11/2025 - 15/05/2026",
+          "amount": 2400,
+          "discount": 840,
+          "commission": 390,
+          "nadc": 1170,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2026-05-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2820,
+        "discount": 840,
+        "commission": 390,
+        "nadc": 1590
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41284,
+      "invoiceNumber": "D2025345",
+      "invoiceDate": "2025-07-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30449",
+        "firstName": "Jonathan David",
+        "surname": "Gonzalez Urbaez",
+        "email": "jonathandgu@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-07-14",
+          "until": "2025-08-01",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-08-11",
+          "until": "2025-09-05",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee (Happy Plan)",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2025-07-14",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "7 weeks Afternoon General 14/07/2025 - 29/08/2025 Special offer",
+          "amount": 952,
+          "discount": 95.2,
+          "commission": 0,
+          "nadc": 856.8,
+          "serviceFrom": "2025-07-14",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1002,
+        "discount": 120.2,
+        "commission": 0,
+        "nadc": 881.8
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41285,
+      "invoiceNumber": "D2025347",
+      "invoiceDate": "2025-07-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30450",
+        "firstName": "Cibele",
+        "surname": "dos Santos Eugenio",
+        "email": "cibele.eug@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-07-21",
+          "until": "2025-09-19",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-10-13",
+          "until": "2025-12-19",
+          "weeks": 10,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-02-13",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Afternoon General 21/07/2025 - 09/01/2026",
+          "amount": 2400,
+          "discount": 840,
+          "commission": 351,
+          "nadc": 1209,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2026-01-09",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2026-01-09",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2450,
+        "discount": 840,
+        "commission": 351,
+        "nadc": 1259
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41288,
+      "invoiceNumber": "D2025349",
+      "invoiceDate": "2025-07-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "28671",
+        "firstName": "Claudia",
+        "surname": "Valiente Gomez",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-07-14",
+          "until": "2025-07-18",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 14/07/2025 - 18/07/2025",
+          "amount": 190,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 190,
+          "serviceFrom": "2025-07-14",
+          "serviceUntil": "2025-07-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 190,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 190
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41290,
+      "invoiceNumber": "D2025377",
+      "invoiceDate": "2025-08-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "28991",
+        "firstName": "Tuguldur",
+        "surname": "Ayush",
+        "email": "tuguldur.a99@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal MORN",
+          "category": "Morning Classes",
+          "from": "2025-07-14",
+          "until": "2025-12-19",
+          "weeks": 23,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal MORN",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-01-16",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks ULearn Renewal MORN 14/07/2025 - 02/01/2026",
+          "amount": 1950,
+          "discount": 146.25,
+          "commission": 100,
+          "nadc": 1703.75,
+          "serviceFrom": "2025-07-14",
+          "serviceUntil": "2026-01-02",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-07-14",
+          "serviceUntil": "2026-01-02",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-07-14",
+          "serviceUntil": "2026-01-02",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2300,
+        "discount": 146.25,
+        "commission": 100,
+        "nadc": 2053.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41295,
+      "invoiceNumber": "D2025350",
+      "invoiceDate": "2025-07-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30457",
+        "firstName": "Kazuyoshi",
+        "surname": "Shimono",
+        "email": "low.field06@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2025-07-21",
+          "until": "2025-08-01",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-07-19",
+          "serviceUntil": "2025-08-02",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-SUPR-SNGL/Self catering) 19/07/2025 - 02/08/2025",
+          "amount": 700,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 700,
+          "serviceFrom": "2025-07-19",
+          "serviceUntil": "2025-08-02",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Intensive General 30 21/07/2025 - 01/08/2025",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1415,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1415
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41296,
+      "invoiceNumber": "D2025359",
+      "invoiceDate": "2025-07-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30458",
+        "firstName": "Rajeev",
+        "surname": "Tosolari",
+        "email": "rajeevtosolari@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-08-11",
+          "until": "2025-08-29",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Apartment (Shared Room/Self catering) 10/08/2025 - 30/08/2025",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2025-08-10",
+          "serviceUntil": "2025-08-30",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Afternoon General 11/08/2025 - 29/08/2025",
+          "amount": 420,
+          "discount": 0,
+          "commission": 105,
+          "nadc": 315,
+          "serviceFrom": "2025-08-11",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-08-10",
+          "serviceUntil": "2025-08-30",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-11",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1135,
+        "discount": 0,
+        "commission": 105,
+        "nadc": 1030
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41298,
+      "invoiceNumber": "D2025358",
+      "invoiceDate": "2025-07-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30460",
+        "firstName": "Rion",
+        "surname": "Akamine",
+        "email": "ri12on.824@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-07-21",
+          "until": "2025-08-01",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Apartment (Shared Room/Self catering) 20/07/2025 - 03/08/2025",
+          "amount": 420,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 420,
+          "serviceFrom": "2025-07-20",
+          "serviceUntil": "2025-08-03",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 21/07/2025 - 01/08/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 79.2,
+          "nadc": 280.8,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-07-20",
+          "serviceUntil": "2025-08-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 895,
+        "discount": 0,
+        "commission": 79.2,
+        "nadc": 815.8
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41299,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30461",
+        "firstName": "Nina",
+        "surname": "Bačová",
+        "email": "bacova2@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41300,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30462",
+        "firstName": "Samuel",
+        "surname": "Baliga",
+        "email": "baliga1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41301,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30463",
+        "firstName": "Tamara",
+        "surname": "Barniaková",
+        "email": "barniakova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41302,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30464",
+        "firstName": "Lukáš",
+        "surname": "Belko",
+        "email": "belko1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41303,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30465",
+        "firstName": "Pavlína",
+        "surname": "Beňková",
+        "email": "benkova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41304,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30466",
+        "firstName": "Nina",
+        "surname": "Blažková",
+        "email": "blazkova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41305,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30467",
+        "firstName": "Krištof",
+        "surname": "Buchbauer",
+        "email": "buchbauer2@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41306,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30468",
+        "firstName": "Benjamín",
+        "surname": "Ďureček",
+        "email": "durecek1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41307,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30469",
+        "firstName": "Karin Francesca",
+        "surname": "Hakalová",
+        "email": "hakalova2@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41308,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30470",
+        "firstName": "Viktória",
+        "surname": "Hrušecká",
+        "email": "hrusecka1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41309,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30471",
+        "firstName": "Matej",
+        "surname": "Hyc",
+        "email": "hyc1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41310,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30472",
+        "firstName": "Tomáš",
+        "surname": "Chrenko",
+        "email": "chrenko1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41311,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30473",
+        "firstName": "Filip",
+        "surname": "Jileček",
+        "email": "jilecek1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41314,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30476",
+        "firstName": "Kristína",
+        "surname": "Kovárová",
+        "email": "kovarova4@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41315,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30477",
+        "firstName": "Alexander",
+        "surname": "Lackovič",
+        "email": "lackovic1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41316,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30478",
+        "firstName": "Matúš",
+        "surname": "Lechan",
+        "email": "lechan1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41317,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30479",
+        "firstName": "Matej",
+        "surname": "Leskovský",
+        "email": "leskovsky1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41318,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30480",
+        "firstName": "Natália",
+        "surname": "Malá",
+        "email": "mala1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41319,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30481",
+        "firstName": "Diana",
+        "surname": "Mesárošová",
+        "email": "mesarosova2@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41320,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30482",
+        "firstName": "Eliška",
+        "surname": "Mikulová",
+        "email": "mikulova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41321,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30483",
+        "firstName": "Nella",
+        "surname": "Nováková",
+        "email": "novakova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41322,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30484",
+        "firstName": "Karolína",
+        "surname": "Pancáková",
+        "email": "pancakova2@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41323,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30485",
+        "firstName": "Nikolaj",
+        "surname": "Pavlíček",
+        "email": "pavlicek2@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41324,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30486",
+        "firstName": "Adam",
+        "surname": "Longauer",
+        "email": "longauer1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41325,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30487",
+        "firstName": "Lívia",
+        "surname": "Petrová",
+        "email": "petrova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41326,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30488",
+        "firstName": "Tamara",
+        "surname": "Rakovská",
+        "email": "rakovska1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41327,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30489",
+        "firstName": "Martin",
+        "surname": "Regina",
+        "email": "regina1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41328,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30490",
+        "firstName": "Lucia",
+        "surname": "Remišová",
+        "email": "remisova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41329,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30491",
+        "firstName": "Alex",
+        "surname": "Rodek",
+        "email": "rodek1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41330,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30492",
+        "firstName": "Stela",
+        "surname": "Šeboková",
+        "email": "sebokova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41331,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30493",
+        "firstName": "Lucia",
+        "surname": "Štajerová",
+        "email": "stajerova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41332,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30494",
+        "firstName": "Viliam",
+        "surname": "Štrba",
+        "email": "strba1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41333,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30495",
+        "firstName": "Denis",
+        "surname": "Štupák",
+        "email": "stupak1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41334,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30496",
+        "firstName": "Jonáš",
+        "surname": "Tomeček",
+        "email": "tomecek1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41335,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30497",
+        "firstName": "Adela",
+        "surname": "Včelková",
+        "email": "vcelkova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41336,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30498",
+        "firstName": "Ema",
+        "surname": "Zajacová",
+        "email": "zajacova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41337,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30499",
+        "firstName": "Martina",
+        "surname": "Žilavá",
+        "email": "zilava1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41338,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30500",
+        "firstName": "Šimon",
+        "surname": "Žiška",
+        "email": "ziska1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Junior Group Afternoon 15-hour",
+          "category": "Group classes",
+          "from": "2025-09-15",
+          "until": "2025-09-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Junior - Active Package Extras",
+          "amount": 222,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 222,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Junior Student | Sep - Jun",
+          "amount": 265,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 265,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "General English Junior Student | 1 Week | 15 Hours\r\nper Week",
+          "amount": 200,
+          "discount": 20,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 802,
+        "discount": 135,
+        "commission": 0,
+        "nadc": 667
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41339,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30501",
+        "firstName": "Barbora",
+        "surname": "Holešová",
+        "email": "bholesova@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Public transport tickets",
+          "amount": 32,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Single Room | Sep - June",
+          "amount": 80.02,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80.02,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 177.01999999999998,
+        "discount": 65,
+        "commission": 0,
+        "nadc": 112.02
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41340,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30502",
+        "firstName": "Lucia",
+        "surname": "Vojčíková",
+        "email": "vojcikova1@gymal.sk"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Public transport tickets",
+          "amount": 32,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Single Room | Sep - June",
+          "amount": 80.02,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80.02,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 177.01999999999998,
+        "discount": 65,
+        "commission": 0,
+        "nadc": 112.02
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41341,
+      "invoiceNumber": "D2025397",
+      "invoiceDate": "2025-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30503",
+        "firstName": "Ivan",
+        "surname": "Žatkuliak",
+        "email": "ck@gadtours.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Public transport tickets",
+          "amount": 32,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 32,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Booking Fee",
+          "amount": 65,
+          "discount": 65,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        },
+        {
+          "description": "Host Family Homestay | Single Room | Sep - June",
+          "amount": 80.01,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80.01,
+          "serviceFrom": "2025-09-14",
+          "serviceUntil": "2025-09-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 177.01,
+        "discount": 65,
+        "commission": 0,
+        "nadc": 112.01
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41342,
+      "invoiceNumber": "D2025352",
+      "invoiceDate": "2025-07-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30504",
+        "firstName": "Camila Steffany",
+        "surname": "Almeida Dos Santos",
+        "email": "camomila.ahimsa@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-11-03",
+          "until": "2026-04-24",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "16 weeks Academic Year Morning 05/01/2026 - 24/04/2026 Special offer",
+          "amount": 2016,
+          "discount": 201.6,
+          "commission": 0,
+          "nadc": 1814.4,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-04-24",
+          "tax": 0
+        },
+        {
+          "description": "9 weeks Academic Year Morning 20/10/2025 - 19/12/2025 Special offer",
+          "amount": 1134,
+          "discount": 113.4,
+          "commission": 0,
+          "nadc": 1020.6,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 315,
+        "commission": 0,
+        "nadc": 3235
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41344,
+      "invoiceNumber": "D2025354",
+      "invoiceDate": "2025-07-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30506",
+        "firstName": "Blanca",
+        "surname": "Sánchez Pastor",
+        "email": "blancasp2005@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-07-21",
+          "until": "2025-08-01",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-07-19",
+          "serviceUntil": "2025-08-02",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 19/07/2025 - 02/08/2025",
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720,
+          "serviceFrom": "2025-07-19",
+          "serviceUntil": "2025-08-02",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General 21/07/2025 - 01/08/2025",
+          "amount": 300,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 300,
+          "serviceFrom": "2025-07-21",
+          "serviceUntil": "2025-08-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1135,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1135
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41345,
+      "invoiceNumber": "D2025355",
+      "invoiceDate": "2025-07-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30507",
+        "firstName": "Maria",
+        "surname": "Ginard Caldentey",
+        "email": "mariaginard02@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2025-09-15",
+          "until": "2026-01-02",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Sa 13/09/2025)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2025-09-13",
+          "serviceUntil": "2025-09-13",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-09-13",
+          "serviceUntil": "2026-01-17",
+          "tax": 0
+        },
+        {
+          "description": "18 weeks Apartment (APT-STNDRD/Self catering) 13/09/2025 - 17/01/2026",
+          "amount": 5940,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 5940,
+          "serviceFrom": "2025-09-13",
+          "serviceUntil": "2026-01-17",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2026-01-02",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General Plus 05/01/2026 - 16/01/2026",
+          "amount": 290,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 290,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-01-16",
+          "tax": 0
+        },
+        {
+          "description": "14 weeks Afternoon General Plus 15/09/2025 - 19/12/2025",
+          "amount": 2030,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2030,
+          "serviceFrom": "2025-09-15",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 8455,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 8455
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41347,
+      "invoiceNumber": "D2025362",
+      "invoiceDate": "2025-07-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30509",
+        "firstName": "Julian",
+        "surname": "Fernandez Fernandez",
+        "email": "fernandezfernandezjulian@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-09-01",
+          "until": "2025-11-21",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-08-31",
+          "serviceUntil": "2025-11-23",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Apartment (APT-PRM-SNGL/Self catering) 31/08/2025 - 23/11/2025",
+          "amount": 4200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4200,
+          "serviceFrom": "2025-08-31",
+          "serviceUntil": "2025-11-23",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-01",
+          "serviceUntil": "2025-11-21",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Afternoon General 01/09/2025 - 21/11/2025 Special offer",
+          "amount": 1428,
+          "discount": 142.8,
+          "commission": 0,
+          "nadc": 1285.2,
+          "serviceFrom": "2025-09-01",
+          "serviceUntil": "2025-11-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5743,
+        "discount": 142.8,
+        "commission": 0,
+        "nadc": 5600.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41348,
+      "invoiceNumber": "D2025406",
+      "invoiceDate": "2025-08-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30510",
+        "firstName": "NADIA",
+        "surname": "MORALES ESPINEL",
+        "email": "nadiaespinel66@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-29",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 288,
+        "commission": 86.4,
+        "nadc": 395.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41349,
+      "invoiceNumber": "D2025405",
+      "invoiceDate": "2025-08-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30511",
+        "firstName": "ADRIÁN",
+        "surname": "BRITO VIU",
+        "email": "rviu1979@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-29",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 288,
+        "commission": 86.4,
+        "nadc": 395.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41350,
+      "invoiceNumber": "D2025404",
+      "invoiceDate": "2025-08-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30512",
+        "firstName": "NIRA MONEIBA",
+        "surname": "GUTIÉRREZ OLIOSI",
+        "email": "ninifuerte09@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-29",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning General 04/08/2025 - 29/08/2025",
+          "amount": 720,
+          "discount": 288,
+          "commission": 86.4,
+          "nadc": 345.6,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 770,
+        "discount": 288,
+        "commission": 86.4,
+        "nadc": 395.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41354,
+      "invoiceNumber": "D2025370",
+      "invoiceDate": "2025-07-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "28946",
+        "firstName": "Pablo Anibal",
+        "surname": "Quiroz Alaniz",
+        "email": "pabloanibaalq@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-08-18",
+          "until": "2025-12-12",
+          "weeks": 17,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-02-27",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Academic Year Renewal Afternoon 05/01/2026 - 06/02/2026",
+          "amount": 290,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 290,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-02-06",
+          "tax": 0
+        },
+        {
+          "description": "20 weeks Academic Year Renewal Afternoon 05/08/2025 - 19/12/2025",
+          "amount": 1160,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1160,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1800,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1800
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41355,
+      "invoiceNumber": "D2025487",
+      "invoiceDate": "2025-10-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30516",
+        "firstName": "Patricia",
+        "surname": "Saraiva De Souza",
+        "email": "wps.0010@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-20",
+          "until": "2025-12-19",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-24",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 20/10/2025 - 10/04/2026",
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 573.3,
+          "nadc": 1474.2,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3450,
+        "discount": 1102.5,
+        "commission": 573.3,
+        "nadc": 1774.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41356,
+      "invoiceNumber": "D2025364",
+      "invoiceDate": "2025-07-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30517",
+        "firstName": "Anna",
+        "surname": "Payen-merle",
+        "email": "annapayenmerle@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-09-08",
+          "until": "2025-10-31",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-09-06",
+          "serviceUntil": "2025-11-01",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Apartment (APT-SUPR-SNGL/Self catering) 06/09/2025 - 01/11/2025",
+          "amount": 2720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2720,
+          "serviceFrom": "2025-09-06",
+          "serviceUntil": "2025-11-01",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-10-31",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Afternoon General 08/09/2025 - 31/10/2025",
+          "amount": 984,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 984,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-10-31",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3819,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3819
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41357,
+      "invoiceNumber": "D2025361",
+      "invoiceDate": "2025-07-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30518",
+        "firstName": "Jakub",
+        "surname": "Tomek",
+        "email": "jakub.tomek1@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2025-08-04",
+          "until": "2025-08-15",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General 04/08/2025 - 15/08/2025",
+          "amount": 280,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 280,
+          "serviceFrom": "2025-08-04",
+          "serviceUntil": "2025-08-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 330,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 330
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41359,
+      "invoiceNumber": "D2025396",
+      "invoiceDate": "2025-08-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30520",
+        "firstName": "Munkhbold",
+        "surname": "Battogtokh",
+        "email": "munkhboldb99@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-01-05",
+          "until": "2025-06-27",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 25/10/2025 - 01/11/2025",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2025-10-25",
+          "serviceUntil": "2025-11-01",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Afternoon 27/10/2025 - 17/04/2026",
+          "amount": 2400,
+          "discount": 399.6,
+          "commission": 500.1,
+          "nadc": 1500.3,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-10-25",
+          "serviceUntil": "2025-11-01",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3125,
+        "discount": 399.6,
+        "commission": 500.1,
+        "nadc": 2225.3
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41361,
+      "invoiceNumber": "D2025365",
+      "invoiceDate": "2025-07-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30522",
+        "firstName": "Fangjia",
+        "surname": "Liang",
+        "email": "fangjia.liang16@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-06-26",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "13 weeks Academic Year Renewal Morning 05/01/2026 - 03/04/2026",
+          "amount": 1014,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1014,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Academic Year Renewal Morning 29/09/2025 - 19/12/2025",
+          "amount": 936,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 936,
+          "serviceFrom": "2025-09-29",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2350,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2350
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41362,
+      "invoiceNumber": "D2025367",
+      "invoiceDate": "2025-07-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30523",
+        "firstName": "Stefani",
+        "surname": "Viereck Aguirre",
+        "email": "stefani.viereck@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-26",
+          "until": "2026-07-17",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee - Happy Plan!",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2026-04-10",
+          "tax": 0
+        },
+        {
+          "description": "16 weeks Academic Year Afternoon 05/01/2026 - 24/04/2026",
+          "amount": 1536,
+          "discount": 153.6,
+          "commission": 0,
+          "nadc": 1382.4,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-04-24",
+          "tax": 0
+        },
+        {
+          "description": "9 weeks Academic Year Afternoon 20/10/2025 - 19/12/2025",
+          "amount": 864,
+          "discount": 86.4,
+          "commission": 0,
+          "nadc": 777.6,
+          "serviceFrom": "2025-10-20",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2800,
+        "discount": 265,
+        "commission": 0,
+        "nadc": 2535
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41364,
+      "invoiceNumber": "D2025384",
+      "invoiceDate": "2025-08-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30525",
+        "firstName": "YU-CHI (Helen)",
+        "surname": "HUANG",
+        "email": "goya8741@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2025-09-01",
+          "until": "2025-09-12",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Apartment (APT-STNDRD/Self catering) 30/08/2025 - 13/09/2025",
+          "amount": 660,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 660,
+          "serviceFrom": "2025-08-30",
+          "serviceUntil": "2025-09-13",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning IELTS 01/09/2025 - 12/09/2025",
+          "amount": 360,
+          "discount": 180,
+          "commission": 39.6,
+          "nadc": 140.4,
+          "serviceFrom": "2025-09-01",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-08-30",
+          "serviceUntil": "2025-09-13",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-01",
+          "serviceUntil": "2025-09-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1135,
+        "discount": 180,
+        "commission": 39.6,
+        "nadc": 915.4
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41368,
+      "invoiceNumber": "D2025437",
+      "invoiceDate": "2025-09-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30528",
+        "firstName": "Kayque Tauann",
+        "surname": "Lopes Coelho",
+        "email": "kayque_tauann@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-20",
+          "until": "2025-12-19",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-24",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 460.57,
+          "nadc": 1586.93,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3570,
+        "discount": 1102.5,
+        "commission": 460.57,
+        "nadc": 2006.93
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41369,
+      "invoiceNumber": "D2025438",
+      "invoiceDate": "2025-09-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30529",
+        "firstName": "Sophia Emilly",
+        "surname": "Gallo Borim",
+        "email": "sophiaborimm@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-10-20",
+          "until": "2025-12-19",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-04-24",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 13/10/2025 - 03/04/2026",
+          "amount": 3150,
+          "discount": 1102.5,
+          "commission": 460.57,
+          "nadc": 1586.93,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-13",
+          "serviceUntil": "2026-04-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3570,
+        "discount": 1102.5,
+        "commission": 460.57,
+        "nadc": 2006.93
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41370,
+      "invoiceNumber": "D2025372",
+      "invoiceDate": "2025-07-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30530",
+        "firstName": "Bartolome",
+        "surname": "Tortella Barceló",
+        "email": "ttib@telefonica.net"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2025-09-08",
+          "until": "2025-09-19",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-09-06",
+          "serviceUntil": "2025-09-20",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 06/09/2025 - 20/09/2025",
+          "amount": 700,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 700,
+          "serviceFrom": "2025-09-06",
+          "serviceUntil": "2025-09-20",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 08/09/2025 - 19/09/2025",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2025-09-08",
+          "serviceUntil": "2025-09-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1175,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1175
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41371,
+      "invoiceNumber": "D2025376",
+      "invoiceDate": "2025-08-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30531",
+        "firstName": "Chiara",
+        "surname": "Olm",
+        "email": "chiara@olm-online.de"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2025-08-25",
+          "until": "2025-08-29",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee - Happy Plan!",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2025-08-25",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Afternoon General Plus 25/08/2025 - 29/08/2025",
+          "amount": 170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 170,
+          "serviceFrom": "2025-08-25",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 220,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 195
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41372,
+      "invoiceNumber": "D2025387",
+      "invoiceDate": "2025-08-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30532",
+        "firstName": "Dorjpalam",
+        "surname": "Munkhtur",
+        "email": "dorjoomunhuu@yahoo.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2025-12-15",
+          "until": "2025-12-19",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2026-01-05",
+          "until": "2026-06-19",
+          "weeks": 24,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 25/10/2025 - 01/11/2025",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2025-10-25",
+          "serviceUntil": "2025-11-01",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 27/10/2025 - 17/04/2026",
+          "amount": 3150,
+          "discount": 400.05,
+          "commission": 687.49,
+          "nadc": 2062.46,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2025-10-25",
+          "serviceUntil": "2025-11-01",
+          "tax": 0
+        },
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 220,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 220,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-10-27",
+          "serviceUntil": "2026-04-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3875,
+        "discount": 400.05,
+        "commission": 687.49,
+        "nadc": 2787.46
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41374,
+      "invoiceNumber": "D2025375",
+      "invoiceDate": "2025-08-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30534",
+        "firstName": "Lenya",
+        "surname": "Olm",
+        "email": "lenya@olm-online.de"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2025-08-25",
+          "until": "2025-08-29",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee - Happy Plan!",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2025-08-25",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Afternoon General Plus 25/08/2025 - 29/08/2025",
+          "amount": 170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 170,
+          "serviceFrom": "2025-08-25",
+          "serviceUntil": "2025-08-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 220,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 195
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41376,
+      "invoiceNumber": "D2025378",
+      "invoiceDate": "2025-08-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "30536",
+        "firstName": "Adriana",
+        "surname": "Zamora Arceo",
+        "email": "adrianazamorarceo@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-09-22",
+          "until": "2025-12-19",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-03-27",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2026-03-13",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Academic Year Afternoon 05/01/2026 - 27/03/2026",
+          "amount": 1152,
+          "discount": 115.2,
+          "commission": 0,
+          "nadc": 1036.8,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-03-27",
+          "tax": 0
+        },
+        {
+          "description": "13 weeks Academic Year Afternoon 22/09/2025 - 19/12/2025",
+          "amount": 1248,
+          "discount": 124.8,
+          "commission": 0,
+          "nadc": 1123.2,
+          "serviceFrom": "2025-09-22",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2800,
+        "discount": 240,
+        "commission": 0,
+        "nadc": 2560
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 41378,
+      "invoiceNumber": "D2025380",
+      "invoiceDate": "2025-08-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "29164",
+        "firstName": "Aika",
+        "surname": "Narita",
+        "email": "aika.narita.ruby18@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2025-11-03",
+          "until": "2025-12-19",
+          "weeks": 7,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2026-01-05",
+          "until": "2026-05-08",
+          "weeks": 18,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        },
+        {
+          "description": "18 weeks Academic Year Renewal Afternoon 05/01/2026 - 08/05/2026",
+          "amount": 1044,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1044,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-05-08",
+          "tax": 0
+        },
+        {
+          "description": "7 weeks Academic Year Renewal Afternoon 03/11/2025 - 19/12/2025",
+          "amount": 406,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 406,
+          "serviceFrom": "2025-11-03",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1800,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1800
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

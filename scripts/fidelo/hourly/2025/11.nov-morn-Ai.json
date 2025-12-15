@@ -1,0 +1,485 @@
+{
+  "generated": "2025-12-09T22:45:00.000Z",
+  "period": "2025-11",
+  "description": "AI-REVIEWED - Course line items only (manually filtered by Claude)",
+  "aiReview": {
+    "reviewedBy": "Claude Code",
+    "reviewDate": "2025-12-09",
+    "criteria": "Kept only Morning Class course line items. Removed: Health/PEL Insurance, External Exam fees, Registration fees, Accommodation, Placement fees, Airport transfers",
+    "originalLineItems": 59,
+    "removedLineItems": 38,
+    "keptLineItems": 21
+  },
+  "summary": {
+    "totalBookings": 15,
+    "totalCourseLineItems": 21,
+    "totalCourseNADC": 19858.05
+  },
+  "results": [
+    {
+      "bookingId": 41617,
+      "studentId": "30746",
+      "studentName": "Pablo González Clavain",
+      "studentEmail": "pgonzalezclavin@hotmail.com",
+      "courseName": "Morning General",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-12-01 to 2025-12-05",
+      "courseWeeks": 1,
+      "invoice": "D2025546",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-17",
+      "courseLineItems": [
+        {
+          "description": "1 Week Morning General 01/12/2025 - 05/12/2025",
+          "amount": 180,
+          "discount": 0,
+          "commission": 58.5,
+          "nadc": 121.5,
+          "serviceFrom": "2025-12-01",
+          "serviceUntil": "2025-12-05",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 121.5
+    },
+    {
+      "bookingId": 41619,
+      "studentId": "30645",
+      "studentName": "Yagmur Sirkecioğlu Şenol",
+      "studentEmail": "yagmursirkeciogluu@gmail.com",
+      "courseName": "Morning General",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-11-10 to 2025-12-19",
+      "courseWeeks": 6,
+      "invoice": "D2025525",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-07",
+      "courseLineItems": [
+        {
+          "description": "6 weeks Morning General 10/11/2025 - 19/12/2025 Special offer",
+          "amount": 918,
+          "discount": 91.8,
+          "commission": 0,
+          "nadc": 826.2,
+          "serviceFrom": "2025-11-10",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 826.2
+    },
+    {
+      "bookingId": 41648,
+      "studentId": "29150",
+      "studentName": "Badamkhand Otgonbayar",
+      "studentEmail": "badambadam039@gmail.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "courseWeeks": 3,
+      "invoice": "D2025543",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-20",
+      "courseLineItems": [
+        {
+          "description": "22 weeks Academic Year Renewal Morning 05/01/2026 - 05/06/2026 Black Friday Promotion",
+          "amount": 1149.28,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1149.28,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-06-05",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Academic Year Renewal Morning 01/12/2025 - 19/12/2025 \tBlack Friday Promotion",
+          "amount": 156.72,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 156.72,
+          "serviceFrom": "2025-12-01",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 2,
+      "courseTotalNADC": 1306
+    },
+    {
+      "bookingId": 41649,
+      "studentId": "29283",
+      "studentName": "Sodnom Bat-Erdene",
+      "studentEmail": "b.sodnom96@yahoo.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-11-24 to 2025-12-19",
+      "courseWeeks": 4,
+      "invoice": "D2025537",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-13",
+      "courseLineItems": [
+        {
+          "description": "21 weeks Academic Year Renewal Morning 05/01/2026 - 29/05/2026 Black Friday Promotion",
+          "amount": 1097.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1097.04,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-05-29",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Academic Year Renewal Morning 24/11/2025 - 19/12/2025 Black Friday Promotion",
+          "amount": 208.96,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 208.96,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 2,
+      "courseTotalNADC": 1306
+    },
+    {
+      "bookingId": 41651,
+      "studentId": "29058",
+      "studentName": "Tsengelbayar Mendsaikhan",
+      "studentEmail": "tsengell73@gmail.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "courseWeeks": 3,
+      "invoice": "D2025538",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-17",
+      "courseLineItems": [
+        {
+          "description": "22 weeks Academic Year Renewal Morning 05/01/2026 - 05/06/2026 Black Friday Promotion",
+          "amount": 1149.28,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1149.28,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-06-05",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Academic Year Renewal Morning 01/12/2025 - 19/12/2025 Black Friday Promotion",
+          "amount": 156.72,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 156.72,
+          "serviceFrom": "2025-12-01",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 2,
+      "courseTotalNADC": 1306
+    },
+    {
+      "bookingId": 41653,
+      "studentId": "30752",
+      "studentName": "Wei Zhang",
+      "studentEmail": "awei68404@gmail.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-11-24 to 2025-12-19",
+      "courseWeeks": 4,
+      "invoice": "D2025541",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-19",
+      "courseLineItems": [
+        {
+          "description": "21 weeks Academic Year Renewal Morning 05/01/2026 - 29/05/2026 Black Friday Promotion",
+          "amount": 1097.04,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1097.04,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-05-29",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Academic Year Renewal Morning 24/11/2025 - 19/12/2025 Black Friday Promotion",
+          "amount": 208.96,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 208.96,
+          "serviceFrom": "2025-11-24",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 2,
+      "courseTotalNADC": 1306
+    },
+    {
+      "bookingId": 41654,
+      "studentId": "30753",
+      "studentName": "Raquel Álvarez Fernández",
+      "studentEmail": "raquel260786@hotmail.es",
+      "courseName": "Academic Year Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2026-01-12 to 2026-07-03",
+      "courseWeeks": 25,
+      "invoice": "D2025535",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-12",
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 12/01/2026 - 03/07/2026 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2026-01-12",
+          "serviceUntil": "2026-07-03",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 1890
+    },
+    {
+      "bookingId": 41657,
+      "studentId": "29297",
+      "studentName": "Undralbat Ganbaatar",
+      "studentEmail": "polopris.rabe@gmail.com",
+      "courseName": "Academic Year Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-12-15 to 2026-06-05",
+      "courseWeeks": 25,
+      "invoice": "D2025545",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-17",
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 15/12/2025 - 05/06/2026",
+          "amount": 2000,
+          "discount": 694,
+          "commission": 130.6,
+          "nadc": 1175.4,
+          "serviceFrom": "2025-12-15",
+          "serviceUntil": "2026-06-05",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 1175.4
+    },
+    {
+      "bookingId": 41661,
+      "studentId": "30757",
+      "studentName": "Kseniia Avramchenko",
+      "studentEmail": "avramchenok@gmail.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2026-03-16 to 2026-09-04",
+      "courseWeeks": 25,
+      "invoice": "D2025542",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-19",
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 16/03/2026 - 04/09/2026 Black Friday Promotion",
+          "amount": 1772,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1772,
+          "serviceFrom": "2026-03-16",
+          "serviceUntil": "2026-09-04",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 1772
+    },
+    {
+      "bookingId": 41664,
+      "studentId": "30760",
+      "studentName": "Jiaojiao Yu",
+      "studentEmail": "Y15927400782@outlook.com",
+      "courseName": "Academic Year Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2026-01-05 to 2026-06-26",
+      "courseWeeks": 25,
+      "invoice": "D2025550",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-24",
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026 Black Friday Promotion",
+          "amount": 2199,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2199,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-06-26",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 2199
+    },
+    {
+      "bookingId": 41668,
+      "studentId": "30764",
+      "studentName": "Javkhlan Gantsooj",
+      "studentEmail": "gjavkhaa0677@gmail.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-12-08 to 2026-05-29",
+      "courseWeeks": 25,
+      "invoice": "D2025549",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-24",
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 08/12/2025 - 29/05/2026",
+          "amount": 1950,
+          "discount": 643.5,
+          "commission": 130.65,
+          "nadc": 1175.85,
+          "serviceFrom": "2025-12-08",
+          "serviceUntil": "2026-05-29",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 1175.85
+    },
+    {
+      "bookingId": 41670,
+      "studentId": "30228",
+      "studentName": "Undram Otgonbayar",
+      "studentEmail": "undram.dream0227@gmail.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2026-01-05 to 2026-06-26",
+      "courseWeeks": 25,
+      "invoice": "P20251058",
+      "invoiceType": "Proforma",
+      "invoiceDate": "2025-12-09",
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 05/01/2026 - 26/06/2026",
+          "amount": 1950,
+          "discount": 643.5,
+          "commission": 130,
+          "nadc": 1176.5,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-06-26",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 1176.5
+    },
+    {
+      "bookingId": 41678,
+      "studentId": "30771",
+      "studentName": "Luca Feola",
+      "studentEmail": "lucafeola00@gmail.com",
+      "courseName": "Morning General",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-12-01 to 2025-12-19",
+      "courseWeeks": 3,
+      "invoice": "D2025555",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-26",
+      "courseLineItems": [
+        {
+          "description": "9 weeks Morning General 05/01/2026 - 06/03/2026 Black Friday Promotion",
+          "amount": 1377,
+          "discount": 550.8,
+          "commission": 0,
+          "nadc": 826.2,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-03-06",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning General 01/12/2025 - 19/12/2025 Black Friday Promotion",
+          "amount": 459,
+          "discount": 183.6,
+          "commission": 0,
+          "nadc": 275.4,
+          "serviceFrom": "2025-12-01",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 2,
+      "courseTotalNADC": 1101.6
+    },
+    {
+      "bookingId": 41679,
+      "studentId": "30196",
+      "studentName": "Julio Cesar Chavez Rubio",
+      "studentEmail": "chavezrubiojulio1@gmail.com",
+      "courseName": "Academic Year Renewal Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2025-12-15 to 2025-12-19",
+      "courseWeeks": 1,
+      "invoice": "D2025557",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-28",
+      "courseLineItems": [
+        {
+          "description": "24 weeks Academic Year Renewal Morning 05/01/2026 - 19/06/2026 Black Friday Promotion",
+          "amount": 1253.76,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1253.76,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-06-19",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Academic Year Renewal Morning 15/12/2025 - 19/12/2025 Black Friday Promotion",
+          "amount": 52.24,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 52.24,
+          "serviceFrom": "2025-12-15",
+          "serviceUntil": "2025-12-19",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 2,
+      "courseTotalNADC": 1306
+    },
+    {
+      "bookingId": 41680,
+      "studentId": "30772",
+      "studentName": "Ignacio Giovanelli Barrio",
+      "studentEmail": "ignaciogiovanelli3@gmail.com",
+      "courseName": "Academic Year Morning",
+      "courseCategory": "Morning Classes",
+      "coursePeriod": "2026-01-05 to 2026-06-26",
+      "courseWeeks": 25,
+      "invoice": "D2025556",
+      "invoiceType": "Invoice",
+      "invoiceDate": "2025-11-26",
+      "courseLineItems": [
+        {
+          "description": "25 weeks Academic Year Morning 05/01/2026 - 26/06/2026 Black Friday Promotion",
+          "amount": 3150,
+          "discount": 1260,
+          "commission": 0,
+          "nadc": 1890,
+          "serviceFrom": "2026-01-05",
+          "serviceUntil": "2026-06-26",
+          "tax": 0
+        }
+      ],
+      "totalCourseLineItems": 1,
+      "courseTotalNADC": 1890
+    }
+  ]
+}

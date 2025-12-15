@@ -1,0 +1,3055 @@
+{
+  "generated": "2025-12-15T14:44:52.303Z",
+  "period": "2023-11-01 to 2023-11-30",
+  "description": "Master data: All D-invoices (with payments) for 2023 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 51,
+    "totalRevenue": 46295.46000000006,
+    "totalDiscounts": 3345.7,
+    "totalCommissions": 1546.2400000000002,
+    "agentStudents": 5,
+    "directStudents": 46
+  },
+  "invoices": [
+    {
+      "bookingId": 37975,
+      "invoiceNumber": "D2024195",
+      "invoiceDate": "2024-04-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27363",
+        "firstName": "Dolores Meng",
+        "surname": "Cui",
+        "email": "cuimeng1027@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-02-26",
+          "until": "2024-04-26",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-04-29",
+          "until": "2024-08-16",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "16 weeks Academic Year Morning 29/04/2024 - 16/08/2024",
+          "amount": 480,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 480,
+          "serviceFrom": "2024-04-29",
+          "serviceUntil": "2024-08-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 480,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 480
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37976,
+      "invoiceNumber": "D2023608",
+      "invoiceDate": "2023-11-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27364",
+        "firstName": "Hikari",
+        "surname": "Shinya",
+        "email": "snyhkr0717@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-12-11",
+          "until": "2023-12-22",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2024-01-01",
+          "until": "2024-02-23",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Departure: Accommodation - Airport (Sa 24/02/2024)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2024-02-24",
+          "serviceUntil": "2024-02-24",
+          "tax": 0
+        },
+        {
+          "description": "Arrival: Airport (Sa 09/12/2023)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2023-12-09",
+          "serviceUntil": "2023-12-09",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-12-09",
+          "serviceUntil": "2024-02-24",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Apartment (Shared Room/Self catering) 09/12/2023 - 24/02/2024",
+          "amount": 2200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2200,
+          "serviceFrom": "2023-12-09",
+          "serviceUntil": "2024-02-24",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 02/01/2024 - 23/02/2024",
+          "amount": 1264,
+          "discount": 0,
+          "commission": 316,
+          "nadc": 948,
+          "serviceFrom": "2024-01-01",
+          "serviceUntil": "2024-02-23",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 11/12/2023 - 22/12/2023",
+          "amount": 316,
+          "discount": 0,
+          "commission": 79,
+          "nadc": 237,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4055,
+        "discount": 0,
+        "commission": 395,
+        "nadc": 3660
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37978,
+      "invoiceNumber": "D2023620",
+      "invoiceDate": "2023-11-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27366",
+        "firstName": "Hector Miguel",
+        "surname": "Aranda Escarcega",
+        "email": "heicteoir.dev@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-01-15",
+          "until": "2024-07-05",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-07-05",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-07-05",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Renewal Afternoon 15/01/2024 - 05/07/2024",
+          "amount": 1650,
+          "discount": 0,
+          "commission": 100,
+          "nadc": 1550,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-07-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2050,
+        "discount": 0,
+        "commission": 100,
+        "nadc": 1950
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37980,
+      "invoiceNumber": "D2023589",
+      "invoiceDate": "2023-11-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27368",
+        "firstName": "Pau",
+        "surname": "Suris Marti",
+        "email": "pausurismarti@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-03-04",
+          "until": "2024-05-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Morning General Plus 04/03/2024 - 24/05/2024 Halloween Promotion 20% off",
+          "amount": 2292,
+          "discount": 458.4,
+          "commission": 0,
+          "nadc": 1833.6,
+          "serviceFrom": "2024-03-04",
+          "serviceUntil": "2024-05-24",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-03-04",
+          "serviceUntil": "2024-05-24",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Apartment (APT-SUPR-SNGL/Self catering) 02/03/2024 - 25/05/2024",
+          "amount": 4080,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4080,
+          "serviceFrom": "2024-03-02",
+          "serviceUntil": "2024-05-25",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-03-02",
+          "serviceUntil": "2024-05-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 6487,
+        "discount": 458.4,
+        "commission": 0,
+        "nadc": 6028.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37982,
+      "invoiceNumber": "D2023631",
+      "invoiceDate": "2023-12-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27370",
+        "firstName": "Mario Javier",
+        "surname": "Bibolini",
+        "email": "mbibolini09@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-03-04",
+          "until": "2024-05-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-03-04",
+          "serviceUntil": "2024-05-24",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General Plus 04/03/2024 - 24/05/2024 Finish Strong +7% Extra Promo",
+          "amount": 2292,
+          "discount": 0,
+          "commission": 733.44,
+          "nadc": 1558.56,
+          "serviceFrom": "2024-03-04",
+          "serviceUntil": "2024-05-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2342,
+        "discount": 0,
+        "commission": 733.44,
+        "nadc": 1608.56
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37985,
+      "invoiceNumber": "D2023591",
+      "invoiceDate": "2023-11-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27373",
+        "firstName": "Serena",
+        "surname": "Leo",
+        "email": "sere.leo83@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2023-11-20",
+          "until": "2023-11-24",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-11-20",
+          "serviceUntil": "2023-11-24",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Intensive General 30 20/11/2023 - 24/11/2023 Halloween\r\npromotion 20% off",
+          "amount": 290,
+          "discount": 58,
+          "commission": 0,
+          "nadc": 232,
+          "serviceFrom": "2023-11-20",
+          "serviceUntil": "2023-11-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 340,
+        "discount": 58,
+        "commission": 0,
+        "nadc": 282
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37986,
+      "invoiceNumber": "D2023592",
+      "invoiceDate": "2023-11-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27374",
+        "firstName": "Adriana",
+        "surname": "Alonso Arribas",
+        "email": "adrianaalonsohm@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2024-01-08",
+          "until": "2024-03-01",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-03-01",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 08/01/2024 - 01/03/2024 Halloween Promotion 20% off",
+          "amount": 1264,
+          "discount": 252.8,
+          "commission": 0,
+          "nadc": 1011.2,
+          "serviceFrom": "2024-01-08",
+          "serviceUntil": "2024-03-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1314,
+        "discount": 252.8,
+        "commission": 0,
+        "nadc": 1061.2
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37988,
+      "invoiceNumber": "D2023593",
+      "invoiceDate": "2023-11-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27376",
+        "firstName": "Antonello",
+        "surname": "Rinaldelli",
+        "email": "antorina99@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2023-12-11",
+          "until": "2023-12-22",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2024-01-01",
+          "until": "2024-01-12",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-12-04",
+          "serviceUntil": "2023-12-29",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General Plus 02/01/2024 - 12/01/2024 Halloween Promotion 20% off",
+          "amount": 340,
+          "discount": 68,
+          "commission": 0,
+          "nadc": 272,
+          "serviceFrom": "2024-01-01",
+          "serviceUntil": "2024-01-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General Plus 11/12/2023 - 22/12/2023 Halloween Promotion 20% off",
+          "amount": 340,
+          "discount": 68,
+          "commission": 0,
+          "nadc": 272,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 730,
+        "discount": 136,
+        "commission": 0,
+        "nadc": 594
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38002,
+      "invoiceNumber": "D2023629",
+      "invoiceDate": "2023-12-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27390",
+        "firstName": "Oksana",
+        "surname": "Weingardt",
+        "email": "oksana.weingardt@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-02-12",
+          "until": "2024-02-16",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-02-16",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General Plus 12/02/2024 - 16/02/2024 ULearn Autumn Offer | 25% OFF",
+          "amount": 225,
+          "discount": 56.25,
+          "commission": 0,
+          "nadc": 168.75,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-02-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 275,
+        "discount": 56.25,
+        "commission": 0,
+        "nadc": 218.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38003,
+      "invoiceNumber": "D2023611",
+      "invoiceDate": "2023-11-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27391",
+        "firstName": "Mirela",
+        "surname": "Petrova",
+        "email": "petrova75@web.de"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-02-12",
+          "until": "2024-02-16",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-02-16",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General Plus 12/02/2024 - 16/02/2024 ULearn Autumn Offer | 25% OFF",
+          "amount": 225,
+          "discount": 56.25,
+          "commission": 0,
+          "nadc": 168.75,
+          "serviceFrom": "2024-02-12",
+          "serviceUntil": "2024-02-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 275,
+        "discount": 56.25,
+        "commission": 0,
+        "nadc": 218.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38004,
+      "invoiceNumber": "D2024218",
+      "invoiceDate": "2024-05-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27392",
+        "firstName": "Ciao-Yan",
+        "surname": "Chen",
+        "email": "alicechen0899@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2023-12-04",
+          "until": "2023-12-22",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-01-01",
+          "until": "2024-02-16",
+          "weeks": 7,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-02-26",
+          "until": "2024-04-26",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-05-06",
+          "until": "2024-05-31",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-06-03",
+          "until": "2024-06-14",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Academic Year Morning 04/06/2024 - 14/06/2024 Changing to IELTS AM",
+          "amount": 108,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 108,
+          "serviceFrom": "2024-06-04",
+          "serviceUntil": "2024-06-14",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 108,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 108
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38006,
+      "invoiceNumber": "D2023619",
+      "invoiceDate": "2023-11-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27394",
+        "firstName": "Andrea",
+        "surname": "Fernández Pascual",
+        "email": "andrea_ferpas@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-01-15",
+          "until": "2024-03-29",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-01-13",
+          "serviceUntil": "2024-03-30",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Apartment (APT-SUPR-SNGL/Self catering) 13/01/2024 - 30/03/2024",
+          "amount": 3740,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3740,
+          "serviceFrom": "2024-01-13",
+          "serviceUntil": "2024-03-30",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-03-29",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Morning General Plus 15/01/2024 - 29/03/2024 ULearn Autumn Offer | 25% OFF",
+          "amount": 2167,
+          "discount": 541.75,
+          "commission": 0,
+          "nadc": 1625.25,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-03-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 6022,
+        "discount": 541.75,
+        "commission": 0,
+        "nadc": 5480.25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38010,
+      "invoiceNumber": "D2023612",
+      "invoiceDate": "2023-11-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27398",
+        "firstName": "Eneko",
+        "surname": "Arquero",
+        "email": "enecaye@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-11-20",
+          "until": "2023-11-24",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-11-20",
+          "serviceUntil": "2023-11-24",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Afternoon General 20/11/2023 - 24/11/2023 ULearn Autumn Offer | 25% OFF",
+          "amount": 140,
+          "discount": 35,
+          "commission": 0,
+          "nadc": 105,
+          "serviceFrom": "2023-11-20",
+          "serviceUntil": "2023-11-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 190,
+        "discount": 35,
+        "commission": 0,
+        "nadc": 155
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38014,
+      "invoiceNumber": "D2023618",
+      "invoiceDate": "2023-11-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27402",
+        "firstName": "Teresa",
+        "surname": "Pérez Carrasco",
+        "email": "teresapc-90@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2024-01-15",
+          "until": "2024-03-29",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-01-13",
+          "serviceUntil": "2024-03-30",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Apartment (APT-SUPR-SNGL/Self catering) 13/01/2024 - 30/03/2024",
+          "amount": 3740,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3740,
+          "serviceFrom": "2024-01-13",
+          "serviceUntil": "2024-03-30",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-03-29",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Morning General Plus 15/01/2024 - 29/03/2024 ULearn Autumn Offer | 25% OFF",
+          "amount": 2167,
+          "discount": 541.75,
+          "commission": 0,
+          "nadc": 1625.25,
+          "serviceFrom": "2024-01-15",
+          "serviceUntil": "2024-03-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 6022,
+        "discount": 541.75,
+        "commission": 0,
+        "nadc": 5480.25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38016,
+      "invoiceNumber": "D2023621",
+      "invoiceDate": "2023-11-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26979",
+        "firstName": "Matthieu",
+        "surname": "Segretin",
+        "email": "segretinmatthieu@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2024-01-22",
+          "until": "2024-05-24",
+          "weeks": 18,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "18 weeks Afternoon General 22/01/2024 - 24/05/2024 ULearn Autumn Offer | 25% OFF",
+          "amount": 2142,
+          "discount": 535.5,
+          "commission": 0,
+          "nadc": 1606.5,
+          "serviceFrom": "2024-01-22",
+          "serviceUntil": "2024-05-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2142,
+        "discount": 535.5,
+        "commission": 0,
+        "nadc": 1606.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38019,
+      "invoiceNumber": "D2023626",
+      "invoiceDate": "2023-12-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27404",
+        "firstName": "Yuiko",
+        "surname": "Inoue",
+        "email": "bruit.lee@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2024-03-25",
+          "until": "2024-04-19",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-03-23",
+          "serviceUntil": "2024-04-20",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (Shared Room/Self catering) 23/03/2024 - 20/04/2024",
+          "amount": 800,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 800,
+          "serviceFrom": "2024-03-23",
+          "serviceUntil": "2024-04-20",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-03-25",
+          "serviceUntil": "2024-04-19",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Afternoon General 25/03/2024 - 19/04/2024 Finish Strong +7% Extra Commission Promo",
+          "amount": 560,
+          "discount": 0,
+          "commission": 162.4,
+          "nadc": 397.6,
+          "serviceFrom": "2024-03-25",
+          "serviceUntil": "2024-04-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1475,
+        "discount": 0,
+        "commission": 162.4,
+        "nadc": 1312.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38020,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27405",
+        "firstName": "Maria Elena",
+        "surname": "Esteban",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 240,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 240
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38021,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27406",
+        "firstName": "Jose Andrés",
+        "surname": "Morales Casado",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "1 Week Host Family (Individual room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 240,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 240
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38022,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27407",
+        "firstName": "Hernandez Alves",
+        "surname": "Maydana",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38023,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27408",
+        "firstName": "Bayon Garcia",
+        "surname": "Rodrigo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38024,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27409",
+        "firstName": "Campos Rodriguez",
+        "surname": "Irene",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38025,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27410",
+        "firstName": "Izquierdo Malaga",
+        "surname": "Eduardo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38026,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27411",
+        "firstName": "Lleras Sevilla",
+        "surname": "Leire",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38027,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27412",
+        "firstName": "Sanz Escribano",
+        "surname": "Jesus",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38028,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27413",
+        "firstName": "Perez Rodriguez",
+        "surname": "Lucia",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38029,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27414",
+        "firstName": "Marco Sanchez",
+        "surname": "Javier",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38030,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27415",
+        "firstName": "Tola Perez",
+        "surname": "Rodrigo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38031,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27416",
+        "firstName": "Bardal Garcia",
+        "surname": "Alicia",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38032,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27417",
+        "firstName": "Silva Sanchez",
+        "surname": "Lucia",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38033,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27418",
+        "firstName": "Tomás Sanchez",
+        "surname": "Vega",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38034,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27419",
+        "firstName": "Garcia Ayala",
+        "surname": "Isabel",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38035,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27420",
+        "firstName": "Pascual Hernandez",
+        "surname": "Marina",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38036,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27421",
+        "firstName": "Llorens Garcia",
+        "surname": "Marta Sonia",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38037,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27422",
+        "firstName": "Real Alonso",
+        "surname": "Hugo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38038,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27423",
+        "firstName": "Garcia Garcia",
+        "surname": "Pablo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38039,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27424",
+        "firstName": "Martin Diego",
+        "surname": "Claudia",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38040,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27425",
+        "firstName": "Santos Sanchez",
+        "surname": "Daniel",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38041,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27426",
+        "firstName": "Martin Camarero",
+        "surname": "Nicolas",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38042,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27427",
+        "firstName": "Liepina Mediavilla",
+        "surname": "Paula",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38043,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27428",
+        "firstName": "Hernadez Muñoz",
+        "surname": "Victor",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38044,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27429",
+        "firstName": "Sanchez Valle",
+        "surname": "Marina",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38045,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27430",
+        "firstName": "Cuesta Ramirez",
+        "surname": "Hector",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38046,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27431",
+        "firstName": "Gil Blanco",
+        "surname": "Pablo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38047,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27432",
+        "firstName": "Alonso Hernandez",
+        "surname": "Alba",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38048,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27433",
+        "firstName": "Marcos Castilla",
+        "surname": "Alejandro",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38049,
+      "invoiceNumber": "D2023624",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27434",
+        "firstName": "Vega de la Puente",
+        "surname": "Carolina",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLOSED GROUP JUNIOR",
+          "category": "Group classes",
+          "from": "2023-12-11",
+          "until": "2023-12-13",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week CLOSED GROUP JUNIOR 11/12/2023 - 13/12/2023",
+          "amount": 96.3,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 96.3,
+          "serviceFrom": "2023-12-11",
+          "serviceUntil": "2023-12-13",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Shared Room/Full-board) 07/12/2023 - 12/12/2023",
+          "amount": 212.25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 212.25,
+          "serviceFrom": "2023-12-07",
+          "serviceUntil": "2023-12-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 308.55,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 308.55
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38056,
+      "invoiceNumber": "D2024007",
+      "invoiceDate": "2024-01-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27440",
+        "firstName": "Kikumi",
+        "surname": "Inoue",
+        "email": "jingshangxijiuhai@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2024-02-19",
+          "until": "2024-03-08",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-02-19",
+          "serviceUntil": "2024-03-08",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Afternoon General 19/02/2024 - 08/03/2024 Finish Strong +7% Extra Promo",
+          "amount": 420,
+          "discount": 0,
+          "commission": 155.4,
+          "nadc": 264.6,
+          "serviceFrom": "2024-02-19",
+          "serviceUntil": "2024-03-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 470,
+        "discount": 0,
+        "commission": 155.4,
+        "nadc": 314.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38062,
+      "invoiceNumber": "D2023623",
+      "invoiceDate": "2023-12-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27446",
+        "firstName": "Qing",
+        "surname": "Zhao",
+        "email": "zhaoqing339@126.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-11-27",
+          "until": "2023-12-01",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-12-04",
+          "until": "2023-12-08",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning IELTS 04/12/2023 - 08/12/2023 ULearn Winter Offer | 25% OFF",
+          "amount": 180,
+          "discount": 45,
+          "commission": 0,
+          "nadc": 135,
+          "serviceFrom": "2023-12-04",
+          "serviceUntil": "2023-12-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 180,
+        "discount": 45,
+        "commission": 0,
+        "nadc": 135
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38065,
+      "invoiceNumber": "D2023643",
+      "invoiceDate": "2023-12-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27449",
+        "firstName": "Alfonso Jose",
+        "surname": "Gonzalez Mena",
+        "email": "alfojgonzalez@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2024-03-18",
+          "until": "2024-06-07",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Sa 16/03/2024)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2024-03-16",
+          "serviceUntil": "2024-03-16",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee (Apartment / APT-PRM-SNGL / Self catering)",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-03-16",
+          "serviceUntil": "2024-05-04",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Apartment (APT-SUPR-SNGL/Self catering) 04/05/2024 - 08/06/2024",
+          "amount": 1700,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1700,
+          "serviceFrom": "2024-05-04",
+          "serviceUntil": "2024-06-08",
+          "tax": 0
+        },
+        {
+          "description": "7 weeks Apartment (APT-PRM-SNGL/Self catering) 16/03/2024 - 04/05/2024",
+          "amount": 2450,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2450,
+          "serviceFrom": "2024-03-16",
+          "serviceUntil": "2024-05-04",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-03-18",
+          "serviceUntil": "2024-06-07",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General 18/03/2024 - 07/06/2024 ULearn Winter Offer | 25% OFF",
+          "amount": 1836,
+          "discount": 459,
+          "commission": 0,
+          "nadc": 1377,
+          "serviceFrom": "2024-03-18",
+          "serviceUntil": "2024-06-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 6181,
+        "discount": 459,
+        "commission": 0,
+        "nadc": 5722
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38066,
+      "invoiceNumber": "D2023630",
+      "invoiceDate": "2023-12-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27450",
+        "firstName": "Heitor",
+        "surname": "Guerra Proveti",
+        "email": "hgproveti@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2024-01-22",
+          "until": "2024-02-16",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-22",
+          "serviceUntil": "2024-02-16",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Afternoon General Plus 22/01/2024 - 16/02/2024 ULearn Winter Offer - 25% Off",
+          "amount": 680,
+          "discount": 170,
+          "commission": 0,
+          "nadc": 510,
+          "serviceFrom": "2024-01-22",
+          "serviceUntil": "2024-02-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 730,
+        "discount": 170,
+        "commission": 0,
+        "nadc": 560
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 38069,
+      "invoiceNumber": "D2024118",
+      "invoiceDate": "2024-03-19",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27453",
+        "firstName": "Josep",
+        "surname": "Vidal",
+        "email": "josep.vidal.dura@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-12-04",
+          "until": "2023-12-08",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2024-01-08",
+          "until": "2024-03-22",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Cambridge exam fee (B1 - PET)",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2023-12-04",
+          "serviceUntil": "2024-03-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 200,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 200
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

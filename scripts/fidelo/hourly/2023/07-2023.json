@@ -1,0 +1,4809 @@
+{
+  "generated": "2025-12-15T14:41:16.663Z",
+  "period": "2023-07-01 to 2023-07-31",
+  "description": "Master data: All D-invoices (with payments) for 2023 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 66,
+    "totalRevenue": 66600.56,
+    "totalDiscounts": 1509.4,
+    "totalCommissions": 5087.5,
+    "agentStudents": 14,
+    "directStudents": 52
+  },
+  "invoices": [
+    {
+      "bookingId": 37489,
+      "invoiceNumber": "D2023432",
+      "invoiceDate": "2023-07-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26889",
+        "firstName": "Nathalya",
+        "surname": "Sibele Freitas da Silva",
+        "email": "nathalyasibele@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 4,
+          "nadc": 16,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General 10/07/2023 - 21/07/2023",
+          "amount": 280,
+          "discount": 0,
+          "commission": 56,
+          "nadc": 224,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 350,
+        "discount": 0,
+        "commission": 60,
+        "nadc": 290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37491,
+      "invoiceNumber": "D2023433",
+      "invoiceDate": "2023-07-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26890",
+        "firstName": "Geraldo Augusto",
+        "surname": "Santos Leite",
+        "email": "augustosantosleite39@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 4,
+          "nadc": 16,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon General 10/07/2023 - 21/07/2023",
+          "amount": 280,
+          "discount": 0,
+          "commission": 56,
+          "nadc": 224,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 350,
+        "discount": 0,
+        "commission": 60,
+        "nadc": 290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37493,
+      "invoiceNumber": "D2023459",
+      "invoiceDate": "2023-07-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26892",
+        "firstName": "Leysmar Irley",
+        "surname": "Medina Rojas",
+        "email": "leysmarm@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-04-02",
+          "until": "2024-09-20",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2024-04-02",
+          "serviceUntil": "2024-09-20",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2024-04-02",
+          "serviceUntil": "2024-09-20",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-04-02",
+          "serviceUntil": "2024-09-20",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Afternoon 02/04/2024 - 20/09/2024",
+          "amount": 2400,
+          "discount": 0,
+          "commission": 600,
+          "nadc": 1800,
+          "serviceFrom": "2024-04-02",
+          "serviceUntil": "2024-09-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2680,
+        "discount": 0,
+        "commission": 600,
+        "nadc": 2080
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37495,
+      "invoiceNumber": "D2023445",
+      "invoiceDate": "2023-07-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26894",
+        "firstName": "Iveelt-erdene",
+        "surname": "Uuganjoloo",
+        "email": "blessiveelt@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2023-09-25",
+          "until": "2023-12-22",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-01-01",
+          "until": "2024-03-22",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2024-03-08",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2024-03-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2024-03-08",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Academic Year Morning 02/01/2024 - 15/03/2024",
+          "amount": 1386,
+          "discount": 0,
+          "commission": 346.5,
+          "nadc": 1039.5,
+          "serviceFrom": "2024-01-01",
+          "serviceUntil": "2024-03-15",
+          "tax": 0
+        },
+        {
+          "description": "14 weeks Academic Year Morning 18/09/2023 - 22/12/2023",
+          "amount": 1764,
+          "discount": 0,
+          "commission": 441,
+          "nadc": 1323,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 0,
+        "commission": 787.5,
+        "nadc": 2762.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37497,
+      "invoiceNumber": "D2023479",
+      "invoiceDate": "2023-07-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26896",
+        "firstName": "Anna",
+        "surname": "Jannes",
+        "email": "annajannes@aol.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-10",
+          "until": "2023-07-14",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-17",
+          "until": "2023-07-21",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-24",
+          "until": "2023-07-28",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-31",
+          "until": "2023-08-04",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General Plus 31/07/2023 - 04/08/2023",
+          "amount": 225,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 225,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 225,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 225
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37498,
+      "invoiceNumber": "D2023439",
+      "invoiceDate": "2023-07-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26897",
+        "firstName": "Bendeguz",
+        "surname": "Nemeth",
+        "email": "sarolta.kohegyi@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2023-07-24",
+          "until": "2023-07-28",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-24",
+          "serviceUntil": "2023-07-28",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 2.5,
+          "nadc": 7.5,
+          "serviceFrom": "2023-07-24",
+          "serviceUntil": "2023-07-28",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Afternoon General Plus 24/07/2023 - 28/07/2023",
+          "amount": 170,
+          "discount": 0,
+          "commission": 42.5,
+          "nadc": 127.5,
+          "serviceFrom": "2023-07-24",
+          "serviceUntil": "2023-07-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 0,
+        "commission": 45,
+        "nadc": 185
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37499,
+      "invoiceNumber": "D2023436",
+      "invoiceDate": "2023-07-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24800",
+        "firstName": "Armando",
+        "surname": "Belloni",
+        "email": "armando.belloni@alice.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-08-08",
+          "until": "2023-08-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-08-08",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-08",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General Plus 08/08/2023 - 11/08/2023",
+          "amount": 225,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 225,
+          "serviceFrom": "2023-08-08",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 285,
+        "discount": 50,
+        "commission": 0,
+        "nadc": 235
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37500,
+      "invoiceNumber": "D2023467",
+      "invoiceDate": "2023-07-19",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26898",
+        "firstName": "Camille",
+        "surname": "Adans",
+        "email": "camille.adans@student.hepl.be"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-31",
+          "until": "2023-08-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 5,
+          "nadc": 15,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General Plus 31/07/2023 - 11/08/2023",
+          "amount": 450,
+          "discount": 0,
+          "commission": 112.5,
+          "nadc": 337.5,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 520,
+        "discount": 0,
+        "commission": 117.5,
+        "nadc": 402.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37501,
+      "invoiceNumber": "D2023466",
+      "invoiceDate": "2023-07-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26899",
+        "firstName": "Lauren",
+        "surname": "Adans",
+        "email": "lauren.adans@outlook.fr"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-31",
+          "until": "2023-08-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 5,
+          "nadc": 15,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General Plus 31/07/2023 - 11/08/2023",
+          "amount": 450,
+          "discount": 0,
+          "commission": 112.5,
+          "nadc": 337.5,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 520,
+        "discount": 0,
+        "commission": 117.5,
+        "nadc": 402.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37502,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26900",
+        "firstName": "Sofia",
+        "surname": "Livio",
+        "email": "sofialivio.sl@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37503,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26901",
+        "firstName": "Maddalena",
+        "surname": "Rizzi",
+        "email": "maddalena.rizzi2007@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37504,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26902",
+        "firstName": "Silvia",
+        "surname": "Zambelli",
+        "email": "zambellisilvia954@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37505,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26903",
+        "firstName": "Silvia",
+        "surname": "Colombo",
+        "email": "colombosilvia4827@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37506,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26904",
+        "firstName": "Valerio",
+        "surname": "Iannazzo",
+        "email": "valerionnzz2020@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37507,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26905",
+        "firstName": "Giacomo",
+        "surname": "Taborelli",
+        "email": "giacomotaborelli24@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37508,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26906",
+        "firstName": "Lorenzo",
+        "surname": "Taietti",
+        "email": "lorenzo.taietti1912@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37509,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26907",
+        "firstName": "Carlo",
+        "surname": "Tamagn",
+        "email": "carlotam2006@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37510,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26908",
+        "firstName": "Benedetta",
+        "surname": "Cappi",
+        "email": "benedetta.cappi06@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37511,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26909",
+        "firstName": "Aurora",
+        "surname": "Nespoli",
+        "email": "auronespo@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37512,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26910",
+        "firstName": "Silvia",
+        "surname": "Butti",
+        "email": "silviabutti1306@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37513,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26911",
+        "firstName": "Emma",
+        "surname": "Colombo",
+        "email": "emmacolombo006@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37514,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26912",
+        "firstName": "Camilla",
+        "surname": "Giovanetti",
+        "email": "cami07birba@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37515,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26913",
+        "firstName": "Francesca",
+        "surname": "Luraschi",
+        "email": "francilura06@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37516,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26914",
+        "firstName": "Virginia",
+        "surname": "Cariani",
+        "email": "vyrgyvy06@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37517,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26915",
+        "firstName": "Nicole",
+        "surname": "Roda",
+        "email": "nicoleroda03@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37518,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26916",
+        "firstName": "Martina",
+        "surname": "Labanca",
+        "email": "martilab7@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37519,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26917",
+        "firstName": "Federica",
+        "surname": "Sironi",
+        "email": "fede.siro.06@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37520,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26918",
+        "firstName": "Chiara",
+        "surname": "Terzaghi",
+        "email": "chiara.terzaghi5@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37521,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26919",
+        "firstName": "Emma",
+        "surname": "Vanzulli",
+        "email": "emmavanzulli@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37522,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26920",
+        "firstName": "Giulia",
+        "surname": "Albonico",
+        "email": "giulibellula@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.18,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.18,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.51,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.51
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37523,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26921",
+        "firstName": "Alice",
+        "surname": "Orlandelli",
+        "email": "aliceorlandelli2020@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning General 10/07/2023 - 21/07/2023",
+          "amount": 360,
+          "discount": 54,
+          "commission": 0,
+          "nadc": 306,
+          "serviceFrom": "2023-07-10",
+          "serviceUntil": "2023-07-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Shared Room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 518.22,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 518.22,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 911.5500000000001,
+        "discount": 54,
+        "commission": 0,
+        "nadc": 857.5500000000001
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37524,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26922",
+        "firstName": "Maria Rosa",
+        "surname": "Pina",
+        "email": "martina@maxymaviaggi.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Accomm Supplement (2 weeks Host Family / Individual room / Full-board)",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Individual room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.33,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.33,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 53.33,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 53.33
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37525,
+      "invoiceNumber": "D2023437",
+      "invoiceDate": "2023-09-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26923",
+        "firstName": "Martina ",
+        "surname": " Capuano",
+        "email": "martina@maxymaviaggi.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-10",
+          "until": "2023-07-21",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Accomm Supplement (2 weeks Host Family / Individual room / Full-board)",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Individual room/Full-board) 09/07/2023 - 23/07/2023",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-07-09",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Arrival l& Departure: Accommodation - Airport (Su 23/07/2023 08:00)",
+          "amount": 33.41,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 33.41,
+          "serviceFrom": "2023-07-23",
+          "serviceUntil": "2023-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 53.41,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 53.41
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37526,
+      "invoiceNumber": "D2023441",
+      "invoiceDate": "2023-07-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26924",
+        "firstName": "Gabriel",
+        "surname": "Jordão",
+        "email": "gabrielrjordao@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2024-06-03",
+          "until": "2024-06-28",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-06-03",
+          "serviceUntil": "2024-06-28",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2024-06-01",
+          "serviceUntil": "2024-06-29",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning  Intensive General course 03/06/2024 - 28/06/2024",
+          "amount": 1160,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1160,
+          "serviceFrom": "2024-06-03",
+          "serviceUntil": "2024-06-28",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (APT-PRM-SNGL/Self catering) 01/06/2024 - 29/06/2024",
+          "amount": 1320,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1320,
+          "serviceFrom": "2024-06-01",
+          "serviceUntil": "2024-06-29",
+          "tax": 0
+        },
+        {
+          "description": "Arrival: Airport - Accommodation (Sa 01/06/2024)",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2024-06-01",
+          "serviceUntil": "2024-06-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2665,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2665
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37527,
+      "invoiceNumber": "D2023438",
+      "invoiceDate": "2023-07-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26925",
+        "firstName": "Camila",
+        "surname": "Perez Tellado",
+        "email": "camilap.tellado@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-17",
+          "until": "2023-09-08",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-17",
+          "serviceUntil": "2023-09-08",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2023-07-17",
+          "serviceUntil": "2023-09-08",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 17/07/2023 - 08/09/2023",
+          "amount": 1264,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1264,
+          "serviceFrom": "2023-07-17",
+          "serviceUntil": "2023-09-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1384,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1384
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37535,
+      "invoiceNumber": "D2023470",
+      "invoiceDate": "2023-07-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26933",
+        "firstName": "Matthias",
+        "surname": "Jansa",
+        "email": "jansa.m@outlook.de"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-08-08",
+          "until": "2023-08-18",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Su 06/08/2023)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2023-08-06",
+          "serviceUntil": "2023-08-06",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-08-06",
+          "serviceUntil": "2023-08-20",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-08-06",
+          "serviceUntil": "2023-08-20",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-SUPR-SNGL/Self catering) 06/08/2023 - 20/08/2023",
+          "amount": 680,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 680,
+          "serviceFrom": "2023-08-06",
+          "serviceUntil": "2023-08-20",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-08",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 5,
+          "nadc": 15,
+          "serviceFrom": "2023-08-08",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General Plus 08/08/2023 - 18/08/2023",
+          "amount": 450,
+          "discount": 0,
+          "commission": 112.5,
+          "nadc": 337.5,
+          "serviceFrom": "2023-08-08",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1365,
+        "discount": 0,
+        "commission": 117.5,
+        "nadc": 1247.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37537,
+      "invoiceNumber": "D2023446",
+      "invoiceDate": "2023-07-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26935",
+        "firstName": "Katharina",
+        "surname": "Gakstatter",
+        "email": "katharina.gakstatter@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-08-28",
+          "until": "2023-09-15",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-08-26",
+          "serviceUntil": "2023-09-16",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-26",
+          "serviceUntil": "2023-09-16",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (APT-SUPR-SNGL/Self catering) 26/08/2023 - 16/09/2023",
+          "amount": 1020,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1020,
+          "serviceFrom": "2023-08-26",
+          "serviceUntil": "2023-09-16",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-28",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-28",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning General Plus 28/08/2023 - 15/09/2023",
+          "amount": 675,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 675,
+          "serviceFrom": "2023-08-28",
+          "serviceUntil": "2023-09-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1830,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1830
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37539,
+      "invoiceNumber": "D2023527",
+      "invoiceDate": "2023-09-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26937",
+        "firstName": "Dary Valesca",
+        "surname": "Ruiz Mendoza",
+        "email": "darykq08@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-10-23",
+          "until": "2023-12-15",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 23/10/2023 - 15/12/2023",
+          "amount": 1264,
+          "discount": 0,
+          "commission": 316,
+          "nadc": 948,
+          "serviceFrom": "2023-10-23",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1314,
+        "discount": 0,
+        "commission": 316,
+        "nadc": 998
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37540,
+      "invoiceNumber": "D2023463",
+      "invoiceDate": "2023-07-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24769",
+        "firstName": "Gioele",
+        "surname": "Mallamaci",
+        "email": "gioelemallamaci.gm@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-07-17",
+          "until": "2023-09-01",
+          "weeks": 7,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "7 weeks Morning IELTS 17/07/2023 - 01/09/2023",
+          "amount": 1134,
+          "discount": 113.4,
+          "commission": 0,
+          "nadc": 1020.6,
+          "serviceFrom": "2023-07-17",
+          "serviceUntil": "2023-09-01",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2023-07-17",
+          "serviceUntil": "2023-09-01",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2023-07-17",
+          "serviceUntil": "2023-09-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1254,
+        "discount": 163.4,
+        "commission": 0,
+        "nadc": 1090.6
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37542,
+      "invoiceNumber": "D2024178",
+      "invoiceDate": "2024-04-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26939",
+        "firstName": "Ximena del Pilar",
+        "surname": "Colan de la Vega",
+        "email": "ximenacdlv@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-01-29",
+          "until": "2024-04-12",
+          "weeks": 11,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-04-15",
+          "until": "2024-05-10",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-05-20",
+          "until": "2024-06-14",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-07-08",
+          "until": "2024-08-09",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-08-19",
+          "until": "2024-08-23",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "14 weeks Academic Year Morning 15/04/2024 - 19/07/2024",
+          "amount": 420,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 420,
+          "serviceFrom": "2024-04-22",
+          "serviceUntil": "2024-07-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 420,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 420
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37544,
+      "invoiceNumber": "D2023475",
+      "invoiceDate": "2023-07-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26941",
+        "firstName": "Monika",
+        "surname": "Pazourkova",
+        "email": "pazourkovam@lfhk.cuni.cz"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-08-14",
+          "until": "2023-08-18",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General Plus 14/08/2023 - 18/08/2023",
+          "amount": 225,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 225,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 285,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 285
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37546,
+      "invoiceNumber": "D2023504",
+      "invoiceDate": "2023-08-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26943",
+        "firstName": "Ruben",
+        "surname": "Diez Gonzalez",
+        "email": "rub.d.glez@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning FCE",
+          "category": "Morning Classes",
+          "from": "2023-09-04",
+          "until": "2023-09-15",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-08-13",
+          "serviceUntil": "2023-08-27",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-08-13",
+          "serviceUntil": "2023-08-27",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning FCE 04/09/2023 - 15/09/2023",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 03/09/2023 - 17/09/2023",
+          "amount": 700,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 700,
+          "serviceFrom": "2023-08-13",
+          "serviceUntil": "2023-08-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1205,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1205
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37551,
+      "invoiceNumber": "D2023449",
+      "invoiceDate": "2023-07-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26948",
+        "firstName": "Sodbayar",
+        "surname": "Battur",
+        "email": "sodbayarso11@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2023-09-25",
+          "until": "2023-12-22",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-01-01",
+          "until": "2024-03-01",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-04-08",
+          "until": "2024-04-26",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Academic Year Morning 02/01/2024 - 15/03/2024",
+          "amount": 1386,
+          "discount": 0,
+          "commission": 346.5,
+          "nadc": 1039.5,
+          "serviceFrom": "2024-01-01",
+          "serviceUntil": "2024-03-15",
+          "tax": 0
+        },
+        {
+          "description": "14 weeks Academic Year Morning 18/09/2023 - 22/12/2023",
+          "amount": 1764,
+          "discount": 0,
+          "commission": 441,
+          "nadc": 1323,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3550,
+        "discount": 0,
+        "commission": 787.5,
+        "nadc": 2762.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37552,
+      "invoiceNumber": "D2023465",
+      "invoiceDate": "2023-07-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26949",
+        "firstName": "Marta",
+        "surname": "Casana",
+        "email": "martacasana01@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning IELTS",
+          "category": "Morning Classes",
+          "from": "2023-08-21",
+          "until": "2023-09-01",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Individual room/Half-board) 19/08/2023 - 02/09/2023",
+          "amount": 520,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 520,
+          "serviceFrom": "2023-08-19",
+          "serviceUntil": "2023-09-02",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning IELTS 21/08/2023 - 01/09/2023",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2023-08-21",
+          "serviceUntil": "2023-09-01",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-08-19",
+          "serviceUntil": "2023-09-02",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-08-19",
+          "serviceUntil": "2023-09-02",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-08-21",
+          "serviceUntil": "2023-09-01",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-21",
+          "serviceUntil": "2023-09-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1035,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1035
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37556,
+      "invoiceNumber": "D2023456",
+      "invoiceDate": "2023-06-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26953",
+        "firstName": "Adrian",
+        "surname": "Llamas Parejo",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-07-03",
+          "until": "2023-07-05",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General 03/07/2023 - 05/07/2023",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards X 5",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Courier Fee",
+          "amount": 7.37,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 7.37,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Admin Fee",
+          "amount": 12.5,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 12.5,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 199.87,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 199.87
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37557,
+      "invoiceNumber": "D2023456",
+      "invoiceDate": "2023-06-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26954",
+        "firstName": "Alberto",
+        "surname": "Ojeda Rey",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-07-03",
+          "until": "2023-07-05",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General 03/07/2023 - 05/07/2023",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards X 5",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Courier Fee",
+          "amount": 7.37,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 7.37,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Admin Fee",
+          "amount": 12.5,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 12.5,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 199.87,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 199.87
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37558,
+      "invoiceNumber": "D2023456",
+      "invoiceDate": "2023-06-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26955",
+        "firstName": "Fernando",
+        "surname": "Rama Jiménez",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-07-03",
+          "until": "2023-07-05",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General 03/07/2023 - 05/07/2023",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards X 5",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Courier Fee",
+          "amount": 7.37,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 7.37,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Admin Fee",
+          "amount": 12.5,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 12.5,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 199.87,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 199.87
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37559,
+      "invoiceNumber": "D2023456",
+      "invoiceDate": "2023-06-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26956",
+        "firstName": "Ana",
+        "surname": "Moyano Rambla",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2023-07-03",
+          "until": "2023-07-05",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Afternoon General 03/07/2023 - 05/07/2023",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards X 5",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Courier Fee",
+          "amount": 7.35,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 7.35,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Leap Cards Admin Fee",
+          "amount": 12.5,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 12.5,
+          "serviceFrom": "2023-07-03",
+          "serviceUntil": "2023-07-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 199.85,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 199.85
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37560,
+      "invoiceNumber": "D2023494",
+      "invoiceDate": "2023-08-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26957",
+        "firstName": "Aleksandra",
+        "surname": "Bujnowicz",
+        "email": "rsekieta@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-17",
+          "until": "2023-08-11",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-08-14",
+          "until": "2023-08-18",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Morning General 14/08/2023 - 18/08/2023",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer additional",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-07-17",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 190,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 190
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37561,
+      "invoiceNumber": "D2023487",
+      "invoiceDate": "2023-08-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26958",
+        "firstName": "Wanderson",
+        "surname": "Ribeiro Miranda",
+        "email": "wandersonfisico2050@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-01-08",
+          "until": "2024-06-28",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2024-01-02",
+          "serviceUntil": "2024-06-21",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2024-01-02",
+          "serviceUntil": "2024-06-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2024-01-02",
+          "serviceUntil": "2024-06-21",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Morning 02/01/2024 - 21/06/2024",
+          "amount": 3150,
+          "discount": 0,
+          "commission": 787.5,
+          "nadc": 2362.5,
+          "serviceFrom": "2024-01-02",
+          "serviceUntil": "2024-06-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3430,
+        "discount": 0,
+        "commission": 787.5,
+        "nadc": 2642.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37571,
+      "invoiceNumber": "D2023472",
+      "invoiceDate": "2023-07-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26968",
+        "firstName": "Davide",
+        "surname": "Zini",
+        "email": "davidezini2@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-08-21",
+          "until": "2023-08-25",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-08-20",
+          "serviceUntil": "2023-08-27",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-20",
+          "serviceUntil": "2023-08-27",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 20/08/2023 - 27/08/2023",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2023-08-20",
+          "serviceUntil": "2023-08-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-21",
+          "serviceUntil": "2023-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-21",
+          "serviceUntil": "2023-08-25",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 21/08/2023 - 25/08/2023",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2023-08-21",
+          "serviceUntil": "2023-08-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 555,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 555
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37572,
+      "invoiceNumber": "D2023474",
+      "invoiceDate": "2023-07-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26969",
+        "firstName": "Fiammetta",
+        "surname": "Sorrentini",
+        "email": "fiammetta.sorrentini@virgilio.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-24",
+          "until": "2023-07-28",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-24",
+          "serviceUntil": "2023-07-28",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-07-24",
+          "serviceUntil": "2023-07-28",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General Plus 24/07/2023 - 28/07/2023",
+          "amount": 225,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 225,
+          "serviceFrom": "2023-07-24",
+          "serviceUntil": "2023-07-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 285,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 285
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37573,
+      "invoiceNumber": "D2023510",
+      "invoiceDate": "2023-08-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26970",
+        "firstName": "Paula Zhixiu",
+        "surname": "Ramos Parron",
+        "email": "paularamosparron2000@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-09-18",
+          "until": "2023-12-08",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-12-08",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General 18/09/2023 - 08/12/2023",
+          "amount": 1836,
+          "discount": 0,
+          "commission": 459,
+          "nadc": 1377,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-12-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1886,
+        "discount": 0,
+        "commission": 459,
+        "nadc": 1427
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37574,
+      "invoiceNumber": "D2023517",
+      "invoiceDate": "2023-08-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26971",
+        "firstName": "Pedro Damian",
+        "surname": "Tovar Rodriguez",
+        "email": "demijam91@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2023-09-25",
+          "until": "2023-11-10",
+          "weeks": 7,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2023-11-20",
+          "until": "2023-12-22",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-01-01",
+          "until": "2024-01-19",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-01-29",
+          "until": "2024-03-08",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2024-03-18",
+          "until": "2024-04-12",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "PEL Insurance",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Academic Year Morning 02/01/2024 - 22/03/2024",
+          "amount": 1512,
+          "discount": 0,
+          "commission": 378,
+          "nadc": 1134,
+          "serviceFrom": "2024-01-01",
+          "serviceUntil": "2024-03-22",
+          "tax": 0
+        },
+        {
+          "description": "13 weeks Academic Year Morning 25/09/2023 - 22/12/2023",
+          "amount": 1638,
+          "discount": 0,
+          "commission": 409.5,
+          "nadc": 1228.5,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3430,
+        "discount": 0,
+        "commission": 787.5,
+        "nadc": 2642.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37575,
+      "invoiceNumber": "D2023501",
+      "invoiceDate": "2023-08-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26972",
+        "firstName": "Dilber",
+        "surname": "Arslan",
+        "email": "arslan@ash-berlin.eu"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-09-04",
+          "until": "2023-09-08",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-09-03",
+          "serviceUntil": "2023-09-10",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Host Family (Individual room/Half-board) 03/09/2023 - 10/09/2023",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2023-09-03",
+          "serviceUntil": "2023-09-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-04",
+          "serviceUntil": "2023-09-08",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 04/09/2023 - 08/09/2023",
+          "amount": 180,
+          "discount": 0,
+          "commission": 45,
+          "nadc": 135,
+          "serviceFrom": "2023-09-04",
+          "serviceUntil": "2023-09-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 535,
+        "discount": 0,
+        "commission": 45,
+        "nadc": 490
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37576,
+      "invoiceNumber": "D2023471",
+      "invoiceDate": "2023-07-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26973",
+        "firstName": "Irving Mauricio",
+        "surname": "Rosa Escobar",
+        "email": "irvingmaurosa@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2023-07-31",
+          "until": "2023-09-22",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2023-10-02",
+          "until": "2023-12-15",
+          "weeks": 11,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2024-01-15",
+          "until": "2024-02-23",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health & PEL Insurance",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Academic Year Afternoon 02/01/2024 - 26/01/2024",
+          "amount": 384,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 384,
+          "serviceFrom": "2024-01-01",
+          "serviceUntil": "2024-01-26",
+          "tax": 0
+        },
+        {
+          "description": "21 weeks Academic Year Afternoon 31/07/2023 - 22/12/2023",
+          "amount": 2016,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2016,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-12-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2800,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2800
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37582,
+      "invoiceNumber": "D2023484",
+      "invoiceDate": "2023-07-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26979",
+        "firstName": "Matthieu",
+        "surname": "Segretin",
+        "email": "segretinmatthieu@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2023-09-18",
+          "until": "2023-10-27",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2023-11-06",
+          "until": "2023-12-15",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-11-06",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Intensive General 30 06/11/2023 - 15/12/2023",
+          "amount": 1482,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1482,
+          "serviceFrom": "2023-11-06",
+          "serviceUntil": "2023-12-15",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Intensive General 30 18/09/2023 - 27/10/2023",
+          "amount": 1482,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1482,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-10-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3014,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3014
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37584,
+      "invoiceNumber": "D2023549",
+      "invoiceDate": "2023-09-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26981",
+        "firstName": "Enrico",
+        "surname": "Bedogne",
+        "email": "bedogneenrico@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-07-31",
+          "until": "2023-08-25",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-08-28",
+          "until": "2023-09-22",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-09-25",
+          "until": "2023-10-20",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning General 25/09/2023 - 20/10/2023",
+          "amount": 720,
+          "discount": 108,
+          "commission": 0,
+          "nadc": 612,
+          "serviceFrom": "2023-09-25",
+          "serviceUntil": "2023-10-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 720,
+        "discount": 108,
+        "commission": 0,
+        "nadc": 612
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37585,
+      "invoiceNumber": "D2023480",
+      "invoiceDate": "2023-07-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26982",
+        "firstName": "Kevin",
+        "surname": "Le Ronce",
+        "email": "kevinleronce@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-08-08",
+          "until": "2023-08-18",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-08-05",
+          "serviceUntil": "2023-08-19",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-08-05",
+          "serviceUntil": "2023-08-19",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL/Self catering) 05/08/2023 - 19/08/2023",
+          "amount": 700,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 700,
+          "serviceFrom": "2023-08-05",
+          "serviceUntil": "2023-08-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning General 08/08/2023 - 18/08/2023",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2023-08-07",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1215,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1215
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37586,
+      "invoiceNumber": "D2023485",
+      "invoiceDate": "2023-07-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26983",
+        "firstName": "Lucia",
+        "surname": "Lorenzo meyer",
+        "email": "lucialorenzomeyer@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2023-07-31",
+          "until": "2023-08-04",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 Week Intensive General 30 31/07/2023 - 04/08/2023",
+          "amount": 290,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 290,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 350,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 350
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37590,
+      "invoiceNumber": "D2023482",
+      "invoiceDate": "2023-07-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "24680",
+        "firstName": "Ángeles",
+        "surname": "Gómez Quintana",
+        "email": "magq2020@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2023-07-31",
+          "until": "2023-08-04",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Afternoon General Plus 31/07/2023 - 04/08/2023",
+          "amount": 170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 170,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 230
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37591,
+      "invoiceNumber": "D2023481",
+      "invoiceDate": "2023-07-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26270",
+        "firstName": "Malak",
+        "surname": "El Allali",
+        "email": "malakelallali@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2023-07-31",
+          "until": "2023-08-04",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Afternoon General Plus 31/07/2023 - 04/08/2023",
+          "amount": 170,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 170,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-04",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 180,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 180
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37597,
+      "invoiceNumber": "D2023483",
+      "invoiceDate": "2023-07-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26993",
+        "firstName": "Michele",
+        "surname": "Vietri",
+        "email": "Michelevie7@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-07-31",
+          "until": "2023-08-25",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-08-28",
+          "until": "2023-09-22",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-25",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning General 31/07/2023 - 22/09/2023",
+          "amount": 1244,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1244,
+          "serviceFrom": "2023-07-31",
+          "serviceUntil": "2023-08-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1314,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1314
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37599,
+      "invoiceNumber": "D2024109",
+      "invoiceDate": "2024-03-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26995",
+        "firstName": "Filippo",
+        "surname": "Cattilino",
+        "email": "filippo.cattilino@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2023-09-04",
+          "until": "2023-11-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Apartment (APT-PRM-SNGL/Self catering) 02/09/2023 - 25/11/2023",
+          "amount": 4200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 4200,
+          "serviceFrom": "2023-09-02",
+          "serviceUntil": "2023-11-25",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Morning General Plus 04/09/2023 - 24/11/2023",
+          "amount": 2292,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2292,
+          "serviceFrom": "2023-09-04",
+          "serviceUntil": "2023-11-24",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-09-02",
+          "serviceUntil": "2023-11-25",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2023-09-02",
+          "serviceUntil": "2023-11-25",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-04",
+          "serviceUntil": "2023-11-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 6617,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 6617
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37602,
+      "invoiceNumber": "D2023490",
+      "invoiceDate": "2023-08-03",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "26998",
+        "firstName": "Claudia",
+        "surname": "Ramos",
+        "email": "claudiaramosg2005@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-08-14",
+          "until": "2023-08-18",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 14/08/2023 - 18/08/2023",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2023-08-14",
+          "serviceUntil": "2023-08-18",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 240,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 240
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 37604,
+      "invoiceNumber": "D2023488",
+      "invoiceDate": "2023-08-01",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "27000",
+        "firstName": "Elio",
+        "surname": "Osti",
+        "email": "elio.osti@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2023-09-18",
+          "until": "2023-09-22",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-09-22",
+          "tax": 0
+        },
+        {
+          "description": "1 Week Morning General 18/09/2023 - 22/09/2023",
+          "amount": 180,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 180,
+          "serviceFrom": "2023-09-18",
+          "serviceUntil": "2023-09-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 230,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 230
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

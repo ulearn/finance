@@ -1,0 +1,587 @@
+{
+  "generated": "2025-12-15T14:07:24.663Z",
+  "period": "2020-05-01 to 2020-05-31",
+  "description": "Master data: All D-invoices (with payments) for 2020 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 8,
+    "totalRevenue": 5040.48,
+    "totalDiscounts": 0,
+    "totalCommissions": 69.52,
+    "agentStudents": 1,
+    "directStudents": 7
+  },
+  "invoices": [
+    {
+      "bookingId": 33066,
+      "invoiceNumber": "D2020316",
+      "invoiceDate": "2020-05-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23240",
+        "firstName": "Fabio",
+        "surname": "Pires de Camargo",
+        "email": "fabio@camargoquimica.com.br"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-11",
+          "until": "2020-06-05",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Online 15 11/05/2020 - 05/06/2020",
+          "amount": 316,
+          "discount": 0,
+          "commission": 69.52,
+          "nadc": 246.48,
+          "serviceFrom": "2020-05-11",
+          "serviceUntil": "2020-06-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 316,
+        "discount": 0,
+        "commission": 69.52,
+        "nadc": 246.48
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33067,
+      "invoiceNumber": "D2020434",
+      "invoiceDate": "2020-09-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23241",
+        "firstName": "Aleksandra",
+        "surname": "Dudzik",
+        "email": "aleksandra.dudzik09@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-05-25",
+          "until": "2020-05-29",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-06-01",
+          "until": "2020-06-05",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-06-08",
+          "until": "2020-06-12",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-06-15",
+          "until": "2020-06-19",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-06-22",
+          "until": "2020-06-26",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-06-29",
+          "until": "2020-07-03",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-07-06",
+          "until": "2020-07-17",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-07-20",
+          "until": "2020-08-07",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-08-17",
+          "until": "2020-08-21",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-08-24",
+          "until": "2020-08-28",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2020-08-31",
+          "until": "2020-09-11",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Online Afternoon 31/08/2020 - 11/09/2020",
+          "amount": 78,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 78,
+          "serviceFrom": "2020-08-31",
+          "serviceUntil": "2020-09-11",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 78,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 78
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33068,
+      "invoiceNumber": "D2022095",
+      "invoiceDate": "2022-04-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23242",
+        "firstName": "Seonhee",
+        "surname": "Kim",
+        "email": "tgt3@naver.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2022-01-17",
+          "until": "2022-07-08",
+          "weeks": 25,
+          "hours": 0
+        },
+        {
+          "name": "+5 Hours",
+          "category": "Afternoon Classes",
+          "from": "2022-01-31",
+          "until": "2022-03-11",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "+5 Hours",
+          "category": "Afternoon Classes",
+          "from": "2022-04-04",
+          "until": "2022-05-13",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks +5 Hours 04/04/2022 - 13/05/2022",
+          "amount": 186,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 186,
+          "serviceFrom": "2022-04-04",
+          "serviceUntil": "2022-05-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 186,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 186
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33072,
+      "invoiceNumber": "D2020334",
+      "invoiceDate": "2020-06-19",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23244",
+        "firstName": "Nadiia",
+        "surname": "Plaksii",
+        "email": "plaksii.nadiia@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-08",
+          "until": "2020-06-19",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-22",
+          "until": "2020-07-31",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-08-04",
+          "until": "2020-09-28",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "8 weeks Online 15 04/08/2020 - 28/09/2020",
+          "amount": 512,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 512,
+          "serviceFrom": "2020-08-04",
+          "serviceUntil": "2020-09-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 512,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 512
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33073,
+      "invoiceNumber": "D2020325",
+      "invoiceDate": "2020-06-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "22830",
+        "firstName": "Jaime",
+        "surname": "Díaz Puchol",
+        "email": "jd_puchol@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-25",
+          "until": "2020-06-05",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-08",
+          "until": "2020-06-12",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-15",
+          "until": "2020-06-19",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-29",
+          "until": "2020-07-31",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Online 15 15/06/2020 - 19/06/2020",
+          "amount": 79,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 79,
+          "serviceFrom": "2020-06-15",
+          "serviceUntil": "2020-06-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 79,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 79
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33074,
+      "invoiceNumber": "D2020328",
+      "invoiceDate": "2020-06-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23245",
+        "firstName": "Safia",
+        "surname": "ADJIBADE",
+        "email": "safca2111@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-15",
+          "until": "2020-06-19",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "APP Access",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2020-06-08",
+          "serviceUntil": "2020-07-03",
+          "tax": 0
+        },
+        {
+          "description": "1 week Online 15 08/06/2020 - 12/06/2020",
+          "amount": 79,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 79,
+          "serviceFrom": "2020-06-08",
+          "serviceUntil": "2020-06-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 89,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 89
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33075,
+      "invoiceNumber": "D2020322",
+      "invoiceDate": "2020-06-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23246",
+        "firstName": "Munkhtemuulen",
+        "surname": "Gantulga",
+        "email": "skybross_stark@yahoo.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2020-06-08",
+          "until": "2020-11-27",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2020-06-01",
+          "serviceUntil": "2020-11-20",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks ULearn Renewal AFT 01/06/2020 - 20/11/2020",
+          "amount": 1575,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1575,
+          "serviceFrom": "2020-06-01",
+          "serviceUntil": "2020-11-20",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2020-06-01",
+          "serviceUntil": "2020-11-20",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2020-06-01",
+          "serviceUntil": "2020-11-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1950,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1950
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33076,
+      "invoiceNumber": "D2020320",
+      "invoiceDate": "2020-05-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23247",
+        "firstName": "Lessly Stephania",
+        "surname": "Flores Vargas",
+        "email": "lesslyflores.v@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal MORN",
+          "category": "Morning Classes",
+          "from": "2020-06-08",
+          "until": "2020-08-21",
+          "weeks": 11,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal MORN",
+          "category": "Morning Classes",
+          "from": "2020-08-31",
+          "until": "2020-12-04",
+          "weeks": 14,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2020-06-08",
+          "serviceUntil": "2020-11-27",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2020-06-08",
+          "serviceUntil": "2020-11-27",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks ULearn Renewal MORN 08/06/2020 - 27/11/2020",
+          "amount": 1575,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1575,
+          "serviceFrom": "2020-06-08",
+          "serviceUntil": "2020-11-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1900,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1900
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

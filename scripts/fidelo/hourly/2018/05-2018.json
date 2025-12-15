@@ -1,0 +1,7098 @@
+{
+  "generated": "2025-12-15T13:05:36.692Z",
+  "period": "2018-05-01 to 2018-05-31",
+  "description": "Master data: All D-invoices (with payments) for 2018 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 97,
+    "totalRevenue": 127105.28,
+    "totalDiscounts": 670,
+    "totalCommissions": 7888.22,
+    "agentStudents": 31,
+    "directStudents": 66
+  },
+  "invoices": [
+    {
+      "bookingId": 26905,
+      "invoiceNumber": "D2018967",
+      "invoiceDate": "2018-07-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17915",
+        "firstName": "Aurea",
+        "surname": "de Andrade Pinto",
+        "email": "aureaandrade01@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-07-30",
+          "until": "2018-12-21",
+          "weeks": 21,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-02-01",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee (IELTS)",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Non-EU 25-Week Afternoon 15 07/01/2019 - 01/02/2019",
+          "amount": 384,
+          "discount": 0,
+          "commission": 84.48,
+          "nadc": 299.52,
+          "serviceFrom": "2019-01-07",
+          "serviceUntil": "2019-02-01",
+          "tax": 0
+        },
+        {
+          "description": "21 weeks Non-EU 25-Week Afternoon 15 30/07/2018 - 21/12/2018",
+          "amount": 2016,
+          "discount": 0,
+          "commission": 443.52,
+          "nadc": 1572.48,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2650,
+        "discount": 0,
+        "commission": 528,
+        "nadc": 2122
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26907,
+      "invoiceNumber": "D2018738",
+      "invoiceDate": "2018-05-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17917",
+        "firstName": "Evelyn Valeria",
+        "surname": "Barril Rehbein",
+        "email": "evelyn.vbr@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-06-18",
+          "until": "2018-12-07",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-06-30",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee (IELTS)",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-SINGL / Self catering) 16/06/2018 - 30/06/2018",
+          "amount": 420,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 420,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-06-30",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Non-EU 25-Week Afternoon 15 18/06/2018 - 07/12/2018",
+          "amount": 2400,
+          "discount": 240,
+          "commission": 0,
+          "nadc": 2160,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3295,
+        "discount": 290,
+        "commission": 0,
+        "nadc": 3005
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26908,
+      "invoiceNumber": "D2018737",
+      "invoiceDate": "2018-05-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17918",
+        "firstName": "Cristina Elizabeth",
+        "surname": "Barril Rehbein",
+        "email": "crisgirl92@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-06-18",
+          "until": "2018-12-07",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-06-30",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee (IELTS)",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-SINGL / Self catering) 16/06/2018 - 30/06/2018",
+          "amount": 420,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 420,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-06-30",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 50,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Non-EU 25-Week Afternoon 15 18/06/2018 - 07/12/2018",
+          "amount": 2400,
+          "discount": 240,
+          "commission": 0,
+          "nadc": 2160,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3295,
+        "discount": 290,
+        "commission": 0,
+        "nadc": 3005
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26911,
+      "invoiceNumber": "D2018631",
+      "invoiceDate": "2018-05-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17921",
+        "firstName": "Evgenia",
+        "surname": "Tretyakova",
+        "email": "5643575@rambler.ru"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-02",
+          "until": "2018-07-20",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Departure airport transfer",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-07-21",
+          "serviceUntil": "2018-07-21",
+          "tax": 0
+        },
+        {
+          "description": "Arrival airport transfer",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-07-01",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-07-21",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 60,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 60,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-07-21",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Host Family (Single room / Half-board) 01/07/2018 - 21/07/2018",
+          "amount": 585,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 585,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-07-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning 15 hours 02/07/2018 - 20/07/2018",
+          "amount": 450,
+          "discount": 0,
+          "commission": 112.5,
+          "nadc": 337.5,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1350,
+        "discount": 0,
+        "commission": 112.5,
+        "nadc": 1237.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26915,
+      "invoiceNumber": "D2018688",
+      "invoiceDate": "2018-05-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17925",
+        "firstName": "IÑIGO",
+        "surname": "BURGUERA CUESTA",
+        "email": "inibucu@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-08-07",
+          "until": "2018-08-31",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Host Family (Single room / Half-board) 05/08/2018 - 02/09/2018",
+          "amount": 780,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 780,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-09-02",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning 20 hours 07/08/2018 - 31/08/2018",
+          "amount": 720,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 720,
+          "serviceFrom": "2018-08-07",
+          "serviceUntil": "2018-08-31",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-09-02",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-09-02",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-07",
+          "serviceUntil": "2018-08-31",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1695,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1695
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26916,
+      "invoiceNumber": "D2018690",
+      "invoiceDate": "2018-05-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17926",
+        "firstName": "Alrefaei",
+        "surname": "Saad",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-06-25",
+          "until": "2018-09-07",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "11 weeks Host Family (Single room / Half-board) 24/06/2018 - 09/09/2018",
+          "amount": 2145,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2145,
+          "serviceFrom": "2018-06-24",
+          "serviceUntil": "2018-09-09",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Afternoon 15 hours 25/06/2018 - 07/09/2018",
+          "amount": 1155,
+          "discount": 0,
+          "commission": 288.75,
+          "nadc": 866.25,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-09-07",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2018-06-24",
+          "serviceUntil": "2018-09-09",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-24",
+          "serviceUntil": "2018-09-09",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-09-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3615,
+        "discount": 0,
+        "commission": 288.75,
+        "nadc": 3326.25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26917,
+      "invoiceNumber": "D2018644",
+      "invoiceDate": "2018-05-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17927",
+        "firstName": "Barbara Javiera",
+        "surname": "Pavez Estivales",
+        "email": "barbara.pavez91@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2018-06-11",
+          "until": "2018-09-28",
+          "weeks": 16,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2018-10-08",
+          "until": "2018-10-26",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2018-11-05",
+          "until": "2018-12-14",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-06-09",
+          "serviceUntil": "2018-06-23",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-09",
+          "serviceUntil": "2018-06-23",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL / Self catering) 09/06/2018 - 23/06/2018",
+          "amount": 500,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 500,
+          "serviceFrom": "2018-06-09",
+          "serviceUntil": "2018-06-23",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-11-30",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-11-30",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-11-30",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Non-EU 25-Week Morning 15 11/06/2018 - 30/11/2018",
+          "amount": 3000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3000,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-11-30",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4015,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 4015
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26918,
+      "invoiceNumber": "D2018719",
+      "invoiceDate": "2018-05-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17928",
+        "firstName": "Mickael",
+        "surname": "Alory",
+        "email": "mickael.alory@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2018-06-11",
+          "until": "2018-08-17",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-06-10",
+          "serviceUntil": "2018-06-24",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-10",
+          "serviceUntil": "2018-06-24",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-SUPR-SNGL / Self catering) 10/06/2018 - 24/06/2018",
+          "amount": 460,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 460,
+          "serviceFrom": "2018-06-10",
+          "serviceUntil": "2018-06-24",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-08-17",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Afternoon 20 hours 11/06/2018 - 17/08/2018",
+          "amount": 1269,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1269,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-08-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1944,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1944
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26919,
+      "invoiceNumber": "D2018682",
+      "invoiceDate": "2018-05-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17929",
+        "firstName": "Stefania",
+        "surname": "Botticchio",
+        "email": "stefania.botticchio.91@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2018-05-15",
+          "until": "2018-06-14",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-15",
+          "serviceUntil": "2018-06-14",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Evening General 15/05/2018 - 14/06/2018",
+          "amount": 179,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 179,
+          "serviceFrom": "2018-05-15",
+          "serviceUntil": "2018-06-14",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 229,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 229
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26920,
+      "invoiceNumber": "D2018708",
+      "invoiceDate": "2018-05-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "16154",
+        "firstName": "Helidiney",
+        "surname": "Soares",
+        "email": "heli.heli.soares@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-05-28",
+          "until": "2018-08-03",
+          "weeks": 10,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-08-20",
+          "until": "2018-09-07",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-09-17",
+          "until": "2018-12-07",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-11-16",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-11-16",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks ULearn Renewal 25-wk AFT 15 28/05/2018 - 16/11/2018",
+          "amount": 1649,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1649,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-11-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1949,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1949
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26926,
+      "invoiceNumber": "D2018632",
+      "invoiceDate": "2018-05-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17934",
+        "firstName": "Dario Dmitrij",
+        "surname": "Boccaletti",
+        "email": "dmitrijboccaletti@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-05-07",
+          "until": "2018-06-29",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee @ Happy Plan",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2018-05-07",
+          "serviceUntil": "2018-06-29",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning 15 hours 07/05/2018 - 29/06/2018",
+          "amount": 1050,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1050,
+          "serviceFrom": "2018-05-07",
+          "serviceUntil": "2018-06-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1100,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 1075
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26927,
+      "invoiceNumber": "D2018650",
+      "invoiceDate": "2018-05-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17935",
+        "firstName": "Takeru",
+        "surname": "Ryutani",
+        "email": "riaelle55@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2018-05-28",
+          "until": "2018-08-17",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-05-26",
+          "serviceUntil": "2018-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2018-05-26",
+          "serviceUntil": "2018-08-18",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Host Family (Single room / Half-board) 26/05/2018 - 18/08/2018",
+          "amount": 2340,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2340,
+          "serviceFrom": "2018-05-26",
+          "serviceUntil": "2018-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-08-17",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Afternoon 20 hours 28/05/2018 - 17/08/2018",
+          "amount": 1479,
+          "discount": 0,
+          "commission": 369.75,
+          "nadc": 1109.25,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-08-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 4074,
+        "discount": 0,
+        "commission": 369.75,
+        "nadc": 3704.25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26928,
+      "invoiceNumber": "D2018702",
+      "invoiceDate": "2018-05-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17936",
+        "firstName": "Marina",
+        "surname": "Kawasaba",
+        "email": "kabamari0218@yahoo.co.jp"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-05-21",
+          "until": "2018-05-25",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-05-28",
+          "until": "2018-08-10",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee (Afternoon 15 hours)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-05-25",
+          "tax": 0
+        },
+        {
+          "description": "11 weeks Morning 15 hours 28/05/2018 - 10/08/2018",
+          "amount": 1408,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1408,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "1 week Afternoon 15 hours 21/05/2018 - 25/05/2018",
+          "amount": 102,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 102,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-05-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1560,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1560
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26929,
+      "invoiceNumber": "D2018794",
+      "invoiceDate": "2018-06-05",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17937",
+        "firstName": "Maria",
+        "surname": "Goczen",
+        "email": "goczenmarcsi@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2018-06-18",
+          "until": "2018-07-13",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-07-13",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Afternoon 20 hours 18/06/2018 - 13/07/2018",
+          "amount": 580,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 580,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-07-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 630,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 630
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26931,
+      "invoiceNumber": "D2018947",
+      "invoiceDate": "2018-07-04",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17939",
+        "firstName": "Paula",
+        "surname": "Martin Ballester",
+        "email": "paulapilar1999@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-09",
+          "until": "2018-07-27",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning 15 hours 09/07/2018 - 27/07/2018",
+          "amount": 450,
+          "discount": 0,
+          "commission": 112.5,
+          "nadc": 337.5,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 500,
+        "discount": 0,
+        "commission": 112.5,
+        "nadc": 387.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26932,
+      "invoiceNumber": "D2018675",
+      "invoiceDate": "2018-05-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "15953",
+        "firstName": "Victor",
+        "surname": "Domenech Gasch",
+        "email": "vicdom.vdg@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-10-01",
+          "until": "2018-10-12",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-09-29",
+          "serviceUntil": "2018-10-14",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-09-29",
+          "serviceUntil": "2018-10-14",
+          "tax": 0
+        },
+        {
+          "description": "1 Extra night (Apartment / APT-PRM-SNGL / Self catering: 29/09/2018 - 30/09/2018)",
+          "amount": 45,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 45,
+          "serviceFrom": "2018-09-29",
+          "serviceUntil": "2018-09-30",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-PRM-SNGL / Self catering) 30/09/2018 - 14/10/2018",
+          "amount": 500,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 500,
+          "serviceFrom": "2018-09-30",
+          "serviceUntil": "2018-10-14",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-10-01",
+          "serviceUntil": "2018-10-12",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning 15 hours 01/10/2018 - 12/10/2018",
+          "amount": 300,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 300,
+          "serviceFrom": "2018-10-01",
+          "serviceUntil": "2018-10-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1060,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1060
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26933,
+      "invoiceNumber": "D2018655",
+      "invoiceDate": "2018-05-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17940",
+        "firstName": "Priscila",
+        "surname": "Mosena de Godoy",
+        "email": "pmosena84@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2018-05-10",
+          "until": "2018-07-03",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-10",
+          "serviceUntil": "2018-07-03",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Evening General 10/05/2018 - 03/07/2018",
+          "amount": 250,
+          "discount": 0,
+          "commission": 62.5,
+          "nadc": 187.5,
+          "serviceFrom": "2018-05-10",
+          "serviceUntil": "2018-07-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 300,
+        "discount": 0,
+        "commission": 62.5,
+        "nadc": 237.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26934,
+      "invoiceNumber": "D2018668",
+      "invoiceDate": "2018-05-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17941",
+        "firstName": "Alejandra",
+        "surname": "Garcia Alegre",
+        "email": "alegre.mag@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-05-14",
+          "until": "2018-06-08",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-07-23",
+          "until": "2018-08-03",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-06-11",
+          "until": "2018-07-06",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning 15 hours 23/07/2018 - 03/08/2018",
+          "amount": 262.6,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 262.6,
+          "serviceFrom": "2018-07-23",
+          "serviceUntil": "2018-08-03",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning 15 hours 14/05/2018 - 06/07/2018",
+          "amount": 1050.4,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1050.4,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-07-06",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Morning 15 hours)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-07-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1363,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1363
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26935,
+      "invoiceNumber": "D2018850",
+      "invoiceDate": "2018-06-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17942",
+        "firstName": "Gabriel",
+        "surname": "Anthoine",
+        "email": "gabriel.anthoine07@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-06-04",
+          "until": "2018-06-22",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-06-25",
+          "until": "2018-07-13",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Morn & Aft 30 hours 25/06/2018 - 13/07/2018",
+          "amount": 688.5,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 688.5,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-07-13",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning 15 hours 25/06/2018 - 13/07/2018",
+          "amount": -405,
+          "discount": 0,
+          "commission": 0,
+          "nadc": -405,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-07-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 283.5,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 283.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26936,
+      "invoiceNumber": "D2018625",
+      "invoiceDate": "2018-05-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "16597",
+        "firstName": "Alfonso",
+        "surname": "Faelli",
+        "email": "alfonsofaelli@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-05-08",
+          "until": "2018-06-01",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Afternoon 15 hours 08/05/2018 - 01/06/2018",
+          "amount": 480,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 480,
+          "serviceFrom": "2018-05-08",
+          "serviceUntil": "2018-06-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 480,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 480
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26937,
+      "invoiceNumber": "D2018626",
+      "invoiceDate": "2018-05-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "13621",
+        "firstName": "Nadxielly",
+        "surname": "Osuna",
+        "email": "nadosuna@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-05-28",
+          "until": "2018-09-14",
+          "weeks": 16,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-09-24",
+          "until": "2018-10-05",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-10-22",
+          "until": "2018-12-07",
+          "weeks": 7,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-11-16",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks ULearn Renewal 25-wk AFT 15 28/05/2018 - 16/11/2018",
+          "amount": 1849,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1849,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-11-16",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2024,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2024
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26938,
+      "invoiceNumber": "D20181809",
+      "invoiceDate": "2018-11-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17943",
+        "firstName": "Hyeyeon",
+        "surname": "Kim",
+        "email": "hyeyeonkim1226@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-06-25",
+          "until": "2018-11-02",
+          "weeks": 19,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-11-12",
+          "until": "2018-11-30",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-12-10",
+          "until": "2018-12-21",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-01-11",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "IELTS - Price difference",
+          "amount": 25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-12-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 25,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26941,
+      "invoiceNumber": "D2018642",
+      "invoiceDate": "2018-05-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17946",
+        "firstName": "Kamil",
+        "surname": "Karbowiak",
+        "email": "camillocarbon@yahoo.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-05-28",
+          "until": "2018-09-14",
+          "weeks": 16,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival airport transfer",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-05-27",
+          "serviceUntil": "2018-05-27",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-05-26",
+          "serviceUntil": "2018-09-15",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2018-05-26",
+          "serviceUntil": "2018-09-15",
+          "tax": 0
+        },
+        {
+          "description": "16 weeks Host Family (Single room / Half-board) 26/05/2018 - 15/09/2018",
+          "amount": 3120,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3120,
+          "serviceFrom": "2018-05-26",
+          "serviceUntil": "2018-09-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-09-14",
+          "tax": 0
+        },
+        {
+          "description": "16 weeks Morning 20 hours 28/05/2018 - 14/09/2018",
+          "amount": 2448,
+          "discount": 0,
+          "commission": 612,
+          "nadc": 1836,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-09-14",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 5953,
+        "discount": 0,
+        "commission": 612,
+        "nadc": 5341
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26945,
+      "invoiceNumber": "D2018654",
+      "invoiceDate": "2018-05-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17950",
+        "firstName": "Guayarmina",
+        "surname": "Rodríguez Benítez",
+        "email": "guayi.rb@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2018-05-10",
+          "until": "2018-06-05",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-10",
+          "serviceUntil": "2018-06-05",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Evening General 10/05/2018 - 05/06/2018",
+          "amount": 144,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 144,
+          "serviceFrom": "2018-05-10",
+          "serviceUntil": "2018-06-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 194,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 194
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26946,
+      "invoiceNumber": "D2018699",
+      "invoiceDate": "2018-05-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17951",
+        "firstName": "Andrey",
+        "surname": "Grankov",
+        "email": "3505020@bk.ru"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-06-18",
+          "until": "2018-07-13",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival airport transfer",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-06-16",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-07-14",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-07-14",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Single room / Half-board) 16/06/2018 - 14/07/2018",
+          "amount": 780,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 780,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-07-14",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-07-13",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning 15 hours 18/06/2018 - 13/07/2018",
+          "amount": 600,
+          "discount": 0,
+          "commission": 150,
+          "nadc": 450,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-07-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1605,
+        "discount": 0,
+        "commission": 150,
+        "nadc": 1455
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26948,
+      "invoiceNumber": "D2018646",
+      "invoiceDate": "2018-05-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17952",
+        "firstName": "Laure",
+        "surname": "Lutinier",
+        "email": "laure.lutinier@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-06-18",
+          "until": "2018-07-06",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Morn & Aft 30 hours 18/06/2018 - 06/07/2018",
+          "amount": 765,
+          "discount": 0,
+          "commission": 76.5,
+          "nadc": 688.5,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-07-06",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-07-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 815,
+        "discount": 0,
+        "commission": 76.5,
+        "nadc": 738.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26949,
+      "invoiceNumber": "D20181023",
+      "invoiceDate": "2018-07-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17953",
+        "firstName": "Alexander",
+        "surname": "Weill",
+        "email": "alexandreweill1@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-07-16",
+          "until": "2018-07-27",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morn & Aft 30 hours 16/07/2018 - 27/07/2018",
+          "amount": 510,
+          "discount": 0,
+          "commission": 51,
+          "nadc": 459,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 560,
+        "discount": 0,
+        "commission": 51,
+        "nadc": 509
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26951,
+      "invoiceNumber": "D20181015",
+      "invoiceDate": "2018-07-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17955",
+        "firstName": "Cristiano",
+        "surname": "Fernandes de Oliveira Carvalho",
+        "email": "cristianosaff@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-08-20",
+          "until": "2018-11-30",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-03-15",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "7 weeks Non-EU 25-Week Afternoon 15 07/01/2019 - 22/02/2019",
+          "amount": 672,
+          "discount": 0,
+          "commission": 147.84,
+          "nadc": 524.16,
+          "serviceFrom": "2019-01-07",
+          "serviceUntil": "2019-02-22",
+          "tax": 0
+        },
+        {
+          "description": "18 weeks Non-EU 25-Week Afternoon 15 20/08/2018 - 21/12/2018",
+          "amount": 1728,
+          "discount": 0,
+          "commission": 380.16,
+          "nadc": 1347.84,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2625,
+        "discount": 0,
+        "commission": 528,
+        "nadc": 2097
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26952,
+      "invoiceNumber": "D20181607",
+      "invoiceDate": "2018-10-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17956",
+        "firstName": "Munique Grazielle",
+        "surname": "De Moraes Sousa",
+        "email": "muniquegrazielle@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-09-10",
+          "until": "2018-11-02",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-11-05",
+          "until": "2018-11-09",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Morning 15 hours 05/11/2018 - 09/11/2018",
+          "amount": 131,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 131,
+          "serviceFrom": "2018-11-05",
+          "serviceUntil": "2018-11-09",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 131,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 131
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26953,
+      "invoiceNumber": "D2018886",
+      "invoiceDate": "2018-06-26",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17957",
+        "firstName": "Nuria",
+        "surname": "Montagud Mati",
+        "email": "socarrat2000@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-07-09",
+          "until": "2018-07-20",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Host Family (Single room / Half-board) 08/07/2018 - 22/07/2018",
+          "amount": 390,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 390,
+          "serviceFrom": "2018-07-08",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning 20 hours 09/07/2018 - 20/07/2018",
+          "amount": 360,
+          "discount": 0,
+          "commission": 90,
+          "nadc": 270,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2018-07-08",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-08",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 905,
+        "discount": 0,
+        "commission": 90,
+        "nadc": 815
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26954,
+      "invoiceNumber": "D2018652",
+      "invoiceDate": "2018-05-10",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17958",
+        "firstName": "JooEun",
+        "surname": "Kim",
+        "email": "jay311311@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-05-14",
+          "until": "2018-06-08",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-06-08",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morn & Aft 30 hours 14/05/2018 - 08/06/2018",
+          "amount": 1020,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1020,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-06-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1070,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1070
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26955,
+      "invoiceNumber": "D2018672",
+      "invoiceDate": "2018-05-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17959",
+        "firstName": "Merissa",
+        "surname": "Prado",
+        "email": "merissa.loiola@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-05-14",
+          "until": "2018-06-08",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-06-11",
+          "until": "2018-07-06",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Afternoon 15 hours 14/05/2018 - 08/06/2018",
+          "amount": 480,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 480,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-06-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-06-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 530,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 530
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26957,
+      "invoiceNumber": "D2018739",
+      "invoiceDate": "2018-05-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17961",
+        "firstName": "Iaroslav",
+        "surname": "Gureev",
+        "email": "gureevyaroslav@mail.ru"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-08-06",
+          "until": "2018-08-31",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-09-01",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-09-01",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Single room / Half-board) 05/08/2018 - 01/09/2018",
+          "amount": 780,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 780,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-09-01",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-31",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning 20 hours 06/08/2018 - 31/08/2018",
+          "amount": 720,
+          "discount": 0,
+          "commission": 180,
+          "nadc": 540,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-31",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1695,
+        "discount": 0,
+        "commission": 180,
+        "nadc": 1515
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26959,
+      "invoiceNumber": "D2018666",
+      "invoiceDate": "2018-05-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "15762",
+        "firstName": "Raul Augusto",
+        "surname": "Candia Pimentel Veiga",
+        "email": "raulloiro2@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2018-06-18",
+          "until": "2018-09-21",
+          "weeks": 14,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Morning",
+          "category": "Morning Classes",
+          "from": "2018-10-01",
+          "until": "2018-12-14",
+          "weeks": 11,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Non-EU 25-Week Morning 15 18/06/2018 - 07/12/2018",
+          "amount": 3000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 3000,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        },
+        {
+          "description": "Happy Plan Registration fee",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-12-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3350,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 3325
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26962,
+      "invoiceNumber": "D2018659",
+      "invoiceDate": "2018-05-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17531",
+        "firstName": "Almina",
+        "surname": "Kapetanovic",
+        "email": "almina.kapetanovic@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-05-21",
+          "until": "2018-07-27",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "10 weeks Afternoon 15 hours 21/05/2018 - 27/07/2018",
+          "amount": 1020,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1020,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1020,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1020
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26963,
+      "invoiceNumber": "D2018662",
+      "invoiceDate": "2018-05-14",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17965",
+        "firstName": "Mirko",
+        "surname": "D'adamo",
+        "email": "mirkodad92@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon IELTS",
+          "category": "Afternoon Classes",
+          "from": "2018-05-14",
+          "until": "2018-06-22",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-06-22",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Afternoon IELTS 14/05/2018 - 22/06/2018",
+          "amount": 648,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 648,
+          "serviceFrom": "2018-05-14",
+          "serviceUntil": "2018-06-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 698,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 698
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26967,
+      "invoiceNumber": "D2018778",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17969",
+        "firstName": "Mila",
+        "surname": "de Mingo",
+        "email": "miladesi2@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-05-21",
+          "until": "2018-06-01",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-06-05",
+          "until": "2018-06-29",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-09-03",
+          "until": "2018-10-26",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-11-05",
+          "until": "2018-12-14",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2019-01-07",
+          "until": "2019-02-15",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2019-01-07",
+          "until": "2019-02-15",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2019-02-25",
+          "until": "2019-03-01",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Morning 15 hours 05/06/2018 - 23/11/2018",
+          "amount": 2100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2100,
+          "serviceFrom": "2018-06-05",
+          "serviceUntil": "2018-11-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2100,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2100
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26969,
+      "invoiceNumber": "D2018706",
+      "invoiceDate": "2018-05-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17971",
+        "firstName": "Moayad Salamh A",
+        "surname": "Alanazi",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-07-02",
+          "until": "2018-08-24",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health insurance",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning 20 hours 18/06/2018 - 10/08/2018",
+          "amount": 1260,
+          "discount": 0,
+          "commission": 315,
+          "nadc": 945,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1410,
+        "discount": 0,
+        "commission": 315,
+        "nadc": 1095
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26970,
+      "invoiceNumber": "D2019706",
+      "invoiceDate": "2019-05-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17972",
+        "firstName": "Paulo",
+        "surname": "Augusto Souza de Paula",
+        "email": "p.a_93@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-05-20",
+          "until": "2019-11-08",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2019-05-20",
+          "serviceUntil": "2019-11-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2019-05-20",
+          "serviceUntil": "2019-11-08",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Afternoon 20/05/2019 - 08/11/2019",
+          "amount": 2763,
+          "discount": 0,
+          "commission": 607.86,
+          "nadc": 2155.14,
+          "serviceFrom": "2019-05-20",
+          "serviceUntil": "2019-11-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2988,
+        "discount": 0,
+        "commission": 607.86,
+        "nadc": 2380.14
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26971,
+      "invoiceNumber": "D2018679",
+      "invoiceDate": "2018-05-15",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "16221",
+        "firstName": "Vasily",
+        "surname": "Obukhovskiy",
+        "email": "v.obukhovskiy@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-07-02",
+          "until": "2018-09-28",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2018-10-22",
+          "until": "2018-12-21",
+          "weeks": 9,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal AFT",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-01-25",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee (special price as student using credit from previous booking)",
+          "amount": 105,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 105,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks ULearn Renewal 25-wk AFT 15 02/07/2018 - 21/12/2018",
+          "amount": 1724,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1724,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1954,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1954
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26973,
+      "invoiceNumber": "D20181006",
+      "invoiceDate": "2018-07-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17974",
+        "firstName": "Irene",
+        "surname": "López Lorenzo",
+        "email": "irenelopezlorenzo@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-02",
+          "until": "2018-07-13",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-16",
+          "until": "2018-07-27",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning 15 hours 16/07/2018 - 27/07/2018",
+          "amount": 300,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 300,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Single room / Half-board) 14/07/2018 - 28/07/2018",
+          "amount": 430,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 430,
+          "serviceFrom": "2018-07-14",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 730,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 730
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26980,
+      "invoiceNumber": "D2018898",
+      "invoiceDate": "2018-06-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17981",
+        "firstName": "Aomi",
+        "surname": "Kosugi",
+        "email": "akao0515@docomo.ne.jp"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-23",
+          "until": "2018-08-10",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival airport transfer",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-07-22",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-22",
+          "serviceUntil": "2018-08-11",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 60,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 60,
+          "serviceFrom": "2018-07-22",
+          "serviceUntil": "2018-08-11",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Host Family (Single room / Half-board) 22/07/2018 - 11/08/2018",
+          "amount": 585,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 585,
+          "serviceFrom": "2018-07-22",
+          "serviceUntil": "2018-08-11",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-23",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning 15 hours 23/07/2018 - 10/08/2018",
+          "amount": 450,
+          "discount": 0,
+          "commission": 112.5,
+          "nadc": 337.5,
+          "serviceFrom": "2018-07-23",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1280,
+        "discount": 0,
+        "commission": 112.5,
+        "nadc": 1167.5
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26981,
+      "invoiceNumber": "D2018821",
+      "invoiceDate": "2018-06-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17982",
+        "firstName": "Emma",
+        "surname": "Melero Redondo",
+        "email": "emma-97@hotmail.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-02",
+          "until": "2018-07-27",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Arrival: Airport - Accommodation (Sa 30/06/2018)",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-06-30",
+          "serviceUntil": "2018-06-30",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2018-06-30",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Single room / Half-board) 30/06/2018 - 28/07/2018",
+          "amount": 780,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 780,
+          "serviceFrom": "2018-06-30",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-30",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning 15 hours 02/07/2018 - 27/07/2018",
+          "amount": 600,
+          "discount": 0,
+          "commission": 120,
+          "nadc": 480,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1645,
+        "discount": 0,
+        "commission": 120,
+        "nadc": 1525
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26982,
+      "invoiceNumber": "D2018740",
+      "invoiceDate": "2018-05-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17983",
+        "firstName": "Zarema",
+        "surname": "Galiullina",
+        "email": "galiullina.zarema@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-07-16",
+          "until": "2018-07-27",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Individual Airport Transfer (Return)",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2018-07-15",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-15",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2018-07-15",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Single room / Half-board) 15/07/2018 - 28/07/2018",
+          "amount": 390,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 390,
+          "serviceFrom": "2018-07-15",
+          "serviceUntil": "2018-07-28",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Afternoon 15 hours 16/07/2018 - 27/07/2018",
+          "amount": 240,
+          "discount": 0,
+          "commission": 60,
+          "nadc": 180,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 925,
+        "discount": 0,
+        "commission": 60,
+        "nadc": 865
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26988,
+      "invoiceNumber": "D2018714",
+      "invoiceDate": "2018-05-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17989",
+        "firstName": "Helena",
+        "surname": "Gonzalez",
+        "email": "rubieli_88@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2018-08-06",
+          "until": "2018-08-24",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (Shared / Self catering) 05/08/2018 - 25/08/2018",
+          "amount": 795,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 795,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Afternoon 20 hours 06/08/2018 - 24/08/2018",
+          "amount": 435,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 435,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1445,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1445
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26989,
+      "invoiceNumber": "D2018730",
+      "invoiceDate": "2018-05-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17990",
+        "firstName": "Diego",
+        "surname": "Cruz",
+        "email": "rubieli_88@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2018-08-06",
+          "until": "2018-08-24",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (Shared / Self catering) 05/08/2018 - 25/08/2018",
+          "amount": 795,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 795,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Afternoon 20 hours 06/08/2018 - 24/08/2018",
+          "amount": 435,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 435,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1445,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1445
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26990,
+      "invoiceNumber": "D2018695",
+      "invoiceDate": "2018-05-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17991",
+        "firstName": "Erica",
+        "surname": "Aiello",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening IELTS",
+          "category": "Evening Classes",
+          "from": "2018-05-17",
+          "until": "2018-06-19",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "5 weeks Evening IELTS 17/05/2018 - 19/06/2018",
+          "amount": 179,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 179,
+          "serviceFrom": "2018-05-17",
+          "serviceUntil": "2018-06-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-17",
+          "serviceUntil": "2018-06-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 229,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 229
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26991,
+      "invoiceNumber": "D2018685",
+      "invoiceDate": "2018-05-16",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17992",
+        "firstName": "Aaron",
+        "surname": "Moreno Gonzalez",
+        "email": "morenogon1996@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-06-04",
+          "until": "2018-07-27",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "8 weeks Morning 20 hours 04/06/2018 - 27/07/2018",
+          "amount": 1260,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1260,
+          "serviceFrom": "2018-06-04",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee @ Happy plan",
+          "amount": 50,
+          "discount": 25,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2018-06-04",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1310,
+        "discount": 25,
+        "commission": 0,
+        "nadc": 1285
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26993,
+      "invoiceNumber": "D20181086",
+      "invoiceDate": "2018-07-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17994",
+        "firstName": "Minami",
+        "surname": "Koyama",
+        "email": "hide0211@athena.ocn.ne.jp"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-08-20",
+          "until": "2018-09-07",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Afternoon 15 hours 20/08/2018 - 07/09/2018",
+          "amount": 360,
+          "discount": 0,
+          "commission": 90,
+          "nadc": 270,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-09-07",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-09-07",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (Shared / Self catering) 19/08/2018 - 08/09/2018",
+          "amount": 495,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 495,
+          "serviceFrom": "2018-08-19",
+          "serviceUntil": "2018-09-08",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-08-19",
+          "serviceUntil": "2018-09-08",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2018-08-19",
+          "serviceUntil": "2018-09-08",
+          "tax": 0
+        },
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-08-19",
+          "serviceUntil": "2018-09-08",
+          "tax": 0
+        },
+        {
+          "description": "Individual Airport Transfer (One-Way)",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-08-19",
+          "serviceUntil": "2018-09-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1170,
+        "discount": 0,
+        "commission": 90,
+        "nadc": 1080
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26996,
+      "invoiceNumber": "D2018902",
+      "invoiceDate": "2018-06-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17997",
+        "firstName": "Jungsoon",
+        "surname": "Kim",
+        "email": "jsk280800@naver.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-02",
+          "until": "2018-08-10",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Morning 15 hours 02/07/2018 - 10/08/2018",
+          "amount": 810,
+          "discount": 0,
+          "commission": 162,
+          "nadc": 648,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 860,
+        "discount": 0,
+        "commission": 162,
+        "nadc": 698
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26997,
+      "invoiceNumber": "D2018904",
+      "invoiceDate": "2018-06-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17998",
+        "firstName": "Sumin",
+        "surname": "Lee",
+        "email": "sumin9988@naver.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-09",
+          "until": "2018-08-17",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Morning 15 hours 02/07/2018 - 10/08/2018",
+          "amount": 810,
+          "discount": 0,
+          "commission": 162,
+          "nadc": 648,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 860,
+        "discount": 0,
+        "commission": 162,
+        "nadc": 698
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26998,
+      "invoiceNumber": "D20181035",
+      "invoiceDate": "2018-07-17",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17999",
+        "firstName": "Jihyun",
+        "surname": "Kim",
+        "email": "ages85@nate.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-02",
+          "until": "2018-08-10",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-08-13",
+          "until": "2018-08-17",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Morning 15 hours 13/08/2018 - 17/08/2018",
+          "amount": 135,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 135,
+          "serviceFrom": "2018-08-13",
+          "serviceUntil": "2018-08-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 135,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 135
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 26999,
+      "invoiceNumber": "D2018905",
+      "invoiceDate": "2018-06-27",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18000",
+        "firstName": "Kyunghee",
+        "surname": "Jang",
+        "email": "clara1208@hammail.net"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-30",
+          "until": "2018-08-24",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning 15 hours 30/07/2018 - 24/08/2018",
+          "amount": 600,
+          "discount": 0,
+          "commission": 120,
+          "nadc": 480,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 650,
+        "discount": 0,
+        "commission": 120,
+        "nadc": 530
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27000,
+      "invoiceNumber": "D2018700",
+      "invoiceDate": "2018-05-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18001",
+        "firstName": "Madelon",
+        "surname": "Boudin",
+        "email": "madelon.boudin@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-10-01",
+          "until": "2018-11-23",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-09-30",
+          "serviceUntil": "2018-11-24",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-09-30",
+          "serviceUntil": "2018-11-24",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Apartment (APT-PRM-SNGL / Self catering) 30/09/2018 - 24/11/2018",
+          "amount": 2000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 2000,
+          "serviceFrom": "2018-09-30",
+          "serviceUntil": "2018-11-24",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-10-01",
+          "serviceUntil": "2018-11-23",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morning 20 hours 01/10/2018 - 23/11/2018",
+          "amount": 1260,
+          "discount": 0,
+          "commission": 315,
+          "nadc": 945,
+          "serviceFrom": "2018-10-01",
+          "serviceUntil": "2018-11-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3475,
+        "discount": 0,
+        "commission": 315,
+        "nadc": 3160
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27001,
+      "invoiceNumber": "D2018733",
+      "invoiceDate": "2018-05-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18002",
+        "firstName": "Marsel",
+        "surname": "Kamaliyev",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-07-02",
+          "until": "2018-08-24",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-07-29",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-07-29",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement (4 weeks Apartment / APT-SUPR-SNGL / Self catering)",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2018-07-29",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (APT-SUPR-SNGL / Self catering) 29/07/2018 - 25/08/2018",
+          "amount": 920,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 920,
+          "serviceFrom": "2018-07-29",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement (4 weeks Host Family / Single room / Half-board)",
+          "amount": 80,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 80,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-07-29",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Single room / Half-board) 01/07/2018 - 29/07/2018",
+          "amount": 780,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 780,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-07-29",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morn & Aft 30 hours 02/07/2018 - 24/08/2018",
+          "amount": 1785,
+          "discount": 0,
+          "commission": 446.25,
+          "nadc": 1338.75,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3820,
+        "discount": 0,
+        "commission": 446.25,
+        "nadc": 3373.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27002,
+      "invoiceNumber": "D2018820",
+      "invoiceDate": "2018-06-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18003",
+        "firstName": "Jorge Alejandro",
+        "surname": "Aedo Inzunza",
+        "email": "jorgeaedo@live.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-08-06",
+          "until": "2018-12-07",
+          "weeks": 18,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-02-08",
+          "weeks": 5,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-12-24",
+          "until": "2019-01-04",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance (Non-EU 25-Week Afternoon 15)",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "5 weeks Non-EU 25-Week Afternoon 15 07/01/2019 - 08/02/2019",
+          "amount": 480,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 480,
+          "serviceFrom": "2019-01-07",
+          "serviceUntil": "2019-02-08",
+          "tax": 0
+        },
+        {
+          "description": "20 weeks Non-EU 25-Week Afternoon 15 06/08/2018 - 21/12/2018",
+          "amount": 1920,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1920,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2750,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2750
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27004,
+      "invoiceNumber": "D2019262",
+      "invoiceDate": "2019-02-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18005",
+        "firstName": "Paulo",
+        "surname": "Miguel",
+        "email": "pauloamaromiguel@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2019-02-26",
+          "until": "2019-02-28",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Evening General 26/02/2019 - 28/02/2019",
+          "amount": 36,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 36,
+          "serviceFrom": "2019-02-26",
+          "serviceUntil": "2019-02-28",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2019-02-26",
+          "serviceUntil": "2019-02-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 86,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 86
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27006,
+      "invoiceNumber": "D2018731",
+      "invoiceDate": "2018-05-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18007",
+        "firstName": "Petr",
+        "surname": "Shchukin",
+        "email": "schukinpeter@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-09-10",
+          "until": "2018-12-21",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-02-01",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-02-25",
+          "until": "2019-04-05",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "15 weeks Non-EU 25-Week Afternoon 15 10/09/2018 - 21/12/2018",
+          "amount": 1440,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1440,
+          "serviceFrom": "2018-09-10",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Non-EU 25-Week Afternoon 15 07/01/2019 - 15/03/2019",
+          "amount": 960,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 960,
+          "serviceFrom": "2019-01-07",
+          "serviceUntil": "2019-03-15",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Apartment (APT-SUPR-SNGL / Self catering) 09/09/2018 - 29/09/2018",
+          "amount": 690,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 690,
+          "serviceFrom": "2018-09-09",
+          "serviceUntil": "2018-09-29",
+          "tax": 0
+        },
+        {
+          "description": "Previous accommodation cancellation free (1 week Single Premium room)",
+          "amount": 260,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 260,
+          "serviceFrom": "2018-09-09",
+          "serviceUntil": "2019-03-15",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-09-09",
+          "serviceUntil": "2018-09-29",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 30,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 30,
+          "serviceFrom": "2018-09-09",
+          "serviceUntil": "2018-09-29",
+          "tax": 0
+        },
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-09-09",
+          "serviceUntil": "2018-09-29",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3895,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3895
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27007,
+      "invoiceNumber": "D2018728",
+      "invoiceDate": "2018-05-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17668",
+        "firstName": "Maria",
+        "surname": "Jimenez Lopez",
+        "email": "maria-mc6@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-05-21",
+          "until": "2018-05-25",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-05-28",
+          "until": "2018-06-01",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Morning 15 hours 28/05/2018 - 01/06/2018",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-06-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 150,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 150
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27009,
+      "invoiceNumber": "D2018804",
+      "invoiceDate": "2018-06-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18009",
+        "firstName": "Elena",
+        "surname": "Juanals Martinez",
+        "email": "elenajuanals@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-07-02",
+          "until": "2018-08-24",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-08-26",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 160,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 160,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-08-26",
+          "tax": 0
+        },
+        {
+          "description": "8 Weeks Host Family (Single room / Half-board) 01/07/2018 - 26/08/2018",
+          "amount": 1560,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1560,
+          "serviceFrom": "2018-07-01",
+          "serviceUntil": "2018-08-26",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        },
+        {
+          "description": "8 Weeks Morning 20 hours 02/07/2018 - 24/08/2018",
+          "amount": 1260,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1260,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3095,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3095
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27012,
+      "invoiceNumber": "D20181163",
+      "invoiceDate": "2018-08-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "15985",
+        "firstName": "Hassan",
+        "surname": "N H Komait",
+        "email": "n.khumaet@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-07-30",
+          "until": "2018-09-07",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2018-09-10",
+          "until": "2018-12-14",
+          "weeks": 14,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "14 weeks Afternoon 20 hours 10/09/2018 - 14/12/2018 (special price)",
+          "amount": 1540,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1540,
+          "serviceFrom": "2018-09-10",
+          "serviceUntil": "2018-12-14",
+          "tax": 0
+        },
+        {
+          "description": "Updated health insurance",
+          "amount": 25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-12-14",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1565,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1565
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27013,
+      "invoiceNumber": "D2018703",
+      "invoiceDate": "2018-05-21",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "17294",
+        "firstName": "Paulina",
+        "surname": "Msihid",
+        "email": "paulina.neese@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-05-21",
+          "until": "2018-05-25",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Eve Gen Trial",
+          "category": "Group classes",
+          "from": "2018-05-29",
+          "until": "2018-06-01",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Afternoon 15 hours 21/05/2018 - 25/05/2018",
+          "amount": 120,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 120,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-05-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 120,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 120
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27014,
+      "invoiceNumber": "D20181016",
+      "invoiceDate": "2018-07-13",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18010",
+        "firstName": "Flavia",
+        "surname": "Costa Franca de Carvalho Oliveira",
+        "email": "flaviaoliveira65055@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-08-20",
+          "until": "2018-11-30",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-03-15",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "7 weeks Non-EU 25-Week Afternoon 15 07/01/2019 - 22/02/2019",
+          "amount": 672,
+          "discount": 0,
+          "commission": 147.84,
+          "nadc": 524.16,
+          "serviceFrom": "2019-01-07",
+          "serviceUntil": "2019-02-22",
+          "tax": 0
+        },
+        {
+          "description": "18 weeks Non-EU 25-Week Afternoon 15 20/08/2018 - 21/12/2018",
+          "amount": 1728,
+          "discount": 0,
+          "commission": 380.16,
+          "nadc": 1347.84,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-20",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2625,
+        "discount": 0,
+        "commission": 528,
+        "nadc": 2097
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27016,
+      "invoiceNumber": "D2018710",
+      "invoiceDate": "2018-05-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18012",
+        "firstName": "Paulo Sergio",
+        "surname": "Ferreira",
+        "email": "psergioferr@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "+5 Hours",
+          "category": "Afternoon Classes",
+          "from": "2018-05-21",
+          "until": "2018-06-01",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration Fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-06-01",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks +5 Hours 21/05/2018 - 01/06/2018",
+          "amount": 60,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 60,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-06-01",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 110,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 110
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27018,
+      "invoiceNumber": "D2018717",
+      "invoiceDate": "2018-05-22",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18014",
+        "firstName": "Lara Maria",
+        "surname": "Lopez Munoz",
+        "email": "lanov_2lunov@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Evening General",
+          "category": "Evening Classes",
+          "from": "2018-05-22",
+          "until": "2018-07-26",
+          "weeks": 10,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "10 weeks Evening General 22/05/2018 - 26/07/2018",
+          "amount": 313,
+          "discount": 0,
+          "commission": 68.86,
+          "nadc": 244.14,
+          "serviceFrom": "2018-05-22",
+          "serviceUntil": "2018-07-26",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-22",
+          "serviceUntil": "2018-07-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 363,
+        "discount": 0,
+        "commission": 68.86,
+        "nadc": 294.14
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27019,
+      "invoiceNumber": "D2018736",
+      "invoiceDate": "2018-05-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18015",
+        "firstName": "Olivier",
+        "surname": "Faure",
+        "email": "faure.o.69@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-05-28",
+          "until": "2018-06-22",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-06-22",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Morning 15 hours 28/05/2018 - 22/06/2018",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-06-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 650,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 650
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27021,
+      "invoiceNumber": "D2018720",
+      "invoiceDate": "2018-05-23",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18018",
+        "firstName": "Mario",
+        "surname": "Lapis",
+        "email": "m.lapis@yahoo.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening IELTS",
+          "category": "Evening Classes",
+          "from": "2018-05-24",
+          "until": "2018-07-03",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks Evening IELTS 24/05/2018 - 03/07/2018",
+          "amount": 193,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 193,
+          "serviceFrom": "2018-05-24",
+          "serviceUntil": "2018-07-03",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-24",
+          "serviceUntil": "2018-07-03",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 243,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 243
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27024,
+      "invoiceNumber": "D2018999",
+      "invoiceDate": "2018-07-11",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18021",
+        "firstName": "Maria",
+        "surname": "Cueto Felgueroso",
+        "email": "mcuetofelg@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-07-30",
+          "until": "2018-08-10",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-29",
+          "serviceUntil": "2018-08-11",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2018-07-29",
+          "serviceUntil": "2018-08-11",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Single room / Half-board) 29/07/2018 - 11/08/2018",
+          "amount": 390,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 390,
+          "serviceFrom": "2018-07-29",
+          "serviceUntil": "2018-08-11",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morning 20 hours 30/07/2018 - 10/08/2018",
+          "amount": 360,
+          "discount": 0,
+          "commission": 90,
+          "nadc": 270,
+          "serviceFrom": "2018-07-30",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 905,
+        "discount": 0,
+        "commission": 90,
+        "nadc": 815
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27026,
+      "invoiceNumber": "D2018853",
+      "invoiceDate": "2018-06-18",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18032",
+        "firstName": "Giorgio",
+        "surname": "Costa",
+        "email": "giorgiocosta_1998@libero.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-07-09",
+          "until": "2018-07-20",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-07-07",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 20,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 20,
+          "serviceFrom": "2018-07-07",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-07",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Apartment (APT-SUPR-SNGL / Self catering) 08/07/2018 - 22/07/2018",
+          "amount": 460,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 460,
+          "serviceFrom": "2018-07-08",
+          "serviceUntil": "2018-07-22",
+          "tax": 0
+        },
+        {
+          "description": "1 Extra night (Apartment / APT-SUPR-SNGL / Self catering: 07/07/2018 - 08/07/2018)",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2018-07-07",
+          "serviceUntil": "2018-07-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Morn & Aft 30 hours 09/07/2018 - 20/07/2018",
+          "amount": 510,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 510,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1245,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1245
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27028,
+      "invoiceNumber": "D20181142",
+      "invoiceDate": "2018-08-03",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18023",
+        "firstName": "Edoardo",
+        "surname": "Zoppi",
+        "email": "edoardo.zoppi@yahoo.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-06-18",
+          "until": "2018-07-13",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-07-16",
+          "until": "2018-08-10",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-08-13",
+          "until": "2018-09-07",
+          "weeks": 4,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "4 weeks Morning 15 hours 13/08/2018 - 07/09/2018",
+          "amount": 600,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 600,
+          "serviceFrom": "2018-08-13",
+          "serviceUntil": "2018-09-07",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Host Family (Single room / Half-board) 12/08/2018 - 09/09/2018",
+          "amount": 780,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 780,
+          "serviceFrom": "2018-08-12",
+          "serviceUntil": "2018-09-09",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation booking fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-09-09",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1445,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1445
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27029,
+      "invoiceNumber": "D2018783",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18024",
+        "firstName": "Maria Joaquina",
+        "surname": "da Costa Gomes",
+        "email": "maria.quintas@agesc-arouca.pt"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLIL + General English",
+          "category": "Group classes",
+          "from": "2018-05-21",
+          "until": "2018-05-25",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week CLIL + General English 21/05/2018 - 25/05/2018",
+          "amount": 250,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 250,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-05-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 250,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 250
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27030,
+      "invoiceNumber": "D2018784",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18025",
+        "firstName": "Daniel",
+        "surname": "Scharf",
+        "email": "scharfdaniel9@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLIL + General English",
+          "category": "Group classes",
+          "from": "2018-05-21",
+          "until": "2018-05-25",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week CLIL + General English 21/05/2018 - 25/05/2018",
+          "amount": 250,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 250,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-05-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 250,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 250
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27032,
+      "invoiceNumber": "D2018785",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18027",
+        "firstName": "José",
+        "surname": "Gomes",
+        "email": "jose.gomes@agesc-arouca.pt"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLIL + General English",
+          "category": "Group classes",
+          "from": "2018-05-21",
+          "until": "2018-05-25",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week CLIL + General English 21/05/2018 - 25/05/2018",
+          "amount": 250,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 250,
+          "serviceFrom": "2018-05-21",
+          "serviceUntil": "2018-05-25",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 250,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 250
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27038,
+      "invoiceNumber": "D2018985",
+      "invoiceDate": "2018-07-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18034",
+        "firstName": "Akhmed",
+        "surname": "Bersanov",
+        "email": "bersahned@bn.ru"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-08-13",
+          "until": "2018-08-31",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 60,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 60,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-26",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-26",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Host Family (Twin Room / Half-board) 05/08/2018 - 26/08/2018",
+          "amount": 495,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 495,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-26",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morn & Aft 30 hours 06/08/2018 - 24/08/2018",
+          "amount": 765,
+          "discount": 0,
+          "commission": 191.25,
+          "nadc": 573.75,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1435,
+        "discount": 0,
+        "commission": 191.25,
+        "nadc": 1243.75
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27039,
+      "invoiceNumber": "D2018777",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18035",
+        "firstName": "Francisco",
+        "surname": "Tarifa Martín",
+        "email": "tarifa.martin@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-06-25",
+          "until": "2018-07-27",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "5 weeks Morning 20 hours 25/06/2018 - 27/07/2018",
+          "amount": 900,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 900,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 950,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 950
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27040,
+      "invoiceNumber": "D20181141",
+      "invoiceDate": "2018-08-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18036",
+        "firstName": "Marta",
+        "surname": "Alamo",
+        "email": "alamo.marta@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening IELTS",
+          "category": "Evening Classes",
+          "from": "2018-08-07",
+          "until": "2018-08-24",
+          "weeks": 3,
+          "hours": 0
+        },
+        {
+          "name": "Evening IELTS",
+          "category": "Evening Classes",
+          "from": "2018-09-04",
+          "until": "2018-09-20",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks Evening IELTS 07/08/2018 - 13/09/2018",
+          "amount": 193,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 193,
+          "serviceFrom": "2018-08-07",
+          "serviceUntil": "2018-09-13",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-07",
+          "serviceUntil": "2018-09-13",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 243,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 243
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27041,
+      "invoiceNumber": "D2018768",
+      "invoiceDate": "2018-05-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18037",
+        "firstName": "Taichi",
+        "surname": "Yamasaki",
+        "email": "irelandtaichi2017@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening IELTS",
+          "category": "Evening Classes",
+          "from": "2018-05-29",
+          "until": "2018-07-05",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks Evening IELTS 29/05/2018 - 05/07/2018",
+          "amount": 193,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 193,
+          "serviceFrom": "2018-05-29",
+          "serviceUntil": "2018-07-05",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-29",
+          "serviceUntil": "2018-07-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 243,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 243
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27043,
+      "invoiceNumber": "D2018801",
+      "invoiceDate": "2018-06-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18052",
+        "firstName": "Martina",
+        "surname": "Vachova",
+        "email": "megivachu@email.cz"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General Plus",
+          "category": "Afternoon Classes Plus",
+          "from": "2018-07-09",
+          "until": "2018-07-27",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Morning 20 hours 09/07/2018 - 27/07/2018",
+          "amount": 540,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 540,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-09",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 590,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 590
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27046,
+      "invoiceNumber": "D2019001",
+      "invoiceDate": "2019-01-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18041",
+        "firstName": "Gustavo",
+        "surname": "Bomfim Teixeira",
+        "email": "gustavob.teixeira@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-28",
+          "until": "2019-03-22",
+          "weeks": 8,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-04-01",
+          "until": "2019-07-05",
+          "weeks": 14,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-08-05",
+          "until": "2019-08-23",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2019-01-28",
+          "serviceUntil": "2019-07-19",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Non-EU 25-Week Afternoon 15 28/01/2019 - 19/07/2019",
+          "amount": 2400,
+          "discount": 0,
+          "commission": 528,
+          "nadc": 1872,
+          "serviceFrom": "2019-01-28",
+          "serviceUntil": "2019-07-19",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2019-01-28",
+          "serviceUntil": "2019-07-19",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2625,
+        "discount": 0,
+        "commission": 528,
+        "nadc": 2097
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27049,
+      "invoiceNumber": "D2018930",
+      "invoiceDate": "2018-07-02",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18043",
+        "firstName": "Mana",
+        "surname": "Izumi",
+        "email": "mana.izumi8@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning FCE",
+          "category": "Morning Classes",
+          "from": "2018-06-04",
+          "until": "2018-06-15",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning FCE",
+          "category": "Morning Classes",
+          "from": "2018-06-18",
+          "until": "2018-06-29",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Morning FCE",
+          "category": "Morning Classes",
+          "from": "2018-07-02",
+          "until": "2018-07-06",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Morning FCE 15 hours 02/07/2018 - 06/07/2018",
+          "amount": 150,
+          "discount": 15,
+          "commission": 0,
+          "nadc": 135,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-06",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 150,
+        "discount": 15,
+        "commission": 0,
+        "nadc": 135
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27051,
+      "invoiceNumber": "D20181680",
+      "invoiceDate": "2018-11-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18045",
+        "firstName": "Juana",
+        "surname": "Sanchez Laguna",
+        "email": "juanasanchezleal@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-05-28",
+          "until": "2018-08-24",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-09-17",
+          "until": "2018-12-07",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 175,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 175
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27052,
+      "invoiceNumber": "D2018800",
+      "invoiceDate": "2018-06-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18048",
+        "firstName": "Faisal Ibrahim A",
+        "surname": "Alhumaidan",
+        "email": "faisal9199@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-07-02",
+          "until": "2018-08-24",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 120,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 120,
+          "serviceFrom": "2018-06-17",
+          "serviceUntil": "2018-08-12",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Host Family (Single room / Half-board) 17/06/2018 - 12/08/2018",
+          "amount": 1560,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1560,
+          "serviceFrom": "2018-06-17",
+          "serviceUntil": "2018-08-12",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-17",
+          "serviceUntil": "2018-08-12",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Morn & Aft 30 hours 18/06/2018 - 10/08/2018",
+          "amount": 1785,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1785,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3580,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3580
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27053,
+      "invoiceNumber": "D2018752",
+      "invoiceDate": "2018-05-28",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18046",
+        "firstName": "Ewelina",
+        "surname": "Paluch",
+        "email": "ewelina.paluch81@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "CLIL + General English",
+          "category": "Group classes",
+          "from": "2018-04-16",
+          "until": "2018-04-20",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week CLIL + General English 16/04/2018 - 20/04/2018",
+          "amount": 250,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 250,
+          "serviceFrom": "2018-04-16",
+          "serviceUntil": "2018-04-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 250,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 250
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27054,
+      "invoiceNumber": "D20181085",
+      "invoiceDate": "2018-07-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18047",
+        "firstName": "Mayu",
+        "surname": "Tsutsui",
+        "email": "lq7979.587er@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-08-06",
+          "until": "2018-09-28",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Apartment Security Deposit (Apartment / Shared / Self catering)",
+          "amount": 100,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 100,
+          "serviceFrom": "2018-08-18",
+          "serviceUntil": "2018-09-29",
+          "tax": 0
+        },
+        {
+          "description": "Arrival airport transfer",
+          "amount": 70,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 70,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-05",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement (6 weeks Apartment / Shared / Self catering)",
+          "amount": 60,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 60,
+          "serviceFrom": "2018-08-18",
+          "serviceUntil": "2018-09-29",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Apartment (Shared / Self catering) 18/08/2018 - 29/09/2018",
+          "amount": 990,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 990,
+          "serviceFrom": "2018-08-18",
+          "serviceUntil": "2018-09-29",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement (2 weeks Host Family / Single room / Half-board)",
+          "amount": 40,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 40,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-18",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks Host Family (Single room / Half-board) 05/08/2018 - 18/08/2018",
+          "amount": 390,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 390,
+          "serviceFrom": "2018-08-05",
+          "serviceUntil": "2018-08-18",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-09-28",
+          "tax": 0
+        },
+        {
+          "description": "8 weeks Afternoon 15 hours 06/08/2018 - 28/09/2018",
+          "amount": 840,
+          "discount": 0,
+          "commission": 210,
+          "nadc": 630,
+          "serviceFrom": "2018-08-06",
+          "serviceUntil": "2018-09-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2605,
+        "discount": 0,
+        "commission": 210,
+        "nadc": 2395
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27055,
+      "invoiceNumber": "D20181117",
+      "invoiceDate": "2018-07-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18049",
+        "firstName": "Kristiina",
+        "surname": "Orgla",
+        "email": "kristiinaorgla@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [],
+      "lineItems": [
+        {
+          "description": "Individual Airport Transfer (Return)",
+          "amount": 140,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 140,
+          "serviceFrom": "2018-05-28",
+          "serviceUntil": "2018-05-28",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 140,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 140
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27056,
+      "invoiceNumber": "D2018766",
+      "invoiceDate": "2018-05-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "16572",
+        "firstName": "Luciana",
+        "surname": "de Andrade Abelar",
+        "email": "luciana.abelar@yahoo.com.br"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "ULearn Renewal MORN",
+          "category": "Morning Classes",
+          "from": "2018-07-16",
+          "until": "2018-10-26",
+          "weeks": 15,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal MORN",
+          "category": "Morning Classes",
+          "from": "2019-01-07",
+          "until": "2019-01-18",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "ULearn Renewal MORN",
+          "category": "Morning Classes",
+          "from": "2018-11-05",
+          "until": "2018-12-28",
+          "weeks": 8,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "2 weeks ULearn Renewal 25-wk MORN 15 07/01/2019 - 18/01/2019",
+          "amount": 158,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 158,
+          "serviceFrom": "2019-01-07",
+          "serviceUntil": "2019-01-18",
+          "tax": 0
+        },
+        {
+          "description": "23 weeks ULearn Renewal 25-wk MORN 15 16/07/2018 - 21/12/2018",
+          "amount": 1817,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1817,
+          "serviceFrom": "2018-07-16",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2275,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2275
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27057,
+      "invoiceNumber": "D2018860",
+      "invoiceDate": "2018-06-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18050",
+        "firstName": "Pedro",
+        "surname": "Perez Laplaza",
+        "email": "pedroperez.7@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-07-02",
+          "until": "2018-07-20",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        },
+        {
+          "description": "3 weeks Morning 20 hours 02/07/2018 - 20/07/2018",
+          "amount": 540,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 540,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-20",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 590,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 590
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27058,
+      "invoiceNumber": "D2018776",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18051",
+        "firstName": "Jesús",
+        "surname": "Prieto",
+        "email": "prietocodias@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-06-11",
+          "until": "2018-06-22",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 Wochen Afternoon 15 hours 11/06/2018 - 22/06/2018",
+          "amount": 240,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 240,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-06-22",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-11",
+          "serviceUntil": "2018-06-22",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 290,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 290
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27060,
+      "invoiceNumber": "D20181081",
+      "invoiceDate": "2018-07-24",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "16754",
+        "firstName": "Sara",
+        "surname": "Magagnotti",
+        "email": "sara.magagnotti@hotmail.it"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-09-24",
+          "until": "2018-12-14",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Afternoon 15 hours 24/09/2018 - 14/12/2018",
+          "amount": 1224,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1224,
+          "serviceFrom": "2018-09-24",
+          "serviceUntil": "2018-12-14",
+          "tax": 0
+        },
+        {
+          "description": "12 weeks Apartment (Shared / Self catering) 22/09/2018 - 15/12/2018",
+          "amount": 1980,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1980,
+          "serviceFrom": "2018-09-22",
+          "serviceUntil": "2018-12-15",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 10,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 10,
+          "serviceFrom": "2018-09-22",
+          "serviceUntil": "2018-12-15",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-09-22",
+          "serviceUntil": "2018-12-15",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3279,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3279
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27062,
+      "invoiceNumber": "D20181088",
+      "invoiceDate": "2018-07-25",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18054",
+        "firstName": "Adriano",
+        "surname": "Alves de Oliveira",
+        "email": "adriano_oliveira@outlook.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-08-13",
+          "until": "2018-12-21",
+          "weeks": 19,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-02-15",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 175,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 175,
+          "serviceFrom": "2018-08-13",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "6 weeks Non-EU 25-Week Afternoon 15 07/01/2019 - 15/02/2019",
+          "amount": 576,
+          "discount": 0,
+          "commission": 144,
+          "nadc": 432,
+          "serviceFrom": "2019-01-07",
+          "serviceUntil": "2019-02-15",
+          "tax": 0
+        },
+        {
+          "description": "19 weeks Non-EU 25-Week Afternoon 15 13/08/2018 - 21/12/2018",
+          "amount": 1824,
+          "discount": 0,
+          "commission": 456,
+          "nadc": 1368,
+          "serviceFrom": "2018-08-13",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee (Non-EU 25-Week Afternoon 15)",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-13",
+          "serviceUntil": "2018-12-21",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2625,
+        "discount": 0,
+        "commission": 600,
+        "nadc": 2025
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27063,
+      "invoiceNumber": "D2018803",
+      "invoiceDate": "2018-06-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18057",
+        "firstName": "Laurie",
+        "surname": "Parada",
+        "email": "laurie.parada@icloud.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Intensive General 30",
+          "category": "Intensive Classes",
+          "from": "2018-08-13",
+          "until": "2018-08-31",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 semaine Morn & Aft 30 hours 13/08/2018 - 31/08/2018",
+          "amount": 765,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 765,
+          "serviceFrom": "2018-08-13",
+          "serviceUntil": "2018-08-31",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-08-13",
+          "serviceUntil": "2018-08-31",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 815,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 815
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27065,
+      "invoiceNumber": "D2018802",
+      "invoiceDate": "2018-06-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18058",
+        "firstName": "Mario",
+        "surname": "Donoso Gomez",
+        "email": "mdonosogom@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Afternoon General",
+          "category": "Afternoon Classes",
+          "from": "2018-07-23",
+          "until": "2018-08-10",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 60,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 60,
+          "serviceFrom": "2018-07-22",
+          "serviceUntil": "2018-08-12",
+          "tax": 0
+        },
+        {
+          "description": "3 Wochen Host Family (Single room / Half-board) 22/07/2018 - 12/08/2018",
+          "amount": 585,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 585,
+          "serviceFrom": "2018-07-22",
+          "serviceUntil": "2018-08-12",
+          "tax": 0
+        },
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-07-22",
+          "serviceUntil": "2018-08-12",
+          "tax": 0
+        },
+        {
+          "description": "3 Wochen Afternoon 15 hours 23/07/2018 - 10/08/2018",
+          "amount": 360,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 360,
+          "serviceFrom": "2018-07-23",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-07-23",
+          "serviceUntil": "2018-08-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1120,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 1120
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27067,
+      "invoiceNumber": "D20181052",
+      "invoiceDate": "2018-07-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18060",
+        "firstName": "Bartolome",
+        "surname": "Mateu Sureda",
+        "email": "tolomateusureda@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-06-25",
+          "until": "2018-07-20",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-23",
+          "until": "2018-07-27",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Morning 15 hours 23/07/2018 - 27/07/2018",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2018-07-23",
+          "serviceUntil": "2018-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 150,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 150
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27068,
+      "invoiceNumber": "D2018807",
+      "invoiceDate": "2018-06-07",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18061",
+        "firstName": "Luis",
+        "surname": "Martin",
+        "email": "luis.martinpla@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-06-25",
+          "until": "2018-06-29",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2018-07-02",
+          "until": "2018-07-13",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Morning 15 hours 02/07/2018 - 13/07/2018",
+          "amount": 300,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 300,
+          "serviceFrom": "2018-07-02",
+          "serviceUntil": "2018-07-13",
+          "tax": 0
+        },
+        {
+          "description": "1 week Morning 20 hours 25/06/2018 - 29/06/2018 (special price)",
+          "amount": 150,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 150,
+          "serviceFrom": "2018-06-25",
+          "serviceUntil": "2018-06-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 450,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 450
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27078,
+      "invoiceNumber": "D2018787",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18071",
+        "firstName": "Fahad",
+        "surname": "Abdulwahab Alghamdi",
+        "email": "fahad.aus12@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General Plus",
+          "category": "Morning Classes Plus",
+          "from": "2018-06-27",
+          "until": "2018-08-24",
+          "weeks": 9,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Summer Accomm Supplement",
+          "amount": 160,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 160,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Host Family (Single room / Half-board) 16/06/2018 - 25/08/2018",
+          "amount": 1950,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1950,
+          "serviceFrom": "2018-06-16",
+          "serviceUntil": "2018-08-25",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        },
+        {
+          "description": "10 weeks Morning 20 hours 18/06/2018 - 24/08/2018",
+          "amount": 1575,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1575,
+          "serviceFrom": "2018-06-18",
+          "serviceUntil": "2018-08-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3800,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 3800
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27079,
+      "invoiceNumber": "D2018788",
+      "invoiceDate": "2018-05-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18072",
+        "firstName": "Zhang",
+        "surname": "Zheng",
+        "email": "guderianfyzz@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening IELTS",
+          "category": "Evening Classes",
+          "from": "2018-05-31",
+          "until": "2018-07-10",
+          "weeks": 6,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "6 weeks Evening IELTS 31/05/2018 - 10/07/2018",
+          "amount": 193,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 193,
+          "serviceFrom": "2018-05-31",
+          "serviceUntil": "2018-07-10",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2018-05-31",
+          "serviceUntil": "2018-07-10",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 243,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 243
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 27082,
+      "invoiceNumber": "D2019255",
+      "invoiceDate": "2019-02-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18074",
+        "firstName": "Oksana",
+        "surname": "Tiunina",
+        "email": "mega.tyunina@mail.ru"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2018-09-24",
+          "until": "2018-12-21",
+          "weeks": 13,
+          "hours": 0
+        },
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2019-01-07",
+          "until": "2019-03-29",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Upgrade to IELTS exam",
+          "amount": 25,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 25,
+          "serviceFrom": "2018-09-23",
+          "serviceUntil": "2019-03-29",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 25,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 25
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

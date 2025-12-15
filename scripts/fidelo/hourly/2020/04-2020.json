@@ -1,0 +1,759 @@
+{
+  "generated": "2025-12-15T14:07:17.312Z",
+  "period": "2020-04-01 to 2020-04-30",
+  "description": "Master data: All D-invoices (with payments) for 2020 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 11,
+    "totalRevenue": 8080,
+    "totalDiscounts": 582,
+    "totalCommissions": 0,
+    "agentStudents": 0,
+    "directStudents": 11
+  },
+  "invoices": [
+    {
+      "bookingId": 33030,
+      "invoiceNumber": "D2020282",
+      "invoiceDate": "2020-04-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23221",
+        "firstName": "Cauim",
+        "surname": "De Souza Lima",
+        "email": "cauimsouza@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-04-06",
+          "until": "2020-04-17",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Online Afternoon 06/04/2020 - 17/04/2020",
+          "amount": 159,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 159,
+          "serviceFrom": "2020-04-06",
+          "serviceUntil": "2020-04-17",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 159,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 159
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33031,
+      "invoiceNumber": "D2020294",
+      "invoiceDate": "2020-04-20",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23220",
+        "firstName": "Silvia",
+        "surname": "Rivera Ariza",
+        "email": "sriverariza@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-04-06",
+          "until": "2020-04-17",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-04-20",
+          "until": "2020-05-01",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-07-13",
+          "until": "2020-07-24",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Online Morning 20/04/2020 - 12/05/2020",
+          "amount": 237,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 237,
+          "serviceFrom": "2020-04-20",
+          "serviceUntil": "2020-05-12",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 237,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 237
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33033,
+      "invoiceNumber": "D2020315",
+      "invoiceDate": "2020-05-06",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23165",
+        "firstName": "Cecilia",
+        "surname": "Arminio",
+        "email": "cecilia.arminio@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online Morning",
+          "category": "Morning Classes",
+          "from": "2020-04-06",
+          "until": "2020-04-17",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-04-20",
+          "until": "2020-05-01",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online Morning",
+          "category": "Morning Classes",
+          "from": "2020-05-04",
+          "until": "2020-05-15",
+          "weeks": 2,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-25",
+          "until": "2020-06-05",
+          "weeks": 2,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "2 weeks Online 15 25/05/2020 - 05/06/2020",
+          "amount": 158,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 158,
+          "serviceFrom": "2020-05-25",
+          "serviceUntil": "2020-06-05",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 158,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 158
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33034,
+      "invoiceNumber": "D2020284",
+      "invoiceDate": "2020-04-08",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23223",
+        "firstName": "Miguel",
+        "surname": "Fernandez-Montells Rama",
+        "email": "miguelfmr97@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-04-06",
+          "until": "2020-05-15",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-25",
+          "until": "2020-07-03",
+          "weeks": 6,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-07-07",
+          "until": "2020-07-27",
+          "weeks": 3,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "3 weeks Online 15 07/07/2020 - 27/07/2020",
+          "amount": 237,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 237,
+          "serviceFrom": "2020-07-07",
+          "serviceUntil": "2020-07-27",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 237,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 237
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33035,
+      "invoiceNumber": "D2020329",
+      "invoiceDate": "2020-06-12",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "18844",
+        "firstName": "Viktoriia",
+        "surname": "Rusal",
+        "email": "rusalvikusja@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2020-06-22",
+          "until": "2020-12-11",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "25 weeks Academic Year Renewal Morning 20/07/2020 - 08/01/2021",
+          "amount": 1765,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1765,
+          "serviceFrom": "2020-07-20",
+          "serviceUntil": "2021-01-08",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2020-07-20",
+          "serviceUntil": "2021-01-08",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2020-07-20",
+          "serviceUntil": "2021-01-08",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 0,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 0,
+          "serviceFrom": "2020-07-20",
+          "serviceUntil": "2021-01-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 2090,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 2090
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33036,
+      "invoiceNumber": "D2020287",
+      "invoiceDate": "2020-04-09",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23222",
+        "firstName": "Oswaldo da Silva",
+        "surname": "Nicacio Junior",
+        "email": "osnjunior91@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Academic Year Afternoon",
+          "category": "Afternoon Classes",
+          "from": "2021-01-04",
+          "until": "2021-06-25",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "Accommodation Placement fee",
+          "amount": 65,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 65,
+          "serviceFrom": "2020-11-14",
+          "serviceUntil": "2020-12-12",
+          "tax": 0
+        },
+        {
+          "description": "4 weeks Apartment (APT-PRM-SNGL / Self catering) 14/11/2020 - 12/12/2020",
+          "amount": 1000,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 1000,
+          "serviceFrom": "2020-11-14",
+          "serviceUntil": "2020-12-12",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Afternoon 30/11/2020 - 21/05/2021",
+          "amount": 2425,
+          "discount": 582,
+          "commission": 0,
+          "nadc": 1843,
+          "serviceFrom": "2020-11-30",
+          "serviceUntil": "2021-05-21",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2020-11-16",
+          "serviceUntil": "2021-05-07",
+          "tax": 0
+        },
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2020-11-16",
+          "serviceUntil": "2021-05-07",
+          "tax": 0
+        },
+        {
+          "description": "Health Insurance",
+          "amount": 125,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 125,
+          "serviceFrom": "2020-11-16",
+          "serviceUntil": "2021-05-07",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 3865,
+        "discount": 582,
+        "commission": 0,
+        "nadc": 3283
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33038,
+      "invoiceNumber": "D2020341",
+      "invoiceDate": "2020-06-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23224",
+        "firstName": "Federico",
+        "surname": "Giuliani",
+        "email": "federicobella723@gmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online Morning",
+          "category": "Morning Classes",
+          "from": "2020-04-14",
+          "until": "2020-04-17",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-04-20",
+          "until": "2020-04-24",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-05",
+          "until": "2020-05-11",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-12",
+          "until": "2020-05-15",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-18",
+          "until": "2020-05-22",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-05-25",
+          "until": "2020-05-29",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-01",
+          "until": "2020-06-05",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-08",
+          "until": "2020-06-12",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-15",
+          "until": "2020-06-19",
+          "weeks": 1,
+          "hours": 0
+        },
+        {
+          "name": "Online 15",
+          "category": "Group classes",
+          "from": "2020-06-22",
+          "until": "2020-06-26",
+          "weeks": 1,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "1 week Online 15 01/06/2020 - 05/06/2020",
+          "amount": 79,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 79,
+          "serviceFrom": "2020-06-01",
+          "serviceUntil": "2020-06-05",
+          "tax": 0
+        },
+        {
+          "description": "1 week Online 15 08/06/2020 - 12/06/2020",
+          "amount": 79,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 79,
+          "serviceFrom": "2020-06-08",
+          "serviceUntil": "2020-06-12",
+          "tax": 0
+        },
+        {
+          "description": "1 week Online 15 15/06/2020 - 19/06/2020",
+          "amount": 79,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 79,
+          "serviceFrom": "2020-06-15",
+          "serviceUntil": "2020-06-19",
+          "tax": 0
+        },
+        {
+          "description": "1 week Online 15 22/06/2020 - 26/06/2020",
+          "amount": 79,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 79,
+          "serviceFrom": "2020-06-22",
+          "serviceUntil": "2020-06-26",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 316,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 316
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33048,
+      "invoiceNumber": "D2020312",
+      "invoiceDate": "2020-04-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23231",
+        "firstName": "Jaime",
+        "surname": "Benito Casillas",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening CAE",
+          "category": "Evening Classes",
+          "from": "2020-02-03",
+          "until": "2020-04-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Evening CAE 03/02/2020 - 24/04/2020",
+          "amount": 400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 400,
+          "serviceFrom": "2020-02-03",
+          "serviceUntil": "2020-04-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 400,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 400
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33049,
+      "invoiceNumber": "D2020312",
+      "invoiceDate": "2020-04-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23232",
+        "firstName": "Raquel",
+        "surname": "Casado",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening CAE",
+          "category": "Evening Classes",
+          "from": "2020-02-03",
+          "until": "2020-04-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Evening CAE 03/02/2020 - 24/04/2020",
+          "amount": 400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 400,
+          "serviceFrom": "2020-02-03",
+          "serviceUntil": "2020-04-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 400,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 400
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33050,
+      "invoiceNumber": "D2020312",
+      "invoiceDate": "2020-04-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23233",
+        "firstName": "Carlota",
+        "surname": "Juliani",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening CAE",
+          "category": "Evening Classes",
+          "from": "2020-02-03",
+          "until": "2020-04-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Evening CAE 03/02/2020 - 24/04/2020",
+          "amount": 400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 400,
+          "serviceFrom": "2020-02-03",
+          "serviceUntil": "2020-04-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 400,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 400
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33051,
+      "invoiceNumber": "D2020312",
+      "invoiceDate": "2020-04-30",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23234",
+        "firstName": "Helen",
+        "surname": "Alfagame",
+        "email": ""
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Evening CAE",
+          "category": "Evening Classes",
+          "from": "2020-02-03",
+          "until": "2020-04-24",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Evening CAE 03/02/2020 - 24/04/2020",
+          "amount": 400,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 400,
+          "serviceFrom": "2020-02-03",
+          "serviceUntil": "2020-04-24",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 400,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 400
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}

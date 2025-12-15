@@ -1,0 +1,181 @@
+{
+  "generated": "2025-12-15T14:09:22.031Z",
+  "period": "2021-01-01 to 2021-01-31",
+  "description": "Master data: All D-invoices (with payments) for 2021 - excludes proformas and credit notes",
+  "summary": {
+    "totalInvoices": 3,
+    "totalRevenue": 2828,
+    "totalDiscounts": 0,
+    "totalCommissions": 100,
+    "agentStudents": 1,
+    "directStudents": 2
+  },
+  "invoices": [
+    {
+      "bookingId": 33363,
+      "invoiceNumber": "D2021008",
+      "invoiceDate": "2021-01-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23322",
+        "firstName": "Fumie",
+        "surname": "Takezawa",
+        "email": "fumy222@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-01-05",
+          "until": "2021-02-01",
+          "weeks": 4,
+          "hours": 0
+        },
+        {
+          "name": "Morning General",
+          "category": "Morning Classes",
+          "from": "2021-02-02",
+          "until": "2021-03-08",
+          "weeks": 5,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "5 weeks Morning General 02/02/2021 - 08/03/2021 ONLINE DISCOUNT",
+          "amount": 395,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 395,
+          "serviceFrom": "2021-02-02",
+          "serviceUntil": "2021-03-08",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 395,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 395
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33371,
+      "invoiceNumber": "D2021009",
+      "invoiceDate": "2021-01-29",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23423",
+        "firstName": "Monica Janeth",
+        "surname": "Gonzalez Rosales",
+        "email": "monica_janii@hotmail.com"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": true
+      },
+      "courses": [
+        {
+          "name": "Academic Year Renewal Morning",
+          "category": "Morning Classes",
+          "from": "2021-02-01",
+          "until": "2021-07-23",
+          "weeks": 25,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "External Exam fee",
+          "amount": 200,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 200,
+          "serviceFrom": "2021-02-01",
+          "serviceUntil": "2021-07-23",
+          "tax": 0
+        },
+        {
+          "description": "Registration fee",
+          "amount": 50,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 50,
+          "serviceFrom": "2021-02-01",
+          "serviceUntil": "2021-07-23",
+          "tax": 0
+        },
+        {
+          "description": "25 weeks Academic Year Renewal Morning 01/02/2021 - 23/07/2021",
+          "amount": 1575,
+          "discount": 0,
+          "commission": 100,
+          "nadc": 1475,
+          "serviceFrom": "2021-02-01",
+          "serviceUntil": "2021-07-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 1825,
+        "discount": 0,
+        "commission": 100,
+        "nadc": 1725
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    },
+    {
+      "bookingId": 33375,
+      "invoiceNumber": "D2021010",
+      "invoiceDate": "2021-01-31",
+      "invoiceType": "Invoice",
+      "student": {
+        "id": "23375",
+        "firstName": "Yousef",
+        "surname": "Sarhan",
+        "email": "stop_21@hotmail.es"
+      },
+      "agent": {
+        "name": null,
+        "hasAgent": false
+      },
+      "courses": [
+        {
+          "name": "Online Morning",
+          "category": "Morning Classes",
+          "from": "2021-02-01",
+          "until": "2021-04-23",
+          "weeks": 12,
+          "hours": 0
+        }
+      ],
+      "lineItems": [
+        {
+          "description": "12 weeks Online Morning 01/02/2021 - 23/04/2021",
+          "amount": 708,
+          "discount": 0,
+          "commission": 0,
+          "nadc": 708,
+          "serviceFrom": "2021-02-01",
+          "serviceUntil": "2021-04-23",
+          "tax": 0
+        }
+      ],
+      "totals": {
+        "amount": 708,
+        "discount": 0,
+        "commission": 0,
+        "nadc": 708
+      },
+      "paymentMethod": null,
+      "currency": "EUR"
+    }
+  ]
+}
