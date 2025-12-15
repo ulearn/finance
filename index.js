@@ -30,11 +30,11 @@ const zohoCallbackRouter = require('./scripts/zoho/oauth-callback');
 // const apiImportRouter = require('./scripts/pay/sales/import-api');
 
 // Basic route to test
-app.get('/', (req, res) => {
+app.get('/fins/', (req, res) => {
   res.send('Fins App is Working! Node.js ' + process.version);
 });
 
-app.get('/fins', (req, res) => {
+app.get('/fins/', (req, res) => {
   res.json({ 
     status: 'working', 
     time: new Date(),

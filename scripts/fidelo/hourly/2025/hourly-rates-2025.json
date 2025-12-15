@@ -1,43 +1,44 @@
 {
   "year": "2025",
-  "generatedAt": "2025-12-15T21:21:00.538Z",
+  "generatedAt": "2025-12-15T21:37:03.191Z",
   "rates": {
     "morning": {
-      "b2c": 6.61,
-      "b2b": 4.94
+      "b2c": 6.96,
+      "b2b": 4.98
     },
     "afternoon": {
-      "b2c": 0,
-      "b2b": 4.56
+      "b2c": 5.9,
+      "b2b": 3.43
     }
   },
   "details": {
+    "year": "2025",
     "morning": {
       "b2c": {
-        "totalRevenue": 98902.00000000001,
-        "totalHours": 14955,
-        "count": 98,
-        "avgRate": 6.613306586425946
+        "totalRevenue": 367546.59999999905,
+        "totalHours": 52785,
+        "count": 1298,
+        "avgRate": 6.9630879984844
       },
       "b2b": {
-        "totalRevenue": 108924.84,
-        "totalHours": 22065,
-        "count": 80,
-        "avgRate": 4.936543847722637
+        "totalRevenue": 265305.775,
+        "totalHours": 53245,
+        "count": 195,
+        "avgRate": 4.982735937646728
       }
     },
     "afternoon": {
       "b2c": {
-        "totalRevenue": 0,
-        "totalHours": 0,
-        "count": 0,
-        "avgRate": 0
+        "totalRevenue": 111320.4,
+        "totalHours": 18855,
+        "count": 154,
+        "avgRate": 5.904025457438345
       },
       "b2b": {
-        "totalRevenue": 1711.85,
-        "totalHours": 375,
-        "count": 1,
-        "avgRate": 4.564933333333333
+        "totalRevenue": 112079.09500000002,
+        "totalHours": 32700,
+        "count": 102,
+        "avgRate": 3.4274952599388384
       }
     }
   }

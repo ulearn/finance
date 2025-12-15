@@ -242,6 +242,12 @@
             const [averageMonths, setAverageMonths] = useState(3);
             const [selectedYear, setSelectedYear] = useState('2025');
 
+            // Hourly rates by year and session (from Fidelo data)
+            const hourlyRates = {
+                '2024': { morning: 8.87, afternoon: 6.44 },
+                '2025': { morning: 6.96, afternoon: 5.90 }
+            };
+
             // Data by year
             const data2024 = [
                 { month: 'JAN', ads: 4970.50, software: 1305.00, salaries: 2257.23 + 0, commissions: 179, salesWon: 41 },
@@ -261,25 +267,28 @@
             // 2025 data - Google Ads from actual Google Ads platform
             // Software costs estimated at €1,300/month, Salaries = Sara only (Diego ended), Commissions/SalesWon TBD
             const data2025 = [
-                { month: 'JAN', ads: 5273.76, software: 1300, salaries: 1500, commissions: 0, salesWon: 0 },
-                { month: 'FEB', ads: 5135.00, software: 1300, salaries: 1500, commissions: 0, salesWon: 0 },
-                { month: 'MAR', ads: 4787.00, software: 1300, salaries: 0, commissions: 0, salesWon: 0 },
-                { month: 'APR', ads: 4740.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
-                { month: 'MAY', ads: 5012.00, software: 1300, salaries: 2805.35, commissions: 0, salesWon: 0 },
-                { month: 'JUN', ads: 4635.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
-                { month: 'JUL', ads: 4504.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
-                { month: 'AUG', ads: 3317.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
-                { month: 'SEP', ads: 5499.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
-                { month: 'OCT', ads: 6388.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 0 },
-                { month: 'NOV', ads: 5369.00, software: 1300, salaries: 0, commissions: 0, salesWon: 0 },
-                { month: 'DEC', ads: 0, software: 1300, salaries: 0, commissions: 0, salesWon: 0 }
+                { month: 'JAN', ads: 5273.76, software: 1300, salaries: 1500, commissions: 0, salesWon: 136 },
+                { month: 'FEB', ads: 5135.00, software: 1300, salaries: 1500, commissions: 0, salesWon: 200 },
+                { month: 'MAR', ads: 4787.00, software: 1300, salaries: 0, commissions: 0, salesWon: 384 },
+                { month: 'APR', ads: 4740.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 224 },
+                { month: 'MAY', ads: 5012.00, software: 1300, salaries: 2805.35, commissions: 0, salesWon: 86 },
+                { month: 'JUN', ads: 4635.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 44 },
+                { month: 'JUL', ads: 4504.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 84 },
+                { month: 'AUG', ads: 3317.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 102 },
+                { month: 'SEP', ads: 5499.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 112 },
+                { month: 'OCT', ads: 6388.00, software: 1300, salaries: 2500, commissions: 0, salesWon: 22 },
+                { month: 'NOV', ads: 5369.00, software: 1300, salaries: 0, commissions: 0, salesWon: 46 },
+                { month: 'DEC', ads: 0, software: 1300, salaries: 0, commissions: 0, salesWon: 12 }
             ];
 
             // Select data based on year
             const monthlyData = selectedYear === '2024' ? data2024 : data2025;
 
+            // Get hourly rate for selected year and session
+            const hourlyRate = hourlyRates[selectedYear][sessionType];
+
             // Calculate metrics
-            const results = calculateMetrics(monthlyData, sessionType, averageMonths);
+            const results = calculateMetrics(monthlyData, sessionType, averageMonths, hourlyRate);
 
             const formatCurrency = (value) => {
                 return '€' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -442,9 +451,9 @@
                                     <tbody>
                                         <tr>
                                             <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
-                                            <td className="currency">€7.00</td>
+                                            <td className="currency">€{hourlyRate.toFixed(2)}</td>
                                             <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
-                                            <td className="currency">€6.00</td>
+                                            <td className="currency">€{hourlyRate.toFixed(2)}</td>
                                         </tr>
                                         <tr>
                                             <td style={{textAlign: 'left'}}>Hours</td>
@@ -666,9 +675,9 @@
                                     <tbody>
                                         <tr>
                                             <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
-                                            <td className="currency">€7.00</td>
+                                            <td className="currency">€{hourlyRate.toFixed(2)}</td>
                                             <td style={{textAlign: 'left', width: '150px'}}>Hourly Price</td>
-                                            <td className="currency">€6.00</td>
+                                            <td className="currency">€{hourlyRate.toFixed(2)}</td>
                                         </tr>
                                         <tr>
                                             <td style={{textAlign: 'left'}}>Hours</td>
@@ -860,10 +869,16 @@
             );
         }
 
-        function calculateMetrics(monthlyData, sessionType, averageMonths) {
-            const session = sessionType === 'morning'
-                ? { monthlyPrice: 420, grossProfit: 336, grossMargin: 80.0 }
-                : { monthlyPrice: 360, grossProfit: 276, grossMargin: 76.67 };
+        function calculateMetrics(monthlyData, sessionType, averageMonths, hourlyRate) {
+            // Calculate monthly price based on actual hourly rate: 15 hrs/week × hourlyRate × 4 weeks
+            const monthlyPrice = 15 * hourlyRate * 4;
+            const grossProfit = monthlyPrice * 0.8; // 80% gross margin
+            const session = {
+                monthlyPrice: monthlyPrice,
+                grossProfit: grossProfit,
+                grossMargin: 80.0,
+                hourlyRate: hourlyRate
+            };
 
             const monthly = monthlyData.map(m => {
                 const mediaCAC = m.ads + m.software;
